@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "phase": "creative_planning",
+  "approval": {
+    "status": "pending",
+    "reviewer": null,
+    "approved_at": null,
+    "evidence": null,
+    "fingerprint": null
+  },
+  "scenes": {},
+  "final": {
+    "status": "pending"
+  },
+  "next_actions": [
+    "Prepare 9:16 creative direction/storyboard for Esora Immi using immutable master",
+    "Resolve scope/source of S13 approximately VND 3.8 billion claim before using it as a hero message",
+    "Pilot candidates S03 and S08; not locked or rendered",
+    "Keep human pilot approval pending; no full production"
+  ]
+}

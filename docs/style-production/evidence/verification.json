@@ -1,0 +1,312 @@
+{
+  "date_local": "2026-11-01",
+  "timezone": "Asia/Saigon",
+  "git_metadata": "absent; git status reported not a git repository",
+  "protected_files_checked": 226,
+  "protected_changed": [
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\production_status.json",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\REVIEW.html",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\assets\\ledger.json",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\assets\\illustration\\S03-coast.svg",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\assets\\illustration\\S08-home.svg",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-browser-qa.cjs",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\browser-final.json",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\browser-source.json",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\media-qa.json",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\REVIEW-1280.png",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\REVIEW-360.png",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\REVIEW-768.png",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-0.00.png",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-1.25.png",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-2.80.png",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-3.80.png",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-5.30.png",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-7.80.png",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-8.90.png",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-ffprobe.json",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-mobile.png",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-0.00.png",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-1.40.png",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-2.60.png",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-3.80.png",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-4.90.png",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-5.56.png",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-ffprobe.json",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-mobile.png",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\components\\build_pilot_sources.py",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\components\\pilot-highlights.json",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\components\\pilot-motion.js",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\style-bible.md",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\style-tokens.json",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\index.html",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\picture.mp4",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\S03-pilot.mp4",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\.hyperframes\\video-state.json",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S08\\index.html",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S08\\picture.mp4",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S08\\S08-pilot.mp4",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S08\\.hyperframes\\video-state.json"
+  ],
+  "protected_missing": [
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\.hyperframes\\preview\\f6b67580c941db3ebb9df1e539ef42e6.html",
+    "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S08\\.hyperframes\\artifacts\\checks\\2db7d2ac-1b11-4fd2-bca0-10d83b58c751.json"
+  ],
+  "local_markdown_links_broken": [],
+  "markdown_files": [
+    "docs\\style-production\\bauhaus.md",
+    "docs\\style-production\\CODEX-VISUAL-TEST-PROMPT.md",
+    "docs\\style-production\\izometrik.md",
+    "docs\\style-production\\kurzgesagt.md",
+    "docs\\style-production\\README.md",
+    "docs\\style-production\\RESEARCH-AUDIT.md",
+    "docs\\style-production\\SHARED-PRODUCTION.md",
+    "docs\\style-production\\VIDEO-34-REDESIGN.md",
+    "references\\ANIMATION-STYLES.md"
+  ],
+  "upstream_commit": "09e451d8b64ec85c1ec035fd39e00725c1ed5593",
+  "upstream_tree_truncated": false,
+  "upstream_style_count": 20,
+  "upstream_style_ids": [
+    "bauhaus",
+    "belgesel-16mm",
+    "beyaz-tahta",
+    "blueprint",
+    "cizgi-roman",
+    "hud",
+    "izometrik",
+    "kagit-kesik",
+    "kara-tahta",
+    "karakalem",
+    "kil",
+    "kinetik-tipografi",
+    "kurzgesagt",
+    "linocut",
+    "memphis",
+    "piksel",
+    "retro-70ler",
+    "tek-cizgi",
+    "terminal",
+    "veri"
+  ],
+  "upstream_license_named_paths": [],
+  "scene_interval_count": 17,
+  "media": {
+    "kurzgesagt": {
+      "path": "scratch\\style-research-upstream\\kurzgesagt.mp4",
+      "sha256": "14b73a4b667aaebda7e5af5361f9f96ff17b912e48d5323dcd4c5028cc85c62c",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "30/1",
+            "nb_frames": "285",
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_name": "aac",
+            "r_frame_rate": "0/0",
+            "nb_frames": "447"
+          }
+        ],
+        "format": {
+          "duration": "9.500000"
+        }
+      }
+    },
+    "izometrik": {
+      "path": "scratch\\style-research-upstream\\izometrik.mp4",
+      "sha256": "0735ac65ffc78c847b9f33a76d0e7620761498cc95f00d5183cc7f1dfbafb405",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "30/1",
+            "nb_frames": "285",
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_name": "aac",
+            "r_frame_rate": "0/0",
+            "nb_frames": "447"
+          }
+        ],
+        "format": {
+          "duration": "9.500000"
+        }
+      }
+    },
+    "bauhaus": {
+      "path": "scratch\\style-research-upstream\\bauhaus.mp4",
+      "sha256": "3f78526d14f2099de04a37f56f41b68f71ee62a09c99bb088b9eaa7dd6ad7931",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "30/1",
+            "nb_frames": "285",
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_name": "aac",
+            "r_frame_rate": "0/0",
+            "nb_frames": "447"
+          }
+        ],
+        "format": {
+          "duration": "9.500000"
+        }
+      }
+    },
+    "S03": {
+      "path": "videos\\video-34\\scenes\\S03\\S03-pilot.mp4",
+      "sha256": "7da370afc9b258624ca7f7f037652ca35a90a45ad3670ce87518d1c604dcb44f",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1080,
+            "height": 1920,
+            "r_frame_rate": "30/1",
+            "nb_frames": "268"
+          },
+          {
+            "codec_name": "aac",
+            "r_frame_rate": "0/0",
+            "nb_frames": "211"
+          }
+        ],
+        "format": {
+          "duration": "8.939250"
+        }
+      }
+    },
+    "S08": {
+      "path": "videos\\video-34\\scenes\\S08\\S08-pilot.mp4",
+      "sha256": "d71ee2c8e4309990d437121bc86b3437e0afa0d9ecabf7339cd97dcf086f6878",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1080,
+            "height": 1920,
+            "r_frame_rate": "30/1",
+            "nb_frames": "168"
+          },
+          {
+            "codec_name": "aac",
+            "r_frame_rate": "0/0",
+            "nb_frames": "133"
+          }
+        ],
+        "format": {
+          "duration": "5.610125"
+        }
+      }
+    }
+  },
+  "checks_not_performed": [
+    "new visual test frames",
+    "new animation/pilot render",
+    "continuous video/audio playback in this research turn",
+    "human visual acceptance",
+    "upstream source re-render",
+    "font redistribution license verification"
+  ],
+  "critical_checks": [
+    {
+      "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\project_manifest.json",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\assets\\brand\\esora-avatar-original.jpg",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\project_manifest.json",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\assets\\brand\\esora-avatar-original.jpg",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\inputs\\Generated Audio November 01, 2026 - 5_35PM.wav",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\inputs\\scene-manifest.json",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\inputs\\transcript_raw.txt",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\inputs\\transcription.raw.json",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\inputs\\word-timestamps.json",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\Năm 3\\flowkit-main\\AGENTS.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\Năm 3\\flowkit-main\\setup.py",
+      "unchanged": true
+    }
+  ],
+  "concurrent_workspace_changes": "Observed production changes outside research write operations; not reverted; cannot claim whole-project unchanged",
+  "latest_observed_revision": "Typography V2; approval pending",
+  "evidence_scope": "R1 frame observations are historical; V2 media hashes in this file are final-probe hashes; no continuous playback performed",
+  "authored_scope": [
+    "docs/style-production/",
+    "references/ANIMATION-STYLES.md",
+    "scratch/style-research-upstream/",
+    "scratch/style-research-upstream-tree.json"
+  ],
+  "document_sha256": {
+    "docs\\style-production\\bauhaus.md": "950d359942e1229a382e774a9bee53dcb8a432e94c8b45f51c92c64f5fd43f81",
+    "docs\\style-production\\CODEX-VISUAL-TEST-PROMPT.md": "2d45367356cc3f9324b3b80828af35d5672fbc991cde6c732ca00fb54eeff523",
+    "docs\\style-production\\izometrik.md": "21b7c83b9593d0a8ce22101815d623f38b78d39217a2913c94bfd3a1955e7004",
+    "docs\\style-production\\kurzgesagt.md": "f915128556a75d3ded723661097c7157e15ea9bd44e92bb019fe35c423a220db",
+    "docs\\style-production\\README.md": "55e027259fde4a206d276f4d458263de5811d9eac78f74d19de7fc3a511abc9e",
+    "docs\\style-production\\RESEARCH-AUDIT.md": "ebee189e8453bbf4fb668b67c596d84e8bd7845a993368174b34946f4861039c",
+    "docs\\style-production\\SHARED-PRODUCTION.md": "0787c9d33663345a51e6d370365d54257af141f22debc246e8b6404659696fee",
+    "docs\\style-production\\VIDEO-34-REDESIGN.md": "2c4490cbff07e248d006e5259b8d42855ad172c7681dd692093f1de18d3bc4d0",
+    "references\\ANIMATION-STYLES.md": "63d358e13326819cfb342c89d58b71c9c80db746de491203a9c188e21ab4e23e"
+  },
+  "image_sha256": {
+    "latest-v2-S03-3.8.png": "e006bfe6c088c9bf5d984854fc51dc97cee16fb0b562ade08460ab139c00dcd5",
+    "latest-v2-S08-4.9.png": "8e3c7b6bba3885e96fc24b576814a996593b5b86a97bc623ef5b9fc0d4b05336",
+    "observed-r1-S03-3.8.png": "b451364f92c3031b6545b39051f10e1c7d720d5e890baa91b5ae0c993e5c8d4a",
+    "observed-r1-S08-4.9.png": "ff82843e8463d956c536fc7edb1dc20c597eb1c206149dd354aa5e6e80f04008",
+    "upstream-bauhaus-contact.png": "60feddc7556b03f60b7a0b5732807267c620d2d36b7fc2bd941daef6513e5600",
+    "upstream-izometrik-contact.png": "6f0034c2e19aff5b8c093042719ddce2cb4d8aeb6ac7e3b36cc646133f40375b",
+    "upstream-kurzgesagt-contact.png": "7a8b33c675b1e93296815fe530f64ab7228a98f2e8628320bc51e4fa5a3d7f82"
+  }
+}

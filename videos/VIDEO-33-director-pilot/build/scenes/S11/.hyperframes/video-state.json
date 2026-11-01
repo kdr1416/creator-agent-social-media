@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "historyId": "cfb03483-f752-40b8-a695-1c69737a7433",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "assets/arial.ttf": {
+      "hash": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\cfb03483-f752-40b8-a695-1c69737a7433\\blobs\\b3\\b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a"
+    },
+    "assets/arialbd.ttf": {
+      "hash": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\cfb03483-f752-40b8-a695-1c69737a7433\\blobs\\e8\\e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\cfb03483-f752-40b8-a695-1c69737a7433\\blobs\\c1\\c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "assets/segoe-ui-black.ttf": {
+      "hash": "be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\cfb03483-f752-40b8-a695-1c69737a7433\\blobs\\be\\be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae"
+    },
+    "assets/voice.wav": {
+      "hash": "585580db3f8f8f407cc539f3047c1f389402c255e342c1aaad6b63db97c8dabc",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\cfb03483-f752-40b8-a695-1c69737a7433\\blobs\\58\\585580db3f8f8f407cc539f3047c1f389402c255e342c1aaad6b63db97c8dabc"
+    },
+    "index.html": {
+      "hash": "9c4720fb662690b1f34d859b50e1e8418b767cd458c5d2ee5ef92fde67c7662b",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\cfb03483-f752-40b8-a695-1c69737a7433\\blobs\\9c\\9c4720fb662690b1f34d859b50e1e8418b767cd458c5d2ee5ef92fde67c7662b"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "659d88e5-b153-4b82-9578-70fd5d0b0c93"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "659d88e5-b153-4b82-9578-70fd5d0b0c93",
+        "scope": "project",
+        "report": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\scenes\\S11\\.hyperframes\\artifacts\\checks\\659d88e5-b153-4b82-9578-70fd5d0b0c93.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793029711627,
+        "contentHash": "001697771ce86941919414fcae04ab3054a3c34c69000c599eba761ac2185ecd",
+        "revision": null,
+        "inputFingerprint": "53c674c6b48fce44fb4d447d960aff03e74dcf34094afb47ae77ad7fe73a54da",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "e269d126-14cc-49ec-8a01-b828f4c1c5d4",
+      "completedAt": 1793029746360,
+      "output": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\scenes\\S11\\renders\\pilot.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

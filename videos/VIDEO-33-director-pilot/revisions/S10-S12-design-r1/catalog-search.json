@@ -1,0 +1,481 @@
+{
+  "query": "wind turbine model push button experiment",
+  "tier": "words",
+  "tier_detail": "local word match",
+  "dropped": 0,
+  "unindexed": 0,
+  "shown": 29,
+  "total": 448,
+  "report_gap": "npx hyperframes feedback --search-miss \"wind turbine model push button experiment\" --wanted \"<the move you needed>\" --tier words",
+  "results": [
+    {
+      "name": "transitions-push",
+      "type": "block",
+      "title": "Push Transitions",
+      "description": "Showcase of push and slide transitions",
+      "tags": [
+        "transition",
+        "showcase"
+      ],
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "duration": 24,
+      "preview": {
+        "video": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/blocks/transitions-push.mp4",
+        "poster": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/blocks/transitions-push.png"
+      }
+    },
+    {
+      "name": "push-in",
+      "type": "component",
+      "title": "Push In",
+      "description": "A centered headline gains focus through one slow, continuous camera push and a gentle fade out.",
+      "tags": [
+        "motion-primitive",
+        "camera",
+        "push-in",
+        "focus",
+        "emphasize",
+        "holdable"
+      ]
+    },
+    {
+      "name": "tiktok-follow",
+      "type": "block",
+      "title": "TikTok Follow",
+      "description": "Animated TikTok follow overlay with profile card and follow button",
+      "tags": [
+        "social",
+        "overlay",
+        "tiktok"
+      ],
+      "dimensions": {
+        "width": 1080,
+        "height": 1920
+      },
+      "duration": 4.5,
+      "preview": {
+        "video": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/blocks/tiktok-follow.mp4",
+        "poster": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/blocks/tiktok-follow.png"
+      }
+    },
+    {
+      "name": "instagram-follow",
+      "type": "block",
+      "title": "Instagram Follow",
+      "description": "Animated Instagram follow overlay with profile card and follow button",
+      "tags": [
+        "social",
+        "overlay",
+        "instagram"
+      ],
+      "dimensions": {
+        "width": 1080,
+        "height": 1920
+      },
+      "duration": 4.5,
+      "preview": {
+        "video": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/blocks/instagram-follow.mp4",
+        "poster": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/blocks/instagram-follow.png"
+      }
+    },
+    {
+      "name": "directional-wipe",
+      "type": "component",
+      "title": "Directional Wipe",
+      "description": "A directional scene push that slides one panel over another.",
+      "tags": [
+        "transition-primitive"
+      ],
+      "preview": {
+        "poster": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/components/directional-wipe.png"
+      }
+    },
+    {
+      "name": "signup-flow",
+      "type": "component",
+      "title": "Signup Flow",
+      "description": "A composed signup flow with social action, email field, password field, and submit button",
+      "tags": [
+        "ui-flow",
+        "signup",
+        "form"
+      ],
+      "preview": {
+        "poster": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/components/signup-flow.png"
+      }
+    },
+    {
+      "name": "onboarding-stepper-flow",
+      "type": "component",
+      "title": "Onboarding Stepper Flow",
+      "description": "A composed onboarding flow with milestone rail, active step card, and next-action button",
+      "tags": [
+        "ui-flow",
+        "onboarding",
+        "stepper"
+      ],
+      "preview": {
+        "poster": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/components/onboarding-stepper-flow.png"
+      }
+    },
+    {
+      "name": "water",
+      "type": "block",
+      "title": "Water",
+      "description": "A sphere of wind-rippled water reflecting a blue sky, on black. A WebGPU shader from the Shaders library (shaders.com, MIT).",
+      "tags": [
+        "webgpu",
+        "webgpu-shader",
+        "orb",
+        "water",
+        "material",
+        "blue"
+      ],
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "duration": 2,
+      "preview": {
+        "video": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/blocks/water.mp4"
+      }
+    },
+    {
+      "name": "marble",
+      "type": "block",
+      "title": "Marble",
+      "description": "Ink-dark veins wind through white in a marbled pattern that slowly shifts. A WebGPU shader from the Shaders library (shaders.com, MIT).",
+      "tags": [
+        "webgpu",
+        "webgpu-shader",
+        "background",
+        "marble",
+        "texture"
+      ],
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "duration": 2,
+      "preview": {
+        "video": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/blocks/marble.mp4"
+      }
+    },
+    {
+      "name": "gesture-tap",
+      "type": "component",
+      "title": "Gesture Tap",
+      "description": "A contact circle taps a mobile pill button, releases it into a new labeled accent state, and lifts away.",
+      "tags": [
+        "motion-primitive",
+        "gesture",
+        "tap",
+        "interaction",
+        "ui-props"
+      ]
+    },
+    {
+      "name": "product-turntable",
+      "type": "block",
+      "title": "Product Turntable",
+      "description": "A product turns a full revolution on a studio plinth in a seamless loop. Drop in a GLB or glTF model, or keep the built-in drink can with your own label.",
+      "tags": [
+        "3d-object",
+        "three-js",
+        "webgl",
+        "product",
+        "turntable",
+        "glb",
+        "loop"
+      ],
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "duration": 6
+    },
+    {
+      "name": "parallax-device-dive",
+      "type": "component",
+      "title": "Parallax Device Dive",
+      "description": "A canonical phone rises into view before the camera pushes through its screen and layered app UI expands to fill the frame.",
+      "tags": [
+        "motion-primitive",
+        "camera",
+        "device",
+        "phone",
+        "parallax",
+        "transition"
+      ]
+    },
+    {
+      "name": "vfx-iphone-device",
+      "type": "block",
+      "title": "iPhone & MacBook 3D Showcase",
+      "description": "Real GLTF iPhone 15 Pro Max and MacBook Pro models with live HTML-in-Canvas screen content, morphing glass lens, product review camera choreography, and 360° turntable.",
+      "tags": [
+        "html-in-canvas",
+        "3d",
+        "device",
+        "iphone",
+        "macbook",
+        "gltf"
+      ],
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "duration": 15,
+      "preview": {
+        "video": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/blocks/vfx-iphone-device.mp4",
+        "poster": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/blocks/vfx-iphone-device.png"
+      }
+    },
+    {
+      "name": "magnetic-cursor",
+      "type": "component",
+      "title": "Magnetic Cursor",
+      "description": "A soft dot pointer glides across an editor toolbar, is pulled into each button and morphs into its rounded hover plate while the icon leans toward it, presses one, and leaves as a dot.",
+      "tags": [
+        "cursor",
+        "motion-primitive",
+        "pointer",
+        "hover",
+        "morph",
+        "toolbar"
+      ]
+    },
+    {
+      "name": "ios26-liquid-glass",
+      "type": "block",
+      "title": "iOS 26 Liquid Glass Home Screen",
+      "description": "3D iPhone with a normal iOS 26 home screen, liquid glass app icons, shader wallpaper, dock, and fluid glass notifications that drop from the status area onto a GLTF device model.",
+      "tags": [
+        "liquid-glass-html-in-canvas",
+        "webgpu",
+        "3d",
+        "iphone",
+        "ios26",
+        "notifications",
+        "gltf",
+        "html-in-canvas"
+      ],
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "duration": 15,
+      "preview": {
+        "video": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/blocks/ios26-liquid-glass.mp4",
+        "poster": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/blocks/ios26-liquid-glass.png"
+      }
+    },
+    {
+      "name": "kinetic-center-build",
+      "type": "component",
+      "title": "Kinetic Center Build",
+      "description": "Words enter from the right and push the growing phrase left until the final line locks centered.",
+      "tags": [
+        "motion-primitive",
+        "text-effects",
+        "kinetic-type",
+        "reveal",
+        "remocn-port"
+      ]
+    },
+    {
+      "name": "cursor-zoom-follow",
+      "type": "component",
+      "title": "Zoom Follow Cursor",
+      "description": "Screen-recording auto-zoom: the camera pushes in toward each upcoming click, trails the cursor on a smooth spring, marks every click with a press and a ring, then eases back out to the full screen as the cursor leaves.",
+      "tags": [
+        "cursor",
+        "camera",
+        "zoom",
+        "screen-recording",
+        "click",
+        "product-demo"
+      ]
+    },
+    {
+      "name": "shutter-slam",
+      "type": "component",
+      "title": "Shutter Slam",
+      "description": "One word thrown through six single-property beats under integrated shutter blur — two translate slams, a scale punch, then a full turn about each axis — on the measured easing of the After Effects export the shutter model was fitted to",
+      "tags": [
+        "effect",
+        "motion-blur",
+        "shutter",
+        "after-effects",
+        "slam",
+        "animation"
+      ],
+      "preview": {
+        "poster": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/components/shutter-slam.png"
+      }
+    },
+    {
+      "name": "spiral-galaxy",
+      "type": "block",
+      "title": "Spiral Galaxy",
+      "description": "A spiral galaxy seen from outside, turning with real differential rotation: inner stars orbit faster than outer ones, so the arms wind up over the shot instead of spinning rigidly. 20,000 additive GPU sprites, seeded once and solved directly from time, so any frame can be rendered on its own.",
+      "tags": [
+        "hero",
+        "space",
+        "particles",
+        "webgl",
+        "background"
+      ],
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "duration": 10
+    },
+    {
+      "name": "particle-text-dissolve",
+      "type": "component",
+      "title": "Particle Text Dissolve",
+      "description": "Text assembles from a seeded particle cloud (or dissolves into it): per-particle targets sampled once from the rendered text bitmap at mount, table-driven particles, zero per-particle tweens, one onUpdate painter.",
+      "tags": [
+        "motion-primitive",
+        "text-effects",
+        "particles",
+        "canvas",
+        "deterministic",
+        "experiment"
+      ]
+    },
+    {
+      "name": "variable-font-flex",
+      "type": "component",
+      "title": "Variable Font Flex",
+      "description": "A word lands while its variable-font weight and width axes flex from hairline-condensed to black-wide with per-character stagger; font-size eases inversely so the letterforms gain mass while the box holds.",
+      "tags": [
+        "motion-primitive",
+        "experiment",
+        "type",
+        "variable-font",
+        "deterministic"
+      ]
+    },
+    {
+      "name": "ink-bleed-reveal",
+      "type": "component",
+      "title": "Ink Bleed Reveal",
+      "description": "Liquid ink blooms through paper under a gooey blur-plus-threshold filter, merges, then contracts as a crisp slotted mark resolves beneath it, with static seeded paper grain riding the result.",
+      "tags": [
+        "motion-primitive",
+        "texture",
+        "reveal",
+        "gooey",
+        "svg-filter",
+        "deterministic",
+        "experiment"
+      ]
+    },
+    {
+      "name": "ordered-dither-pass",
+      "type": "component",
+      "title": "Ordered Dither Pass",
+      "description": "Bayer-matrix ordered dithering quantizes a slotted scene (rasterized once at mount): the image emerges from pure 2-tone noise to clean, or dissolves the reverse. Stateless per frame, never error diffusion.",
+      "tags": [
+        "motion-primitive",
+        "experiment",
+        "texture",
+        "dither",
+        "transition",
+        "quantize"
+      ]
+    },
+    {
+      "name": "slit-scan-reveal",
+      "type": "component",
+      "title": "Slit Scan Reveal",
+      "description": "The frame's rows sample an authored subject at offset times: a canvas painter draws row slices of one pure position function evaluated at t minus offset(row), smearing arrival through time until the offsets collapse to zero and the mark holds coherent.",
+      "tags": [
+        "motion-primitive",
+        "time",
+        "slit-scan",
+        "canvas",
+        "deterministic",
+        "experiment"
+      ]
+    },
+    {
+      "name": "ascii-render-pass",
+      "type": "component",
+      "title": "ASCII Render Pass",
+      "description": "A slotted scene renders as live ASCII: a canvas samples the source's luminance grid (rasterized once at mount) and draws glyphs from a density ramp charset; resolution steps coarse to fine as the piece resolves, then holds legible-fine.",
+      "tags": [
+        "motion-primitive",
+        "experiment",
+        "texture",
+        "ascii",
+        "quantize"
+      ]
+    },
+    {
+      "name": "stitched-text-draw",
+      "type": "component",
+      "title": "Stitched Text Draw",
+      "description": "Text drawn as thread stitches: a single-stroke display alphabet draws via attribute-driven dashoffset with stitch-tuned dash patterns, seeded angle jitter, needle-hole dots, a leading needle, and a thread-tail overshoot per letter.",
+      "tags": [
+        "motion-primitive",
+        "experiment",
+        "type",
+        "craft",
+        "stitch",
+        "deterministic"
+      ]
+    },
+    {
+      "name": "stop-motion-cadence",
+      "type": "component",
+      "title": "Stop Motion Cadence",
+      "description": "The stepped-time law as a demo primitive: one driver quantizes timeline time to floor(t * fps) / fps and feeds ALL motion; four token paper-cut shapes throw-and-land with squash on hits, 2-frame boil jitter seeded per step, and sparkle accents living exactly 2 to 3 frames.",
+      "tags": [
+        "motion-primitive",
+        "time-law",
+        "stop-motion",
+        "stepped",
+        "boil",
+        "deterministic",
+        "experiment"
+      ]
+    },
+    {
+      "name": "segmentation-flood",
+      "type": "component",
+      "title": "Segmentation Flood",
+      "description": "Machine-vision read of a slotted subject: translucent accent segmentation masks flood on in quantized scanline steps, each region gets a thin bracket and mono label chip, a deterministic 2-frame HUD flicker rides the pass, then the labeled read settles clean.",
+      "tags": [
+        "motion-primitive",
+        "product-demo",
+        "ai",
+        "hud",
+        "canvas",
+        "deterministic",
+        "experiment"
+      ]
+    },
+    {
+      "name": "modal-morph",
+      "type": "component",
+      "title": "Modal Morph",
+      "description": "A small card expands into a full panel, shared-element style: both layouts measured once at mount, the container morphs by transform only (never width/height tweens) while keyed children counter-scale and re-flow onto their own measured targets as pure functions of time.",
+      "tags": [
+        "motion-primitive",
+        "structure",
+        "flip",
+        "shared-element",
+        "modal",
+        "deterministic",
+        "experiment"
+      ]
+    }
+  ]
+}

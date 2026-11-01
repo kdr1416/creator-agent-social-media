@@ -1,0 +1,778 @@
+{
+  "reused": [
+    {
+      "id": "mascot",
+      "source": "D:\\Năm 3\\flowkit-main\\videos\\tran-minh-nhat-director-handoff\\reference_pilots\\scene_12\\assets\\student.js",
+      "use": "Giữ hình nhận diện, tách arm/eyes/legs và pose mới. Không dùng bộ student human bị từ chối."
+    },
+    {
+      "id": "display-font",
+      "source": "D:\\Năm 3\\flowkit-main\\videos\\tran-minh-nhat-director-handoff\\library\\fonts\\segoe-ui-black.ttf",
+      "use": "Local native Vietnamese glyphs"
+    },
+    {
+      "id": "gsap",
+      "source": "D:\\Năm 3\\flowkit-main\\videos\\tran-minh-nhat-director-handoff\\reference_pilots\\scene_12\\assets\\gsap.min.js",
+      "use": "Offline seekable runtime"
+    }
+  ],
+  "new_pilot": [
+    {
+      "scene": "S01",
+      "layers": [
+        {
+          "layer": "book-back",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "book-pages",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "book-cover",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "folded-support",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "paper-house",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "family-silhouettes",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-body",
+          "source": "approved mascot derivative",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-far-arm",
+          "source": "approved mascot derivative",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-near-arm",
+          "source": "approved mascot derivative",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-eyes",
+          "source": "approved mascot derivative",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-cap",
+          "source": "approved mascot derivative",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-bag",
+          "source": "approved mascot derivative",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        }
+      ]
+    },
+    {
+      "scene": "S05",
+      "layers": [
+        {
+          "layer": "valletta-photo",
+          "source": "Wikimedia Commons: Skyline of Valletta.jpg / Juliana da Costa José / CC BY-SA 3.0",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "photo-paper-edge",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "fold-left",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "fold-right",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "paper-crease",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "property-symbol",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "vietnam-keepsake",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-body",
+          "source": "approved mascot derivative",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-near-arm",
+          "source": "approved mascot derivative",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-eyes",
+          "source": "approved mascot derivative",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-cap",
+          "source": "approved mascot derivative",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-bag",
+          "source": "approved mascot derivative",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        }
+      ]
+    },
+    {
+      "scene": "S09",
+      "layers": [
+        {
+          "layer": "allocation-track",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "market-a-platform",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "market-b-platform",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "market-c-platform",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "token-a",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "token-b",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "token-c",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "local-fluctuation-marks",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "caption-a",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "caption-b",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_pilot_HTML_and_layered_SVG",
+          "required_separate_layer": true
+        }
+      ]
+    }
+  ],
+  "remaining": [
+    {
+      "scene": "S02",
+      "status": "DESIGN_ONLY / Antigravity creates after approval",
+      "layers": [
+        {
+          "layer": "ledger-left",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "ledger-right",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "coin-stack",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "rolling-coins",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "measuring-rule",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "paper-shadow",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ]
+    },
+    {
+      "scene": "S03",
+      "status": "DESIGN_ONLY / Antigravity creates after approval",
+      "layers": [
+        {
+          "layer": "folded-road",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "study-desk",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "practice-desk",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "open-ended-path",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "source": "approved mascot derivative",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ]
+    },
+    {
+      "scene": "S04",
+      "status": "DESIGN_ONLY / Antigravity creates after approval",
+      "layers": [
+        {
+          "layer": "paper-tray",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "house-token",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "coin-token",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "question-mark",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "location-label",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ]
+    },
+    {
+      "scene": "S06",
+      "status": "DESIGN_ONLY / Antigravity creates after approval",
+      "layers": [
+        {
+          "layer": "table-top",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "table-leaf",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "chairs",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "family-puppets",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "blank-plan",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "source": "approved mascot derivative",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ]
+    },
+    {
+      "scene": "S07",
+      "status": "DESIGN_ONLY / Antigravity creates after approval",
+      "layers": [
+        {
+          "layer": "laptop-shell",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "screen-family",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "cable",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "plug",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "desk",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "source": "approved mascot derivative",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ]
+    },
+    {
+      "scene": "S08",
+      "status": "DESIGN_ONLY / Antigravity creates after approval",
+      "layers": [
+        {
+          "layer": "arrival-floor",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "luggage",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "parent-puppet",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "study-prop",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "living-prop",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "work-prop",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "source": "approved mascot derivative",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ]
+    },
+    {
+      "scene": "S10",
+      "status": "DESIGN_ONLY / Antigravity creates after approval",
+      "layers": [
+        {
+          "layer": "album-spread",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "applicant-couple",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "children",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "parents",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "grandparents",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "kinship-connectors",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "source": "approved mascot derivative",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ]
+    },
+    {
+      "scene": "S11",
+      "status": "DESIGN_ONLY / Antigravity creates after approval",
+      "layers": [
+        {
+          "layer": "house-key",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "table",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "backpack-open",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "notebook",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "study-tools",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "source": "approved mascot derivative",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ]
+    },
+    {
+      "scene": "S12",
+      "status": "DESIGN_ONLY / Antigravity creates after approval",
+      "layers": [
+        {
+          "layer": "workshop-table",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "stool",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "tool-hooks",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "chosen-tool",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "source": "approved mascot derivative",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ]
+    },
+    {
+      "scene": "S13",
+      "status": "DESIGN_ONLY / Antigravity creates after approval",
+      "layers": [
+        {
+          "layer": "globe-hemispheres",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "meridians",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "study-trace",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "asset-trace",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "luggage",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "source": "approved mascot derivative",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ]
+    },
+    {
+      "scene": "S14",
+      "status": "DESIGN_ONLY / Antigravity creates after approval",
+      "layers": [
+        {
+          "layer": "house-side",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "open-hand",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "key",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "folded-choice-plan",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "branch-a",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "branch-b",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "source": "approved mascot derivative",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ]
+    }
+  ],
+  "photography": {
+    "file": "assets/valletta.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Skyline_of_Valletta.jpg",
+    "author": "Juliana da Costa José",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "modifications": "Framing/crop within the composition; no claims about ownership or sale.",
+    "purpose": "Geographic context, not property advertisement."
+  },
+  "delivered_assets_ledger": "assets/ledger.json",
+  "latest_motion_revision_assets": [
+    {
+      "scene_id": "S05",
+      "path": "revisions/S05-album-pilot-v5-r1/assets",
+      "editable_source": "revisions/S05-album-pilot-v5-r1/index.html",
+      "status": "rendered_pending_user_review",
+      "photo_credit": "revisions/S05-album-pilot-v5-r1/CREDITS.json",
+      "page_source": "assets/right-leaf.svg self-contained editable SVG with embedded credited photo"
+    },
+    {
+      "scene_id": "S09",
+      "path": "revisions/pilots-approved-frames-r1/S09/assets",
+      "status": "unchanged_rendered_pending_user_review"
+    }
+  ],
+  "active_S05_override": {
+    "revision": "S05_STORYBOARD_RESTART_R1",
+    "status": "proposal_not_produced",
+    "assets": [
+      {
+        "layer": "map-base",
+        "status": "needs_sourcing_and_vector_styling",
+        "source": "Dữ liệu địa lý có nguồn, thí dụ Natural Earth; kiểm coastline/đảo trước khi cách điệu.",
+        "required_separate_layer": true
+      },
+      {
+        "layer": "malta-anchor",
+        "status": "needs_creation",
+        "source": "Điểm neo theo bản đồ, không phải tâm màn hình; tách khỏi hình ghim.",
+        "required_separate_layer": true
+      },
+      {
+        "layer": "mascot-rig",
+        "status": "existing_identity_new_pose_required",
+        "source": "assets/approved-student-source.js: giữ nhận diện; tạo pose với vai/khuỷu/cổ tay đúng tầm.",
+        "required_separate_layer": true
+      },
+      {
+        "layer": "pin",
+        "status": "needs_creation",
+        "source": "Ghim đồ họa đơn giản, đầu ghim tách lớp, không phải tượng đài/nhà.",
+        "required_separate_layer": true
+      },
+      {
+        "layer": "residential-photo",
+        "status": "existing_candidate_not_selected",
+        "source": "assets/townhouse.jpg / Wikimedia Townhouse in Zejtun.jpg; kiểm crop và provenance trước khi chọn. Có thể thay bằng ảnh nhà ở Malta có giấy phép phù hợp.",
+        "required_separate_layer": true
+      },
+      {
+        "layer": "MALTA-label",
+        "status": "existing_font_new_text_layer",
+        "source": "assets/fonts/segoe-ui-black.ttf, text native; không bake trong ảnh.",
+        "required_separate_layer": true
+      },
+      {
+        "layer": "warm-ground-and-footer",
+        "status": "needs_creation",
+        "source": "Nền kem, biển xanh rất nhạt, đất đào nhạt; ảnh không tràn footer.",
+        "required_separate_layer": true
+      }
+    ],
+    "supersedes": "all previous S05 album/house assets as active direction"
+  }
+}

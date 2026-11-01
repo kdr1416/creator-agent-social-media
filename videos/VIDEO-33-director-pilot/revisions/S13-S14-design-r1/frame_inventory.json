@@ -1,0 +1,32 @@
+[
+  {
+    "path": "S13/01-student",
+    "label": "Hành trình của con",
+    "status": "static_frame_design_approved_motion_unapproved"
+  },
+  {
+    "path": "S13/02-local",
+    "label": "Tài sản tại Việt Nam",
+    "status": "static_frame_design_approved_motion_unapproved"
+  },
+  {
+    "path": "S13/03-expand",
+    "label": "Có thể thêm địa điểm Malta",
+    "status": "static_frame_design_approved_motion_unapproved"
+  },
+  {
+    "path": "S14/01-key",
+    "label": "Từ chìa khóa căn nhà",
+    "status": "static_frame_design_approved_motion_unapproved"
+  },
+  {
+    "path": "S14/02-gate",
+    "label": "Lối thứ hai đang đóng",
+    "status": "static_frame_design_approved_motion_unapproved"
+  },
+  {
+    "path": "S14/03-open",
+    "label": "Cả hai lối đều mở",
+    "status": "static_frame_design_approved_motion_unapproved"
+  }
+]

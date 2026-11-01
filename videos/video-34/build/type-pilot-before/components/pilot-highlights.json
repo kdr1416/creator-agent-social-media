@@ -1,0 +1,97 @@
+{
+  "S03": [
+    {
+      "id": "walk",
+      "text": "Đi bộ",
+      "at": 0.333917,
+      "out": 1.91,
+      "kind": "mask",
+      "global": 10.5,
+      "word_ids": [
+        46,
+        47
+      ],
+      "effect": "Masked upward reveal + yellow path rule"
+    },
+    {
+      "id": "run",
+      "text": "Chạy bộ",
+      "at": 2.233917,
+      "out": 3.15,
+      "kind": "track",
+      "global": 12.4,
+      "word_ids": [
+        54,
+        55
+      ],
+      "effect": "Horizontal word stagger + coast path draw"
+    },
+    {
+      "id": "cafe",
+      "text": "Cà phê",
+      "at": 3.513917,
+      "out": 4.6,
+      "kind": "mask",
+      "global": 13.68,
+      "word_ids": [
+        60,
+        61
+      ],
+      "effect": "Masked reveal + cup action"
+    },
+    {
+      "id": "family",
+      "text": "Gia đình",
+      "at": 7.373917,
+      "out": 0,
+      "kind": "settle",
+      "global": 17.54,
+      "word_ids": [
+        77,
+        78
+      ],
+      "effect": "Scale settle + connection arc / close reframe"
+    }
+  ],
+  "S08": [
+    {
+      "id": "slow",
+      "text": "Sống chậm",
+      "at": 1.01,
+      "out": 2.35,
+      "kind": "mask",
+      "global": 41.28,
+      "word_ids": [
+        172,
+        173
+      ],
+      "effect": "Masked two-word reveal; underline resolves on cân bằng (42.14)"
+    },
+    {
+      "id": "time",
+      "text": "Thời gian",
+      "at": 3.03,
+      "out": 0,
+      "kind": "track",
+      "global": 43.3,
+      "word_ids": [
+        180,
+        181
+      ],
+      "effect": "Word stagger + terrace light / attention handoff"
+    },
+    {
+      "id": "family",
+      "text": "Gia đình",
+      "at": 4.73,
+      "out": 0,
+      "kind": "settle",
+      "global": 45.0,
+      "word_ids": [
+        186,
+        187
+      ],
+      "effect": "Second-level settle + contact arc and smile"
+    }
+  ]
+}

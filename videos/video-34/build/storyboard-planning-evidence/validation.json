@@ -1,0 +1,79 @@
+{
+  "scope": "Document consistency only; not visual/runtime QA",
+  "checks": {
+    "protected_input_config_logo_scene_component_hashes_unchanged": "PASS",
+    "scene_ids_match_manifest": "PASS",
+    "all_17_requested_fields_present_per_scene": "PASS",
+    "transcripts_verbatim": "PASS",
+    "exact_sample_intervals_present": "PASS",
+    "all_53_anchor_groups_within_scene_bounds": "PASS",
+    "anchor_ids_text_and_times_match_original_asr": "PASS",
+    "approval_object_unchanged_pending": "PASS",
+    "production_scenes_and_final_unchanged": "PASS",
+    "no_approved_style_constraints_and_subtitles_disabled": "PASS",
+    "scene_component_file_rosters_unchanged": "PASS",
+    "master_sample_coverage_unchanged": "PASS",
+    "pilot_designs_style_assets_and_risk_register_present": "PASS"
+  },
+  "protected_file_count": 12,
+  "protected_after": {
+    "inputs/audio-analysis.md": "160db1061129613ab69622b05ceca7e60f2fb488b6cd21ff4ad8ab6d5e1b01c7",
+    "inputs/Generated Audio November 01, 2026 - 5_35PM.wav": "6b92d56bb90f3c4e702903d53d098d7c1765daf716879e8de60826a3110425c1",
+    "inputs/scene-manifest.json": "fb86f10cea1c3683a0b8167ac0f00b3bedfa49348da3d4430fa3946d1969bce7",
+    "inputs/scene.example.json": "8471bf6ca4d282676648ac2b94bc379b335ccf3e7627892e25bad472d4fbab90",
+    "inputs/transcription.raw.json": "266cd8d065046f494d2cb83967b6b5e6071ce34c510657459ccd8a0dae7ae81d",
+    "inputs/transcript_raw.txt": "bba5f2920fbe1aadc043d304fe8ac8f7e4dfb3fe44bb65ab851b080daf821f74",
+    "inputs/word-timestamps.json": "bee8577b96bde4bbe89aacf5bc112f001c09eb01906c057f798073241dbead16",
+    "project_manifest.json": "d49b5cbcdf1fa7ad74c3e5b90ff15f38938467c327b729cb5cd4d10dfe931608",
+    "assets/ledger.json": "40e9ef21835797fe481a6631c4431f18617a8b9b058932db5d03a4da3e75e55c",
+    "assets/brand/esora-avatar-original.jpg": "f34096f78bc3c030b536c446efe71273c32f18b55cc33306705ab09ce0aa313e",
+    "scenes/README.md": "f72262013e8387327f8d445def11d1053fbb9c63a799e8aff77cd77b0066adc0",
+    "components/motion.js": "ebe1e443366de7151f49dcc150bb5c8e45efc1ce959a1dff3810a9a30b9737a1"
+  },
+  "scene_count": 17,
+  "anchor_group_count": 53,
+  "modified": [
+    "creative/storyboard.md",
+    "creative/style-tokens.json",
+    "production_status.json"
+  ],
+  "new_reader_documents": [
+    "creative/style-bible.md",
+    "creative/assets-components-plan.md"
+  ],
+  "diff_summary": [
+    {
+      "path": "creative/storyboard.md",
+      "old_lines": 17,
+      "new_lines": 730
+    },
+    {
+      "path": "creative/style-tokens.json",
+      "old_lines": 21,
+      "new_lines": 48
+    },
+    {
+      "path": "production_status.json",
+      "old_lines": 21,
+      "new_lines": 40
+    },
+    {
+      "path": "creative/style-bible.md",
+      "old_lines": 0,
+      "new_lines": 78
+    },
+    {
+      "path": "creative/assets-components-plan.md",
+      "old_lines": 0,
+      "new_lines": 58
+    }
+  ],
+  "not_tested": [
+    "Pilot animation/render/browser visual QA",
+    "Font availability/license and Vietnamese glyph rendering",
+    "360x640 legibility and logo treatment",
+    "Audio listen-back around ASR word 334",
+    "Factual approval of S13"
+  ],
+  "approval": "pending"
+}

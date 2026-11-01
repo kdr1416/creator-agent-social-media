@@ -1,0 +1,14 @@
+{
+  "scene_id": "S05",
+  "version": "final-frame-v5",
+  "status": "approved_static_frame",
+  "frame": "revisions/S05-final-frame-v5/FINAL_FRAME.png",
+  "frame_sha256": "f1fd553cc3f8df5cbc0677b5d4104def3983760cdc730dca9190ac815b76d55b",
+  "source": "revisions/S05-final-frame-v5/index.html",
+  "concept": "Mascot presents an open album of a real Malta house photograph on one table; hands hold page margins. No drawn architecture or finger reaching into the photograph.",
+  "photo_credit": "revisions/S05-final-frame-v5/CREDITS.json",
+  "motion_rendered": false,
+  "S09_changed": false,
+  "user_approval": "oke cảnh ổn rồi. mình duyệt tạo cho mình pilot cảnh s05 đi",
+  "pilot_revision": "revisions/S05-album-pilot-v5-r1"
+}

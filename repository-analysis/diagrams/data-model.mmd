@@ -1,0 +1,162 @@
+erDiagram
+    PROJECT ||--o{ PROJECT_CHARACTER : associates
+    CHARACTER ||--o{ PROJECT_CHARACTER : references
+    PROJECT ||--o{ VIDEO : owns
+    VIDEO ||--o{ SCENE : contains
+    SCENE ||--o{ SCENE : continues
+    PROJECT ||--o{ REQUEST : tracks
+    VIDEO ||--o{ REQUEST : tracks
+    SCENE ||--o{ REQUEST : tracks
+    CHARACTER ||--o{ REQUEST : tracks
+    MATERIAL ||--o{ PROJECT : styles
+
+    PROJECT {
+        TEXT id PK
+        TEXT name
+        TEXT description
+        TEXT story
+        TEXT language
+        TEXT status
+        TEXT user_paygate_tier
+        TEXT narrator_voice
+        TEXT narrator_ref_audio
+        TEXT material FK
+        INTEGER allow_music
+        INTEGER allow_voice
+        TEXT video_model_family
+        TEXT created_at
+        TEXT updated_at
+    }
+
+    CHARACTER {
+        TEXT id PK
+        TEXT name
+        TEXT slug
+        TEXT entity_type
+        TEXT description
+        TEXT image_prompt
+        TEXT voice_description
+        TEXT reference_image_url
+        TEXT media_id
+        TEXT created_at
+        TEXT updated_at
+    }
+
+    PROJECT_CHARACTER {
+        TEXT project_id PK, FK
+        TEXT character_id PK, FK
+    }
+
+    MATERIAL {
+        TEXT id PK
+        TEXT name
+        TEXT style_instruction
+        TEXT negative_prompt
+        TEXT scene_prefix
+        TEXT lighting
+        TEXT created_at
+    }
+
+    VIDEO {
+        TEXT id PK
+        TEXT project_id FK
+        TEXT title
+        TEXT description
+        INTEGER display_order
+        TEXT status
+        TEXT vertical_url
+        TEXT horizontal_url
+        REAL duration
+        REAL target_duration_s
+        TEXT orientation
+        TEXT youtube_id
+        TEXT privacy
+        TEXT tags
+        TEXT created_at
+        TEXT updated_at
+    }
+
+    SCENE {
+        TEXT id PK
+        TEXT video_id FK
+        INTEGER display_order
+        TEXT prompt
+        TEXT image_prompt
+        TEXT video_prompt
+        TEXT character_names
+        TEXT parent_scene_id FK
+        TEXT chain_type
+        TEXT source
+        TEXT vertical_image_url
+        TEXT vertical_image_media_id
+        TEXT vertical_image_status
+        TEXT vertical_video_url
+        TEXT vertical_video_media_id
+        TEXT vertical_video_status
+        TEXT vertical_upscale_url
+        TEXT vertical_upscale_media_id
+        TEXT vertical_upscale_status
+        TEXT horizontal_image_url
+        TEXT horizontal_image_media_id
+        TEXT horizontal_image_status
+        TEXT horizontal_video_url
+        TEXT horizontal_video_media_id
+        TEXT horizontal_video_status
+        TEXT horizontal_upscale_url
+        TEXT horizontal_upscale_media_id
+        TEXT horizontal_upscale_status
+        TEXT vertical_end_scene_media_id
+        TEXT horizontal_end_scene_media_id
+        REAL trim_start
+        REAL trim_end
+        REAL duration
+        TEXT transition_prompt
+        TEXT narrator_text
+        TEXT created_at
+        TEXT updated_at
+    }
+
+    REQUEST {
+        TEXT id PK
+        TEXT project_id FK
+        TEXT video_id FK
+        TEXT scene_id FK
+        TEXT character_id FK
+        TEXT type
+        TEXT orientation
+        TEXT status
+        TEXT request_id
+        TEXT media_id
+        TEXT output_url
+        TEXT error_message
+        INTEGER retry_count
+        TEXT next_retry_at
+        TEXT edit_prompt
+        TEXT source_media_id
+        TEXT provider
+        TEXT created_at
+        TEXT updated_at
+    }
+
+    PROVIDER_JOB {
+        TEXT id PK
+        TEXT provider
+        TEXT kind
+        TEXT status
+        TEXT prompt
+        TEXT orientation
+        TEXT source_url
+        TEXT start_url
+        TEXT end_url
+        TEXT extra
+        TEXT claimed_by
+        TEXT claimed_at
+        TEXT lease_expires_at
+        INTEGER progress
+        TEXT progress_message
+        TEXT result
+        TEXT error_message
+        INTEGER retry_count
+        TEXT created_at
+        TEXT updated_at
+    }

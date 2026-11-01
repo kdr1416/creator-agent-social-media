@@ -1,0 +1,43 @@
+{
+  "project_slug": "warm-doodle-style-lab",
+  "scope": "isolated_three_scene_style_trial",
+  "stage": "rendered_awaiting_feedback",
+  "skill": "skills/warm-doodle-video/SKILL.md",
+  "source_files_changed": false,
+  "scenes": [
+    {
+      "scene_id": "scene_04",
+      "source_duration": 3.293,
+      "video_duration": 3.3,
+      "audio_duration": 3.293,
+      "output": "renders/scene_04.mp4",
+      "status": "rendered_awaiting_feedback",
+      "mode": "HF_ONLY",
+      "source_composition": "compositions/scene04.html"
+    },
+    {
+      "scene_id": "scene_09",
+      "source_duration": 6.469,
+      "video_duration": 6.5,
+      "audio_duration": 6.469,
+      "output": "renders/scene_09.mp4",
+      "status": "rendered_awaiting_feedback",
+      "mode": "HF_ONLY",
+      "source_composition": "compositions/scene09.html"
+    },
+    {
+      "scene_id": "scene_13",
+      "source_duration": 4.314,
+      "video_duration": 4.333333,
+      "audio_duration": 4.314,
+      "output": "renders/scene_13.mp4",
+      "status": "rendered_awaiting_feedback",
+      "mode": "HF_ONLY",
+      "source_composition": "compositions/scene13.html"
+    }
+  ],
+  "combined_output": "renders/warm-doodle-3-scenes.mp4",
+  "duration": 14.1,
+  "qa": "qa/review.json",
+  "next_action": "User reviews style; no permission inferred to change the original film."
+}

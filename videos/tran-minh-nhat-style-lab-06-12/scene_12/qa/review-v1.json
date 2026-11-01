@@ -1,0 +1,33 @@
+{
+  "source_files_checked": 0,
+  "source_files_changed": [],
+  "video": {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\tran-minh-nhat-style-lab-06-12\\scene_12\\renders\\scene_12.mp4",
+    "codec": "h264",
+    "width": 720,
+    "height": 1280,
+    "fps": "30",
+    "duration": 4.433333333333334,
+    "frames": 133
+  },
+  "audio": {
+    "codec": "aac",
+    "duration": 4.419,
+    "source_duration": 4.41925,
+    "source_sample_rate": 24000,
+    "decoded_correlation_with_source": 0.9999556206532196,
+    "original_rms": 0.15956891612412444,
+    "decoded_rms": 0.1590344250731567,
+    "decoded_peak": 0.8511962890625,
+    "clipped_samples": 0
+  },
+  "proof_times": [
+    0.1,
+    0.9,
+    1.5,
+    2.2,
+    3.1,
+    4.1
+  ],
+  "user_approval": "pending"
+}

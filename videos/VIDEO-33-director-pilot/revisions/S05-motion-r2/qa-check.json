@@ -1,0 +1,100 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 5.706333333333,
+    "samples": [
+      0.3,
+      2.15,
+      3.15,
+      3.75,
+      4.35,
+      5.3
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.3,
+      2.15,
+      3.15,
+      3.75,
+      5.3
+    ],
+    "checked": 5,
+    "passed": 5
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": true,
+    "files": [
+      ".hyperframes\\artifacts\\snapshots\\6db2195f-805f-4293-8198-1a434f9452ef\\frame-00-at-0.3s.png",
+      ".hyperframes\\artifacts\\snapshots\\6db2195f-805f-4293-8198-1a434f9452ef\\frame-01-at-2.1s.png",
+      ".hyperframes\\artifacts\\snapshots\\6db2195f-805f-4293-8198-1a434f9452ef\\frame-02-at-3.1s.png",
+      ".hyperframes\\artifacts\\snapshots\\6db2195f-805f-4293-8198-1a434f9452ef\\frame-03-at-3.8s.png",
+      ".hyperframes\\artifacts\\snapshots\\6db2195f-805f-4293-8198-1a434f9452ef\\frame-04-at-5.3s.png"
+    ],
+    "times": [
+      0.3,
+      2.15,
+      3.15,
+      3.75,
+      5.3
+    ],
+    "findingFiles": []
+  },
+  "saved": {
+    "id": "9da8540d-353b-4b7d-b0bb-a616eda76cd2",
+    "revision": null,
+    "report": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S05-motion-r2\\.hyperframes\\artifacts\\checks\\9da8540d-353b-4b7d-b0bb-a616eda76cd2.json",
+    "attribution": "unversioned"
+  },
+  "_meta": {
+    "version": "0.8.170",
+    "latestVersion": "0.8.170",
+    "updateAvailable": false
+  }
+}

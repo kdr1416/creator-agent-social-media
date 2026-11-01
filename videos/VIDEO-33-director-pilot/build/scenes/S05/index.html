@@ -1,0 +1,138 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>S05 · Mở thêm một địa điểm</title><script src="assets/gsap.min.js"></script><style>
+@font-face{font-family:PilotDisplay;src:url('assets/segoe-ui-black.ttf');font-weight:900;font-display:block}
+@font-face{font-family:PilotSans;src:url('assets/arial.ttf');font-display:block}
+*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden}
+.composition{position:relative;width:100%;height:100%;overflow:hidden;color:#30313B;font-family:PilotDisplay,sans-serif}
+.ground{position:absolute;inset:0}.art{position:absolute;inset:0;width:720px;height:1280px;overflow:hidden}
+.feature{position:absolute;z-index:10;white-space:nowrap;font-weight:900;line-height:1.24;text-align:center;top:165px;left:210px;width:300px;padding:16px 20px;background:#087BC1;color:#FFFDF4;font-size:56px;letter-spacing:1px;box-shadow:5px 7px 0 #30313b12}
+#p05-photo-shot{position:absolute;left:0;top:280px;width:720px;height:780px;overflow:hidden;opacity:0;z-index:6}
+#p05-photo-shot img{width:100%;height:100%;object-fit:cover;object-position:center;border-top:3.5px solid #30313B;border-bottom:3.5px solid #30313B}
+</style></head><body>
+<div id="v33-s05" class="composition" data-composition-id="v33-s05" data-width="720" data-height="1280" data-start="0" data-duration="5.7063" data-fps="30">
+<div class="ground" style="background:#FFF8E9"></div>
+
+<!-- Shot 1: Map & Mascot SVG -->
+<svg id="p05-art" class="art" xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280" data-layout-allow-overflow>
+  <defs>
+    <filter id="p05-shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="9" stdDeviation="7" flood-color="#796572" flood-opacity=".14"/>
+    </filter>
+  </defs>
+
+  <!-- Mediterranean sea map surface (Biển Địa Trung Hải nhạt) -->
+  <g id="p05-map-board" filter="url(#p05-shadow)">
+    <!-- Sea base -->
+    <rect x="50" y="300" width="620" height="730" rx="16" fill="#E8F4F7" stroke="#30313B" stroke-width="3.5"/>
+    <path d="M50 330H670M50 360H670M50 390H670" stroke="#D3EAF0" stroke-width="1.5"/>
+
+    <!-- Southern Sicily Coastline (Bờ nam đảo Sicily) -->
+    <path d="M52 302 Q200 340 380 320 T668 335 L668 302 Z" fill="#F4E4CE" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+    <text x="500" y="325" font-family="PilotDisplay, sans-serif" font-size="22" font-weight="900" fill="#5D4634" letter-spacing="2">SICILY</text>
+
+    <!-- Waves lines -->
+    <path d="M120 480Q150 470 180 480M280 440Q310 430 340 440M480 490Q510 480 540 490M180 620Q210 610 240 620" fill="none" stroke="#BEDFE8" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Maltese Islands archipelago (Quần đảo Malta: Gozo, Comino, Malta) -->
+    <g id="p05-malta-islands" transform="translate(410, 580)">
+      <!-- Gozo -->
+      <path d="M0 10 C10 0 35 5 40 18 C35 30 15 28 5 22 Z" fill="#FFDA8A" stroke="#30313B" stroke-width="2.8" stroke-linejoin="round"/>
+      <!-- Comino -->
+      <circle cx="48" cy="24" r="5" fill="#FFDA8A" stroke="#30313B" stroke-width="2"/>
+      <!-- Main Island of Malta -->
+      <path d="M58 28 C75 18 115 25 125 45 C130 65 110 82 85 78 C65 75 52 50 58 28 Z" fill="#FFDA8A" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+      <!-- Inner geological contour -->
+      <path d="M68 36 Q95 32 110 48 Q105 68 85 68 Q68 62 68 36" fill="#F8C96E" opacity=".8"/>
+      <!-- Target ring around Malta -->
+      <circle id="p05-target-ring" cx="90" cy="52" r="28" fill="none" stroke="#087BC1" stroke-width="2.8" stroke-dasharray="6 4" opacity="0"/>
+    </g>
+  </g>
+
+  <!-- Pin object (Ghim định vị đồ họa) -->
+  <g id="p05-pin" filter="url(#p05-shadow)" transform="translate(240, 720)">
+    <!-- Pin shadow -->
+    <ellipse cx="0" cy="0" rx="9" ry="4" fill="#6A5A50" opacity=".4"/>
+    <!-- Pin needle -->
+    <line x1="0" y1="0" x2="0" y2="-38" stroke="#30313B" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Pin head -->
+    <circle cx="0" cy="-42" r="16" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+    <circle cx="-5" cy="-47" r="4.5" fill="#FFFDF4"/>
+  </g>
+
+  <!-- Mascot (Mascot cam bo góc ở góc dưới trái) -->
+  <g id="p05-mascot" filter="url(#p05-shadow)" transform="translate(60, 750) scale(1.15)">
+    <!-- Shadow -->
+    <ellipse cx="63" cy="203" rx="60" ry="10" fill="#D7BDA8" opacity=".5"/>
+    <!-- Legs -->
+    <path d="M48 143L41 190L18 194M90 143L98 190L120 194" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+    <!-- Backpack -->
+    <rect x="5" y="55" width="36" height="88" rx="15" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+    <path d="M12 75L30 84" fill="none" stroke="#A2D8ED" stroke-width="3"/>
+    <!-- Far arm (holds pin initially, then releases) -->
+    <g id="p05-arm-far" transform="translate(35, 72)">
+      <path id="p05-far-path" d="M0 0 Q40 -15 85 -25" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+      <circle id="p05-far-hand" cx="85" cy="-25" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+    </g>
+    <!-- Torso -->
+    <path d="M21 31Q24 9 50 12L95 14Q123 16 122 46L115 121Q114 148 86 152L49 149Q20 148 17 123L13 58Q12 42 21 31Z" fill="#FFAA28" stroke="#30313B" stroke-width="3.3"/>
+    <path d="M25 41Q30 25 49 26" fill="none" stroke="#FFD77B" stroke-width="5" stroke-linecap="round"/>
+    <!-- Cap -->
+    <path d="M28 28Q17-8 61-9Q108-13 116 27Z" fill="#A990D5" stroke="#30313B" stroke-width="3"/>
+    <path d="M17 29Q54 14 111 29L131 34Q138 40 127 42L35 39" fill="#8B73C0" stroke="#30313B" stroke-width="3"/>
+    <!-- Eyes -->
+    <g id="p05-eyes">
+      <ellipse cx="62" cy="68" rx="4.6" ry="7" fill="#30313B"/>
+      <ellipse cx="95" cy="67" rx="4.6" ry="7" fill="#30313B"/>
+    </g>
+    <path d="M68 91Q78 103 89 90" fill="none" stroke="#30313B" stroke-width="3.3" stroke-linecap="round"/>
+    <ellipse cx="48" cy="87" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+    <ellipse cx="106" cy="86" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+    <path d="M26 50L18 125" fill="none" stroke="#05669D" stroke-width="6" stroke-linecap="round"/>
+    <!-- Near arm at side -->
+    <g id="p05-arm-near" transform="translate(108, 85)">
+      <path d="M0 0Q12 25 22 10" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="22" cy="10" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+    </g>
+  </g>
+</svg>
+
+<!-- Shot 2: Hard cut to authentic Maltese townhouse photo -->
+<div id="p05-photo-shot">
+  <img src="assets/townhouse.jpg" alt="Maltese townhouse architecture with traditional balcony">
+</div>
+
+<!-- Title Badge: MALTA -->
+<div id="p05-title" class="feature">MALTA</div>
+
+<audio id="v33-s05-voice" class="clip" src="assets/voice.wav" data-start="0" data-duration="5.7063" data-track-index="2"></audio>
+</div>
+<script>
+(()=>{
+  const tl = gsap.timeline({paused:true});
+
+  // 1. Initial State: Mascot holds pin at (240, 720)
+  // Pin moves along with hand towards Malta island (495, 632)
+  tl.fromTo('#p05-pin', {x:0, y:0}, {x:255, y:-88, duration:1.8, ease:'power2.inOut'}, 0.49);
+  tl.to('#p05-far-path', {attr:{d:'M0 0 Q60 -50 185 -70'}, duration:1.8, ease:'power2.inOut'}, 0.49);
+  tl.to('#p05-far-hand', {attr:{cx:185, cy:-70}, duration:1.8, ease:'power2.inOut'}, 0.49);
+
+  // 2. Pin touches Malta at 2.49s, target ring pulses, title badge pops up
+  tl.to('#p05-target-ring', {opacity:1, scale:1.3, transformOrigin:'center', duration:0.4}, 2.35);
+  tl.fromTo('#p05-title', {rotation:-2, y:12, opacity:0}, {rotation:0, y:0, opacity:1, duration:0.35, ease:'back.out(1.2)'}, 2.5);
+
+  // 3. Hand releases pin at 2.7s and pulls back slightly
+  tl.to('#p05-far-path', {attr:{d:'M0 0 Q45 -35 130 -45'}, duration:0.55, ease:'power2.out'}, 2.75);
+  tl.to('#p05-far-hand', {attr:{cx:130, cy:-45}, duration:0.55, ease:'power2.out'}, 2.75);
+  tl.to('#p05-eyes', {x:4, y:-3, duration:0.4}, 2.8);
+
+  // 4. Hard editorial cut right at "bất động sản" (4.35s)
+  // Shot 1 hides, Shot 2 reveals real townhouse photo immediately
+  tl.set('#p05-art', {opacity:0}, 4.35);
+  tl.set('#p05-photo-shot', {opacity:1}, 4.35);
+
+  // Hold cleanly till end of voice
+  tl.to({hold:0}, {hold:1, duration:5.7063, ease:'none'}, 0);
+
+  window.__timelines['v33-s05'] = tl;
+})();
+</script>
+</body></html>

@@ -1,0 +1,29 @@
+[
+  {
+    "scene_id": "scene_04",
+    "source_directory": "videos/tran-minh-nhat-pilot",
+    "selected_export": "renders/tran-minh-nhat-pilot.mp4",
+    "frozen_source": "reference_pilots/scene_04/index.html",
+    "frozen_video": "reference_pilots/scene_04/renders/pilot.mp4",
+    "sha256": "ebbc154b445b67f5e11c372c53825516897ea58f33850643fc8002e6d0432c84",
+    "status": "existing selected pilot; no new render in this handoff task"
+  },
+  {
+    "scene_id": "scene_06",
+    "source_directory": "videos/tran-minh-nhat-style-lab-06-12/scene_06",
+    "selected_export": "renders/scene_06-v4.mp4",
+    "frozen_source": "reference_pilots/scene_06/index.html",
+    "frozen_video": "reference_pilots/scene_06/renders/pilot.mp4",
+    "sha256": "b1357d65a62a916d3f56bf544c2a498711dfc8975879f6c06e7a049888a7eaba",
+    "status": "existing selected pilot; no new render in this handoff task"
+  },
+  {
+    "scene_id": "scene_12",
+    "source_directory": "videos/tran-minh-nhat-style-lab-06-12/scene_12",
+    "selected_export": "renders/scene_12-v6.mp4",
+    "frozen_source": "reference_pilots/scene_12/index.html",
+    "frozen_video": "reference_pilots/scene_12/renders/pilot.mp4",
+    "sha256": "cf8cb7f8dbc7a3782938a51f292d8397f8d32cdc38378d0ecf9f1c9c2617e7df",
+    "status": "existing selected pilot; no new render in this handoff task"
+  }
+]

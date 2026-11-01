@@ -1,0 +1,82 @@
+graph LR
+    subgraph CoreApp["agent/main.py"]
+        Lifespan["FastAPI Lifespan"]
+        ExtWSHandler["ws_handler (Port 9222)"]
+        DashWSEndpoint["/ws/dashboard"]
+    end
+
+    subgraph API["agent/api/"]
+        R_Req["requests.py"]
+        R_Proj["projects.py"]
+        R_Scene["scenes.py"]
+        R_Vid["videos.py"]
+        R_Rev["reviews.py"]
+        R_Jobs["provider_jobs.py"]
+        R_TTS["tts.py"]
+        R_Music["music.py"]
+    end
+
+    subgraph DB["agent/db/"]
+        Schema["schema.py (init_db, WAL)"]
+        CRUD["crud.py (Queries, Locks)"]
+    end
+
+    subgraph Worker["agent/worker/"]
+        Proc["processor.py (WorkerController)"]
+        Limiter["APIRateLimiter"]
+        Parsing["_parsing.py"]
+        AssistWorker["assistant_worker.py"]
+    end
+
+    subgraph SDK["agent/sdk/services/"]
+        OpServ["operations.py (OperationService)"]
+        Reg["registry.py (ProviderRegistry)"]
+        FlowP["flow_provider.py"]
+        AssistP["assistant_provider.py"]
+        MuseP["muse2api_provider.py"]
+        BaseP["provider_base.py (MediaProvider)"]
+        ResH["result_handler.py"]
+    end
+
+    subgraph Services["agent/services/"]
+        FlowClient["flow_client.py"]
+        FlowBatch["flow_batch.py"]
+        Reviewer["video_reviewer.py"]
+        PostProc["post_process.py"]
+        TTSService["tts.py"]
+        SunoService["suno.py"]
+        EventBus["event_bus.py"]
+        SceneChain["scene_chain.py"]
+    end
+
+    Lifespan --> Schema
+    Lifespan --> Proc
+    Lifespan --> OpServ
+    ExtWSHandler --> FlowClient
+    DashWSEndpoint --> EventBus
+
+    API --> CRUD
+    R_Req --> Proc
+    R_Scene --> SceneChain
+    R_Vid --> PostProc
+    R_Rev --> Reviewer
+    R_TTS --> TTSService
+    R_Music --> SunoService
+
+    Proc --> CRUD
+    Proc --> Limiter
+    Proc --> OpServ
+    Proc --> EventBus
+    Proc --> ResH
+
+    OpServ --> Reg
+    Reg --> FlowP
+    Reg --> AssistP
+    Reg --> MuseP
+    FlowP --> FlowClient
+    FlowP --> FlowBatch
+    AssistP --> CRUD
+    FlowClient --> ExtWSHandler
+
+    Reviewer --> PostProc
+    AssistWorker --> R_Jobs

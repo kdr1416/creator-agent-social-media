@@ -1,0 +1,155 @@
+{
+  "ok": false,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 1.88,
+        "selector": "#city-pin > svg:nth-of-type(1) > circle:nth-of-type(1)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 394,
+          "top": 792.05,
+          "right": 402,
+          "bottom": 800.05,
+          "width": 8,
+          "height": 8
+        },
+        "containerSelector": "#city-pin > svg:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 398,
+          "top": 778.05,
+          "right": 433.01,
+          "bottom": 813.05,
+          "width": 35,
+          "height": 35
+        },
+        "overflow": {
+          "left": 4
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 394,
+          "y": 792.05,
+          "width": 8,
+          "height": 8
+        },
+        "firstSeen": 1.343,
+        "lastSeen": 2.954,
+        "occurrences": 4,
+        "heldMs": 1611.0000000000002,
+        "times": [
+          1.343,
+          1.88,
+          2.417,
+          2.954
+        ]
+      }
+    ],
+    "duration": 4.833333333333333,
+    "samples": [
+      0.269,
+      0.806,
+      1.343,
+      1.88,
+      2.417,
+      2.954,
+      3.491,
+      4.028,
+      4.565
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 1,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": false,
+    "errorCount": 1,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "error",
+        "message": "Contrast is 2.1:1; WCAG AA requires 4.5:1.",
+        "text": "BIỂN BẮC",
+        "fg": "rgb(144,183,205)",
+        "bg": "rgb(255,253,249)",
+        "ratio": 2.1,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(95,121,136)",
+        "large": false,
+        "selector": "div > div > div:nth-of-type(2) > svg > text",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 186.3826446533203,
+          "y": 367.2427673339844,
+          "width": 84.54188537597656,
+          "height": 19.124267578125
+        },
+        "time": 0.269,
+        "times": [
+          0.269,
+          1.343,
+          2.417
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      0.269,
+      1.343,
+      2.417,
+      3.491,
+      4.565
+    ],
+    "checked": 8,
+    "passed": 5
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

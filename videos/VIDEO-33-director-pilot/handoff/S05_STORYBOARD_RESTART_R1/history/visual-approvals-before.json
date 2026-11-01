@@ -1,0 +1,76 @@
+{
+  "approved": [
+    {
+      "scene_id": "S05",
+      "version": "final-frame-v3",
+      "approval_status": "approved",
+      "approval_scope": "static final frame / architecture and composition only",
+      "user_message_verbatim": "oke duyệt",
+      "frame_path": "revisions/S05-final-frame-v3/frames/frame-00-at-0.5s.png",
+      "frame_sha256": "10ceeb5299f167a1b8bb8d1577802cb0c3590dd94c74449ab74cc21d10128449",
+      "editable_source": "revisions/S05-final-frame-v3/index.html",
+      "motion_approved": false,
+      "full_film_production_authorized": false,
+      "current_selection": false,
+      "historical_note": "Superseded by owner-approved final frame v5."
+    },
+    {
+      "scene_id": "S09",
+      "version": "final-frame-v2",
+      "approval_status": "approved",
+      "approval_scope": "static final frame / allocation-table visual and composition only",
+      "user_message_verbatim": "duyệt s09 v2",
+      "frame_path": "revisions/final-frames-v2/S09/frames/frame-00-at-0.5s.png",
+      "frame_sha256": "962a09a5e787f14258c5d46ba9a2c5013b00be2d31579188e9a2f6425b499625",
+      "editable_source": "revisions/final-frames-v2/S09/index.html",
+      "motion_approved": false,
+      "full_film_production_authorized": false
+    },
+    {
+      "scene_id": "S05",
+      "version": "final-frame-v5",
+      "approval_status": "approved",
+      "current_selection": true,
+      "approval_scope": "static final album frame",
+      "user_message_verbatim": "oke cảnh ổn rồi. mình duyệt tạo cho mình pilot cảnh s05 đi",
+      "frame_path": "revisions/S05-final-frame-v5/FINAL_FRAME.png",
+      "frame_sha256": "f1fd553cc3f8df5cbc0677b5d4104def3983760cdc730dca9190ac815b76d55b",
+      "editable_source": "revisions/S05-final-frame-v5/index.html",
+      "motion_approved": false,
+      "pilot_render_authorized": true,
+      "full_film_production_authorized": false
+    }
+  ],
+  "not_selected": [
+    {
+      "scene_id": "S05",
+      "version": "final-frames-v2",
+      "status": "rejected_by_user"
+    }
+  ],
+  "pending": [
+    {
+      "scene_id": "S01",
+      "version": "original_pilot",
+      "scope": "pilot"
+    },
+    {
+      "scene_id": "S09",
+      "version": "motion_revision_from_v2",
+      "scope": "motion r1 rendered_pending_user_review"
+    },
+    {
+      "scene_id": "S05",
+      "version": "album-pilot-v5-r1",
+      "scope": "rendered_pending_user_review",
+      "path": "revisions\\S05-album-pilot-v5-r1\\renders\\pilot.mp4"
+    }
+  ],
+  "rejected_motion": [
+    {
+      "scene_id": "S05",
+      "version": "approved-frames-motion-r1",
+      "reason": "User feedback: ảo ảo, phi logic. Superseded by rigid architecture + hinged cover motion r2."
+    }
+  ]
+}

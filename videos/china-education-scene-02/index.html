@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>Đại học Kỹ thuật Hậu cần — scene 02</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:SceneSans;src:url('assets/scene-sans-bold.ttf') format('truetype');font-weight:700;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;background:#FAF8F5}#root{position:relative;width:100%;height:100%;overflow:hidden;color:#0F172A;font-family:SceneSans,sans-serif}
+.clip{position:absolute;inset:0}.ground{background:#FAF8F5}.art{width:100%;height:100%;display:block}
+.label{position:absolute;margin:0;font-size:32px;font-weight:700;line-height:1.15;letter-spacing:-.6px;white-space:nowrap}
+#label-title{left:60px;top:120px;font-size:38px;color:#0F172A}
+#label-sub{left:60px;top:175px;font-size:24px;color:#FF6B2B}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-s02-root" id="root" data-composition-id="scene02" data-width="720" data-height="1280" data-duration="7.564" data-start="0">
+ <div data-hf-id="hf-s02-ground" id="scene02-ground" class="clip ground" data-start="0" data-duration="7.564" data-track-index="0"></div>
+ 
+ <svg data-hf-id="hf-s02-art" id="scene02-art" class="art clip" data-start="0" data-duration="7.564" data-track-index="1" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+   <linearGradient id="glass-facade" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E0F2FE"/><stop offset="1" stop-color="#BAE6FD"/></linearGradient>
+   <linearGradient id="canopy-grad" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#1E293B"/><stop offset="1" stop-color="#0F172A"/></linearGradient>
+   <linearGradient id="jacket" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FF773B"/><stop offset="1" stop-color="#ED5323"/></linearGradient>
+   <radialGradient id="hub-glow"><stop stop-color="#38BDF8" stop-opacity=".4"/><stop offset="1" stop-color="#38BDF8" stop-opacity="0"/></radialGradient>
+  </defs>
+
+  <!-- Atmosphere aura -->
+  <ellipse cx="460" cy="620" rx="240" ry="240" fill="url(#hub-glow)"/>
+  <ellipse cx="215" cy="1040" rx="120" ry="16" fill="#E2E8F0"/>
+  <ellipse cx="480" cy="980" rx="190" ry="22" fill="#E2E8F0"/>
+
+  <!-- Academy Tech Hub Campus Building Architecture -->
+  <g transform="translate(330, 560)">
+   <g id="campus-building">
+    <!-- Main central block -->
+    <rect x="0" y="80" width="280" height="280" rx="16" fill="#FFFFFF" stroke="#94A3B8" stroke-width="3"/>
+    <!-- Glass Curtain Wall Panels -->
+    <g fill="url(#glass-facade)" stroke="#38BDF8" stroke-width="2">
+     <rect x="20" y="105" width="65" height="110" rx="8"/>
+     <rect x="105" y="105" width="70" height="110" rx="8"/>
+     <rect x="195" y="105" width="65" height="110" rx="8"/>
+    </g>
+    <!-- Modern Entrance Canopy -->
+    <rect x="-15" y="240" width="310" height="28" rx="6" fill="url(#canopy-grad)"/>
+    <!-- Entrance glass portal -->
+    <rect x="95" y="268" width="90" height="92" rx="4" fill="#0284C7" opacity=".85"/>
+    <line x1="140" y1="268" x2="140" y2="360" stroke="#FFFFFF" stroke-width="2"/>
+    <!-- Academy Emblem Badge -->
+    <circle cx="140" cy="50" r="32" fill="#FF773B" stroke="#FFFFFF" stroke-width="4"/>
+    <text x="140" y="58" font-size="20" font-family="SceneSans, sans-serif" font-weight="700" fill="#FFFFFF" text-anchor="middle">2025</text>
+   </g>
+  </g>
+
+  <!-- Pillar 1: AI Neural Technology Column (Left) -->
+  <g transform="translate(370, 390)">
+   <g id="pillar-ai">
+    <circle cx="0" cy="0" r="36" fill="#0284C7" stroke="#38BDF8" stroke-width="3"/>
+    <rect x="-16" y="-16" width="32" height="32" rx="6" fill="#FFFFFF"/>
+    <text x="0" y="8" font-size="20" font-family="SceneSans, sans-serif" font-weight="700" fill="#0284C7" text-anchor="middle">AI</text>
+    <!-- Neural Synapse Nodes -->
+    <g stroke="#0284C7" stroke-width="2.5" fill="#38BDF8">
+     <line x1="0" y1="-36" x2="-45" y2="-70"/>
+     <line x1="0" y1="-36" x2="45" y2="-70"/>
+     <line x1="-45" y1="-70" x2="-65" y2="-110"/>
+     <line x1="45" y1="-70" x2="65" y2="-110"/>
+     <circle cx="-45" cy="-70" r="7"/>
+     <circle cx="45" cy="-70" r="7"/>
+     <circle cx="-65" cy="-110" r="6"/>
+     <circle cx="65" cy="-110" r="6"/>
+    </g>
+    <!-- AI Badge Label -->
+    <rect x="-95" y="46" width="190" height="34" rx="17" fill="#E0F2FE" stroke="#BAE6FD" stroke-width="2"/>
+    <text x="0" y="69" font-size="17" font-family="SceneSans, sans-serif" font-weight="700" fill="#0284C7" text-anchor="middle">TRÍ TUỆ NHÂN TẠO</text>
+   </g>
+  </g>
+
+  <!-- Pillar 2: Unmanned Systems Column (Right) -->
+  <g transform="translate(560, 390)">
+   <g id="pillar-uav">
+    <circle cx="0" cy="0" r="36" fill="#EA580C" stroke="#FDBA74" stroke-width="3"/>
+    <!-- Drone pictogram inside -->
+    <ellipse cx="0" cy="0" rx="16" ry="7" fill="#FFFFFF"/>
+    <line x1="-18" y1="-8" x2="18" y2="8" stroke="#FFFFFF" stroke-width="3"/>
+    <line x1="-18" y1="8" x2="18" y2="-8" stroke="#FFFFFF" stroke-width="3"/>
+    <!-- Flight Path Arc -->
+    <path d="M-60 60 C-40 10 20 -50 60 -90" fill="none" stroke="#EA580C" stroke-width="3" stroke-dasharray="6 6"/>
+    <!-- UAV Badge Label -->
+    <rect x="-95" y="46" width="190" height="34" rx="17" fill="#FFEDD5" stroke="#FED7AA" stroke-width="2"/>
+    <text x="0" y="69" font-size="17" font-family="SceneSans, sans-serif" font-weight="700" fill="#C2410C" text-anchor="middle">KHÔNG NGƯỜI LÁI</text>
+   </g>
+  </g>
+
+  <!-- Student Rig: Rear Arm (BEHIND torso) -->
+  <g id="arm-back">
+   <path id="back-sleeve" fill="none" stroke="#D94B20" stroke-width="37" stroke-linecap="round"/>
+   <path id="back-skin" fill="none" stroke="#E9AA83" stroke-width="26" stroke-linecap="round"/>
+   <ellipse id="back-hand" rx="16" ry="13" fill="#F5BF99"/>
+  </g>
+
+  <!-- Student Torso & Head with Backpack Strap -->
+  <g id="student">
+   <g id="legs">
+    <path d="M177 816L173 1005H211L228 864 243 1006H281L271 816Z" fill="#829DAF"/>
+    <path d="M174 997L166 1021Q159 1038 181 1039H219V1019L210 998Z" fill="#316A72"/>
+    <path d="M244 997L243 1038H289Q307 1037 296 1023L278 999Z" fill="#316A72"/>
+   </g>
+   <!-- Torso -->
+   <path d="M185 636Q162 645 157 678L163 820Q212 844 276 820L288 682Q280 646 252 636Z" fill="url(#jacket)"/>
+   <!-- Backpack strap -->
+   <path d="M205 640 L212 815" stroke="#1E293B" stroke-width="9" stroke-linecap="round"/>
+   <path d="M250 640 L256 815" stroke="#1E293B" stroke-width="9" stroke-linecap="round"/>
+   <!-- Head looking toward campus -->
+   <g id="head">
+    <path d="M204 605V652Q220 665 239 649V602" fill="#E5A17D"/>
+    <ellipse cx="218" cy="550" rx="62" ry="75" fill="#172C42"/>
+    <path d="M174 529Q177 497 211 493Q248 489 263 519L266 571Q259 609 228 618Q189 615 177 576Z" fill="#F5BF99"/>
+    <path d="M164 540Q145 486 185 473Q207 453 236 469Q270 476 276 509L259 536 247 510Q213 528 184 514L178 549Z" fill="#172C42"/>
+    <g id="eyes" fill="#172C42"><ellipse cx="235" cy="554" rx="4.7" ry="7"/><ellipse cx="260" cy="555" rx="4" ry="6.5"/></g>
+    <path d="M232 586Q244 595 256 584" fill="none" stroke="#8E4F40" stroke-width="3.5" stroke-linecap="round"/>
+   </g>
+  </g>
+
+  <!-- Student Front Arm (In FRONT of torso) -->
+  <g id="front-arm">
+   <path id="front-sleeve" fill="none" stroke="#FF773B" stroke-width="39" stroke-linecap="round"/>
+   <path id="front-skin" fill="none" stroke="#F5BF99" stroke-width="27" stroke-linecap="round"/>
+   <ellipse id="front-hand" rx="16" ry="13" fill="#F5BF99"/>
+  </g>
+ </svg>
+
+ <div class="label" id="label-title">ĐẠI HỌC KỸ THUẬT HẬU CẦN</div>
+ <div class="label" id="label-sub">Hai Mũi Nhọn: Trí Tuệ Nhân Tạo & Thiết Bị Không Người Lái</div>
+
+ <audio data-hf-id="hf-s02-voice" id="scene02-voice" src="assets/audio.wav" data-start="0" data-duration="7.564" data-track-index="2" data-volume="1"></audio>
+</div>
+
+<script>
+const tl = gsap.timeline({paused:true});
+const front = {x: 240, y: 780}, back = {x: 170, y: 780};
+
+function arm(prefix, sx, sy, ex, ey, l1, l2, bend){
+ const dx = ex - sx, dy = ey - sy, d = Math.min(Math.hypot(dx, dy), l1 + l2 - 0.01),
+       a = Math.atan2(dy, dx), b = Math.acos(Math.max(-1, Math.min(1, (l1 * l1 + d * d - l2 * l2) / (2 * l1 * d))));
+ const elbowX = sx + l1 * Math.cos(a + b * bend), elbowY = sy + l1 * Math.sin(a + b * bend);
+ document.getElementById(prefix + '-sleeve').setAttribute('d', `M${sx},${sy}L${elbowX},${elbowY}`);
+ document.getElementById(prefix + '-skin').setAttribute('d', `M${elbowX},${elbowY}L${ex},${ey}`);
+ const hand = document.getElementById(prefix + '-hand');
+ hand.setAttribute('cx', ex); hand.setAttribute('cy', ey);
+}
+
+function pose(){
+ arm('front', 271, 663, front.x, front.y, 105, 116, 1);
+ arm('back', 180, 674, back.x, back.y, 115, 120, 1);
+}
+pose();
+
+gsap.set(['#label-title', '#label-sub'], {opacity: 0, y: -15});
+gsap.set('#campus-building', {opacity: 0, scale: 0.9, transformOrigin: 'center center'});
+gsap.set(['#pillar-ai', '#pillar-uav'], {opacity: 0, scale: 0.7, transformOrigin: 'center center'});
+
+// Choreography over 7.564s
+// 0.2s: Titles reveal smoothly
+tl.to('#label-title', {opacity: 1, y: 0, duration: 0.6, ease: 'power2.out'}, 0.2)
+  .to('#label-sub', {opacity: 1, y: 0, duration: 0.6, ease: 'power2.out'}, 0.4)
+  
+  // 0.8s: Campus building reveals at its true position
+  .to('#campus-building', {opacity: 1, scale: 1, duration: 1.0, ease: 'power2.out'}, 0.8)
+  
+  // 1.8s: Student raises front arm gesturing toward the university pillars
+  .to(front, {x: 320, y: 710, duration: 1.2, ease: 'power2.out', onUpdate: pose}, 1.5)
+  
+  // 2.2s: AI Tech pillar blooms and activates
+  .to('#pillar-ai', {opacity: 1, scale: 1, duration: 0.8, ease: 'back.out(1.5)'}, 2.2)
+  
+  // 3.8s: UAV Unmanned pillar blooms and activates
+  .to('#pillar-uav', {opacity: 1, scale: 1, duration: 0.8, ease: 'back.out(1.5)'}, 3.8)
+  
+  // 5.5 - 7.564s: Student head and arm settle in proud observing posture
+  .to(front, {x: 290, y: 730, duration: 1.0, ease: 'power1.inOut', onUpdate: pose}, 5.5)
+  .to('#head', {rotation: 3, svgOrigin: '220 610', duration: 0.8, ease: 'power2.inOut'}, 5.8);
+
+window.__timelines = window.__timelines || {};
+window.__timelines['scene02'] = tl;
+</script>
+</body>
+</html>

@@ -1,0 +1,1142 @@
+{
+  "project": "VIDEO-33-director-pilot",
+  "phase": "approved_pilots_ready_for_new_master_assembly",
+  "user_approved": false,
+  "duration": 75.16,
+  "sample_frames": 1803840,
+  "scenes_designed": 14,
+  "pilot_scenes": [
+    "S01",
+    "S05",
+    "S09"
+  ],
+  "pilot_renders": [
+    {
+      "scene_id": "S01",
+      "video": "pilots\\S01\\renders\\pilot.mp4",
+      "file_sha256": "4e111b0e89a34b5bbb56eb5c513b947db7e904f0676c3c51cb17a100f6ac83f5",
+      "video_codec": "h264",
+      "width": 720,
+      "height": 1280,
+      "fps": "30/1",
+      "video_frames": 181,
+      "video_duration": 6.033333,
+      "audio_codec": "aac",
+      "audio_duration": 6.033333,
+      "source_samples": 144466,
+      "source_duration": 6.019416666666666,
+      "picture_tail_over_voice_ms": 13.916333,
+      "voice_pcm_bit_exact_source_range": true,
+      "decoded_audio_correlation": 0.9999120109909785,
+      "decoded_audio_rms": 0.16568832218003604,
+      "decoded_vs_source_rms_ratio": 0.9988339704872932,
+      "hyperframes_check_ok": true,
+      "runtime_error_count": 0,
+      "layout_error_count": 0,
+      "contrast": {
+        "ok": true,
+        "errorCount": 0,
+        "warningCount": 0,
+        "infoCount": 0,
+        "findings": [],
+        "enabled": true,
+        "samples": [
+          0,
+          1.5,
+          3.3,
+          5.8
+        ],
+        "checked": 3,
+        "passed": 3
+      },
+      "motion_assertions_enabled": false,
+      "proofs": [
+        {
+          "at": 0.1,
+          "frame": "qa\\S01\\frame-0.10.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": 1.5,
+          "frame": "qa\\S01\\frame-1.50.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": 3.3,
+          "frame": "qa\\S01\\frame-3.30.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": 5.8,
+          "frame": "qa\\S01\\frame-5.80.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "note": "AAC is lossy; copied PCM stays bit-exact. One-frame picture rounding is not voice stretching. Automated motion assertions were not authored; motion is reviewed with real frames and playback."
+    },
+    {
+      "scene_id": "S05",
+      "video": "pilots\\S05\\renders\\pilot.mp4",
+      "file_sha256": "e24876dd818221cc7c541aa31311e5a30640b12762d15510d463d845ba352e50",
+      "video_codec": "h264",
+      "width": 720,
+      "height": 1280,
+      "fps": "30/1",
+      "video_frames": 172,
+      "video_duration": 5.733333,
+      "audio_codec": "aac",
+      "audio_duration": 5.733333,
+      "source_samples": 136952,
+      "source_duration": 5.706333333333333,
+      "picture_tail_over_voice_ms": 26.999667,
+      "voice_pcm_bit_exact_source_range": true,
+      "decoded_audio_correlation": 0.9987810262133117,
+      "decoded_audio_rms": 0.11010452668166854,
+      "decoded_vs_source_rms_ratio": 0.7752028623396335,
+      "hyperframes_check_ok": true,
+      "runtime_error_count": 0,
+      "layout_error_count": 0,
+      "contrast": {
+        "ok": true,
+        "errorCount": 0,
+        "warningCount": 0,
+        "infoCount": 0,
+        "findings": [],
+        "enabled": true,
+        "samples": [
+          0,
+          1,
+          2.1,
+          4,
+          5.5
+        ],
+        "checked": 1,
+        "passed": 1
+      },
+      "motion_assertions_enabled": false,
+      "proofs": [
+        {
+          "at": 0.1,
+          "frame": "qa\\S05\\frame-0.10.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": 1.0,
+          "frame": "qa\\S05\\frame-1.00.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": 2.1,
+          "frame": "qa\\S05\\frame-2.10.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": 5.5,
+          "frame": "qa\\S05\\frame-5.50.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "note": "AAC is lossy; copied PCM stays bit-exact. One-frame picture rounding is not voice stretching. Automated motion assertions were not authored; motion is reviewed with real frames and playback."
+    },
+    {
+      "scene_id": "S09",
+      "video": "pilots\\S09\\renders\\pilot.mp4",
+      "file_sha256": "18027acb1c27293a61b6a3f996c88d9606f480a86fdbe2bae5fc4b80ecb74e63",
+      "video_codec": "h264",
+      "width": 720,
+      "height": 1280,
+      "fps": "30/1",
+      "video_frames": 224,
+      "video_duration": 7.466667,
+      "audio_codec": "aac",
+      "audio_duration": 7.466667,
+      "source_samples": 178822,
+      "source_duration": 7.450916666666667,
+      "picture_tail_over_voice_ms": 15.750333,
+      "voice_pcm_bit_exact_source_range": true,
+      "decoded_audio_correlation": 0.9999078024413619,
+      "decoded_audio_rms": 0.14664183208101447,
+      "decoded_vs_source_rms_ratio": 0.9982199447262226,
+      "hyperframes_check_ok": true,
+      "runtime_error_count": 0,
+      "layout_error_count": 0,
+      "contrast": {
+        "ok": true,
+        "errorCount": 0,
+        "warningCount": 0,
+        "infoCount": 0,
+        "findings": [],
+        "enabled": true,
+        "samples": [
+          0,
+          2.6,
+          4.3,
+          7.2
+        ],
+        "checked": 2,
+        "passed": 2
+      },
+      "motion_assertions_enabled": false,
+      "proofs": [
+        {
+          "at": 0.1,
+          "frame": "qa\\S09\\frame-0.10.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": 2.6,
+          "frame": "qa\\S09\\frame-2.60.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": 4.3,
+          "frame": "qa\\S09\\frame-4.30.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": 7.2,
+          "frame": "qa\\S09\\frame-7.20.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "note": "AAC is lossy; copied PCM stays bit-exact. One-frame picture rounding is not voice stretching. Automated motion assertions were not authored; motion is reviewed with real frames and playback."
+    }
+  ],
+  "remaining_scenes": 11,
+  "remaining_scenes_status": "design_only_not_authorized_for_render_in_this_turn",
+  "full_film_rendered": false,
+  "source_integrity": "qa/source-integrity.json",
+  "review_entry": "revisions/S05-album-pilot-v5-r1/REVIEW.html",
+  "publication_hold": [],
+  "auditory_review": "Source WAV made available for playback; independent perceptual listening/phonetic adjudication is not established by tool output. ASR uncertainties remain explicit. No voice edits.",
+  "playback_review": "Three encoded MP4s observed to complete in native browser; qa/playback-review.json. No independent perceptual listening/phonetic verification claimed.",
+  "workflow_capabilities": {
+    "flow_health": "unreachable",
+    "flow_generation_used": false,
+    "hyperframes_version": "0.8.170",
+    "usage": "unknown / usage_request_failed",
+    "skills_update": "attempt failed ENOTFOUND registry.npmjs.org; already-installed workflow read and used, no successful update",
+    "audio_fallback_used": false,
+    "renderer": "actual HyperFrames, screenshot capture, NVIDIA hardware GPU"
+  },
+  "next_action": "Antigravity assembles new master using handoff/MASTER_APPROVED_ASSEMBLY_R1/ANTIGRAVITY_PROMPT.md and reviews full-film seams and voice.",
+  "storyboard_visual_sheet": "STORYBOARD.html: S05 historical pictures superseded; use linked restart script; no new frame.",
+  "content_confirmations": [
+    {
+      "claim_id": "S10_price_3_8_billion_VND",
+      "user_message_verbatim": "mình xác minh text \"3.8 tỷ\"",
+      "confirmed_by": "project owner in this chat",
+      "confirmation_status": "owner_confirmed",
+      "canonical_text": "khoảng 3,8 tỷ đồng",
+      "scope": "Price text in original narration; no new all-inclusive or property-purchase-price claim.",
+      "independently_verified_by_codex": false,
+      "supporting_cost_breakdown_supplied": false,
+      "director_price_hold": "resolved_by_owner_confirmation",
+      "storyboard_pilot_approval": "pending",
+      "full_film_production_authorized": false,
+      "audio_or_pilot_render_changes": false
+    }
+  ],
+  "approval_scope": "Approved: S01 original pilot, S09 motion r1 pilot, and S05 restart R1 storyboard. S05 frame/motion not yet approved. Album v5 rejected. No full-film authorization.",
+  "visual_approvals": {
+    "approved": [
+      {
+        "scene_id": "S05",
+        "version": "final-frame-v3",
+        "approval_status": "superseded_not_current",
+        "approval_scope": "static final frame / architecture and composition only",
+        "user_message_verbatim": "oke duyệt",
+        "frame_path": "revisions/S05-final-frame-v3/frames/frame-00-at-0.5s.png",
+        "frame_sha256": "10ceeb5299f167a1b8bb8d1577802cb0c3590dd94c74449ab74cc21d10128449",
+        "editable_source": "revisions/S05-final-frame-v3/index.html",
+        "motion_approved": false,
+        "full_film_production_authorized": false,
+        "current_selection": false,
+        "historical_note": "S05 design restarted; latest user explicitly rejects album v5."
+      },
+      {
+        "scene_id": "S09",
+        "version": "final-frame-v2",
+        "approval_status": "approved",
+        "approval_scope": "static final frame / allocation-table visual and composition only",
+        "user_message_verbatim": "duyệt s09 v2",
+        "frame_path": "revisions/final-frames-v2/S09/frames/frame-00-at-0.5s.png",
+        "frame_sha256": "962a09a5e787f14258c5d46ba9a2c5013b00be2d31579188e9a2f6425b499625",
+        "editable_source": "revisions/final-frames-v2/S09/index.html",
+        "motion_approved": false,
+        "full_film_production_authorized": false
+      },
+      {
+        "scene_id": "S05",
+        "version": "final-frame-v5",
+        "approval_status": "rejected_by_latest_user_instruction",
+        "current_selection": false,
+        "approval_scope": "static final album frame",
+        "user_message_verbatim": "oke cảnh ổn rồi. mình duyệt tạo cho mình pilot cảnh s05 đi",
+        "frame_path": "revisions/S05-final-frame-v5/FINAL_FRAME.png",
+        "frame_sha256": "f1fd553cc3f8df5cbc0677b5d4104def3983760cdc730dca9190ac815b76d55b",
+        "editable_source": "revisions/S05-final-frame-v5/index.html",
+        "motion_approved": false,
+        "pilot_render_authorized": false,
+        "full_film_production_authorized": false,
+        "historical_note": "S05 design restarted; latest user explicitly rejects album v5.",
+        "latest_user_message_verbatim": "frame abum s05 v5 toio khong duyệt. yêu cầu viết lại kịch bản storyboard của s05 từ đầu luôn."
+      },
+      {
+        "scene_id": "S01",
+        "version": "original_pilot",
+        "approval_status": "approved",
+        "approval_scope": "pilot motion with original voice",
+        "video_path": "pilots/S01/renders/pilot.mp4",
+        "absolute_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\pilots\\S01\\renders\\pilot.mp4",
+        "video_sha256": "4e111b0e89a34b5bbb56eb5c513b947db7e904f0676c3c51cb17a100f6ac83f5",
+        "user_message_verbatim": "S01 bản đầu + S09 motion r1",
+        "full_film_production_authorized": false
+      },
+      {
+        "scene_id": "S09",
+        "version": "motion-r1",
+        "approval_status": "approved",
+        "approval_scope": "pilot motion with original voice",
+        "video_path": "revisions/pilots-approved-frames-r1/S09/renders/pilot.mp4",
+        "absolute_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\pilots-approved-frames-r1\\S09\\renders\\pilot.mp4",
+        "video_sha256": "a6cbf6ec62a12bf74f4cdcc076f27c1ac839f4e984c35aeba1bf2dc9b44cd90e",
+        "user_message_verbatim": "S01 bản đầu + S09 motion r1",
+        "full_film_production_authorized": false
+      },
+      {
+        "scene_id": "S05",
+        "version": "S05_STORYBOARD_RESTART_R1",
+        "approval_status": "approved",
+        "approval_scope": "storyboard concept and direction only; pilot production may proceed for review",
+        "user_message_verbatim": "oke duyệt",
+        "approved_direction": "Mascot đặt ghim Malta trên bản đồ rồi cắt sang ảnh nhà thật tại bất động sản",
+        "frame_approved": false,
+        "motion_approved": false,
+        "full_film_production_authorized": false
+      },
+      {
+        "version": "S07-S08-design-r1",
+        "approval_status": "approved",
+        "approval_date_local": "2026-10-27",
+        "timezone": "Asia/Saigon",
+        "user_message_verbatim": "oke duyệt cái này",
+        "approval_scope": "S07 and S08 static frames, character design, composition and proposed action sequence",
+        "motion_approved": false,
+        "master_replacement_approved": false,
+        "remaining_scene_proposals_approved": false,
+        "frames": [
+          {
+            "file": "S07\\01-ready\\frames\\frame-00-at-0.5s.png",
+            "sha256": "fda00b4413fbdda30b866dbca32fd0c33c0093ffc58487e8a32d36450d95b3b1"
+          },
+          {
+            "file": "S07\\02-contact\\frames\\frame-00-at-0.5s.png",
+            "sha256": "a9c298bac861f30bfae622e7762688587931d276e3e989f60c38aa9a1763eeb6"
+          },
+          {
+            "file": "S07\\03-connected\\frames\\frame-00-at-0.5s.png",
+            "sha256": "cef9cbf7353f7e589ea9d6f607cc90ce76e4a0a9b0df022514ebe1c4cc2093ec"
+          },
+          {
+            "file": "S08\\01-arrive\\frames\\frame-00-at-0.5s.png",
+            "sha256": "f03f691412320fc1d56f82f948c526bbffa2f9e98993ec715d9648a6b5287b7b"
+          },
+          {
+            "file": "S08\\02-greet\\frames\\frame-00-at-0.5s.png",
+            "sha256": "f772f3f88dd4532808804ca5f5da6f6de83f7ef0bf827cd2daa9dc2cb53c55f7"
+          },
+          {
+            "file": "S08\\03-study\\frames\\frame-00-at-0.5s.png",
+            "sha256": "896ffe4bfc26af6377e9320268368c248e383c225805bdef1ec949b7ff9fdab5"
+          },
+          {
+            "file": "S08\\04-living\\frames\\frame-00-at-0.5s.png",
+            "sha256": "3320b7e69a82d42446686e298b2863189971ab2e7f35c405b5966f5642593cbe"
+          },
+          {
+            "file": "S08\\05-work\\frames\\frame-00-at-0.5s.png",
+            "sha256": "7673094110caea0767a8f8eb1b25a544f0e222298fc2e2b31ad5a18684fa525a"
+          }
+        ],
+        "scene_ids": [
+          "S07",
+          "S08"
+        ],
+        "frame_base_path": "revisions/S07-S08-design-r1"
+      },
+      {
+        "scene_id": "S07",
+        "version": "S07-S08-motion-r1",
+        "approval_status": "approved",
+        "approval_scope": "pilot motion with original voice",
+        "approval_date_local": "2026-10-27",
+        "timezone": "Asia/Saigon",
+        "user_message_verbatim": "duyệt 2 pilot",
+        "video_path": "revisions/S07-S08-motion-r1/S07/renders/pilot.mp4",
+        "video_sha256": "f5a1eb22209608ae0edbdc8763523feb886d50caec3088601f8e186c87d89475",
+        "master_replacement_authorized": false,
+        "full_film_production_authorized": false
+      },
+      {
+        "scene_id": "S08",
+        "version": "S07-S08-motion-r1",
+        "approval_status": "approved",
+        "approval_scope": "pilot motion with original voice",
+        "approval_date_local": "2026-10-27",
+        "timezone": "Asia/Saigon",
+        "user_message_verbatim": "duyệt 2 pilot",
+        "video_path": "revisions/S07-S08-motion-r1/S08/renders/pilot.mp4",
+        "video_sha256": "be0a9cd957a3b7f92510a8b3d976473cb0a20ce25be56ef1cf2613b0f12b5bc5",
+        "master_replacement_authorized": false,
+        "full_film_production_authorized": false
+      },
+      {
+        "version": "S06-S11-design-r1",
+        "scene_ids": [
+          "S06",
+          "S11"
+        ],
+        "approval_status": "approved",
+        "approval_scope": "six static frames and action direction; proceed to separate motion pilots for review",
+        "user_message_verbatim": "oke tiếp theo",
+        "interpretation": "Approval of the displayed frame round and instruction to proceed to the next motion step.",
+        "approval_date_local": "2026-10-27",
+        "motion_approved": false,
+        "full_film_authorized": false,
+        "frames": [
+          {
+            "file": "S06\\01-ready\\frames\\frame-00-at-0.5s.png",
+            "sha256": "dafb6b401333d90352da3808d2d2432050c42ae75914d1e045482d2205e1e24d"
+          },
+          {
+            "file": "S06\\02-pull\\frames\\frame-00-at-0.5s.png",
+            "sha256": "befdf631e9ed3db9a68b1ffa53c1452ed3d77d06ea4a5305728ef970301b7a79"
+          },
+          {
+            "file": "S06\\03-together\\frames\\frame-00-at-0.5s.png",
+            "sha256": "8ddcbbecebbb56f5a901c6bc16cdb115acba7076b743b57fef732458ba45827e"
+          },
+          {
+            "file": "S11\\01-offer\\frames\\frame-00-at-0.5s.png",
+            "sha256": "67561062b541b0ea0fd0c95546668f0c12cda6dd2b148ad5549c484c32f45e98"
+          },
+          {
+            "file": "S11\\02-receive\\frames\\frame-00-at-0.5s.png",
+            "sha256": "d97200194780bb9ab8c8028ad098c502caaf6fb4b92b74484ae28590607a5a8c"
+          },
+          {
+            "file": "S11\\03-packed\\frames\\frame-00-at-0.5s.png",
+            "sha256": "6df389f0c6e538d0743fb3e953169674bc1aec2e462f5141e2481d09d4f42630"
+          }
+        ]
+      },
+      {
+        "scene_id": "S06",
+        "version": "S06-S11-motion-r1",
+        "approval_status": "approved",
+        "approval_scope": "pilot motion with original voice",
+        "user_message_verbatim": "mình duyệt s06 và s11. tiếp tục làm frame s10 và s12 đi",
+        "approval_date_local": "2026-10-27",
+        "video_path": "revisions/S06-S11-motion-r1/S06/renders/pilot.mp4",
+        "video_sha256": "c8ed21880a6a85ace4741f274ecac9bc04b6debec5823a8f9a641a211de05e51",
+        "master_replacement_authorized": false,
+        "full_film_production_authorized": false
+      },
+      {
+        "scene_id": "S11",
+        "version": "S06-S11-motion-r1",
+        "approval_status": "approved",
+        "approval_scope": "pilot motion with original voice",
+        "user_message_verbatim": "mình duyệt s06 và s11. tiếp tục làm frame s10 và s12 đi",
+        "approval_date_local": "2026-10-27",
+        "video_path": "revisions/S06-S11-motion-r1/S11/renders/pilot.mp4",
+        "video_sha256": "8c2a703c3d78fedf4e696036933f5b6a60b6693c6f36043392fe10ac35766398",
+        "master_replacement_authorized": false,
+        "full_film_production_authorized": false
+      },
+      {
+        "version": "S10-S12-design-r1",
+        "scene_ids": [
+          "S10",
+          "S12"
+        ],
+        "approval_status": "approved",
+        "approval_scope": "static visual designs for S10 and S12 as shown in design-r1; does not approve rendered motion or lock internal word cues",
+        "approval_date_local": "2026-10-27",
+        "timezone": "Asia/Saigon",
+        "user_message_verbatim": "mình duyệt 2 frame S10–S12.",
+        "motion_approved": false,
+        "master_replacement_authorized": false,
+        "reference_frame_manifest": [
+          {
+            "file": "S10\\01-cost\\frames\\frame-00-at-0.5s.png",
+            "sha256": "3fea5338090e42472b938bd1d44cb8e105c44f367a3b5059d4eae3c07c245aae"
+          },
+          {
+            "file": "S10\\02-arrive\\frames\\frame-00-at-0.5s.png",
+            "sha256": "43efdc6d7cccd371b16b60fe2525f8295e8e72cf3d714b26f5f9dc2fd106d232"
+          },
+          {
+            "file": "S10\\03-family\\frames\\frame-00-at-0.5s.png",
+            "sha256": "62028759ee3b3c56349aed3d92fc1d8a16d6318745e38bc50386934dd6a0cb5c"
+          },
+          {
+            "file": "S12\\01-ready\\frames\\frame-00-at-0.5s.png",
+            "sha256": "76df08d60326145e55d50523b8fe322789d58b221c2aa17274a464ca7f72e20f"
+          },
+          {
+            "file": "S12\\02-press\\frames\\frame-00-at-0.5s.png",
+            "sha256": "9fedac74dac2b5e510f56089f2cd5bf42c61627d34e0ee13b8d1c2ae349c12a0"
+          },
+          {
+            "file": "S12\\03-result\\frames\\frame-00-at-0.5s.png",
+            "sha256": "d76da80cc849b66c9d99c2b3d92494bcc62657c7898a5d533c275ad2f98f1f70"
+          }
+        ]
+      },
+      {
+        "scene_id": "S10",
+        "version": "S10-S12-motion-r1",
+        "approval_status": "approved",
+        "approval_scope": "pilot motion with original voice",
+        "approval_date_local": "2026-10-27",
+        "user_message_verbatim": "oke duyệt. tiếp tục đi",
+        "video_path": "revisions/S10-S12-motion-r1/S10/renders/pilot.mp4",
+        "video_sha256": "826e690c8bb30d88bcee94011f13ddd9743969fea2180ea90f057bd6d7602111",
+        "master_replacement_authorized": false,
+        "full_film_production_authorized": false
+      },
+      {
+        "scene_id": "S12",
+        "version": "S10-S12-motion-r1",
+        "approval_status": "approved",
+        "approval_scope": "pilot motion with original voice",
+        "approval_date_local": "2026-10-27",
+        "user_message_verbatim": "oke duyệt. tiếp tục đi",
+        "video_path": "revisions/S10-S12-motion-r1/S12/renders/pilot.mp4",
+        "video_sha256": "3f29380666fad23ba12ba5ac284dfe27e4e6aab4131f2ff5bd840837a0c16b51",
+        "master_replacement_authorized": false,
+        "full_film_production_authorized": false
+      },
+      {
+        "version": "S13-S14-design-r1",
+        "scene_ids": [
+          "S13",
+          "S14"
+        ],
+        "approval_status": "approved",
+        "approval_scope": "static frame images, visual design and proposed action direction; not rendered motion",
+        "approval_date_local": "2026-10-27",
+        "timezone": "Asia/Saigon",
+        "user_message_verbatim": "oke mình duyệt các hình ảnh frame",
+        "reference_frame_manifest": [
+          {
+            "file": "S13\\01-student\\frames\\frame-00-at-0.5s.png",
+            "sha256": "30871558c3063d3e252bcc1f6522f670a47e4b713c21e732ad15f4b7449745ec"
+          },
+          {
+            "file": "S13\\02-local\\frames\\frame-00-at-0.5s.png",
+            "sha256": "4843a043da22300fbaafd1ad18ec0218e46dc79696cf57ec49f67448be97da3f"
+          },
+          {
+            "file": "S13\\03-expand\\frames\\frame-00-at-0.5s.png",
+            "sha256": "6a8165515e52e4ed8b0bf3c23e734e828d0d6a361428853030d89d5963806c66"
+          },
+          {
+            "file": "S14\\01-key\\frames\\frame-00-at-0.5s.png",
+            "sha256": "696c599908b7c25f61268d4b05ed694253013a61fca05881ebdeda1103950a37"
+          },
+          {
+            "file": "S14\\02-gate\\frames\\frame-00-at-0.5s.png",
+            "sha256": "9aef635df5ff4bd5c9d20bb7b056a6dda5e4c5dc42f3668f3676df1f2687ef9b"
+          },
+          {
+            "file": "S14\\03-open\\frames\\frame-00-at-0.5s.png",
+            "sha256": "ee6b799646e8078e1bf4dd65482165cdc8971f941398235398e51e73a9405443"
+          }
+        ],
+        "motion_approved": false,
+        "master_replacement_authorized": false,
+        "full_film_production_authorized": false
+      }
+    ],
+    "not_selected": [
+      {
+        "scene_id": "S05",
+        "version": "final-frames-v2",
+        "status": "rejected_by_user"
+      }
+    ],
+    "pending": [],
+    "rejected_motion": [
+      {
+        "scene_id": "S05",
+        "version": "approved-frames-motion-r1",
+        "reason": "User feedback: ảo ảo, phi logic. Superseded by rigid architecture + hinged cover motion r2."
+      }
+    ]
+  },
+  "latest_motion_revision": "revisions/S05-album-pilot-v5-r1",
+  "revised_pilot_renders": [
+    {
+      "scene_id": "S05",
+      "revision": "album-pilot-v5-r1",
+      "based_on": "approved S05 final-frame-v5",
+      "duration": 5.706333333333333,
+      "source_start_sample": 435629,
+      "source_end_sample": 572581,
+      "signature": "Finish opening an already held photographic album from a lifted right half to the approved flat spread. Hands track two page-margin points throughout. The real house never becomes a separate object.",
+      "opening_interval": [
+        2.42,
+        4.77
+      ],
+      "initial_angle": 50,
+      "hinge": [
+        350,
+        780
+      ],
+      "perspective": 1400,
+      "grips": {
+        "far": [
+          [
+            480,
+            590
+          ],
+          [
+            502.5,
+            497.2
+          ]
+        ],
+        "near": [
+          [
+            610,
+            595
+          ],
+          [
+            594.9,
+            509.3
+          ]
+        ]
+      },
+      "proof_times": [
+        0.15,
+        2.2,
+        3.15,
+        3.75,
+        4.5,
+        5.35
+      ],
+      "approval": "historical_rejected_direction_do_not_use_as_current",
+      "original_voice_sha256": "662198c94d17a7fdb75a120490c24b3399744eb4b9c70361524153488c3e65bf",
+      "static_reference_sha256": "f1fd553cc3f8df5cbc0677b5d4104def3983760cdc730dca9190ac815b76d55b",
+      "video_path": "revisions\\S05-album-pilot-v5-r1\\renders\\pilot.mp4",
+      "video_sha256": "4c791e18d43440e6f2378fd773420e59f4cc154bc327c5be61f80341154c99fd",
+      "video_duration": 5.733333,
+      "audio_duration": 5.733333,
+      "video_frames": 172,
+      "original_pcm_bit_exact": true,
+      "aac_correlation": 0.9987810262133117,
+      "decoded_rms": 0.11010452668166854,
+      "hyperframes_check_ok": true,
+      "findings": {
+        "lint": [],
+        "runtime": [],
+        "layout": [],
+        "contrast": []
+      },
+      "approved_static_frame": "revisions/S05-final-frame-v5/FINAL_FRAME.png",
+      "lossless_final_frame_mean_pixel_difference": 0.005629340277777777,
+      "S09_sha256_unchanged": "a6cbf6ec62a12bf74f4cdcc076f27c1ac839f4e984c35aeba1bf2dc9b44cd90e",
+      "motion_status": "rendered_pending_user_review",
+      "browser_playback": "pending"
+    },
+    {
+      "scene_id": "S09",
+      "revision": "approved-frames-motion-r1",
+      "based_on_approved_frame": "S09-v2",
+      "duration": 7.450916666666667,
+      "source_start_sample": 955202,
+      "source_end_sample": 1134024,
+      "proof_times": [
+        0.15,
+        2.55,
+        3.65,
+        4.85,
+        7.1
+      ],
+      "motion_approval": "pending_user_review",
+      "final_frame_approval": "previously_approved",
+      "timing_evidence": "Original whisper_raw word times used as approximate cue evidence, not independent perceptual listening. S05 bất động sản at 22.50s global ~=4.349s local. S09 nhiều thị trường at 42.24s global ~=2.440s local.",
+      "signature": "Mechanical selector rotates; six differentiated asset tokens travel authored curved channels from tray to three markets; buildings develop at arrival; no profit or guarantee symbols.",
+      "video_path": "revisions\\pilots-approved-frames-r1\\S09\\renders\\pilot.mp4",
+      "video_sha256": "a6cbf6ec62a12bf74f4cdcc076f27c1ac839f4e984c35aeba1bf2dc9b44cd90e",
+      "video_frames": 224,
+      "video_duration": 7.466667,
+      "audio_duration": 7.466667,
+      "original_pcm_bit_exact": true,
+      "aac_correlation": 0.9999078024413619,
+      "decoded_rms": 0.14664183208101447,
+      "hyperframes_check_ok": true,
+      "layout_warnings": [
+        {
+          "code": "rotation_pivot_drift",
+          "severity": "warning",
+          "time": 7.1,
+          "selector": "#r09-selector",
+          "dataAttributes": {},
+          "sourceFile": "index.html",
+          "bbox": {
+            "x": 198,
+            "y": 478,
+            "width": 55,
+            "height": 70
+          },
+          "rect": {
+            "left": 198,
+            "top": 478,
+            "right": 253,
+            "bottom": 548,
+            "width": 55,
+            "height": 70
+          },
+          "message": "Rotating element's bounding-box center drifts 19px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).",
+          "fixHint": "The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.",
+          "firstSeen": 7.1,
+          "lastSeen": 7.1,
+          "occurrences": 1,
+          "heldMs": 0,
+          "times": [
+            7.1
+          ]
+        }
+      ],
+      "warning_interpretation": "S09 rotation_pivot_drift is intentional: selector rotates about the visible pin at (211,528), not its bounding-box center. Keep the physical hinge.",
+      "final_frame_approved_reference": "revisions/final-frames-v2/S09/frames/frame-00-at-0.5s.png",
+      "final_frame_mean_absolute_pixel_error": 1.9727029079861111,
+      "final_frame_pixel_match_fraction": 0.2678266059027778,
+      "frame_proofs": [
+        "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-0.15.png",
+        "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-2.55.png",
+        "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-3.65.png",
+        "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-4.85.png",
+        "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-7.10.png"
+      ],
+      "motion_status": "rendered_pending_user_review"
+    }
+  ],
+  "latest_motion_revisions": {
+    "S05": "revisions/S05-album-pilot-v5-r1",
+    "S09": "revisions/pilots-approved-frames-r1/S09"
+  },
+  "rejected_motion_revisions": [
+    {
+      "scene": "S05",
+      "revision": "pilots-approved-frames-r1",
+      "reason": "User: ảo ảo, phi logic. Affine stretch of facade / gallery removed in r2."
+    }
+  ],
+  "proposed_final_frames": {},
+  "approved_pilots": [
+    {
+      "scene_id": "S01",
+      "version": "original_pilot",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "video_path": "pilots/S01/renders/pilot.mp4",
+      "absolute_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\pilots\\S01\\renders\\pilot.mp4",
+      "video_sha256": "4e111b0e89a34b5bbb56eb5c513b947db7e904f0676c3c51cb17a100f6ac83f5",
+      "user_message_verbatim": "S01 bản đầu + S09 motion r1",
+      "full_film_production_authorized": false
+    },
+    {
+      "scene_id": "S09",
+      "version": "motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "video_path": "revisions/pilots-approved-frames-r1/S09/renders/pilot.mp4",
+      "absolute_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\pilots-approved-frames-r1\\S09\\renders\\pilot.mp4",
+      "video_sha256": "a6cbf6ec62a12bf74f4cdcc076f27c1ac839f4e984c35aeba1bf2dc9b44cd90e",
+      "user_message_verbatim": "S01 bản đầu + S09 motion r1",
+      "full_film_production_authorized": false
+    },
+    {
+      "scene_id": "S07",
+      "version": "S07-S08-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "approval_date_local": "2026-10-27",
+      "timezone": "Asia/Saigon",
+      "user_message_verbatim": "duyệt 2 pilot",
+      "video_path": "revisions/S07-S08-motion-r1/S07/renders/pilot.mp4",
+      "video_sha256": "f5a1eb22209608ae0edbdc8763523feb886d50caec3088601f8e186c87d89475",
+      "master_replacement_authorized": false,
+      "full_film_production_authorized": false
+    },
+    {
+      "scene_id": "S08",
+      "version": "S07-S08-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "approval_date_local": "2026-10-27",
+      "timezone": "Asia/Saigon",
+      "user_message_verbatim": "duyệt 2 pilot",
+      "video_path": "revisions/S07-S08-motion-r1/S08/renders/pilot.mp4",
+      "video_sha256": "be0a9cd957a3b7f92510a8b3d976473cb0a20ce25be56ef1cf2613b0f12b5bc5",
+      "master_replacement_authorized": false,
+      "full_film_production_authorized": false
+    },
+    {
+      "scene_id": "S06",
+      "version": "S06-S11-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "user_message_verbatim": "mình duyệt s06 và s11. tiếp tục làm frame s10 và s12 đi",
+      "approval_date_local": "2026-10-27",
+      "video_path": "revisions/S06-S11-motion-r1/S06/renders/pilot.mp4",
+      "video_sha256": "c8ed21880a6a85ace4741f274ecac9bc04b6debec5823a8f9a641a211de05e51",
+      "master_replacement_authorized": false,
+      "full_film_production_authorized": false
+    },
+    {
+      "scene_id": "S11",
+      "version": "S06-S11-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "user_message_verbatim": "mình duyệt s06 và s11. tiếp tục làm frame s10 và s12 đi",
+      "approval_date_local": "2026-10-27",
+      "video_path": "revisions/S06-S11-motion-r1/S11/renders/pilot.mp4",
+      "video_sha256": "8c2a703c3d78fedf4e696036933f5b6a60b6693c6f36043392fe10ac35766398",
+      "master_replacement_authorized": false,
+      "full_film_production_authorized": false
+    },
+    {
+      "scene_id": "S10",
+      "version": "S10-S12-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "approval_date_local": "2026-10-27",
+      "user_message_verbatim": "oke duyệt. tiếp tục đi",
+      "video_path": "revisions/S10-S12-motion-r1/S10/renders/pilot.mp4",
+      "video_sha256": "826e690c8bb30d88bcee94011f13ddd9743969fea2180ea90f057bd6d7602111",
+      "master_replacement_authorized": false,
+      "full_film_production_authorized": false
+    },
+    {
+      "scene_id": "S12",
+      "version": "S10-S12-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "approval_date_local": "2026-10-27",
+      "user_message_verbatim": "oke duyệt. tiếp tục đi",
+      "video_path": "revisions/S10-S12-motion-r1/S12/renders/pilot.mp4",
+      "video_sha256": "3f29380666fad23ba12ba5ac284dfe27e4e6aab4131f2ff5bd840837a0c16b51",
+      "master_replacement_authorized": false,
+      "full_film_production_authorized": false
+    },
+    {
+      "version": "S13-S14-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "approval_date_local": "2026-10-27",
+      "timezone": "Asia/Saigon",
+      "user_message_verbatim": "oke mình duyêt 2 pilot. vậy là ổn rồi ha",
+      "master_replacement_authorized": false,
+      "full_film_production_authorized": false,
+      "scene_id": "S13",
+      "video_path": "revisions/S13-S14-motion-r1/S13/renders/pilot.mp4",
+      "video_sha256": "73676f61aa285dc49799ed3394125149ab1f02504fa2707215e476dbb4c8a6c6"
+    },
+    {
+      "version": "S13-S14-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "approval_date_local": "2026-10-27",
+      "timezone": "Asia/Saigon",
+      "user_message_verbatim": "oke mình duyêt 2 pilot. vậy là ổn rồi ha",
+      "master_replacement_authorized": false,
+      "full_film_production_authorized": false,
+      "scene_id": "S14",
+      "video_path": "revisions/S13-S14-motion-r1/S14/renders/pilot.mp4",
+      "video_sha256": "46a222ac80b7a91d1a2ce39db0c39d2ed3d8c544eab3006858f3f3c081138f38"
+    },
+    {
+      "scene_id": "S05",
+      "version": "S05-zoom-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice; selected for new master assembly",
+      "approval_date_local": "2026-10-27",
+      "user_message_verbatim": "oke giờ bàn giao cho antigravity ghép các bản đã duyệt vào master mới và xem lại mạch phim, chuyển cảnh, đồng bộ voice một lượt di",
+      "video_path": "revisions/S05-zoom-motion-r1/renders/pilot.mp4",
+      "video_sha256": "c53f14fdaff26500bac4bcd529fc6aee614a4126c3c87c8b35e72a12365f6a7b",
+      "master_assembly_authorized": true,
+      "publication_authorized": false
+    }
+  ],
+  "active_S05_storyboard": "handoff/S05_STORYBOARD_RESTART_R1/S05_STORYBOARD.json",
+  "active_S05_frame": null,
+  "S07_S08_frame_approval": {
+    "version": "S07-S08-design-r1",
+    "approval_status": "approved",
+    "approval_date_local": "2026-10-27",
+    "timezone": "Asia/Saigon",
+    "user_message_verbatim": "oke duyệt cái này",
+    "approval_scope": "S07 and S08 static frames, character design, composition and proposed action sequence",
+    "motion_approved": false,
+    "master_replacement_approved": false,
+    "remaining_scene_proposals_approved": false,
+    "frames": [
+      {
+        "file": "S07\\01-ready\\frames\\frame-00-at-0.5s.png",
+        "sha256": "fda00b4413fbdda30b866dbca32fd0c33c0093ffc58487e8a32d36450d95b3b1"
+      },
+      {
+        "file": "S07\\02-contact\\frames\\frame-00-at-0.5s.png",
+        "sha256": "a9c298bac861f30bfae622e7762688587931d276e3e989f60c38aa9a1763eeb6"
+      },
+      {
+        "file": "S07\\03-connected\\frames\\frame-00-at-0.5s.png",
+        "sha256": "cef9cbf7353f7e589ea9d6f607cc90ce76e4a0a9b0df022514ebe1c4cc2093ec"
+      },
+      {
+        "file": "S08\\01-arrive\\frames\\frame-00-at-0.5s.png",
+        "sha256": "f03f691412320fc1d56f82f948c526bbffa2f9e98993ec715d9648a6b5287b7b"
+      },
+      {
+        "file": "S08\\02-greet\\frames\\frame-00-at-0.5s.png",
+        "sha256": "f772f3f88dd4532808804ca5f5da6f6de83f7ef0bf827cd2daa9dc2cb53c55f7"
+      },
+      {
+        "file": "S08\\03-study\\frames\\frame-00-at-0.5s.png",
+        "sha256": "896ffe4bfc26af6377e9320268368c248e383c225805bdef1ec949b7ff9fdab5"
+      },
+      {
+        "file": "S08\\04-living\\frames\\frame-00-at-0.5s.png",
+        "sha256": "3320b7e69a82d42446686e298b2863189971ab2e7f35c405b5966f5642593cbe"
+      },
+      {
+        "file": "S08\\05-work\\frames\\frame-00-at-0.5s.png",
+        "sha256": "7673094110caea0767a8f8eb1b25a544f0e222298fc2e2b31ad5a18684fa525a"
+      }
+    ],
+    "approval_record": "revisions/S07-S08-design-r1/APPROVAL.json"
+  },
+  "S07_S08_motion_approval": [
+    {
+      "scene_id": "S07",
+      "version": "S07-S08-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "approval_date_local": "2026-10-27",
+      "timezone": "Asia/Saigon",
+      "user_message_verbatim": "duyệt 2 pilot",
+      "video_path": "revisions/S07-S08-motion-r1/S07/renders/pilot.mp4",
+      "video_sha256": "f5a1eb22209608ae0edbdc8763523feb886d50caec3088601f8e186c87d89475",
+      "master_replacement_authorized": false,
+      "full_film_production_authorized": false
+    },
+    {
+      "scene_id": "S08",
+      "version": "S07-S08-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "approval_date_local": "2026-10-27",
+      "timezone": "Asia/Saigon",
+      "user_message_verbatim": "duyệt 2 pilot",
+      "video_path": "revisions/S07-S08-motion-r1/S08/renders/pilot.mp4",
+      "video_sha256": "be0a9cd957a3b7f92510a8b3d976473cb0a20ce25be56ef1cf2613b0f12b5bc5",
+      "master_replacement_authorized": false,
+      "full_film_production_authorized": false
+    }
+  ],
+  "S10_S12_frame_approval": {
+    "version": "S10-S12-design-r1",
+    "scene_ids": [
+      "S10",
+      "S12"
+    ],
+    "approval_status": "approved",
+    "approval_scope": "static visual designs for S10 and S12 as shown in design-r1; does not approve rendered motion or lock internal word cues",
+    "approval_date_local": "2026-10-27",
+    "timezone": "Asia/Saigon",
+    "user_message_verbatim": "mình duyệt 2 frame S10–S12.",
+    "motion_approved": false,
+    "master_replacement_authorized": false,
+    "reference_frame_manifest": [
+      {
+        "file": "S10\\01-cost\\frames\\frame-00-at-0.5s.png",
+        "sha256": "3fea5338090e42472b938bd1d44cb8e105c44f367a3b5059d4eae3c07c245aae"
+      },
+      {
+        "file": "S10\\02-arrive\\frames\\frame-00-at-0.5s.png",
+        "sha256": "43efdc6d7cccd371b16b60fe2525f8295e8e72cf3d714b26f5f9dc2fd106d232"
+      },
+      {
+        "file": "S10\\03-family\\frames\\frame-00-at-0.5s.png",
+        "sha256": "62028759ee3b3c56349aed3d92fc1d8a16d6318745e38bc50386934dd6a0cb5c"
+      },
+      {
+        "file": "S12\\01-ready\\frames\\frame-00-at-0.5s.png",
+        "sha256": "76df08d60326145e55d50523b8fe322789d58b221c2aa17274a464ca7f72e20f"
+      },
+      {
+        "file": "S12\\02-press\\frames\\frame-00-at-0.5s.png",
+        "sha256": "9fedac74dac2b5e510f56089f2cd5bf42c61627d34e0ee13b8d1c2ae349c12a0"
+      },
+      {
+        "file": "S12\\03-result\\frames\\frame-00-at-0.5s.png",
+        "sha256": "d76da80cc849b66c9d99c2b3d92494bcc62657c7898a5d533c275ad2f98f1f70"
+      }
+    ]
+  },
+  "S10_S12_motion_candidate": {
+    "version": "S10-S12-motion-r1",
+    "approval_status": "approved",
+    "review_entry": "revisions/S10-S12-motion-r1/REVIEW.html",
+    "pilots": [
+      {
+        "scene_id": "S10",
+        "video_path": "revisions/S10-S12-motion-r1/S10\\renders\\pilot.mp4",
+        "video_sha256": "826e690c8bb30d88bcee94011f13ddd9743969fea2180ea90f057bd6d7602111"
+      },
+      {
+        "scene_id": "S12",
+        "video_path": "revisions/S10-S12-motion-r1/S12\\renders\\pilot.mp4",
+        "video_sha256": "3f29380666fad23ba12ba5ac284dfe27e4e6aab4131f2ff5bd840837a0c16b51"
+      }
+    ],
+    "master_replaced": false
+  },
+  "S13_S14_frame_approval": {
+    "version": "S13-S14-design-r1",
+    "scene_ids": [
+      "S13",
+      "S14"
+    ],
+    "approval_status": "approved",
+    "approval_scope": "static frame images, visual design and proposed action direction; not rendered motion",
+    "approval_date_local": "2026-10-27",
+    "timezone": "Asia/Saigon",
+    "user_message_verbatim": "oke mình duyệt các hình ảnh frame",
+    "reference_frame_manifest": [
+      {
+        "file": "S13\\01-student\\frames\\frame-00-at-0.5s.png",
+        "sha256": "30871558c3063d3e252bcc1f6522f670a47e4b713c21e732ad15f4b7449745ec"
+      },
+      {
+        "file": "S13\\02-local\\frames\\frame-00-at-0.5s.png",
+        "sha256": "4843a043da22300fbaafd1ad18ec0218e46dc79696cf57ec49f67448be97da3f"
+      },
+      {
+        "file": "S13\\03-expand\\frames\\frame-00-at-0.5s.png",
+        "sha256": "6a8165515e52e4ed8b0bf3c23e734e828d0d6a361428853030d89d5963806c66"
+      },
+      {
+        "file": "S14\\01-key\\frames\\frame-00-at-0.5s.png",
+        "sha256": "696c599908b7c25f61268d4b05ed694253013a61fca05881ebdeda1103950a37"
+      },
+      {
+        "file": "S14\\02-gate\\frames\\frame-00-at-0.5s.png",
+        "sha256": "9aef635df5ff4bd5c9d20bb7b056a6dda5e4c5dc42f3668f3676df1f2687ef9b"
+      },
+      {
+        "file": "S14\\03-open\\frames\\frame-00-at-0.5s.png",
+        "sha256": "ee6b799646e8078e1bf4dd65482165cdc8971f941398235398e51e73a9405443"
+      }
+    ],
+    "motion_approved": false,
+    "master_replacement_authorized": false,
+    "full_film_production_authorized": false
+  },
+  "S13_S14_motion_candidate": {
+    "revision": "revisions/S13-S14-motion-r1",
+    "review_entry": "revisions/S13-S14-motion-r1/REVIEW.html",
+    "motion_approved": true,
+    "master_modified": false,
+    "pilots": [
+      {
+        "scene": "S13",
+        "path": "revisions/S13-S14-motion-r1/S13/renders/pilot.mp4",
+        "sha256": "73676f61aa285dc49799ed3394125149ab1f02504fa2707215e476dbb4c8a6c6"
+      },
+      {
+        "scene": "S14",
+        "path": "revisions/S13-S14-motion-r1/S14/renders/pilot.mp4",
+        "sha256": "46a222ac80b7a91d1a2ce39db0c39d2ed3d8c544eab3006858f3f3c081138f38"
+      }
+    ]
+  },
+  "S13_S14_motion_approval": {
+    "version": "S13-S14-motion-r1",
+    "approval_status": "approved",
+    "approval_scope": "pilot motion with original voice",
+    "approval_date_local": "2026-10-27",
+    "timezone": "Asia/Saigon",
+    "user_message_verbatim": "oke mình duyêt 2 pilot. vậy là ổn rồi ha",
+    "master_replacement_authorized": false,
+    "full_film_production_authorized": false,
+    "pilots": [
+      {
+        "scene_id": "S13",
+        "video_path": "revisions/S13-S14-motion-r1/S13/renders/pilot.mp4",
+        "video_sha256": "73676f61aa285dc49799ed3394125149ab1f02504fa2707215e476dbb4c8a6c6"
+      },
+      {
+        "scene_id": "S14",
+        "video_path": "revisions/S13-S14-motion-r1/S14/renders/pilot.mp4",
+        "video_sha256": "46a222ac80b7a91d1a2ce39db0c39d2ed3d8c544eab3006858f3f3c081138f38"
+      }
+    ]
+  },
+  "master_assembly_handoff": "handoff/MASTER_APPROVED_ASSEMBLY_R1",
+  "master_assembly_authorized": true,
+  "full_master_approved": false
+}

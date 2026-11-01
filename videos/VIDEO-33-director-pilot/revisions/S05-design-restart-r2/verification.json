@@ -1,0 +1,27 @@
+{
+  "frames": [
+    {
+      "frame": "01-hold",
+      "check_ok": true,
+      "sha256": "fe81535f4a56ca65fb9876c089890fe321415c6376109da2b6fd716312ca13be"
+    },
+    {
+      "frame": "02-contact",
+      "check_ok": true,
+      "sha256": "cdd501439f0ab89da48c7456566520471a8e3387356ad50c25b150b5b9a81807"
+    },
+    {
+      "frame": "03-release",
+      "check_ok": true,
+      "sha256": "0ea45818f85e7a86372f4ca9e33ccdc505a94fa8c279f70faac5d61ca82fcb0a"
+    },
+    {
+      "frame": "04-house",
+      "check_ok": true,
+      "sha256": "2aba1d7babe2def4b41c9202bdcebef6bbba82eb4bae95aea64d77beac132b82"
+    }
+  ],
+  "mobile_grayscale_inspected": true,
+  "motion_produced": false,
+  "scope": "Static zoom revision; future motion must use same Malta-focused crop, never show Sicily as the dominant land."
+}

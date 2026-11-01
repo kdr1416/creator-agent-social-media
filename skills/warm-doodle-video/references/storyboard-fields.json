@@ -1,0 +1,84 @@
+{
+  "required_scene_fields": [
+    "scene_id",
+    "audio_source",
+    "duration",
+    "raw_text",
+    "corrected_text",
+    "render_mode",
+    "routing_reason",
+    "style_candidates",
+    "style_id",
+    "style_reason",
+    "visual_verb",
+    "opening_state",
+    "transformation",
+    "final_state",
+    "protagonist_action",
+    "timed_beats",
+    "asset_contract",
+    "hf_signature_motion",
+    "flow_action",
+    "flow_camera",
+    "overlay_zone",
+    "handoff",
+    "container_required",
+    "container_inventory",
+    "visible_text_budget",
+    "visible_text_inventory",
+    "accent_reason",
+    "accent_treatment",
+    "mobile_legibility_plan",
+    "dark_mass_strategy",
+    "visual_family",
+    "text_treatment",
+    "mascot_role",
+    "motion_emphasis_sequence",
+    "reference_alignment"
+  ],
+  "source_integrity": "Store hashes and source paths outside originals; no source edits.",
+  "engine_override_fields": [
+    "previous_mode",
+    "new_mode",
+    "routing_override_reason"
+  ],
+  "container_fields": [
+    "object_type",
+    "bounds",
+    "semantic_boundary",
+    "removal_consequence"
+  ],
+  "example_asset": {
+    "layer": "student-near-arm",
+    "source": "original bundled vector rig",
+    "status": "created only after asset exists"
+  },
+  "rules": {
+    "physical_surfaces_only": true,
+    "no_transcript_paragraphs": true,
+    "render_is_not_user_approval": true
+  },
+  "reference_alignment": {
+    "axes": [
+      "colour_relationships",
+      "typography_treatment",
+      "asset_mix",
+      "composition",
+      "mascot_language",
+      "motion_rhythm"
+    ],
+    "per_axis_fields": [
+      "reference_evidence",
+      "candidate_evidence",
+      "assessment",
+      "revision_needed"
+    ],
+    "assessment_values": [
+      "match",
+      "partial",
+      "mismatch"
+    ],
+    "purpose": "Evidence-led visual comparison; not a render correctness check or user approval."
+  },
+  "research_scope": "Skill-only work does not require producing a storyboard, assets or video."
+}

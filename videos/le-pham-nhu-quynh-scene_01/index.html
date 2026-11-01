@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>Một học sinh, hai hướng quốc tế — scene 01</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:SceneSans;src:url('assets/scene-sans-bold.ttf') format('truetype');font-weight:700;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;background:#fff}#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:SceneSans,sans-serif;color:#0F172A}
+.clip{position:absolute;inset:0}
+.art{display:block;width:100%;height:100%}
+.dest-label{position:absolute;margin:0;font-size:36px;line-height:1.2;font-weight:700;letter-spacing:-.5px;color:#0F172A;text-align:center}
+#label-netherlands{left:180px;top:250px;width:180px}
+#label-australia{left:460px;top:420px;width:180px}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-s01-root" id="root" data-composition-id="scene01" data-width="720" data-height="1280" data-duration="5.355" data-start="0">
+ <div data-hf-id="hf-s01-bg" id="scene01-bg" class="clip" data-start="0" data-duration="5.355" data-track-index="0" style="background:#FFFFFF"></div>
+ 
+ <svg data-hf-id="hf-s01-art" id="scene01-art" class="art clip" data-start="0" data-duration="5.355" data-track-index="1" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+   <radialGradient id="halo-s1"><stop stop-color="#CCECE9" stop-opacity=".7"/><stop offset="1" stop-color="#CCECE9" stop-opacity="0"/></radialGradient>
+   <linearGradient id="coat-s1" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FF8852"/><stop offset="1" stop-color="#F2612A"/></linearGradient>
+   <linearGradient id="folder-grad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5A978F"/><stop offset="1" stop-color="#3D7870"/></linearGradient>
+   <linearGradient id="paper-s1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EFF5F7"/></linearGradient>
+  </defs>
+
+  <!-- Ambient glow halos -->
+  <ellipse cx="270" cy="350" rx="130" ry="110" fill="url(#halo-s1)"/>
+  <ellipse cx="550" cy="520" rx="140" ry="120" fill="url(#halo-s1)"/>
+
+  <!-- Spline paths connecting folder to destinations -->
+  <g id="splines">
+   <path id="path-netherlands" d="M370 730 C300 600 240 450 270 360" fill="none" stroke="#FF6B2B" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="8 6"/>
+   <path id="path-australia" d="M380 730 C450 640 510 570 550 510" fill="none" stroke="#3D8D87" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="8 6"/>
+  </g>
+
+  <!-- Destination 1: Hà Lan (Landmark / Campus motif) -->
+  <g id="dest-netherlands">
+   <ellipse cx="270" cy="370" rx="65" ry="10" fill="#E2ECEE"/>
+   <!-- Stylized windmill / modern canal campus building -->
+   <path d="M245 365 L255 295 L285 295 L295 365 Z" fill="#4B828A"/>
+   <path d="M255 295 L270 270 L285 295 Z" fill="#F2612A"/>
+   <!-- Windmill sails / blades -->
+   <g id="blades" transform="translate(270,295)">
+    <line x1="-38" y1="-38" x2="38" y2="38" stroke="#FFE7DA" stroke-width="4" stroke-linecap="round"/>
+    <line x1="-38" y1="38" x2="38" y2="-38" stroke="#FFE7DA" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="4.5" fill="#FF6B2B"/>
+   </g>
+   <!-- Flag / Accent dot -->
+   <circle cx="270" cy="245" r="8" fill="#FF8852"/>
+  </g>
+
+  <!-- Destination 2: Úc (Harbor / Campus motif) -->
+  <g id="dest-australia">
+   <ellipse cx="550" cy="530" rx="75" ry="11" fill="#E2ECEE"/>
+   <!-- Stylized architectural sails / campus building -->
+   <path d="M515 525 Q535 460 555 525 Z" fill="#6FA5A2"/>
+   <path d="M535 525 Q555 440 575 525 Z" fill="#427878"/>
+   <path d="M555 525 Q575 470 595 525 Z" fill="#99C9C4"/>
+   <!-- Accent dot -->
+   <circle cx="550" cy="415" r="8" fill="#3D8D87"/>
+  </g>
+
+  <!-- Far Arm (behind torso) -->
+  <g id="far-arm">
+   <path id="far-upper" fill="none" stroke="#E75C28" stroke-width="34" stroke-linecap="round"/>
+   <path id="far-lower" fill="none" stroke="#E7A781" stroke-width="25" stroke-linecap="round"/>
+   <ellipse id="far-hand" rx="14" ry="11" fill="#EFB58F"/>
+  </g>
+
+  <!-- Student Character Rig -->
+  <g id="student">
+   <g id="legs">
+    <path d="M164 800L163 1010H197L216 853 231 1010H267L257 800Z" fill="#91A9BA"/>
+    <path d="M164 1004L156 1027Q151 1040 170 1040H207V1020L197 1004Z M231 1004L230 1040H280Q293 1040 287 1026L264 1004Z" fill="#3D7B80"/>
+   </g>
+   <!-- Torso jacket -->
+   <path d="M168 617Q145 631 147 666L153 816Q207 838 267 812L277 658Q271 627 246 617Z" fill="url(#coat-s1)"/>
+   <path d="M185 626L210 695 236 626Q213 614 185 626Z" fill="#F5F8F9"/>
+   <path d="M212 695V816" stroke="#D75022" stroke-width="3"/>
+   <!-- Head & Face -->
+   <g id="head">
+    <path d="M178 494Q137 489 134 533Q131 566 148 586Q127 622 149 649Q181 638 186 602Z" fill="#243A50"/>
+    <path d="M192 583V630Q210 646 232 628V581" fill="#E7A47D"/>
+    <path d="M165 506Q159 457 203 455Q247 448 268 489L262 561Q249 602 217 606Q176 602 165 561Z" fill="#F3BC95"/>
+    <ellipse cx="164" cy="546" rx="13" ry="19" fill="#E7AA84"/>
+    <path d="M158 538Q139 501 159 473Q174 448 210 446Q256 445 272 487L260 519 247 489Q209 514 178 497L170 543Z" fill="#243A50"/>
+    <g id="eyes" fill="#243A50"><ellipse cx="220" cy="545" rx="4.5" ry="6.5"/><ellipse cx="245" cy="546" rx="4" ry="6"/></g>
+    <path d="M215 578Q227 588 240 577" stroke="#965742" stroke-width="3" fill="none" stroke-linecap="round"/>
+   </g>
+  </g>
+
+  <!-- Physical Portfolio Folder -->
+  <g id="portfolio-folder">
+   <ellipse cx="370" cy="800" rx="90" ry="12" fill="#D2E3E8"/>
+   <!-- Back cover -->
+   <path d="M310 670 L435 680 L425 800 L300 790 Z" fill="#3D7870"/>
+   <!-- Paper sheets inside -->
+   <path d="M315 673 L430 682 L422 795 L307 786 Z" fill="url(#paper-s1)"/>
+   <!-- Front cover (animates open) -->
+   <g id="folder-cover">
+    <path d="M310 670 L435 680 L425 800 L300 790 Z" fill="url(#folder-grad)" stroke="#2D5C56" stroke-width="1.5"/>
+    <circle cx="370" cy="735" r="16" fill="#88C4BA"/>
+    <path d="M363 735 L377 735 M370 728 L370 742" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+   </g>
+  </g>
+
+  <!-- Near Arm (in front of torso and folder) -->
+  <g id="near-arm">
+   <path id="near-upper" fill="none" stroke="#FF8249" stroke-width="36" stroke-linecap="round"/>
+   <path id="near-lower" fill="none" stroke="#F3BC95" stroke-width="26" stroke-linecap="round"/>
+   <ellipse id="near-hand" rx="15" ry="12" fill="#F3BC95"/>
+  </g>
+ </svg>
+
+ <h2 data-hf-id="hf-s01-lbl-nl" id="label-netherlands" class="dest-label">Hà Lan</h2>
+ <h2 data-hf-id="hf-s01-lbl-au" id="label-australia" class="dest-label">Úc</h2>
+
+ <audio data-hf-id="hf-s01-voice" id="scene01-voice" src="assets/audio.wav" data-start="0" data-duration="5.355" data-track-index="2" data-volume="1"></audio>
+</div>
+
+<script>
+const tl = gsap.timeline({paused:true});
+const near = {x: 295, y: 730}, far = {x: 320, y: 780};
+
+function setArm(prefix, sx, sy, ex, ey, l1, l2, bend) {
+  const dx = ex - sx, dy = ey - sy;
+  const d = Math.min(Math.hypot(dx, dy), l1 + l2 - 0.01);
+  const a = Math.atan2(dy, dx);
+  const b = Math.acos(Math.max(-1, Math.min(1, (l1 * l1 + d * d - l2 * l2) / (2 * l1 * d))));
+  const x = sx + l1 * Math.cos(a + b * bend);
+  const y = sy + l1 * Math.sin(a + b * bend);
+  document.getElementById(prefix + '-upper').setAttribute('d', `M${sx},${sy}L${x},${y}`);
+  document.getElementById(prefix + '-lower').setAttribute('d', `M${x},${y}L${ex},${ey}`);
+  document.getElementById(prefix + '-hand').setAttribute('cx', ex);
+  document.getElementById(prefix + '-hand').setAttribute('cy', ey);
+}
+
+function updateArms() {
+  setArm('near', 262, 647, near.x, near.y, 115, 115, 1);
+  setArm('far', 169, 650, far.x, far.y, 145, 145, 1);
+}
+updateArms();
+
+// Init state
+gsap.set(['#dest-netherlands', '#dest-australia'], {opacity:0, scale:0.7, transformOrigin:'50% 100%'});
+gsap.set(['#label-netherlands', '#label-australia'], {opacity:0, y:12});
+gsap.set(['#path-netherlands', '#path-australia'], {opacity:0});
+
+const pNL = document.getElementById('path-netherlands');
+const lenNL = pNL.getTotalLength();
+pNL.style.strokeDasharray = lenNL;
+pNL.style.strokeDashoffset = lenNL;
+
+const pAU = document.getElementById('path-australia');
+const lenAU = pAU.getTotalLength();
+pAU.style.strokeDasharray = lenAU;
+pAU.style.strokeDashoffset = lenAU;
+
+// Timeline choreography
+// 0.0s - 1.1s: Hand reaches to folder, opens cover
+tl.to(near, {x: 350, y: 720, duration: 0.8, ease: 'power2.inOut', onUpdate: updateArms}, 0.1)
+  .to('#folder-cover', {scaleX: 0, svgOrigin: '305 735', duration: 0.7, ease: 'power2.inOut'}, 0.5)
+  .to(near, {x: 280, y: 760, duration: 0.5, ease: 'power2.out', onUpdate: updateArms}, 1.1)
+
+// 1.1s - 3.5s: Two spline paths grow towards the two destination landmarks
+  .set(['#path-netherlands', '#path-australia'], {opacity: 1}, 1.2)
+  .to(pNL, {strokeDashoffset: 0, duration: 1.4, ease: 'power2.out'}, 1.2)
+  .to('#dest-netherlands', {opacity: 1, scale: 1, duration: 0.6, ease: 'back.out(1.2)'}, 1.9)
+  .to('#label-netherlands', {opacity: 1, y: 0, duration: 0.4}, 2.1)
+  .to('#blades', {rotation: 180, svgOrigin: '270 295', duration: 3.2, ease: 'none'}, 1.9)
+
+  .to(pAU, {strokeDashoffset: 0, duration: 1.3, ease: 'power2.out'}, 1.8)
+  .to('#dest-australia', {opacity: 1, scale: 1, duration: 0.6, ease: 'back.out(1.2)'}, 2.6)
+  .to('#label-australia', {opacity: 1, y: 0, duration: 0.4}, 2.8)
+
+// 3.5s - 5.355s: Head turns to glance between the two directions, holds
+  .to('#head', {rotation: -6, svgOrigin: '210 599', duration: 0.6, ease: 'power2.inOut'}, 3.2)
+  .to('#head', {rotation: 4, svgOrigin: '210 599', duration: 0.7, ease: 'power2.inOut'}, 4.0)
+  .to('#head', {rotation: 0, svgOrigin: '210 599', duration: 0.5, ease: 'power2.inOut'}, 4.8);
+
+window.__timelines = window.__timelines || {};
+window.__timelines['scene01'] = tl;
+</script>
+</body>
+</html>

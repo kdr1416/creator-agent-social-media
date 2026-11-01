@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=720,height=1280"><title>Hồ sơ của riêng mình — pilot scene 15</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:SceneSans;src:url('assets/scene-sans-bold.ttf') format('truetype');font-weight:700;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;background:#fff}#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:SceneSans,sans-serif;color:#0F172A}.clip{position:absolute;inset:0}.art{display:block;width:100%;height:100%}.label{position:absolute;left:365px;top:300px;width:260px;text-align:center;margin:0;font-size:38px;line-height:1.15;font-weight:700;letter-spacing:-.6px}
+</style></head><body>
+<div data-hf-id="hf-xnnv" id="root" data-composition-id="portfolio15" data-width="720" data-height="1280" data-duration="6.544" data-start="0">
+<div data-hf-id="hf-jx3m" id="portfolio-ground" class="clip" data-start="0" data-duration="6.544" data-track-index="0" style="background:#FFFFFF"></div>
+<svg data-hf-id="hf-51bo" id="portfolio-art" class="art clip" data-start="0" data-duration="6.544" data-track-index="1" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg" aria-label="Nữ sinh sắp xếp hồ sơ, ba ý trở thành minh họa trên từng trang">
+<defs data-hf-id="hf-mh0t">
+ <radialGradient data-hf-id="hf-oo5d" id="halo"><stop data-hf-id="hf-fq3w" stop-color="#CCECE9" stop-opacity=".65"/><stop data-hf-id="hf-v5lk" offset="1" stop-color="#CCECE9" stop-opacity="0"/></radialGradient>
+ <linearGradient data-hf-id="hf-fs8n" id="coat" x1="0" y1="0" x2="1" y2="0"><stop data-hf-id="hf-kz1l" stop-color="#FF8852"/><stop data-hf-id="hf-ogbj" offset="1" stop-color="#F2612A"/></linearGradient>
+ <linearGradient data-hf-id="hf-g2jz" id="paper" x1="0" y1="0" x2="1" y2="1"><stop data-hf-id="hf-9uf8" stop-color="#FFFFFF"/><stop data-hf-id="hf-ae3g" offset="1" stop-color="#EFF5F7"/></linearGradient>
+ <linearGradient data-hf-id="hf-8cmf" id="cover-grad"><stop data-hf-id="hf-9uo9" stop-color="#89C4BC"/><stop data-hf-id="hf-433t" offset="1" stop-color="#B8DFD6"/></linearGradient>
+</defs>
+<ellipse data-hf-id="hf-hrut" cx="466" cy="522" rx="204" ry="265" fill="url(#halo)"/>
+<ellipse data-hf-id="hf-rtqp" cx="448" cy="836" rx="204" ry="175" fill="url(#halo)" opacity=".6"/>
+<ellipse data-hf-id="hf-02ts" cx="204" cy="1045" rx="105" ry="13" fill="#E8EFF3"/>
+<ellipse data-hf-id="hf-kxmi" cx="475" cy="1048" rx="155" ry="13" fill="#EDF2F4"/>
+<!-- Destinations are illustrative opportunities, never proof of admission. -->
+<g data-hf-id="hf-i610" id="destinations">
+ <path data-hf-id="hf-urxy" id="route-a" d="M484 663C510 514 263 524 319 298" fill="none" stroke="#FF6B2B" stroke-width="4" stroke-linecap="round"/>
+ <path data-hf-id="hf-5zco" id="route-b" d="M484 663C648 630 639 502 564 413" fill="none" stroke="#4F9D92" stroke-width="4" stroke-linecap="round"/>
+ <g data-hf-id="hf-00sm" id="campus-a"><ellipse data-hf-id="hf-x0l0" cx="320" cy="311" rx="62" ry="9" fill="#E6EFF2"/><path data-hf-id="hf-4hct" d="M268 270L320 244 373 270Z" fill="#90B9C4"/><path data-hf-id="hf-msum" d="M277 271H363V307H277Z" fill="#DFEDF1"/><path data-hf-id="hf-5zoz" d="M285 276V304 M303 276V304 M337 276V304 M355 276V304" stroke="#81A8B7" stroke-width="7"/><path data-hf-id="hf-l5re" d="M314 284H327V307H314" fill="#548391"/><path data-hf-id="hf-ty8z" d="M270 308H370" stroke="#AEC8D0" stroke-width="5" stroke-linecap="round"/></g>
+ <g data-hf-id="hf-w2ol" id="campus-b"><ellipse data-hf-id="hf-8nxh" cx="563" cy="425" rx="61" ry="8" fill="#E6EFF2"/><path data-hf-id="hf-gwj6" d="M514 377H611V420H514Z" fill="#D4E8E5"/><path data-hf-id="hf-puha" d="M533 355H588V420H533Z" fill="#A4D0C6"/><path data-hf-id="hf-5nta" d="M543 367H552V378H543 M570 367H579V378H570 M543 389H552V400H543 M570 389H579V400H570" fill="#5B978D"/><path data-hf-id="hf-zahn" d="M550 407H570V420H550" fill="#3A766E"/><path data-hf-id="hf-nxjq" d="M508 421H616" stroke="#A9CBC3" stroke-width="5" stroke-linecap="round"/></g>
+</g>
+<!-- Physical desk: surface and legs, not layout containment. -->
+<g data-hf-id="hf-wqv4" id="desk"><path data-hf-id="hf-qnuv" d="M332 924H617L636 949H319Z" fill="#D9E8EE"/><path data-hf-id="hf-kcql" d="M319 949H636V961H319Z" fill="#A8C4D0"/><path data-hf-id="hf-kcud" d="M344 961L333 1040H349L365 961 M593 961L607 1040H624L614 961" fill="#C4D9E2"/></g>
+<!-- Far arm precedes body in the paint stack. -->
+<g data-hf-id="hf-880j" id="far-arm"><path data-hf-id="hf-veq2" id="far-upper" fill="none" stroke="#E75C28" stroke-width="34" stroke-linecap="round"/><path data-hf-id="hf-f0ea" id="far-lower" fill="none" stroke="#E7A781" stroke-width="25" stroke-linecap="round"/><ellipse data-hf-id="hf-msgc" id="far-hand" rx="15" ry="12" fill="#EFB58F"/></g>
+<g data-hf-id="hf-4uw0" id="student">
+ <g data-hf-id="hf-dkjg" id="legs"><path data-hf-id="hf-mw53" d="M164 800L163 1010H197L216 853 231 1010H267L257 800Z" fill="#91A9BA"/><path data-hf-id="hf-n3y5" d="M214 850L207 936" stroke="#7994A8" stroke-width="5" stroke-linecap="round"/><path data-hf-id="hf-yjol" d="M164 1004L156 1027Q151 1040 170 1040H207V1020L197 1004Z M231 1004L230 1040H280Q293 1040 287 1026L264 1004Z" fill="#3D7B80"/><path data-hf-id="hf-u62c" d="M156 1035H207 M231 1035H286" stroke="#C0DDD8" stroke-width="6"/></g>
+ <path data-hf-id="hf-6mqp" d="M168 617Q145 631 147 666L153 816Q207 838 267 812L277 658Q271 627 246 617Z" fill="url(#coat)"/>
+ <path data-hf-id="hf-sq0i" d="M185 626L210 695 236 626Q213 614 185 626Z" fill="#F5F8F9"/><path data-hf-id="hf-9mqn" d="M181 621L203 680 175 661 M240 621L219 680 252 659" fill="#FFAA80"/>
+ <path data-hf-id="hf-zoyu" d="M212 695V816" stroke="#D75022" stroke-width="3"/>
+ <path data-hf-id="hf-hs8r" d="M163 752L189 755V781L165 778Z M235 755L259 751V779L235 782Z" fill="#EA5925"/>
+ <g data-hf-id="hf-tgo1" id="head">
+  <path data-hf-id="hf-d72a" d="M178 494Q137 489 134 533Q131 566 148 586Q127 622 149 649Q181 638 186 602Z" fill="#243A50"/>
+  <path data-hf-id="hf-mht6" d="M192 583V630Q210 646 232 628V581" fill="#E7A47D"/>
+  <path data-hf-id="hf-dp96" d="M165 506Q159 457 203 455Q247 448 268 489L262 561Q249 602 217 606Q176 602 165 561Z" fill="#F3BC95"/>
+  <ellipse data-hf-id="hf-bw3z" cx="164" cy="546" rx="13" ry="19" fill="#E7AA84"/>
+  <path data-hf-id="hf-aahe" d="M158 538Q139 501 159 473Q174 448 210 446Q256 445 272 487L260 519 247 489Q209 514 178 497L170 543Z" fill="#243A50"/>
+  <path data-hf-id="hf-ze0k" d="M169 479Q201 454 244 478" fill="none" stroke="#3F566A" stroke-width="8" stroke-linecap="round"/>
+  <path data-hf-id="hf-flcd" d="M204 532Q215 526 226 531 M239 530L250 534" stroke="#243A50" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <g data-hf-id="hf-omrn" id="eyes" fill="#243A50"><ellipse data-hf-id="hf-sz6m" cx="220" cy="545" rx="4.5" ry="6.5"/><ellipse data-hf-id="hf-ekhi" cx="245" cy="546" rx="4" ry="6"/></g>
+  <path data-hf-id="hf-ur4i" d="M240 550L244 564 235 566" stroke="#D18C6D" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path data-hf-id="hf-s37v" d="M215 578Q227 588 240 577" stroke="#965742" stroke-width="3" fill="none" stroke-linecap="round"/><ellipse data-hf-id="hf-ytmf" cx="198" cy="563" rx="10" ry="5" fill="#ED9F87" opacity=".7"/>
+  <circle data-hf-id="hf-lzvl" cx="164" cy="562" r="4" fill="#E8D3AE"/>
+ </g>
+</g>
+<!-- A single physical binder: spine, paper stack, punched holes, metal rings. -->
+<g data-hf-id="hf-i5jd" id="portfolio">
+ <ellipse data-hf-id="hf-chnj" cx="474" cy="923" rx="135" ry="13" fill="#B8D0D8" opacity=".55"/>
+ <path data-hf-id="hf-0abw" d="M343 619L595 632 598 912 345 930Z" fill="#5A978F"/>
+ <path data-hf-id="hf-isac" d="M358 631L583 640 587 900 357 916Z" fill="#C9D7DC"/>
+ <path data-hf-id="hf-2hc1" d="M362 626L587 638 590 894 360 909Z" fill="#E1EAED"/>
+ <path data-hf-id="hf-low2" d="M367 622L589 635 591 887 362 903Z" fill="url(#paper)" stroke="#B8CBD2" stroke-width="2"/>
+ <g data-hf-id="hf-kwlq" id="page-lines" stroke="#DCE7EB" stroke-width="4" stroke-linecap="round"><path data-hf-id="hf-shqw" d="M395 816L554 810 M395 839L538 833 M395 862L551 856"/></g>
+ <g data-hf-id="hf-6sm4" id="page-competence"><path data-hf-id="hf-1giy" d="M419 709L419 779 545 773" stroke="#8FB7C4" stroke-width="5" fill="none"/><path data-hf-id="hf-1hzf" d="M429 760L459 743 484 750 532 710" stroke="#4E9589" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><g data-hf-id="hf-o1t2" fill="#A9C9D2"><path data-hf-id="hf-laym" d="M435 774V753H447V773 M466 772V746H478V771 M497 769V734H509V768"/></g></g>
+ <g data-hf-id="hf-am19" id="page-personality"><path data-hf-id="hf-p553" d="M424 785Q437 750 463 751Q493 750 506 782" fill="#D4E8E5"/><ellipse data-hf-id="hf-t2fo" cx="463" cy="722" rx="24" ry="29" fill="#EFB58F"/><path data-hf-id="hf-u9n8" d="M439 726Q427 688 460 685Q493 687 488 719L479 708Q458 721 446 709Z" fill="#607E91"/><path data-hf-id="hf-3h9u" d="M516 706Q549 719 526 739T534 773" fill="none" stroke="#FF8E5A" stroke-width="6" stroke-linecap="round"/></g>
+ <g data-hf-id="hf-u81q" id="page-goal"><circle data-hf-id="hf-k54e" cx="472" cy="744" r="49" fill="#E2EEEB" stroke="#8DB9AF" stroke-width="4"/><path data-hf-id="hf-8fgc" d="M472 702L486 744 472 782 459 744Z" fill="#519C8D"/><path data-hf-id="hf-skwq" d="M472 702V744L459 744Z" fill="#FF8653"/><circle data-hf-id="hf-9pel" cx="472" cy="744" r="6" fill="#fff"/></g>
+ <g data-hf-id="hf-wb26" id="turning-page"><path data-hf-id="hf-4v6x" d="M367 622L589 635 591 887 362 903Z" fill="#F4F8F9" stroke="#C5D5DB" stroke-width="2"/><path data-hf-id="hf-0xof" d="M395 680L551 684 M395 703L523 707 M395 727L539 731" stroke="#DEE8EC" stroke-width="4" stroke-linecap="round"/></g>
+ <path data-hf-id="hf-57b6" d="M343 619L364 622 359 911 345 930Z" fill="#4F8B83"/>
+ <g data-hf-id="hf-0eb8" fill="#8EB0B7"><circle data-hf-id="hf-et5b" cx="375" cy="659" r="6"/><circle data-hf-id="hf-dbed" cx="374" cy="737" r="6"/><circle data-hf-id="hf-lqxn" cx="373" cy="824" r="6"/></g>
+ <g data-hf-id="hf-gbsh" fill="none" stroke="#6B8792" stroke-width="6"><path data-hf-id="hf-1rcl" d="M375 659C347 640 343 675 372 674 M374 737C347 719 343 753 371 752 M373 824C346 805 342 841 370 839"/></g>
+ <g data-hf-id="hf-f2bs" id="cover"><path data-hf-id="hf-xj6l" d="M345 619L599 631 599 913 345 930Z" fill="url(#cover-grad)" stroke="#6A9F97" stroke-width="2"/><path data-hf-id="hf-xaxk" d="M345 619L365 620 365 928 345 930Z" fill="#58968C"/><path data-hf-id="hf-du5r" d="M383 652L563 661" stroke="#DDF0EB" stroke-width="5" stroke-linecap="round"/><circle data-hf-id="hf-tj3m" cx="476" cy="764" r="43" fill="#DBEEE7"/><path data-hf-id="hf-bmei" d="M456 784V746H482L495 759V784Z M482 746V759H495" stroke="#659F91" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+ <g data-hf-id="hf-p9mp" id="clip"><path data-hf-id="hf-npyy" d="M351 691L376 691 376 715 351 715Z" fill="#E17A46"/><path data-hf-id="hf-m3ob" d="M357 697V709H370V697" stroke="#FFE1C5" stroke-width="3" fill="none"/></g>
+</g>
+<!-- Semantic hero illustration grows out of the active page, no panel around it. -->
+<g data-hf-id="hf-5sbf" id="hero-competence"><ellipse data-hf-id="hf-4f1h" cx="477" cy="544" rx="90" ry="17" fill="#D4E5E7" opacity=".55"/>
+ <g data-hf-id="hf-bjmy" id="gear"><path data-hf-id="hf-u3g4" d="M454 400L475 399 479 416 492 422 507 412 522 428 512 443 518 457 536 462 535 484 517 489 510 503 520 518 504 534 488 524 475 530 471 548 448 546 444 528 430 520 414 529 400 511 410 497 405 483 386 479 388 456 406 452 414 438 404 423 422 408 438 419 450 413Z" fill="#78ACA8"/>
+ <circle data-hf-id="hf-lj1b" cx="460" cy="473" r="42" fill="#A8D1C7"/><circle data-hf-id="hf-9ido" cx="460" cy="473" r="25" fill="#F2FAF7"/><circle data-hf-id="hf-8ol9" cx="460" cy="473" r="12" fill="#6B9E9B"/></g>
+ <path data-hf-id="hf-z0nb" id="ability-chart" d="M505 515L533 493 548 497 575 461" fill="none" stroke="#FF6B2B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><g data-hf-id="hf-p0ry" fill="#FF6B2B"><circle data-hf-id="hf-id35" cx="505" cy="515" r="6"/><circle data-hf-id="hf-35ym" cx="575" cy="461" r="6"/></g>
+</g>
+<g data-hf-id="hf-p728" id="hero-personality"><ellipse data-hf-id="hf-o2ff" cx="478" cy="547" rx="89" ry="15" fill="#D4E5E7" opacity=".55"/><path data-hf-id="hf-5brc" d="M407 536Q419 493 459 493Q505 493 515 537" fill="#99C7C4"/><ellipse data-hf-id="hf-t2hp" cx="460" cy="453" rx="36" ry="43" fill="#F1BB96"/><path data-hf-id="hf-qw13" d="M426 458Q413 401 459 404Q505 405 498 453L484 433Q455 452 438 432Z" fill="#5C798C"/><path data-hf-id="hf-g4xx" d="M456 470Q469 481 478 468" fill="none" stroke="#A16955" stroke-width="3" stroke-linecap="round"/><path data-hf-id="hf-s12m" id="personal-stroke" d="M532 419C585 408 577 467 544 460S531 517 575 527" fill="none" stroke="#FF8A54" stroke-width="8" stroke-linecap="round"/></g>
+<g data-hf-id="hf-pl3x" id="hero-goal"><ellipse data-hf-id="hf-rj47" cx="478" cy="548" rx="93" ry="15" fill="#D4E5E7" opacity=".55"/><circle data-hf-id="hf-nmt3" cx="466" cy="467" r="64" fill="#E0EFEB" stroke="#89B8AA" stroke-width="7"/><circle data-hf-id="hf-40fo" cx="466" cy="467" r="49" fill="#F7FCF9"/><g data-hf-id="hf-p5we" id="needle"><path data-hf-id="hf-vas6" d="M466 416L481 468 466 516 450 467Z" fill="#489887"/><path data-hf-id="hf-aylz" d="M466 416V467H450Z" fill="#FF6B2B"/></g><circle data-hf-id="hf-9mgw" cx="466" cy="467" r="8" fill="#fff"/><g data-hf-id="hf-q5cx" id="cap"><path data-hf-id="hf-ek32" d="M511 384L552 368 593 389 552 406Z" fill="#5B8193"/><path data-hf-id="hf-fe6o" d="M526 396V417Q551 433 578 418V398" fill="#8DB0BD"/><path data-hf-id="hf-b2wc" d="M590 390V422" stroke="#FF8E55" stroke-width="4" stroke-linecap="round"/></g></g>
+<!-- Near arm remains above the physical folder. -->
+<g data-hf-id="hf-n71s" id="near-arm"><path data-hf-id="hf-s40w" id="near-upper" fill="none" stroke="#FF8249" stroke-width="36" stroke-linecap="round"/><path data-hf-id="hf-ya3f" id="near-lower" fill="none" stroke="#F3BC95" stroke-width="26" stroke-linecap="round"/><ellipse data-hf-id="hf-0zk3" id="near-hand" rx="15" ry="12" fill="#F3BC95"/></g>
+</svg>
+<h2 data-hf-id="hf-lpec" id="label-ability" class="label">Năng lực</h2><h2 data-hf-id="hf-lfv3" id="label-personality" class="label">Cá tính</h2><h2 data-hf-id="hf-hoqc" id="label-goal" class="label">Mục tiêu</h2>
+<audio data-hf-id="hf-w7p8" id="portfolio-voice" src="assets/audio.wav" data-start="0" data-duration="6.544" data-track-index="2" data-volume="1"></audio>
+</div>
+<script>
+const tl=gsap.timeline({paused:true});
+const near={x:399,y:720},far={x:360,y:855};
+function setArm(prefix,sx,sy,ex,ey,l1,l2,bend){const dx=ex-sx,dy=ey-sy,d=Math.min(Math.hypot(dx,dy),l1+l2-.01),a=Math.atan2(dy,dx),b=Math.acos(Math.max(-1,Math.min(1,(l1*l1+d*d-l2*l2)/(2*l1*d))));const x=sx+l1*Math.cos(a+b*bend),y=sy+l1*Math.sin(a+b*bend);document.getElementById(prefix+'-upper').setAttribute('d',`M${sx},${sy}L${x},${y}`);document.getElementById(prefix+'-lower').setAttribute('d',`M${x},${y}L${ex},${ey}`);document.getElementById(prefix+'-hand').setAttribute('cx',ex);document.getElementById(prefix+'-hand').setAttribute('cy',ey);}
+function pose(){setArm('near',262,647,near.x,near.y,115,115,1);setArm('far',169,650,far.x,far.y,145,145,1);}
+pose();
+const heroes=['#hero-competence','#hero-personality','#hero-goal'],pages=['#page-competence','#page-personality','#page-goal'],labels=['#label-ability','#label-personality','#label-goal'];
+gsap.set(heroes,{opacity:0,y:70,scale:.6,transformOrigin:'50% 100%'});gsap.set(pages,{opacity:0});gsap.set(labels,{opacity:0,y:8});gsap.set('#clip',{opacity:0});gsap.set('#turning-page',{opacity:0});gsap.set(['#campus-a','#campus-b'],{opacity:0,y:20});
+for(const id of ['#route-a','#route-b']){const el=document.querySelector(id),len=el.getTotalLength();gsap.set(el,{strokeDasharray:len,strokeDashoffset:len});}
+tl.fromTo('#portfolio',{y:30},{y:0,duration:.8,ease:'power2.inOut'},0)
+ .to(far,{x:360,y:825,duration:.8,ease:'power2.inOut',onUpdate:pose},0)
+ .to(near,{x:401,y:637,duration:.6,ease:'power2.inOut',onUpdate:pose},.3)
+ .to('#cover',{scaleX:0,svgOrigin:'345 775',duration:.55,ease:'power2.inOut'},.8)
+ .set('#cover',{opacity:0},1.35)
+ .to(near,{x:434,y:694,duration:.4,ease:'power2.inOut',onUpdate:pose},1.2)
+ .to('#page-competence',{opacity:1,duration:.2},1.35)
+ .to('#hero-competence',{opacity:1,y:0,scale:1,duration:.45,ease:'back.out(1.1)'},1.5)
+ .set('#page-competence',{opacity:0},1.8)
+ .to('#label-ability',{opacity:1,y:0,duration:.15},1.92)
+ .to('#gear',{rotation:24,svgOrigin:'460 473',duration:.55,ease:'power2.out'},1.7)
+ .to('#hero-competence',{opacity:0,y:-20,scale:.94,duration:.2},2.38)
+ .to('#label-ability',{opacity:0,duration:.12},2.45)
+ .set('#turning-page',{opacity:1,scaleX:1},2.4)
+ .to('#turning-page',{scaleX:0,svgOrigin:'365 760',duration:.25,ease:'power2.inOut'},2.42)
+ .set('#turning-page',{opacity:0},2.67)
+ .set('#page-competence',{opacity:0},2.57)
+ .to('#page-personality',{opacity:1,duration:.12},2.57)
+ .to('#hero-personality',{opacity:1,y:0,scale:1,duration:.25,ease:'power2.out'},2.57)
+ .set('#page-personality',{opacity:0},2.88)
+ .to('#label-personality',{opacity:1,y:0,duration:.12},2.6)
+ .to(near,{x:410,y:646,duration:.28,ease:'power2.inOut',onUpdate:pose},2.35)
+ .to('#hero-personality',{opacity:0,y:-15,scale:.95,duration:.18},3.2)
+ .to('#label-personality',{opacity:0,duration:.1},3.22)
+ .set('#turning-page',{opacity:1,scaleX:1},3.18)
+ .to('#turning-page',{scaleX:0,svgOrigin:'365 760',duration:.25,ease:'power2.inOut'},3.21)
+ .set('#turning-page',{opacity:0},3.46)
+ .set('#page-personality',{opacity:0},3.31)
+ .to('#page-goal',{opacity:1,duration:.12},3.31)
+ .to('#hero-goal',{opacity:1,y:0,scale:1,duration:.3,ease:'power2.out'},3.31)
+ .set('#page-goal',{opacity:0},3.62)
+ .to('#label-goal',{opacity:1,y:0,duration:.12},3.36)
+ .fromTo('#needle',{rotation:-55,svgOrigin:'466 467'},{rotation:20,svgOrigin:'466 467',duration:.65,ease:'power2.inOut'},3.2)
+ .to(near,{x:430,y:701,duration:.35,ease:'power2.inOut',onUpdate:pose},3.25)
+ .to('#hero-goal',{opacity:0,y:-18,scale:.94,duration:.3},4.1)
+ .to('#label-goal',{opacity:0,duration:.18},4.12)
+ .to(near,{x:367,y:705,duration:.55,ease:'power2.inOut',onUpdate:pose},4.05)
+ .set('#cover',{opacity:1,scaleX:0},4.25)
+ .to('#cover',{scaleX:1,svgOrigin:'345 775',duration:.5,ease:'power2.inOut'},4.25)
+ .to('#clip',{opacity:1,duration:.12},4.65)
+ .to('#route-a',{strokeDashoffset:0,duration:.8,ease:'power2.inOut'},4.65)
+ .to('#route-b',{strokeDashoffset:0,duration:.85,ease:'power2.inOut'},4.95)
+ .to('#campus-a',{opacity:1,y:0,duration:.35,ease:'power2.out'},5.2)
+ .to('#campus-b',{opacity:1,y:0,duration:.35,ease:'power2.out'},5.55)
+ .to(near,{x:313,y:745,duration:.55,ease:'power2.inOut',onUpdate:pose},4.9)
+ .to('#head',{rotation:-5,svgOrigin:'210 599',duration:.5,ease:'power2.inOut'},5.3)
+ .to('#head',{rotation:0,svgOrigin:'210 599',duration:.4,ease:'power2.inOut'},6.05);
+window.__timelines=window.__timelines||{};window.__timelines['portfolio15']=tl;
+</script></body></html>

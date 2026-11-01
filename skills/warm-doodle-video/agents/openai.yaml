@@ -1,0 +1,6 @@
+interface:
+  display_name: "Warm Doodle — Cartoon & Collage"
+  short_description: "Reference-led cartoon, vivid text strips and collage motion"
+  default_prompt: "Use $warm-doodle-video to refine my reference-led cartoon and collage style, respecting whether I ask for research or video production."
+policy:
+  allow_implicit_invocation: true

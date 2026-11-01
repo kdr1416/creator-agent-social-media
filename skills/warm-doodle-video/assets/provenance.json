@@ -1,0 +1,12 @@
+{
+  "doodle-kit.js": "Original SVG rig authored for this style trial.",
+  "paper.png": "Original deterministic paper texture seed20261020.",
+  "scene-sans-bold.ttf": "Segoe UI Bold, copied unchanged from existing user project. Keep existing font rights; do not claim an open font license.",
+  "gsap.min.js": "Copied unchanged from existing user project; retain embedded license header.",
+  "fonts/Caveat-700-latin.woff2": "HyperFrames hw-arrow registry dependency; Latin-only accent font.",
+  "_style_status": {
+    "state": "rejected_pilot_technical_fixtures",
+    "approved_visual_defaults": false,
+    "instruction": "Do not automatically copy this rig, font, stylesheet or paper texture for the revised style. Keep provenance; source new design assets when production is authorized."
+  }
+}

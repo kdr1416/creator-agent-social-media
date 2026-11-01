@@ -1,0 +1,12 @@
+[
+  {
+    "frame": "frame-00-at-2.4s.png",
+    "approved_pose": "02-local",
+    "mean_absolute_pixel_difference": 0.0
+  },
+  {
+    "frame": "frame-02-at-4.42s.png",
+    "approved_pose": "03-expand",
+    "mean_absolute_pixel_difference": 0.0
+  }
+]

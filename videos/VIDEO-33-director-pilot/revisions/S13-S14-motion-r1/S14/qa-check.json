@@ -1,0 +1,91 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 6.855625,
+    "samples": [
+      0.381,
+      1.143,
+      1.904,
+      2.666,
+      3.428,
+      4.19,
+      4.951,
+      5.713,
+      6.475
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.381,
+      1.904,
+      3.428,
+      4.951,
+      6.475
+    ],
+    "checked": 9,
+    "passed": 9
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "saved": {
+    "id": "7a813d35-d282-4c97-8c0f-8df2008bad75",
+    "revision": null,
+    "report": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S13-S14-motion-r1\\S14\\.hyperframes\\artifacts\\checks\\7a813d35-d282-4c97-8c0f-8df2008bad75.json",
+    "attribution": "unversioned"
+  },
+  "_meta": {
+    "version": "0.8.170",
+    "latestVersion": "0.8.170",
+    "updateAvailable": false
+  }
+}

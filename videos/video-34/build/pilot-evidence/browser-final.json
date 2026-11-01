@@ -1,0 +1,253 @@
+{
+  "browser": "Chrome/150.0.7871.115",
+  "scenes": {
+    "S03": {
+      "samples": [
+        {
+          "t": 0,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 1.25,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 2.8,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 3.8,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 4.2,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 5.3,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 7.8,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 8.9,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        }
+      ],
+      "seekPixelHashes": {
+        "forward": "6dc803fe1463a07e7c5388b46df6b895ad6b5e52ac9fa7a25023551b95d1237d",
+        "backward": "6dc803fe1463a07e7c5388b46df6b895ad6b5e52ac9fa7a25023551b95d1237d",
+        "equal": true
+      },
+      "contact": null,
+      "errors": [],
+      "failed": []
+    },
+    "S08": {
+      "samples": [
+        {
+          "t": 0,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 1.4,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 2.6,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 3.8,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 4.9,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 5.56,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        }
+      ],
+      "seekPixelHashes": {
+        "forward": "6416c5c57fe7ede9c6c3028eab35b20cc6b0ad16a9c123c0b66fd8d63305fa08",
+        "backward": "6416c5c57fe7ede9c6c3028eab35b20cc6b0ad16a9c123c0b66fd8d63305fa08",
+        "equal": true
+      },
+      "contact": {
+        "childHandCenter": {
+          "x": 418,
+          "y": 872
+        },
+        "parentWrist": {
+          "x": 418,
+          "y": 872
+        },
+        "distance": 0,
+        "nearArmD": "M330 750Q358 798 373 817L418 872",
+        "lidTransform": "matrix(1,0,-0.00632,0.045,170,835)"
+      },
+      "errors": [],
+      "failed": []
+    }
+  },
+  "review": {
+    "360": {
+      "overflow": false,
+      "playback": [
+        {
+          "id": "S03",
+          "time": 0.242084,
+          "duration": 8.93925,
+          "width": 1080,
+          "height": 1920,
+          "playing": true,
+          "error": null,
+          "dropped": 0
+        },
+        {
+          "id": "S08",
+          "time": 0.552093,
+          "duration": 5.610125,
+          "width": 1080,
+          "height": 1920,
+          "playing": true,
+          "error": null,
+          "dropped": 0
+        }
+      ],
+      "completePlayback": [],
+      "errors": []
+    },
+    "768": {
+      "overflow": false,
+      "playback": [
+        {
+          "id": "S03",
+          "time": 0.569045,
+          "duration": 8.93925,
+          "width": 1080,
+          "height": 1920,
+          "playing": true,
+          "error": null,
+          "dropped": 0
+        },
+        {
+          "id": "S08",
+          "time": 0.575625,
+          "duration": 5.610125,
+          "width": 1080,
+          "height": 1920,
+          "playing": true,
+          "error": null,
+          "dropped": 0
+        }
+      ],
+      "completePlayback": [],
+      "errors": []
+    },
+    "1280": {
+      "overflow": false,
+      "playback": [
+        {
+          "id": "S03",
+          "time": 0.577064,
+          "duration": 8.93925,
+          "width": 1080,
+          "height": 1920,
+          "playing": true,
+          "error": null,
+          "dropped": 0
+        },
+        {
+          "id": "S08",
+          "time": 0.583034,
+          "duration": 5.610125,
+          "width": 1080,
+          "height": 1920,
+          "playing": true,
+          "error": null,
+          "dropped": 0
+        }
+      ],
+      "completePlayback": [
+        {
+          "id": "S03",
+          "ended": true,
+          "time": 8.93925,
+          "duration": 8.93925,
+          "error": null,
+          "quality": {}
+        },
+        {
+          "id": "S08",
+          "ended": true,
+          "time": 5.610125,
+          "duration": 5.610125,
+          "error": null,
+          "quality": {}
+        }
+      ],
+      "errors": []
+    }
+  }
+}

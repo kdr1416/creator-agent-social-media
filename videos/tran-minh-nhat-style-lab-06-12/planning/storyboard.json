@@ -1,0 +1,315 @@
+{
+  "project_slug": "tran-minh-nhat",
+  "scope": [
+    6,
+    12
+  ],
+  "scenes": [
+    {
+      "scene_number": 6,
+      "scene_id": "scene_06",
+      "start": 21.667833333333334,
+      "end": 26.8605,
+      "raw_text": "nổi tiếng với các lĩnh vực kinh doanh, khoa học giữ liệu, trí tuệ nhân tạo, luật và khoa học sức khỏe.",
+      "corrected_text": "nổi tiếng với các lĩnh vực Kinh doanh, Khoa học Dữ liệu, Trí tuệ nhân tạo, Luật và Khoa học Sức khỏe.",
+      "semantic_type": "membership",
+      "visual_center": "Năm cửa sổ nghiên cứu thuộc cùng campus",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Quan hệ tập hợp ngành trong cùng trường cần các lớp đồng hiện; người thật đi qua từng phòng sẽ biến thành hành trình sai nghĩa.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Năm cửa sổ nghiên cứu thuộc cùng campus",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 5.192666666666667,
+      "audio_slice": "scratch/audio_slices/scene_06.wav",
+      "audio_sha256": "deb5086155956deaa12be2efee46c7d7a4d42f03d2b2feac0c9c9d5e74acf0ab",
+      "render_mode": "HF_ONLY",
+      "title": "Nhiều lĩnh vực cùng một trường",
+      "visual_verb": "Lần lượt sáng năm vùng: bàn phân tích kinh doanh, dữ liệu, mô hình AI, sách luật, bàn nghiên cứu sức khoẻ; các vùng không nối thành dây chuyền.",
+      "narrative_visual": "Một campus mở mặt cắt với nhiều không gian trong cùng kiến trúc. Lần lượt sáng năm vùng: bàn phân tích kinh doanh, dữ liệu, mô hình AI, sách luật, bàn nghiên cứu sức khoẻ; các vùng không nối thành dây chuyền.",
+      "opening_state": "Một campus mở mặt cắt với nhiều không gian trong cùng kiến trúc.",
+      "transformation": "Lần lượt sáng năm vùng: bàn phân tích kinh doanh, dữ liệu, mô hình AI, sách luật, bàn nghiên cứu sức khoẻ; các vùng không nối thành dây chuyền.",
+      "final_state": "Tất cả thuộc cùng trường; chỉ hai nhãn đang đọc nổi tại một lúc.",
+      "protagonist_action": "Không thêm nhân vật vì tập hợp ngành cần đọc được; không dùng icon rời/gear dây chuyền.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            0.8
+          ],
+          "action": "Photo paper cover peels away to reveal the continuous cutaway."
+        },
+        {
+          "range": [
+            1.05,
+            1.88
+          ],
+          "action": "Business workspace and chart operate."
+        },
+        {
+          "range": [
+            1.88,
+            2.8
+          ],
+          "action": "Data workstation observations and fit."
+        },
+        {
+          "range": [
+            2.8,
+            3.6
+          ],
+          "action": "AI board signal activates within one network."
+        },
+        {
+          "range": [
+            3.6,
+            4.05
+          ],
+          "action": "Law reading-room book opens."
+        },
+        {
+          "range": [
+            4.05,
+            5.192666666667
+          ],
+          "action": "Health microscope and trace, final shared-campus hold."
+        }
+      ],
+      "timing_evidence": "Approximate phrase cues from provided narration; no forced word alignment",
+      "hf_signature_motion": "Lần lượt sáng năm vùng: bàn phân tích kinh doanh, dữ liệu, mô hình AI, sách luật, bàn nghiên cứu sức khoẻ; các vùng không nối thành dây chuyền.",
+      "signature_motion": "Lần lượt sáng năm vùng: bàn phân tích kinh doanh, dữ liệu, mô hình AI, sách luật, bàn nghiên cứu sức khoẻ; các vùng không nối thành dây chuyền.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "physical architectural model",
+          "bounds": "x77–643,y340–985",
+          "semantic_boundary": "Continuous building shell, floor slabs, load-bearing columns and workspaces; not generic panels.",
+          "removal_consequence": "Removing floors and columns destroys the shared-building membership relationship."
+        },
+        {
+          "object_type": "photographic paper cover",
+          "bounds": "x104–616,y383–946",
+          "semantic_boundary": "Photo of actual VU campus covers an explicitly illustrative cutaway.",
+          "removal_consequence": "Loses transition from real campus identity to illustrated interior."
+        }
+      ],
+      "container_semantics": "none",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "simultaneous_labels_max": 2,
+        "rule": "Short labels only; no paragraphs. Labels in scene06 replace earlier labels."
+      },
+      "visible_text_inventory": [
+        "Kinh doanh",
+        "Dữ liệu",
+        "AI",
+        "Luật",
+        "Sức khoẻ"
+      ],
+      "mobile_legibility_plan": "Main type 40–54px, labels >=28px; review at 360×640. No essential micro-copy.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "none; colour belongs to materials/character and concept states",
+      "accent_treatment": "none",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "new": [
+          "architectural model outer shell",
+          "continuous floor slabs and columns",
+          "business workspace and board",
+          "data workstation and plotted observations",
+          "AI research network board",
+          "law reading room with opening book",
+          "health laboratory and microscope",
+          "field labels"
+        ],
+        "reuse": [
+          "VU official campus photo for identity cover",
+          "local Arial fonts and GSAP"
+        ],
+        "character": "none; diagram is already dense",
+        "source_note": "Interior is illustrative, not an actual VU floor plan.",
+        "status": "resolved locally before final render"
+      },
+      "handoff": "Mặt cắt khép lại thành bìa giấy.",
+      "transition_to_next": "Mặt cắt khép lại thành bìa giấy.",
+      "fact_status": "institutional context supported; no ranking/guarantee visual added",
+      "publication_hold": false,
+      "start_sample": 520028,
+      "end_sample": 644652,
+      "sample_frames": 124624,
+      "source_storyboard": "videos/tran-minh-nhat-pilot/planning/storyboard.json",
+      "isolation": "All outputs under videos/tran-minh-nhat-style-lab-06-12; originals read-only."
+    },
+    {
+      "scene_number": 12,
+      "scene_id": "scene_12",
+      "start": 44.711375,
+      "end": 49.130625,
+      "raw_text": "mà còn phản ánh rõ tư duy, cá tính và định hướng phát triển của bản thân.",
+      "corrected_text": "mà còn phản ánh rõ tư duy, cá tính và định hướng phát triển của bản thân.",
+      "semantic_type": "identity",
+      "visual_center": "Hồ sơ mở ra thành thế giới riêng của Nhật",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Ba lớp tư duy/cá tính/định hướng biểu hiện bằng cấu trúc hình; ẩn dụ giấy mở không phải người đang biểu diễn.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Hồ sơ mở ra thành thế giới riêng của Nhật",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 4.41925,
+      "audio_slice": "scratch/audio_slices/scene_12.wav",
+      "audio_sha256": "fdeb4c276a2ba33d9b081f44808f5c7d0d8ed1bb28adae597dfe54a4c11f6b0d",
+      "render_mode": "HF_ONLY",
+      "title": "Ba thành phần cốt lõi trong một hồ sơ",
+      "visual_verb": "Giữ hình ghép và nhân vật tự cá nhân hoá; Nhật chọn ảnh campus VU Amsterdam, đặt vào vị trí đích đến trên bản kế hoạch rồi khoanh lại.",
+      "narrative_visual": "Giữ hình ghép và nhân vật tự cá nhân hoá; Nhật chọn ảnh campus VU Amsterdam, đặt vào vị trí đích đến trên bản kế hoạch rồi khoanh lại.",
+      "opening_state": "Hồ sơ mở: hình ghép ở trang trái; chân dung giấy chưa có dấu nhận diện ở phần dưới trang phải.",
+      "transformation": "Giữ hình ghép và nhân vật tự cá nhân hoá; Nhật chọn ảnh campus VU Amsterdam, đặt vào vị trí đích đến trên bản kế hoạch rồi khoanh lại.",
+      "final_state": "Ba thành phần: hình ghép, nhân vật có nét riêng, ảnh trường được chọn trên kế hoạch. Ba nhãn đặt gần hình, không nét nối chú thích.",
+      "protagonist_action": "Nhật tự cá nhân hoá chân dung giấy; sau đó chọn và đặt ảnh VU lên kế hoạch, hướng mắt và tay tới lựa chọn được khoanh.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            1.5
+          ],
+          "action": "Hình ghép hoàn tất, nhãn Tư duy gắn cạnh cấu trúc."
+        },
+        {
+          "range": [
+            1.5,
+            2.7
+          ],
+          "action": "Nhật tự đội mũ tím, đeo ba lô xanh, biểu cảm xuất hiện; Cá tính gắn cạnh chân dung."
+        },
+        {
+          "range": [
+            2.7,
+            3.7
+          ],
+          "action": "Ảnh campus được đặt lên kế hoạch, khoanh một lần để xác nhận lựa chọn."
+        },
+        {
+          "range": [
+            3.7,
+            4.41925
+          ],
+          "action": "Giữ đủ ba thành phần và ba nhãn."
+        }
+      ],
+      "timing_evidence": "Approximate phrase cues from provided narration; no forced word alignment",
+      "hf_signature_motion": "Khớp hình → tự cá nhân hoá → đặt ảnh VU lên kế hoạch và khoanh lựa chọn.",
+      "signature_motion": "Khớp hình → tự cá nhân hoá → đặt ảnh VU lên kế hoạch và khoanh lựa chọn.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "bounds": "x72–663,y365–1000",
+          "semantic_boundary": "An open dossier with blue cover, spine, page seams and a turning corner.",
+          "removal_consequence": "Without the paper surface, ideas cease to emerge from a portfolio and become isolated icons."
+        },
+        {
+          "object_type": "document",
+          "bounds": "x385–618,y470–674",
+          "semantic_boundary": "Bản kế hoạch giấy có gáy/ô đặt mục tiêu; ảnh campus là một mảnh ảnh được chọn.",
+          "removal_consequence": "Bỏ mặt giấy sẽ mất ngữ cảnh chủ động lập kế hoạch và chọn đích đến."
+        }
+      ],
+      "container_semantics": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "rule": "Three attached concept labels persist; future-self has one short explanatory sublabel. No narrated sentence or paragraph."
+      },
+      "visible_text_inventory": [
+        "DẤU ẤN RIÊNG",
+        "Tư duy",
+        "Cá tính",
+        "Định hướng",
+        "VU Amsterdam"
+      ],
+      "mobile_legibility_plan": "Arial Black900, attached labels32px, title42px. Verified actual rendered360x640 proof with clear contrast, no label overlap.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "Explicit student selection of a destination, as approved by user",
+      "accent_treatment": "One drawn circle around chosen campus photo, no repeated highlights",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "reuse": [
+          "dossier cover/pages/spine",
+          "tangram layers",
+          "verified Vietnamese font Segoe UI Black900",
+          "student body rig as the active paper portrait"
+        ],
+        "new": [
+          "physical planning sheet with empty target slots",
+          "official VU campus photo as selected destination",
+          "single hand-drawn selection circle"
+        ],
+        "removed": [
+          "orange personal line",
+          "raised paper route",
+          "contextual pencil prop",
+          "duplicate external mascot",
+          "all label leader lines",
+          "future-self sketch",
+          "target reticle"
+        ],
+        "provenance": "Original symbolic paper illustration; no invented profession, achievement or physical likeness."
+      },
+      "handoff": "Trang giấy tách ra để đối chiếu các câu chuyện.",
+      "transition_to_next": "Trang giấy tách ra để đối chiếu các câu chuyện.",
+      "fact_status": "user-provided personal narrative; no independent admissions evidence",
+      "publication_hold": false,
+      "start_sample": 1073073,
+      "end_sample": 1179135,
+      "sample_frames": 106062,
+      "source_storyboard": "videos/tran-minh-nhat-pilot/planning/storyboard.json",
+      "isolation": "All outputs under videos/tran-minh-nhat-style-lab-06-12; originals read-only."
+    }
+  ],
+  "revision": 6,
+  "font_revision": "Segoe UI Black900, locally embedded; every visible Vietnamese glyph checked in Unicode cmap; Arial regular remains for notes",
+  "on_screen_note_policy": "No illustration disclaimer text; provenance remains in documents."
+}

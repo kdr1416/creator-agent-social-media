@@ -1,0 +1,22 @@
+{
+  "photo": {
+    "source": "https://commons.wikimedia.org/wiki/File:Townhouse_in_Zejtun.jpg",
+    "author": "Marika Caruana",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "modifications": "Crop (340,95,1020,841), resize720x790. No AI edits.",
+    "purpose": "Architectural context, not an available listing or ownership evidence.",
+    "original_sha256": "45138fa64aa74fdec69b3d720659aedd00bc38503724535e7f7ab9d91226c48d"
+  },
+  "map": {
+    "source": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_admin_0_countries.geojson",
+    "license": "public domain",
+    "projection": "x=420+(longitude-14.41)*150; y=815-(latitude-35.9)*185.18, north up. Local equirectangular ratio accounts for cos36deg.",
+    "pin_lon_lat": [
+      14.445,
+      35.895
+    ]
+  },
+  "mascot": "Existing approved compact orange rig; new reach/contact/release poses.",
+  "font": "Local Segoe UI Black"
+}

@@ -1,0 +1,13 @@
+{
+  "scene_id": "scene_04",
+  "reason": "User removed on-screen illustration notes after this older pilot was rendered.",
+  "input": "reference_pilots/scene_04/index.html",
+  "operate_on": "a derivative copy under build/, never the frozen reference",
+  "remove_dom_selectors": [
+    "#illustration-note"
+  ],
+  "remove_media": "audio elements in picture-only assembly derivative",
+  "keep": "all remaining staging, acting, images, typography and motion",
+  "target_picture_frames": 180,
+  "render_required_for_clean_assembly": true
+}

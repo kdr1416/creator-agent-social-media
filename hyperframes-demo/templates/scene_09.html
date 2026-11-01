@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=720, height=1280" />
+    <title>Scene 9 - Québec Exception & CAQ Process</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        color: #0f172a;
+        font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+        overflow: hidden;
+      }
+      #root {
+        position: relative;
+        width: 720px;
+        height: 1280px;
+        overflow: hidden;
+        background: #ffffff;
+      }
+
+      /* ── SUBTLE OPEN-CANVAS AMBIENT BACKGROUND ── */
+      .bg-canvas {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .bg-glow {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          circle at 50% 45%,
+          rgba(241, 245, 249, 0.95) 0%,
+          rgba(255, 255, 255, 1) 75%
+        );
+      }
+      .bg-grid {
+        position: absolute;
+        inset: 0;
+        background-image: 
+          linear-gradient(to right, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+        background-size: 40px 40px;
+        opacity: 0.65;
+      }
+
+      /* ── OPEN-CANVAS UNBOXED HEADLINE ── */
+      .headline-container {
+        position: absolute;
+        top: 135px;
+        left: 0;
+        width: 720px;
+        padding: 0 48px;
+        text-align: center;
+        z-index: 50;
+      }
+      .main-title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #0f172a;
+        margin: 0;
+        display: inline-block;
+      }
+      .title-accent-bar {
+        height: 6px;
+        background: #fde047;
+        margin: 10px auto 0 auto;
+        width: 180px;
+        border-radius: 3px;
+        transform-origin: center;
+      }
+
+      /* ── STAGE VISUAL AREA (Y: 230px to 1060px, strictly clears 200px footer) ── */
+      .visual-stage {
+        position: absolute;
+        top: 230px;
+        left: 0;
+        width: 720px;
+        height: 830px;
+        z-index: 20;
+      }
+
+      /* Grounding Pedestal Line at bottom of stage (Y: 1050px in root, bottom of stage) */
+      .stage-ground-line {
+        position: absolute;
+        bottom: 10px;
+        left: 48px;
+        right: 48px;
+        height: 4px;
+        background: #e2e8f0;
+        border-radius: 2px;
+        z-index: 15;
+      }
+
+      /* ── BEAT 1: QUÉBEC PROVINCIAL CREST ── */
+      .emblem-wrap {
+        position: absolute;
+        top: 140px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 25;
+      }
+      .emblem-shield-svg {
+        filter: drop-shadow(0 16px 32px rgba(30, 58, 138, 0.16));
+      }
+      .emblem-label {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 16px;
+        letter-spacing: 0.22em;
+        color: #1e3a8a;
+        margin-top: 20px;
+        text-transform: uppercase;
+      }
+
+      /* ── BEAT 2: OFFICIAL CAQ CERTIFICATE DOCUMENT ── */
+      .caq-doc-container {
+        position: absolute;
+        top: 40px;
+        left: 130px;
+        width: 460px;
+        height: 680px;
+        background: #ffffff;
+        border: 2px solid #cbd5e1;
+        border-radius: 16px;
+        box-shadow: 0 24px 50px rgba(15, 23, 42, 0.12), 0 0 0 1px rgba(203, 213, 225, 0.5);
+        padding: 32px 28px;
+        z-index: 30;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transform-origin: center left;
+      }
+      .doc-guilloche-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 16px;
+      }
+      .doc-header-text {
+        text-align: center;
+        margin-top: 16px;
+      }
+      .doc-gov-name {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        color: #1e3a8a;
+        text-transform: uppercase;
+      }
+      .doc-title-caq {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 34px;
+        color: #0f172a;
+        letter-spacing: 0.05em;
+        margin-top: 6px;
+      }
+      .doc-title-sub {
+        font-size: 11px;
+        font-weight: 800;
+        color: #64748b;
+        letter-spacing: 0.08em;
+        margin-top: 4px;
+      }
+      .doc-body-skeleton {
+        margin: 26px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .doc-line {
+        height: 10px;
+        background: #f1f5f9;
+        border-radius: 5px;
+      }
+      .doc-footer-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-top: 1px dashed #cbd5e1;
+        padding-top: 18px;
+      }
+
+      /* ── OFFICIAL APPROVAL STAMP (DẬP MỘC HÀNH CHÍNH) ── */
+      .stamp-wrap {
+        position: absolute;
+        bottom: 35px;
+        right: 22px;
+        width: 180px;
+        height: 180px;
+        z-index: 45;
+        pointer-events: none;
+      }
+      .stamp-shockwave {
+        position: absolute;
+        inset: -20px;
+        border: 4px solid #ea580c;
+        border-radius: 50%;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      /* ── BEAT 3: FINANCIAL ELEVATION COMPARISON (RIGHT SIDE) ── */
+      .metrics-stage {
+        position: absolute;
+        top: 20px;
+        left: 350px;
+        width: 330px;
+        height: 790px;
+        z-index: 35;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      /* Top Stat Callout */
+      .elevation-top-callout {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .hero-cad-number {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 42px;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: #0f172a;
+        margin: 0;
+        white-space: nowrap;
+      }
+      .number-highlight-bar {
+        height: 8px;
+        background: #fde047;
+        width: 270px;
+        border-radius: 4px;
+        margin: 8px 0 16px 0;
+        transform-origin: left;
+      }
+      .vnd-block {
+        display: inline-block;
+        background: #0f172a;
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 26px;
+        padding: 8px 20px;
+        border-radius: 12px;
+        border: 3px solid #ff6b2b;
+        box-shadow: 0 6px 0 #ff6b2b;
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+      }
+
+      /* Grounded Comparative Columns Graphic */
+      .comparative-bars-wrap {
+        display: flex;
+        align-items: flex-end;
+        gap: 24px;
+        height: 380px;
+        padding-bottom: 14px;
+        border-bottom: 3px solid #cbd5e1;
+      }
+      .bar-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+      }
+      .bar-pillar-fed {
+        width: 100%;
+        height: 180px;
+        background: #e2e8f0;
+        border-radius: 10px 10px 0 0;
+        border: 2px solid #cbd5e1;
+        transform-origin: bottom center;
+      }
+      .bar-pillar-qc {
+        width: 100%;
+        height: 300px;
+        background: #ff6b2b;
+        border-radius: 10px 10px 0 0;
+        border: 3px solid #0f172a;
+        box-shadow: 0 4px 0 #0f172a;
+        transform-origin: bottom center;
+      }
+      .bar-label-fed {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 800;
+        font-size: 13px;
+        letter-spacing: 0.05em;
+        color: #475569;
+        margin-top: 10px;
+        text-align: center;
+      }
+      .bar-label-qc {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        color: #0f172a;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      audio {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-width="720"
+      data-height="1280"
+      data-duration="12.0"
+    >
+      <!-- Background Ambient -->
+      <div class="bg-canvas" data-layout-allow-overflow>
+        <div class="bg-glow"></div>
+        <div class="bg-grid"></div>
+      </div>
+
+      <!-- Audio Track -->
+      <audio
+        id="bg-audio"
+        src="./assets/audio.wav"
+        data-track="voice"
+        data-start="0s"
+        data-duration="12.0s"
+        preload="auto"
+      ></audio>
+
+      <!-- Open-Canvas Headline -->
+      <div class="headline-container" data-layout-allow-overflow>
+        <h1 class="main-title" id="main-title">QUÉBEC: QUY ĐỊNH RIÊNG</h1>
+        <div class="title-accent-bar" id="title-accent"></div>
+      </div>
+
+      <!-- Main Visual Stage (Y: 230px to 1060px -> Leaves 200px Clean Subtitle Footer) -->
+      <div class="visual-stage" data-layout-allow-overflow data-layout-allow-overlap>
+        <div class="stage-ground-line" id="stage-ground"></div>
+        
+        <!-- Beat 1: Authentic Fleur-de-lis Crest of Québec -->
+        <div class="emblem-wrap" id="emblem-wrap" data-layout-allow-overflow data-layout-allow-overlap data-layout-allow-occlusion>
+          <svg
+            class="emblem-shield-svg"
+            width="170"
+            height="190"
+            viewBox="0 0 100 120"
+            fill="none"
+            data-layout-allow-overflow
+          >
+            <!-- Outer Shield Base -->
+            <path
+              d="M10 20 C10 20 50 10 50 10 C50 10 90 20 90 20 C90 70 70 105 50 115 C30 105 10 70 10 20 Z"
+              fill="#1E3A8A"
+              stroke="#FDE047"
+              stroke-width="3"
+            />
+            <!-- Stylized Fleur-de-lis inside Shield -->
+            <path
+              d="M50 25 C54 38 62 46 62 56 C62 66 55 70 50 78 C45 70 38 66 38 56 C38 46 46 38 50 25 Z"
+              fill="#FFFFFF"
+            />
+            <path
+              d="M40 54 C30 50 22 55 22 65 C22 72 30 75 42 68 C39 63 38 58 40 54 Z"
+              fill="#FFFFFF"
+            />
+            <path
+              d="M60 54 C70 50 78 55 78 65 C78 72 70 75 58 68 C61 63 62 58 60 54 Z"
+              fill="#FFFFFF"
+            />
+            <rect
+              x="32"
+              y="66"
+              width="36"
+              height="6"
+              rx="3"
+              fill="#FDE047"
+            />
+            <path
+              d="M43 72 C46 80 48 86 50 89 C52 86 54 80 57 72 Z"
+              fill="#FFFFFF"
+            />
+          </svg>
+          <span class="emblem-label" data-layout-allow-overlap data-layout-allow-occlusion>TỈNH BANG QUÉBEC</span>
+        </div>
+
+        <!-- Beat 2: Official CAQ Certificate Document -->
+        <div
+          class="caq-doc-container"
+          id="caq-doc"
+          data-layout-allow-overflow
+          data-layout-allow-occlusion
+        >
+          <!-- Document Guilloche Top -->
+          <div class="doc-guilloche-top">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="#1E3A8A">
+              <path d="M12 2L4 7v6c0 5.55 3.84 10.74 8 12 4.16-1.26 8-6.45 8-12V7l-8-5z"/>
+            </svg>
+            <div style="height: 2px; flex: 1; margin: 0 16px; background: #e2e8f0; border-radius: 1px;"></div>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="#1E3A8A">
+              <path d="M12 2L4 7v6c0 5.55 3.84 10.74 8 12 4.16-1.26 8-6.45 8-12V7l-8-5z"/>
+            </svg>
+          </div>
+
+          <!-- Document Header -->
+          <div class="doc-header-text">
+            <div class="doc-title-caq">CAQ</div>
+          </div>
+
+          <!-- Document Lines -->
+          <div class="doc-body-skeleton">
+            <div class="doc-line" style="width: 100%;"></div>
+            <div class="doc-line" style="width: 88%;"></div>
+            <div class="doc-line" style="width: 92%;"></div>
+            <div class="doc-line" style="width: 75%;"></div>
+            <div class="doc-line" style="width: 84%;"></div>
+            <div class="doc-line" style="width: 95%;"></div>
+            <div class="doc-line" style="width: 70%;"></div>
+          </div>
+
+          <!-- Document Footer -->
+          <div class="doc-footer-meta">
+            <!-- Stylized Barcode -->
+            <svg width="120" height="36" viewBox="0 0 100 32" fill="#0F172A">
+              <rect x="0" y="0" width="4" height="32" />
+              <rect x="8" y="0" width="2" height="32" />
+              <rect x="14" y="0" width="6" height="32" />
+              <rect x="24" y="0" width="3" height="32" />
+              <rect x="31" y="0" width="5" height="32" />
+              <rect x="40" y="0" width="2" height="32" />
+              <rect x="46" y="0" width="6" height="32" />
+              <rect x="56" y="0" width="4" height="32" />
+              <rect x="64" y="0" width="2" height="32" />
+              <rect x="70" y="0" width="5" height="32" />
+              <rect x="80" y="0" width="3" height="32" />
+              <rect x="88" y="0" width="7" height="32" />
+              <rect x="98" y="0" width="2" height="32" />
+            </svg>
+          </div>
+
+          <!-- Official Approval Stamp (Dập Mộc Hành Chính) -->
+          <div class="stamp-wrap" id="stamp-wrap" data-layout-allow-overflow>
+            <div class="stamp-shockwave" id="stamp-shockwave"></div>
+            <svg
+              width="180"
+              height="180"
+              viewBox="0 0 120 120"
+              fill="none"
+              id="stamp-svg"
+              data-layout-allow-overflow
+            >
+              <!-- Outer double circular border -->
+              <circle
+                cx="60"
+                cy="60"
+                r="56"
+                stroke="#EA580C"
+                stroke-width="3.5"
+                stroke-dasharray="6 3"
+              />
+              <circle
+                cx="60"
+                cy="60"
+                r="50"
+                stroke="#EA580C"
+                stroke-width="2"
+              />
+              <!-- Center Badge -->
+              <circle
+                cx="60"
+                cy="60"
+                r="38"
+                fill="#EA580C"
+                fill-opacity="0.08"
+                stroke="#EA580C"
+                stroke-width="1.5"
+              />
+              <text
+                x="60"
+                y="52"
+                text-anchor="middle"
+                fill="#EA580C"
+                font-family="Montserrat"
+                font-weight="900"
+                font-size="19"
+                letter-spacing="1"
+              >
+                CAQ
+              </text>
+              <text
+                x="60"
+                y="70"
+                text-anchor="middle"
+                fill="#EA580C"
+                font-family="Plus Jakarta Sans"
+                font-weight="900"
+                font-size="11"
+                letter-spacing="0.5"
+              >
+                CHẤP THUẬN
+              </text>
+              <circle cx="27" cy="60" r="2.5" fill="#EA580C" />
+              <circle cx="93" cy="60" r="2.5" fill="#EA580C" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Beat 3: Financial Elevation Comparison (Right Side) -->
+        <div
+          class="metrics-stage"
+          id="metrics-stage"
+          data-layout-allow-overflow
+          data-layout-allow-overlap
+        >
+          <!-- Top Stat Callout -->
+          <div class="elevation-top-callout">
+            <!-- Hero CAD Number -->
+            <div class="hero-cad-number" id="hero-cad">> 24.600 CAD</div>
+            <div class="number-highlight-bar" id="number-bar"></div>
+
+            <!-- VND Equivalent Block (2.5D solid shadow) -->
+            <div class="vnd-block" id="vnd-block">~460 TRIỆU</div>
+          </div>
+
+          <!-- Grounded Comparative Columns -->
+          <div class="comparative-bars-wrap" id="comp-bars">
+            <!-- Federal Bar -->
+            <div class="bar-column">
+              <div class="bar-pillar-fed" id="bar-fed"></div>
+              <div class="bar-label-fed">LIÊN BANG</div>
+            </div>
+
+            <!-- Québec Bar -->
+            <div class="bar-column">
+              <div class="bar-pillar-qc" id="bar-qc"></div>
+              <div class="bar-label-qc">QUÉBEC</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- GSAP Master Animation Timeline -->
+    <script>
+      const tl = gsap.timeline();
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+
+      // Initial State
+      gsap.set("#main-title", { opacity: 0, y: -20 });
+      gsap.set("#title-accent", { scaleX: 0 });
+      gsap.set("#stage-ground", { opacity: 0, scaleX: 0 });
+      gsap.set("#emblem-wrap", { opacity: 0, scale: 0.7 });
+      gsap.set("#caq-doc", { opacity: 0, y: 90, scale: 0.95 });
+      gsap.set("#stamp-svg", { opacity: 0, scale: 2.3, rotate: -25 });
+      gsap.set("#stamp-shockwave", { opacity: 0, scale: 0.8 });
+      gsap.set("#metrics-stage", { opacity: 0 });
+      gsap.set("#hero-cad", { opacity: 0, scale: 0.9 });
+      gsap.set("#number-bar", { scaleX: 0 });
+      gsap.set("#vnd-block", { opacity: 0, y: 20 });
+      gsap.set("#bar-fed", { scaleY: 0 });
+      gsap.set("#bar-qc", { scaleY: 0 });
+
+      // ── BEAT 1 (0.0s – 3.2s): QUÉBEC: QUY ĐỊNH RIÊNG ──
+      tl.to("#main-title", {
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        ease: "power3.out"
+      }, 0.2);
+
+      tl.to("#title-accent", {
+        scaleX: 1,
+        duration: 0.5,
+        ease: "power2.out"
+      }, 0.5);
+
+      tl.to("#stage-ground", {
+        opacity: 1,
+        scaleX: 1,
+        duration: 0.6,
+        ease: "power2.out"
+      }, 0.4);
+
+      tl.to("#emblem-wrap", {
+        opacity: 1,
+        scale: 1,
+        duration: 0.8,
+        ease: "back.out(1.5)"
+      }, 0.6);
+
+      // ── BEAT 2 (3.2s – 6.8s): QUY TRÌNH CAQ & DẬP MỘC HÀNH CHÍNH ──
+      // Transition out Fleur-de-lis, slide in official CAQ Document
+      tl.to("#emblem-wrap", {
+        opacity: 0,
+        scale: 0.85,
+        duration: 0.35,
+        ease: "power2.in"
+      }, 2.95);
+      tl.set("#emblem-wrap", { display: "none" }, 3.32);
+
+      tl.to("#caq-doc", {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.7,
+        ease: "power3.out"
+      }, 3.3);
+
+      // STAMP SLAM ACTION at t=4.6s ("thực hiện thêm quy trình CAQ")
+      tl.to("#stamp-svg", {
+        opacity: 1,
+        scale: 1,
+        rotate: -10,
+        duration: 0.35,
+        ease: "back.out(3)"
+      }, 4.6);
+
+      // Shockwave burst on impact
+      tl.fromTo("#stamp-shockwave", 
+        { opacity: 0.9, scale: 0.8 },
+        { opacity: 0, scale: 2.0, duration: 0.45, ease: "power2.out" },
+        4.7
+      );
+
+      // Tactile impact shake on document
+      tl.to("#caq-doc", {
+        y: "+=6",
+        duration: 0.08,
+        yoyo: true,
+        repeat: 1,
+        ease: "power1.inOut"
+      }, 4.75);
+
+      // ── BEAT 3 (6.8s – 12.0s): CAO HƠN MỨC CHUNG (> 24.600 CAD ~ 460 TR) ──
+      // Shift CAQ doc leftward to act as credential anchor
+      tl.to("#caq-doc", {
+        x: -95,
+        y: 35,
+        scale: 0.68,
+        duration: 0.8,
+        ease: "power3.inOut"
+      }, 6.8);
+
+      // Reveal metrics stage on the right
+      tl.to("#metrics-stage", {
+        opacity: 1,
+        duration: 0.5,
+        ease: "power2.out"
+      }, 7.2);
+
+      // Comparative bars grow from bottom
+      tl.to("#bar-fed", {
+        scaleY: 1,
+        duration: 0.5,
+        ease: "power2.out"
+      }, 7.4);
+
+      tl.to("#bar-qc", {
+        scaleY: 1,
+        duration: 0.7,
+        ease: "back.out(1.8)"
+      }, 7.6);
+
+      // Hero number > 24.600 CAD slams in
+      tl.to("#hero-cad", {
+        opacity: 1,
+        scale: 1,
+        duration: 0.5,
+        ease: "back.out(1.8)"
+      }, 8.1);
+
+      // Warm Yellow highlight sweep
+      tl.to("#number-bar", {
+        scaleX: 1,
+        duration: 0.5,
+        ease: "power2.out"
+      }, 8.4);
+
+      // ~460 TRIỆU pops in
+      tl.to("#vnd-block", {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        ease: "back.out(2)"
+      }, 8.8);
+
+      // Final Hold from 9.5s to 12.0s
+      tl.to({}, { duration: 2.5 }, 9.5);
+    </script>
+  </body>
+</html>

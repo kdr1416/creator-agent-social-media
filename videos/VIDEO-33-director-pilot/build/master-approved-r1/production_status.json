@@ -1,0 +1,54 @@
+{
+  "phase": "assembled_pending_user_full_master_review",
+  "approved_pilots": 11,
+  "base_scenes_retained": [
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "master_assembly_authorized": true,
+  "full_master_approved": false,
+  "output_root": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\master-approved-r1",
+  "antigravity_executed": true,
+  "master_video": {
+    "filename": "VIDEO-33-master-approved-r1.mp4",
+    "absolute_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\master-approved-r1\\VIDEO-33-master-approved-r1.mp4",
+    "sha256": "abdc318b50b0f05eb7e1ae681f41e62150ff1c1f12eb807f137a32f9cd30da7a",
+    "frames": 2255,
+    "fps": 30,
+    "duration_seconds": 75.166667
+  },
+  "clean_video": {
+    "filename": "VIDEO-33-clean-approved-r1.mp4",
+    "absolute_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\master-approved-r1\\VIDEO-33-clean-approved-r1.mp4",
+    "sha256": "c3b2c50d8e6b87cdd9d789c54ba65992a38ed5b1b608a544a4f45362520ad949",
+    "frames": 2255,
+    "fps": 30,
+    "duration_seconds": 75.166667
+  },
+  "voice_audio": {
+    "source_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\inputs\\source_audio.wav",
+    "sha256": "cbd5a88b99c252d09ea86493377951aed1267186a5cb9ff11afe00947133e941",
+    "samples": 1803840,
+    "sample_rate": 24000,
+    "duration_seconds": 75.160000,
+    "cross_correlation": 0.999958,
+    "offset_seconds": 0.0,
+    "hold_tail_seconds": 0.006667
+  },
+  "preserved_old_masters": [
+    {
+      "path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\renders\\VIDEO-33-master.mp4",
+      "sha256": "6f51c8368997f7e2d3721888c3a3d471c2407e8718248fc9d3bea6e4b2b87c50",
+      "verified_untouched": true
+    },
+    {
+      "path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\renders\\VIDEO-33-clean.mp4",
+      "sha256": "7050ecb46b98b8b6f50fdce327bcd25c2e8879c282e3c1ef9b417839f05a22b4",
+      "verified_untouched": true
+    }
+  ],
+  "seams_count": 13,
+  "seams_qa_status": "13_of_13_pass",
+  "publication_authorized": false
+}

@@ -1,0 +1,2349 @@
+{
+  "schema_version": "2.1",
+  "summary": {
+    "project_slug": "le-pham-nhu-quynh",
+    "phase": "pilot_approved_ready_for_antigravity",
+    "duration": 73.92,
+    "scene_count": 16,
+    "canvas": {
+      "width": 720,
+      "height": 1280
+    },
+    "source_handoff": "scratch/audio_handoff.json",
+    "source_handoff_sha256": "b927e8337652b6163a752c2851615ed29997a16cd0166f0cc6445aaa870e994a",
+    "source_transcript": "scratch/voice_transcript.json",
+    "source_transcript_sha256": "31e9baf59d796fcbd33cb5c484cc892031b515d4adf75f6e243c1fc4f8d32a15",
+    "source_audio": "input_voice/Generated Audio October 18, 2026 - 10_49AM.wav",
+    "source_audio_sha256": "c55dfaed3ce3070143cabef72b173f2dd924fcedafb01296a11b3f999b87cbfd",
+    "input_validation": {
+      "source_hash": true,
+      "transcript_json_md_hashes": true,
+      "slice_hashes": 16,
+      "continuous_samples": true,
+      "pcm_reconstruction_bitperfect": true,
+      "sample_frames": 1774080,
+      "duration": 73.92
+    },
+    "style_preference": "kurzgesagt",
+    "style_scope": "HF_ONLY",
+    "preserve_existing_hf_treatments": true,
+    "mode_counts": {
+      "HF_ONLY": 9,
+      "HYBRID": 2,
+      "FLOW_ONLY": 5
+    },
+    "character_scenes": 12,
+    "pilot_scene": "scene_15",
+    "pilot_reason": "6.544s allows a complete open–select–turn–close action with a student, real document surface, articulated hands and three conceptual transformations. It tests preferred illustration style without adding ranking or experience claims.",
+    "design": {
+      "canvas": "#FFFFFF",
+      "ink": "#0F172A",
+      "structural_accent": "#FF6B2B",
+      "secondary": [
+        "#CCECE9",
+        "#E3EAF4"
+      ],
+      "font": "Montserrat/Plus Jakarta Sans; local Vietnamese font fallback must be declared",
+      "footer_px": 200,
+      "character": "Original generic female student illustration, not a claimed likeness of Như Quỳnh; no identity inference from homonyms. Far arm behind torso; near arm foreground.",
+      "visual_direction": "Layered educational vector/open canvas, coherent palette/character across chosen treatments; fictional Flow plates clearly illustrative."
+    },
+    "routing_audit": {
+      "hf_share": 0.5625,
+      "consecutive_trigger": "07–09 are three HF_ONLY scenes; reevaluated organic alternatives.",
+      "decision": "Retain: 07 geometric institution transition, 08 spatial port transfer, 09 team-project object relay. Different explanatory actions; real port footage would be decorative in these beats. No forced engine quota.",
+      "character_ratio": 0.75,
+      "repetition_audit": "04 route landing vs 07 geometric fold; 05 tool transform vs 09 two-person handoff vs 11 compact object relay. 13 reverse time vs 15 forward portfolio build; avoid replaying identical page-flip layout.",
+      "accent_audit": "No yellow highlights/sweeps. Orange is object/brand structural color, not repeated animated underline."
+    },
+    "research_file": ".omc/research/le-pham-nhu-quynh-2026-10-18.md",
+    "unverified_or_qualified": [
+      "Offer/name/school story supported by Esora first-party post, not direct institutional letters. Do not fabricate scholarship, visa, conditions or chosen major.",
+      "Scene 14 stronger than sources: Facebook says 14 years, website over 13; over 14 for mentor team not established. Publication hold until wording confirmed or revised audio supplied.",
+      "Scene 08 corrected_text clarifies port superlative; spoken audio kept as supplied.",
+      "Promotional prominence words are not numerical rankings. Do not add Top 10 or rank badges."
+    ],
+    "preserved_old_plan": "scratch/archive/before_le_pham_nhu_quynh_codex_20261018_110748",
+    "scope": "16-scene planning + one pilot only; remaining production delegated to Antigravity after user review.",
+    "pilot_output": "output/le-pham-nhu-quynh/scene_15.mp4",
+    "pilot_qa": "videos/le-pham-nhu-quynh-pilot/qa/review.json"
+  },
+  "research_sources": [
+    {
+      "id": "F1",
+      "title": "Esora Facebook — bài người dùng cung cấp",
+      "url": "https://www.facebook.com/esoraeusholarship/posts/pfbid0EQjXH18UNmaRzrBHqX8zDiu1JPo2bFigm2HSJVtFCsk1Uh5BgBLWdJBLJjRmArnZl"
+    },
+    {
+      "id": "F2",
+      "title": "HAN — quy mô trường và quốc tế hóa",
+      "url": "https://www.hanuniversity.com/en/news/2025/10/week-of-the-international-experience/"
+    },
+    {
+      "id": "F3",
+      "title": "HAN — lĩnh vực và định hướng ứng dụng",
+      "url": "https://www.hanuniversity.com/en/study-and-living/studying-at-han/types-of-degrees/"
+    },
+    {
+      "id": "F4",
+      "title": "Rotterdam UAS — nhóm ngành/trường thành viên",
+      "url": "https://www.rotterdamuas.com/footer/a-z-index/"
+    },
+    {
+      "id": "F5",
+      "title": "Port of Rotterdam — cơ quan cảng",
+      "url": "https://www.portofrotterdam.com/en"
+    },
+    {
+      "id": "F6",
+      "title": "Macquarie — danh tiếng/xếp hạng",
+      "url": "https://www.mq.edu.au/about/about-the-university/mq-story/at-a-glance/reputation-and-rankings"
+    },
+    {
+      "id": "F7",
+      "title": "Macquarie — đơn vị học thuật",
+      "url": "https://unitguides.mq.edu.au/"
+    },
+    {
+      "id": "F8",
+      "title": "Macquarie — hợp tác doanh nghiệp",
+      "url": "https://www.mq.edu.au/macquarie-business-school/engage-with-us/industry-partnership-program"
+    },
+    {
+      "id": "F9",
+      "title": "Macquarie — nghiên cứu",
+      "url": "https://lighthouse.mq.edu.au/media-releases/2025/nov-2025/macquarie-makes-its-mark-researchers-soar-in-2026-rankings"
+    },
+    {
+      "id": "F10",
+      "title": "Esora — giới thiệu",
+      "url": "https://esoraacademy.com/ve-chung-toi/"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "scene_number": 1,
+      "title": "Một học sinh, hai hướng quốc tế",
+      "audio_slice": "scratch/audio_slices/scene_01.wav",
+      "audio_sha256": "298d20141e07f2610fec68ff4e0470290b77cf285dfd76e438f243edcafbf53c",
+      "start": 0.0,
+      "end": 5.355,
+      "duration": 5.355,
+      "start_sample": 0,
+      "end_sample": 128520,
+      "raw_text": "Nữ sinh trưởng quốc tế á châu xuất sắc nhận offer từ các đại học danh tiếng tại Hà Lan và Úc.",
+      "input_text": "Nữ sinh Trường Quốc tế Á Châu xuất sắc nhận offer từ các đại học danh tiếng tại Hà Lan và Úc!",
+      "spoken_text": "Nữ sinh Trường Quốc tế Á Châu xuất sắc nhận offer từ các đại học danh tiếng tại Hà Lan và Úc!",
+      "corrected_text": "Nữ sinh Trường Quốc tế Á Châu xuất sắc nhận offer từ các đại học danh tiếng tại Hà Lan và Úc!",
+      "corrected_text_differs_from_audio": false,
+      "audio_replaced": false,
+      "semantic_type": "Một học sinh, hai hướng quốc tế",
+      "visual_center": "Một hồ sơ mở ở tay học sinh, hai dải đường cong tách hướng tới Hà Lan và Úc, không bản đồ biên giới.",
+      "organic_motion_need": "Đã xét HYBRID: diễn xuất mở hồ sơ không thay được quan hệ hai đích; hình vector mang phần lớn ý.",
+      "exact_graphics_need": "Independent illustrative layers and controlled transformation.",
+      "preferred_mode": "HF_ONLY",
+      "render_mode": "HF_ONLY",
+      "routing_locked": true,
+      "routing_confidence": 0.9,
+      "routing_reason": "Hai điểm đến cùng mở từ một bộ hồ sơ là quan hệ đồ họa; footage sân bay không cho thấy hai lựa chọn cùng lúc.",
+      "flow_contribution": "none",
+      "hf_contribution": "Một hồ sơ mở ở tay học sinh, hai dải đường cong tách hướng tới Hà Lan và Úc, không bản đồ biên giới.",
+      "fallback_mode": "HYBRID",
+      "fallback_condition": "Only after verified capability failure or two failed plate review cycles; record previous_mode/new_mode/routing_override_reason. Missing assets never justify card fallback.",
+      "character": "yes",
+      "protagonist_action": "Nữ sinh mở hồ sơ rồi quay nhìn hai lối dẫn tới hai công trình đại học minh họa.",
+      "narrative_visual": "Một hồ sơ mở ở tay học sinh, hai dải đường cong tách hướng tới Hà Lan và Úc, không bản đồ biên giới.",
+      "visual_verb": "folder-to-two-destinations",
+      "signature_motion": "folder-to-two-destinations",
+      "hf_signature_motion": "folder-to-two-destinations",
+      "style_id": "kurzgesagt",
+      "style_candidates": [
+        {
+          "style_id": "kurzgesagt",
+          "selected": true,
+          "assessment": "Nhân vật mở ra hai hướng từ hồ sơ tạo cảm xúc mở đầu; map thuần thiên về địa lý và kém gắn học sinh."
+        },
+        {
+          "style_id": "hf_existing:route-map",
+          "selected": false,
+          "assessment": "Khả thi, nhưng Nhân vật mở ra hai hướng từ hồ sơ tạo cảm xúc mở đầu; map thuần thiên về địa lý và kém gắn học sinh."
+        }
+      ],
+      "style_reference": "references/animasyon-stil-katalogu/stiller/kurzgesagt/anim.html",
+      "style_reason": "Nhân vật mở ra hai hướng từ hồ sơ tạo cảm xúc mở đầu; map thuần thiên về địa lý và kém gắn học sinh.",
+      "opening_state": "Học sinh đặt tay lên mép hồ sơ, mở bìa.",
+      "transformation": "Hai dải đường xuất phát từ hồ sơ; công trình biểu trưng lần lượt hiện ở đích.",
+      "final_state": "Cô nhìn hai hướng, giữ tên quốc gia; không hiện con dấu trúng tuyển.",
+      "beats": [
+        {
+          "local_start": 0,
+          "local_end": 1.1,
+          "action": "Học sinh đặt tay lên mép hồ sơ, mở bìa.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 1.1,
+          "local_end": 4.2,
+          "action": "Hai dải đường xuất phát từ hồ sơ; công trình biểu trưng lần lượt hiện ở đích.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 4.2,
+          "local_end": 5.355,
+          "action": "Cô nhìn hai hướng, giữ tên quốc gia; không hiện con dấu trúng tuyển.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        }
+      ],
+      "asset_contract": [
+        {
+          "layer": "Rig nữ sinh đầu/mắt/tay/bàn tay/thân/chân",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Hồ sơ bìa/trang/gáy",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Hai dải đường spline",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Hai campus biểu trưng phi thương hiệu",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        }
+      ],
+      "assets_ready": false,
+      "container_required": true,
+      "container_semantics": "folder",
+      "container_inventory": [
+        {
+          "object_type": "physical_portfolio_folder",
+          "bounds": [
+            320,
+            650,
+            300,
+            340
+          ],
+          "semantic_boundary": "Bìa/gáy/trang giấy hoặc vòng kẹp là một hồ sơ thật được cầm/mở/lật; không hộp layout.",
+          "removal_consequence": "Mất hành động cầm, lật, sắp trang hoặc đóng hồ sơ.",
+          "major_surface_count": 1
+        }
+      ],
+      "visible_text_budget": 3,
+      "visible_text_inventory": [
+        {
+          "text": "Hà Lan",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        },
+        {
+          "text": "Úc",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        }
+      ],
+      "composition_reason": "Học sinh trái Y520–1040; hồ sơ giữa Y700, hai đích x280/550 tại Y330/510; đường cong sử dụng chiều dọc.",
+      "mobile_legibility_plan": "Canvas 720x1280; essential labels >=34px, at most 2 levels. At 360x640 remove supporting copy before increasing size. Footer Y1080–1280 empty. Long institution name wraps at word boundary within its zone.",
+      "dark_mass_strategy": "White canvas; orange structural accent, light teal/blue secondary surfaces; dark hair/outline selective. Separate person/folder/props in grayscale; never solid navy everything.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "none",
+      "handoff": "Cut at original audio slice boundary; keep spatial/prop handoff.",
+      "transition_to_next": "Bìa hồ sơ match shape sang phong bì vật lý.",
+      "fact_sources": [
+        "F1"
+      ],
+      "fact_note": "Câu chuyện theo công bố Esora; không chứng minh độc lập offer hoặc loại offer.",
+      "fact_status": "first_party_brand_report",
+      "publication_hold": false,
+      "proof_times": [
+        0.5,
+        2.678,
+        5.205
+      ],
+      "production_status": "planned"
+    },
+    {
+      "scene_id": "scene_02",
+      "scene_number": 2,
+      "title": "Chúc mừng Như Quỳnh",
+      "audio_slice": "scratch/audio_slices/scene_02.wav",
+      "audio_sha256": "960cace01e5d24a06675fb65d25b187730a69ba4fc55ff742a1cb4b0081d694d",
+      "start": 5.355,
+      "end": 10.581,
+      "duration": 5.226,
+      "start_sample": 128520,
+      "end_sample": 253944,
+      "raw_text": "Xin chúc mừng lê phạm như quình đã chính thức nhận từ mờ nhập học từ 3 trường đại học y tín tại Hà Lan và Úc,",
+      "input_text": "Xin chúc mừng Lê Phạm Như Quỳnh đã chính thức nhận thư mời nhập học từ 3 trường đại học uy tín tại Hà Lan và Úc,",
+      "spoken_text": "Xin chúc mừng Lê Phạm Như Quỳnh đã chính thức nhận thư mời nhập học từ 3 trường đại học uy tín tại Hà Lan và Úc,",
+      "corrected_text": "Xin chúc mừng Lê Phạm Như Quỳnh đã chính thức nhận thư mời nhập học từ 3 trường đại học uy tín tại Hà Lan và Úc,",
+      "corrected_text_differs_from_audio": false,
+      "audio_replaced": false,
+      "semantic_type": "Chúc mừng Như Quỳnh",
+      "visual_center": "Học sinh bên trái đón ba phong bì trơn từ bàn tay ngoài khung; callout tên ở khoảng trống phải.",
+      "organic_motion_need": "Cần biểu cảm vui vừa phải, nhận và xếp ba phong bì thật.",
+      "exact_graphics_need": "One exact short name/callout after observed physical beat.",
+      "preferred_mode": "HYBRID",
+      "render_mode": "HYBRID",
+      "routing_locked": true,
+      "routing_confidence": 0.85,
+      "routing_reason": "Cảm xúc nhận thư và tiếp xúc tay-vật mang ý chính; HF chỉ định danh đúng tên.",
+      "flow_contribution": "Học sinh bên trái đón ba phong bì trơn từ bàn tay ngoài khung; callout tên ở khoảng trống phải.",
+      "hf_contribution": "one floating label/pointer only",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Only after verified capability failure or two failed plate review cycles; record previous_mode/new_mode/routing_override_reason. Missing assets never justify card fallback.",
+      "character": "yes",
+      "protagonist_action": "Nhận ba phong bì không nhãn, xếp trên bàn rồi nhìn người thân bên cạnh.",
+      "narrative_visual": "Học sinh bên trái đón ba phong bì trơn từ bàn tay ngoài khung; callout tên ở khoảng trống phải.",
+      "visual_verb": "receive-and-name",
+      "signature_motion": "receive-and-name",
+      "hf_signature_motion": "observed prop beat anchored callout",
+      "style_id": "not_applicable",
+      "style_candidates": [],
+      "style_reference": "AGENTS.md engine contracts",
+      "style_reason": "HF_ONLY style selection does not govern this Flow plate.",
+      "opening_state": "Tay đưa phong bì đầu tới học sinh.",
+      "transformation": "Cô nhận, xếp đủ ba; tên chỉ xuất hiện sau beat quan sát thật.",
+      "final_state": "Cô nhìn người thân, giữ callout đơn.",
+      "beats": [
+        {
+          "local_start": 0,
+          "local_end": 1.0,
+          "action": "Tay đưa phong bì đầu tới học sinh.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 1.0,
+          "local_end": 4.2,
+          "action": "Cô nhận, xếp đủ ba; tên chỉ xuất hiện sau beat quan sát thật.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 4.2,
+          "local_end": 5.226,
+          "action": "Cô nhìn người thân, giữ callout đơn.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        }
+      ],
+      "asset_contract": [
+        {
+          "layer": "Flow plate học sinh/bàn/tay giao thư",
+          "source": "Flow reference/plate to generate via batch; exact overlays authored in HF",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Reference nhân vật nữ và người thân",
+          "source": "Flow reference/plate to generate via batch; exact overlays authored in HF",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Ba phong bì trơn",
+          "source": "Flow reference/plate to generate via batch; exact overlays authored in HF",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "HF pin dot/connector/nhãn tên",
+          "source": "Flow reference/plate to generate via batch; exact overlays authored in HF",
+          "status": "planned_not_created"
+        }
+      ],
+      "assets_ready": false,
+      "container_required": true,
+      "container_semantics": "envelopes",
+      "container_inventory": [
+        {
+          "object_type": "three_small_physical_envelopes",
+          "bounds": [
+            100,
+            650,
+            260,
+            220
+          ],
+          "semantic_boundary": "Ba phong bì nhỏ với nắp gấp, được tay tiếp nhận và xếp; không ba panel.",
+          "removal_consequence": "Mất hành động nhận thư và số lượng vật thể.",
+          "major_surface_count": 0
+        }
+      ],
+      "visible_text_budget": 4,
+      "visible_text_inventory": [
+        {
+          "text": "Lê Phạm Như Quỳnh",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        }
+      ],
+      "composition_reason": "Người/đạo cụ bên trái; 45% phải x390–650/Y350–650 trống; footer sạch.",
+      "mobile_legibility_plan": "Canvas 720x1280; essential labels >=34px, at most 2 levels. At 360x640 remove supporting copy before increasing size. Footer Y1080–1280 empty. Long institution name wraps at word boundary within its zone.",
+      "dark_mass_strategy": "White canvas; orange structural accent, light teal/blue secondary surfaces; dark hair/outline selective. Separate person/folder/props in grayscale; never solid navy everything.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "flow_action": "Nhận ba phong bì không nhãn, xếp trên bàn rồi nhìn người thân bên cạnh.",
+      "flow_camera": "steady medium shot, right 45% negative space",
+      "overlay_zone": {
+        "bounds": [
+          390,
+          330,
+          260,
+          350
+        ],
+        "negative_space_percent": 45,
+        "type": "floating_pin_and_hairline"
+      },
+      "handoff": "Inspect plate and set callout reveal on observed beat, not presumed prompt time.",
+      "transition_to_next": "Phong bì được đặt vào túi tài liệu để sang cảnh hành trình.",
+      "fact_sources": [
+        "F1"
+      ],
+      "fact_note": "Tên và ba trường theo bài Esora; không giả nội dung/chữ ký thư thật.",
+      "fact_status": "first_party_brand_report",
+      "publication_hold": false,
+      "proof_times": [
+        0.5,
+        2.613,
+        5.076
+      ],
+      "production_status": "planned",
+      "flow_prompt_contract": "Action only with reference-based appearance; zero text/numbers/letters/logos/badges. Physical props. Illustrative footage, never fake documentary campus/portrait. Reserve 40–50% right-side clean space."
+    },
+    {
+      "scene_id": "scene_03",
+      "scene_number": 3,
+      "title": "Bước qua cột mốc",
+      "audio_slice": "scratch/audio_slices/scene_03.wav",
+      "audio_sha256": "af9906d6f927f3360702be2e6087551cef66c15b420c4b9b64d7f0298dc37288",
+      "start": 10.581,
+      "end": 14.143,
+      "duration": 3.562,
+      "start_sample": 253944,
+      "end_sample": 339432,
+      "raw_text": "đánh dấu một cột mốc quan trọng trên hành trình trinh phục môi trường giáo dục quốc tế.",
+      "input_text": "đánh dấu một cột mốc quan trọng trên hành trình chinh phục môi trường giáo dục quốc tế.",
+      "spoken_text": "đánh dấu một cột mốc quan trọng trên hành trình chinh phục môi trường giáo dục quốc tế.",
+      "corrected_text": "đánh dấu một cột mốc quan trọng trên hành trình chinh phục môi trường giáo dục quốc tế.",
+      "corrected_text_differs_from_audio": false,
+      "audio_replaced": false,
+      "semantic_type": "Bước qua cột mốc",
+      "visual_center": "Trung cảnh theo nữ sinh từ bàn ra cửa thư viện minh họa; không sân bay, không visa hoặc cảnh nhập học thật.",
+      "organic_motion_need": "Cần bước chân, cầm hồ sơ và ánh nhìn phía trước.",
+      "exact_graphics_need": "none",
+      "preferred_mode": "FLOW_ONLY",
+      "render_mode": "FLOW_ONLY",
+      "routing_locked": true,
+      "routing_confidence": 0.85,
+      "routing_reason": "Bước qua cửa với hồ sơ thể hiện cột mốc, cảm xúc và trọng lượng vật có giá trị hơn sơ đồ.",
+      "flow_contribution": "Trung cảnh theo nữ sinh từ bàn ra cửa thư viện minh họa; không sân bay, không visa hoặc cảnh nhập học thật.",
+      "hf_contribution": "none; assembly/audio only",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Only after verified capability failure or two failed plate review cycles; record previous_mode/new_mode/routing_override_reason. Missing assets never justify card fallback.",
+      "character": "yes",
+      "protagonist_action": "Khép hồ sơ, cầm sát người và bước qua cửa thư viện sáng.",
+      "narrative_visual": "Trung cảnh theo nữ sinh từ bàn ra cửa thư viện minh họa; không sân bay, không visa hoặc cảnh nhập học thật.",
+      "visual_verb": "close-carry-cross",
+      "signature_motion": "close-carry-cross",
+      "hf_signature_motion": "none",
+      "style_id": "not_applicable",
+      "style_candidates": [],
+      "style_reference": "AGENTS.md engine contracts",
+      "style_reason": "HF_ONLY style selection does not govern this Flow plate.",
+      "opening_state": "Cô khép hồ sơ.",
+      "transformation": "Đứng dậy, đi qua ngưỡng cửa; camera theo một chuyển động.",
+      "final_state": "Dừng một nhịp nhìn phía trước.",
+      "beats": [
+        {
+          "local_start": 0,
+          "local_end": 0.7,
+          "action": "Cô khép hồ sơ.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 0.7,
+          "local_end": 2.8,
+          "action": "Đứng dậy, đi qua ngưỡng cửa; camera theo một chuyển động.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 2.8,
+          "local_end": 3.562,
+          "action": "Dừng một nhịp nhìn phía trước.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        }
+      ],
+      "asset_contract": [
+        {
+          "layer": "Flow plate thư viện/động tác",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Reference nữ sinh",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Hồ sơ vật lý không chữ",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        }
+      ],
+      "assets_ready": false,
+      "container_required": true,
+      "container_semantics": "folder",
+      "container_inventory": [
+        {
+          "object_type": "physical_portfolio_folder",
+          "bounds": [
+            320,
+            650,
+            300,
+            340
+          ],
+          "semantic_boundary": "Bìa/gáy/trang giấy hoặc vòng kẹp là một hồ sơ thật được cầm/mở/lật; không hộp layout.",
+          "removal_consequence": "Mất hành động cầm, lật, sắp trang hoặc đóng hồ sơ.",
+          "major_surface_count": 1
+        }
+      ],
+      "visible_text_budget": 0,
+      "visible_text_inventory": [],
+      "composition_reason": "Nhân vật giữa lệch trái, cửa mở ở phải trên; chuyển động xuyên vùng Y250–1050.",
+      "mobile_legibility_plan": "Canvas 720x1280; essential labels >=34px, at most 2 levels. At 360x640 remove supporting copy before increasing size. Footer Y1080–1280 empty. Long institution name wraps at word boundary within its zone.",
+      "dark_mass_strategy": "White canvas; orange structural accent, light teal/blue secondary surfaces; dark hair/outline selective. Separate person/folder/props in grayscale; never solid navy everything.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "flow_action": "Khép hồ sơ, cầm sát người và bước qua cửa thư viện sáng.",
+      "flow_camera": "one gentle track or stable medium/close shot following physical action",
+      "overlay_zone": "none",
+      "handoff": "Cut at original audio slice boundary; keep spatial/prop handoff.",
+      "transition_to_next": "Khung cửa chuyển thành khung cổng trường đồ họa.",
+      "fact_sources": [
+        "F1"
+      ],
+      "fact_note": "Ẩn dụ cột mốc, không giả cảnh đã sang nước ngoài.",
+      "fact_status": "first_party_brand_report",
+      "publication_hold": false,
+      "proof_times": [
+        0.427,
+        1.781,
+        3.412
+      ],
+      "production_status": "planned",
+      "flow_prompt_contract": "Action only with reference-based appearance; zero text/numbers/letters/logos/badges. Physical props. Illustrative footage, never fake documentary campus/portrait."
+    },
+    {
+      "scene_id": "scene_04",
+      "scene_number": 4,
+      "title": "Định vị HAN",
+      "audio_slice": "scratch/audio_slices/scene_04.wav",
+      "audio_sha256": "61c5e9b57ab5e15c3940664e5e6435bd3de003591773e5427bc1809c26cfd689",
+      "start": 14.143,
+      "end": 17.436,
+      "duration": 3.293,
+      "start_sample": 339432,
+      "end_sample": 418464,
+      "raw_text": "Han University of Applied Sciences, Hà Lan",
+      "input_text": "HAN University of Applied Sciences (Hà Lan)",
+      "spoken_text": "HAN University of Applied Sciences (Hà Lan)",
+      "corrected_text": "HAN University of Applied Sciences (Hà Lan)",
+      "corrected_text_differs_from_audio": false,
+      "audio_replaced": false,
+      "semantic_type": "Định vị HAN",
+      "visual_center": "Đường cong từ hồ sơ tới mô hình campus trung tính, pin nhỏ gắn vào công trình, tên HAN tách khỏi hình.",
+      "organic_motion_need": "Không cần người/camera thật; không có hình tư liệu campus được cung cấp.",
+      "exact_graphics_need": "Independent illustrative layers and controlled transformation.",
+      "preferred_mode": "HF_ONLY",
+      "render_mode": "HF_ONLY",
+      "routing_locked": true,
+      "routing_confidence": 0.9,
+      "routing_reason": "Tên chính xác và định vị học viện là thông điệp; không cần đi bộ campus tạo nền.",
+      "flow_contribution": "none",
+      "hf_contribution": "Đường cong từ hồ sơ tới mô hình campus trung tính, pin nhỏ gắn vào công trình, tên HAN tách khỏi hình.",
+      "fallback_mode": "HYBRID",
+      "fallback_condition": "Only after verified capability failure or two failed plate review cycles; record previous_mode/new_mode/routing_override_reason. Missing assets never justify card fallback.",
+      "character": "no",
+      "protagonist_action": "Không có: tên trường và điểm đến là trọng tâm.",
+      "narrative_visual": "Đường cong từ hồ sơ tới mô hình campus trung tính, pin nhỏ gắn vào công trình, tên HAN tách khỏi hình.",
+      "visual_verb": "route-lands-on-campus",
+      "signature_motion": "route-lands-on-campus",
+      "hf_signature_motion": "route-lands-on-campus",
+      "style_id": "hf_existing:institution-geolocation",
+      "style_candidates": [
+        {
+          "style_id": "hf_existing:institution-geolocation",
+          "selected": true,
+          "assessment": "Cảnh chỉ 3,293s cần định vị trường/quốc gia; sơ đồ vị trí với campus đủ rõ, thêm nhân vật sẽ phân tán."
+        },
+        {
+          "style_id": "kurzgesagt",
+          "selected": false,
+          "assessment": "Khả thi, nhưng Cảnh chỉ 3,293s cần định vị trường/quốc gia; sơ đồ vị trí với campus đủ rõ, thêm nhân vật sẽ phân tán."
+        }
+      ],
+      "style_reference": "skills/fk-edu-motion-explainer.references/visual-design.md; .agents/skills/hyperframes-animation/rules/center-outward-expansion.md",
+      "style_reason": "Cảnh chỉ 3,293s cần định vị trường/quốc gia; sơ đồ vị trí với campus đủ rõ, thêm nhân vật sẽ phân tán.",
+      "opening_state": "Đường hành trình đi vào khung.",
+      "transformation": "Đường tới campus, các lớp công trình dựng lên, nhãn HAN vào đúng beat.",
+      "final_state": "Pin dừng trên campus, giữ nhãn ngắn.",
+      "beats": [
+        {
+          "local_start": 0,
+          "local_end": 0.6,
+          "action": "Đường hành trình đi vào khung.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 0.6,
+          "local_end": 2.5,
+          "action": "Đường tới campus, các lớp công trình dựng lên, nhãn HAN vào đúng beat.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 2.5,
+          "local_end": 3.293,
+          "action": "Pin dừng trên campus, giữ nhãn ngắn.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        }
+      ],
+      "asset_contract": [
+        {
+          "layer": "Campus SVG nhiều lớp",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Spline tuyến đường/pin",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Typography HAN/Hà Lan",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        }
+      ],
+      "assets_ready": false,
+      "container_required": false,
+      "container_semantics": "none",
+      "container_inventory": [],
+      "visible_text_budget": 3,
+      "visible_text_inventory": [
+        {
+          "text": "HAN",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        },
+        {
+          "text": "Hà Lan",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        }
+      ],
+      "composition_reason": "Campus giữa Y500–900; route vào từ trái dưới; HAN ở Y300, Hà Lan dưới một cấp.",
+      "mobile_legibility_plan": "Canvas 720x1280; essential labels >=34px, at most 2 levels. At 360x640 remove supporting copy before increasing size. Footer Y1080–1280 empty. Long institution name wraps at word boundary within its zone.",
+      "dark_mass_strategy": "White canvas; orange structural accent, light teal/blue secondary surfaces; dark hair/outline selective. Separate person/folder/props in grayscale; never solid navy everything.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "none",
+      "handoff": "Cut at original audio slice boundary; keep spatial/prop handoff.",
+      "transition_to_next": "Một chi tiết campus mở sang mô hình học tập cảnh 05.",
+      "fact_sources": [
+        "F2",
+        "F3"
+      ],
+      "fact_note": "Đúng HAN University of Applied Sciences; campus minh họa không mô phỏng cơ sở thật.",
+      "fact_status": "official_general_information_with_editorial_language",
+      "publication_hold": false,
+      "proof_times": [
+        0.395,
+        1.647,
+        3.143
+      ],
+      "production_status": "planned"
+    },
+    {
+      "scene_id": "scene_05",
+      "scene_number": 5,
+      "title": "Các lĩnh vực học tại HAN",
+      "audio_slice": "scratch/audio_slices/scene_05.wav",
+      "audio_sha256": "33034d8f5a9b6c87accedcb5e900c936358703343911648786fc9a678c066fe9",
+      "start": 17.436,
+      "end": 23.7,
+      "duration": 6.264,
+      "start_sample": 418464,
+      "end_sample": 568800,
+      "raw_text": "Một trong những trường đại học ứng dụng lớn nhất Hà Lan, nổi tiếng với thế mạnh về kỹ thuật, kinh doanh, CNIT và truyền thông,",
+      "input_text": "Một trong những trường Đại học Ứng dụng lớn nhất Hà Lan, nổi tiếng với thế mạnh về Kỹ thuật, Kinh doanh, CNTT và Truyền thông,",
+      "spoken_text": "Một trong những trường Đại học Ứng dụng lớn nhất Hà Lan, nổi tiếng với thế mạnh về Kỹ thuật, Kinh doanh, CNTT và Truyền thông,",
+      "corrected_text": "Một trong những trường Đại học Ứng dụng lớn nhất Hà Lan, nổi tiếng với thế mạnh về Kỹ thuật, Kinh doanh, CNTT và Truyền thông,",
+      "corrected_text_differs_from_audio": false,
+      "audio_replaced": false,
+      "semantic_type": "Các lĩnh vực học tại HAN",
+      "visual_center": "Một bàn học mở, vật hero lần lượt biến đổi từ bánh răng sang đường biểu đồ, laptop và máy ảnh; học sinh trực tiếp thao tác.",
+      "organic_motion_need": "Đã xét HYBRID: bốn plate hoặc nhân vật chỉ tay vào icon sẽ thừa, không đóng góp riêng.",
+      "exact_graphics_need": "Independent illustrative layers and controlled transformation.",
+      "preferred_mode": "HF_ONLY",
+      "render_mode": "HF_ONLY",
+      "routing_locked": true,
+      "routing_confidence": 0.9,
+      "routing_reason": "Biến đổi giữa nhóm kỹ thuật/kinh doanh/CNTT/truyền thông mang ý; cảnh thật không thể đồng thời giải thích danh mục.",
+      "flow_contribution": "none",
+      "hf_contribution": "Một bàn học mở, vật hero lần lượt biến đổi từ bánh răng sang đường biểu đồ, laptop và máy ảnh; học sinh trực tiếp thao tác.",
+      "fallback_mode": "HYBRID",
+      "fallback_condition": "Only after verified capability failure or two failed plate review cycles; record previous_mode/new_mode/routing_override_reason. Missing assets never justify card fallback.",
+      "character": "yes",
+      "protagonist_action": "Xoay mô hình kỹ thuật, mở laptop rồi đưa máy ảnh vào vùng thực hành theo nhịp voice.",
+      "narrative_visual": "Một bàn học mở, vật hero lần lượt biến đổi từ bánh răng sang đường biểu đồ, laptop và máy ảnh; học sinh trực tiếp thao tác.",
+      "visual_verb": "study-tool-transform-relay",
+      "signature_motion": "study-tool-transform-relay",
+      "hf_signature_motion": "study-tool-transform-relay",
+      "style_id": "kurzgesagt",
+      "style_candidates": [
+        {
+          "style_id": "kurzgesagt",
+          "selected": true,
+          "assessment": "Cần đọc các đồ vật chuyên ngành ở kích thước lớn; lab thu nhỏ làm chúng quá bé trong 6,264s."
+        },
+        {
+          "style_id": "izometrik",
+          "selected": false,
+          "assessment": "Khả thi, nhưng Cần đọc các đồ vật chuyên ngành ở kích thước lớn; lab thu nhỏ làm chúng quá bé trong 6,264s."
+        }
+      ],
+      "style_reference": "references/animasyon-stil-katalogu/stiller/kurzgesagt/anim.html",
+      "style_reason": "Cần đọc các đồ vật chuyên ngành ở kích thước lớn; lab thu nhỏ làm chúng quá bé trong 6,264s.",
+      "opening_state": "Bộ dụng cụ học tập mở, tạo ngữ cảnh trường ứng dụng.",
+      "transformation": "Kỹ thuật chuyển sang kinh doanh theo lời đọc.",
+      "final_state": "Laptop/máy ảnh tiếp nhận hành động, nhãn trước biến mất.",
+      "beats": [
+        {
+          "local_start": 0,
+          "local_end": 2.8,
+          "action": "Bộ dụng cụ học tập mở, tạo ngữ cảnh trường ứng dụng.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 2.8,
+          "local_end": 4.7,
+          "action": "Kỹ thuật chuyển sang kinh doanh theo lời đọc.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 4.7,
+          "local_end": 6.264,
+          "action": "Laptop/máy ảnh tiếp nhận hành động, nhãn trước biến mất.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        }
+      ],
+      "asset_contract": [
+        {
+          "layer": "Rig nữ sinh",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Bàn thực hành",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Gear/chart/laptop/camera nhiều lớp",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Path chuyển đổi vật",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        }
+      ],
+      "assets_ready": false,
+      "container_required": false,
+      "container_semantics": "desk",
+      "container_inventory": [],
+      "visible_text_budget": 7,
+      "visible_text_inventory": [
+        {
+          "text": "Kỹ thuật",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        },
+        {
+          "text": "Kinh doanh",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        },
+        {
+          "text": "CNTT",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        },
+        {
+          "text": "Truyền thông",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        }
+      ],
+      "composition_reason": "Bàn Y850–1050, học sinh trái; hero lớn phía phải Y430–800, chỉ một nhãn mỗi beat.",
+      "mobile_legibility_plan": "Canvas 720x1280; essential labels >=34px, at most 2 levels. At 360x640 remove supporting copy before increasing size. Footer Y1080–1280 empty. Long institution name wraps at word boundary within its zone.",
+      "dark_mass_strategy": "White canvas; orange structural accent, light teal/blue secondary surfaces; dark hair/outline selective. Separate person/folder/props in grayscale; never solid navy everything.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "none",
+      "handoff": "Cut at original audio slice boundary; keep spatial/prop handoff.",
+      "transition_to_next": "Sản phẩm mô hình được đẩy sang người hướng dẫn.",
+      "fact_sources": [
+        "F2",
+        "F3"
+      ],
+      "fact_note": "Lĩnh vực có đào tạo; nổi tiếng/thế mạnh là ngôn ngữ quảng bá, không tự chứng minh xếp hạng ngành.",
+      "fact_status": "official_general_information_with_editorial_language",
+      "publication_hold": false,
+      "proof_times": [
+        0.5,
+        3.132,
+        6.114
+      ],
+      "production_status": "planned"
+    },
+    {
+      "scene_id": "scene_06",
+      "scene_number": 6,
+      "title": "Thực hành và kết nối doanh nghiệp",
+      "audio_slice": "scratch/audio_slices/scene_06.wav",
+      "audio_sha256": "f4553a316f15b835d42b83998e332662e3e2ad0f0d678e2d6c6b406e16e8ddea",
+      "start": 23.7,
+      "end": 26.31,
+      "duration": 2.61,
+      "start_sample": 568800,
+      "end_sample": 631440,
+      "raw_text": "chú trọng đào tạo thực hành và kết nối doanh nghiệp.",
+      "input_text": "chú trọng đào tạo thực hành và kết nối doanh nghiệp.",
+      "spoken_text": "chú trọng đào tạo thực hành và kết nối doanh nghiệp.",
+      "corrected_text": "chú trọng đào tạo thực hành và kết nối doanh nghiệp.",
+      "corrected_text_differs_from_audio": false,
+      "audio_replaced": false,
+      "semantic_type": "Thực hành và kết nối doanh nghiệp",
+      "visual_center": "Một thao tác bàn giao mô hình trong xưởng học tập minh họa, không thêm logo doanh nghiệp cụ thể.",
+      "organic_motion_need": "Cần tay-vật và ánh mắt hai người; không cần overlay.",
+      "exact_graphics_need": "none",
+      "preferred_mode": "FLOW_ONLY",
+      "render_mode": "FLOW_ONLY",
+      "routing_locked": true,
+      "routing_confidence": 0.85,
+      "routing_reason": "Bàn giao sản phẩm và phản hồi giữa người học/người hướng dẫn là hành động thực tế.",
+      "flow_contribution": "Một thao tác bàn giao mô hình trong xưởng học tập minh họa, không thêm logo doanh nghiệp cụ thể.",
+      "hf_contribution": "none; assembly/audio only",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Only after verified capability failure or two failed plate review cycles; record previous_mode/new_mode/routing_override_reason. Missing assets never justify card fallback.",
+      "character": "yes",
+      "protagonist_action": "Trượt mô hình nhỏ qua bàn cho người hướng dẫn; người hướng dẫn xoay xem và gật đầu.",
+      "narrative_visual": "Một thao tác bàn giao mô hình trong xưởng học tập minh họa, không thêm logo doanh nghiệp cụ thể.",
+      "visual_verb": "prototype-handoff",
+      "signature_motion": "prototype-handoff",
+      "hf_signature_motion": "none",
+      "style_id": "not_applicable",
+      "style_candidates": [],
+      "style_reference": "AGENTS.md engine contracts",
+      "style_reason": "HF_ONLY style selection does not govern this Flow plate.",
+      "opening_state": "Mô hình ở tay học sinh.",
+      "transformation": "Đẩy mô hình sang người hướng dẫn, người kia xoay xem.",
+      "final_state": "Hai người cùng nhìn kết quả.",
+      "beats": [
+        {
+          "local_start": 0,
+          "local_end": 0.5,
+          "action": "Mô hình ở tay học sinh.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 0.5,
+          "local_end": 2.0,
+          "action": "Đẩy mô hình sang người hướng dẫn, người kia xoay xem.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 2.0,
+          "local_end": 2.61,
+          "action": "Hai người cùng nhìn kết quả.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        }
+      ],
+      "asset_contract": [
+        {
+          "layer": "Flow plate bàn giao mô hình",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Hai entity tham chiếu",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Mô hình không chữ",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        }
+      ],
+      "assets_ready": false,
+      "container_required": false,
+      "container_semantics": "none",
+      "container_inventory": [],
+      "visible_text_budget": 0,
+      "visible_text_inventory": [],
+      "composition_reason": "Cận hai bàn tay và mô hình ở Y500–900, vai người ở hai bên; không lấp bằng chữ.",
+      "mobile_legibility_plan": "Canvas 720x1280; essential labels >=34px, at most 2 levels. At 360x640 remove supporting copy before increasing size. Footer Y1080–1280 empty. Long institution name wraps at word boundary within its zone.",
+      "dark_mass_strategy": "White canvas; orange structural accent, light teal/blue secondary surfaces; dark hair/outline selective. Separate person/folder/props in grayscale; never solid navy everything.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "flow_action": "Trượt mô hình nhỏ qua bàn cho người hướng dẫn; người hướng dẫn xoay xem và gật đầu.",
+      "flow_camera": "one gentle track or stable medium/close shot following physical action",
+      "overlay_zone": "none",
+      "handoff": "Cut at original audio slice boundary; keep spatial/prop handoff.",
+      "transition_to_next": "Cạnh bàn thẳng trở thành bến cảng trong đồ họa kế tiếp.",
+      "fact_sources": [
+        "F3"
+      ],
+      "fact_note": "Minh họa định hướng ứng dụng; không khẳng định hợp đồng thực tập/công việc cho học sinh.",
+      "fact_status": "official_general_information_with_editorial_language",
+      "publication_hold": false,
+      "proof_times": [
+        0.313,
+        1.305,
+        2.46
+      ],
+      "production_status": "planned",
+      "flow_prompt_contract": "Action only with reference-based appearance; zero text/numbers/letters/logos/badges. Physical props. Illustrative footage, never fake documentary campus/portrait."
+    },
+    {
+      "scene_id": "scene_07",
+      "scene_number": 7,
+      "title": "Giới thiệu Rotterdam UAS",
+      "audio_slice": "scratch/audio_slices/scene_07.wav",
+      "audio_sha256": "2fd177796d1b19fae58785fa81f52d289350706e94f46c15cfccf711747f4e86",
+      "start": 26.31,
+      "end": 29.512,
+      "duration": 3.202,
+      "start_sample": 631440,
+      "end_sample": 708288,
+      "raw_text": "Rotterdam University of Applied Sciences, Hà Lan",
+      "input_text": "Rotterdam University of Applied Sciences (Hà Lan)",
+      "spoken_text": "Rotterdam University of Applied Sciences (Hà Lan)",
+      "corrected_text": "Rotterdam University of Applied Sciences (Hà Lan)",
+      "corrected_text_differs_from_audio": false,
+      "audio_replaced": false,
+      "semantic_type": "Giới thiệu Rotterdam UAS",
+      "visual_center": "Các hình trụ/cánh sách ghép thành cổng campus và một cần cẩu cảng ở xa; nhãn Rotterdam UAS đứng trần trên canvas.",
+      "organic_motion_need": "Không có hoạt động hữu cơ thiết yếu; tránh nhầm hình campus trường khác.",
+      "exact_graphics_need": "Independent illustrative layers and controlled transformation.",
+      "preferred_mode": "HF_ONLY",
+      "render_mode": "HF_ONLY",
+      "routing_locked": true,
+      "routing_confidence": 0.9,
+      "routing_reason": "Định danh chính xác kèm hình biểu trưng; dựng từ hình khối làm chuyển chương có nghĩa.",
+      "flow_contribution": "none",
+      "hf_contribution": "Các hình trụ/cánh sách ghép thành cổng campus và một cần cẩu cảng ở xa; nhãn Rotterdam UAS đứng trần trên canvas.",
+      "fallback_mode": "HYBRID",
+      "fallback_condition": "Only after verified capability failure or two failed plate review cycles; record previous_mode/new_mode/routing_override_reason. Missing assets never justify card fallback.",
+      "character": "no",
+      "protagonist_action": "Không có: beat chuyển chương/định danh.",
+      "narrative_visual": "Các hình trụ/cánh sách ghép thành cổng campus và một cần cẩu cảng ở xa; nhãn Rotterdam UAS đứng trần trên canvas.",
+      "visual_verb": "book-spine-to-port-gateway",
+      "signature_motion": "book-spine-to-port-gateway",
+      "hf_signature_motion": "book-spine-to-port-gateway",
+      "style_id": "bauhaus",
+      "style_candidates": [
+        {
+          "style_id": "bauhaus",
+          "selected": true,
+          "assessment": "Beat tên trường 3,202s phù hợp một biến hình hình học công trình và nhãn ngắn, chưa cần cảnh kể nhiều lớp."
+        },
+        {
+          "style_id": "kurzgesagt",
+          "selected": false,
+          "assessment": "Khả thi, nhưng Beat tên trường 3,202s phù hợp một biến hình hình học công trình và nhãn ngắn, chưa cần cảnh kể nhiều lớp."
+        }
+      ],
+      "style_reference": "references/animasyon-stil-katalogu/stiller/bauhaus/anim.html",
+      "style_reason": "Beat tên trường 3,202s phù hợp một biến hình hình học công trình và nhãn ngắn, chưa cần cảnh kể nhiều lớp.",
+      "opening_state": "Các gáy sách tạo nhịp ngang lệch tầng.",
+      "transformation": "Gáy sách dựng cổng, cần cẩu hiện ở hậu cảnh.",
+      "final_state": "Tên trường giữ, chuyển camera vào khu cảng.",
+      "beats": [
+        {
+          "local_start": 0,
+          "local_end": 0.7,
+          "action": "Các gáy sách tạo nhịp ngang lệch tầng.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 0.7,
+          "local_end": 2.4,
+          "action": "Gáy sách dựng cổng, cần cẩu hiện ở hậu cảnh.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 2.4,
+          "local_end": 3.202,
+          "action": "Tên trường giữ, chuyển camera vào khu cảng.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        }
+      ],
+      "asset_contract": [
+        {
+          "layer": "Hình sách/cổng tách lớp",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Cần cẩu biểu trưng",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Typography Rotterdam UAS/Hà Lan",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        }
+      ],
+      "assets_ready": false,
+      "container_required": false,
+      "container_semantics": "none",
+      "container_inventory": [],
+      "visible_text_budget": 4,
+      "visible_text_inventory": [
+        {
+          "text": "Rotterdam UAS",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        },
+        {
+          "text": "Hà Lan",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        }
+      ],
+      "composition_reason": "Công trình chiếm Y430–930, một cạnh chéo dẫn lên nhãn Y320; không logo/card.",
+      "mobile_legibility_plan": "Canvas 720x1280; essential labels >=34px, at most 2 levels. At 360x640 remove supporting copy before increasing size. Footer Y1080–1280 empty. Long institution name wraps at word boundary within its zone.",
+      "dark_mass_strategy": "White canvas; orange structural accent, light teal/blue secondary surfaces; dark hair/outline selective. Separate person/folder/props in grayscale; never solid navy everything.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "none",
+      "handoff": "Cut at original audio slice boundary; keep spatial/prop handoff.",
+      "transition_to_next": "Cần cẩu chuyển thành cần cẩu của cảnh cảng isometric.",
+      "fact_sources": [
+        "F4"
+      ],
+      "fact_note": "Không phải Erasmus University hoặc Rotterdam School of Management.",
+      "fact_status": "official_general_information_with_editorial_language",
+      "publication_hold": false,
+      "proof_times": [
+        0.384,
+        1.601,
+        3.052
+      ],
+      "production_status": "planned"
+    },
+    {
+      "scene_id": "scene_08",
+      "scene_number": 8,
+      "title": "Rotterdam — thành phố cảng",
+      "audio_slice": "scratch/audio_slices/scene_08.wav",
+      "audio_sha256": "42d8f24df034d2c408df3847d4f0ae27a00367093c923f83d6f4a809151cdd5c",
+      "start": 29.512,
+      "end": 33.23,
+      "duration": 3.718,
+      "start_sample": 708288,
+      "end_sample": 797520,
+      "raw_text": "Tọa lạc tại Rotterdam, trung tâm kinh tế và cảng biển lớn nhất châu Âu,",
+      "input_text": "Tọa lạc tại Rotterdam – trung tâm kinh tế và cảng biển lớn nhất châu Âu,",
+      "spoken_text": "Tọa lạc tại Rotterdam – trung tâm kinh tế và cảng biển lớn nhất châu Âu,",
+      "corrected_text": "Tọa lạc tại Rotterdam, một trung tâm kinh tế lớn và nơi có cảng biển lớn nhất châu Âu,",
+      "corrected_text_differs_from_audio": true,
+      "audio_replaced": false,
+      "semantic_type": "Rotterdam — thành phố cảng",
+      "visual_center": "Một container được cẩu từ tàu xuống xe, xe đi về phía đô thị biểu trưng.",
+      "organic_motion_need": "Đã xét HYBRID: aerial port thật có thể đẹp nhưng không làm rõ tuyến vận chuyển trong thời lượng ngắn.",
+      "exact_graphics_need": "Independent illustrative layers and controlled transformation.",
+      "preferred_mode": "HF_ONLY",
+      "render_mode": "HF_ONLY",
+      "routing_locked": true,
+      "routing_confidence": 0.9,
+      "routing_reason": "Một chu trình hàng từ tàu tới bến làm rõ vị trí cảng; lớp đồ họa có chủ đích, không chỉ cảnh đẹp.",
+      "flow_contribution": "none",
+      "hf_contribution": "Một container được cẩu từ tàu xuống xe, xe đi về phía đô thị biểu trưng.",
+      "fallback_mode": "HYBRID",
+      "fallback_condition": "Only after verified capability failure or two failed plate review cycles; record previous_mode/new_mode/routing_override_reason. Missing assets never justify card fallback.",
+      "character": "no",
+      "protagonist_action": "Không có: luồng hàng và không gian mang ý chính.",
+      "narrative_visual": "Một container được cẩu từ tàu xuống xe, xe đi về phía đô thị biểu trưng.",
+      "visual_verb": "ship-crane-truck-transfer",
+      "signature_motion": "ship-crane-truck-transfer",
+      "hf_signature_motion": "ship-crane-truck-transfer",
+      "style_id": "izometrik",
+      "style_candidates": [
+        {
+          "style_id": "izometrik",
+          "selected": true,
+          "assessment": "Bến, tàu, cẩu và luồng hàng có quan hệ không gian; isometric thể hiện chúng đồng thời tốt hơn minh họa phẳng."
+        },
+        {
+          "style_id": "kurzgesagt",
+          "selected": false,
+          "assessment": "Khả thi, nhưng Bến, tàu, cẩu và luồng hàng có quan hệ không gian; isometric thể hiện chúng đồng thời tốt hơn minh họa phẳng."
+        }
+      ],
+      "style_reference": "references/animasyon-stil-katalogu/stiller/izometrik/anim.html",
+      "style_reason": "Bến, tàu, cẩu và luồng hàng có quan hệ không gian; isometric thể hiện chúng đồng thời tốt hơn minh họa phẳng.",
+      "opening_state": "Tàu và bến đã nhìn rõ, cẩu bắt đầu nâng.",
+      "transformation": "Cẩu đặt container lên xe, góc nhìn giữ liên hệ cảng/đô thị.",
+      "final_state": "Xe hướng vào đô thị; không hiện thứ hạng kinh tế.",
+      "beats": [
+        {
+          "local_start": 0,
+          "local_end": 0.7,
+          "action": "Tàu và bến đã nhìn rõ, cẩu bắt đầu nâng.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 0.7,
+          "local_end": 2.8,
+          "action": "Cẩu đặt container lên xe, góc nhìn giữ liên hệ cảng/đô thị.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 2.8,
+          "local_end": 3.718,
+          "action": "Xe hướng vào đô thị; không hiện thứ hạng kinh tế.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        }
+      ],
+      "asset_contract": [
+        {
+          "layer": "Tàu/bến/cẩu isometric nhiều lớp",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Container/xe",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Đô thị biểu trưng và tuyến đường",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        }
+      ],
+      "assets_ready": false,
+      "container_required": false,
+      "container_semantics": "none",
+      "container_inventory": [],
+      "visible_text_budget": 1,
+      "visible_text_inventory": [
+        {
+          "text": "Rotterdam",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        }
+      ],
+      "composition_reason": "Tàu x210/Y850, cẩu x430/Y520, xe/đô thị x500/Y920; path cong gắn đích thật.",
+      "mobile_legibility_plan": "Canvas 720x1280; essential labels >=34px, at most 2 levels. At 360x640 remove supporting copy before increasing size. Footer Y1080–1280 empty. Long institution name wraps at word boundary within its zone.",
+      "dark_mass_strategy": "White canvas; orange structural accent, light teal/blue secondary surfaces; dark hair/outline selective. Separate person/folder/props in grayscale; never solid navy everything.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "none",
+      "handoff": "Cut at original audio slice boundary; keep spatial/prop handoff.",
+      "transition_to_next": "Container mở thành dụng cụ học logistics.",
+      "fact_sources": [
+        "F5"
+      ],
+      "fact_note": "Cảng lớn nhất châu Âu không có nghĩa kinh tế/thành phố lớn nhất; corrected_text làm rõ phạm vi.",
+      "fact_status": "official_general_information_with_editorial_language",
+      "publication_hold": false,
+      "proof_times": [
+        0.446,
+        1.859,
+        3.568
+      ],
+      "production_status": "planned"
+    },
+    {
+      "scene_id": "scene_09",
+      "scene_number": 9,
+      "title": "Ngành học trong môi trường quốc tế",
+      "audio_slice": "scratch/audio_slices/scene_09.wav",
+      "audio_sha256": "50c1b348c593b2cb622f20d1fb273c68eca6bbaf982c4206c22da4f1b7c4eb89",
+      "start": 33.23,
+      "end": 39.699,
+      "duration": 6.469,
+      "start_sample": 797520,
+      "end_sample": 952776,
+      "raw_text": "trường nổi bật với các trường trình đào tạo về kinh doanh, logistic, kỹ thuật và truyền thông trong mô trường học tập quốc tế năng động.",
+      "input_text": "trường nổi bật với các chương trình đào tạo về Kinh doanh, Logistics, Kỹ thuật và Truyền thông trong môi trường học tập quốc tế năng động.",
+      "spoken_text": "trường nổi bật với các chương trình đào tạo về Kinh doanh, Logistics, Kỹ thuật và Truyền thông trong môi trường học tập quốc tế năng động.",
+      "corrected_text": "trường nổi bật với các chương trình đào tạo về Kinh doanh, Logistics, Kỹ thuật và Truyền thông trong môi trường học tập quốc tế năng động.",
+      "corrected_text_differs_from_audio": false,
+      "audio_replaced": false,
+      "semantic_type": "Ngành học trong môi trường quốc tế",
+      "visual_center": "Một mô hình dự án nhóm chuyển qua góc nhìn kinh doanh, logistics, kỹ thuật và truyền thông; không bốn bảng ngành.",
+      "organic_motion_need": "Đã xét HYBRID: nhiều cutaway thật làm rời mạch, còn icon phủ footage sẽ chiếm thông điệp.",
+      "exact_graphics_need": "Independent illustrative layers and controlled transformation.",
+      "preferred_mode": "HF_ONLY",
+      "render_mode": "HF_ONLY",
+      "routing_locked": true,
+      "routing_confidence": 0.9,
+      "routing_reason": "Bốn nhóm ngành được liên kết bằng hành động và vật đổi trạng thái, không thể gánh bằng một plate người thật.",
+      "flow_contribution": "none",
+      "hf_contribution": "Một mô hình dự án nhóm chuyển qua góc nhìn kinh doanh, logistics, kỹ thuật và truyền thông; không bốn bảng ngành.",
+      "fallback_mode": "HYBRID",
+      "fallback_condition": "Only after verified capability failure or two failed plate review cycles; record previous_mode/new_mode/routing_override_reason. Missing assets never justify card fallback.",
+      "character": "yes",
+      "protagonist_action": "Cùng bạn học dựng mô hình chuỗi cung ứng, kiểm tra bánh răng và ghi hình phần trình bày.",
+      "narrative_visual": "Một mô hình dự án nhóm chuyển qua góc nhìn kinh doanh, logistics, kỹ thuật và truyền thông; không bốn bảng ngành.",
+      "visual_verb": "team-project-tool-handoff",
+      "signature_motion": "team-project-tool-handoff",
+      "hf_signature_motion": "team-project-tool-handoff",
+      "style_id": "kurzgesagt",
+      "style_candidates": [
+        {
+          "style_id": "kurzgesagt",
+          "selected": true,
+          "assessment": "Cần relay dụng cụ với nhân vật làm việc; sơ đồ danh mục dễ thành poster bốn icon."
+        },
+        {
+          "style_id": "hf_existing:multi-object-diagram",
+          "selected": false,
+          "assessment": "Khả thi, nhưng Cần relay dụng cụ với nhân vật làm việc; sơ đồ danh mục dễ thành poster bốn icon."
+        }
+      ],
+      "style_reference": "references/animasyon-stil-katalogu/stiller/kurzgesagt/anim.html",
+      "style_reason": "Cần relay dụng cụ với nhân vật làm việc; sơ đồ danh mục dễ thành poster bốn icon.",
+      "opening_state": "Hai học sinh bắt đầu một mô hình dự án.",
+      "transformation": "Dụng cụ/đạo cụ chuyển theo nhóm ngành, mỗi người làm một tác vụ.",
+      "final_state": "Nhóm cùng xem mô hình và phần ghi hình đã hoàn tất.",
+      "beats": [
+        {
+          "local_start": 0,
+          "local_end": 1.0,
+          "action": "Hai học sinh bắt đầu một mô hình dự án.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 1.0,
+          "local_end": 4.8,
+          "action": "Dụng cụ/đạo cụ chuyển theo nhóm ngành, mỗi người làm một tác vụ.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 4.8,
+          "local_end": 6.469,
+          "action": "Nhóm cùng xem mô hình và phần ghi hình đã hoàn tất.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        }
+      ],
+      "asset_contract": [
+        {
+          "layer": "Hai rig học sinh",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Dự án mô hình",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Gear/kiện hàng/chart/camera",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Bàn và bóng tiếp xúc",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        }
+      ],
+      "assets_ready": false,
+      "container_required": false,
+      "container_semantics": "none",
+      "container_inventory": [],
+      "visible_text_budget": 7,
+      "visible_text_inventory": [
+        {
+          "text": "Kinh doanh",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        },
+        {
+          "text": "Logistics",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        },
+        {
+          "text": "Kỹ thuật",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        },
+        {
+          "text": "Truyền thông",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        }
+      ],
+      "composition_reason": "Hai người ở hai phía bàn Y700–1020; hero lên giữa Y400–650; nhãn luân phiên.",
+      "mobile_legibility_plan": "Canvas 720x1280; essential labels >=34px, at most 2 levels. At 360x640 remove supporting copy before increasing size. Footer Y1080–1280 empty. Long institution name wraps at word boundary within its zone.",
+      "dark_mass_strategy": "White canvas; orange structural accent, light teal/blue secondary surfaces; dark hair/outline selective. Separate person/folder/props in grayscale; never solid navy everything.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "none",
+      "handoff": "Cut at original audio slice boundary; keep spatial/prop handoff.",
+      "transition_to_next": "Vòng ống kính match shape sang chi tiết campus Macquarie minh họa.",
+      "fact_sources": [
+        "F4"
+      ],
+      "fact_note": "Không suy ra ngành cụ thể trên offer của Như Quỳnh.",
+      "fact_status": "official_general_information_with_editorial_language",
+      "publication_hold": false,
+      "proof_times": [
+        0.5,
+        3.235,
+        6.319
+      ],
+      "production_status": "planned"
+    },
+    {
+      "scene_id": "scene_10",
+      "scene_number": 10,
+      "title": "Macquarie tại Úc",
+      "audio_slice": "scratch/audio_slices/scene_10.wav",
+      "audio_sha256": "3f4be07be2f0ef82099d7d8d6ee21c22de53b852be2a9bff5e09a7f1724a1409",
+      "start": 39.699,
+      "end": 44.18,
+      "duration": 4.481,
+      "start_sample": 952776,
+      "end_sample": 1060320,
+      "raw_text": "Macquarie University, Úc thuộc nhóm các trường đại học hàng đầu nước Úc,",
+      "input_text": "Macquarie University (Úc) – thuộc nhóm các trường đại học hàng đầu nước Úc,",
+      "spoken_text": "Macquarie University (Úc) – thuộc nhóm các trường đại học hàng đầu nước Úc,",
+      "corrected_text": "Macquarie University (Úc) – thuộc nhóm các trường đại học hàng đầu nước Úc,",
+      "corrected_text_differs_from_audio": false,
+      "audio_replaced": false,
+      "semantic_type": "Macquarie tại Úc",
+      "visual_center": "Không gian đại học minh họa, người học bên trái, callout Macquarie University bên phải; không giả campus thật.",
+      "organic_motion_need": "Cần bước vào không gian học, mở tập tài liệu và nhìn người hướng dẫn.",
+      "exact_graphics_need": "One exact short name/callout after observed physical beat.",
+      "preferred_mode": "HYBRID",
+      "render_mode": "HYBRID",
+      "routing_locked": true,
+      "routing_confidence": 0.85,
+      "routing_reason": "Hoạt động người học trong không gian đại học mang cảm giác điểm đến; HF định danh chính xác, không cần ranking graphic.",
+      "flow_contribution": "Không gian đại học minh họa, người học bên trái, callout Macquarie University bên phải; không giả campus thật.",
+      "hf_contribution": "one floating label/pointer only",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Only after verified capability failure or two failed plate review cycles; record previous_mode/new_mode/routing_override_reason. Missing assets never justify card fallback.",
+      "character": "yes",
+      "protagonist_action": "Bước tới bàn thư viện, mở tài liệu rồi nhìn ra khu học nhóm.",
+      "narrative_visual": "Không gian đại học minh họa, người học bên trái, callout Macquarie University bên phải; không giả campus thật.",
+      "visual_verb": "arrive-open-identify",
+      "signature_motion": "arrive-open-identify",
+      "hf_signature_motion": "observed prop beat anchored callout",
+      "style_id": "not_applicable",
+      "style_candidates": [],
+      "style_reference": "AGENTS.md engine contracts",
+      "style_reason": "HF_ONLY style selection does not govern this Flow plate.",
+      "opening_state": "Nữ sinh tới bàn học.",
+      "transformation": "Mở tài liệu; nhãn vào sau beat được quan sát trong plate.",
+      "final_state": "Nhìn nhóm học, giữ nhãn ngắn không huy hiệu Top 10.",
+      "beats": [
+        {
+          "local_start": 0,
+          "local_end": 0.9,
+          "action": "Nữ sinh tới bàn học.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 0.9,
+          "local_end": 3.4,
+          "action": "Mở tài liệu; nhãn vào sau beat được quan sát trong plate.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 3.4,
+          "local_end": 4.481,
+          "action": "Nhìn nhóm học, giữ nhãn ngắn không huy hiệu Top 10.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        }
+      ],
+      "asset_contract": [
+        {
+          "layer": "Flow plate thư viện minh họa",
+          "source": "Flow reference/plate to generate via batch; exact overlays authored in HF",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Reference nữ sinh",
+          "source": "Flow reference/plate to generate via batch; exact overlays authored in HF",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Tập tài liệu không chữ",
+          "source": "Flow reference/plate to generate via batch; exact overlays authored in HF",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "HF floating label/connector",
+          "source": "Flow reference/plate to generate via batch; exact overlays authored in HF",
+          "status": "planned_not_created"
+        }
+      ],
+      "assets_ready": false,
+      "container_required": true,
+      "container_semantics": "folder",
+      "container_inventory": [
+        {
+          "object_type": "physical_portfolio_folder",
+          "bounds": [
+            320,
+            650,
+            300,
+            340
+          ],
+          "semantic_boundary": "Bìa/gáy/trang giấy hoặc vòng kẹp là một hồ sơ thật được cầm/mở/lật; không hộp layout.",
+          "removal_consequence": "Mất hành động cầm, lật, sắp trang hoặc đóng hồ sơ.",
+          "major_surface_count": 1
+        }
+      ],
+      "visible_text_budget": 2,
+      "visible_text_inventory": [
+        {
+          "text": "Macquarie University",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        }
+      ],
+      "composition_reason": "Người/hồ sơ trái; 45% phải trống Y320–700; nhãn không đè người.",
+      "mobile_legibility_plan": "Canvas 720x1280; essential labels >=34px, at most 2 levels. At 360x640 remove supporting copy before increasing size. Footer Y1080–1280 empty. Long institution name wraps at word boundary within its zone.",
+      "dark_mass_strategy": "White canvas; orange structural accent, light teal/blue secondary surfaces; dark hair/outline selective. Separate person/folder/props in grayscale; never solid navy everything.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "flow_action": "Bước tới bàn thư viện, mở tài liệu rồi nhìn ra khu học nhóm.",
+      "flow_camera": "steady medium shot, right 45% negative space",
+      "overlay_zone": {
+        "bounds": [
+          390,
+          330,
+          260,
+          350
+        ],
+        "negative_space_percent": 45,
+        "type": "floating_pin_and_hairline"
+      },
+      "handoff": "Inspect plate and set callout reveal on observed beat, not presumed prompt time.",
+      "transition_to_next": "Trang tài liệu mở ra dụng cụ nhóm ngành.",
+      "fact_sources": [
+        "F6"
+      ],
+      "fact_note": "Không thêm số ranking; nhóm hàng đầu là mô tả khái quát, thứ hạng phụ thuộc bảng/năm.",
+      "fact_status": "official_general_information_with_editorial_language",
+      "publication_hold": false,
+      "proof_times": [
+        0.5,
+        2.24,
+        4.331
+      ],
+      "production_status": "planned",
+      "flow_prompt_contract": "Action only with reference-based appearance; zero text/numbers/letters/logos/badges. Physical props. Illustrative footage, never fake documentary campus/portrait. Reserve 40–50% right-side clean space."
+    },
+    {
+      "scene_id": "scene_11",
+      "scene_number": 11,
+      "title": "Các nhóm ngành tại Macquarie",
+      "audio_slice": "scratch/audio_slices/scene_11.wav",
+      "audio_sha256": "3f4a0288b2aced27487c668ffc102e0bf20ba7234726d63ba23d07ba0238c46a",
+      "start": 44.18,
+      "end": 48.6,
+      "duration": 4.42,
+      "start_sample": 1060320,
+      "end_sample": 1166400,
+      "raw_text": "Macquarie nổi tiếng về kinh doanh, tài chính, công nghệ thông tin, truyền thông và khoa học,",
+      "input_text": "Macquarie nổi tiếng về Kinh doanh, Tài chính, Công nghệ thông tin, Truyền thông và Khoa học.",
+      "spoken_text": "Macquarie nổi tiếng về Kinh doanh, Tài chính, Công nghệ thông tin, Truyền thông và Khoa học.",
+      "corrected_text": "Macquarie nổi tiếng về Kinh doanh, Tài chính, Công nghệ thông tin, Truyền thông và Khoa học.",
+      "corrected_text_differs_from_audio": false,
+      "audio_replaced": false,
+      "semantic_type": "Các nhóm ngành tại Macquarie",
+      "visual_center": "Một công cụ đa năng xoay/tách thành biểu đồ kinh doanh, thấu kính tài chính, laptop, ống kính và mô hình phân tử; từng vật kế thừa hình trước.",
+      "organic_motion_need": "Đã xét HYBRID: năm plate quá vụn, không có hành động người thật mang ý thay thế.",
+      "exact_graphics_need": "Independent illustrative layers and controlled transformation.",
+      "preferred_mode": "HF_ONLY",
+      "render_mode": "HF_ONLY",
+      "routing_locked": true,
+      "routing_confidence": 0.9,
+      "routing_reason": "Danh mục lĩnh vực cần kiểm soát thứ tự biến đổi và nhãn chính xác.",
+      "flow_contribution": "none",
+      "hf_contribution": "Một công cụ đa năng xoay/tách thành biểu đồ kinh doanh, thấu kính tài chính, laptop, ống kính và mô hình phân tử; từng vật kế thừa hình trước.",
+      "fallback_mode": "HYBRID",
+      "fallback_condition": "Only after verified capability failure or two failed plate review cycles; record previous_mode/new_mode/routing_override_reason. Missing assets never justify card fallback.",
+      "character": "no",
+      "protagonist_action": "Không có: diện tích dành cho chuỗi vật thể ngành.",
+      "narrative_visual": "Một công cụ đa năng xoay/tách thành biểu đồ kinh doanh, thấu kính tài chính, laptop, ống kính và mô hình phân tử; từng vật kế thừa hình trước.",
+      "visual_verb": "five-disciplines-object-morph",
+      "signature_motion": "five-disciplines-object-morph",
+      "hf_signature_motion": "five-disciplines-object-morph",
+      "style_id": "hf_existing:discipline-object-relay",
+      "style_candidates": [
+        {
+          "style_id": "hf_existing:discipline-object-relay",
+          "selected": true,
+          "assessment": "Năm nhóm trong 4,42s cần chuyển vật hero thật gọn; thêm nhân vật sẽ thành góc trang trí."
+        },
+        {
+          "style_id": "kurzgesagt",
+          "selected": false,
+          "assessment": "Khả thi, nhưng Năm nhóm trong 4,42s cần chuyển vật hero thật gọn; thêm nhân vật sẽ thành góc trang trí."
+        }
+      ],
+      "style_reference": "skills/fk-edu-motion-explainer.references/visual-design.md; .agents/skills/hyperframes-animation/rules/center-outward-expansion.md",
+      "style_reason": "Năm nhóm trong 4,42s cần chuyển vật hero thật gọn; thêm nhân vật sẽ thành góc trang trí.",
+      "opening_state": "Vật đầu tiên sẵn trên khung.",
+      "transformation": "Chuyển qua năm trạng thái theo từ khóa, một nhãn tại một thời điểm.",
+      "final_state": "Mô hình khoa học giữ, nhãn cũ đã xóa.",
+      "beats": [
+        {
+          "local_start": 0,
+          "local_end": 0.6,
+          "action": "Vật đầu tiên sẵn trên khung.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 0.6,
+          "local_end": 3.7,
+          "action": "Chuyển qua năm trạng thái theo từ khóa, một nhãn tại một thời điểm.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 3.7,
+          "local_end": 4.42,
+          "action": "Mô hình khoa học giữ, nhãn cũ đã xóa.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        }
+      ],
+      "asset_contract": [
+        {
+          "layer": "Năm đồ vật đa lớp",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Hình trung gian chuyển đổi",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Typography nhãn ngắn",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        }
+      ],
+      "assets_ready": false,
+      "container_required": false,
+      "container_semantics": "none",
+      "container_inventory": [],
+      "visible_text_budget": 9,
+      "visible_text_inventory": [
+        {
+          "text": "Kinh doanh",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        },
+        {
+          "text": "Tài chính",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        },
+        {
+          "text": "CNTT",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        },
+        {
+          "text": "Truyền thông",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        },
+        {
+          "text": "Khoa học",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        }
+      ],
+      "composition_reason": "Hero lớn giữa Y450–850, nhãn Y330; chuyển qua một điểm neo, không năm vòng số.",
+      "mobile_legibility_plan": "Canvas 720x1280; essential labels >=34px, at most 2 levels. At 360x640 remove supporting copy before increasing size. Footer Y1080–1280 empty. Long institution name wraps at word boundary within its zone.",
+      "dark_mass_strategy": "White canvas; orange structural accent, light teal/blue secondary surfaces; dark hair/outline selective. Separate person/folder/props in grayscale; never solid navy everything.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "none",
+      "handoff": "Cut at original audio slice boundary; keep spatial/prop handoff.",
+      "transition_to_next": "Mô hình khoa học match shape sang mẫu thử thực hành.",
+      "fact_sources": [
+        "F7"
+      ],
+      "fact_note": "Có ngành học không đồng nghĩa mọi ngành có cùng xếp hạng/thế mạnh quốc tế.",
+      "fact_status": "official_general_information_with_editorial_language",
+      "publication_hold": false,
+      "proof_times": [
+        0.5,
+        2.21,
+        4.27
+      ],
+      "production_status": "planned"
+    },
+    {
+      "scene_id": "scene_12",
+      "scene_number": 12,
+      "title": "Nghiên cứu và làm việc cùng đối tác",
+      "audio_slice": "scratch/audio_slices/scene_12.wav",
+      "audio_sha256": "2c24bc0f29ab9fe108e548495306450d0bf4b73812f1e4d68461aaedc7247144",
+      "start": 48.6,
+      "end": 53.387,
+      "duration": 4.787,
+      "start_sample": 1166400,
+      "end_sample": 1281288,
+      "raw_text": "trường có thế mạnh nhìn cứu, cơ sở vật chất hiện đại và mối liên kết chặt chẽ với các doanh nghiệp toàn cầu.",
+      "input_text": "Trường có thế mạnh nghiên cứu, cơ sở vật chất hiện đại và mối liên kết chặt chẽ với các doanh nghiệp toàn cầu.",
+      "spoken_text": "Trường có thế mạnh nghiên cứu, cơ sở vật chất hiện đại và mối liên kết chặt chẽ với các doanh nghiệp toàn cầu.",
+      "corrected_text": "Trường có thế mạnh nghiên cứu, cơ sở vật chất hiện đại và mối liên kết chặt chẽ với các doanh nghiệp toàn cầu.",
+      "corrected_text_differs_from_audio": false,
+      "audio_replaced": false,
+      "semantic_type": "Nghiên cứu và làm việc cùng đối tác",
+      "visual_center": "Lab học tập minh họa, học viên và người hướng dẫn cùng kiểm tra mẫu; không nhận diện đối tác hoặc lab thật.",
+      "organic_motion_need": "Cần thao tác lab, tiếp xúc mẫu và trao đổi bằng ánh nhìn.",
+      "exact_graphics_need": "none",
+      "preferred_mode": "FLOW_ONLY",
+      "render_mode": "FLOW_ONLY",
+      "routing_locked": true,
+      "routing_confidence": 0.85,
+      "routing_reason": "Quan sát mẫu thử và bàn giao kết quả là hành động vật lý; không số liệu hoặc đồ họa cần giải thích.",
+      "flow_contribution": "Lab học tập minh họa, học viên và người hướng dẫn cùng kiểm tra mẫu; không nhận diện đối tác hoặc lab thật.",
+      "hf_contribution": "none; assembly/audio only",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Only after verified capability failure or two failed plate review cycles; record previous_mode/new_mode/routing_override_reason. Missing assets never justify card fallback.",
+      "character": "yes",
+      "protagonist_action": "Điều chỉnh mô hình thí nghiệm rồi trao mẫu thử cho người hướng dẫn bên bàn.",
+      "narrative_visual": "Lab học tập minh họa, học viên và người hướng dẫn cùng kiểm tra mẫu; không nhận diện đối tác hoặc lab thật.",
+      "visual_verb": "test-observe-handoff",
+      "signature_motion": "test-observe-handoff",
+      "hf_signature_motion": "none",
+      "style_id": "not_applicable",
+      "style_candidates": [],
+      "style_reference": "AGENTS.md engine contracts",
+      "style_reason": "HF_ONLY style selection does not govern this Flow plate.",
+      "opening_state": "Học viên đặt mẫu trên giá.",
+      "transformation": "Điều chỉnh, quan sát kết quả rồi đưa mẫu cho người hướng dẫn.",
+      "final_state": "Hai người cùng nhìn mẫu, không lời cam kết việc làm.",
+      "beats": [
+        {
+          "local_start": 0,
+          "local_end": 0.8,
+          "action": "Học viên đặt mẫu trên giá.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 0.8,
+          "local_end": 3.7,
+          "action": "Điều chỉnh, quan sát kết quả rồi đưa mẫu cho người hướng dẫn.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 3.7,
+          "local_end": 4.787,
+          "action": "Hai người cùng nhìn mẫu, không lời cam kết việc làm.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        }
+      ],
+      "asset_contract": [
+        {
+          "layer": "Flow plate lab/thao tác",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Reference học viên/người hướng dẫn",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Mẫu thử không nhãn",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        }
+      ],
+      "assets_ready": false,
+      "container_required": false,
+      "container_semantics": "none",
+      "container_inventory": [],
+      "visible_text_budget": 0,
+      "visible_text_inventory": [],
+      "composition_reason": "Tay/mẫu ở giữa Y600–900, hai gương mặt phía trên; không vùng trống vô nghĩa.",
+      "mobile_legibility_plan": "Canvas 720x1280; essential labels >=34px, at most 2 levels. At 360x640 remove supporting copy before increasing size. Footer Y1080–1280 empty. Long institution name wraps at word boundary within its zone.",
+      "dark_mass_strategy": "White canvas; orange structural accent, light teal/blue secondary surfaces; dark hair/outline selective. Separate person/folder/props in grayscale; never solid navy everything.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "flow_action": "Điều chỉnh mô hình thí nghiệm rồi trao mẫu thử cho người hướng dẫn bên bàn.",
+      "flow_camera": "one gentle track or stable medium/close shot following physical action",
+      "overlay_zone": "none",
+      "handoff": "Cut at original audio slice boundary; keep spatial/prop handoff.",
+      "transition_to_next": "Vật thử được đặt xuống thành chuyển động đặt hồ sơ.",
+      "fact_sources": [
+        "F8",
+        "F9"
+      ],
+      "fact_note": "Không giả là cảnh tại một cơ sở cụ thể hoặc hoạt động hợp tác của Như Quỳnh.",
+      "fact_status": "official_general_information_with_editorial_language",
+      "publication_hold": false,
+      "proof_times": [
+        0.5,
+        2.393,
+        4.637
+      ],
+      "production_status": "planned",
+      "flow_prompt_contract": "Action only with reference-based appearance; zero text/numbers/letters/logos/badges. Physical props. Illustrative footage, never fake documentary campus/portrait."
+    },
+    {
+      "scene_id": "scene_13",
+      "scene_number": 13,
+      "title": "Nhìn lại quá trình chuẩn bị",
+      "audio_slice": "scratch/audio_slices/scene_13.wav",
+      "audio_sha256": "43105a9b0a4533e446ea2698910b9c4b12d0e0d8655f6c4a2a14775b396e8292",
+      "start": 53.387,
+      "end": 57.701,
+      "duration": 4.314,
+      "start_sample": 1281288,
+      "end_sample": 1384824,
+      "raw_text": "Đang sau, ba thương mời nhập học là quá trình chuẩn bị nghiêm túc và định hướng rõ ràng.",
+      "input_text": "Đằng sau ba thư mời nhập học là quá trình chuẩn bị nghiêm túc và định hướng rõ ràng.",
+      "spoken_text": "Đằng sau ba thư mời nhập học là quá trình chuẩn bị nghiêm túc và định hướng rõ ràng.",
+      "corrected_text": "Đằng sau ba thư mời nhập học là quá trình chuẩn bị nghiêm túc và định hướng rõ ràng.",
+      "corrected_text_differs_from_audio": false,
+      "audio_replaced": false,
+      "semantic_type": "Nhìn lại quá trình chuẩn bị",
+      "visual_center": "Ba phong bì minh họa khép về một hồ sơ; học sinh lật trang ngược tới lịch và bản nháp, không timeline số dọc.",
+      "organic_motion_need": "Đã xét HYBRID: quay người lật giấy không tự diễn tả quá trình thời gian đảo.",
+      "exact_graphics_need": "Independent illustrative layers and controlled transformation.",
+      "preferred_mode": "HF_ONLY",
+      "render_mode": "HF_ONLY",
+      "routing_locked": true,
+      "routing_confidence": 0.9,
+      "routing_reason": "Thời gian đảo và liên kết giữa kết quả/công sức cần điều khiển lớp chính xác.",
+      "flow_contribution": "none",
+      "hf_contribution": "Ba phong bì minh họa khép về một hồ sơ; học sinh lật trang ngược tới lịch và bản nháp, không timeline số dọc.",
+      "fallback_mode": "HYBRID",
+      "fallback_condition": "Only after verified capability failure or two failed plate review cycles; record previous_mode/new_mode/routing_override_reason. Missing assets never justify card fallback.",
+      "character": "yes",
+      "protagonist_action": "Mở một hồ sơ, lật ngược các trang để lộ lịch chuẩn bị và dấu việc đã hoàn thành.",
+      "narrative_visual": "Ba phong bì minh họa khép về một hồ sơ; học sinh lật trang ngược tới lịch và bản nháp, không timeline số dọc.",
+      "visual_verb": "offers-rewind-to-work",
+      "signature_motion": "offers-rewind-to-work",
+      "hf_signature_motion": "offers-rewind-to-work",
+      "style_id": "hf_existing:reverse-process",
+      "style_candidates": [
+        {
+          "style_id": "hf_existing:reverse-process",
+          "selected": true,
+          "assessment": "Rewind từ kết quả về công việc chuẩn bị là ý chính; treatment quy trình đảo làm quan hệ rõ hơn một cảnh minh họa mới."
+        },
+        {
+          "style_id": "kurzgesagt",
+          "selected": false,
+          "assessment": "Khả thi, nhưng Rewind từ kết quả về công việc chuẩn bị là ý chính; treatment quy trình đảo làm quan hệ rõ hơn một cảnh minh họa mới."
+        }
+      ],
+      "style_reference": "skills/fk-edu-motion-explainer.references/visual-design.md; .agents/skills/hyperframes-animation/rules/center-outward-expansion.md",
+      "style_reason": "Rewind từ kết quả về công việc chuẩn bị là ý chính; treatment quy trình đảo làm quan hệ rõ hơn một cảnh minh họa mới.",
+      "opening_state": "Ba phong bì mở đầu, học sinh kéo hồ sơ lại.",
+      "transformation": "Phong bì trở về hồ sơ; trang lật ngược cho thấy bản nháp/lịch.",
+      "final_state": "Học sinh dừng ở trang chuẩn bị, nhịp thở trước mentor.",
+      "beats": [
+        {
+          "local_start": 0,
+          "local_end": 0.8,
+          "action": "Ba phong bì mở đầu, học sinh kéo hồ sơ lại.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 0.8,
+          "local_end": 3.3,
+          "action": "Phong bì trở về hồ sơ; trang lật ngược cho thấy bản nháp/lịch.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 3.3,
+          "local_end": 4.314,
+          "action": "Học sinh dừng ở trang chuẩn bị, nhịp thở trước mentor.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        }
+      ],
+      "asset_contract": [
+        {
+          "layer": "Rig nữ sinh",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Ba phong bì biểu trưng",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Một hồ sơ có trang lật/lịch",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Path rewind",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        }
+      ],
+      "assets_ready": false,
+      "container_required": true,
+      "container_semantics": "folder",
+      "container_inventory": [
+        {
+          "object_type": "physical_portfolio_folder",
+          "bounds": [
+            320,
+            650,
+            300,
+            340
+          ],
+          "semantic_boundary": "Bìa/gáy/trang giấy hoặc vòng kẹp là một hồ sơ thật được cầm/mở/lật; không hộp layout.",
+          "removal_consequence": "Mất hành động cầm, lật, sắp trang hoặc đóng hồ sơ.",
+          "major_surface_count": 1
+        }
+      ],
+      "visible_text_budget": 0,
+      "visible_text_inventory": [],
+      "composition_reason": "Hồ sơ Y740, đường cung từ phong bì Y350–550; người trái dưới thao tác; lịch chỉ là một trang vật lý.",
+      "mobile_legibility_plan": "Canvas 720x1280; essential labels >=34px, at most 2 levels. At 360x640 remove supporting copy before increasing size. Footer Y1080–1280 empty. Long institution name wraps at word boundary within its zone.",
+      "dark_mass_strategy": "White canvas; orange structural accent, light teal/blue secondary surfaces; dark hair/outline selective. Separate person/folder/props in grayscale; never solid navy everything.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "none",
+      "handoff": "Cut at original audio slice boundary; keep spatial/prop handoff.",
+      "transition_to_next": "Trang hồ sơ được bàn tay mentor chỉ tới trong cảnh sau.",
+      "fact_sources": [
+        "F1"
+      ],
+      "fact_note": "Không tạo điểm số, số tháng chuẩn bị hoặc con dấu của trường.",
+      "fact_status": "first_party_brand_report",
+      "publication_hold": false,
+      "proof_times": [
+        0.5,
+        2.157,
+        4.164
+      ],
+      "production_status": "planned"
+    },
+    {
+      "scene_id": "scene_14",
+      "scene_number": 14,
+      "title": "Mentor đồng hành",
+      "audio_slice": "scratch/audio_slices/scene_14.wav",
+      "audio_sha256": "d50d3591cdfa58ea098b632555a99a60dfaab6677ea15f41bca1b5aa7b2dc64d",
+      "start": 57.701,
+      "end": 61.354,
+      "duration": 3.653,
+      "start_sample": 1384824,
+      "end_sample": 1472496,
+      "raw_text": "Với sự đồng hành của đội ngũ mentor Ezora hơn 14 năm kinh nghiệm,",
+      "input_text": "Với sự đồng hành của đội ngũ Mentor Esora hơn 14 năm kinh nghiệm,",
+      "spoken_text": "Với sự đồng hành của đội ngũ Mentor Esora hơn 14 năm kinh nghiệm,",
+      "corrected_text": "Với sự đồng hành của đội ngũ Mentor Esora giàu kinh nghiệm,",
+      "corrected_text_differs_from_audio": true,
+      "audio_replaced": false,
+      "semantic_type": "Mentor đồng hành",
+      "visual_center": "Hai người bên bàn tư vấn minh họa, chỉ vào tài liệu vật lý; không hiện 14+ năm hoặc hồ sơ năng lực mentor giả.",
+      "organic_motion_need": "Cần ánh mắt, cử chỉ chỉ trang và phản ứng hiểu của học sinh.",
+      "exact_graphics_need": "none",
+      "preferred_mode": "FLOW_ONLY",
+      "render_mode": "FLOW_ONLY",
+      "routing_locked": true,
+      "routing_confidence": 0.85,
+      "routing_reason": "Lắng nghe và hướng dẫn trên tài liệu là tương tác hữu cơ, không cần metric kinh nghiệm.",
+      "flow_contribution": "Hai người bên bàn tư vấn minh họa, chỉ vào tài liệu vật lý; không hiện 14+ năm hoặc hồ sơ năng lực mentor giả.",
+      "hf_contribution": "none; assembly/audio only",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Only after verified capability failure or two failed plate review cycles; record previous_mode/new_mode/routing_override_reason. Missing assets never justify card fallback.",
+      "character": "yes",
+      "protagonist_action": "Mentor chỉ phần trong hồ sơ; học sinh xem rồi đặt lại một tài liệu theo góp ý.",
+      "narrative_visual": "Hai người bên bàn tư vấn minh họa, chỉ vào tài liệu vật lý; không hiện 14+ năm hoặc hồ sơ năng lực mentor giả.",
+      "visual_verb": "point-review-reorder",
+      "signature_motion": "point-review-reorder",
+      "hf_signature_motion": "none",
+      "style_id": "not_applicable",
+      "style_candidates": [],
+      "style_reference": "AGENTS.md engine contracts",
+      "style_reason": "HF_ONLY style selection does not govern this Flow plate.",
+      "opening_state": "Mentor chỉ trang trong hồ sơ.",
+      "transformation": "Học sinh theo dõi rồi chuyển một trang theo góp ý.",
+      "final_state": "Hai người nhìn lại tài liệu đã sắp xếp.",
+      "beats": [
+        {
+          "local_start": 0,
+          "local_end": 0.7,
+          "action": "Mentor chỉ trang trong hồ sơ.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 0.7,
+          "local_end": 2.8,
+          "action": "Học sinh theo dõi rồi chuyển một trang theo góp ý.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 2.8,
+          "local_end": 3.653,
+          "action": "Hai người nhìn lại tài liệu đã sắp xếp.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        }
+      ],
+      "asset_contract": [
+        {
+          "layer": "Flow plate tư vấn",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Reference mentor/học sinh",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Hồ sơ trơn không chữ",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        }
+      ],
+      "assets_ready": false,
+      "container_required": true,
+      "container_semantics": "folder",
+      "container_inventory": [
+        {
+          "object_type": "physical_portfolio_folder",
+          "bounds": [
+            320,
+            650,
+            300,
+            340
+          ],
+          "semantic_boundary": "Bìa/gáy/trang giấy hoặc vòng kẹp là một hồ sơ thật được cầm/mở/lật; không hộp layout.",
+          "removal_consequence": "Mất hành động cầm, lật, sắp trang hoặc đóng hồ sơ.",
+          "major_surface_count": 1
+        }
+      ],
+      "visible_text_budget": 0,
+      "visible_text_inventory": [],
+      "composition_reason": "Mentor phải, học sinh trái, hồ sơ giữa Y750–970; góc trung cảnh ngang bàn trong khung dọc.",
+      "mobile_legibility_plan": "Canvas 720x1280; essential labels >=34px, at most 2 levels. At 360x640 remove supporting copy before increasing size. Footer Y1080–1280 empty. Long institution name wraps at word boundary within its zone.",
+      "dark_mass_strategy": "White canvas; orange structural accent, light teal/blue secondary surfaces; dark hair/outline selective. Separate person/folder/props in grayscale; never solid navy everything.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "flow_action": "Mentor chỉ phần trong hồ sơ; học sinh xem rồi đặt lại một tài liệu theo góp ý.",
+      "flow_camera": "one gentle track or stable medium/close shot following physical action",
+      "overlay_zone": "none",
+      "handoff": "Cut at original audio slice boundary; keep spatial/prop handoff.",
+      "transition_to_next": "Học sinh kéo hồ sơ về phía mình, nối pilot tự xây dựng hồ sơ.",
+      "fact_sources": [
+        "F1",
+        "F10"
+      ],
+      "fact_note": "F1 nói 14 năm; F10 hơn 13 năm. Chưa đủ xác nhận đội ngũ Mentor hơn 14 năm; giữ audio, publication hold câu này.",
+      "fact_status": "first_party_brand_report",
+      "publication_hold": true,
+      "proof_times": [
+        0.438,
+        1.827,
+        3.503
+      ],
+      "production_status": "planned",
+      "flow_prompt_contract": "Action only with reference-based appearance; zero text/numbers/letters/logos/badges. Physical props. Illustrative footage, never fake documentary campus/portrait."
+    },
+    {
+      "scene_id": "scene_15",
+      "scene_number": 15,
+      "title": "Hồ sơ thể hiện con người và mục tiêu",
+      "audio_slice": "scratch/audio_slices/scene_15.wav",
+      "audio_sha256": "c8561731374c10d98d2eccba52de7900fd5f8211b11d918d584d857637223d95",
+      "start": 61.354,
+      "end": 67.898,
+      "duration": 6.544,
+      "start_sample": 1472496,
+      "end_sample": 1629552,
+      "raw_text": "Nhiều Quỳnh đã dây dựng một bộ hồ sơ thể hiện đúng năng lực, cá tính và mục tiêu học tập, từ đó mở rộng cơ hội chúng tuyển tại nhiều quốc gia.",
+      "input_text": "Như Quỳnh đã xây dựng một bộ hồ sơ thể hiện đúng năng lực, cá tính và mục tiêu học tập, từ đó mở rộng cơ hội trúng tuyển tại nhiều quốc gia.",
+      "spoken_text": "Như Quỳnh đã xây dựng một bộ hồ sơ thể hiện đúng năng lực, cá tính và mục tiêu học tập, từ đó mở rộng cơ hội trúng tuyển tại nhiều quốc gia.",
+      "corrected_text": "Như Quỳnh đã xây dựng một bộ hồ sơ thể hiện đúng năng lực, cá tính và mục tiêu học tập, từ đó mở rộng cơ hội trúng tuyển tại nhiều quốc gia.",
+      "corrected_text_differs_from_audio": false,
+      "audio_replaced": false,
+      "semantic_type": "Hồ sơ thể hiện con người và mục tiêu",
+      "visual_center": "Một binder vật lý trên bàn với trang lật và kẹp; từng ý trở thành minh họa trên/đi lên từ trang, sau cùng đường cơ hội mở ra hai đích biểu trưng.",
+      "organic_motion_need": "Đã xét HYBRID: người lật hồ sơ thật không thể nhìn thấy ba ý trừu tượng mà không để overlay gánh toàn cảnh.",
+      "exact_graphics_need": "Independent illustrative layers and controlled transformation.",
+      "preferred_mode": "HF_ONLY",
+      "render_mode": "HF_ONLY",
+      "routing_locked": true,
+      "routing_confidence": 0.9,
+      "routing_reason": "Ba khái niệm trừu tượng xuất hiện thành trạng thái của cùng hồ sơ; lớp đồ họa và thao tác tạo ý chính.",
+      "flow_contribution": "none",
+      "hf_contribution": "Một binder vật lý trên bàn với trang lật và kẹp; từng ý trở thành minh họa trên/đi lên từ trang, sau cùng đường cơ hội mở ra hai đích biểu trưng.",
+      "fallback_mode": "HYBRID",
+      "fallback_condition": "Only after verified capability failure or two failed plate review cycles; record previous_mode/new_mode/routing_override_reason. Missing assets never justify card fallback.",
+      "character": "yes",
+      "protagonist_action": "Nữ sinh mở hồ sơ, chọn và sắp trang thể hiện năng lực, cá tính, mục tiêu, rồi đóng gáy kẹp để hoàn tất.",
+      "narrative_visual": "Một binder vật lý trên bàn với trang lật và kẹp; từng ý trở thành minh họa trên/đi lên từ trang, sau cùng đường cơ hội mở ra hai đích biểu trưng.",
+      "visual_verb": "portfolio-page-build-and-route",
+      "signature_motion": "portfolio-page-build-and-route",
+      "hf_signature_motion": "portfolio-page-build-and-route",
+      "style_id": "kurzgesagt",
+      "style_candidates": [
+        {
+          "style_id": "kurzgesagt",
+          "selected": true,
+          "assessment": "Cận cảnh nhân vật cùng một hồ sơ vật lý giúp hiểu năng lực/cá tính/mục tiêu; isometric làm nhỏ tay, trang giấy và biểu cảm."
+        },
+        {
+          "style_id": "izometrik",
+          "selected": false,
+          "assessment": "Khả thi, nhưng Cận cảnh nhân vật cùng một hồ sơ vật lý giúp hiểu năng lực/cá tính/mục tiêu; isometric làm nhỏ tay, trang giấy và biểu cảm."
+        }
+      ],
+      "style_reference": "references/animasyon-stil-katalogu/stiller/kurzgesagt/anim.html",
+      "style_reason": "Cận cảnh nhân vật cùng một hồ sơ vật lý giúp hiểu năng lực/cá tính/mục tiêu; isometric làm nhỏ tay, trang giấy và biểu cảm.",
+      "opening_state": "Cô kéo binder lên bàn và mở bìa.",
+      "transformation": "Trang năng lực: bánh răng và nét biểu đồ được cô ghép vào đúng chỗ. Lật trang cá tính: chân dung cách điệu và nét vẽ riêng xuất hiện. Lật trang mục tiêu: la bàn và mũ tốt nghiệp kết nối; cô chỉ hướng.",
+      "final_state": "Student beside closed binder; coherent globe with campuses and one paper-plane flight path above it.",
+      "beats": [
+        {
+          "local_start": 0,
+          "local_end": 1.0,
+          "action": "Cô kéo binder lên bàn và mở bìa.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 1.0,
+          "local_end": 2.5,
+          "action": "Trang năng lực: bánh răng và nét biểu đồ được cô ghép vào đúng chỗ.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 2.5,
+          "local_end": 3.8,
+          "action": "Lật trang cá tính: chân dung cách điệu và nét vẽ riêng xuất hiện.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 3.8,
+          "local_end": 5.2,
+          "action": "Lật trang mục tiêu: la bàn và mũ tốt nghiệp kết nối; cô chỉ hướng.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 5.2,
+          "local_end": 6.544,
+          "action": "Đóng kẹp hồ sơ, hai tuyến đường mở tới đích biểu trưng; không huy hiệu trúng tuyển.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        }
+      ],
+      "asset_contract": [
+        {
+          "layer": "Rig nữ sinh có đầu/mắt/tay xa/tay gần/bàn tay/thân/chân",
+          "source": "videos/le-pham-nhu-quynh-pilot/index.html (original layered inline SVG)",
+          "status": "created_and_rendered"
+        },
+        {
+          "layer": "Bàn/đèn/bóng tiếp xúc",
+          "source": "videos/le-pham-nhu-quynh-pilot/index.html (original layered inline SVG)",
+          "status": "created_and_rendered"
+        },
+        {
+          "layer": "Một binder bìa/gáy/vòng kẹp/trang lật",
+          "source": "videos/le-pham-nhu-quynh-pilot/index.html (original layered inline SVG)",
+          "status": "created_and_rendered"
+        },
+        {
+          "layer": "Minh họa năng lực gear/chart",
+          "source": "videos/le-pham-nhu-quynh-pilot/index.html (original layered inline SVG)",
+          "status": "created_and_rendered"
+        },
+        {
+          "layer": "Minh họa cá tính portrait/art",
+          "source": "videos/le-pham-nhu-quynh-pilot/index.html (original layered inline SVG)",
+          "status": "created_and_rendered"
+        },
+        {
+          "layer": "Minh họa mục tiêu compass/cap",
+          "source": "videos/le-pham-nhu-quynh-pilot/index.html (original layered inline SVG)",
+          "status": "created_and_rendered"
+        },
+        {
+          "layer": "Globe/ocean/continents/graticule, landscaped campus horizon, paper-plane flight path",
+          "source": "videos/le-pham-nhu-quynh-pilot/index.html; original layered SVG, arc-motion-path pattern adapted",
+          "status": "created_and_rendered"
+        }
+      ],
+      "assets_ready": true,
+      "container_required": true,
+      "container_semantics": "folder",
+      "container_inventory": [
+        {
+          "object_type": "physical_portfolio_folder",
+          "bounds": [
+            320,
+            650,
+            300,
+            340
+          ],
+          "semantic_boundary": "Bìa/gáy/trang giấy hoặc vòng kẹp là một hồ sơ thật được cầm/mở/lật; không hộp layout.",
+          "removal_consequence": "Mất hành động cầm, lật, sắp trang hoặc đóng hồ sơ.",
+          "major_surface_count": 1
+        }
+      ],
+      "visible_text_budget": 6,
+      "visible_text_inventory": [
+        {
+          "text": "Năng lực",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        },
+        {
+          "text": "Cá tính",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        },
+        {
+          "text": "Mục tiêu",
+          "font_size_px": 36,
+          "timing": "relevant spoken phrase; sequential labels replaced, never accumulated",
+          "level": "single label"
+        }
+      ],
+      "composition_reason": "Nữ sinh trái x180/Y600–1030; binder phải x455/Y760; minh họa trang lên Y400–620; đường đích đi lên Y300; footer Y1080–1280 trống.",
+      "mobile_legibility_plan": "Canvas 720x1280; essential labels >=34px, at most 2 levels. At 360x640 remove supporting copy before increasing size. Footer Y1080–1280 empty. Long institution name wraps at word boundary within its zone.",
+      "dark_mass_strategy": "White canvas; orange structural accent, light teal/blue secondary surfaces; dark hair/outline selective. Separate person/folder/props in grayscale; never solid navy everything.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "none",
+      "handoff": "Cut at original audio slice boundary; keep spatial/prop handoff.",
+      "transition_to_next": "Hồ sơ hoàn thành được đưa cho gia đình ở cảnh cảm ơn.",
+      "fact_sources": [
+        "F1",
+        "F10"
+      ],
+      "fact_note": "Hồ sơ và chân dung là minh họa, không sao chép dữ liệu cá nhân/giấy tờ thật; không biến cơ hội thành bảo đảm trúng tuyển.",
+      "fact_status": "first_party_brand_report",
+      "publication_hold": false,
+      "proof_times": [
+        0.5,
+        3.272,
+        6.394
+      ],
+      "production_status": "approved",
+      "implemented_choreography": [
+        {
+          "time": "0–1.50",
+          "action": "Student reaches and opens binder; rear arm remains behind torso."
+        },
+        {
+          "time": "1.50–2.57",
+          "action": "Capabilities gear/chart rises from paper."
+        },
+        {
+          "time": "2.57–3.32",
+          "action": "Page turns to personality portrait/art; prior label exits."
+        },
+        {
+          "time": "3.32–4.40",
+          "action": "Compass/cap expresses study goals."
+        },
+        {
+          "time": "4.25–6.544",
+          "action": "Binder closes; one globe rises from the document, campuses appear on its horizon, paper plane arcs around the globe; student nods."
+        }
+      ],
+      "pilot_qa": "videos/le-pham-nhu-quynh-pilot/qa/review.json",
+      "pilot_revision": "ending-v2"
+    },
+    {
+      "scene_id": "scene_16",
+      "scene_number": 16,
+      "title": "Cảm ơn học sinh và gia đình",
+      "audio_slice": "scratch/audio_slices/scene_16.wav",
+      "audio_sha256": "5511f11e9da052da620ef7af1f939306a350cdb83c06567eb5b2faf02fed1e76",
+      "start": 67.898,
+      "end": 73.92,
+      "duration": 6.022,
+      "start_sample": 1629552,
+      "end_sample": 1774080,
+      "raw_text": "Ezora chân trọng cảm ơn Nhiều Quỳnh và gia đình đã tin tưởng lựa chọn chúng tôi trên thành chính hiện thực hóa ước mơ dù học.",
+      "input_text": "Esora trân trọng cảm ơn Như Quỳnh và gia đình đã tin tưởng lựa chọn chúng tôi trên hành trình hiện thực hóa ước mơ du học.",
+      "spoken_text": "Esora trân trọng cảm ơn Như Quỳnh và gia đình đã tin tưởng lựa chọn chúng tôi trên hành trình hiện thực hóa ước mơ du học.",
+      "corrected_text": "Esora trân trọng cảm ơn Như Quỳnh và gia đình đã tin tưởng lựa chọn chúng tôi trên hành trình hiện thực hóa ước mơ du học.",
+      "corrected_text_differs_from_audio": false,
+      "audio_replaced": false,
+      "semantic_type": "Cảm ơn học sinh và gia đình",
+      "visual_center": "Một gia đình cùng mentor tại bàn tư vấn minh họa, học sinh là trung tâm hành động; kết bằng giữ hình nhẹ.",
+      "organic_motion_need": "Cần ánh mắt, nhận hồ sơ và lời cảm ơn qua cử chỉ tự nhiên.",
+      "exact_graphics_need": "none",
+      "preferred_mode": "FLOW_ONLY",
+      "render_mode": "FLOW_ONLY",
+      "routing_locked": true,
+      "routing_confidence": 0.85,
+      "routing_reason": "Lời cảm ơn được neo vào tương tác giữa học sinh/gia đình/mentor; không cần thêm CTA hoặc thông tin.",
+      "flow_contribution": "Một gia đình cùng mentor tại bàn tư vấn minh họa, học sinh là trung tâm hành động; kết bằng giữ hình nhẹ.",
+      "hf_contribution": "none; assembly/audio only",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Only after verified capability failure or two failed plate review cycles; record previous_mode/new_mode/routing_override_reason. Missing assets never justify card fallback.",
+      "character": "yes",
+      "protagonist_action": "Học sinh trao hồ sơ cho người thân; mentor và gia đình cùng nhìn, gật đầu và mỉm cười.",
+      "narrative_visual": "Một gia đình cùng mentor tại bàn tư vấn minh họa, học sinh là trung tâm hành động; kết bằng giữ hình nhẹ.",
+      "visual_verb": "family-folder-handoff",
+      "signature_motion": "family-folder-handoff",
+      "hf_signature_motion": "none",
+      "style_id": "not_applicable",
+      "style_candidates": [],
+      "style_reference": "AGENTS.md engine contracts",
+      "style_reason": "HF_ONLY style selection does not govern this Flow plate.",
+      "opening_state": "Học sinh đưa hồ sơ tới người thân.",
+      "transformation": "Gia đình nhận hồ sơ, nhìn học sinh rồi trao đổi với mentor.",
+      "final_state": "Giữ ánh nhìn và nụ cười, kết đúng audio, không thêm CTA.",
+      "beats": [
+        {
+          "local_start": 0,
+          "local_end": 1.1,
+          "action": "Học sinh đưa hồ sơ tới người thân.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 1.1,
+          "local_end": 4.8,
+          "action": "Gia đình nhận hồ sơ, nhìn học sinh rồi trao đổi với mentor.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        },
+        {
+          "local_start": 4.8,
+          "local_end": 6.022,
+          "action": "Giữ ánh nhìn và nụ cười, kết đúng audio, không thêm CTA.",
+          "timing_status": "provisional_phrase_alignment; listen/align before build"
+        }
+      ],
+      "asset_contract": [
+        {
+          "layer": "Flow plate gia đình/mentor",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "References nhân vật nhất quán",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Hồ sơ vật lý",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        }
+      ],
+      "assets_ready": false,
+      "container_required": true,
+      "container_semantics": "folder",
+      "container_inventory": [
+        {
+          "object_type": "physical_portfolio_folder",
+          "bounds": [
+            320,
+            650,
+            300,
+            340
+          ],
+          "semantic_boundary": "Bìa/gáy/trang giấy hoặc vòng kẹp là một hồ sơ thật được cầm/mở/lật; không hộp layout.",
+          "removal_consequence": "Mất hành động cầm, lật, sắp trang hoặc đóng hồ sơ.",
+          "major_surface_count": 1
+        }
+      ],
+      "visible_text_budget": 0,
+      "visible_text_inventory": [],
+      "composition_reason": "Nhóm ba người vòng quanh bàn, gương mặt Y350–650, hồ sơ Y800; không hàng người đứng tạo dáng.",
+      "mobile_legibility_plan": "Canvas 720x1280; essential labels >=34px, at most 2 levels. At 360x640 remove supporting copy before increasing size. Footer Y1080–1280 empty. Long institution name wraps at word boundary within its zone.",
+      "dark_mass_strategy": "White canvas; orange structural accent, light teal/blue secondary surfaces; dark hair/outline selective. Separate person/folder/props in grayscale; never solid navy everything.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "flow_action": "Học sinh trao hồ sơ cho người thân; mentor và gia đình cùng nhìn, gật đầu và mỉm cười.",
+      "flow_camera": "one gentle track or stable medium/close shot following physical action",
+      "overlay_zone": "none",
+      "handoff": "Cut at original audio slice boundary; keep spatial/prop handoff.",
+      "transition_to_next": "Kết phim, không kéo dài hoặc cắt mất âm cuối.",
+      "fact_sources": [
+        "F1",
+        "F10"
+      ],
+      "fact_note": "Minh họa lời cảm ơn từ brief, không giả là cảnh tư liệu của gia đình thật.",
+      "fact_status": "first_party_brand_report",
+      "publication_hold": false,
+      "proof_times": [
+        0.5,
+        3.011,
+        5.872
+      ],
+      "production_status": "planned",
+      "flow_prompt_contract": "Action only with reference-based appearance; zero text/numbers/letters/logos/badges. Physical props. Illustrative footage, never fake documentary campus/portrait."
+    }
+  ]
+}

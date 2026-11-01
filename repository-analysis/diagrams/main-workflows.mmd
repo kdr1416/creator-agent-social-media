@@ -1,0 +1,44 @@
+sequenceDiagram
+    autonumber
+    actor Agent as AI Coding Agent (Skill / User)
+    participant API as FastAPI Router (/api/requests/batch)
+    participant DB as SQLite WAL (flow_agent.db)
+    participant Worker as WorkerController Loop
+    participant Ops as OperationService
+    participant Prov as FlowProvider
+    participant Ext as Chrome Extension (background.js)
+    participant FlowTab as flow.google.com (MAIN World)
+    participant Reviewer as VideoReviewer Engine
+
+    Agent->>API: 1. POST /api/requests/batch (Atomic Request List)
+    API->>DB: 2. Insert PENDING requests (Skip active duplicates)
+    API-->>Agent: 3. Return request records
+    
+    loop Background Worker Poll
+        Worker->>DB: 4. list_actionable_requests()
+        DB-->>Worker: 5. Return PENDING (Prioritized: Char > Img > Vid > Upscale)
+        Worker->>Worker: 6. Check prerequisites (e.g. image exists before video)
+        Worker->>Worker: 7. Acquire APIRateLimiter (Concurrency + Cooldown)
+        Worker->>DB: 8. update_request(status='PROCESSING')
+        Worker->>Ops: 9. _dispatch(req)
+        Ops->>Prov: 10. provider.run(job)
+        Prov->>Ext: 11. WS send batch_rpc (f.req, CAPTCHA placeholder)
+        Ext->>FlowTab: 12. Solve enterprise reCAPTCHA (via hijack_bypass.js)
+        Ext->>FlowTab: 13. fetch(/_/AiSandboxAngularFrontend/data/batchexecute, {f.req, at})
+        FlowTab-->>Ext: 14. Return chunked wrb.fr payload
+        Ext-->>Prov: 15. Return response via WebSocket or POST /api/ext/callback
+        Prov-->>Ops: 16. Return media_id & signed URL
+        Ops-->>Worker: 17. Return parsed result
+        Worker->>DB: 18. update_request(status='COMPLETED', media_id, url)
+        Worker->>DB: 19. apply_scene_result() (Update scene video/image status)
+    end
+
+    opt Video Review & Auto-Regeneration Loop
+        Agent->>Reviewer: 20. POST /api/videos/{vid}/review?mode=light
+        Reviewer->>Reviewer: 21. Extract frames (FFmpeg) & build 3x3 contact sheet
+        Reviewer->>Reviewer: 22. AI Vision evaluation across 6 weighted dimensions
+        alt Overall Score < 7.5
+            Reviewer->>DB: 23. Mutate scene video_prompt with stabilization instructions
+            Reviewer->>DB: 24. Create REGENERATE_VIDEO request
+        end
+    end

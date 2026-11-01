@@ -1,0 +1,32 @@
+[
+  {
+    "path": "S10/01-cost",
+    "label": "Khoảng 3,8 tỷ",
+    "status": "part_of_approved_scene_design_motion_unapproved"
+  },
+  {
+    "path": "S10/02-arrive",
+    "label": "Các thế hệ cùng vào khung",
+    "status": "part_of_approved_scene_design_motion_unapproved"
+  },
+  {
+    "path": "S10/03-family",
+    "label": "Bốn thế hệ trong một nhóm gia đình",
+    "status": "part_of_approved_scene_design_motion_unapproved"
+  },
+  {
+    "path": "S12/01-ready",
+    "label": "Mô hình đang chờ chạy",
+    "status": "part_of_approved_scene_design_motion_unapproved"
+  },
+  {
+    "path": "S12/02-press",
+    "label": "Mascot bấm nút",
+    "status": "part_of_approved_scene_design_motion_unapproved"
+  },
+  {
+    "path": "S12/03-result",
+    "label": "Cánh quay, mascot quan sát",
+    "status": "part_of_approved_scene_design_motion_unapproved"
+  }
+]

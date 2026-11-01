@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>Hai hướng công nghệ — scene 04</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:SceneSans;src:url('assets/scene-sans-bold.ttf') format('truetype');font-weight:700;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;background:#fff}#root{position:relative;width:100%;height:100%;overflow:hidden;color:#0F172A;font-family:SceneSans,sans-serif}
+.clip{position:absolute;inset:0}.ground{background:#fff}.art{width:100%;height:100%;display:block}
+.label{position:absolute;margin:0;font-size:34px;font-weight:700;line-height:1.15;letter-spacing:-.6px;white-space:nowrap}
+#label-ai{left:437px;top:266px;font-size:44px}#label-drone{left:347px;top:994px;font-size:32px}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-e2wn" id="root" data-composition-id="scene04" data-width="720" data-height="1280" data-duration="5.026" data-start="0">
+ <div data-hf-id="hf-5x9e" id="scene04-ground" class="clip ground" data-start="0" data-duration="5.026" data-track-index="0"></div>
+ <svg data-hf-id="hf-lp2a" id="scene04-art" class="art clip" data-start="0" data-duration="5.026" data-track-index="1" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg" aria-label="Học viên nối khối xử lý với mô hình không người lái">
+ <defs data-hf-id="hf-mh0t">
+  <linearGradient data-hf-id="hf-y1op" id="chip-face" x1="0" y1="0" x2="1" y2="1"><stop data-hf-id="hf-3k0e" stop-color="#EDF8F5"/><stop data-hf-id="hf-ccdw" offset="1" stop-color="#A5D9D0"/></linearGradient>
+  <linearGradient data-hf-id="hf-2qg8" id="jacket" x1="0" y1="0" x2="1" y2="0"><stop data-hf-id="hf-97hl" stop-color="#FF773B"/><stop data-hf-id="hf-qhx5" offset="1" stop-color="#ED5323"/></linearGradient>
+  <linearGradient data-hf-id="hf-mdtm" id="drone-face" x1="0" y1="0" x2="0" y2="1"><stop data-hf-id="hf-lufo" stop-color="#F8FBFD"/><stop data-hf-id="hf-5mk7" offset="1" stop-color="#BBD2DF"/></linearGradient>
+  <radialGradient data-hf-id="hf-s7df" id="soft"><stop data-hf-id="hf-fq3w" stop-color="#CCECE9" stop-opacity=".65"/><stop data-hf-id="hf-v5lk" offset="1" stop-color="#CCECE9" stop-opacity="0"/></radialGradient>
+  <radialGradient data-hf-id="hf-cwor" id="signal-glow"><stop data-hf-id="hf-nj4m" stop-color="#FFB083" stop-opacity=".6"/><stop data-hf-id="hf-x2dz" offset="1" stop-color="#FFB083" stop-opacity="0"/></radialGradient>
+ </defs>
+ <!-- Deliberate open canvas atmosphere; no bounding panels. -->
+ <ellipse data-hf-id="hf-nmni" cx="470" cy="430" rx="206" ry="210" fill="url(#soft)"/>
+ <ellipse data-hf-id="hf-aom1" cx="455" cy="805" rx="210" ry="180" fill="url(#soft)" opacity=".65"/>
+ <path data-hf-id="hf-pv3u" d="M92 915 Q320 876 637 944" fill="none" stroke="#EEF3F4" stroke-width="2"/>
+ <ellipse data-hf-id="hf-mmwv" cx="215" cy="1040" rx="121" ry="15" fill="#E9EFF2"/>
+ <ellipse data-hf-id="hf-f09v" cx="468" cy="961" rx="147" ry="18" fill="#E9EFF2"/>
+ <!-- Training pedestal is a physical support, not an information card. -->
+ <g data-hf-id="hf-w7u9" id="stand">
+  <path data-hf-id="hf-rfe9" d="M444 865 L485 865 L490 949 L437 949Z" fill="#D9E7EC"/>
+  <path data-hf-id="hf-ys7p" d="M444 865 L457 865 L454 947 L437 949Z" fill="#B4CCD6"/>
+  <ellipse data-hf-id="hf-z3f8" cx="464" cy="950" rx="72" ry="12" fill="#C8DCE2"/>
+  <ellipse data-hf-id="hf-94vy" cx="464" cy="863" rx="100" ry="14" fill="#E5F0F2"/>
+ </g>
+ <!-- Cable and processor are independent layers. -->
+ <path data-hf-id="hf-vpmt" id="wire-shadow" d="M442 539 C625 565 642 704 487 775" stroke="#EDF1F4" stroke-width="17" stroke-linecap="round" fill="none"/>
+ <path data-hf-id="hf-7ml2" id="wire" d="M442 534 C625 560 642 699 487 770" stroke="#557F88" stroke-width="9" stroke-linecap="round" fill="none"/>
+ <path data-hf-id="hf-qddb" id="wire-core" d="M442 534 C625 560 642 699 487 770" stroke="#A9CEC9" stroke-width="3" stroke-linecap="round" fill="none"/>
+ <g data-hf-id="hf-cy6j" id="signal"><circle data-hf-id="hf-0iux" r="27" fill="url(#signal-glow)"/><circle data-hf-id="hf-qizh" r="9" fill="#FF6B2B"/><circle data-hf-id="hf-zy7o" r="3.5" fill="#fff"/></g>
+ <g data-hf-id="hf-zgt9" id="chip">
+  <ellipse data-hf-id="hf-nh3x" cx="469" cy="552" rx="105" ry="14" fill="#DCEAE8" opacity=".6"/>
+  <g data-hf-id="hf-s3zm" stroke="#6B9C97" stroke-width="9" stroke-linecap="round">
+   <path data-hf-id="hf-9tsa" d="M374 376H357 M374 408H357 M374 440H357 M374 472H357 M554 376H571 M554 408H571 M554 440H571 M554 472H571"/>
+   <path data-hf-id="hf-oeeb" d="M409 348V330 M443 348V330 M477 348V330 M511 348V330 M409 504V525 M477 504V525 M511 504V525"/>
+  </g>
+  <path data-hf-id="hf-4y1z" d="M381 354 Q381 344 393 344H543Q555 344 555 356V495Q555 509 542 514H394Q379 514 379 501Z" fill="#76A8A0"/>
+  <rect data-hf-id="hf-8r07" x="370" y="337" width="181" height="166" rx="22" fill="url(#chip-face)" stroke="#5C8E87" stroke-width="3"/>
+  <path data-hf-id="hf-wm74" d="M387 355H530" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+  <rect data-hf-id="hf-a8i6" x="402" y="368" width="117" height="102" rx="18" fill="#34837A"/>
+  <rect data-hf-id="hf-mc07" x="409" y="374" width="103" height="87" rx="14" fill="#EDF8F5"/>
+  <g data-hf-id="hf-7g2o" id="neural" fill="none" stroke="#34837A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+   <path data-hf-id="hf-k5m8" d="M436 397L461 389 487 406 480 438 451 446 435 423Z M436 397L480 438 M461 389L451 446 M435 423L487 406"/>
+   <g data-hf-id="hf-rj85" fill="#34837A" stroke="none"><circle data-hf-id="hf-ahig" cx="436" cy="397" r="6"/><circle data-hf-id="hf-auq5" cx="461" cy="389" r="6"/><circle data-hf-id="hf-8htl" cx="487" cy="406" r="6"/><circle data-hf-id="hf-gfpb" cx="480" cy="438" r="6"/><circle data-hf-id="hf-dogm" cx="451" cy="446" r="6"/><circle data-hf-id="hf-d7m3" cx="435" cy="423" r="6"/></g>
+  </g>
+  <path data-hf-id="hf-eaq7" d="M430 502V535H453V502" fill="#315D60"/>
+  <path data-hf-id="hf-2nuv" d="M436 508V530H447V508" fill="#86BCB0"/>
+  <circle data-hf-id="hf-gqu6" id="chip-led" cx="527" cy="482" r="6" fill="#9CBEB8"/>
+ </g>
+ <!-- Student: layered hair/face/neck/clothes, expressive gaze and articulated arms. -->
+ <!-- Far arm is painted before the torso; only its projecting forearm/hand remain visible. -->
+ <g data-hf-id="hf-1z6p" id="arm-back"><path data-hf-id="hf-uljm" id="back-sleeve" fill="none" stroke="#D94B20" stroke-width="37" stroke-linecap="round"/><path data-hf-id="hf-1qhd" id="back-skin" fill="none" stroke="#E9AA83" stroke-width="26" stroke-linecap="round"/><ellipse data-hf-id="hf-33rp" id="back-hand" rx="16" ry="13" fill="#F5BF99"/></g>
+ <g data-hf-id="hf-4uw0" id="student">
+  <g data-hf-id="hf-dkjg" id="legs"><path data-hf-id="hf-bp6d" d="M177 816L173 1005H211L228 864 243 1006H281L271 816Z" fill="#829DAF"/>
+   <path data-hf-id="hf-2nhb" d="M225 850L218 932" stroke="#6A879B" stroke-width="6" stroke-linecap="round"/>
+   <path data-hf-id="hf-26w1" d="M174 997L166 1021Q159 1038 181 1039H219V1019L210 998Z" fill="#316A72"/>
+   <path data-hf-id="hf-ftwc" d="M244 997L243 1038H289Q307 1037 296 1023L278 999Z" fill="#316A72"/>
+   <path data-hf-id="hf-8cq5" d="M167 1034H219 M245 1034H299" stroke="#C4E1DD" stroke-width="7"/>
+  </g>
+  <path data-hf-id="hf-nxeq" d="M185 636Q162 645 157 678L163 820Q212 844 276 820L288 682Q280 646 252 636Z" fill="url(#jacket)"/>
+  <path data-hf-id="hf-72pk" d="M192 647Q219 691 249 648" fill="#FFD5B0"/>
+  <path data-hf-id="hf-ea2w" d="M191 644L211 690 182 680 M249 644L230 690 263 677" fill="#FF9D6E"/>
+  <path data-hf-id="hf-zbj3" d="M221 694V823" stroke="#CC441C" stroke-width="3"/>
+  <path data-hf-id="hf-kozb" d="M177 755L202 759V784L179 781Z M243 759L267 755V782L244 785Z" fill="#E95324"/>
+  <g data-hf-id="hf-tgo1" id="head">
+   <path data-hf-id="hf-6z7s" d="M204 605V652Q220 665 239 649V602" fill="#E5A17D"/>
+   <ellipse data-hf-id="hf-oorx" cx="218" cy="550" rx="62" ry="75" fill="#172C42"/>
+   <path data-hf-id="hf-8rd1" d="M174 529Q177 497 211 493Q248 489 263 519L266 571Q259 609 228 618Q189 615 177 576Z" fill="#F5BF99"/>
+   <ellipse data-hf-id="hf-esr5" cx="172" cy="558" rx="13" ry="19" fill="#EEAF89"/>
+   <path data-hf-id="hf-ldry" d="M164 540Q145 486 185 473Q207 453 236 469Q270 476 276 509L259 536 247 510Q213 528 184 514L178 549Z" fill="#172C42"/>
+   <path data-hf-id="hf-1lyi" d="M180 486Q213 466 247 490" fill="none" stroke="#30485B" stroke-width="9" stroke-linecap="round"/>
+   <path data-hf-id="hf-vt63" d="M213 542Q222 535 234 540 M247 540L258 545" fill="none" stroke="#172C42" stroke-width="4" stroke-linecap="round"/>
+   <g data-hf-id="hf-k5cx" id="eyes" fill="#172C42"><ellipse data-hf-id="hf-mi4s" cx="227" cy="555" rx="4.7" ry="7"/><ellipse data-hf-id="hf-h7ph" cx="253" cy="556" rx="4" ry="6.5"/></g>
+   <path data-hf-id="hf-07x5" d="M247 562L251 573 242 576" fill="none" stroke="#D58F70" stroke-width="3" stroke-linecap="round"/>
+   <path data-hf-id="hf-0iw8" id="smile" d="M224 588Q236 598 248 586" fill="none" stroke="#8E4F40" stroke-width="3.5" stroke-linecap="round"/>
+   <ellipse data-hf-id="hf-zmx2" cx="210" cy="576" rx="11" ry="6" fill="#F2A389" opacity=".7"/>
+  </g>
+ </g>
+ <!-- Pose geometry is derived from GSAP proxies; both joints remain connected. -->
+
+ <g data-hf-id="hf-m1tv" id="drone">
+  <ellipse data-hf-id="hf-v7h5" id="drone-shadow" cx="460" cy="843" rx="114" ry="15" fill="#BBD1D9" opacity=".55"/>
+  <path data-hf-id="hf-6uxj" d="M390 778L378 835H400 M510 778L526 835H504" fill="none" stroke="#6D8D9F" stroke-width="8" stroke-linecap="round"/>
+  <path data-hf-id="hf-6vfq" d="M404 770L360 740 M498 770L548 740 M417 789L366 808 M491 790L543 808" stroke="#81A9B7" stroke-width="15" stroke-linecap="round"/>
+  <g data-hf-id="hf-17v0" fill="#79A7B4"><ellipse data-hf-id="hf-rjsd" cx="360" cy="740" rx="16" ry="11"/><ellipse data-hf-id="hf-anjd" cx="548" cy="740" rx="16" ry="11"/><ellipse data-hf-id="hf-1tcw" cx="366" cy="808" rx="16" ry="11"/><ellipse data-hf-id="hf-ddor" cx="543" cy="808" rx="16" ry="11"/></g>
+  <g data-hf-id="hf-ejpt" transform="translate(360 734) scale(1 .27)"><g data-hf-id="hf-bryb" id="rotor-a"><ellipse data-hf-id="hf-5csg" cx="0" cy="0" rx="47" ry="7" fill="#527E91"/><ellipse data-hf-id="hf-90t0" cx="0" cy="0" rx="8" ry="47" fill="#80A7B2"/></g></g>
+  <g data-hf-id="hf-q6lh" transform="translate(548 734) scale(1 .27)"><g data-hf-id="hf-342g" id="rotor-b"><ellipse data-hf-id="hf-xiig" cx="0" cy="0" rx="47" ry="7" fill="#527E91"/><ellipse data-hf-id="hf-akq4" cx="0" cy="0" rx="8" ry="47" fill="#80A7B2"/></g></g>
+  <g data-hf-id="hf-7xwz" transform="translate(366 802) scale(1 .27)"><g data-hf-id="hf-3vq9" id="rotor-c"><ellipse data-hf-id="hf-wbld" cx="0" cy="0" rx="47" ry="7" fill="#527E91"/><ellipse data-hf-id="hf-9dt1" cx="0" cy="0" rx="8" ry="47" fill="#80A7B2"/></g></g>
+  <g data-hf-id="hf-pd3y" transform="translate(543 802) scale(1 .27)"><g data-hf-id="hf-v7ue" id="rotor-d"><ellipse data-hf-id="hf-wpwe" cx="0" cy="0" rx="47" ry="7" fill="#527E91"/><ellipse data-hf-id="hf-9s42" cx="0" cy="0" rx="8" ry="47" fill="#80A7B2"/></g></g>
+  <path data-hf-id="hf-xf9h" d="M402 755Q450 736 500 755L510 789Q460 819 399 790Z" fill="#81A7B9"/>
+  <path data-hf-id="hf-mfu1" d="M402 751Q451 731 500 751L504 777Q455 801 399 777Z" fill="url(#drone-face)" stroke="#7C9CAC" stroke-width="2"/>
+  <path data-hf-id="hf-f52g" d="M417 753Q453 740 486 752" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <path data-hf-id="hf-bfw0" d="M445 785L445 803Q459 815 477 803L477 786" fill="#35627C"/>
+  <circle data-hf-id="hf-zy0j" cx="461" cy="799" r="10" fill="#18394D"/><circle data-hf-id="hf-b8ga" cx="461" cy="799" r="5" fill="#8CC8CC"/><circle data-hf-id="hf-pzok" cx="458" cy="796" r="2" fill="#fff"/>
+  <rect data-hf-id="hf-wlar" x="481" y="738" width="15" height="12" rx="4" fill="#315D60"/>
+  <circle data-hf-id="hf-vzfu" id="drone-led" cx="419" cy="775" r="5" fill="#AAC4C9"/>
+ </g>
+ <g data-hf-id="hf-7x8l" id="front-arm"><path data-hf-id="hf-6e3u" id="front-sleeve" fill="none" stroke="#FF773B" stroke-width="39" stroke-linecap="round"/><path data-hf-id="hf-on10" id="front-skin" fill="none" stroke="#F5BF99" stroke-width="27" stroke-linecap="round"/><ellipse data-hf-id="hf-ap7d" id="front-hand" rx="16" ry="13" fill="#F5BF99"/>
+  <g data-hf-id="hf-d5vf" id="plug"><rect data-hf-id="hf-8xep" x="-10" y="-11" width="23" height="22" rx="5" fill="#FF6B2B"/><path data-hf-id="hf-sbxg" d="M13-6H21V6H13" fill="#B7D7D2"/><path data-hf-id="hf-d1bz" d="M-6-7V7" stroke="#D74F21" stroke-width="2"/></g>
+ </g>
+ <g data-hf-id="hf-0pv2" id="response" fill="none" stroke="#FF6B2B" stroke-width="4" stroke-linecap="round"><path data-hf-id="hf-hyud" d="M584 691L592 680 M598 714L612 708 M315 691L307 680"/></g>
+ </svg>
+ <h2 data-hf-id="hf-nali" class="label" id="label-ai">AI</h2>
+ <h2 data-hf-id="hf-rhkv" class="label" id="label-drone">Không người lái</h2>
+ <audio data-hf-id="hf-ps22" id="scene04-voice" src="assets/audio.wav" data-start="0" data-duration="5.026" data-track-index="2" data-volume="1"></audio>
+</div>
+<script>
+const tl=gsap.timeline({paused:true});
+const front={x:420,y:576},back={x:397,y:740},motion={u:0};
+function arm(prefix,sx,sy,ex,ey,l1,l2,bend){
+ const dx=ex-sx,dy=ey-sy,d=Math.min(Math.hypot(dx,dy),l1+l2-.01),a=Math.atan2(dy,dx),b=Math.acos(Math.max(-1,Math.min(1,(l1*l1+d*d-l2*l2)/(2*l1*d))));
+ const elbowX=sx+l1*Math.cos(a+b*bend),elbowY=sy+l1*Math.sin(a+b*bend);
+ document.getElementById(prefix+'-sleeve').setAttribute('d',`M${sx},${sy}L${elbowX},${elbowY}`);
+ document.getElementById(prefix+'-skin').setAttribute('d',`M${elbowX},${elbowY}L${ex},${ey}`);
+ const hand=document.getElementById(prefix+'-hand');hand.setAttribute('cx',ex);hand.setAttribute('cy',ey);
+}
+function pose(){arm('front',271,663,front.x,front.y,105,116,1);arm('back',180,674,back.x,back.y,115,120,1);gsap.set('#plug',{x:front.x+7,y:front.y-4});}
+pose();
+const wire=document.getElementById('wire'), wireCore=document.getElementById('wire-core'), len=wire.getTotalLength();
+gsap.set(['#wire','#wire-core','#wire-shadow'],{strokeDasharray:len,strokeDashoffset:len});
+gsap.set('#signal',{opacity:0});gsap.set('#response',{opacity:0});gsap.set(['#label-ai','#label-drone'],{opacity:0,y:10});
+gsap.set('#chip',{y:-32});gsap.set('#drone',{y:-2});
+tl.to('#drone',{y:28,duration:.85,ease:'power2.inOut'},0)
+ .to(back,{y:798,x:397,duration:.85,ease:'power2.inOut',onUpdate:pose},0)
+ .to('#chip',{y:0,duration:1.05,ease:'power2.out'},.35)
+ .to(front,{x:413,y:538,duration:1.05,ease:'power2.inOut',onUpdate:pose},.35)
+ .to(back,{x:308,y:784,duration:.6,ease:'power2.inOut',onUpdate:pose},.95)
+ .to(front,{x:420,y:538,duration:.3,ease:'power1.inOut',onUpdate:pose},1.45)
+ .to(['#wire','#wire-core','#wire-shadow'],{strokeDashoffset:0,duration:.8,ease:'power2.out'},1.75)
+ .to('#plug',{opacity:0,duration:.12},2.4)
+ .to(front,{x:303,y:712,duration:.65,ease:'power2.inOut',onUpdate:pose},2.45)
+ .to('#signal',{opacity:1,duration:.08},2.55)
+ .to(motion,{u:1,duration:1,ease:'power1.inOut',onUpdate:()=>{const pt=wire.getPointAtLength(motion.u*len);gsap.set('#signal',{x:pt.x,y:pt.y});}},2.55)
+ .to('#signal',{opacity:0,duration:.15},3.55)
+ .to('#chip-led',{fill:'#FF6B2B',duration:.25},2.55)
+ .to('#drone-led',{fill:'#FF6B2B',duration:.2},3.45)
+ .to('#response',{opacity:1,duration:.2},3.6)
+ .to('#response',{opacity:0,duration:.45},4.35)
+ .to('#label-drone',{opacity:1,y:0,duration:.3},2.58)
+ .to('#label-ai',{opacity:1,y:0,duration:.3},3.44)
+ .to('#head',{rotation:4,svgOrigin:'220 610',duration:.45,ease:'power2.inOut'},3.6)
+ .to('#head',{rotation:0,svgOrigin:'220 610',duration:.4,ease:'power2.inOut'},4.25);
+[['#rotor-a','360 734'],['#rotor-b','548 734'],['#rotor-c','366 802'],['#rotor-d','543 802']].forEach(([id,origin],i)=>{
+ tl.to(id,{rotation:i%2? -1080:1080,transformOrigin:'50% 50%',duration:1.45,ease:'power2.in'},3.55);
+});
+window.__timelines=window.__timelines||{};
+window.__timelines['scene04']=tl;
+</script>
+</body>
+</html>

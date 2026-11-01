@@ -1,0 +1,3 @@
+file 'scene_06_visual.mp4'
+file 'scene_07_visual.mp4'
+file 'scene_08_visual.mp4'

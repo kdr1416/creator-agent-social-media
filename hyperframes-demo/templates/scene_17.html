@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=720, height=1280" />
+    <title>Scene 17 - ESORA: Tính Đúng Từ Đầu — An Tâm Du Học</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        color: #0f172a;
+        font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+        overflow: hidden;
+      }
+      #root {
+        position: relative;
+        width: 720px;
+        height: 1280px;
+        overflow: hidden;
+        background: #ffffff;
+      }
+
+      /* ── AMBIENT OPEN-CANVAS BACKGROUND ── */
+      .bg-canvas {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .bg-glow {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          circle at 50% 46%,
+          rgba(241, 245, 249, 0.95) 0%,
+          rgba(255, 255, 255, 1) 75%
+        );
+      }
+      .bg-grid {
+        position: absolute;
+        inset: 0;
+        background-image: 
+          linear-gradient(to right, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+        background-size: 40px 40px;
+        opacity: 0.65;
+      }
+
+      /* ── TOP BRAND MARK & HEADLINE (Y: 60px – 180px) ── */
+      .brand-mark {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-size: 13px;
+        letter-spacing: 3px;
+        color: #c2410c;
+        text-transform: uppercase;
+        z-index: 45;
+      }
+      .headline-container {
+        position: absolute;
+        top: 96px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 45;
+        padding: 0 40px;
+      }
+      .main-title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 34px;
+        line-height: 1.15;
+        color: #0f172a;
+        margin: 0;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+      }
+      .title-accent-bar {
+        width: 240px;
+        height: 8px;
+        background: #fde047;
+        margin: 10px auto 0 auto;
+        border-radius: 4px;
+        transform-origin: center;
+      }
+
+      /* ── MAIN VISUAL STAGE (Y: 200px to 1050px -> 230px CLEAN FOOTER) ── */
+      .visual-stage {
+        position: absolute;
+        top: 200px;
+        left: 0;
+        width: 720px;
+        height: 850px;
+        z-index: 20;
+      }
+      .stage-ground-line {
+        position: absolute;
+        bottom: 0;
+        left: 48px;
+        width: 624px;
+        height: 3px;
+        background: #cbd5e1;
+        border-radius: 2px;
+      }
+
+      /* ── SVG TRAJECTORY & DEFLECTION WAVES LAYER ── */
+      .stage-svg-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 720px;
+        height: 700px;
+        z-index: 15;
+        pointer-events: none;
+      }
+
+      /* ── RESILIENT STRATEGIC SHIELD ASSEMBLY ── */
+      .shield-container {
+        position: absolute;
+        top: 140px;
+        left: 260px;
+        width: 200px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 30;
+      }
+      .shield-radar-ping {
+        position: absolute;
+        inset: -20px;
+        border-radius: 50%;
+        border: 3.5px solid #fde047;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      /* ── FLIGHTPATH LAUNCH JET / STAR PIN ── */
+      .flight-lead-star {
+        position: absolute;
+        top: 60px;
+        right: 120px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 38;
+      }
+
+      /* ── SYNTHESIS STATUS ANCHOR BADGE (Y: 670px) ── */
+      .anchor-badge {
+        position: absolute;
+        top: 670px;
+        left: 140px;
+        width: 440px;
+        height: 72px;
+        background: #0f172a;
+        border: 3px solid #ff6b2b;
+        border-radius: 20px;
+        box-shadow: 0 16px 32px rgba(15, 23, 42, 0.22);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        z-index: 40;
+      }
+      .anchor-star-icon {
+        width: 38px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .anchor-text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 21px;
+        color: #ffffff;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="clip" data-composition-id="main" data-width="720" data-height="1280" data-duration="6">
+      <audio id="voice-track" src="./assets/audio.wav" data-start="0" data-duration="6" preload="auto"></audio>
+
+      <!-- Ambient Canvas Background -->
+      <div class="bg-canvas">
+        <div class="bg-glow"></div>
+        <div class="bg-grid"></div>
+      </div>
+
+      <!-- Top Branding (Client: ESORA) -->
+      <div class="brand-mark" id="brand-mark" data-layout-allow-overlap data-layout-allow-occlusion>
+        ESORA • DU HỌC CANADA
+      </div>
+
+      <!-- Open-Canvas Headline (No Card/Pill) -->
+      <div class="headline-container" data-layout-allow-overlap data-layout-allow-occlusion>
+        <h1 class="main-title" id="main-title">TÍNH ĐÚNG TỪ ĐẦU</h1>
+        <div class="title-accent-bar" id="title-accent"></div>
+      </div>
+
+      <!-- Main Visual Stage (Y: 200px – 1050px, Footer clean >= 220px) -->
+      <div class="visual-stage">
+        <!-- Baseline Ground Reference Line -->
+        <div class="stage-ground-line" data-layout-allow-overlap data-layout-allow-occlusion></div>
+
+        <!-- ── SVG DYNAMIC POLICY DEFLECTION WAVES & FLIGHTPATH ── -->
+        <svg class="stage-svg-layer" viewBox="0 0 720 700" fill="none" data-layout-allow-overlap data-layout-allow-occlusion>
+          <!-- Faint Horizon Reference Radial Curves -->
+          <circle cx="360" cy="265" r="150" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="6 6"/>
+          <circle cx="360" cy="265" r="230" stroke="#FED7AA" stroke-width="2" stroke-dasharray="8 8"/>
+
+          <!-- Policy Disturbance Waves from Left & Right -->
+          <path id="wave-left" d="M 120 200 Q 200 265 120 330" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path id="wave-right" d="M 600 200 Q 520 265 600 330" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+          <!-- Deflection Energy Sparks -->
+          <line id="spark-left" x1="240" y1="265" x2="200" y2="245" stroke="#FDE047" stroke-width="3" stroke-linecap="round"/>
+          <line id="spark-right" x1="480" y1="265" x2="520" y2="245" stroke="#FDE047" stroke-width="3" stroke-linecap="round"/>
+
+          <!-- Golden Horizon Flightpath Launch Arc -->
+          <path id="flight-arc" d="M 360 265 C 380 180, 480 120, 580 82" stroke="#FF6B2B" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+          <!-- Secondary Gold Shimmer Track -->
+          <path id="flight-shimmer" d="M 360 265 C 380 180, 480 120, 580 82" stroke="#FDE047" stroke-width="2" stroke-dasharray="8 6" stroke-linecap="round" fill="none"/>
+        </svg>
+
+        <!-- ── RESILIENT STRATEGIC SHIELD ASSEMBLY (X: 360, Y: 265) ── -->
+        <div class="shield-container" id="shield-wrap" data-layout-allow-overlap data-layout-allow-occlusion>
+          <!-- Expanding Radar Ping on Policy Deflection -->
+          <div class="shield-radar-ping" id="shield-ping" data-layout-allow-overflow></div>
+
+          <svg width="200" height="250" viewBox="0 0 200 250" fill="none">
+            <!-- Outer Protective Shield Plate -->
+            <path d="M 100 15 L 185 45 C 185 145 100 225 100 225 C 100 225 15 145 15 45 Z" 
+                  fill="#FFFFFF" stroke="#0F172A" stroke-width="6"/>
+
+            <!-- Secondary Inner Rim Layer (Brand Orange #FF6B2B) -->
+            <path d="M 100 28 L 172 54 C 172 135 100 208 100 208 C 100 208 28 135 28 54 Z" 
+                  fill="#F8FAFC" stroke="#FF6B2B" stroke-width="3"/>
+
+            <!-- Central Golden Maple Emblem Medallion -->
+            <circle cx="100" cy="118" r="44" fill="#0F172A" stroke="#FDE047" stroke-width="3.5"/>
+            
+            <!-- Embossed Canadian Maple Leaf in Gold / Warm Yellow -->
+            <path d="M 100 88 
+                     L 105 103 L 118 100 L 114 110 L 126 114 L 114 122 L 120 134 L 107 130 
+                     L 102 142 L 98 142 L 93 130 L 80 134 L 86 122 L 74 114 L 86 110 L 82 100 L 95 103 Z" 
+                  fill="#FDE047" stroke="#FF6B2B" stroke-width="1.2"/>
+          </svg>
+        </div>
+
+        <!-- ── FLIGHT LEAD STAR / TRAJECTORY BEACON ── -->
+        <div class="flight-lead-star" id="flight-star" data-layout-allow-overlap data-layout-allow-occlusion>
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none">
+            <!-- 8-Point Triumphant Horizon Star -->
+            <polygon points="12,2 14.5,9.5 22,12 14.5,14.5 12,22 9.5,14.5 2,12 9.5,9.5" fill="#FF6B2B" stroke="#FDE047" stroke-width="1.5"/>
+            <circle cx="12" cy="12" r="3" fill="#FDE047"/>
+          </svg>
+        </div>
+
+        <!-- ── SYNTHESIS STATUS ANCHOR BADGE (Y: 670px) ── -->
+        <div class="anchor-badge" id="anchor-badge" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="anchor-star-icon">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
+              <!-- Strategic Seal Compass Star -->
+              <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="#FDE047" stroke="#FF6B2B" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <div class="anchor-text">AN TÂM DU HỌC</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GSAP Master Animation Sync (6.00s Duration) -->
+    <script>
+      const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+
+      // Initial Property Setup (Zero CSS transform conflict)
+      gsap.set(["#brand-mark", "#main-title", "#title-accent"], { opacity: 0, y: -15 });
+      gsap.set("#title-accent", { scaleX: 0 });
+      gsap.set("#shield-wrap", { opacity: 0, scale: 0.6, y: 30 });
+      gsap.set(["#wave-left", "#wave-right"], { opacity: 0, x: 0 });
+      gsap.set(["#spark-left", "#spark-right"], { opacity: 0, scale: 0 });
+      gsap.set(["#flight-arc", "#flight-shimmer"], {
+        strokeDasharray: 320,
+        strokeDashoffset: 320,
+        opacity: 0
+      });
+      gsap.set("#flight-star", { opacity: 0, scale: 0.2 });
+      gsap.set("#anchor-badge", { opacity: 0, y: 25 });
+
+      // ── BEAT 1 (0.0s – 1.8s): ENTRANCE OF HEADLINE & RESILIENT SHIELD ──
+      // Speech: "Chuẩn bị sớm, tính đúng từ đầu..."
+      tl.to("#brand-mark", {
+        opacity: 1,
+        y: 0,
+        duration: 0.45,
+        ease: "power2.out"
+      }, 0.1);
+
+      tl.to("#main-title", {
+        opacity: 1,
+        y: 0,
+        duration: 0.55,
+        ease: "back.out(1.2)"
+      }, 0.25);
+
+      tl.to("#title-accent", {
+        opacity: 1,
+        y: 0,
+        scaleX: 1,
+        duration: 0.5,
+        ease: "power2.out"
+      }, 0.45);
+
+      tl.to("#shield-wrap", {
+        opacity: 1,
+        scale: 1,
+        y: 0,
+        duration: 0.7,
+        ease: "back.out(1.6)"
+      }, 0.65);
+
+      // ── BEAT 2 (1.8s – 4.2s): POLICY DEFLECTION & FLIGHTPATH LAUNCH ──
+      // Speech: "...để hành trình du học không bị động vì những thay đổi chính sách."
+
+      // 1.8s: External policy wave disturbances approach
+      tl.to("#wave-left", {
+        opacity: 0.9,
+        x: 60,
+        duration: 0.5,
+        ease: "power2.in"
+      }, 1.8);
+
+      tl.to("#wave-right", {
+        opacity: 0.9,
+        x: -60,
+        duration: 0.5,
+        ease: "power2.in"
+      }, 1.8);
+
+      // 2.3s: Deflection impact sparks & waves dissipate
+      tl.to(["#spark-left", "#spark-right"], {
+        opacity: 1,
+        scale: 1.3,
+        duration: 0.25,
+        ease: "power1.out"
+      }, 2.3);
+
+      tl.to(["#wave-left", "#wave-right"], {
+        opacity: 0,
+        duration: 0.35,
+        ease: "power1.out"
+      }, 2.45);
+
+      tl.to(["#spark-left", "#spark-right"], {
+        opacity: 0,
+        duration: 0.25,
+        ease: "power1.in"
+      }, 2.6);
+
+      // Golden shield radar ping ripples outward
+      tl.to("#shield-ping", {
+        opacity: 0.9,
+        scale: 1.5,
+        duration: 0.4,
+        ease: "power2.out"
+      }, 2.35);
+
+      tl.to("#shield-ping", {
+        opacity: 0,
+        duration: 0.3,
+        ease: "power1.in"
+      }, 2.8);
+
+      // 2.8s – 3.8s: Golden Horizon Flightpath sweeps upwards to Canada
+      tl.to(["#flight-arc", "#flight-shimmer"], {
+        opacity: 1,
+        strokeDashoffset: 0,
+        duration: 0.8,
+        ease: "power2.inOut"
+      }, 2.8);
+
+      tl.to("#flight-star", {
+        opacity: 1,
+        scale: 1,
+        duration: 0.45,
+        ease: "back.out(2)"
+      }, 3.35);
+
+      // ── BEAT 3 (4.0s – 6.0s): GRAND FINALE SYNTHESIS & TRIUMPHANT HOLD ──
+      // Final synthesis badge locks in place
+      tl.to("#anchor-badge", {
+        opacity: 1,
+        y: 0,
+        duration: 0.45,
+        ease: "back.out(1.6)"
+      }, 3.9);
+
+      // Final Hold (4.5s – 6.0s)
+      tl.to({}, { duration: 1.5 }, 4.5);
+    </script>
+  </body>
+</html>

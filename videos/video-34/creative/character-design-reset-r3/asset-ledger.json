@@ -1,0 +1,119 @@
+{
+  "revision": "character-reset-r3",
+  "assets": [
+    {
+      "path": "option-A.svg",
+      "source": "Original SVG character construction in draw_characters.py; no raster or reference character assets",
+      "sha256": "028a8b849f61311bbb645919c9b1336583675676598537f63e642437cd13b320",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    },
+    {
+      "path": "option-B.svg",
+      "source": "Original SVG character construction in draw_characters.py; no raster or reference character assets",
+      "sha256": "6fafc9520c7a39ad911051002985e0f180cf596e1b26dace4e4df82b18874d72",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    },
+    {
+      "path": "option-C.svg",
+      "source": "Original SVG character construction in draw_characters.py; no raster or reference character assets",
+      "sha256": "ac95da05b091ecb8de0055f0a42a6deb8423dc70bdb8e56b74a0c5661d1c40db",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    },
+    {
+      "path": "R2-vs-options.svg",
+      "source": "Read-only actual R2 parent/child vectors + original R3 A/B/C static contact poses",
+      "sha256": "05f0e1571032cd2c8f226fda25fbd403ddcb717ee182e112c25d90fdd2a5d30b",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    },
+    {
+      "path": "S08-interaction-A.svg",
+      "source": "Original R3 A characters + read-only R2 S08-B workspace; old characters/type removed in copy only",
+      "sha256": "2640fb0ab3da3f8533bea368a6dcd5cc85acdc77edaa7dfc8d275484b648f3ec",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    },
+    {
+      "path": "scene-scale-A.svg",
+      "source": "Original SVG character construction in draw_characters.py; no raster or reference character assets",
+      "sha256": "f95b12501da5f60cbb630988641da7482f9e38e0a6706f8ec58aafcb2c6dec98",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    },
+    {
+      "path": "scene-scale-B.svg",
+      "source": "Original SVG character construction in draw_characters.py; no raster or reference character assets",
+      "sha256": "357fbd79c53c1ea969dab331733cb5056f0462b14ac3fdf0ed27ffcdb866bf0f",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    },
+    {
+      "path": "scene-scale-C.svg",
+      "source": "Original SVG character construction in draw_characters.py; no raster or reference character assets",
+      "sha256": "a55cbbbe0a1fc910a5f871b6634e75e494ce709ddfa7b13cb3c5dd53de956751",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    },
+    {
+      "path": "index.html",
+      "source": "Original SVG character construction in draw_characters.py; no raster or reference character assets",
+      "sha256": "358de5dd6204f39574752cbe031b6c7b79fa8fde2a3367e8f86573fbf492481c",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    },
+    {
+      "path": "option-A.html",
+      "source": "Original SVG character construction in draw_characters.py; no raster or reference character assets",
+      "sha256": "af8a10c3e058178eeec68d4cb7df4d99e22f08cb48984fcd316d26c7aa07473a",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    },
+    {
+      "path": "option-B.html",
+      "source": "Original SVG character construction in draw_characters.py; no raster or reference character assets",
+      "sha256": "54b09a2f12315f324faacaf38dd0e69af6213618447a6b525727f264204c8bf4",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    },
+    {
+      "path": "option-C.html",
+      "source": "Original SVG character construction in draw_characters.py; no raster or reference character assets",
+      "sha256": "da6aa1d98e46e87ec8b73ebfc3c3ba354038ae86b422ad7b2eda8d9813c9ba44",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    },
+    {
+      "path": "R2-vs-options.html",
+      "source": "Read-only actual R2 parent/child vectors + original R3 A/B/C static contact poses",
+      "sha256": "602647502e7bfeb20a66fe28ecf0beda52e5266280104d8ee32ef428a5cb4d2d",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    },
+    {
+      "path": "S08-interaction-A.html",
+      "source": "Original R3 A characters + read-only R2 S08-B workspace; old characters/type removed in copy only",
+      "sha256": "58d7376ae994390fd65793cd5fb1c696e955675389b40dbee6f6c009986edf90",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    },
+    {
+      "path": "scene-scale-A.html",
+      "source": "Original SVG character construction in draw_characters.py; no raster or reference character assets",
+      "sha256": "c245eefc4677e2b846dd7ceed8b67ee9296c7d838726af52ad435e177f3ecef2",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    },
+    {
+      "path": "scene-scale-B.html",
+      "source": "Original SVG character construction in draw_characters.py; no raster or reference character assets",
+      "sha256": "8e36598641e51131190467b07838240141218b6b2e453ed35124bab816525678",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    },
+    {
+      "path": "scene-scale-C.html",
+      "source": "Original SVG character construction in draw_characters.py; no raster or reference character assets",
+      "sha256": "3df0992471386b616f8cf7809b0ab8cb3f92300a4d5bb44f8fa75bb6b8739751",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    },
+    {
+      "path": "assets\\display.ttf",
+      "source": "Existing VIDEO-34 Typography V2 local font; copied byte-for-byte, no installation",
+      "sha256": "eaad201da94cb323401fdb8cc760650803ddf8fd704cb9fa56317e6c69bc6fd6",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    },
+    {
+      "path": "assets\\editorial-italic.ttf",
+      "source": "Existing VIDEO-34 Typography V2 local font; copied byte-for-byte, no installation",
+      "sha256": "2314a03c53506fa79525bc479ea4be9c036d1ebd86a1ffb5837ca5b43ff51f07",
+      "rights": "Original new character artwork, or existing project asset; local font redistribution rights not independently audited"
+    }
+  ]
+}

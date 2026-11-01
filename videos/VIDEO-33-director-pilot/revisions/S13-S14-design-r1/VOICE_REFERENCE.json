@@ -1,0 +1,32 @@
+[
+  {
+    "scene_id": "S13",
+    "source_segments": [
+      15
+    ],
+    "audio_source": [
+      "inputs/audio/seg_15.wav"
+    ],
+    "duration": 4.553208333333323,
+    "start_sample": 1530028,
+    "end_sample": 1639305,
+    "raw_text": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới.",
+    "corrected_text": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới."
+  },
+  {
+    "scene_id": "S14",
+    "source_segments": [
+      16,
+      17
+    ],
+    "audio_source": [
+      "inputs/audio/seg_16.wav",
+      "inputs/audio/seg_17.wav"
+    ],
+    "duration": 6.855625000000003,
+    "start_sample": 1639305,
+    "end_sample": 1803840,
+    "raw_text": "Bởi đôi khi, điều giá chỉ nhất không phải là sở hữu thêm một căn nhà, mà là sở hữu thêm một lựa chọn cho tương lai.",
+    "corrected_text": "Bởi đôi khi, điều giá trị nhất không phải là sở hữu thêm một căn nhà, mà là sở hữu thêm một lựa chọn cho tương lai."
+  }
+]

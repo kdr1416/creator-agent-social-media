@@ -1,0 +1,27 @@
+{
+  "phase": "static_frames_pending_user_review",
+  "scene": "S05",
+  "version": "design-restart-r1",
+  "frame_approved": false,
+  "motion_produced": false,
+  "master_modified": false,
+  "source_storyboard": "handoff\\S05_STORYBOARD_RESTART_R1\\S05_STORYBOARD.json",
+  "frames": [
+    {
+      "folder": "01-hold",
+      "title": "Cầm ghim — trước khi chọn"
+    },
+    {
+      "folder": "02-contact",
+      "title": "Ghim chạm Malta — tay còn giữ"
+    },
+    {
+      "folder": "03-release",
+      "title": "Đã nhả ghim — một nhãn MALTA"
+    },
+    {
+      "folder": "04-house",
+      "title": "Sau hard cut — mặt tiền nhà thật"
+    }
+  ]
+}

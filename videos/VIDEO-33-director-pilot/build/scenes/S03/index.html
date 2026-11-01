@@ -1,0 +1,142 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>S03 · Một hành trình nhiều năm</title><script src="assets/gsap.min.js"></script><style>
+@font-face{font-family:PilotDisplay;src:url('assets/segoe-ui-black.ttf');font-weight:900;font-display:block}
+@font-face{font-family:PilotSans;src:url('assets/arial.ttf');font-display:block}
+*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden}
+.composition{position:relative;width:100%;height:100%;overflow:hidden;color:#30313B;font-family:PilotDisplay,sans-serif}
+.ground{position:absolute;inset:0}.art{position:absolute;inset:0;width:720px;height:1280px;overflow:hidden}
+.feature{position:absolute;z-index:5;white-space:nowrap;font-weight:900;line-height:1.24;text-align:center;top:172px;left:185px;width:350px;padding:17px 20px;background:#087BC1;color:#FFFDF4;font-size:52px;box-shadow:5px 7px 0 #30313b12}
+</style></head><body>
+<div id="v33-s03" class="composition" data-composition-id="v33-s03" data-width="720" data-height="1280" data-start="0" data-duration="4.2458" data-fps="30">
+<div class="ground" style="background:#FFF8E9"></div>
+<svg id="p03-art" class="art" xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280" data-layout-allow-overflow>
+  <defs>
+    <filter id="p03-shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="9" stdDeviation="7" flood-color="#796572" flood-opacity=".13"/>
+    </filter>
+  </defs>
+  <!-- Background ground shadow -->
+  <ellipse cx="360" cy="1030" rx="290" ry="26" fill="#E6D6C4" opacity=".6"/>
+
+  <!-- S-curved paper path (Dải bản vẽ giấy uốn S) -->
+  <g id="p03-road-group" filter="url(#p03-shadow)">
+    <!-- Base paper road S-curve -->
+    <path id="p03-road-base" d="M110 930 C120 780, 290 730, 360 670 C430 610, 560 560, 530 420 L585 410 C625 580, 480 650, 410 710 C330 780, 200 830, 195 940 Z" fill="#FFFDF4" stroke="#30313B" stroke-width="3.5" stroke-linejoin="round"/>
+    <!-- Center track line -->
+    <path id="p03-road-dash" d="M152 935 C160 805, 310 755, 385 690 C455 630, 580 580, 555 415" fill="none" stroke="#D1BEA8" stroke-width="3" stroke-dasharray="12 10" stroke-linecap="round"/>
+    <!-- Step markers along paper road -->
+    <ellipse cx="230" cy="800" rx="14" ry="8" fill="#FFDA8A" stroke="#30313B" stroke-width="2.4"/>
+    <ellipse cx="380" cy="690" rx="14" ry="8" fill="#FFDA8A" stroke="#30313B" stroke-width="2.4"/>
+    <ellipse cx="505" cy="545" rx="14" ry="8" fill="#FFDA8A" stroke="#30313B" stroke-width="2.4"/>
+  </g>
+
+  <!-- Open-ended future path dashed ahead (Nhánh tương lai mở bằng nét đứt) -->
+  <g id="p03-future-path" opacity="0">
+    <path d="M555 415 C540 330, 430 310, 390 280" fill="none" stroke="#087BC1" stroke-width="4.5" stroke-dasharray="10 8" stroke-linecap="round"/>
+    <!-- Goal milestone node -->
+    <circle cx="390" cy="280" r="18" fill="#087BC1" stroke="#30313B" stroke-width="2.8"/>
+    <polygon points="390,269 393,277 401,278 395,283 397,291 390,286 383,291 385,283 379,278 387,277" fill="#FFFBE6"/>
+  </g>
+
+  <!-- Practice / career desk at upper right (Bàn thực hành / làm việc ở xa) -->
+  <g id="p03-practice-desk" filter="url(#p03-shadow)" transform="translate(420, 450)">
+    <!-- Desk surface -->
+    <polygon points="10,60 130,30 220,55 90,90" fill="#E8D5BA" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+    <polygon points="10,60 90,90 90,110 10,80" fill="#CAA685" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+    <polygon points="90,90 220,55 220,75 90,110" fill="#B89270" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Drafting tools & tablet on practice desk -->
+    <polygon points="40,65 95,50 120,62 65,77" fill="#A8D6E2" stroke="#30313B" stroke-width="2.4" stroke-linejoin="round"/>
+    <line x1="135" y1="42" x2="160" y2="48" stroke="#087BC1" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="185" cy="52" r="9" fill="#FFF7DB" stroke="#30313B" stroke-width="2"/>
+  </g>
+
+  <!-- Study desk at lower mid-left (Bàn học ở gần) -->
+  <g id="p03-study-desk" filter="url(#p03-shadow)" transform="translate(140, 710)">
+    <!-- Desk surface -->
+    <polygon points="0,55 120,20 220,45 85,85" fill="#F4E2C7" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+    <polygon points="0,55 85,85 85,115 0,85" fill="#DDBB97" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+    <polygon points="85,85 220,45 220,75 85,115" fill="#C9A37C" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Notebook open on desk -->
+    <polygon points="40,58 90,44 115,55 65,69" fill="#FFFDF5" stroke="#30313B" stroke-width="2.2" stroke-linejoin="round"/>
+    <line x1="77" y1="48" x2="90" y2="62" stroke="#B89E85" stroke-width="2.5"/>
+    <!-- Pen holder & lamp -->
+    <rect x="145" y="24" width="16" height="26" rx="4" fill="#087BC1" stroke="#30313B" stroke-width="2"/>
+    <line x1="150" y1="24" x2="146" y2="10" stroke="#FFAC3C" stroke-width="3" stroke-linecap="round"/>
+    <line x1="156" y1="24" x2="160" y2="12" stroke="#D48DA2" stroke-width="3" stroke-linecap="round"/>
+    <!-- Desk lamp -->
+    <path d="M175 42L182 15L170 5" fill="none" stroke="#30313B" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="160,8 180,-2 188,14 168,24" fill="#FFCD74" stroke="#30313B" stroke-width="2.4" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Mascot (Mascot cam bo góc, mũ tím, ba lô xanh) -->
+  <g id="p03-mascot" filter="url(#p03-shadow)" transform="translate(65, 780) scale(1.1)">
+    <!-- Shadow -->
+    <ellipse cx="63" cy="203" rx="60" ry="10" fill="#D7BDA8" opacity=".5"/>
+    <!-- Legs -->
+    <path d="M48 143L41 190L18 194M90 143L98 190L120 194" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+    <!-- Backpack -->
+    <rect x="5" y="55" width="36" height="88" rx="15" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+    <path d="M12 75L30 84" fill="none" stroke="#A2D8ED" stroke-width="3"/>
+    <!-- Far arm pointing along S-curve path -->
+    <g id="p03-arm-far" transform="translate(30, 72)">
+      <path id="p03-far-path" d="M0 0Q30-20 65-35" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+      <circle id="p03-far-hand" cx="65" cy="-35" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+    </g>
+    <!-- Torso -->
+    <path d="M21 31Q24 9 50 12L95 14Q123 16 122 46L115 121Q114 148 86 152L49 149Q20 148 17 123L13 58Q12 42 21 31Z" fill="#FFAA28" stroke="#30313B" stroke-width="3.3"/>
+    <path d="M25 41Q30 25 49 26" fill="none" stroke="#FFD77B" stroke-width="5" stroke-linecap="round"/>
+    <!-- Cap -->
+    <path d="M28 28Q17-8 61-9Q108-13 116 27Z" fill="#A990D5" stroke="#30313B" stroke-width="3"/>
+    <path d="M17 29Q54 14 111 29L131 34Q138 40 127 42L35 39" fill="#8B73C0" stroke="#30313B" stroke-width="3"/>
+    <!-- Eyes -->
+    <g id="p03-eyes">
+      <ellipse cx="56" cy="68" rx="4.6" ry="7" fill="#30313B"/>
+      <ellipse cx="90" cy="67" rx="4.6" ry="7" fill="#30313B"/>
+    </g>
+    <path d="M60 91Q72 104 84 89" fill="none" stroke="#30313B" stroke-width="3.3" stroke-linecap="round"/>
+    <ellipse cx="43" cy="87" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+    <ellipse cx="102" cy="86" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+    <path d="M26 50L18 125" fill="none" stroke="#05669D" stroke-width="6" stroke-linecap="round"/>
+    <!-- Near arm holding rolled planner -->
+    <g id="p03-arm-near" transform="translate(105, 85)">
+      <path id="p03-near-path" d="M0 0Q18 20 32 8" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+      <circle id="p03-near-hand" cx="32" cy="8" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+      <!-- Rolled map in hand -->
+      <rect x="22" y="-12" width="12" height="34" rx="4" transform="rotate(-25 28 5)" fill="#FFFBEA" stroke="#30313B" stroke-width="2.2"/>
+    </g>
+  </g>
+</svg>
+<div id="p03-title" class="feature">NHIỀU NĂM</div>
+<audio id="v33-s03-voice" class="clip" src="assets/voice.wav" data-start="0" data-duration="4.2458" data-track-index="2"></audio>
+</div>
+<script>
+(()=>{
+  const tl = gsap.timeline({paused:true});
+
+  // 1. Title entry
+  tl.fromTo('#p03-title', {rotation:-2, y:12, opacity:0}, {rotation:-1, y:0, opacity:1, duration:0.32, ease:'back.out(1.2)'}, 0.12);
+
+  // 2. Initial state: S-road fold unrolls from bottom left upwards (0.2s -> 1.5s)
+  tl.fromTo('#p03-road-base', {scaleX:0.2, scaleY:0.3, opacity:0, svgOrigin:'150 940'}, {scaleX:1, scaleY:1, opacity:1, duration:1.1, ease:'power2.out'}, 0.25);
+  tl.fromTo('#p03-road-dash', {opacity:0}, {opacity:1, duration:0.6}, 0.8);
+
+  // 3. Study desk pops up first (1.06s)
+  tl.fromTo('#p03-study-desk', {scale:0.1, opacity:0, svgOrigin:'250 780'}, {scale:1, opacity:1, duration:0.75, ease:'back.out(1.15)'}, 1.05);
+
+  // 4. Mascot gestures forward, eyes look along S-road
+  tl.to('#p03-far-path', {attr:{d:'M0 0Q40-35 85-50'}, duration:0.65, ease:'power2.inOut'}, 1.2);
+  tl.to('#p03-far-hand', {attr:{cx:85, cy:-50}, duration:0.65, ease:'power2.inOut'}, 1.2);
+  tl.to('#p03-eyes', {x:5, y:-4, duration:0.5}, 1.3);
+
+  // 5. Practice desk appears on upper road (2.5s)
+  tl.fromTo('#p03-practice-desk', {scale:0.1, opacity:0, svgOrigin:'530 500'}, {scale:1, opacity:1, duration:0.75, ease:'back.out(1.15)'}, 2.45);
+
+  // 6. Open-ended future path dashed ahead extends into distance (2.7s -> 3.5s)
+  tl.fromTo('#p03-future-path', {opacity:0, scaleY:0.2, svgOrigin:'555 415'}, {opacity:1, scaleY:1, duration:0.8, ease:'power2.out'}, 2.65);
+
+  // Hold cleanly till end of voice
+  tl.to({hold:0}, {hold:1, duration:4.2458, ease:'none'}, 0);
+
+  window.__timelines['v33-s03'] = tl;
+})();
+</script>
+</body></html>

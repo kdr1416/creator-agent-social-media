@@ -1,0 +1,25 @@
+{
+  "status": "AWAITING HUMAN REVIEW",
+  "preexisting_files_modified": [
+    "production_status.json",
+    "project_manifest.json",
+    "REVIEW.html",
+    "assets/ledger.json"
+  ],
+  "preexisting_files_preserved": 31,
+  "scene_manifest_byte_identical": true,
+  "master_unchanged": true,
+  "logo_unchanged": true,
+  "approval_unchanged_pending": true,
+  "independent_S03_source_regeneration_preserves_S08": true,
+  "independent_S03_rerender_preserves_S08_source_audio_picture_and_review_mp4": true,
+  "S03_regeneration": "Rebuild resets HyperFrames source stamps; S03 was rendered/muxed again and final browser/media QA rerun. No stale render accepted.",
+  "source_scenes_authored": [
+    "S03",
+    "S08"
+  ],
+  "historical_projects": "No writes issued outside video-34 and new scoped scratch backup; no exhaustive historical hash audit",
+  "dependency_installation": "none",
+  "core_instructions_changed": false,
+  "all_8_real_asset_ledger_hashes_verified": true
+}

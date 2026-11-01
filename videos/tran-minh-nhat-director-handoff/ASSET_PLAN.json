@@ -1,0 +1,441 @@
+{
+  "assets": [
+    {
+      "id": "student",
+      "status": "available_reference_rig",
+      "used_by": [
+        1,
+        2,
+        4,
+        8,
+        9,
+        10,
+        12,
+        15
+      ],
+      "description": "Nhật: mascot cam bo góc, mũ tím, ba lô xanh, tay chân mảnh; là biểu tượng, không tự vẽ giống người thật. Thêm pose theo hành động từng cảnh.",
+      "independent_layers": [
+        "body",
+        "far arm",
+        "near arm",
+        "grasp hands",
+        "eyes/mouth",
+        "cap",
+        "bag",
+        "legs"
+      ],
+      "source": "library/student.js and library/portrait-v5.js; prefix IDs per scene"
+    },
+    {
+      "id": "student_hands",
+      "status": "to_draw_from_reference",
+      "used_by": [
+        3,
+        11,
+        14
+      ],
+      "description": "Bàn tay/ống tay của Nhật nhìn overhead; ba tư thế: mở/gấp, giữ giấy, đặt mảnh. Chỉ tay thật của nhân vật, không bàn tay người thật lạc style.",
+      "independent_layers": [
+        "far hand",
+        "near hand",
+        "contact/grip layer"
+      ],
+      "source": "reference_pilots/scene_12/assets/portrait-v5.js as colour/line reference"
+    },
+    {
+      "id": "student_walk",
+      "status": "to_extend_reference_rig",
+      "used_by": [
+        16,
+        17
+      ],
+      "description": "Cùng mascot, stride2–3 tư thế và quay chào; bước chân có tiếp đất, tay giữ sổ khi đi.",
+      "independent_layers": [
+        "hips/body",
+        "alternating legs",
+        "free arm",
+        "book arm",
+        "head turn"
+      ],
+      "source": "library/student.js"
+    },
+    {
+      "id": "room",
+      "status": "to_draw",
+      "used_by": [
+        1,
+        9
+      ],
+      "description": "Một góc phòng học lilac sáng, cửa sổ lớn có rèm kéo, đèn nhỏ và một cây;09 thêm dấu vết bản nháp. Không lấp phòng bằng đồ trang trí ngẫu nhiên.",
+      "independent_layers": [
+        "wall/window frame",
+        "moving blind",
+        "far roofs layers",
+        "desk plane",
+        "lamp",
+        "plant"
+      ],
+      "source": "original vector layers; no room photo needed"
+    },
+    {
+      "id": "notebook",
+      "status": "to_draw",
+      "used_by": [
+        1,
+        2,
+        13,
+        17
+      ],
+      "description": "Sổ xanh bìa mềm, một dấu cam ở góc và gáy rõ; có bìa đóng/mở, mép trang và clip. Chữ tên chỉ khi scene yêu cầu.",
+      "independent_layers": [
+        "front cover",
+        "spine",
+        "page block",
+        "opening page",
+        "orange bookmark"
+      ],
+      "source": "design based on selected blue/orange roles; not the old envelope"
+    },
+    {
+      "id": "rmit_photo",
+      "status": "to_source",
+      "used_by": [
+        2
+      ],
+      "description": "Một ảnh campus có sẵn ở trang giới thiệu RMIT Việt Nam, crop công trình không người. Đây là bối cảnh định danh tổ chức, không khẳng định Nhật học tại campus cụ thể trong ảnh.",
+      "independent_layers": [
+        "photo frozen local file",
+        "paper edge",
+        "tape"
+      ],
+      "source": "https://www.rmit.edu.vn/about-us/who-we-are ; choose official campus image, not student portrait or a web screenshot"
+    },
+    {
+      "id": "netherlands_map",
+      "status": "to_draw_from_geographic_reference",
+      "used_by": [
+        3
+      ],
+      "description": "Outline Hà Lan trên giấy gấp, chấm Amsterdam ở vùng tây; không bản đồ hàng xóm hoặc đường bay. Dùng outline địa lý kiểm chứng thay đa giác tuỳ ý.",
+      "independent_layers": [
+        "paper folds",
+        "land outline",
+        "Amsterdam dot",
+        "HÀ LAN label",
+        "Amsterdam label"
+      ],
+      "source": "official geographic reference to be resolved before drawing; VU official address confirms Amsterdam"
+    },
+    {
+      "id": "envelope",
+      "status": "available_source",
+      "used_by": [
+        3,
+        4
+      ],
+      "description": "Phong bì giấy kem có nắp/đáy/mặt trước tách lớp.03 chỉ gấp/đặt,04 mở như nguồn.",
+      "independent_layers": [
+        "back",
+        "hinged flap",
+        "front",
+        "inner paper"
+      ],
+      "source": "reference_pilots/scene_04/index.html #envelope-back/#envelope-flap/#envelope-front"
+    },
+    {
+      "id": "vu_photo",
+      "status": "available_frozen",
+      "used_by": [
+        4,
+        5,
+        6,
+        9,
+        12
+      ],
+      "description": "Ảnh VU Main Building chính thức. Giữ nguyên nội dung công trình, chỉ crop theo mặt giấy. Không gọi là UvA hoặc dùng ảnh logo trường khác.",
+      "independent_layers": [
+        "photo raster",
+        "paper border if required",
+        "tape if required"
+      ],
+      "source": "library/vu-campus.jpg ; https://vu.nl/en/about-vu/more-about/vu-main-building"
+    },
+    {
+      "id": "campus_shell",
+      "status": "available_source_extend_only",
+      "used_by": [
+        5,
+        6
+      ],
+      "description": "Vỏ mô hình campus có sàn/cột từ06.05 chỉ cần bao quanh ảnh để nối sang06; không tự dựng phòng khác trong pilot.",
+      "independent_layers": [
+        "roof",
+        "side walls",
+        "floors",
+        "columns",
+        "photo cover"
+      ],
+      "source": "reference_pilots/scene_06/index.html #c6-drawing and #c6-photo"
+    },
+    {
+      "id": "research_props",
+      "status": "to_draw",
+      "used_by": [
+        5
+      ],
+      "description": "Mép một cuốn sách mở và một phần bàn thí nghiệm làm tiền cảnh môi trường học thuật; không xếp huy chương hoặc icon danh hiệu.",
+      "independent_layers": [
+        "book paper/leaves",
+        "bench edge",
+        "one glass silhouette"
+      ],
+      "source": "consistent line weight with scene06 workspaces"
+    },
+    {
+      "id": "credential_prop",
+      "status": "to_draw",
+      "used_by": [
+        7
+      ],
+      "description": "Cuộn giấy học thuật tượng trưng, dải xanh, chỉ tên VU Amsterdam khi bung. Không sao chép mẫu bằng thật, chữ ký, mã số, điểm, dấu công nhận.",
+      "independent_layers": [
+        "paper curl",
+        "opening paper",
+        "ribbon",
+        "printed university name"
+      ],
+      "source": "original illustration; depicts institutional degree concept, not Nhật graduation"
+    },
+    {
+      "id": "international_workspaces",
+      "status": "to_draw",
+      "used_by": [
+        7
+      ],
+      "description": "Hai cánh bối cảnh mở: bàn đọc/nghiên cứu và bàn làm việc nhóm. Khối bàn, ghế, đèn và tài liệu cùng không gian; không avatar cards, không logo doanh nghiệp.",
+      "independent_layers": [
+        "left reading desk",
+        "right collaboration desk",
+        "foreground table"
+      ],
+      "source": "new illustration, generic contexts not actual employers"
+    },
+    {
+      "id": "reader_hand",
+      "status": "to_draw",
+      "used_by": [
+        7
+      ],
+      "description": "Một bàn tay vô danh đưa cuộn giấy/tài liệu về phía đọc, không đóng dấu phê duyệt.",
+      "independent_layers": [
+        "hand",
+        "paper contact"
+      ],
+      "source": "same neutral thin outline as other hands"
+    },
+    {
+      "id": "paper_globe",
+      "status": "to_draw",
+      "used_by": [
+        8
+      ],
+      "description": "Địa cầu giấy có trục, lục địa đơn giản tương đối đúng; mở hai bối cảnh ngang hàng từ mặt cầu.",
+      "independent_layers": [
+        "sphere",
+        "continents clipping group",
+        "axis/base",
+        "foreground rim"
+      ],
+      "source": "original vector geometry; no country data or flight paths"
+    },
+    {
+      "id": "opportunity_settings",
+      "status": "to_draw",
+      "used_by": [
+        8
+      ],
+      "description": "Một bàn học nhóm và một bàn công việc thật trong hình minh hoạ; mỗi nhóm gồm mặt bàn/ghế/người nhỏ đang làm việc, không icon briefcase/mũ tốt nghiệp đứng rời.",
+      "independent_layers": [
+        "study table setting",
+        "work table setting",
+        "paper tabs connecting to globe"
+      ],
+      "source": "generic possible settings, no claim of job/visa outcome"
+    },
+    {
+      "id": "work_desk",
+      "status": "to_draw",
+      "used_by": [
+        9,
+        10,
+        15
+      ],
+      "description": "Bàn09/10/15 cùng màu gỗ sáng, đèn phía trái, ngăn giấy cạnh phải. Có wide room, chéo qua bàn, close tay dùng chung asset.",
+      "independent_layers": [
+        "back desk edge",
+        "surface",
+        "front edge for hand occlusion",
+        "lamp"
+      ],
+      "source": "reuse scene01 desk language without cloning whole composition"
+    },
+    {
+      "id": "draft_pages",
+      "status": "to_draw",
+      "used_by": [
+        9,
+        10,
+        11
+      ],
+      "description": "Một tờ nháp có dấu cam và hai bản cũ. Các nét dòng là texture giấy, không tạo chữ nhỏ đọc được hay paragraph mô tả; vị trí một đoạn sửa được khoanh bằng bút rồi viết lại.",
+      "independent_layers": [
+        "current page",
+        "old drafts",
+        "circle/correction ink",
+        "new orange strokes"
+      ],
+      "source": "original illustrative writing, no actual application content"
+    },
+    {
+      "id": "mentor",
+      "status": "to_draw",
+      "used_by": [
+        10,
+        15
+      ],
+      "description": "Mentor riêng biệt nhưng cùng tỉ lệ mascot: thân nhỏ xanh lục nhạt #91B59F, kính tròn, tay áo kem; không cap/ba lô của Nhật. Chỉ xem trang, chỉ/góp ý và giữ kẹp; không thêm hành động thắng cúp.",
+      "independent_layers": [
+        "body",
+        "glasses/head",
+        "far arm",
+        "near arm",
+        "contact hands",
+        "nod pose"
+      ],
+      "source": "original symbolic adviser, not real person likeness"
+    },
+    {
+      "id": "pen_pair",
+      "status": "to_draw",
+      "used_by": [
+        10
+      ],
+      "description": "Bút góp ý màu đất đỏ và bút cam của Nhật; đổi tay sau khi mentor góp ý, không để bút dịch mà bàn tay không nắm.",
+      "independent_layers": [
+        "two pens",
+        "grip overlays"
+      ],
+      "source": "one signature correction on real paper, not label pointers"
+    },
+    {
+      "id": "portfolio",
+      "status": "available_source_extend",
+      "used_by": [
+        11,
+        12,
+        15
+      ],
+      "description": "Bìa xanh/trang đôi/gáy của12.11 lắp chất liệu trang trước rồi lật đúng hướng;15 đóng lại. Cần thêm trạng thái đóng và tờ trang đang lật.",
+      "independent_layers": [
+        "blue cover",
+        "spine",
+        "left/right paper",
+        "turning page",
+        "closed cover"
+      ],
+      "source": "reference_pilots/scene_12/index.html #p12-folder"
+    },
+    {
+      "id": "study_evidence",
+      "status": "to_draw",
+      "used_by": [
+        11
+      ],
+      "description": "Hai giấy vật liệu học tập: trang ghi chép và bản nháp hoạt động học tập với sơ đồ trung tính. Không GPA/chứng chỉ/giải thưởng/tên dự án bịa.",
+      "independent_layers": [
+        "note fragment",
+        "learning-work fragment",
+        "paper clips"
+      ],
+      "source": "source voice gives only general academic achievements; keep details illustrative"
+    },
+    {
+      "id": "story_notebooks",
+      "status": "to_draw",
+      "used_by": [
+        13
+      ],
+      "description": "Hai cuốn sổ phụ có gáy, dấu bút và cách kẹp khác cuốn của Nhật; một pastel lilac, một peach. Không gán người/ngành/nghề/sở thích cụ thể.",
+      "independent_layers": [
+        "two covers/spines",
+        "two opening pages",
+        "different abstract marks"
+      ],
+      "source": "same paper material as notebook; not two generic profile cards"
+    },
+    {
+      "id": "essay_page",
+      "status": "to_draw",
+      "used_by": [
+        14
+      ],
+      "description": "Tờ bài luận minh hoạ với vùng mở đầu/chất liệu/chốt có thể sắp lại; chỉ vài nét in texture. Không paragraph thật, không nội dung bịa vào lời của Nhật.",
+      "independent_layers": [
+        "paper",
+        "quiet print strokes",
+        "foreground margin",
+        "lifted paper pose"
+      ],
+      "source": "physical essay surface, not a general information panel"
+    },
+    {
+      "id": "core_cutouts",
+      "status": "available_source_extract",
+      "used_by": [
+        12,
+        14
+      ],
+      "description": "Hình ghép, chân dung đã cá nhân hoá và ảnh VU từ12.14 chỉ lấy mảnh nhỏ làm chất liệu cho cùng một trang; không lặp nguyên bố cục12.",
+      "independent_layers": [
+        "tangram group",
+        "portrait group",
+        "campus paper photo"
+      ],
+      "source": "reference_pilots/scene_12/index.html #p12-puzzle/#p12-goal-photo and assets/portrait-v5.js"
+    },
+    {
+      "id": "binder_clip",
+      "status": "to_draw",
+      "used_by": [
+        15
+      ],
+      "description": "Kẹp giấy đủ lớn để thấy hai tay giữ/luồn/nhả, tỉ lệ với hồ sơ.",
+      "independent_layers": [
+        "clip back",
+        "moving jaws",
+        "foreground hinge"
+      ],
+      "source": "new vector physical prop"
+    },
+    {
+      "id": "canal_scene",
+      "status": "to_draw",
+      "used_by": [
+        16,
+        17
+      ],
+      "description": "Phố Hà Lan minh hoạ, cầu thấp qua kênh, ba mái nhà gable, cửa sổ và nước. Không lấy landmark làm campus VU hoặc diễn tả đã tới địa điểm thực.",
+      "independent_layers": [
+        "far roofs",
+        "near facades",
+        "water",
+        "far bridge",
+        "bridge walking plane",
+        "near rail",
+        "page edge reveal"
+      ],
+      "source": "generic illustrated Dutch canal setting, no specific named landmark"
+    }
+  ],
+  "note": "Available means source/layer exists; new poses/environments still need drawing. A reference MP4 alone is not an editable asset."
+}

@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>09 · Đằng sau thành quả là một bàn làm việc</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'PilotDisplay';
+  src: url('assets/segoe-ui-black.ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arial.ttf');
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arialbd.ttf');
+  font-weight: 700;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; }
+
+#scene-09 {
+  position: relative;
+  width: 720px;
+  height: 1280px;
+  overflow: hidden;
+  background: #F3EEF7;
+  color: #30313B;
+  font-family: PilotSans, Arial, sans-serif;
+}
+
+#world {
+  position: absolute;
+  inset: 0;
+  transform-origin: 215px 435px;
+}
+
+/* Strip Headline */
+.strip {
+  position: absolute;
+  background: #087BC1;
+  color: white;
+  padding: 14px 28px;
+  font-family: PilotDisplay, PilotSans, sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.1;
+  white-space: nowrap;
+  box-shadow: 5px 7px 0 #30313b15;
+  border-radius: 4px;
+}
+#headline {
+  left: 135px;
+  top: 175px;
+  transform-origin: center;
+  z-index: 25;
+}
+
+/* Room Wall & Desk */
+#room-wall {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Wall Pinned VU Goal Photo Card */
+#wall-photo-card {
+  position: absolute;
+  left: 95px;
+  top: 350px;
+  width: 235px;
+  height: 165px;
+  background: #FFFEFA;
+  padding: 8px;
+  box-shadow: 5px 8px 0 #30313b14;
+  border-radius: 4px;
+  transform: rotate(-3deg);
+  z-index: 5;
+}
+#wall-photo-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 47% 50%;
+  border-radius: 2px;
+}
+.tape {
+  position: absolute;
+  width: 65px;
+  height: 20px;
+  background: #ECD6A6CB;
+  top: -9px;
+  left: 85px;
+  transform: rotate(-4deg);
+  clip-path: polygon(0 10%, 96% 0, 100% 88%, 4% 100%);
+  z-index: 6;
+}
+
+/* Desk Surface */
+#desk-group {
+  position: absolute;
+  left: 60px;
+  top: 730px;
+  width: 600px;
+  height: 270px;
+  z-index: 10;
+}
+
+/* Draft Pages on Desk */
+#draft-group {
+  position: absolute;
+  left: 170px;
+  top: 785px;
+  width: 180px;
+  height: 140px;
+  z-index: 12;
+  transform-origin: 30px 40px;
+}
+
+/* Mascot Nhật */
+#student-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 720px;
+  height: 1280px;
+  z-index: 18;
+  pointer-events: none;
+}
+</style>
+</head>
+<body>
+<div id="scene-09" data-composition-id="scene-09" data-width="720" data-height="1280" data-start="0" data-duration="3.4">
+  <div id="world">
+    <!-- Wall textures & Room base -->
+    <svg id="room-wall" viewBox="0 0 720 1280">
+      <ellipse cx="360" cy="1005" rx="300" ry="24" fill="#E4DCEB" opacity="0.6"/>
+      <!-- Soft wall panel guideline -->
+      <line x1="60" y1="995" x2="660" y2="995" stroke="#DFD5E6" stroke-width="3"/>
+      <!-- Pinned motivation notes on wall -->
+      <polygon points="345,370 395,365 390,410 340,415" fill="#FFF8DE" stroke="#30313B" stroke-width="1.8"/>
+      <circle cx="368" cy="365" r="3" fill="#DC6E38"/>
+      <polygon points="405,385 450,380 445,425 400,430" fill="#E2EDDF" stroke="#30313B" stroke-width="1.8"/>
+      <circle cx="425" cy="380" r="3" fill="#087BC1"/>
+    </svg>
+
+    <!-- Wall Pinned VU Goal Photo Card -->
+    <div id="wall-photo-card">
+      <div class="tape"></div>
+      <img src="assets/vu-campus.jpg" alt="VU Amsterdam goal photo pinned on study room wall">
+    </div>
+
+    <!-- Desk plane, study lamp & accessories -->
+    <div id="desk-group">
+      <svg viewBox="0 0 600 270" width="100%" height="100%">
+        <!-- Table top plane -->
+        <polygon points="25,50 575,50 550,185 50,185" fill="#EFE3D3" stroke="#30313B" stroke-width="3.5" stroke-linejoin="round"/>
+        <polygon points="50,185 550,185 545,210 55,210" fill="#D9C4AF" stroke="#30313B" stroke-width="3.5" stroke-linejoin="round"/>
+        <!-- Desk legs -->
+        <line x1="80" y1="210" x2="75" y2="245" stroke="#30313B" stroke-width="4.5" stroke-linecap="round"/>
+        <line x1="520" y1="210" x2="525" y2="245" stroke="#30313B" stroke-width="4.5" stroke-linecap="round"/>
+
+        <!-- Cozy Study Lamp on left -->
+        <g id="desk-lamp" transform="translate(65, -5)">
+          <ellipse cx="35" cy="72" rx="20" ry="7" fill="#B4CDDC" stroke="#30313B" stroke-width="2.5"/>
+          <path d="M35 70L25 15L50 5" fill="none" stroke="#30313B" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <polygon points="36,-8 66,-3 80,22 40,16" fill="#087BC1" stroke="#30313B" stroke-width="2.5" stroke-linejoin="round"/>
+          <polygon points="44,18 76,24 135,115 50,115" fill="#FFF2CE" opacity="0.25"/>
+        </g>
+
+        <!-- Blue Notebook from previous scenes resting on right desk corner -->
+        <g id="desk-notebook" transform="translate(430, 75)">
+          <rect x="0" y="0" width="95" height="68" rx="4" fill="#087BC1" stroke="#30313B" stroke-width="2.6"/>
+          <polygon points="80,18 98,18 93,28 98,38 80,38" fill="#FF7A30" stroke="#30313B" stroke-width="1.8" stroke-linejoin="round"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- The Draft Pages being revised -->
+    <div id="draft-group">
+      <svg viewBox="0 0 180 140" width="100%" height="100%">
+        <!-- Previous rough draft sheets scattered underneath -->
+        <polygon points="5,25 125,10 140,95 20,110" fill="#F4EDE4" stroke="#30313B" stroke-width="1.8" stroke-linejoin="round"/>
+        <polygon points="18,18 138,12 148,100 28,106" fill="#F8F3EC" stroke="#30313B" stroke-width="2" stroke-linejoin="round"/>
+        
+        <!-- The Current Revision Draft Sheet -->
+        <g id="current-draft-sheet" transform="translate(10, 8)">
+          <rect x="15" y="10" width="125" height="98" rx="4" fill="#FFFEFA" stroke="#30313B" stroke-width="2.8"/>
+          <!-- Orange Bookmark Tab on top edge -->
+          <polygon points="25,10 42,10 42,-4 25,-4" fill="#FF7A30" stroke="#30313B" stroke-width="1.8"/>
+          
+          <!-- Handwritten texture lines -->
+          <line x1="30" y1="28" x2="115" y2="28" stroke="#D1C3B2" stroke-width="2" stroke-linecap="round"/>
+          <line x1="30" y1="42" x2="120" y2="42" stroke="#D1C3B2" stroke-width="2" stroke-linecap="round"/>
+          
+          <!-- Red/Brown Crossed out old line -->
+          <line x1="30" y1="56" x2="95" y2="56" stroke="#C25522" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 3"/>
+          <!-- Circled edit note -->
+          <ellipse cx="65" cy="56" rx="38" ry="10" fill="none" stroke="#C25522" stroke-width="1.8"/>
+          
+          <!-- Fresh Orange Revisions written by Nhật -->
+          <g id="orange-revision-ink">
+            <line x1="30" y1="72" x2="122" y2="72" stroke="#FF7A30" stroke-width="2.4" stroke-linecap="round"/>
+            <line x1="30" y1="86" x2="85" y2="86" stroke="#FF7A30" stroke-width="2.4" stroke-linecap="round"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Student Mascot (Minh Nhật revising draft intently) -->
+    <svg id="student-layer" viewBox="0 0 720 1280" aria-label="Student mascot Minh Nhat">
+      <g id="student-rig" transform="translate(365, 725)">
+        <g id="student-motion">
+          <!-- Shadow -->
+          <ellipse cx="63" cy="205" rx="65" ry="10" fill="#D7BDA8" opacity="0.5"/>
+          <!-- Legs -->
+          <path d="M48 143L41 190L18 194M90 143L98 190L120 194" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+          <!-- Blue Backpack -->
+          <rect x="103" y="50" width="39" height="91" rx="16" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+          <path d="M113 69L134 78" fill="none" stroke="#A2D8ED" stroke-width="3"/>
+          
+          <!-- Far Arm (rests on desk paper margin) -->
+          <g id="arm-far-group" transform="translate(25, 72)">
+            <g id="arm-far">
+              <path d="M0 0Q-25 15 -48 35" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="-48" cy="35" r="7.5" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+            </g>
+          </g>
+
+          <!-- Body -->
+          <path d="M21 31Q24 9 50 12L95 14Q123 16 122 46L115 121Q114 148 86 152L49 149Q20 148 17 123L13 58Q12 42 21 31Z" fill="#FFAA28" stroke="#30313B" stroke-width="3.3"/>
+          <path d="M25 41Q30 25 49 26" fill="none" stroke="#FFD77B" stroke-width="5" stroke-linecap="round"/>
+          
+          <!-- Purple Cap -->
+          <path d="M28 28Q17 -8 61 -9Q108 -13 116 27Z" fill="#A990D5" stroke="#30313B" stroke-width="3"/>
+          <path d="M17 29Q54 14 111 29L131 34Q138 40 127 42L35 39" fill="#8B73C0" stroke="#30313B" stroke-width="3"/>
+          
+          <!-- Focused Eyes looking down at page -->
+          <g id="eyes">
+            <ellipse cx="50" cy="72" rx="4.6" ry="6.5" fill="#30313B"/>
+            <ellipse cx="84" cy="71" rx="4.6" ry="6.5" fill="#30313B"/>
+            <circle cx="51.5" cy="70" r="1.6" fill="#FFFDF8"/>
+            <circle cx="85.5" cy="69" r="1.6" fill="#FFFDF8"/>
+          </g>
+          
+          <!-- Cheeks -->
+          <ellipse cx="37" cy="89" rx="10" ry="5" fill="#EE7C47" opacity="0.65"/>
+          <ellipse cx="97" cy="88" rx="10" ry="5" fill="#EE7C47" opacity="0.65"/>
+          
+          <!-- Mouth (serious concentration) -->
+          <path id="mouth" d="M58 92L80 92" stroke="#30313B" stroke-width="3" stroke-linecap="round"/>
+          
+          <path d="M111 48L96 129" fill="none" stroke="#05669D" stroke-width="7" stroke-linecap="round"/>
+
+          <!-- Near Arm (holds orange pen and writes actively) -->
+          <g id="arm-near-group" transform="translate(109, 83)">
+            <g id="arm-near">
+              <path d="M0 0Q-15 25 -32 28" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="-32" cy="28" r="7.5" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+              <!-- Orange pen in hand -->
+              <g id="pen-orange" transform="translate(-32, 28) rotate(45)">
+                <rect x="-3" y="-18" width="6" height="22" rx="1.5" fill="#FF7A30" stroke="#30313B" stroke-width="1.8"/>
+                <polygon points="-3,-18 3,-18 0,-25" fill="#FFAA28" stroke="#30313B" stroke-width="1.5"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+
+    <!-- Headline Strip: PHÍA SAU THÀNH QUẢ -->
+    <div id="headline" class="strip">PHÍA SAU THÀNH QUẢ</div>
+  </div>
+</div>
+
+<script>
+(()=>{
+  const tl = gsap.timeline({ paused: true });
+
+  // 0.00 - 0.85s: "Đằng sau thành quả ấy"
+  // Camera begins zoomed in tight on the wall photo card, then pulls back to reveal the entire earnest workspace!
+  tl.fromTo('#world',
+    { scale: 1.85, x: 180, y: 150 },
+    { scale: 1.0, x: 0, y: 0, duration: 1.1, ease: 'power2.inOut' },
+    0
+  );
+
+  // Initial states
+  tl.set('#headline', { opacity: 0, scale: 0.85, y: -25 }, 0);
+  tl.set('#orange-revision-ink', { opacity: 0 }, 0);
+
+  // 0.85 - 2.60s: "cả một quá trình chuẩn bị"
+  // Hand writes active strokes across the page
+  tl.to('#arm-near', {
+    x: -8,
+    y: 2,
+    rotation: 5,
+    repeat: 3,
+    yoyo: true,
+    duration: 0.35,
+    ease: 'sine.inOut'
+  }, 0.9);
+
+  // Fresh orange revision ink appears!
+  tl.to('#orange-revision-ink', {
+    opacity: 1,
+    duration: 0.6,
+    ease: 'power1.out'
+  }, 1.1);
+
+  // 1.8s: Headline "PHÍA SAU THÀNH QUẢ" drops in
+  tl.to('#headline', {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    duration: 0.45,
+    ease: 'back.out(1.5)'
+  }, 1.75);
+
+  // 2.60 - 3.40s: "nghiêm túc"
+  // Hand finishes writing, repositions draft neatly on top
+  tl.to('#arm-near', {
+    x: 0,
+    y: 0,
+    rotation: -10,
+    duration: 0.45,
+    ease: 'power2.out'
+  }, 2.45);
+
+  tl.to('#current-draft-sheet', {
+    x: 18,
+    y: 5,
+    rotation: -1,
+    duration: 0.45,
+    ease: 'power2.out'
+  }, 2.5);
+
+  // Eyes lift slightly, satisfied earnest expression
+  tl.to('#eyes', {
+    y: -3,
+    duration: 0.3
+  }, 2.6);
+
+  tl.to('#mouth', {
+    attr: { d: 'M57 90Q70 98 81 90' },
+    duration: 0.3
+  }, 2.65);
+
+  // Hold at end ready to transition into Scene 10 desk interaction
+  tl.to({ hold: 0 }, { hold: 1, duration: 3.4, ease: 'none' }, 0);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines['scene-09'] = tl;
+})();
+</script>
+</body>
+</html>

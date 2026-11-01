@@ -1,0 +1,109 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "gsap_timeline_set_initial_hide",
+        "severity": "warning",
+        "message": "Initial hidden state for \"#online-screen\" is set via tl.set(...) at position 0 inside the paused timeline. A zero-duration set at 0 does not render while the playhead sits exactly at 0, so frame 0 shows the un-hidden state.",
+        "selector": "#online-screen",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S07-S08-motion-r1\\S07\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use gsap.set(...) (immediate, outside the timeline) for initial states, or author the hidden state directly in CSS/attributes."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 4.668833333333,
+    "samples": [
+      0.259,
+      0.778,
+      1.297,
+      1.816,
+      2.334,
+      2.853,
+      3.372,
+      3.891,
+      4.409
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.259,
+      1.297,
+      2.334,
+      3.372,
+      4.409
+    ],
+    "checked": 5,
+    "passed": 5
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": true,
+    "files": [
+      ".hyperframes\\artifacts\\snapshots\\c898ff63-f9f8-46c1-acf6-74d430343da4\\frame-00-at-0.3s.png",
+      ".hyperframes\\artifacts\\snapshots\\c898ff63-f9f8-46c1-acf6-74d430343da4\\frame-01-at-1.3s.png",
+      ".hyperframes\\artifacts\\snapshots\\c898ff63-f9f8-46c1-acf6-74d430343da4\\frame-02-at-2.3s.png",
+      ".hyperframes\\artifacts\\snapshots\\c898ff63-f9f8-46c1-acf6-74d430343da4\\frame-03-at-3.4s.png",
+      ".hyperframes\\artifacts\\snapshots\\c898ff63-f9f8-46c1-acf6-74d430343da4\\frame-04-at-4.4s.png"
+    ],
+    "times": [
+      0.259,
+      1.297,
+      2.334,
+      3.372,
+      4.409
+    ],
+    "findingFiles": []
+  }
+}

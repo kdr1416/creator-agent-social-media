@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "historyId": "c26d7c80-d023-49ba-a100-592b53412ffa",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "CREDITS.json": {
+      "hash": "910ab5d3041c61597085259023c1b9cfe62d62e8a4442dff58fb6f6f6ec574bc",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\c26d7c80-d023-49ba-a100-592b53412ffa\\blobs\\91\\910ab5d3041c61597085259023c1b9cfe62d62e8a4442dff58fb6f6f6ec574bc"
+    },
+    "CREDITS.md": {
+      "hash": "fe652aa4a02bac5f9d789974502112fe8da3c17a00191a38842bc31bf4473d6c",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\c26d7c80-d023-49ba-a100-592b53412ffa\\blobs\\fe\\fe652aa4a02bac5f9d789974502112fe8da3c17a00191a38842bc31bf4473d6c"
+    },
+    "DESIGN.md": {
+      "hash": "97f604747feb1da9619a47f43d7adce18c59c288da56df73a1de1bab766528b5",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\c26d7c80-d023-49ba-a100-592b53412ffa\\blobs\\97\\97f604747feb1da9619a47f43d7adce18c59c288da56df73a1de1bab766528b5"
+    },
+    "art.svg": {
+      "hash": "e6cd378a49d54a11f83272c7e136c224749bed1280e6caab6c883b4b8bf5e51e",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\c26d7c80-d023-49ba-a100-592b53412ffa\\blobs\\e6\\e6cd378a49d54a11f83272c7e136c224749bed1280e6caab6c883b4b8bf5e51e"
+    },
+    "assets/display.ttf": {
+      "hash": "be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\c26d7c80-d023-49ba-a100-592b53412ffa\\blobs\\be\\be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\c26d7c80-d023-49ba-a100-592b53412ffa\\blobs\\c1\\c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "assets/street-house.jpg": {
+      "hash": "eb46430f7982cd716740424810e1b4d475dc92b33353b72789d62af30315ad75",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\c26d7c80-d023-49ba-a100-592b53412ffa\\blobs\\eb\\eb46430f7982cd716740424810e1b4d475dc92b33353b72789d62af30315ad75"
+    },
+    "assets/townhouse.jpg": {
+      "hash": "45138fa64aa74fdec69b3d720659aedd00bc38503724535e7f7ab9d91226c48d",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\c26d7c80-d023-49ba-a100-592b53412ffa\\blobs\\45\\45138fa64aa74fdec69b3d720659aedd00bc38503724535e7f7ab9d91226c48d"
+    },
+    "hyperframes.json": {
+      "hash": "c8d5feecee0bd5a9b1c164bd703daa2e33f28b2699c764de877b5cad50ebf608",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\c26d7c80-d023-49ba-a100-592b53412ffa\\blobs\\c8\\c8d5feecee0bd5a9b1c164bd703daa2e33f28b2699c764de877b5cad50ebf608"
+    },
+    "index.html": {
+      "hash": "451e1f7a4b50cb019a465d483bf966e5676e8d486a2a69ce88d929b4983ccffe",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\c26d7c80-d023-49ba-a100-592b53412ffa\\blobs\\45\\451e1f7a4b50cb019a465d483bf966e5676e8d486a2a69ce88d929b4983ccffe"
+    },
+    "qa-check.json": {
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\c26d7c80-d023-49ba-a100-592b53412ffa\\blobs\\e3\\e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "725a41cb-c181-4591-810e-a38562cbdf82"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "725a41cb-c181-4591-810e-a38562cbdf82",
+        "scope": "project",
+        "report": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S05-final-frame-v5\\.hyperframes\\artifacts\\checks\\725a41cb-c181-4591-810e-a38562cbdf82.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "at": [
+              0.5
+            ],
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": true,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793025348060,
+        "contentHash": "1e2c00d8ceb07f82c9ce1c064e56ef8a886899dbc7fa97ed3507ec02222a6fe7",
+        "revision": null,
+        "inputFingerprint": "0d271dbb5dfa47a9d31f6eb27af3a8584ba00f6d5b96fde95f3f9032dd48bc21",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "725a41cb-c181-4591-810e-a38562cbdf82-0"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "725a41cb-c181-4591-810e-a38562cbdf82-0",
+        "scope": "full",
+        "image": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S05-final-frame-v5\\.hyperframes\\artifacts\\snapshots\\c5f511e6-1dd6-4d39-98ed-a4d6d4cc0910\\frame-00-at-0.5s.png",
+        "time": 0.5,
+        "metadata": {
+          "checkId": "725a41cb-c181-4591-810e-a38562cbdf82",
+          "width": 720,
+          "height": 1280
+        },
+        "createdAt": 1793025348060,
+        "contentHash": "f1fd553cc3f8df5cbc0677b5d4104def3983760cdc730dca9190ac815b76d55b",
+        "revision": null,
+        "inputFingerprint": "0d271dbb5dfa47a9d31f6eb27af3a8584ba00f6d5b96fde95f3f9032dd48bc21",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  }
+}

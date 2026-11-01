@@ -1,0 +1,19 @@
+{
+  "revision": "R1",
+  "status": "AWAITING HUMAN REVIEW — NOT APPROVED",
+  "protected_input_hashes_unchanged": 7,
+  "approval_unchanged": true,
+  "real_asset_ledger_entries_verified": 11,
+  "source_scenes_only": [
+    "S03",
+    "S08"
+  ],
+  "master_unchanged": true,
+  "comparison": "REVIEW.html",
+  "timing_table": "creative/revision-r1.md",
+  "highlight_screenshots": 21,
+  "before_after_frames": 4,
+  "no_dependency_installation": true,
+  "actual_mp4s_verified": true,
+  "remaining_visual_judgment": "human review required"
+}

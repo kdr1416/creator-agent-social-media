@@ -1,0 +1,3646 @@
+{
+  "project": "VIDEO-33-director-pilot",
+  "duration": 75.16,
+  "sample_rate": 24000,
+  "total_samples": 1803840,
+  "canvas": [
+    720,
+    1280
+  ],
+  "fps": 30,
+  "pilot_selection": {
+    "method": "purposeful_directorial_selection_not_random",
+    "ids": [
+      "S01",
+      "S05",
+      "S09"
+    ],
+    "rationale": [
+      "S01: biến đổi vật thể + tiếp xúc mascot",
+      "S05: ảnh thật/giấy/vector + mở nếp",
+      "S09: cơ chế phân bổ không người, giải thích quan hệ"
+    ]
+  },
+  "cue_accuracy": "Mốc đạo diễn nội cảnh ước lượng; ranh giới sample nguồn chính xác. Không coi ASR/thiết kế là nghe kiểm chứng độc lập.",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "scene_id": "S01",
+      "start": 0.0,
+      "end": 6.019416666666666,
+      "start_sample": 0,
+      "end_sample": 144466,
+      "source_segments": [
+        1
+      ],
+      "raw_text": "Khi con du học Châu Âu, nhiều gia đình không chỉ đầu tư cho việc học, mà còn đầu tư cho một điểm tự lâu dài.",
+      "corrected_text": "Khi con du học Châu Âu, nhiều gia đình không chỉ đầu tư cho việc học, mà còn đầu tư cho một điểm tựa lâu dài.",
+      "semantic_type": "physical transformation",
+      "visual_center": "Cuốn sách thành điểm tựa",
+      "organic_motion_need": "Không cần diễn viên/plate hữu cơ; puppet vector có hành động chủ đích.",
+      "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high",
+      "routing_reason": "Cuốn sách thành điểm tựa: hành động chủ đạo là mở / nâng đỡ các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ physical transformation, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+      "flow_contribution": "none",
+      "hf_contribution": "Bìa mở và các trang gấp bung thành mặt đỡ; mái nhà giấy và nhóm gia đình hiện lên trên mặt đỡ sau cụm “mà còn”. Tay nắm mép sách trước khi trang đổi hình.",
+      "fallback_mode": null,
+      "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+      "character": "yes",
+      "title": "Cuốn sách thành điểm tựa",
+      "takeaway": "Việc học mở ra một kế hoạch dài hạn của gia đình, không chỉ một kỳ học.",
+      "audio_source": [
+        "inputs/audio/seg_01.wav"
+      ],
+      "duration": 6.019416666666666,
+      "sample_frames": 144466,
+      "raw_segments": [
+        {
+          "seg_id": 1,
+          "segment_id": "seg_01",
+          "audio_slice": "audio_slices/seg_01.wav",
+          "start_sample": 0,
+          "end_sample": 144466,
+          "sample_frames": 144466,
+          "start": 0.0,
+          "end": 6.019,
+          "duration": 6.019,
+          "sha256": "e89fa33915af9a42e51895845e837902d15198ac2677650ef25469e3aa42053a",
+          "raw_text": "Khi con du học Châu Âu, nhiều gia đình không chỉ đầu tư cho việc học, mà còn đầu tư cho một điểm tự lâu dài.",
+          "corrected_text": "Khi con du học Châu Âu, nhiều gia đình không chỉ đầu tư cho việc học, mà còn đầu tư cho một điểm tựa lâu dài.",
+          "uncertainties": [
+            "điểm tự -> điểm tựa: Giọng nói ngắt âm/lướt âm cuối; chuẩn văn phạm và ngữ nghĩa đầu tư là 'điểm tựa lâu dài'."
+          ]
+        }
+      ],
+      "render_mode": "HF_ONLY",
+      "style_candidates": [
+        {
+          "id": "hf_existing:warm-doodle-mixed-media",
+          "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+        },
+        {
+          "id": "kurzgesagt",
+          "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+        },
+        {
+          "id": "izometrik",
+          "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+        },
+        {
+          "id": "bauhaus",
+          "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-mixed-media",
+      "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+      "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+      "visual_verb": "mở / nâng đỡ",
+      "composition": "Cuốn sách xanh chiếm x=90–560, y=550–890; mascot ở phải, chân tại y=1020. Một mái nhà giấy nhỏ ở lớp trên, không phải tài sản đã được cấp quyền.",
+      "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+      "opening_state": "Cận cuốn sách đang hé; mascot đưa tay tới mép bìa, mắt theo trang sách.",
+      "transformation": "Bìa mở và các trang gấp bung thành mặt đỡ; mái nhà giấy và nhóm gia đình hiện lên trên mặt đỡ sau cụm “mà còn”. Tay nắm mép sách trước khi trang đổi hình.",
+      "final_state": "Một cuốn sách vẫn nhận ra được làm nền cho nhà và gia đình; mascot ngước nhìn, không có dấu duyệt hay biểu tượng visa.",
+      "protagonist_action": "Mở bìa → giữ mép trang → ngước nhìn mái nhà. Giữ mũ tím, túi xanh và thân cam bo góc.",
+      "mascot_role": "Mở bìa → giữ mép trang → ngước nhìn mái nhà. Giữ mũ tím, túi xanh và thân cam bo góc.",
+      "visual_family": "physical transformation",
+      "timed_beats": [
+        {
+          "local_seconds": 0,
+          "spoken_cue": "Khi con du học Châu Âu",
+          "action": "Mở cận sách, tay bắt đầu với",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 1.55,
+          "spoken_cue": "đầu tư cho việc học",
+          "action": "Bìa mở, chữ HỌC TẬP",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 3.05,
+          "spoken_cue": "mà còn đầu tư",
+          "action": "Trang gấp nâng mặt đỡ",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 4.25,
+          "spoken_cue": "điểm tựa lâu dài",
+          "action": "Nhà giấy rõ hình, đổi text và ngước nhìn",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 5.25,
+          "spoken_cue": "đuôi câu",
+          "action": "Giữ kết quả",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        }
+      ],
+      "motion_emphasis_sequence": [
+        "Mở cận sách, tay bắt đầu với",
+        "Bìa mở, chữ HỌC TẬP",
+        "Trang gấp nâng mặt đỡ",
+        "Nhà giấy rõ hình, đổi text và ngước nhìn",
+        "Giữ kết quả"
+      ],
+      "hf_signature_motion": "Bìa mở và các trang gấp bung thành mặt đỡ; mái nhà giấy và nhóm gia đình hiện lên trên mặt đỡ sau cụm “mà còn”. Tay nắm mép sách trước khi trang đổi hình.",
+      "flow_action": null,
+      "flow_camera": null,
+      "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+      "asset_contract": [
+        {
+          "layer": "book-back",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "book-pages",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "book-cover",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "folded-support",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "paper-house",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "family-silhouettes",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-body",
+          "source": "approved mascot derivative",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-far-arm",
+          "source": "approved mascot derivative",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-near-arm",
+          "source": "approved mascot derivative",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-eyes",
+          "source": "approved mascot derivative",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-cap",
+          "source": "approved mascot derivative",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-bag",
+          "source": "approved mascot derivative",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        }
+      ],
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "book",
+          "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+          "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+          "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+        }
+      ],
+      "container_semantics": [
+        {
+          "object_type": "book",
+          "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+          "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+          "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+        }
+      ],
+      "visible_text_budget": {
+        "max_simultaneous_words": 4,
+        "max_levels": 2,
+        "paragraphs": 0
+      },
+      "visible_text_inventory": [
+        {
+          "text": "HỌC TẬP",
+          "size_px": 54,
+          "role": "anchor",
+          "simultaneous": false
+        },
+        {
+          "text": "ĐIỂM TỰA DÀI LÂU",
+          "size_px": 54,
+          "role": "anchor",
+          "simultaneous": false
+        }
+      ],
+      "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Một strip xanh ngắn có nghĩa nhấn ý.",
+      "accent_reason": "Nhấn sự chuyển trọng tâm của câu; không tô cả cảnh.",
+      "accent_treatment": "blue short feature strip",
+      "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+      "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+      "handoff": "Cắt theo ý sang cận vật liệu học phí; không kéo cùng căn nhà qua cảnh 02.",
+      "continuity_risk": "Không biến sách thành chứng nhận cư trú; mái nhà là ẩn dụ điểm tựa.",
+      "pilot": true,
+      "status": "pilot_rendered_awaiting_user_review",
+      "must_keep": [
+        "Việc học mở ra một kế hoạch dài hạn của gia đình, không chỉ một kỳ học.",
+        "Bìa mở và các trang gấp bung thành mặt đỡ; mái nhà giấy và nhóm gia đình hiện lên trên mặt đỡ sau cụm “mà còn”. Tay nắm mép sách trước khi trang đổi hình.",
+        "voice/sample bounds",
+        "mascot identity, warm light palette, footer 200px",
+        "zero added CTA or documentary claims"
+      ],
+      "flexible": [
+        "Toạ độ/kích thước trong safe area",
+        "easing/pose/chi tiết nét",
+        "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+      ],
+      "reference_alignment": {
+        "colour_relationships": {
+          "reference_evidence": "Brief: cream/peach/lilac + accents",
+          "candidate_evidence": "qa/S01/mobile-5.80.png; in-progress 3.3s; pilots/S01/index.html",
+          "assessment": "match",
+          "revision_needed": "No mismatch seen in inspected frames; style and motion remain subject to user review."
+        },
+        "typography_treatment": {
+          "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+          "candidate_evidence": "qa/S01/mobile-5.80.png; in-progress 3.3s; pilots/S01/index.html",
+          "assessment": "match",
+          "revision_needed": "No mismatch seen in inspected frames; style and motion remain subject to user review."
+        },
+        "asset_mix": {
+          "reference_evidence": "Reference 04/06: real campus plus drawing",
+          "candidate_evidence": "qa/S01/mobile-5.80.png; in-progress 3.3s; pilots/S01/index.html",
+          "assessment": "match",
+          "revision_needed": "No mismatch seen in inspected frames; style and motion remain subject to user review."
+        },
+        "composition": {
+          "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+          "candidate_evidence": "qa/S01/mobile-5.80.png; in-progress 3.3s; pilots/S01/index.html",
+          "assessment": "match",
+          "revision_needed": "No mismatch seen in inspected frames; style and motion remain subject to user review."
+        },
+        "mascot_language": {
+          "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+          "candidate_evidence": "qa/S01/mobile-5.80.png; in-progress 3.3s; pilots/S01/index.html",
+          "assessment": "match",
+          "revision_needed": "No mismatch seen in inspected frames; style and motion remain subject to user review."
+        },
+        "motion_rhythm": {
+          "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+          "candidate_evidence": "qa/S01/mobile-5.80.png; in-progress 3.3s; pilots/S01/index.html",
+          "assessment": "match",
+          "revision_needed": "No mismatch seen in inspected frames; style and motion remain subject to user review."
+        }
+      },
+      "asset_contract_evidence": "pilots/S01/index.html; pilots/S01/assets/layered-art.svg"
+    },
+    {
+      "scene_number": 2,
+      "scene_id": "S02",
+      "start": 6.019416666666666,
+      "end": 9.874916666666667,
+      "start_sample": 144466,
+      "end_sample": 236998,
+      "source_segments": [
+        2
+      ],
+      "raw_text": "Trước nhiều phụ hình sẵn sàng chi hàng tỷ đồng cho hành trình du học của con,",
+      "corrected_text": "Trước nhiều phụ huynh sẵn sàng chi hàng tỷ đồng cho hành trình du học của con,",
+      "semantic_type": "macro physical prop",
+      "visual_center": "Chi phí có trọng lượng",
+      "organic_motion_need": "Không cần; vật thể/quan hệ là chủ thể.",
+      "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high",
+      "routing_reason": "Chi phí có trọng lượng: hành động chủ đạo là tích / cân nhắc các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ macro physical prop, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+      "flow_contribution": "none",
+      "hf_contribution": "Các xu còn lại lăn vào cùng chồng làm giấy hơi võng; thước trượt qua chiều cao chồng xu theo cụm “hàng tỷ đồng”.",
+      "fallback_mode": null,
+      "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+      "character": "no",
+      "title": "Chi phí có trọng lượng",
+      "takeaway": "Gia đình đã dành nguồn lực đáng kể cho hành trình học tập.",
+      "audio_source": [
+        "inputs/audio/seg_02.wav"
+      ],
+      "duration": 3.855500000000001,
+      "sample_frames": 92532,
+      "raw_segments": [
+        {
+          "seg_id": 2,
+          "segment_id": "seg_02",
+          "audio_slice": "audio_slices/seg_02.wav",
+          "start_sample": 144466,
+          "end_sample": 236998,
+          "sample_frames": 92532,
+          "start": 6.019,
+          "end": 9.875,
+          "duration": 3.856,
+          "sha256": "c5382970c93a6838fa9cc45e2e1919639822d0b4bb8da1307830289eeb05c3cc",
+          "raw_text": "Trước nhiều phụ hình sẵn sàng chi hàng tỷ đồng cho hành trình du học của con,",
+          "corrected_text": "Trước nhiều phụ huynh sẵn sàng chi hàng tỷ đồng cho hành trình du học của con,",
+          "uncertainties": [
+            "phụ hình -> phụ huynh: ASR nhận nhầm thanh âm; giọng đọc phát âm 'phụ huynh'.",
+            "Trước nhiều phụ huynh: Giọng phát âm rõ âm 'Trước'. Có thể câu gốc dự kiến là 'Trước việc nhiều phụ huynh...' hoặc 'Rất nhiều phụ huynh...'. Do file scratch/video 33.txt có dung lượng 0 bytes, giữ nguyên chữ 'Trước' theo đúng âm thanh audio gốc và đánh dấu để Đạo diễn thẩm định."
+          ]
+        }
+      ],
+      "render_mode": "HF_ONLY",
+      "style_candidates": [
+        {
+          "id": "hf_existing:warm-doodle-mixed-media",
+          "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+        },
+        {
+          "id": "kurzgesagt",
+          "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+        },
+        {
+          "id": "izometrik",
+          "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+        },
+        {
+          "id": "bauhaus",
+          "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-mixed-media",
+      "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+      "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+      "visual_verb": "tích / cân nhắc",
+      "composition": "Cận bàn giấy đào: thước đo nằm chéo, chồng xu lớn và cuốn sổ chi phí mở. Mọi chi tiết ở y=350–1030, không dựng dashboard.",
+      "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+      "opening_state": "Một chồng xu nằm trên góc trang sổ; chưa có con số.",
+      "transformation": "Các xu còn lại lăn vào cùng chồng làm giấy hơi võng; thước trượt qua chiều cao chồng xu theo cụm “hàng tỷ đồng”.",
+      "final_state": "Chồng xu cao nhưng không hiện giá của một trường/cá nhân cụ thể.",
+      "protagonist_action": "Không mascot; trọng lượng và mép giấy là chủ thể.",
+      "mascot_role": "Không mascot; trọng lượng và mép giấy là chủ thể.",
+      "visual_family": "macro physical prop",
+      "timed_beats": [
+        {
+          "local_seconds": 0,
+          "spoken_cue": "đầu lát nguồn",
+          "action": "Một chồng xu nằm trên góc trang sổ; chưa có con số.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 0.964,
+          "spoken_cue": "cụm ý đầu — đối chiếu WAV",
+          "action": "Các xu còn lại lăn vào cùng chồng làm giấy hơi võng",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 2.313,
+          "spoken_cue": "cụm ý sau — đối chiếu WAV",
+          "action": "Các xu còn lại lăn vào cùng chồng làm giấy hơi võng; thước trượt qua chiều cao chồng xu theo cụm “hàng tỷ đồng”.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 3.2,
+          "spoken_cue": "đuôi câu / nghỉ",
+          "action": "Chồng xu cao nhưng không hiện giá của một trường/cá nhân cụ thể.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        }
+      ],
+      "motion_emphasis_sequence": [
+        "Một chồng xu nằm trên góc trang sổ; chưa có con số.",
+        "Các xu còn lại lăn vào cùng chồng làm giấy hơi võng",
+        "Các xu còn lại lăn vào cùng chồng làm giấy hơi võng; thước trượt qua chiều cao chồng xu theo cụm “hàng tỷ đồng”.",
+        "Chồng xu cao nhưng không hiện giá của một trường/cá nhân cụ thể."
+      ],
+      "hf_signature_motion": "Các xu còn lại lăn vào cùng chồng làm giấy hơi võng; thước trượt qua chiều cao chồng xu theo cụm “hàng tỷ đồng”.",
+      "flow_action": null,
+      "flow_camera": null,
+      "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+      "asset_contract": [
+        {
+          "layer": "ledger-left",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "ledger-right",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "coin-stack",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "rolling-coins",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "measuring-rule",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "paper-shadow",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ],
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "ledger",
+          "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+          "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+          "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+        }
+      ],
+      "container_semantics": [
+        {
+          "object_type": "ledger",
+          "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+          "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+          "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+        }
+      ],
+      "visible_text_budget": {
+        "max_simultaneous_words": 4,
+        "max_levels": 2,
+        "paragraphs": 0
+      },
+      "visible_text_inventory": [
+        {
+          "text": "CHI PHÍ DU HỌC",
+          "size_px": 54,
+          "role": "anchor",
+          "simultaneous": false
+        }
+      ],
+      "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Chữ trần trên nền sáng; không sweep.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+      "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+      "handoff": "Mép sổ mở ra nhường màn hình cho kế hoạch dài hạn ở cảnh 03; cắt thẳng, không morph mọi đồ vật.",
+      "continuity_risk": "Không tự thêm số tiền cụ thể hoặc khẳng định thống kê về số lượng phụ huynh.",
+      "pilot": false,
+      "status": "designed_not_produced",
+      "must_keep": [
+        "Gia đình đã dành nguồn lực đáng kể cho hành trình học tập.",
+        "Các xu còn lại lăn vào cùng chồng làm giấy hơi võng; thước trượt qua chiều cao chồng xu theo cụm “hàng tỷ đồng”.",
+        "voice/sample bounds",
+        "mascot identity, warm light palette, footer 200px",
+        "zero added CTA or documentary claims"
+      ],
+      "flexible": [
+        "Toạ độ/kích thước trong safe area",
+        "easing/pose/chi tiết nét",
+        "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+      ],
+      "reference_alignment": {
+        "colour_relationships": {
+          "reference_evidence": "Brief: cream/peach/lilac + accents",
+          "candidate_evidence": "S02: warm ground and vivid orange/blue/purple",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "typography_treatment": {
+          "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+          "candidate_evidence": "S02: local shipped font, sparse native text",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "asset_mix": {
+          "reference_evidence": "Reference 04/06: real campus plus drawing",
+          "candidate_evidence": "S02: Valletta photo where geographic evidence is needed; vector/physical paper elsewhere",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "composition": {
+          "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+          "candidate_evidence": "S02: Cận bàn giấy đào: thước đo nằm chéo, chồng xu lớn và cuốn sổ chi phí mở. Mọi chi tiết ở y=350–1030, không dựng dashboard.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "mascot_language": {
+          "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+          "candidate_evidence": "S02: Không mascot; trọng lượng và mép giấy là chủ thể.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "motion_rhythm": {
+          "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+          "candidate_evidence": "S02: Các xu còn lại lăn vào cùng chồng làm giấy hơi võng; thước trượt qua chiều cao chồng xu theo cụm “hàng tỷ đồng”.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        }
+      }
+    },
+    {
+      "scene_number": 3,
+      "scene_id": "S03",
+      "start": 9.874916666666667,
+      "end": 14.12075,
+      "start_sample": 236998,
+      "end_sample": 338898,
+      "source_segments": [
+        3
+      ],
+      "raw_text": "nhưng nếu con có kế hoạch học tập và phát triển sự nghiệp tại Châu Âu trong nhiều năm.",
+      "corrected_text": "nhưng nếu con có kế hoạch học tập và phát triển sự nghiệp tại Châu Âu trong nhiều năm,",
+      "semantic_type": "fold-out environment",
+      "visual_center": "Một hành trình nhiều năm",
+      "organic_motion_need": "Không cần diễn viên/plate hữu cơ; puppet vector có hành động chủ đích.",
+      "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high",
+      "routing_reason": "Một hành trình nhiều năm: hành động chủ đạo là trải / dự tính các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ fold-out environment, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+      "flow_contribution": "none",
+      "hf_contribution": "Mascot mở nếp gấp; bàn học dựng lên trước, dụng cụ thực hành mở tiếp ở nửa sau, nhánh tương lai chỉ bằng nét đứt.",
+      "fallback_mode": null,
+      "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+      "character": "yes",
+      "title": "Một hành trình nhiều năm",
+      "takeaway": "Học tập và sự nghiệp là một kế hoạch nối tiếp có khả năng thay đổi.",
+      "audio_source": [
+        "inputs/audio/seg_03.wav"
+      ],
+      "duration": 4.245833333333332,
+      "sample_frames": 101900,
+      "raw_segments": [
+        {
+          "seg_id": 3,
+          "segment_id": "seg_03",
+          "audio_slice": "audio_slices/seg_03.wav",
+          "start_sample": 236998,
+          "end_sample": 338898,
+          "sample_frames": 101900,
+          "start": 9.875,
+          "end": 14.121,
+          "duration": 4.246,
+          "sha256": "85c4f18fc8fe04a6cf4b967881d7eb3a9ae05dff10374598660140b1fec9470b",
+          "raw_text": "nhưng nếu con có kế hoạch học tập và phát triển sự nghiệp tại Châu Âu trong nhiều năm.",
+          "corrected_text": "nhưng nếu con có kế hoạch học tập và phát triển sự nghiệp tại Châu Âu trong nhiều năm,",
+          "uncertainties": [
+            "Dấu câu: Thay dấu chấm bằng dấu phẩy nối vế điều kiện với câu hỏi ở đoạn kế tiếp."
+          ]
+        }
+      ],
+      "render_mode": "HF_ONLY",
+      "style_candidates": [
+        {
+          "id": "hf_existing:warm-doodle-mixed-media",
+          "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+        },
+        {
+          "id": "kurzgesagt",
+          "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+        },
+        {
+          "id": "izometrik",
+          "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+        },
+        {
+          "id": "bauhaus",
+          "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-mixed-media",
+      "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+      "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+      "visual_verb": "trải / dự tính",
+      "composition": "Dải bản vẽ giấy uốn S qua khung, x=90–620/y=340–1010; một góc bàn học lớn ở gần, bàn làm việc ở xa. Không xếp bullet dọc.",
+      "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+      "opening_state": "Mascot đặt cuốn vở lên đầu dải giấy còn gấp.",
+      "transformation": "Mascot mở nếp gấp; bàn học dựng lên trước, dụng cụ thực hành mở tiếp ở nửa sau, nhánh tương lai chỉ bằng nét đứt.",
+      "final_state": "Dải thời gian còn một đầu mở; không nhận bằng rồi lập tức có việc.",
+      "protagonist_action": "Kéo nếp giấy, chuyển ánh nhìn từ vở tới bàn thực hành; chỉ một bước có mục đích.",
+      "mascot_role": "Kéo nếp giấy, chuyển ánh nhìn từ vở tới bàn thực hành; chỉ một bước có mục đích.",
+      "visual_family": "fold-out environment",
+      "timed_beats": [
+        {
+          "local_seconds": 0,
+          "spoken_cue": "đầu lát nguồn",
+          "action": "Mascot đặt cuốn vở lên đầu dải giấy còn gấp.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 1.061,
+          "spoken_cue": "cụm ý đầu — đối chiếu WAV",
+          "action": "Mascot mở nếp gấp",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 2.547,
+          "spoken_cue": "cụm ý sau — đối chiếu WAV",
+          "action": "Mascot mở nếp gấp; bàn học dựng lên trước, dụng cụ thực hành mở tiếp ở nửa sau, nhánh tương lai chỉ bằng nét đứt.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 3.524,
+          "spoken_cue": "đuôi câu / nghỉ",
+          "action": "Dải thời gian còn một đầu mở; không nhận bằng rồi lập tức có việc.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        }
+      ],
+      "motion_emphasis_sequence": [
+        "Mascot đặt cuốn vở lên đầu dải giấy còn gấp.",
+        "Mascot mở nếp gấp",
+        "Mascot mở nếp gấp; bàn học dựng lên trước, dụng cụ thực hành mở tiếp ở nửa sau, nhánh tương lai chỉ bằng nét đứt.",
+        "Dải thời gian còn một đầu mở; không nhận bằng rồi lập tức có việc."
+      ],
+      "hf_signature_motion": "Mascot mở nếp gấp; bàn học dựng lên trước, dụng cụ thực hành mở tiếp ở nửa sau, nhánh tương lai chỉ bằng nét đứt.",
+      "flow_action": null,
+      "flow_camera": null,
+      "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+      "asset_contract": [
+        {
+          "layer": "folded-road",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "study-desk",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "practice-desk",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "open-ended-path",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "source": "approved mascot derivative",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ],
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "fold-out plan",
+          "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+          "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+          "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+        }
+      ],
+      "container_semantics": [
+        {
+          "object_type": "fold-out plan",
+          "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+          "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+          "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+        }
+      ],
+      "visible_text_budget": {
+        "max_simultaneous_words": 2,
+        "max_levels": 2,
+        "paragraphs": 0
+      },
+      "visible_text_inventory": [
+        {
+          "text": "NHIỀU NĂM",
+          "size_px": 54,
+          "role": "anchor",
+          "simultaneous": false
+        }
+      ],
+      "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Chữ trần trên nền sáng; không sweep.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+      "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+      "handoff": "Cắt từ đầu đường chưa định sang câu hỏi tài sản ở cảnh 04.",
+      "continuity_risk": "Không gán mốc năm, nghề hay việc làm chắc chắn.",
+      "pilot": false,
+      "status": "designed_not_produced",
+      "must_keep": [
+        "Học tập và sự nghiệp là một kế hoạch nối tiếp có khả năng thay đổi.",
+        "Mascot mở nếp gấp; bàn học dựng lên trước, dụng cụ thực hành mở tiếp ở nửa sau, nhánh tương lai chỉ bằng nét đứt.",
+        "voice/sample bounds",
+        "mascot identity, warm light palette, footer 200px",
+        "zero added CTA or documentary claims"
+      ],
+      "flexible": [
+        "Toạ độ/kích thước trong safe area",
+        "easing/pose/chi tiết nét",
+        "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+      ],
+      "reference_alignment": {
+        "colour_relationships": {
+          "reference_evidence": "Brief: cream/peach/lilac + accents",
+          "candidate_evidence": "S03: warm ground and vivid orange/blue/purple",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "typography_treatment": {
+          "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+          "candidate_evidence": "S03: local shipped font, sparse native text",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "asset_mix": {
+          "reference_evidence": "Reference 04/06: real campus plus drawing",
+          "candidate_evidence": "S03: Valletta photo where geographic evidence is needed; vector/physical paper elsewhere",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "composition": {
+          "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+          "candidate_evidence": "S03: Dải bản vẽ giấy uốn S qua khung, x=90–620/y=340–1010; một góc bàn học lớn ở gần, bàn làm việc ở xa. Không xếp bullet dọc.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "mascot_language": {
+          "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+          "candidate_evidence": "S03: Kéo nếp giấy, chuyển ánh nhìn từ vở tới bàn thực hành; chỉ một bước có mục đích.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "motion_rhythm": {
+          "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+          "candidate_evidence": "S03: Mascot mở nếp gấp; bàn học dựng lên trước, dụng cụ thực hành mở tiếp ở nửa sau, nhánh tương lai chỉ bằng nét đứt.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        }
+      }
+    },
+    {
+      "scene_number": 4,
+      "scene_id": "S04",
+      "start": 14.12075,
+      "end": 18.151208333333333,
+      "start_sample": 338898,
+      "end_sample": 435629,
+      "source_segments": [
+        4
+      ],
+      "raw_text": "Liệu toàn bộ tài sản của gia đình có nên chỉ tập trung ở Việt Nam.",
+      "corrected_text": "Liệu toàn bộ tài sản của gia đình có nên chỉ tập trung ở Việt Nam?",
+      "semantic_type": "concentration metaphor",
+      "visual_center": "Tập trung vào một nơi?",
+      "organic_motion_need": "Không cần; vật thể/quan hệ là chủ thể.",
+      "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high",
+      "routing_reason": "Tập trung vào một nơi?: hành động chủ đạo là nghiêng / đặt câu hỏi các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ concentration metaphor, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+      "flow_contribution": "none",
+      "hf_contribution": "Khay hơi nghiêng do tải lệch; dấu hỏi xuất hiện trong khoảng trống vừa mở. Không có đồ vật rơi hoặc cảnh khủng hoảng.",
+      "fallback_mode": null,
+      "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+      "character": "no",
+      "title": "Tập trung vào một nơi?",
+      "takeaway": "Câu hỏi về mức độ tập trung tài sản, không phải yêu cầu bán tài sản Việt Nam.",
+      "audio_source": [
+        "inputs/audio/seg_04.wav"
+      ],
+      "duration": 4.030458333333334,
+      "sample_frames": 96731,
+      "raw_segments": [
+        {
+          "seg_id": 4,
+          "segment_id": "seg_04",
+          "audio_slice": "audio_slices/seg_04.wav",
+          "start_sample": 338898,
+          "end_sample": 435629,
+          "sample_frames": 96731,
+          "start": 14.121,
+          "end": 18.151,
+          "duration": 4.03,
+          "sha256": "3a77bee8bd6c8f1504ef92cdcbdb3b66e85e3334a3ed70512b978a6c4b1643c3",
+          "raw_text": "Liệu toàn bộ tài sản của gia đình có nên chỉ tập trung ở Việt Nam.",
+          "corrected_text": "Liệu toàn bộ tài sản của gia đình có nên chỉ tập trung ở Việt Nam?",
+          "uncertainties": [
+            "Dấu câu: ASR nhận dạng dấu chấm; đây là câu hỏi tu từ đặt vấn đề, chuẩn hoá thành dấu chấm hỏi '?'."
+          ]
+        }
+      ],
+      "render_mode": "HF_ONLY",
+      "style_candidates": [
+        {
+          "id": "hf_existing:warm-doodle-mixed-media",
+          "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+        },
+        {
+          "id": "kurzgesagt",
+          "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+        },
+        {
+          "id": "izometrik",
+          "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+        },
+        {
+          "id": "bauhaus",
+          "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-mixed-media",
+      "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+      "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+      "visual_verb": "nghiêng / đặt câu hỏi",
+      "composition": "Một chiếc khay giấy thật lớn trên nền lilac; mọi nhà/xu nằm cùng một phía, không có khay quốc gia đối lập màu đỏ/xanh.",
+      "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+      "opening_state": "Khay nằm gần giữa, toàn bộ khối tài sản tụ về một góc.",
+      "transformation": "Khay hơi nghiêng do tải lệch; dấu hỏi xuất hiện trong khoảng trống vừa mở. Không có đồ vật rơi hoặc cảnh khủng hoảng.",
+      "final_state": "Khay vẫn giữ mọi tài sản, dấu hỏi giữ lại câu cân nhắc.",
+      "protagonist_action": "Không mascot để giữ câu hỏi đơn giản và tránh diễn cảm sợ hãi.",
+      "mascot_role": "Không mascot để giữ câu hỏi đơn giản và tránh diễn cảm sợ hãi.",
+      "visual_family": "concentration metaphor",
+      "timed_beats": [
+        {
+          "local_seconds": 0,
+          "spoken_cue": "đầu lát nguồn",
+          "action": "Khay nằm gần giữa, toàn bộ khối tài sản tụ về một góc.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 1.008,
+          "spoken_cue": "cụm ý đầu — đối chiếu WAV",
+          "action": "Khay hơi nghiêng do tải lệch",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 2.418,
+          "spoken_cue": "cụm ý sau — đối chiếu WAV",
+          "action": "Khay hơi nghiêng do tải lệch; dấu hỏi xuất hiện trong khoảng trống vừa mở. Không có đồ vật rơi hoặc cảnh khủng hoảng.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 3.345,
+          "spoken_cue": "đuôi câu / nghỉ",
+          "action": "Khay vẫn giữ mọi tài sản, dấu hỏi giữ lại câu cân nhắc.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        }
+      ],
+      "motion_emphasis_sequence": [
+        "Khay nằm gần giữa, toàn bộ khối tài sản tụ về một góc.",
+        "Khay hơi nghiêng do tải lệch",
+        "Khay hơi nghiêng do tải lệch; dấu hỏi xuất hiện trong khoảng trống vừa mở. Không có đồ vật rơi hoặc cảnh khủng hoảng.",
+        "Khay vẫn giữ mọi tài sản, dấu hỏi giữ lại câu cân nhắc."
+      ],
+      "hf_signature_motion": "Khay hơi nghiêng do tải lệch; dấu hỏi xuất hiện trong khoảng trống vừa mở. Không có đồ vật rơi hoặc cảnh khủng hoảng.",
+      "flow_action": null,
+      "flow_camera": null,
+      "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+      "asset_contract": [
+        {
+          "layer": "paper-tray",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "house-token",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "coin-token",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "question-mark",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "location-label",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ],
+      "container_required": false,
+      "container_inventory": [],
+      "container_semantics": [],
+      "visible_text_budget": {
+        "max_simultaneous_words": 2,
+        "max_levels": 2,
+        "paragraphs": 0
+      },
+      "visible_text_inventory": [
+        {
+          "text": "MỘT NƠI?",
+          "size_px": 54,
+          "role": "anchor",
+          "simultaneous": true
+        },
+        {
+          "text": "Việt Nam",
+          "size_px": 54,
+          "role": "anchor",
+          "simultaneous": true
+        }
+      ],
+      "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Chữ trần trên nền sáng; không sweep.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+      "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+      "handoff": "Cắt sang mặt giấy mới mở ở Malta. Không cho xu tự bay khỏi Việt Nam.",
+      "continuity_risk": "Không quy kết Việt Nam rủi ro hơn quốc gia khác; đây là câu hỏi biên tập.",
+      "pilot": false,
+      "status": "designed_not_produced",
+      "must_keep": [
+        "Câu hỏi về mức độ tập trung tài sản, không phải yêu cầu bán tài sản Việt Nam.",
+        "Khay hơi nghiêng do tải lệch; dấu hỏi xuất hiện trong khoảng trống vừa mở. Không có đồ vật rơi hoặc cảnh khủng hoảng.",
+        "voice/sample bounds",
+        "mascot identity, warm light palette, footer 200px",
+        "zero added CTA or documentary claims"
+      ],
+      "flexible": [
+        "Toạ độ/kích thước trong safe area",
+        "easing/pose/chi tiết nét",
+        "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+      ],
+      "reference_alignment": {
+        "colour_relationships": {
+          "reference_evidence": "Brief: cream/peach/lilac + accents",
+          "candidate_evidence": "S04: warm ground and vivid orange/blue/purple",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "typography_treatment": {
+          "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+          "candidate_evidence": "S04: local shipped font, sparse native text",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "asset_mix": {
+          "reference_evidence": "Reference 04/06: real campus plus drawing",
+          "candidate_evidence": "S04: Valletta photo where geographic evidence is needed; vector/physical paper elsewhere",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "composition": {
+          "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+          "candidate_evidence": "S04: Một chiếc khay giấy thật lớn trên nền lilac; mọi nhà/xu nằm cùng một phía, không có khay quốc gia đối lập màu đỏ/xanh.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "mascot_language": {
+          "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+          "candidate_evidence": "S04: Không mascot để giữ câu hỏi đơn giản và tránh diễn cảm sợ hãi.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "motion_rhythm": {
+          "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+          "candidate_evidence": "S04: Khay hơi nghiêng do tải lệch; dấu hỏi xuất hiện trong khoảng trống vừa mở. Không có đồ vật rơi hoặc cảnh khủng hoảng.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        }
+      }
+    },
+    {
+      "scene_number": 5,
+      "scene_id": "S05",
+      "start": 18.151208333333333,
+      "end": 23.857541666666666,
+      "start_sample": 435629,
+      "end_sample": 572581,
+      "source_segments": [
+        5
+      ],
+      "raw_text": "Đó là lý do ngày càng nhiều gia đình lựa chọn đa dạng hóa tài sản bằng bất đồng sản tại Manta.",
+      "corrected_text": "Đó là lý do ngày càng nhiều gia đình lựa chọn đa dạng hóa tài sản bằng bất động sản tại Malta.",
+      "audio_source": [
+        "inputs/audio/seg_05.wav"
+      ],
+      "duration": 5.706333333333333,
+      "sample_frames": 136952,
+      "raw_segments": [
+        {
+          "seg_id": 5,
+          "segment_id": "seg_05",
+          "audio_slice": "audio_slices/seg_05.wav",
+          "start_sample": 435629,
+          "end_sample": 572581,
+          "sample_frames": 136952,
+          "start": 18.151,
+          "end": 23.858,
+          "duration": 5.706,
+          "sha256": "662198c94d17a7fdb75a120490c24b3399744eb4b9c70361524153488c3e65bf",
+          "raw_text": "Đó là lý do ngày càng nhiều gia đình lựa chọn đa dạng hóa tài sản bằng bất đồng sản tại Manta.",
+          "corrected_text": "Đó là lý do ngày càng nhiều gia đình lựa chọn đa dạng hóa tài sản bằng bất động sản tại Malta.",
+          "uncertainties": [
+            "bất đồng sản -> bất động sản: Lỗi nhận dạng âm vị của ASR.",
+            "Manta -> Malta: ASR nhận dạng nhầm tên quốc đảo Nam Âu 'Malta' thành 'Manta'."
+          ]
+        }
+      ],
+      "design_revision": "S05_STORYBOARD_RESTART_R1",
+      "status": "storyboard_approved_ready_for_pilot_production",
+      "title": "Chọn địa điểm, thấy tài sản thật",
+      "takeaway": "Malta được đưa vào cân nhắc như một địa điểm cho tài sản bất động sản; cảnh làm rõ địa điểm và loại tài sản, không chứng minh xu hướng ngày càng nhiều gia đình.",
+      "semantic_type": "location-to-concrete-property",
+      "visual_family": "map-location editorial cut to real residential exterior",
+      "visual_center": "Ghim Malta, rồi mặt tiền nhà thật",
+      "visual_verb": "định vị / cắt sang đối tượng cụ thể",
+      "preferred_mode": "HF_ONLY",
+      "render_mode": "HF_ONLY",
+      "routing_confidence": "high",
+      "routing_reason": "Hành động chính là mascot vector đặt ghim và chuyển cảnh biên tập sang ảnh tĩnh thật; không cần diễn viên hay video sinh. Giữ engine đã khóa, thay toàn bộ ý tưởng hình.",
+      "routing_override": null,
+      "flow_contribution": "none",
+      "hf_contribution": "Rig tiếp xúc ghim, bản đồ nhiều lớp, text native và cắt ảnh; không dùng morph công trình.",
+      "organic_motion_need": "Cử động tay/người vector có tiếp xúc rõ; không cần Flow.",
+      "exact_graphics_need": "Vị trí ghim có nguồn; ảnh nhà không méo; nhãn native.",
+      "character": "yes",
+      "pilot": true,
+      "style_id": "hf_existing:warm-doodle-mixed-media",
+      "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; S01 original and S09 motion r1 are approved motion references.",
+      "style_candidates": [
+        "warm-doodle mixed media: selected",
+        "all-vector architectural street: discarded; lacks real-asset specificity"
+      ],
+      "style_reason": "Mascot và bản đồ thân thiện dẫn tới ảnh thật có lý do nội dung; nền sáng và chữ ngắn giữ ngữ pháp đã duyệt.",
+      "composition": "720×1280. Nhãn y=160–235. Shot A: bản đồ lớn không viền x=40–680,y=300–1030, Malta ở vùng giữa thấp bên phải để tay chạm được; mascot x≈70–270,y≈690–1040. Crop bản đồ theo Malta và nam Sicily, không vẽ lại vị trí địa lý để vừa tay. Shot B: ảnh x=0–720,y=290–1080, crop thấy trọn cửa và ban công; bầu nền kem phía trên nối nhãn. Footer y=1080–1280 luôn sạch.",
+      "composition_reason": "Điểm ghim là tâm hành động của shot A; mặt tiền thật là hình chủ đạo shot B. Hai shot dùng cùng vùng nội dung lớn, không phải ảnh nhỏ trong khung hay bảng thông tin.",
+      "opening_state": "Bản đồ nam Sicily–Malta đã nằm trong khung. Mascot ở góc dưới trái, cầm một ghim, nhìn đúng điểm Malta; không chờ asset bay vào.",
+      "transformation": "Tay đưa ghim → chạm → nhả → nhìn kết quả; tại từ bất, cắt dựng sang kiến trúc nhà ở thật. Không có quan hệ biến hình giữa bản đồ và nhà.",
+      "final_state": "Mặt tiền nhà ở Malta đứng yên trong vùng hình lớn, nhãn MALTA duy nhất, không mascot/ghim/đạo cụ chồng lên ảnh.",
+      "protagonist_action": "Cầm và đặt ghim bằng một tay, thân nghiêng nhẹ để đạt tầm, mắt nhìn đúng điểm tiếp xúc, thu tay sau khi nhả.",
+      "mascot_role": "Dẫn người xem tới địa điểm qua hành động định vị; rời hình tại hard cut để ảnh nhà được đọc theo tỷ lệ thật.",
+      "timed_beats": [
+        {
+          "local_range": [
+            0,
+            0.49
+          ],
+          "spoken_cue": "khoảng đầu lát voice",
+          "action": "Bản đồ nam Sicily–Malta đã nằm trong khung. Mascot ở góc dưới trái, cầm một ghim, nhìn đúng điểm Malta; không chờ asset bay vào."
+        },
+        {
+          "local_range": [
+            0.49,
+            2.49
+          ],
+          "spoken_cue": "Đó là lý do / ngày càng nhiều gia đình",
+          "action": "Mascot nghiêng người và đưa tay đang giữ ghim tới vị trí Malta. Bản đồ giữ nguyên; chỉ cơ thể, cánh tay và ghim chuyển động."
+        },
+        {
+          "local_range": [
+            2.49,
+            3.55
+          ],
+          "spoken_cue": "lựa chọn / đa dạng hóa / tài…",
+          "action": "Đầu ghim chạm điểm Malta rồi được đặt xuống. Bàn tay nhả sau tiếp xúc, thu về; nhãn MALTA hiện một lần. Không thêm cờ, tiền, đường bay hay địa điểm thứ hai."
+        },
+        {
+          "local_range": [
+            3.55,
+            4.35
+          ],
+          "spoken_cue": "…sản bằng / chuẩn bị tới bất động sản",
+          "action": "Giữ kết quả định vị. Mascot nhìn ghim; tay đã rời ghim. Bản đồ không zoom xuyên vào công trình."
+        },
+        {
+          "local_range": [
+            4.35,
+            5.706333333333333
+          ],
+          "spoken_cue": "bất động sản tại Malta",
+          "action": "Cắt thẳng sang ảnh thật mặt tiền nhà ở Malta. Mặt tiền chiếm phần lớn vùng hình, thấy rõ cửa ra vào và ban công. Giữ nhãn MALTA cùng vị trí; ảnh đứng yên để nhận diện. Không có mascot chạm vào nhà trong ảnh."
+        }
+      ],
+      "cue_accuracy": "Các mốc nội cảnh là đề xuất từ word timing ASR có sẵn, chưa xác minh độc lập từng âm. Đối chiếu voice khi dựng, đặc biệt mốc bất ≈4.349s; không thay audio/sample bounds.",
+      "motion_emphasis_sequence": [
+        "chuẩn bị định vị",
+        "đặt ghim và nhả",
+        "giữ điểm lựa chọn",
+        "cắt sang mặt tiền nhà thật"
+      ],
+      "hf_signature_motion": "Tiếp xúc–nhả ghim đọc rõ, sau đó editorial cut đúng từ bất động sản; nhà không chịu bất cứ biến dạng/hiệu ứng nở nào.",
+      "flow_action": null,
+      "flow_camera": null,
+      "overlay_zone": "MALTA ở y=160–235; không đặt chữ lên cửa/ban công; footer y=1080–1280 sạch.",
+      "asset_contract": [
+        {
+          "layer": "map-base",
+          "status": "needs_sourcing_and_vector_styling",
+          "source": "Dữ liệu địa lý có nguồn, thí dụ Natural Earth; kiểm coastline/đảo trước khi cách điệu.",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "malta-anchor",
+          "status": "needs_creation",
+          "source": "Điểm neo theo bản đồ, không phải tâm màn hình; tách khỏi hình ghim.",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "status": "existing_identity_new_pose_required",
+          "source": "assets/approved-student-source.js: giữ nhận diện; tạo pose với vai/khuỷu/cổ tay đúng tầm.",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "pin",
+          "status": "needs_creation",
+          "source": "Ghim đồ họa đơn giản, đầu ghim tách lớp, không phải tượng đài/nhà.",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "residential-photo",
+          "status": "existing_candidate_not_selected",
+          "source": "assets/townhouse.jpg / Wikimedia Townhouse in Zejtun.jpg; kiểm crop và provenance trước khi chọn. Có thể thay bằng ảnh nhà ở Malta có giấy phép phù hợp.",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "MALTA-label",
+          "status": "existing_font_new_text_layer",
+          "source": "assets/fonts/segoe-ui-black.ttf, text native; không bake trong ảnh.",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "warm-ground-and-footer",
+          "status": "needs_creation",
+          "source": "Nền kem, biển xanh rất nhạt, đất đào nhạt; ảnh không tràn footer.",
+          "required_separate_layer": true
+        }
+      ],
+      "container_required": false,
+      "container_inventory": [],
+      "container_semantics": [],
+      "visible_text_budget": {
+        "max_simultaneous_words": 1,
+        "max_levels": 1,
+        "paragraphs": 0
+      },
+      "visible_text_inventory": [
+        {
+          "text": "MALTA",
+          "size_px": 56,
+          "role": "location anchor",
+          "appears_after": "pin contact",
+          "held_across_cut": true
+        }
+      ],
+      "text_treatment": "Segoe UI Black local; một nhãn xanh tím đậm trên nền kem, không hộp, không lặp nhãn trong bản đồ.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "mobile_legibility_plan": "360×640: MALTA tương đương 28px; ghim và tay phải phân biệt được, không phụ thuộc chữ địa danh nhỏ. Cửa và ban công chiếm ít nhất nửa bề rộng ảnh. Không thêm micro-label.",
+      "dark_mass_strategy": "Bản đồ tint sáng, mascot cam và túi xanh; ảnh ưu tiên đá sáng, tránh crop nhiều bóng tối. Chữ/nét là khối tối nhỏ.",
+      "handoff": "S04 → S05: cắt từ câu hỏi tập trung sang bản đồ, không chuyển xu hay mang khay qua. S05 → S06: cắt từ mặt tiền sang bàn gia đình; kết nối bằng ý tài sản → nền tảng gia đình, không cố nối cửa nhà với bàn.",
+      "continuity_risk": "S09 đã kể phân bổ tài sản bằng cơ cấu ba phần; S05 không chia đồng xu/ba ngôi nhà/ba thị trường. S13 nếu có địa cầu kể quyền di chuyển, không lặp ghim và ảnh nhà.",
+      "must_keep": [
+        "Voice gốc và toàn bộ sample bounds",
+        "Hai shot: định vị rồi nhà thật; cắt dựng rõ",
+        "Nhận diện mascot, tầm tay tự nhiên, tiếp xúc rồi nhả ghim",
+        "Ảnh đúng nhà ở Malta có nguồn; không dựng nhà trên ảnh skyline",
+        "Một nhãn MALTA; footer 200px",
+        "Không dùng lại album, trang giấy lật, nhà giấy, nhà biến hình hay bảng phân bổ"
+      ],
+      "flexible": [
+        "Crop bản đồ/ảnh, pose, nét và sắc độ trong brief",
+        "Thời lượng reach/contact/hold sau khi đối chiếu voice",
+        "Nguồn ảnh nhà ở phù hợp hơn nếu kiểm được giấy phép; không giữ ảnh v5 chỉ vì có sẵn"
+      ],
+      "reference_alignment": {
+        "colour_relationships": {
+          "assessment": "proposal_not_rendered",
+          "candidate_evidence": "kem/đào/xanh nhạt và cam–tím–xanh mascot"
+        },
+        "typography_treatment": {
+          "assessment": "proposal_not_rendered",
+          "candidate_evidence": "Segoe UI Black, duy nhất MALTA"
+        },
+        "asset_mix": {
+          "assessment": "proposal_not_rendered",
+          "candidate_evidence": "vector địa lý/mascot và ảnh nhà thật trong hai shot rõ ràng"
+        },
+        "composition": {
+          "assessment": "proposal_not_rendered",
+          "candidate_evidence": "hình chủ đạo lớn, footer sạch, không card"
+        },
+        "mascot_language": {
+          "assessment": "proposal_not_rendered",
+          "candidate_evidence": "mascot gọn, đặt ghim có tiếp xúc"
+        },
+        "motion_rhythm": {
+          "assessment": "proposal_not_rendered",
+          "candidate_evidence": "reach/contact/release, hold rồi hard cut theo ý thoại"
+        }
+      },
+      "research": [
+        {
+          "claim": "Malta nằm ở Địa Trung Hải, phía nam Sicily; kiểm bản đồ dựa trên dữ liệu địa lý.",
+          "url": "https://govcms.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx"
+        }
+      ],
+      "unresolved": [
+        "Chưa chọn crop/ảnh nhà cuối cùng và chưa làm bản đồ.",
+        "Không có frame hay pilot mới; chưa có kiểm chứng thị giác hoặc playback cho phương án này."
+      ],
+      "user_approval": {
+        "scene_id": "S05",
+        "version": "S05_STORYBOARD_RESTART_R1",
+        "approval_status": "approved",
+        "approval_scope": "storyboard concept and direction only; pilot production may proceed for review",
+        "user_message_verbatim": "oke duyệt",
+        "approved_direction": "Mascot đặt ghim Malta trên bản đồ rồi cắt sang ảnh nhà thật tại bất động sản",
+        "frame_approved": false,
+        "motion_approved": false,
+        "full_film_production_authorized": false
+      }
+    },
+    {
+      "scene_number": 6,
+      "scene_id": "S06",
+      "start": 23.857541666666666,
+      "end": 29.654125,
+      "start_sample": 572581,
+      "end_sample": 711699,
+      "source_segments": [
+        6
+      ],
+      "raw_text": "Không chỉ là sở hữu một tài sản ở Châu Âu, đây còn là cách xây dựng một nền tảng lâu dài cho cả gia đình.",
+      "corrected_text": "Không chỉ là sở hữu một tài sản ở Châu Âu, đây còn là cách xây dựng một nền tảng lâu dài cho cả gia đình.",
+      "semantic_type": "family situation",
+      "visual_center": "Chỗ cho cả gia đình",
+      "organic_motion_need": "Không cần diễn viên/plate hữu cơ; puppet vector có hành động chủ đích.",
+      "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high",
+      "routing_reason": "Chỗ cho cả gia đình: hành động chủ đạo là mở rộng / cùng bàn các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ family situation, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+      "flow_contribution": "none",
+      "hf_contribution": "Mascot kéo lá bàn mở rộng; một chỗ ngồi mới vừa đủ hiện ra, mọi người xích lại chia sẻ bản kế hoạch không chữ.",
+      "fallback_mode": null,
+      "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+      "character": "yes",
+      "title": "Chỗ cho cả gia đình",
+      "takeaway": "Một kế hoạch dài hạn được cân nhắc ở cấp gia đình.",
+      "audio_source": [
+        "inputs/audio/seg_06.wav"
+      ],
+      "duration": 5.796583333333334,
+      "sample_frames": 139118,
+      "raw_segments": [
+        {
+          "seg_id": 6,
+          "segment_id": "seg_06",
+          "audio_slice": "audio_slices/seg_06.wav",
+          "start_sample": 572581,
+          "end_sample": 711699,
+          "sample_frames": 139118,
+          "start": 23.858,
+          "end": 29.654,
+          "duration": 5.797,
+          "sha256": "0ca1043e6c3b853c0cb09565dcd62f365143c09125b6ba26a574f990da6c4b74",
+          "raw_text": "Không chỉ là sở hữu một tài sản ở Châu Âu, đây còn là cách xây dựng một nền tảng lâu dài cho cả gia đình.",
+          "corrected_text": "Không chỉ là sở hữu một tài sản ở Châu Âu, đây còn là cách xây dựng một nền tảng lâu dài cho cả gia đình.",
+          "uncertainties": []
+        }
+      ],
+      "render_mode": "HF_ONLY",
+      "style_candidates": [
+        {
+          "id": "hf_existing:warm-doodle-mixed-media",
+          "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+        },
+        {
+          "id": "kurzgesagt",
+          "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+        },
+        {
+          "id": "izometrik",
+          "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+        },
+        {
+          "id": "bauhaus",
+          "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-mixed-media",
+      "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+      "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+      "visual_verb": "mở rộng / cùng bàn",
+      "composition": "Bàn ăn hình oval lớn, nhìn nghiêng nhẹ trên nền peach; mascot và hai thành viên ở các phía. Mặt bàn sáng, chân bàn không đen nặng.",
+      "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+      "opening_state": "Bàn có một phần lá gấp, các thành viên nhìn về chỗ còn thiếu.",
+      "transformation": "Mascot kéo lá bàn mở rộng; một chỗ ngồi mới vừa đủ hiện ra, mọi người xích lại chia sẻ bản kế hoạch không chữ.",
+      "final_state": "Một bàn chung với các chỗ ngồi, cảm giác cùng chuẩn bị thay vì tài sản tự tăng giá.",
+      "protagonist_action": "Kéo bàn và kéo ghế cho người thân, không chỉ đứng cạnh nhà.",
+      "mascot_role": "Kéo bàn và kéo ghế cho người thân, không chỉ đứng cạnh nhà.",
+      "visual_family": "family situation",
+      "timed_beats": [
+        {
+          "local_seconds": 0,
+          "spoken_cue": "đầu lát nguồn",
+          "action": "Bàn có một phần lá gấp, các thành viên nhìn về chỗ còn thiếu.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 1.449,
+          "spoken_cue": "cụm ý đầu — đối chiếu WAV",
+          "action": "Mascot kéo lá bàn mở rộng",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 3.478,
+          "spoken_cue": "cụm ý sau — đối chiếu WAV",
+          "action": "Mascot kéo lá bàn mở rộng; một chỗ ngồi mới vừa đủ hiện ra, mọi người xích lại chia sẻ bản kế hoạch không chữ.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 4.811,
+          "spoken_cue": "đuôi câu / nghỉ",
+          "action": "Một bàn chung với các chỗ ngồi, cảm giác cùng chuẩn bị thay vì tài sản tự tăng giá.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        }
+      ],
+      "motion_emphasis_sequence": [
+        "Bàn có một phần lá gấp, các thành viên nhìn về chỗ còn thiếu.",
+        "Mascot kéo lá bàn mở rộng",
+        "Mascot kéo lá bàn mở rộng; một chỗ ngồi mới vừa đủ hiện ra, mọi người xích lại chia sẻ bản kế hoạch không chữ.",
+        "Một bàn chung với các chỗ ngồi, cảm giác cùng chuẩn bị thay vì tài sản tự tăng giá."
+      ],
+      "hf_signature_motion": "Mascot kéo lá bàn mở rộng; một chỗ ngồi mới vừa đủ hiện ra, mọi người xích lại chia sẻ bản kế hoạch không chữ.",
+      "flow_action": null,
+      "flow_camera": null,
+      "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+      "asset_contract": [
+        {
+          "layer": "table-top",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "table-leaf",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "chairs",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "family-puppets",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "blank-plan",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "source": "approved mascot derivative",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ],
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "dining table",
+          "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+          "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+          "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+        }
+      ],
+      "container_semantics": [
+        {
+          "object_type": "dining table",
+          "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+          "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+          "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+        }
+      ],
+      "visible_text_budget": {
+        "max_simultaneous_words": 3,
+        "max_levels": 2,
+        "paragraphs": 0
+      },
+      "visible_text_inventory": [
+        {
+          "text": "CẢ GIA ĐÌNH",
+          "size_px": 54,
+          "role": "anchor",
+          "simultaneous": false
+        }
+      ],
+      "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Chữ trần trên nền sáng; không sweep.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+      "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+      "handoff": "Cắt cận mối kết nối ở cảnh 07, không dùng thêm thao tác mở đồ vật ngay đầu cảnh.",
+      "continuity_risk": "Gia đình tượng trưng, không mô tả quyền lợi pháp lý tự phát sinh từ mua nhà.",
+      "pilot": false,
+      "status": "designed_not_produced",
+      "must_keep": [
+        "Một kế hoạch dài hạn được cân nhắc ở cấp gia đình.",
+        "Mascot kéo lá bàn mở rộng; một chỗ ngồi mới vừa đủ hiện ra, mọi người xích lại chia sẻ bản kế hoạch không chữ.",
+        "voice/sample bounds",
+        "mascot identity, warm light palette, footer 200px",
+        "zero added CTA or documentary claims"
+      ],
+      "flexible": [
+        "Toạ độ/kích thước trong safe area",
+        "easing/pose/chi tiết nét",
+        "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+      ],
+      "reference_alignment": {
+        "colour_relationships": {
+          "reference_evidence": "Brief: cream/peach/lilac + accents",
+          "candidate_evidence": "S06: warm ground and vivid orange/blue/purple",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "typography_treatment": {
+          "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+          "candidate_evidence": "S06: local shipped font, sparse native text",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "asset_mix": {
+          "reference_evidence": "Reference 04/06: real campus plus drawing",
+          "candidate_evidence": "S06: Valletta photo where geographic evidence is needed; vector/physical paper elsewhere",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "composition": {
+          "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+          "candidate_evidence": "S06: Bàn ăn hình oval lớn, nhìn nghiêng nhẹ trên nền peach; mascot và hai thành viên ở các phía. Mặt bàn sáng, chân bàn không đen nặng.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "mascot_language": {
+          "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+          "candidate_evidence": "S06: Kéo bàn và kéo ghế cho người thân, không chỉ đứng cạnh nhà.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "motion_rhythm": {
+          "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+          "candidate_evidence": "S06: Mascot kéo lá bàn mở rộng; một chỗ ngồi mới vừa đủ hiện ra, mọi người xích lại chia sẻ bản kế hoạch không chữ.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        }
+      }
+    },
+    {
+      "scene_number": 7,
+      "scene_id": "S07",
+      "start": 29.654125,
+      "end": 34.32295833333333,
+      "start_sample": 711699,
+      "end_sample": 823751,
+      "source_segments": [
+        7
+      ],
+      "raw_text": "Khi có một tài sản tại Manta, gia đình có thêm một điểm kết nối với Châu Âu,",
+      "corrected_text": "Khi có một tài sản tại Malta, gia đình có thêm một điểm kết nối với Châu Âu,",
+      "semantic_type": "device interaction",
+      "visual_center": "Giữ một điểm kết nối",
+      "organic_motion_need": "Không cần diễn viên/plate hữu cơ; puppet vector có hành động chủ đích.",
+      "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high",
+      "routing_reason": "Giữ một điểm kết nối: hành động chủ đạo là cắm / kết nối các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ device interaction, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+      "flow_contribution": "none",
+      "hf_contribution": "Cắm đầu dây → màn hình sáng với người thân giơ tay chào; mascot nhìn vào mắt người trong màn hình, một nét nối sáng ngắn xuất hiện theo tiếp xúc.",
+      "fallback_mode": null,
+      "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+      "character": "yes",
+      "title": "Giữ một điểm kết nối",
+      "takeaway": "Gia đình có thể hoạch định kết nối với nơi con đang học.",
+      "audio_source": [
+        "inputs/audio/seg_07.wav"
+      ],
+      "duration": 4.668833333333332,
+      "sample_frames": 112052,
+      "raw_segments": [
+        {
+          "seg_id": 7,
+          "segment_id": "seg_07",
+          "audio_slice": "audio_slices/seg_07.wav",
+          "start_sample": 711699,
+          "end_sample": 823751,
+          "sample_frames": 112052,
+          "start": 29.654,
+          "end": 34.323,
+          "duration": 4.669,
+          "sha256": "676938e717191454e113106f70c7d97d8073f31482da8ea8f0c2577f2de71dc0",
+          "raw_text": "Khi có một tài sản tại Manta, gia đình có thêm một điểm kết nối với Châu Âu,",
+          "corrected_text": "Khi có một tài sản tại Malta, gia đình có thêm một điểm kết nối với Châu Âu,",
+          "uncertainties": [
+            "Manta -> Malta: ASR nhận nhầm tên riêng quốc gia Malta."
+          ]
+        }
+      ],
+      "render_mode": "HF_ONLY",
+      "style_candidates": [
+        {
+          "id": "hf_existing:warm-doodle-mixed-media",
+          "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+        },
+        {
+          "id": "kurzgesagt",
+          "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+        },
+        {
+          "id": "izometrik",
+          "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+        },
+        {
+          "id": "bauhaus",
+          "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-mixed-media",
+      "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+      "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+      "visual_verb": "cắm / kết nối",
+      "composition": "Bàn làm việc lilac, laptop thật về hình học ở x=150–560/y=440–790; dây nối uốn nhẹ xuống mascot tại y=920.",
+      "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+      "opening_state": "Mascot cầm đầu dây, màn hình có khung ảnh gia đình chưa nối.",
+      "transformation": "Cắm đầu dây → màn hình sáng với người thân giơ tay chào; mascot nhìn vào mắt người trong màn hình, một nét nối sáng ngắn xuất hiện theo tiếp xúc.",
+      "final_state": "Hai phía cuộc gọi nhìn nhau. Không hiện giao diện thương hiệu, giấy phép hoặc “thẻ xanh EU”.",
+      "protagonist_action": "Cắm dây, chào lại và theo dõi người thân trên màn hình.",
+      "mascot_role": "Cắm dây, chào lại và theo dõi người thân trên màn hình.",
+      "visual_family": "device interaction",
+      "timed_beats": [
+        {
+          "local_seconds": 0,
+          "spoken_cue": "đầu lát nguồn",
+          "action": "Mascot cầm đầu dây, màn hình có khung ảnh gia đình chưa nối.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 1.167,
+          "spoken_cue": "cụm ý đầu — đối chiếu WAV",
+          "action": "Cắm đầu dây → màn hình sáng với người thân giơ tay chào",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 2.801,
+          "spoken_cue": "cụm ý sau — đối chiếu WAV",
+          "action": "Cắm đầu dây → màn hình sáng với người thân giơ tay chào; mascot nhìn vào mắt người trong màn hình, một nét nối sáng ngắn xuất hiện theo tiếp xúc.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 3.875,
+          "spoken_cue": "đuôi câu / nghỉ",
+          "action": "Hai phía cuộc gọi nhìn nhau. Không hiện giao diện thương hiệu, giấy phép hoặc “thẻ xanh EU”.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        }
+      ],
+      "motion_emphasis_sequence": [
+        "Mascot cầm đầu dây, màn hình có khung ảnh gia đình chưa nối.",
+        "Cắm đầu dây → màn hình sáng với người thân giơ tay chào",
+        "Cắm đầu dây → màn hình sáng với người thân giơ tay chào; mascot nhìn vào mắt người trong màn hình, một nét nối sáng ngắn xuất hiện theo tiếp xúc.",
+        "Hai phía cuộc gọi nhìn nhau. Không hiện giao diện thương hiệu, giấy phép hoặc “thẻ xanh EU”."
+      ],
+      "hf_signature_motion": "Cắm đầu dây → màn hình sáng với người thân giơ tay chào; mascot nhìn vào mắt người trong màn hình, một nét nối sáng ngắn xuất hiện theo tiếp xúc.",
+      "flow_action": null,
+      "flow_camera": null,
+      "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+      "asset_contract": [
+        {
+          "layer": "laptop-shell",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "screen-family",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "cable",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "plug",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "desk",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "source": "approved mascot derivative",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ],
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "laptop",
+          "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+          "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+          "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+        }
+      ],
+      "container_semantics": [
+        {
+          "object_type": "laptop",
+          "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+          "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+          "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+        }
+      ],
+      "visible_text_budget": {
+        "max_simultaneous_words": 2,
+        "max_levels": 2,
+        "paragraphs": 0
+      },
+      "visible_text_inventory": [
+        {
+          "text": "KẾT NỐI",
+          "size_px": 54,
+          "role": "anchor",
+          "simultaneous": false
+        }
+      ],
+      "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Một strip xanh ngắn có nghĩa nhấn ý.",
+      "accent_reason": "Nhấn sự chuyển trọng tâm của câu; không tô cả cảnh.",
+      "accent_treatment": "blue short feature strip",
+      "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+      "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+      "handoff": "Lời chào dẫn bằng cắt cảnh sang cuộc gặp ngoài đời, không match cùng cánh tay.",
+      "continuity_risk": "MPRP không tự cấp quyền cư trú/làm việc toàn EU; không mã hóa quyền đó trong UI.",
+      "pilot": false,
+      "status": "designed_not_produced",
+      "must_keep": [
+        "Gia đình có thể hoạch định kết nối với nơi con đang học.",
+        "Cắm đầu dây → màn hình sáng với người thân giơ tay chào; mascot nhìn vào mắt người trong màn hình, một nét nối sáng ngắn xuất hiện theo tiếp xúc.",
+        "voice/sample bounds",
+        "mascot identity, warm light palette, footer 200px",
+        "zero added CTA or documentary claims"
+      ],
+      "flexible": [
+        "Toạ độ/kích thước trong safe area",
+        "easing/pose/chi tiết nét",
+        "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+      ],
+      "reference_alignment": {
+        "colour_relationships": {
+          "reference_evidence": "Brief: cream/peach/lilac + accents",
+          "candidate_evidence": "S07: warm ground and vivid orange/blue/purple",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "typography_treatment": {
+          "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+          "candidate_evidence": "S07: local shipped font, sparse native text",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "asset_mix": {
+          "reference_evidence": "Reference 04/06: real campus plus drawing",
+          "candidate_evidence": "S07: Valletta photo where geographic evidence is needed; vector/physical paper elsewhere",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "composition": {
+          "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+          "candidate_evidence": "S07: Bàn làm việc lilac, laptop thật về hình học ở x=150–560/y=440–790; dây nối uốn nhẹ xuống mascot tại y=920.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "mascot_language": {
+          "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+          "candidate_evidence": "S07: Cắm dây, chào lại và theo dõi người thân trên màn hình.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "motion_rhythm": {
+          "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+          "candidate_evidence": "S07: Cắm đầu dây → màn hình sáng với người thân giơ tay chào; mascot nhìn vào mắt người trong màn hình, một nét nối sáng ngắn xuất hiện theo tiếp xúc.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        }
+      }
+    },
+    {
+      "scene_number": 8,
+      "scene_id": "S08",
+      "start": 34.32295833333333,
+      "end": 39.80008333333333,
+      "start_sample": 823751,
+      "end_sample": 955202,
+      "source_segments": [
+        8
+      ],
+      "raw_text": "thuận tiện hơn cho những chuyến thăm con cho các kế hoạch học tập, sinh sống hoặc làm việc trong tương lai.",
+      "corrected_text": "thuận tiện hơn cho những chuyến thăm con, cho các kế hoạch học tập, sinh sống, hoặc làm việc trong tương lai.",
+      "semantic_type": "arrival / layered future",
+      "visual_center": "Đến gần những kế hoạch",
+      "organic_motion_need": "Không cần diễn viên/plate hữu cơ; puppet vector có hành động chủ đích.",
+      "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high",
+      "routing_reason": "Đến gần những kế hoạch: hành động chủ đạo là đón / dự định các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ arrival / layered future, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+      "flow_contribution": "none",
+      "hf_contribution": "Vali dừng → hai người chạm tay chào; ánh nhìn chuyển qua các đạo cụ gợi học/sống/việc làm, chỉ một đạo cụ được nhấn ở mỗi nhịp.",
+      "fallback_mode": null,
+      "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+      "character": "yes",
+      "title": "Đến gần những kế hoạch",
+      "takeaway": "Thăm con và các dự định tương lai là những khả năng phải chuẩn bị riêng.",
+      "audio_source": [
+        "inputs/audio/seg_08.wav"
+      ],
+      "duration": 5.477125000000001,
+      "sample_frames": 131451,
+      "raw_segments": [
+        {
+          "seg_id": 8,
+          "segment_id": "seg_08",
+          "audio_slice": "audio_slices/seg_08.wav",
+          "start_sample": 823751,
+          "end_sample": 955202,
+          "sample_frames": 131451,
+          "start": 34.323,
+          "end": 39.8,
+          "duration": 5.477,
+          "sha256": "52dffb05939d5d14871f523c3b722068dd226a1f63922505641e355a0eb7a62a",
+          "raw_text": "thuận tiện hơn cho những chuyến thăm con cho các kế hoạch học tập, sinh sống hoặc làm việc trong tương lai.",
+          "corrected_text": "thuận tiện hơn cho những chuyến thăm con, cho các kế hoạch học tập, sinh sống, hoặc làm việc trong tương lai.",
+          "uncertainties": [
+            "Dấu câu: Thêm dấu phẩy phân tách các cụm liệt kê để tăng tính mạch lạc cho phụ đề/storyboard."
+          ]
+        }
+      ],
+      "render_mode": "HF_ONLY",
+      "style_candidates": [
+        {
+          "id": "hf_existing:warm-doodle-mixed-media",
+          "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+        },
+        {
+          "id": "kurzgesagt",
+          "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+        },
+        {
+          "id": "izometrik",
+          "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+        },
+        {
+          "id": "bauhaus",
+          "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-mixed-media",
+      "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+      "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+      "visual_verb": "đón / dự định",
+      "composition": "Ga đến minh họa với vali phía trước, mascot đón phụ huynh ở y=800–1030; phía sau một vở học, chìa khóa và cặp làm việc ở các lớp sâu khác nhau, không ba card.",
+      "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+      "opening_state": "Mascot nhìn sang vali ở mép khung, phụ huynh vừa đến.",
+      "transformation": "Vali dừng → hai người chạm tay chào; ánh nhìn chuyển qua các đạo cụ gợi học/sống/việc làm, chỉ một đạo cụ được nhấn ở mỗi nhịp.",
+      "final_state": "Cuộc gặp là hiện thực trong ẩn dụ; ba kế hoạch còn ở dạng nét phác mở, không dấu duyệt.",
+      "protagonist_action": "Đón người thân và nhận tay kéo vali, tương tác có tiếp xúc.",
+      "mascot_role": "Đón người thân và nhận tay kéo vali, tương tác có tiếp xúc.",
+      "visual_family": "arrival / layered future",
+      "timed_beats": [
+        {
+          "local_seconds": 0,
+          "spoken_cue": "đầu lát nguồn",
+          "action": "Mascot nhìn sang vali ở mép khung, phụ huynh vừa đến.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 1.369,
+          "spoken_cue": "cụm ý đầu — đối chiếu WAV",
+          "action": "Vali dừng → hai người chạm tay chào",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 3.286,
+          "spoken_cue": "cụm ý sau — đối chiếu WAV",
+          "action": "Vali dừng → hai người chạm tay chào; ánh nhìn chuyển qua các đạo cụ gợi học/sống/việc làm, chỉ một đạo cụ được nhấn ở mỗi nhịp.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 4.546,
+          "spoken_cue": "đuôi câu / nghỉ",
+          "action": "Cuộc gặp là hiện thực trong ẩn dụ; ba kế hoạch còn ở dạng nét phác mở, không dấu duyệt.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        }
+      ],
+      "motion_emphasis_sequence": [
+        "Mascot nhìn sang vali ở mép khung, phụ huynh vừa đến.",
+        "Vali dừng → hai người chạm tay chào",
+        "Vali dừng → hai người chạm tay chào; ánh nhìn chuyển qua các đạo cụ gợi học/sống/việc làm, chỉ một đạo cụ được nhấn ở mỗi nhịp.",
+        "Cuộc gặp là hiện thực trong ẩn dụ; ba kế hoạch còn ở dạng nét phác mở, không dấu duyệt."
+      ],
+      "hf_signature_motion": "Vali dừng → hai người chạm tay chào; ánh nhìn chuyển qua các đạo cụ gợi học/sống/việc làm, chỉ một đạo cụ được nhấn ở mỗi nhịp.",
+      "flow_action": null,
+      "flow_camera": null,
+      "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+      "asset_contract": [
+        {
+          "layer": "arrival-floor",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "luggage",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "parent-puppet",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "study-prop",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "living-prop",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "work-prop",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "source": "approved mascot derivative",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ],
+      "container_required": false,
+      "container_inventory": [],
+      "container_semantics": [],
+      "visible_text_budget": {
+        "max_simultaneous_words": 4,
+        "max_levels": 2,
+        "paragraphs": 0
+      },
+      "visible_text_inventory": [
+        {
+          "text": "KẾ HOẠCH TƯƠNG LAI",
+          "size_px": 54,
+          "role": "anchor",
+          "simultaneous": false
+        }
+      ],
+      "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Chữ trần trên nền sáng; không sweep.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+      "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+      "handoff": "Cắt sang cơ chế phân bổ tài sản cảnh 09 để đổi chủ thể và nhịp hình.",
+      "continuity_risk": "Hồ sơ học tập, cư trú và lao động có điều kiện riêng; không diễn thành một thẻ mở mọi quyền.",
+      "pilot": false,
+      "status": "designed_not_produced",
+      "must_keep": [
+        "Thăm con và các dự định tương lai là những khả năng phải chuẩn bị riêng.",
+        "Vali dừng → hai người chạm tay chào; ánh nhìn chuyển qua các đạo cụ gợi học/sống/việc làm, chỉ một đạo cụ được nhấn ở mỗi nhịp.",
+        "voice/sample bounds",
+        "mascot identity, warm light palette, footer 200px",
+        "zero added CTA or documentary claims"
+      ],
+      "flexible": [
+        "Toạ độ/kích thước trong safe area",
+        "easing/pose/chi tiết nét",
+        "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+      ],
+      "reference_alignment": {
+        "colour_relationships": {
+          "reference_evidence": "Brief: cream/peach/lilac + accents",
+          "candidate_evidence": "S08: warm ground and vivid orange/blue/purple",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "typography_treatment": {
+          "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+          "candidate_evidence": "S08: local shipped font, sparse native text",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "asset_mix": {
+          "reference_evidence": "Reference 04/06: real campus plus drawing",
+          "candidate_evidence": "S08: Valletta photo where geographic evidence is needed; vector/physical paper elsewhere",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "composition": {
+          "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+          "candidate_evidence": "S08: Ga đến minh họa với vali phía trước, mascot đón phụ huynh ở y=800–1030; phía sau một vở học, chìa khóa và cặp làm việc ở các lớp sâu khác nhau, không ba card.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "mascot_language": {
+          "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+          "candidate_evidence": "S08: Đón người thân và nhận tay kéo vali, tương tác có tiếp xúc.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "motion_rhythm": {
+          "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+          "candidate_evidence": "S08: Vali dừng → hai người chạm tay chào; ánh nhìn chuyển qua các đạo cụ gợi học/sống/việc làm, chỉ một đạo cụ được nhấn ở mỗi nhịp.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        }
+      }
+    },
+    {
+      "scene_number": 9,
+      "scene_id": "S09",
+      "start": 39.80008333333333,
+      "end": 47.251,
+      "start_sample": 955202,
+      "end_sample": 1134024,
+      "source_segments": [
+        9,
+        10
+      ],
+      "raw_text": "Đồng thời, diệt sở hữu tài sản ở nhiều thị trường cũng giúp đa dạng hóa dành một đầu tư thay vì phụ thuộc hoàn toàn do một quốc gia.",
+      "corrected_text": "Đồng thời, việc sở hữu tài sản ở nhiều thị trường cũng giúp đa dạng hóa danh mục đầu tư thay vì phụ thuộc hoàn toàn vào một quốc gia.",
+      "semantic_type": "open allocation mechanism",
+      "visual_center": "Phân bổ, không dồn một chỗ",
+      "organic_motion_need": "Không cần; vật thể/quan hệ là chủ thể.",
+      "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high",
+      "routing_reason": "Phân bổ, không dồn một chỗ: hành động chủ đạo là chia / phân bổ các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ open allocation mechanism, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+      "flow_contribution": "none",
+      "hf_contribution": "Các đồng trượt theo rãnh cong tới các bệ khác; camera giữ toàn cơ chế. Mỗi bệ vẫn có một dấu dao động ngắn riêng, không xuất hiện khiên/chốt bảo hiểm.",
+      "fallback_mode": null,
+      "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+      "character": "no",
+      "title": "Phân bổ, không dồn một chỗ",
+      "takeaway": "Đa dạng hóa là phân bổ mức tiếp xúc, không phải bảo đảm lợi nhuận hoặc xóa rủi ro.",
+      "audio_source": [
+        "inputs/audio/seg_09.wav",
+        "inputs/audio/seg_10.wav"
+      ],
+      "duration": 7.450916666666664,
+      "sample_frames": 178822,
+      "raw_segments": [
+        {
+          "seg_id": 9,
+          "segment_id": "seg_09",
+          "audio_slice": "audio_slices/seg_09.wav",
+          "start_sample": 955202,
+          "end_sample": 1072972,
+          "sample_frames": 117770,
+          "start": 39.8,
+          "end": 44.707,
+          "duration": 4.907,
+          "sha256": "c1957bc000a67d0dc6b16f039234bcf9d4bf474a3185aba60ca3ff80e78116f5",
+          "raw_text": "Đồng thời, diệt sở hữu tài sản ở nhiều thị trường cũng giúp đa dạng hóa dành một đầu tư",
+          "corrected_text": "Đồng thời, việc sở hữu tài sản ở nhiều thị trường cũng giúp đa dạng hóa danh mục đầu tư",
+          "uncertainties": [
+            "diệt -> việc: ASR nhận sai âm đầu.",
+            "dành một -> danh mục: ASR nhận sai thuật ngữ tài chính 'danh mục đầu tư'."
+          ]
+        },
+        {
+          "seg_id": 10,
+          "segment_id": "seg_10",
+          "audio_slice": "audio_slices/seg_10.wav",
+          "start_sample": 1072972,
+          "end_sample": 1134024,
+          "sample_frames": 61052,
+          "start": 44.707,
+          "end": 47.251,
+          "duration": 2.544,
+          "sha256": "9a02f7c1654541731b2eb9336fdaa6c2986524ee9c95bc6ed127194fe5e44077",
+          "raw_text": "thay vì phụ thuộc hoàn toàn do một quốc gia.",
+          "corrected_text": "thay vì phụ thuộc hoàn toàn vào một quốc gia.",
+          "uncertainties": [
+            "do -> vào: Giọng nói lướt âm, chuẩn hoá giới từ ngữ pháp tiếng Việt thành 'vào một quốc gia'."
+          ]
+        }
+      ],
+      "render_mode": "HF_ONLY",
+      "style_candidates": [
+        {
+          "id": "hf_existing:warm-doodle-mixed-media",
+          "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+        },
+        {
+          "id": "kurzgesagt",
+          "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+        },
+        {
+          "id": "izometrik",
+          "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+        },
+        {
+          "id": "bauhaus",
+          "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-mixed-media",
+      "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+      "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+      "visual_verb": "chia / phân bổ",
+      "composition": "Bàn cơ khí mở trên nền lilac: một cụm tài sản chung tách ra ba vùng thị trường không đóng khung; ba bệ tròn vật lý lệch cao, liên hệ qua nhánh cong. Không dùng bản đồ giả.",
+      "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+      "opening_state": "Ba đồng tài sản xếp chung tại một bệ, hai bệ còn trống.",
+      "transformation": "Các đồng trượt theo rãnh cong tới các bệ khác; camera giữ toàn cơ chế. Mỗi bệ vẫn có một dấu dao động ngắn riêng, không xuất hiện khiên/chốt bảo hiểm.",
+      "final_state": "Ba phần tài sản ở ba vùng, nét dao động vẫn còn. Nhãn một nơi biến mất trước nhãn nhiều thị trường xuất hiện.",
+      "protagonist_action": "Không mascot: chủ thể là quan hệ phân bổ; tránh bàn tay thần kỳ bảo vệ mọi bệ.",
+      "mascot_role": "Không mascot: chủ thể là quan hệ phân bổ; tránh bàn tay thần kỳ bảo vệ mọi bệ.",
+      "visual_family": "open allocation mechanism",
+      "timed_beats": [
+        {
+          "local_seconds": 0,
+          "spoken_cue": "Đồng thời, việc sở hữu",
+          "action": "Ba đồng cùng một nơi",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 1.25,
+          "spoken_cue": "ở nhiều thị trường",
+          "action": "Mở hai rãnh phân bổ",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 2.55,
+          "spoken_cue": "đa dạng hóa danh mục",
+          "action": "Hai đồng theo rãnh tới vùng khác",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 4.907,
+          "spoken_cue": "thay vì phụ thuộc",
+          "action": "Bệ trung tâm còn một đồng; các vùng vẫn dao động",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 6.35,
+          "spoken_cue": "một quốc gia",
+          "action": "Nhãn nhiều thị trường; giữ phân bổ",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        }
+      ],
+      "motion_emphasis_sequence": [
+        "Ba đồng cùng một nơi",
+        "Mở hai rãnh phân bổ",
+        "Hai đồng theo rãnh tới vùng khác",
+        "Bệ trung tâm còn một đồng; các vùng vẫn dao động",
+        "Nhãn nhiều thị trường; giữ phân bổ"
+      ],
+      "hf_signature_motion": "Các đồng trượt theo rãnh cong tới các bệ khác; camera giữ toàn cơ chế. Mỗi bệ vẫn có một dấu dao động ngắn riêng, không xuất hiện khiên/chốt bảo hiểm.",
+      "flow_action": null,
+      "flow_camera": null,
+      "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+      "asset_contract": [
+        {
+          "layer": "allocation-track",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "market-a-platform",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "market-b-platform",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "market-c-platform",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "token-a",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "token-b",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "token-c",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "local-fluctuation-marks",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "caption-a",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "caption-b",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "implemented_in_editable_pilot_source",
+          "required_separate_layer": true
+        }
+      ],
+      "container_required": false,
+      "container_inventory": [],
+      "container_semantics": [],
+      "visible_text_budget": {
+        "max_simultaneous_words": 3,
+        "max_levels": 2,
+        "paragraphs": 0
+      },
+      "visible_text_inventory": [
+        {
+          "text": "MỘT NƠI",
+          "size_px": 54,
+          "role": "anchor",
+          "simultaneous": false
+        },
+        {
+          "text": "NHIỀU THỊ TRƯỜNG",
+          "size_px": 54,
+          "role": "anchor",
+          "simultaneous": false
+        }
+      ],
+      "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Chữ trần trên nền sáng; không sweep.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+      "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+      "handoff": "Cắt từ ba phân bổ sang nhóm gia đình ở cảnh 10. Không biến ba thị trường thành bốn thế hệ.",
+      "continuity_risk": "Không hiện %/đồ thị hiệu suất; cả ba vẫn có rủi ro. Phân bổ là ẩn dụ, không danh mục được khuyến nghị.",
+      "pilot": true,
+      "status": "pilot_rendered_awaiting_user_review",
+      "must_keep": [
+        "Đa dạng hóa là phân bổ mức tiếp xúc, không phải bảo đảm lợi nhuận hoặc xóa rủi ro.",
+        "Các đồng trượt theo rãnh cong tới các bệ khác; camera giữ toàn cơ chế. Mỗi bệ vẫn có một dấu dao động ngắn riêng, không xuất hiện khiên/chốt bảo hiểm.",
+        "voice/sample bounds",
+        "mascot identity, warm light palette, footer 200px",
+        "zero added CTA or documentary claims"
+      ],
+      "flexible": [
+        "Toạ độ/kích thước trong safe area",
+        "easing/pose/chi tiết nét",
+        "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+      ],
+      "reference_alignment": {
+        "colour_relationships": {
+          "reference_evidence": "Brief: cream/peach/lilac + accents",
+          "candidate_evidence": "qa/S09/mobile-7.20.png; in-progress 4.3s; pilots/S09/index.html",
+          "assessment": "match",
+          "revision_needed": "User acceptance pending. S09 deliberately omits mascot/photo for abstract allocation; does not prove full-film motion continuity."
+        },
+        "typography_treatment": {
+          "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+          "candidate_evidence": "qa/S09/mobile-7.20.png; in-progress 4.3s; pilots/S09/index.html",
+          "assessment": "match",
+          "revision_needed": "User acceptance pending. S09 deliberately omits mascot/photo for abstract allocation; does not prove full-film motion continuity."
+        },
+        "asset_mix": {
+          "reference_evidence": "Reference 04/06: real campus plus drawing",
+          "candidate_evidence": "qa/S09/mobile-7.20.png; in-progress 4.3s; pilots/S09/index.html",
+          "assessment": "partial",
+          "revision_needed": "User acceptance pending. S09 deliberately omits mascot/photo for abstract allocation; does not prove full-film motion continuity."
+        },
+        "composition": {
+          "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+          "candidate_evidence": "qa/S09/mobile-7.20.png; in-progress 4.3s; pilots/S09/index.html",
+          "assessment": "match",
+          "revision_needed": "User acceptance pending. S09 deliberately omits mascot/photo for abstract allocation; does not prove full-film motion continuity."
+        },
+        "mascot_language": {
+          "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+          "candidate_evidence": "qa/S09/mobile-7.20.png; in-progress 4.3s; pilots/S09/index.html",
+          "assessment": "match",
+          "revision_needed": "User acceptance pending. S09 deliberately omits mascot/photo for abstract allocation; does not prove full-film motion continuity."
+        },
+        "motion_rhythm": {
+          "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+          "candidate_evidence": "qa/S09/mobile-7.20.png; in-progress 4.3s; pilots/S09/index.html",
+          "assessment": "partial",
+          "revision_needed": "User acceptance pending. S09 deliberately omits mascot/photo for abstract allocation; does not prove full-film motion continuity."
+        }
+      },
+      "asset_contract_evidence": "pilots/S09/index.html; pilots/S09/assets/layered-art.svg",
+      "approved_final_frame": {
+        "scene_id": "S09",
+        "version": "final-frame-v2",
+        "approval_status": "approved",
+        "approval_scope": "static final frame / allocation-table visual and composition only",
+        "user_message_verbatim": "duyệt s09 v2",
+        "frame_path": "revisions/final-frames-v2/S09/frames/frame-00-at-0.5s.png",
+        "frame_sha256": "962a09a5e787f14258c5d46ba9a2c5013b00be2d31579188e9a2f6425b499625",
+        "editable_source": "revisions/final-frames-v2/S09/index.html",
+        "motion_approved": false,
+        "full_film_production_authorized": false
+      },
+      "latest_design_revision": "S09 v2: bàn gỗ phân bổ, chốt chia, rãnh cong và nhóm tài sản nhiều lớp; frame tĩnh đã duyệt, chuyển động chưa được dựng/duyệt.",
+      "latest_motion_revision": {
+        "scene_id": "S09",
+        "revision": "approved-frames-motion-r1",
+        "based_on_approved_frame": "S09-v2",
+        "duration": 7.450916666666667,
+        "source_start_sample": 955202,
+        "source_end_sample": 1134024,
+        "proof_times": [
+          0.15,
+          2.55,
+          3.65,
+          4.85,
+          7.1
+        ],
+        "motion_approval": "pending_user_review",
+        "final_frame_approval": "previously_approved",
+        "timing_evidence": "Original whisper_raw word times used as approximate cue evidence, not independent perceptual listening. S05 bất động sản at 22.50s global ~=4.349s local. S09 nhiều thị trường at 42.24s global ~=2.440s local.",
+        "signature": "Mechanical selector rotates; six differentiated asset tokens travel authored curved channels from tray to three markets; buildings develop at arrival; no profit or guarantee symbols.",
+        "video_path": "revisions\\pilots-approved-frames-r1\\S09\\renders\\pilot.mp4",
+        "video_sha256": "a6cbf6ec62a12bf74f4cdcc076f27c1ac839f4e984c35aeba1bf2dc9b44cd90e",
+        "video_frames": 224,
+        "video_duration": 7.466667,
+        "audio_duration": 7.466667,
+        "original_pcm_bit_exact": true,
+        "aac_correlation": 0.9999078024413619,
+        "decoded_rms": 0.14664183208101447,
+        "hyperframes_check_ok": true,
+        "layout_warnings": [
+          {
+            "code": "rotation_pivot_drift",
+            "severity": "warning",
+            "time": 7.1,
+            "selector": "#r09-selector",
+            "dataAttributes": {},
+            "sourceFile": "index.html",
+            "bbox": {
+              "x": 198,
+              "y": 478,
+              "width": 55,
+              "height": 70
+            },
+            "rect": {
+              "left": 198,
+              "top": 478,
+              "right": 253,
+              "bottom": 548,
+              "width": 55,
+              "height": 70
+            },
+            "message": "Rotating element's bounding-box center drifts 19px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).",
+            "fixHint": "The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.",
+            "firstSeen": 7.1,
+            "lastSeen": 7.1,
+            "occurrences": 1,
+            "heldMs": 0,
+            "times": [
+              7.1
+            ]
+          }
+        ],
+        "warning_interpretation": "S09 rotation_pivot_drift is intentional: selector rotates about the visible pin at (211,528), not its bounding-box center. Keep the physical hinge.",
+        "final_frame_approved_reference": "revisions/final-frames-v2/S09/frames/frame-00-at-0.5s.png",
+        "final_frame_mean_absolute_pixel_error": 1.9727029079861111,
+        "final_frame_pixel_match_fraction": 0.2678266059027778,
+        "frame_proofs": [
+          "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-0.15.png",
+          "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-2.55.png",
+          "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-3.65.png",
+          "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-4.85.png",
+          "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-7.10.png"
+        ],
+        "motion_status": "rendered_pending_user_review"
+      }
+    },
+    {
+      "scene_number": 10,
+      "scene_id": "S10",
+      "start": 47.251,
+      "end": 53.407875,
+      "start_sample": 1134024,
+      "end_sample": 1281789,
+      "source_segments": [
+        11
+      ],
+      "raw_text": "Chị giới khoảng 3,8 tỷ đồng, chương trình Thế San Manta mang đến cơ hội định cư cho 4 thế hệ.",
+      "corrected_text": "Chỉ với khoảng 3,8 tỷ đồng, chương trình Thẻ Xanh Malta mang đến cơ hội định cư cho 4 thế hệ.",
+      "semantic_type": "family album / genealogy",
+      "visual_center": "Gia đình nhiều thế hệ — có điều kiện",
+      "organic_motion_need": "Không cần diễn viên/plate hữu cơ; puppet vector có hành động chủ đích.",
+      "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high",
+      "routing_reason": "Gia đình nhiều thế hệ — có điều kiện: hành động chủ đạo là mở quan hệ các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ family album / genealogy, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+      "flow_contribution": "none",
+      "hf_contribution": "Các nhánh gia đình mở lần lượt tới con, cha mẹ, ông bà. Tới cụm “4 thế hệ” mới đủ bốn cấp; ghi ngắn “Theo điều kiện MPRP”, không đóng dấu thông qua.",
+      "fallback_mode": null,
+      "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+      "character": "yes",
+      "title": "Gia đình nhiều thế hệ — có điều kiện",
+      "takeaway": "MPRP có thể bao gồm tới bốn thế hệ đủ điều kiện; con số khoảng 3,8 tỷ trong voice đã được chủ nội dung xác minh.",
+      "audio_source": [
+        "inputs/audio/seg_11.wav"
+      ],
+      "duration": 6.156874999999999,
+      "sample_frames": 147765,
+      "raw_segments": [
+        {
+          "seg_id": 11,
+          "segment_id": "seg_11",
+          "audio_slice": "audio_slices/seg_11.wav",
+          "start_sample": 1134024,
+          "end_sample": 1281789,
+          "sample_frames": 147765,
+          "start": 47.251,
+          "end": 53.408,
+          "duration": 6.157,
+          "sha256": "896700b281fa56ebba34c28bd695bc49ce565471536bbb46c572b1b4790f28c5",
+          "raw_text": "Chị giới khoảng 3,8 tỷ đồng, chương trình Thế San Manta mang đến cơ hội định cư cho 4 thế hệ.",
+          "corrected_text": "Chỉ với khoảng 3,8 tỷ đồng, chương trình Thẻ Xanh Malta mang đến cơ hội định cư cho 4 thế hệ.",
+          "uncertainties": [
+            "Chị giới -> Chỉ với: ASR nhận nhầm thanh âm.",
+            "Thế San Manta -> Thẻ Xanh Malta: ASR nhận sai tên chương trình 'Thẻ Xanh Malta' (chính sách Thường trú nhân Malta - MPRP)."
+          ]
+        }
+      ],
+      "render_mode": "HF_ONLY",
+      "style_candidates": [
+        {
+          "id": "hf_existing:warm-doodle-mixed-media",
+          "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+        },
+        {
+          "id": "kurzgesagt",
+          "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+        },
+        {
+          "id": "izometrik",
+          "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+        },
+        {
+          "id": "bauhaus",
+          "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-mixed-media",
+      "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+      "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+      "visual_verb": "mở quan hệ",
+      "composition": "Một trang album gia đình thực sự, mở chéo trên nền cream, bốn thế hệ đặt theo quan hệ gia phả chứ không bốn trẻ kế tiếp; mascot đỡ góc album.",
+      "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+      "opening_state": "Album hé với nhóm đương đơn và vợ/chồng; không hiện con số tiền.",
+      "transformation": "Các nhánh gia đình mở lần lượt tới con, cha mẹ, ông bà. Tới cụm “4 thế hệ” mới đủ bốn cấp; ghi ngắn “Theo điều kiện MPRP”, không đóng dấu thông qua.",
+      "final_state": "Bốn cấp quan hệ nối đúng, tất cả nằm trong một hồ sơ có điều kiện, không hộ chiếu quốc tịch.",
+      "protagonist_action": "Mascot giữ album và hướng ánh nhìn theo nhánh, không trao thẻ cư trú.",
+      "mascot_role": "Mascot giữ album và hướng ánh nhìn theo nhánh, không trao thẻ cư trú.",
+      "visual_family": "family album / genealogy",
+      "timed_beats": [
+        {
+          "local_seconds": 0,
+          "spoken_cue": "đầu lát nguồn",
+          "action": "Album hé với nhóm đương đơn và vợ/chồng; không hiện con số tiền.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 1.539,
+          "spoken_cue": "cụm ý đầu — đối chiếu WAV",
+          "action": "Các nhánh gia đình mở lần lượt tới con, cha mẹ, ông bà. Tới cụm “4 thế hệ” mới đủ bốn cấp",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 3.694,
+          "spoken_cue": "cụm ý sau — đối chiếu WAV",
+          "action": "Các nhánh gia đình mở lần lượt tới con, cha mẹ, ông bà. Tới cụm “4 thế hệ” mới đủ bốn cấp; ghi ngắn “Theo điều kiện MPRP”, không đóng dấu thông qua.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 5.11,
+          "spoken_cue": "đuôi câu / nghỉ",
+          "action": "Bốn cấp quan hệ nối đúng, tất cả nằm trong một hồ sơ có điều kiện, không hộ chiếu quốc tịch.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        }
+      ],
+      "motion_emphasis_sequence": [
+        "Album hé với nhóm đương đơn và vợ/chồng; không hiện con số tiền.",
+        "Các nhánh gia đình mở lần lượt tới con, cha mẹ, ông bà. Tới cụm “4 thế hệ” mới đủ bốn cấp",
+        "Các nhánh gia đình mở lần lượt tới con, cha mẹ, ông bà. Tới cụm “4 thế hệ” mới đủ bốn cấp; ghi ngắn “Theo điều kiện MPRP”, không đóng dấu thông qua.",
+        "Bốn cấp quan hệ nối đúng, tất cả nằm trong một hồ sơ có điều kiện, không hộ chiếu quốc tịch."
+      ],
+      "hf_signature_motion": "Các nhánh gia đình mở lần lượt tới con, cha mẹ, ông bà. Tới cụm “4 thế hệ” mới đủ bốn cấp; ghi ngắn “Theo điều kiện MPRP”, không đóng dấu thông qua.",
+      "flow_action": null,
+      "flow_camera": null,
+      "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+      "asset_contract": [
+        {
+          "layer": "album-spread",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "applicant-couple",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "children",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "parents",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "grandparents",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "kinship-connectors",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "source": "approved mascot derivative",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ],
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "family album",
+          "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+          "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+          "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+        }
+      ],
+      "container_semantics": [
+        {
+          "object_type": "family album",
+          "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+          "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+          "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+        }
+      ],
+      "visible_text_budget": {
+        "max_simultaneous_words": 8,
+        "max_levels": 2,
+        "paragraphs": 0
+      },
+      "visible_text_inventory": [
+        {
+          "text": "TỚI 4 THẾ HỆ",
+          "size_px": 54,
+          "role": "anchor",
+          "simultaneous": true
+        },
+        {
+          "text": "Theo điều kiện MPRP",
+          "size_px": 32,
+          "role": "condition",
+          "simultaneous": true
+        }
+      ],
+      "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Chữ trần trên nền sáng; không sweep.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+      "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+      "handoff": "Lật sang mặt sau album như vật liệu giấy để cắt sang chuẩn bị cho con.",
+      "continuity_risk": "OWNER_CONFIRMED: Chủ nội dung đã xác minh text “3.8 tỷ”. Giữ cách diễn đạt “khoảng 3,8 tỷ” trong voice. Không tự mở rộng thành giá mua nhà hoặc tổng phí trọn gói; bản thiết kế hiện tại vẫn tập trung gia phả và điều kiện MPRP.",
+      "pilot": false,
+      "status": "designed_not_produced",
+      "must_keep": [
+        "MPRP có thể bao gồm tới bốn thế hệ đủ điều kiện; con số khoảng 3,8 tỷ trong voice đã được chủ nội dung xác minh.",
+        "Các nhánh gia đình mở lần lượt tới con, cha mẹ, ông bà. Tới cụm “4 thế hệ” mới đủ bốn cấp; ghi ngắn “Theo điều kiện MPRP”, không đóng dấu thông qua.",
+        "voice/sample bounds",
+        "mascot identity, warm light palette, footer 200px",
+        "zero added CTA or documentary claims"
+      ],
+      "flexible": [
+        "Toạ độ/kích thước trong safe area",
+        "easing/pose/chi tiết nét",
+        "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+      ],
+      "reference_alignment": {
+        "colour_relationships": {
+          "reference_evidence": "Brief: cream/peach/lilac + accents",
+          "candidate_evidence": "S10: warm ground and vivid orange/blue/purple",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "typography_treatment": {
+          "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+          "candidate_evidence": "S10: local shipped font, sparse native text",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "asset_mix": {
+          "reference_evidence": "Reference 04/06: real campus plus drawing",
+          "candidate_evidence": "S10: Valletta photo where geographic evidence is needed; vector/physical paper elsewhere",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "composition": {
+          "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+          "candidate_evidence": "S10: Một trang album gia đình thực sự, mở chéo trên nền cream, bốn thế hệ đặt theo quan hệ gia phả chứ không bốn trẻ kế tiếp; mascot đỡ góc album.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "mascot_language": {
+          "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+          "candidate_evidence": "S10: Mascot giữ album và hướng ánh nhìn theo nhánh, không trao thẻ cư trú.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "motion_rhythm": {
+          "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+          "candidate_evidence": "S10: Các nhánh gia đình mở lần lượt tới con, cha mẹ, ông bà. Tới cụm “4 thế hệ” mới đủ bốn cấp; ghi ngắn “Theo điều kiện MPRP”, không đóng dấu thông qua.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        }
+      },
+      "price_confirmation": {
+        "claim_id": "S10_price_3_8_billion_VND",
+        "user_message_verbatim": "mình xác minh text \"3.8 tỷ\"",
+        "confirmed_by": "project owner in this chat",
+        "confirmation_status": "owner_confirmed",
+        "canonical_text": "khoảng 3,8 tỷ đồng",
+        "scope": "Price text in original narration; no new all-inclusive or property-purchase-price claim.",
+        "independently_verified_by_codex": false,
+        "supporting_cost_breakdown_supplied": false,
+        "director_price_hold": "resolved_by_owner_confirmation",
+        "storyboard_pilot_approval": "pending",
+        "full_film_production_authorized": false,
+        "audio_or_pilot_render_changes": false
+      }
+    },
+    {
+      "scene_number": 11,
+      "scene_id": "S11",
+      "start": 53.407875,
+      "end": 60.21970833333334,
+      "start_sample": 1281789,
+      "end_sample": 1445273,
+      "source_segments": [
+        12,
+        13
+      ],
+      "raw_text": "Đây không chỉ là quyết định đầu tư vào một bước động sáng, mà còn là quyết định đầu tư vào sự chuẩn bị cho tương lai của con gái",
+      "corrected_text": "Đây không chỉ là quyết định đầu tư vào một bất động sản, mà còn là quyết định đầu tư vào sự chuẩn bị cho tương lai của con cái",
+      "semantic_type": "close-to-wide preparation",
+      "visual_center": "Chuẩn bị thay vì chỉ sở hữu",
+      "organic_motion_need": "Không cần diễn viên/plate hữu cơ; puppet vector có hành động chủ đích.",
+      "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high",
+      "routing_reason": "Chuẩn bị thay vì chỉ sở hữu: hành động chủ đạo là đặt / chuẩn bị các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ close-to-wide preparation, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+      "flow_contribution": "none",
+      "hf_contribution": "Mascot đặt chìa khóa xuống rồi sắp vở vào ba lô; trọng tâm ánh sáng chuyển từ chìa sang những thứ đã chuẩn bị.",
+      "fallback_mode": null,
+      "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+      "character": "yes",
+      "title": "Chuẩn bị thay vì chỉ sở hữu",
+      "takeaway": "Trọng tâm chuyển từ một bất động sản sang sự chuẩn bị cho tương lai của con.",
+      "audio_source": [
+        "inputs/audio/seg_12.wav",
+        "inputs/audio/seg_13.wav"
+      ],
+      "duration": 6.81183333333334,
+      "sample_frames": 163484,
+      "raw_segments": [
+        {
+          "seg_id": 12,
+          "segment_id": "seg_12",
+          "audio_slice": "audio_slices/seg_12.wav",
+          "start_sample": 1281789,
+          "end_sample": 1358457,
+          "sample_frames": 76668,
+          "start": 53.408,
+          "end": 56.602,
+          "duration": 3.195,
+          "sha256": "c691de1563122b4b3ab83057799fde2c7b11426b712854add874ea0b2528e73b",
+          "raw_text": "Đây không chỉ là quyết định đầu tư vào một bước động sáng,",
+          "corrected_text": "Đây không chỉ là quyết định đầu tư vào một bất động sản,",
+          "uncertainties": [
+            "bước động sáng -> bất động sản: ASR nhận sai âm vị."
+          ]
+        },
+        {
+          "seg_id": 13,
+          "segment_id": "seg_13",
+          "audio_slice": "audio_slices/seg_13.wav",
+          "start_sample": 1358457,
+          "end_sample": 1445273,
+          "sample_frames": 86816,
+          "start": 56.602,
+          "end": 60.22,
+          "duration": 3.617,
+          "sha256": "765fbab61eca559ba64c10e1f702e2158a247bad613e01c3f2ad1a1c4f25057c",
+          "raw_text": "mà còn là quyết định đầu tư vào sự chuẩn bị cho tương lai của con gái",
+          "corrected_text": "mà còn là quyết định đầu tư vào sự chuẩn bị cho tương lai của con cái",
+          "uncertainties": [
+            "con gái -> con cái: Giọng đọc phát âm âm đuôi hơi giống 'con gái'. Tuy nhiên trong ngữ cảnh phân tích gia đình và con du học nói chung, từ chuẩn là 'con cái'. Nếu kịch bản gốc là câu chuyện riêng về con gái, Đạo diễn có thể giữ 'con gái'. Tạm ghi chú để Đạo diễn thẩm duyệt."
+          ]
+        }
+      ],
+      "render_mode": "HF_ONLY",
+      "style_candidates": [
+        {
+          "id": "hf_existing:warm-doodle-mixed-media",
+          "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+        },
+        {
+          "id": "kurzgesagt",
+          "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+        },
+        {
+          "id": "izometrik",
+          "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+        },
+        {
+          "id": "bauhaus",
+          "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-mixed-media",
+      "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+      "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+      "visual_verb": "đặt / chuẩn bị",
+      "composition": "Cận chìa khóa nhà đặt trên bàn; camera nới ra lộ ba lô mở, vở và dụng cụ học. Không thêm hộ chiếu hay giấy trúng tuyển.",
+      "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+      "opening_state": "Chìa khóa là tiêu điểm duy nhất, mascot ngoài mép hình.",
+      "transformation": "Mascot đặt chìa khóa xuống rồi sắp vở vào ba lô; trọng tâm ánh sáng chuyển từ chìa sang những thứ đã chuẩn bị.",
+      "final_state": "Ba lô đã sẵn sàng nhưng chưa tự bước tới kết quả nghề nghiệp.",
+      "protagonist_action": "Sắp xếp đồ học đúng với ý chuẩn bị; không bắt chìa khóa biến thành bằng cấp.",
+      "mascot_role": "Sắp xếp đồ học đúng với ý chuẩn bị; không bắt chìa khóa biến thành bằng cấp.",
+      "visual_family": "close-to-wide preparation",
+      "timed_beats": [
+        {
+          "local_seconds": 0,
+          "spoken_cue": "đầu lát nguồn",
+          "action": "Chìa khóa là tiêu điểm duy nhất, mascot ngoài mép hình.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 1.703,
+          "spoken_cue": "cụm ý đầu — đối chiếu WAV",
+          "action": "Mascot đặt chìa khóa xuống rồi sắp vở vào ba lô",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 4.087,
+          "spoken_cue": "cụm ý sau — đối chiếu WAV",
+          "action": "Mascot đặt chìa khóa xuống rồi sắp vở vào ba lô; trọng tâm ánh sáng chuyển từ chìa sang những thứ đã chuẩn bị.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 5.654,
+          "spoken_cue": "đuôi câu / nghỉ",
+          "action": "Ba lô đã sẵn sàng nhưng chưa tự bước tới kết quả nghề nghiệp.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        }
+      ],
+      "motion_emphasis_sequence": [
+        "Chìa khóa là tiêu điểm duy nhất, mascot ngoài mép hình.",
+        "Mascot đặt chìa khóa xuống rồi sắp vở vào ba lô",
+        "Mascot đặt chìa khóa xuống rồi sắp vở vào ba lô; trọng tâm ánh sáng chuyển từ chìa sang những thứ đã chuẩn bị.",
+        "Ba lô đã sẵn sàng nhưng chưa tự bước tới kết quả nghề nghiệp."
+      ],
+      "hf_signature_motion": "Mascot đặt chìa khóa xuống rồi sắp vở vào ba lô; trọng tâm ánh sáng chuyển từ chìa sang những thứ đã chuẩn bị.",
+      "flow_action": null,
+      "flow_camera": null,
+      "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+      "asset_contract": [
+        {
+          "layer": "house-key",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "table",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "backpack-open",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "notebook",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "study-tools",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "source": "approved mascot derivative",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ],
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "backpack",
+          "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+          "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+          "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+        }
+      ],
+      "container_semantics": [
+        {
+          "object_type": "backpack",
+          "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+          "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+          "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+        }
+      ],
+      "visible_text_budget": {
+        "max_simultaneous_words": 5,
+        "max_levels": 2,
+        "paragraphs": 0
+      },
+      "visible_text_inventory": [
+        {
+          "text": "CHUẨN BỊ CHO TƯƠNG LAI",
+          "size_px": 46,
+          "role": "anchor",
+          "simultaneous": false
+        }
+      ],
+      "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Một strip xanh ngắn có nghĩa nhấn ý.",
+      "accent_reason": "Nhấn sự chuyển trọng tâm của câu; không tô cả cảnh.",
+      "accent_treatment": "blue short feature strip",
+      "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+      "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+      "handoff": "Cắt từ vật liệu vở sang môi trường cơ hội cảnh 12; không kéo cùng ba lô qua từng bước chân.",
+      "continuity_risk": "Audio “con gái/con cái” chưa giải quyết bằng nghe độc lập; text trung tính không chốt giới tính.",
+      "pilot": false,
+      "status": "designed_not_produced",
+      "must_keep": [
+        "Trọng tâm chuyển từ một bất động sản sang sự chuẩn bị cho tương lai của con.",
+        "Mascot đặt chìa khóa xuống rồi sắp vở vào ba lô; trọng tâm ánh sáng chuyển từ chìa sang những thứ đã chuẩn bị.",
+        "voice/sample bounds",
+        "mascot identity, warm light palette, footer 200px",
+        "zero added CTA or documentary claims"
+      ],
+      "flexible": [
+        "Toạ độ/kích thước trong safe area",
+        "easing/pose/chi tiết nét",
+        "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+      ],
+      "reference_alignment": {
+        "colour_relationships": {
+          "reference_evidence": "Brief: cream/peach/lilac + accents",
+          "candidate_evidence": "S11: warm ground and vivid orange/blue/purple",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "typography_treatment": {
+          "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+          "candidate_evidence": "S11: local shipped font, sparse native text",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "asset_mix": {
+          "reference_evidence": "Reference 04/06: real campus plus drawing",
+          "candidate_evidence": "S11: Valletta photo where geographic evidence is needed; vector/physical paper elsewhere",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "composition": {
+          "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+          "candidate_evidence": "S11: Cận chìa khóa nhà đặt trên bàn; camera nới ra lộ ba lô mở, vở và dụng cụ học. Không thêm hộ chiếu hay giấy trúng tuyển.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "mascot_language": {
+          "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+          "candidate_evidence": "S11: Sắp xếp đồ học đúng với ý chuẩn bị; không bắt chìa khóa biến thành bằng cấp.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "motion_rhythm": {
+          "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+          "candidate_evidence": "S11: Mascot đặt chìa khóa xuống rồi sắp vở vào ba lô; trọng tâm ánh sáng chuyển từ chìa sang những thứ đã chuẩn bị.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        }
+      }
+    },
+    {
+      "scene_number": 12,
+      "scene_id": "S12",
+      "start": 60.21970833333334,
+      "end": 63.75116666666667,
+      "start_sample": 1445273,
+      "end_sample": 1530028,
+      "source_segments": [
+        14
+      ],
+      "raw_text": "và những cơ hội mà các thế hệ sau có thể nắm bắt tại Châu Âu.",
+      "corrected_text": "và những cơ hội mà các thế hệ sau có thể nắm bắt tại Châu Âu.",
+      "semantic_type": "learning workshop",
+      "visual_center": "Cơ hội có thể nắm bắt",
+      "organic_motion_need": "Không cần diễn viên/plate hữu cơ; puppet vector có hành động chủ đích.",
+      "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high",
+      "routing_reason": "Cơ hội có thể nắm bắt: hành động chủ đạo là với / thử các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ learning workshop, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+      "flow_contribution": "none",
+      "hf_contribution": "Mascot kéo ghế nhỏ đến gần rồi với lấy dụng cụ, bắt đầu thao tác ở bàn thực hành; nhấn hành động chủ động nắm cơ hội.",
+      "fallback_mode": null,
+      "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+      "character": "yes",
+      "title": "Cơ hội có thể nắm bắt",
+      "takeaway": "Thế hệ sau có thêm khả năng lựa chọn, vẫn cần nỗ lực và điều kiện.",
+      "audio_source": [
+        "inputs/audio/seg_14.wav"
+      ],
+      "duration": 3.531458333333333,
+      "sample_frames": 84755,
+      "raw_segments": [
+        {
+          "seg_id": 14,
+          "segment_id": "seg_14",
+          "audio_slice": "audio_slices/seg_14.wav",
+          "start_sample": 1445273,
+          "end_sample": 1530028,
+          "sample_frames": 84755,
+          "start": 60.22,
+          "end": 63.751,
+          "duration": 3.531,
+          "sha256": "dd4a08a93c400c6b52ac0ec599b0340f51429fad3d1ff14ad4540ee44981f16f",
+          "raw_text": "và những cơ hội mà các thế hệ sau có thể nắm bắt tại Châu Âu.",
+          "corrected_text": "và những cơ hội mà các thế hệ sau có thể nắm bắt tại Châu Âu.",
+          "uncertainties": []
+        }
+      ],
+      "render_mode": "HF_ONLY",
+      "style_candidates": [
+        {
+          "id": "hf_existing:warm-doodle-mixed-media",
+          "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+        },
+        {
+          "id": "kurzgesagt",
+          "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+        },
+        {
+          "id": "izometrik",
+          "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+        },
+        {
+          "id": "bauhaus",
+          "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-mixed-media",
+      "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+      "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+      "visual_verb": "với / thử",
+      "composition": "Một xưởng học nhỏ trên nền lilac, cánh tay mascot đưa tới dụng cụ thực hành treo ở nhiều cao độ; không bảng thống kê việc làm.",
+      "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+      "opening_state": "Dụng cụ ở ngoài tầm tay, mascot nhìn thử khoảng cách.",
+      "transformation": "Mascot kéo ghế nhỏ đến gần rồi với lấy dụng cụ, bắt đầu thao tác ở bàn thực hành; nhấn hành động chủ động nắm cơ hội.",
+      "final_state": "Đã bắt đầu học/làm thử, không huy chương hoặc hợp đồng.",
+      "protagonist_action": "Đưa ghế, với tay, cầm dụng cụ và tập thử.",
+      "mascot_role": "Đưa ghế, với tay, cầm dụng cụ và tập thử.",
+      "visual_family": "learning workshop",
+      "timed_beats": [
+        {
+          "local_seconds": 0,
+          "spoken_cue": "đầu lát nguồn",
+          "action": "Dụng cụ ở ngoài tầm tay, mascot nhìn thử khoảng cách.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 0.883,
+          "spoken_cue": "cụm ý đầu — đối chiếu WAV",
+          "action": "Mascot kéo ghế nhỏ đến gần rồi với lấy dụng cụ, bắt đầu thao tác ở bàn thực hành",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 2.119,
+          "spoken_cue": "cụm ý sau — đối chiếu WAV",
+          "action": "Mascot kéo ghế nhỏ đến gần rồi với lấy dụng cụ, bắt đầu thao tác ở bàn thực hành; nhấn hành động chủ động nắm cơ hội.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 2.931,
+          "spoken_cue": "đuôi câu / nghỉ",
+          "action": "Đã bắt đầu học/làm thử, không huy chương hoặc hợp đồng.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        }
+      ],
+      "motion_emphasis_sequence": [
+        "Dụng cụ ở ngoài tầm tay, mascot nhìn thử khoảng cách.",
+        "Mascot kéo ghế nhỏ đến gần rồi với lấy dụng cụ, bắt đầu thao tác ở bàn thực hành",
+        "Mascot kéo ghế nhỏ đến gần rồi với lấy dụng cụ, bắt đầu thao tác ở bàn thực hành; nhấn hành động chủ động nắm cơ hội.",
+        "Đã bắt đầu học/làm thử, không huy chương hoặc hợp đồng."
+      ],
+      "hf_signature_motion": "Mascot kéo ghế nhỏ đến gần rồi với lấy dụng cụ, bắt đầu thao tác ở bàn thực hành; nhấn hành động chủ động nắm cơ hội.",
+      "flow_action": null,
+      "flow_camera": null,
+      "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+      "asset_contract": [
+        {
+          "layer": "workshop-table",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "stool",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "tool-hooks",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "chosen-tool",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "source": "approved mascot derivative",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ],
+      "container_required": false,
+      "container_inventory": [],
+      "container_semantics": [],
+      "visible_text_budget": {
+        "max_simultaneous_words": 2,
+        "max_levels": 2,
+        "paragraphs": 0
+      },
+      "visible_text_inventory": [
+        {
+          "text": "CƠ HỘI",
+          "size_px": 54,
+          "role": "anchor",
+          "simultaneous": false
+        }
+      ],
+      "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Chữ trần trên nền sáng; không sweep.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+      "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+      "handoff": "Cắt sang quy mô thế giới cảnh 13; thay tỷ lệ để không lặp cảnh nhân vật đi đường.",
+      "continuity_risk": "Không thêm ngành cụ thể hoặc lời hứa tuyển dụng.",
+      "pilot": false,
+      "status": "designed_not_produced",
+      "must_keep": [
+        "Thế hệ sau có thêm khả năng lựa chọn, vẫn cần nỗ lực và điều kiện.",
+        "Mascot kéo ghế nhỏ đến gần rồi với lấy dụng cụ, bắt đầu thao tác ở bàn thực hành; nhấn hành động chủ động nắm cơ hội.",
+        "voice/sample bounds",
+        "mascot identity, warm light palette, footer 200px",
+        "zero added CTA or documentary claims"
+      ],
+      "flexible": [
+        "Toạ độ/kích thước trong safe area",
+        "easing/pose/chi tiết nét",
+        "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+      ],
+      "reference_alignment": {
+        "colour_relationships": {
+          "reference_evidence": "Brief: cream/peach/lilac + accents",
+          "candidate_evidence": "S12: warm ground and vivid orange/blue/purple",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "typography_treatment": {
+          "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+          "candidate_evidence": "S12: local shipped font, sparse native text",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "asset_mix": {
+          "reference_evidence": "Reference 04/06: real campus plus drawing",
+          "candidate_evidence": "S12: Valletta photo where geographic evidence is needed; vector/physical paper elsewhere",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "composition": {
+          "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+          "candidate_evidence": "S12: Một xưởng học nhỏ trên nền lilac, cánh tay mascot đưa tới dụng cụ thực hành treo ở nhiều cao độ; không bảng thống kê việc làm.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "mascot_language": {
+          "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+          "candidate_evidence": "S12: Đưa ghế, với tay, cầm dụng cụ và tập thử.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "motion_rhythm": {
+          "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+          "candidate_evidence": "S12: Mascot kéo ghế nhỏ đến gần rồi với lấy dụng cụ, bắt đầu thao tác ở bàn thực hành; nhấn hành động chủ động nắm cơ hội.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        }
+      }
+    },
+    {
+      "scene_number": 13,
+      "scene_id": "S13",
+      "start": 63.75116666666667,
+      "end": 68.304375,
+      "start_sample": 1530028,
+      "end_sample": 1639305,
+      "source_segments": [
+        15
+      ],
+      "raw_text": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới.",
+      "corrected_text": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới.",
+      "semantic_type": "paper globe / scale change",
+      "visual_center": "Cùng mở tầm nhìn",
+      "organic_motion_need": "Không cần diễn viên/plate hữu cơ; puppet vector có hành động chủ đích.",
+      "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high",
+      "routing_reason": "Cùng mở tầm nhìn: hành động chủ đạo là xoay / mở phạm vi các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ paper globe / scale change, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+      "flow_contribution": "none",
+      "hf_contribution": "Mascot xoay địa cầu để lộ phần còn lại; dấu học tập đi trước, dấu tài sản mở một hướng khác sau cụm “cũng có thể”.",
+      "fallback_mode": null,
+      "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+      "character": "yes",
+      "title": "Cùng mở tầm nhìn",
+      "takeaway": "Việc con học ở nước ngoài gợi gia đình cân nhắc phạm vi hoạch định tài sản rộng hơn.",
+      "audio_source": [
+        "inputs/audio/seg_15.wav"
+      ],
+      "duration": 4.553208333333323,
+      "sample_frames": 109277,
+      "raw_segments": [
+        {
+          "seg_id": 15,
+          "segment_id": "seg_15",
+          "audio_slice": "audio_slices/seg_15.wav",
+          "start_sample": 1530028,
+          "end_sample": 1639305,
+          "sample_frames": 109277,
+          "start": 63.751,
+          "end": 68.304,
+          "duration": 4.553,
+          "sha256": "af2f4845dbace74ad01664da0c420f9a6e1da190801d1a6251c1dbb6f8fb9d36",
+          "raw_text": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới.",
+          "corrected_text": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới.",
+          "uncertainties": []
+        }
+      ],
+      "render_mode": "HF_ONLY",
+      "style_candidates": [
+        {
+          "id": "hf_existing:warm-doodle-mixed-media",
+          "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+        },
+        {
+          "id": "kurzgesagt",
+          "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+        },
+        {
+          "id": "izometrik",
+          "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+        },
+        {
+          "id": "bauhaus",
+          "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-mixed-media",
+      "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+      "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+      "visual_verb": "xoay / mở phạm vi",
+      "composition": "Địa cầu giấy lớn ở y=440–940; một đường học tập và một dấu tài sản bắt đầu từ hai vị trí lớp trước, không chạy theo cùng quỹ đạo.",
+      "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+      "opening_state": "Mascot kéo quai vali cạnh địa cầu chỉ mở một nửa.",
+      "transformation": "Mascot xoay địa cầu để lộ phần còn lại; dấu học tập đi trước, dấu tài sản mở một hướng khác sau cụm “cũng có thể”.",
+      "final_state": "Hai phạm vi cùng mở nhưng độc lập, không chuyển toàn bộ tiền sang Malta.",
+      "protagonist_action": "Xoay địa cầu và theo dõi hai hướng kế hoạch.",
+      "mascot_role": "Xoay địa cầu và theo dõi hai hướng kế hoạch.",
+      "visual_family": "paper globe / scale change",
+      "timed_beats": [
+        {
+          "local_seconds": 0,
+          "spoken_cue": "đầu lát nguồn",
+          "action": "Mascot kéo quai vali cạnh địa cầu chỉ mở một nửa.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 1.138,
+          "spoken_cue": "cụm ý đầu — đối chiếu WAV",
+          "action": "Mascot xoay địa cầu để lộ phần còn lại",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 2.732,
+          "spoken_cue": "cụm ý sau — đối chiếu WAV",
+          "action": "Mascot xoay địa cầu để lộ phần còn lại; dấu học tập đi trước, dấu tài sản mở một hướng khác sau cụm “cũng có thể”.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 3.779,
+          "spoken_cue": "đuôi câu / nghỉ",
+          "action": "Hai phạm vi cùng mở nhưng độc lập, không chuyển toàn bộ tiền sang Malta.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        }
+      ],
+      "motion_emphasis_sequence": [
+        "Mascot kéo quai vali cạnh địa cầu chỉ mở một nửa.",
+        "Mascot xoay địa cầu để lộ phần còn lại",
+        "Mascot xoay địa cầu để lộ phần còn lại; dấu học tập đi trước, dấu tài sản mở một hướng khác sau cụm “cũng có thể”.",
+        "Hai phạm vi cùng mở nhưng độc lập, không chuyển toàn bộ tiền sang Malta."
+      ],
+      "hf_signature_motion": "Mascot xoay địa cầu để lộ phần còn lại; dấu học tập đi trước, dấu tài sản mở một hướng khác sau cụm “cũng có thể”.",
+      "flow_action": null,
+      "flow_camera": null,
+      "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+      "asset_contract": [
+        {
+          "layer": "globe-hemispheres",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "meridians",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "study-trace",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "asset-trace",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "luggage",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "source": "approved mascot derivative",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ],
+      "container_required": false,
+      "container_inventory": [],
+      "container_semantics": [],
+      "visible_text_budget": {
+        "max_simultaneous_words": 3,
+        "max_levels": 2,
+        "paragraphs": 0
+      },
+      "visible_text_inventory": [
+        {
+          "text": "MỞ TẦM NHÌN",
+          "size_px": 54,
+          "role": "anchor",
+          "simultaneous": false
+        }
+      ],
+      "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Chữ trần trên nền sáng; không sweep.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+      "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+      "handoff": "Dừng chuyển động lớn, cắt cận bàn tay chọn ở cảnh cuối để hạ nhịp.",
+      "continuity_risk": "Địa cầu minh họa cần đường bờ có nguồn hoặc đơn giản không chi tiết; không vẽ biên giới sai.",
+      "pilot": false,
+      "status": "designed_not_produced",
+      "must_keep": [
+        "Việc con học ở nước ngoài gợi gia đình cân nhắc phạm vi hoạch định tài sản rộng hơn.",
+        "Mascot xoay địa cầu để lộ phần còn lại; dấu học tập đi trước, dấu tài sản mở một hướng khác sau cụm “cũng có thể”.",
+        "voice/sample bounds",
+        "mascot identity, warm light palette, footer 200px",
+        "zero added CTA or documentary claims"
+      ],
+      "flexible": [
+        "Toạ độ/kích thước trong safe area",
+        "easing/pose/chi tiết nét",
+        "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+      ],
+      "reference_alignment": {
+        "colour_relationships": {
+          "reference_evidence": "Brief: cream/peach/lilac + accents",
+          "candidate_evidence": "S13: warm ground and vivid orange/blue/purple",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "typography_treatment": {
+          "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+          "candidate_evidence": "S13: local shipped font, sparse native text",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "asset_mix": {
+          "reference_evidence": "Reference 04/06: real campus plus drawing",
+          "candidate_evidence": "S13: Valletta photo where geographic evidence is needed; vector/physical paper elsewhere",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "composition": {
+          "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+          "candidate_evidence": "S13: Địa cầu giấy lớn ở y=440–940; một đường học tập và một dấu tài sản bắt đầu từ hai vị trí lớp trước, không chạy theo cùng quỹ đạo.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "mascot_language": {
+          "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+          "candidate_evidence": "S13: Xoay địa cầu và theo dõi hai hướng kế hoạch.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "motion_rhythm": {
+          "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+          "candidate_evidence": "S13: Mascot xoay địa cầu để lộ phần còn lại; dấu học tập đi trước, dấu tài sản mở một hướng khác sau cụm “cũng có thể”.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        }
+      }
+    },
+    {
+      "scene_number": 14,
+      "scene_id": "S14",
+      "start": 68.304375,
+      "end": 75.16,
+      "start_sample": 1639305,
+      "end_sample": 1803840,
+      "source_segments": [
+        16,
+        17
+      ],
+      "raw_text": "Bởi đôi khi, điều giá chỉ nhất không phải là sở hữu thêm một căn nhà, mà là sở hữu thêm một lựa chọn cho tương lai.",
+      "corrected_text": "Bởi đôi khi, điều giá trị nhất không phải là sở hữu thêm một căn nhà, mà là sở hữu thêm một lựa chọn cho tương lai.",
+      "semantic_type": "quiet choice / plan prop",
+      "visual_center": "Có thêm một lựa chọn",
+      "organic_motion_need": "Không cần diễn viên/plate hữu cơ; puppet vector có hành động chủ đích.",
+      "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high",
+      "routing_reason": "Có thêm một lựa chọn: hành động chủ đạo là đặt / chọn các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ quiet choice / plan prop, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+      "flow_contribution": "none",
+      "hf_contribution": "Mascot xoay lòng bàn tay đặt chìa xuống; tay kia mở một nếp bản kế hoạch để lộ nhánh lựa chọn còn trống. Không bước hẳn vào một cánh cửa.",
+      "fallback_mode": null,
+      "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+      "character": "yes",
+      "title": "Có thêm một lựa chọn",
+      "takeaway": "Giá trị kết luận là khả năng lựa chọn cho tương lai; không thêm lời kêu gọi mua.",
+      "audio_source": [
+        "inputs/audio/seg_16.wav",
+        "inputs/audio/seg_17.wav"
+      ],
+      "duration": 6.855625000000003,
+      "sample_frames": 164535,
+      "raw_segments": [
+        {
+          "seg_id": 16,
+          "segment_id": "seg_16",
+          "audio_slice": "audio_slices/seg_16.wav",
+          "start_sample": 1639305,
+          "end_sample": 1736406,
+          "sample_frames": 97101,
+          "start": 68.304,
+          "end": 72.35,
+          "duration": 4.046,
+          "sha256": "801c60b360f0cc9391380c18b76c16745faabedbd6732402c9868ea671a6936a",
+          "raw_text": "Bởi đôi khi, điều giá chỉ nhất không phải là sở hữu thêm một căn nhà,",
+          "corrected_text": "Bởi đôi khi, điều giá trị nhất không phải là sở hữu thêm một căn nhà,",
+          "uncertainties": [
+            "giá chỉ -> giá trị: ASR nhận sai phụ âm cuối; giọng đọc chuẩn 'giá trị'."
+          ]
+        },
+        {
+          "seg_id": 17,
+          "segment_id": "seg_17",
+          "audio_slice": "audio_slices/seg_17.wav",
+          "start_sample": 1736406,
+          "end_sample": 1803840,
+          "sample_frames": 67434,
+          "start": 72.35,
+          "end": 75.16,
+          "duration": 2.81,
+          "sha256": "f4fa660a578c9b4d4dfeead21376a19df06803341976996ec44b5a6c5d842cd1",
+          "raw_text": "mà là sở hữu thêm một lựa chọn cho tương lai.",
+          "corrected_text": "mà là sở hữu thêm một lựa chọn cho tương lai.",
+          "uncertainties": []
+        }
+      ],
+      "render_mode": "HF_ONLY",
+      "style_candidates": [
+        {
+          "id": "hf_existing:warm-doodle-mixed-media",
+          "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+        },
+        {
+          "id": "kurzgesagt",
+          "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+        },
+        {
+          "id": "izometrik",
+          "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+        },
+        {
+          "id": "bauhaus",
+          "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-mixed-media",
+      "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+      "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+      "visual_verb": "đặt / chọn",
+      "composition": "Nhà giấy ở trái, bên phải một bản kế hoạch gấp có hai lối mở. Mascot ở giữa cầm chìa khóa; bố cục rộng thay vì nhà đứng giữa.",
+      "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+      "opening_state": "Mascot nhìn chìa khóa trên lòng bàn tay, căn nhà yên ở cạnh.",
+      "transformation": "Mascot xoay lòng bàn tay đặt chìa xuống; tay kia mở một nếp bản kế hoạch để lộ nhánh lựa chọn còn trống. Không bước hẳn vào một cánh cửa.",
+      "final_state": "Nhà vẫn có, thêm một hướng chưa chốt; text ngắn “THÊM MỘT LỰA CHỌN” giữ đến sample cuối, không CTA/QR/logo mới.",
+      "protagonist_action": "Đặt chìa và tự mở kế hoạch; ánh nhìn dừng ở nhánh mới, phản ứng nhẹ.",
+      "mascot_role": "Đặt chìa và tự mở kế hoạch; ánh nhìn dừng ở nhánh mới, phản ứng nhẹ.",
+      "visual_family": "quiet choice / plan prop",
+      "timed_beats": [
+        {
+          "local_seconds": 0,
+          "spoken_cue": "đầu lát nguồn",
+          "action": "Mascot nhìn chìa khóa trên lòng bàn tay, căn nhà yên ở cạnh.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 1.714,
+          "spoken_cue": "cụm ý đầu — đối chiếu WAV",
+          "action": "Mascot xoay lòng bàn tay đặt chìa xuống",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 4.113,
+          "spoken_cue": "cụm ý sau — đối chiếu WAV",
+          "action": "Mascot xoay lòng bàn tay đặt chìa xuống; tay kia mở một nếp bản kế hoạch để lộ nhánh lựa chọn còn trống. Không bước hẳn vào một cánh cửa.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        },
+        {
+          "local_seconds": 5.69,
+          "spoken_cue": "đuôi câu / nghỉ",
+          "action": "Nhà vẫn có, thêm một hướng chưa chốt; text ngắn “THÊM MỘT LỰA CHỌN” giữ đến sample cuối, không CTA/QR/logo mới.",
+          "alignment": "approximate_directorial_cue_not_word_alignment"
+        }
+      ],
+      "motion_emphasis_sequence": [
+        "Mascot nhìn chìa khóa trên lòng bàn tay, căn nhà yên ở cạnh.",
+        "Mascot xoay lòng bàn tay đặt chìa xuống",
+        "Mascot xoay lòng bàn tay đặt chìa xuống; tay kia mở một nếp bản kế hoạch để lộ nhánh lựa chọn còn trống. Không bước hẳn vào một cánh cửa.",
+        "Nhà vẫn có, thêm một hướng chưa chốt; text ngắn “THÊM MỘT LỰA CHỌN” giữ đến sample cuối, không CTA/QR/logo mới."
+      ],
+      "hf_signature_motion": "Mascot xoay lòng bàn tay đặt chìa xuống; tay kia mở một nếp bản kế hoạch để lộ nhánh lựa chọn còn trống. Không bước hẳn vào một cánh cửa.",
+      "flow_action": null,
+      "flow_camera": null,
+      "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+      "asset_contract": [
+        {
+          "layer": "house-side",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "open-hand",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "key",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "folded-choice-plan",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "branch-a",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "branch-b",
+          "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+          "status": "planned",
+          "required_separate_layer": true
+        },
+        {
+          "layer": "mascot-rig",
+          "source": "approved mascot derivative",
+          "status": "planned",
+          "required_separate_layer": true
+        }
+      ],
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "choice plan",
+          "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+          "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+          "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+        }
+      ],
+      "container_semantics": [
+        {
+          "object_type": "choice plan",
+          "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+          "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+          "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+        }
+      ],
+      "visible_text_budget": {
+        "max_simultaneous_words": 4,
+        "max_levels": 2,
+        "paragraphs": 0
+      },
+      "visible_text_inventory": [
+        {
+          "text": "THÊM MỘT LỰA CHỌN",
+          "size_px": 54,
+          "role": "anchor",
+          "simultaneous": false
+        }
+      ],
+      "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Chữ trần trên nền sáng; không sweep.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+      "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+      "handoff": "Giữ kết quả tới 75.16s, không fade đen cắt đuôi voice.",
+      "continuity_risk": "Không chọn thay khán giả, không guarantee tương lai, không tự thêm CTA.",
+      "pilot": false,
+      "status": "designed_not_produced",
+      "must_keep": [
+        "Giá trị kết luận là khả năng lựa chọn cho tương lai; không thêm lời kêu gọi mua.",
+        "Mascot xoay lòng bàn tay đặt chìa xuống; tay kia mở một nếp bản kế hoạch để lộ nhánh lựa chọn còn trống. Không bước hẳn vào một cánh cửa.",
+        "voice/sample bounds",
+        "mascot identity, warm light palette, footer 200px",
+        "zero added CTA or documentary claims"
+      ],
+      "flexible": [
+        "Toạ độ/kích thước trong safe area",
+        "easing/pose/chi tiết nét",
+        "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+      ],
+      "reference_alignment": {
+        "colour_relationships": {
+          "reference_evidence": "Brief: cream/peach/lilac + accents",
+          "candidate_evidence": "S14: warm ground and vivid orange/blue/purple",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "typography_treatment": {
+          "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+          "candidate_evidence": "S14: local shipped font, sparse native text",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "asset_mix": {
+          "reference_evidence": "Reference 04/06: real campus plus drawing",
+          "candidate_evidence": "S14: Valletta photo where geographic evidence is needed; vector/physical paper elsewhere",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "composition": {
+          "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+          "candidate_evidence": "S14: Nhà giấy ở trái, bên phải một bản kế hoạch gấp có hai lối mở. Mascot ở giữa cầm chìa khóa; bố cục rộng thay vì nhà đứng giữa.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "mascot_language": {
+          "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+          "candidate_evidence": "S14: Đặt chìa và tự mở kế hoạch; ánh nhìn dừng ở nhánh mới, phản ứng nhẹ.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        },
+        "motion_rhythm": {
+          "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+          "candidate_evidence": "S14: Mascot xoay lòng bàn tay đặt chìa xuống; tay kia mở một nếp bản kế hoạch để lộ nhánh lựa chọn còn trống. Không bước hẳn vào một cánh cửa.",
+          "assessment": "pending_render_review",
+          "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+        }
+      }
+    }
+  ]
+}

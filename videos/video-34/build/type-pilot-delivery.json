@@ -1,0 +1,23 @@
+{
+  "status": "AWAITING HUMAN REVIEW",
+  "revision": "Typography V2",
+  "outputs": {
+    "S03": "scenes/S03/S03-pilot-typography-v2.mp4",
+    "S08": "scenes/S08/S08-pilot-typography-v2.mp4"
+  },
+  "review": "REVIEW.html",
+  "working_format": "1080x1920 / 30 FPS",
+  "input_hashes_unchanged": 7,
+  "checks": "HyperFrames ok both, runtime errors 0, text contrast findings 0",
+  "warnings": [
+    "Silent picture source; voice independently muxed",
+    "S08 neck pivot warning and transient content_overlap info"
+  ],
+  "browser": "Both full MP4 playback ended; 360/768/1280 no overflow or console errors; sampled forward/backward seeks pixel-identical",
+  "audio": "PCM excerpts byte-exact at 24kHz; decoded AAC lag measured by media-qa.json; A/V picture grid not sample-exact",
+  "backup": "build/type-pilot-before",
+  "approval_unchanged": true,
+  "no_other_scenes_produced": true,
+  "keyframes": "build/type-pilot-evidence/",
+  "source": "components/type-design.py + type-motion.js, integrated by build_pilot_sources.py"
+}

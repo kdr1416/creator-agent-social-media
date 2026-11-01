@@ -1,0 +1,103 @@
+{
+  "phase": "static_frames_approved_ready_for_motion_authoring",
+  "user_approved": true,
+  "frames": [
+    {
+      "file": "S13\\01-student\\frames\\frame-00-at-0.5s.png",
+      "sha256": "30871558c3063d3e252bcc1f6522f670a47e4b713c21e732ad15f4b7449745ec"
+    },
+    {
+      "file": "S13\\02-local\\frames\\frame-00-at-0.5s.png",
+      "sha256": "4843a043da22300fbaafd1ad18ec0218e46dc79696cf57ec49f67448be97da3f"
+    },
+    {
+      "file": "S13\\03-expand\\frames\\frame-00-at-0.5s.png",
+      "sha256": "6a8165515e52e4ed8b0bf3c23e734e828d0d6a361428853030d89d5963806c66"
+    },
+    {
+      "file": "S14\\01-key\\frames\\frame-00-at-0.5s.png",
+      "sha256": "696c599908b7c25f61268d4b05ed694253013a61fca05881ebdeda1103950a37"
+    },
+    {
+      "file": "S14\\02-gate\\frames\\frame-00-at-0.5s.png",
+      "sha256": "9aef635df5ff4bd5c9d20bb7b056a6dda5e4c5dc42f3668f3676df1f2687ef9b"
+    },
+    {
+      "file": "S14\\03-open\\frames\\frame-00-at-0.5s.png",
+      "sha256": "ee6b799646e8078e1bf4dd65482165cdc8971f941398235398e51e73a9405443"
+    }
+  ],
+  "representative_checks": {
+    "S13\\03-expand": {
+      "lint": [],
+      "runtime": [],
+      "layout": [],
+      "contrast": []
+    },
+    "S14\\03-open": {
+      "lint": [],
+      "runtime": [],
+      "layout": [],
+      "contrast": []
+    }
+  },
+  "new_motion_rendered": false,
+  "voice_modified": false,
+  "master_modified": false,
+  "previous_approved_pilot_hashes_unchanged": [
+    "S01",
+    "S09",
+    "S07",
+    "S08",
+    "S06",
+    "S11",
+    "S10",
+    "S12"
+  ],
+  "review": "REVIEW.html",
+  "direction": "DIRECTION.md",
+  "voice_provenance": "VOICE_REFERENCE.json",
+  "QA_scope": "Six standalone static frames captured, sequence views inspected; mobile/grayscale generated; representative final-state checks pass and element IDs unique. Gate hinge, grip travel, walking and asset-camera interpolation have not been validated as motion.",
+  "user_approval": {
+    "version": "S13-S14-design-r1",
+    "scene_ids": [
+      "S13",
+      "S14"
+    ],
+    "approval_status": "approved",
+    "approval_scope": "static frame images, visual design and proposed action direction; not rendered motion",
+    "approval_date_local": "2026-10-27",
+    "timezone": "Asia/Saigon",
+    "user_message_verbatim": "oke mình duyệt các hình ảnh frame",
+    "reference_frame_manifest": [
+      {
+        "file": "S13\\01-student\\frames\\frame-00-at-0.5s.png",
+        "sha256": "30871558c3063d3e252bcc1f6522f670a47e4b713c21e732ad15f4b7449745ec"
+      },
+      {
+        "file": "S13\\02-local\\frames\\frame-00-at-0.5s.png",
+        "sha256": "4843a043da22300fbaafd1ad18ec0218e46dc79696cf57ec49f67448be97da3f"
+      },
+      {
+        "file": "S13\\03-expand\\frames\\frame-00-at-0.5s.png",
+        "sha256": "6a8165515e52e4ed8b0bf3c23e734e828d0d6a361428853030d89d5963806c66"
+      },
+      {
+        "file": "S14\\01-key\\frames\\frame-00-at-0.5s.png",
+        "sha256": "696c599908b7c25f61268d4b05ed694253013a61fca05881ebdeda1103950a37"
+      },
+      {
+        "file": "S14\\02-gate\\frames\\frame-00-at-0.5s.png",
+        "sha256": "9aef635df5ff4bd5c9d20bb7b056a6dda5e4c5dc42f3668f3676df1f2687ef9b"
+      },
+      {
+        "file": "S14\\03-open\\frames\\frame-00-at-0.5s.png",
+        "sha256": "ee6b799646e8078e1bf4dd65482165cdc8971f941398235398e51e73a9405443"
+      }
+    ],
+    "motion_approved": false,
+    "master_replacement_authorized": false,
+    "full_film_production_authorized": false
+  },
+  "next_action": "Create separate S13/S14 motion pilots when instructed to build; preserve original voice and approved frame design."
+}

@@ -1,0 +1,97 @@
+{
+  "source_files_checked": 25,
+  "source_files_changed": [],
+  "video": {
+    "path": "videos\\warm-doodle-style-lab\\renders\\warm-doodle-3-scenes.mp4",
+    "codec": "h264",
+    "width": 720,
+    "height": 1280,
+    "fps": "30",
+    "duration": 14.1,
+    "frames": 423
+  },
+  "audio": {
+    "codec": "aac",
+    "duration": 14.076,
+    "source_duration": 14.076,
+    "source_sample_rate": 24000,
+    "decoded_correlation_with_source": 0.9998871133772066,
+    "original_rms": 0.11874843082083836,
+    "decoded_rms": 0.1184458550575261,
+    "decoded_peak": 0.832611083984375,
+    "clipped_samples": 0
+  },
+  "proof_times": [
+    0.7,
+    1.7,
+    2.8,
+    3.8,
+    5.4,
+    8.8,
+    10.2,
+    11.7,
+    13.7
+  ],
+  "user_approval": "pending",
+  "check": {
+    "ok": true,
+    "lint": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "runtime": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "layout": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "contrast": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "contrast_checked": 16,
+    "contrast_passed": 16
+  },
+  "slice_copies_byte_identical": {
+    "scene_04": true,
+    "scene_09": true,
+    "scene_13": true
+  },
+  "concatenated_pcm_bit_perfect": true,
+  "individual_scenes": [
+    {
+      "scene_id": "scene_04",
+      "source_duration": 3.293,
+      "video_duration": 3.3,
+      "audio_duration": 3.293,
+      "output": "renders/scene_04.mp4",
+      "status": "rendered_awaiting_feedback",
+      "mode": "HF_ONLY",
+      "source_composition": "compositions/scene04.html"
+    },
+    {
+      "scene_id": "scene_09",
+      "source_duration": 6.469,
+      "video_duration": 6.5,
+      "audio_duration": 6.469,
+      "output": "renders/scene_09.mp4",
+      "status": "rendered_awaiting_feedback",
+      "mode": "HF_ONLY",
+      "source_composition": "compositions/scene09.html"
+    },
+    {
+      "scene_id": "scene_13",
+      "source_duration": 4.314,
+      "video_duration": 4.333333,
+      "audio_duration": 4.314,
+      "output": "renders/scene_13.mp4",
+      "status": "rendered_awaiting_feedback",
+      "mode": "HF_ONLY",
+      "source_composition": "compositions/scene13.html"
+    }
+  ],
+  "render_path": "HyperFrames0.8.170 screenshot/hardware GPU for visual-only; FFmpeg copied H264 stream and encoded original voice as AAC. No source edits.",
+  "playback_review": "Studio playback ran to end; visual assessment used actual rendered opening/in-progress/final frames, mobile and grayscale proofs. No claim of continuous audio listening."
+}

@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>Cảng Rotterdam — scene 08</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:SceneSans;src:url('assets/scene-sans-bold.ttf') format('truetype');font-weight:700;font-display:block}
+*{box-sizing:border-box}
+html,body{margin:0;background:#FFFFFF}
+#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:SceneSans,sans-serif;color:#0F172A}
+.clip{position:absolute;inset:0}
+.art{display:block;width:100%;height:100%}
+.header-box{position:absolute;top:170px;left:0;width:100%;text-align:center;pointer-events:none;z-index:10}
+.sub-tag{margin:0;font-size:22px;font-weight:700;letter-spacing:1.5px;color:#FF6B2B;text-transform:uppercase}
+.main-title{margin:8px 0 0 0;font-size:46px;line-height:1.2;font-weight:700;letter-spacing:-0.5px;color:#0F172A}
+.stat-badge{display:inline-block;margin-top:14px;padding:8px 22px;background:#EFF6FF;border:2px solid #BFDBFE;border-radius:24px;font-size:20px;font-weight:700;color:#1D4ED8;letter-spacing:0.5px}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-s08-root" id="root" data-composition-id="scene08" data-width="720" data-height="1280" data-duration="3.718" data-start="0">
+ <div data-hf-id="hf-s08-bg" id="scene08-bg" class="clip" data-start="0" data-duration="3.718" data-track-index="0" style="background:#FFFFFF"></div>
+
+ <div data-hf-id="hf-s08-header" id="header" class="header-box">
+  <div data-hf-id="hf-s08-sub" class="sub-tag">ROTTERDAM · HÀ LAN</div>
+  <h1 data-hf-id="hf-s08-title" class="main-title">Cảng biển lớn nhất<br>châu Âu</h1>
+  <div data-hf-id="hf-s08-stat" id="stat-pill" class="stat-badge">⚓ CỬA NGÕ LOGISTICS TOÀN CẦU</div>
+ </div>
+
+ <svg data-hf-id="hf-s08-art" id="scene08-art" class="art clip" data-start="0" data-duration="3.718" data-track-index="1" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+   <radialGradient id="sky-halo" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#E0F2FE" stop-opacity="0.9"/>
+    <stop offset="70%" stop-color="#EFF6FF" stop-opacity="0.4"/>
+    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+   </radialGradient>
+   
+   <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.12"/>
+   </filter>
+  </defs>
+
+  <!-- Circular background backdrop -->
+  <circle cx="360" cy="670" r="300" fill="url(#sky-halo)"/>
+
+  <!-- Distant Port Silhouettes (Wind turbines & industrial skyline) -->
+  <g id="distant-skyline" opacity="0.4">
+   <!-- Wind turbine 1 -->
+   <rect x="120" y="520" width="4" height="90" fill="#94A3B8"/>
+   <circle cx="122" cy="520" r="4" fill="#64748B"/>
+   <line x1="122" y1="520" x2="100" y2="495" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+   <line x1="122" y1="520" x2="144" y2="505" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+   <line x1="122" y1="520" x2="122" y2="550" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+
+   <!-- Wind turbine 2 -->
+   <rect x="200" y="540" width="3" height="70" fill="#94A3B8"/>
+   <circle cx="201.5" cy="540" r="3" fill="#64748B"/>
+   <line x1="201.5" y1="540" x2="185" y2="520" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+   <line x1="201.5" y1="540" x2="218" y2="530" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+   
+   <!-- Distant silos -->
+   <rect x="250" y="565" width="28" height="45" rx="4" fill="#CBD5E1"/>
+   <rect x="282" y="560" width="28" height="50" rx="4" fill="#B0C4DE"/>
+  </g>
+
+  <!-- Dock / Quayside (Right Side) -->
+  <g id="quay-dock">
+   <!-- Concrete Quayside -->
+   <path d="M520 660 H720 V880 H500 L520 660 Z" fill="#E2E8F0"/>
+   <!-- Dock Top Edge highlight -->
+   <rect x="515" y="660" width="205" height="12" fill="#CBD5E1"/>
+   <!-- Bollard 1 -->
+   <rect x="545" y="648" width="14" height="15" rx="3" fill="#334155"/>
+   <circle cx="552" cy="648" r="9" fill="#475569"/>
+   <!-- Safety Hazard Stripes on dock edge -->
+   <g opacity="0.75">
+    <polygon points="530,660 542,660 534,672 522,672" fill="#F59E0B"/>
+    <polygon points="555,660 567,660 559,672 547,672" fill="#F59E0B"/>
+    <polygon points="580,660 592,660 584,672 572,672" fill="#F59E0B"/>
+    <polygon points="605,660 617,660 609,672 597,672" fill="#F59E0B"/>
+   </g>
+  </g>
+
+  <!-- Giant Gantry STS Crane (Industrial Orange) -->
+  <g id="gantry-crane">
+   <!-- Crane legs resting on dock -->
+   <polygon points="590,440 602,440 622,660 610,660" fill="#EA580C"/>
+   <polygon points="690,440 702,440 682,660 670,660" fill="#C2410C"/>
+   <!-- Crane cross braces -->
+   <line x1="596" y1="480" x2="690" y2="560" stroke="#EA580C" stroke-width="4"/>
+   <line x1="696" y1="480" x2="602" y2="560" stroke="#EA580C" stroke-width="4"/>
+   <!-- Horizontal Crane Boom stretching over the water -->
+   <rect x="300" y="420" width="410" height="24" rx="3" fill="#FF6B2B"/>
+   <polygon points="300,420 300,444 260,420" fill="#EA580C"/>
+   <!-- Upper crane tower and tension cables -->
+   <polygon points="610,420 645,340 675,420" fill="#FF6B2B"/>
+   <line x1="645" y1="340" x2="330" y2="420" stroke="#94A3B8" stroke-width="2.5"/>
+   <line x1="645" y1="340" x2="520" y2="420" stroke="#94A3B8" stroke-width="2.5"/>
+   <line x1="645" y1="340" x2="705" y2="420" stroke="#94A3B8" stroke-width="2.5"/>
+
+   <!-- Crane Trolley & Hoist Cable (Animates container lowering) -->
+   <g id="crane-trolley">
+    <rect x="420" y="440" width="40" height="12" rx="2" fill="#1E293B"/>
+    <!-- Steel hoist cables -->
+    <line id="cable-l" x1="428" y1="452" x2="428" y2="520" stroke="#475569" stroke-width="2"/>
+    <line id="cable-r" x1="452" y1="452" x2="452" y2="520" stroke="#475569" stroke-width="2"/>
+    <!-- Spreader Bar + Suspended Container -->
+    <g id="suspended-container">
+     <!-- Spreader bar -->
+     <rect x="418" y="520" width="44" height="8" rx="2" fill="#334155"/>
+     <!-- Container (Orange #FF6B2B) -->
+     <g transform="translate(415, 528)">
+      <rect width="50" height="32" rx="3" fill="#FF6B2B" stroke="#C2410C" stroke-width="2"/>
+      <!-- Container corrugation ridges -->
+      <line x1="12" y1="0" x2="12" y2="32" stroke="#EA580C" stroke-width="1.5"/>
+      <line x1="25" y1="0" x2="25" y2="32" stroke="#EA580C" stroke-width="1.5"/>
+      <line x1="38" y1="0" x2="38" y2="32" stroke="#EA580C" stroke-width="1.5"/>
+     </g>
+    </g>
+   </g>
+  </g>
+
+  <!-- Water Layer (Behind ship base) -->
+  <g id="water-back">
+   <rect x="0" y="730" width="530" height="260" fill="#0284C7" opacity="0.25"/>
+  </g>
+
+  <!-- Container Cargo Ship (Hero Subject) -->
+  <g id="hero-ship" filter="url(#soft-shadow)">
+   <!-- Ship Hull -->
+   <!-- Bulbous bow and curved front on left, straight flat stern on right -->
+   <path d="M70 730 L110 650 H490 L480 730 L450 755 H130 Z" fill="#0F172A"/>
+   <!-- Red underwater hull stripe -->
+   <path d="M125 730 H480 L470 755 H145 Z" fill="#EF4444"/>
+   <!-- White sheer line accent -->
+   <line x1="110" y1="653" x2="490" y2="653" stroke="#FFFFFF" stroke-width="3" opacity="0.8"/>
+
+   <!-- Bridge Superstructure (Wheelhouse) at stern -->
+   <g id="ship-bridge">
+    <!-- Main white bridge block -->
+    <rect x="420" y="570" width="55" height="80" rx="3" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    <!-- Tinted blue navigation windows -->
+    <rect x="425" y="580" width="45" height="12" rx="2" fill="#0284C7"/>
+    <!-- Bridge wings & radar mast -->
+    <rect x="415" y="588" width="65" height="4" fill="#CBD5E1"/>
+    <!-- Exhaust Funnel (Navy + Orange stripe) -->
+    <rect x="445" y="542" width="16" height="30" rx="3" fill="#1E293B"/>
+    <rect x="445" y="552" width="16" height="8" fill="#FF6B2B"/>
+    <!-- Radar mast & scanner -->
+    <line x1="432" y1="570" x2="432" y2="550" stroke="#64748B" stroke-width="2"/>
+    <ellipse cx="432" cy="548" rx="8" ry="3" fill="#94A3B8"/>
+   </g>
+
+   <!-- Stacks of Containers on Deck (Crisp colorful blocks) -->
+   <g id="deck-containers">
+    <!-- Row 1 (Bottom Deck) -->
+    <!-- Teal Container -->
+    <g transform="translate(130, 616)">
+     <rect width="52" height="34" rx="2" fill="#0D9488" stroke="#115E59" stroke-width="1.5"/>
+     <line x1="13" y1="0" x2="13" y2="34" stroke="#0F766E" stroke-width="1"/>
+     <line x1="26" y1="0" x2="26" y2="34" stroke="#0F766E" stroke-width="1"/>
+     <line x1="39" y1="0" x2="39" y2="34" stroke="#0F766E" stroke-width="1"/>
+    </g>
+    <!-- Royal Blue Container -->
+    <g transform="translate(186, 616)">
+     <rect width="52" height="34" rx="2" fill="#2563EB" stroke="#1D4ED8" stroke-width="1.5"/>
+     <line x1="13" y1="0" x2="13" y2="34" stroke="#1E40AF" stroke-width="1"/>
+     <line x1="26" y1="0" x2="26" y2="34" stroke="#1E40AF" stroke-width="1"/>
+     <line x1="39" y1="0" x2="39" y2="34" stroke="#1E40AF" stroke-width="1"/>
+    </g>
+    <!-- Amber Container -->
+    <g transform="translate(242, 616)">
+     <rect width="52" height="34" rx="2" fill="#F59E0B" stroke="#D97706" stroke-width="1.5"/>
+     <line x1="13" y1="0" x2="13" y2="34" stroke="#B45309" stroke-width="1"/>
+     <line x1="26" y1="0" x2="26" y2="34" stroke="#B45309" stroke-width="1"/>
+     <line x1="39" y1="0" x2="39" y2="34" stroke="#B45309" stroke-width="1"/>
+    </g>
+    <!-- Dark Indigo Container -->
+    <g transform="translate(298, 616)">
+     <rect width="52" height="34" rx="2" fill="#4F46E5" stroke="#4338CA" stroke-width="1.5"/>
+     <line x1="13" y1="0" x2="13" y2="34" stroke="#3730A3" stroke-width="1"/>
+     <line x1="26" y1="0" x2="26" y2="34" stroke="#3730A3" stroke-width="1"/>
+     <line x1="39" y1="0" x2="39" y2="34" stroke="#3730A3" stroke-width="1"/>
+    </g>
+    <!-- Emerald Container -->
+    <g transform="translate(354, 616)">
+     <rect width="52" height="34" rx="2" fill="#10B981" stroke="#059669" stroke-width="1.5"/>
+     <line x1="13" y1="0" x2="13" y2="34" stroke="#047857" stroke-width="1"/>
+     <line x1="26" y1="0" x2="26" y2="34" stroke="#047857" stroke-width="1"/>
+     <line x1="39" y1="0" x2="39" y2="34" stroke="#047857" stroke-width="1"/>
+    </g>
+
+    <!-- Row 2 (Middle Deck) -->
+    <!-- Orange Container -->
+    <g transform="translate(186, 578)">
+     <rect width="52" height="34" rx="2" fill="#FF6B2B" stroke="#EA580C" stroke-width="1.5"/>
+     <line x1="13" y1="0" x2="13" y2="34" stroke="#C2410C" stroke-width="1"/>
+     <line x1="26" y1="0" x2="26" y2="34" stroke="#C2410C" stroke-width="1"/>
+     <line x1="39" y1="0" x2="39" y2="34" stroke="#C2410C" stroke-width="1"/>
+    </g>
+    <!-- Sky Blue Container -->
+    <g transform="translate(242, 578)">
+     <rect width="52" height="34" rx="2" fill="#0284C7" stroke="#0369A1" stroke-width="1.5"/>
+     <line x1="13" y1="0" x2="13" y2="34" stroke="#075985" stroke-width="1"/>
+     <line x1="26" y1="0" x2="26" y2="34" stroke="#075985" stroke-width="1"/>
+     <line x1="39" y1="0" x2="39" y2="34" stroke="#075985" stroke-width="1"/>
+    </g>
+    <!-- Crimson Container -->
+    <g transform="translate(298, 578)">
+     <rect width="52" height="34" rx="2" fill="#E11D48" stroke="#BE123C" stroke-width="1.5"/>
+     <line x1="13" y1="0" x2="13" y2="34" stroke="#9F1239" stroke-width="1"/>
+     <line x1="26" y1="0" x2="26" y2="34" stroke="#9F1239" stroke-width="1"/>
+     <line x1="39" y1="0" x2="39" y2="34" stroke="#9F1239" stroke-width="1"/>
+    </g>
+
+    <!-- Row 3 (Top Deck Stack) -->
+    <g transform="translate(242, 540)">
+     <rect width="52" height="34" rx="2" fill="#10B981" stroke="#059669" stroke-width="1.5"/>
+     <line x1="13" y1="0" x2="13" y2="34" stroke="#047857" stroke-width="1"/>
+     <line x1="26" y1="0" x2="26" y2="34" stroke="#047857" stroke-width="1"/>
+     <line x1="39" y1="0" x2="39" y2="34" stroke="#047857" stroke-width="1"/>
+    </g>
+   </g>
+  </g>
+
+  <!-- Foreground Water Waves & Ripples (Kurzgesagt crisp water layers) -->
+  <g id="water-front">
+   <!-- Base deep water -->
+   <path d="M0 740 Q 180 730 360 740 T 720 735 V1280 H0 Z" fill="#0284C7"/>
+   <!-- Medium wave layer -->
+   <path id="wave-1" d="M -50 760 Q 130 745 310 760 T 670 760 T 1030 760 V1280 H-50 Z" fill="#0369A1" opacity="0.65"/>
+   <!-- Top highlight ripple -->
+   <path id="wave-2" d="M 0 780 Q 180 770 360 780 T 720 775 V1280 H0 Z" fill="#075985" opacity="0.4"/>
+   
+   <!-- Animated foam ripple curves at ship hull -->
+   <g id="foam-ripples">
+    <path d="M60 742 Q 110 735 170 742" stroke="#BAE6FD" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M220 744 Q 300 738 380 744" stroke="#BAE6FD" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M410 745 Q 460 740 500 745" stroke="#BAE6FD" stroke-width="4" stroke-linecap="round" fill="none"/>
+   </g>
+  </g>
+
+  <!-- Flying Seagulls in sky -->
+  <g id="seagulls" stroke="#64748B" stroke-width="2.5" fill="none" stroke-linecap="round">
+   <path id="gull-1" d="M260 460 Q 268 452 276 460 Q 284 452 292 460"/>
+   <path id="gull-2" d="M310 480 Q 316 474 322 480 Q 328 474 334 480"/>
+  </g>
+ </svg>
+
+ <audio data-hf-id="hf-s08-voice" id="scene08-voice" src="assets/audio.wav" data-start="0" data-duration="3.718" data-track-index="2" data-volume="1"></audio>
+</div>
+
+<script>
+const tl = gsap.timeline({paused:true});
+
+gsap.set('#header', {opacity: 0, y: -20});
+gsap.set('#stat-pill', {opacity: 0, scale: 0.85});
+gsap.set('#hero-ship', {x: -80});
+gsap.set('#suspended-container', {y: -40});
+gsap.set('#cable-l', {attr: {y2: 480}});
+gsap.set('#cable-r', {attr: {y2: 480}});
+gsap.set('#gull-1', {x: 0, y: 0});
+gsap.set('#gull-2', {x: 0, y: 0});
+
+// 0.0s - 0.9s: Header and Stat enter cleanly
+tl.to('#header', {opacity: 1, y: 0, duration: 0.55, ease: 'power2.out'}, 0.15)
+  .to('#stat-pill', {opacity: 1, scale: 1, duration: 0.45, ease: 'back.out(1.5)'}, 0.35)
+
+// 0.0s - 1.8s: Cargo Ship glides into dock from left and settles with gentle float
+  .to('#hero-ship', {x: 0, duration: 1.8, ease: 'power2.out'}, 0.0)
+
+// 0.8s - 2.6s: Crane trolley moves into position and lowers container onto the ship
+  .to('#crane-trolley', {x: -40, duration: 1.0, ease: 'power1.inOut'}, 0.6)
+  .to('#suspended-container', {y: 15, duration: 1.1, ease: 'power1.inOut'}, 1.2)
+  .to('#cable-l', {attr: {y2: 535}, duration: 1.1, ease: 'power1.inOut'}, 1.2)
+  .to('#cable-r', {attr: {y2: 535}, duration: 1.1, ease: 'power1.inOut'}, 1.2)
+
+// Gentle ship floating bobbing motion
+  .to('#hero-ship', {y: -4, duration: 1.2, ease: 'sine.inOut', yoyo: true, repeat: 1}, 1.2)
+
+// Waves ripple oscillation
+  .to('#wave-1', {x: 20, duration: 1.8, ease: 'sine.inOut', yoyo: true, repeat: 1}, 0.2)
+  .to('#wave-2', {x: -15, duration: 1.8, ease: 'sine.inOut', yoyo: true, repeat: 1}, 0.4)
+
+// Seagulls gliding
+  .to('#gull-1', {x: 40, y: -10, duration: 3.5, ease: 'none'}, 0.0)
+  .to('#gull-2', {x: 35, y: -6, duration: 3.5, ease: 'none'}, 0.2);
+
+window.__timelines = window.__timelines || {};
+window.__timelines['scene08'] = tl;
+</script>
+</body>
+</html>

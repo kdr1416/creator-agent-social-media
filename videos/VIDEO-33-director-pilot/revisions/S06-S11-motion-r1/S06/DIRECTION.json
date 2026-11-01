@@ -1,0 +1,83 @@
+{
+  "scene": "S06",
+  "duration": 5.796583333333333,
+  "source_start_sample": 572581,
+  "source_end_sample": 711699,
+  "sample_frames": 139118,
+  "sample_rate": 24000,
+  "source_segments": [
+    6
+  ],
+  "raw_text": "Không chỉ là sở hữu một tài sản ở Châu Âu, đây còn là cách xây dựng một nền tảng lâu dài cho cả gia đình.",
+  "corrected_text": "Không chỉ là sở hữu một tài sản ở Châu Âu, đây còn là cách xây dựng một nền tảng lâu dài cho cả gia đình.",
+  "source_audio": [
+    "inputs/audio/seg_06.wav"
+  ],
+  "source_audio_hashes": {
+    "inputs/audio/seg_06.wav": "0ca1043e6c3b853c0cb09565dcd62f365143c09125b6ba26a574f990da6c4b74"
+  },
+  "original_voice_sha256": "0ca1043e6c3b853c0cb09565dcd62f365143c09125b6ba26a574f990da6c4b74",
+  "approved_frame_reference": "../../S06-S11-design-r1",
+  "cues": {
+    "chair_pull": [
+      0.55,
+      1.4
+    ],
+    "release": [
+      1.48,
+      1.68
+    ],
+    "approach_front_of_seat": [
+      1.7,
+      2.9
+    ],
+    "hand_and_foot_support": [
+      2.9,
+      3.2
+    ],
+    "supported_climb_and_sit": [
+      3.2,
+      4.15
+    ],
+    "shared_plan_gesture": [
+      4.12,
+      4.68
+    ]
+  },
+  "proof_times": [
+    0.1,
+    1.1,
+    1.45,
+    2.15,
+    2.85,
+    3.15,
+    3.5,
+    3.85,
+    4.3,
+    5.5
+  ],
+  "contact_ranges": [
+    [
+      0.65,
+      1.45
+    ],
+    [
+      2.85,
+      4.15
+    ]
+  ],
+  "approval": "motion_approved_by_user",
+  "timing_basis": "Scene sample bounds immutable; internal motion cues are directorial and require playback review.",
+  "user_approval": {
+    "scene_id": "S06",
+    "version": "S06-S11-motion-r1",
+    "approval_status": "approved",
+    "approval_scope": "pilot motion with original voice",
+    "user_message_verbatim": "mình duyệt s06 và s11. tiếp tục làm frame s10 và s12 đi",
+    "approval_date_local": "2026-10-27",
+    "video_path": "revisions/S06-S11-motion-r1/S06/renders/pilot.mp4",
+    "video_sha256": "c8ed21880a6a85ace4741f274ecac9bc04b6debec5823a8f9a641a211de05e51",
+    "master_replacement_authorized": false,
+    "full_film_production_authorized": false
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "project": "VIDEO-33-director-pilot",
+  "phase": "full_production_completed",
+  "status": "ready_for_review_and_delivery",
+  "total_scenes": 14,
+  "total_frames": 2255,
+  "fps": 30,
+  "total_picture_duration_s": 75.166667,
+  "total_voice_duration_s": 75.160000,
+  "source_audio_samples": 1803840,
+  "sample_rate": 24000,
+  "channels": 1,
+  "approved_pilots_used": {
+    "S01": {
+      "version": "pilots/S01/renders/pilot.mp4",
+      "sha256": "4e111b0e89a34b5bbb56eb5c513b947db7e904f0676c3c51cb17a100f6ac83f5",
+      "frames": 181
+    },
+    "S05": {
+      "version": "handoff/S05_STORYBOARD_RESTART_R1",
+      "sha256": "3a1ff6f80905183bbddbf63c64c7ba987bbdf5cfcfeb3b207e9d7aa79c937172",
+      "frames": 171
+    },
+    "S09": {
+      "version": "revisions/pilots-approved-frames-r1/S09/renders/pilot.mp4",
+      "sha256": "a6cbf6ec62a12bf74f4cdcc076f27c1ac839f4e984c35aeba1bf2dc9b44cd90e",
+      "frames": 224
+    }
+  },
+  "master_renders": {
+    "clean_video": {
+      "path": "build/renders/VIDEO-33-clean.mp4",
+      "sha256": "7050ecb46b98b8b6f50fdce327bcd25c2e8879c282e3c1ef9b417839f05a22b4",
+      "frames": 2255,
+      "duration_s": 75.166333,
+      "width": 720,
+      "height": 1280,
+      "codec": "h264 (High)",
+      "pix_fmt": "yuv420p"
+    },
+    "master_video": {
+      "path": "build/renders/VIDEO-33-master.mp4",
+      "sha256": "6f51c8368997f7e2d3721888c3a3d471c2407e8718248fc9d3bea6e4b2b87c50",
+      "frames": 2255,
+      "duration_s": 75.166333,
+      "width": 720,
+      "height": 1280,
+      "video_codec": "h264 (High)",
+      "audio_codec": "aac",
+      "audio_channels": 1,
+      "audio_sample_rate": 24000,
+      "audio_source": "inputs/source_audio.wav (muxed bit-exact from t=0)"
+    }
+  },
+  "scenes": [
+    {
+      "scene_id": "S01",
+      "title": "Du học Châu Âu & Điểm tựa lâu dài",
+      "frames": 181,
+      "duration_s": 6.033,
+      "hyperframes_check": "passed",
+      "render": "build/scenes/S01/renders/pilot.mp4",
+      "qa_frames": ["build/qa/S01/open.png", "build/qa/S01/mid.png", "build/qa/S01/end.png"]
+    },
+    {
+      "scene_id": "S02",
+      "title": "Chi phí du học",
+      "frames": 115,
+      "duration_s": 3.833,
+      "hyperframes_check": "passed",
+      "render": "build/scenes/S02/renders/pilot.mp4",
+      "qa_frames": ["build/qa/S02/open.png", "build/qa/S02/mid.png", "build/qa/S02/end.png"]
+    },
+    {
+      "scene_id": "S03",
+      "title": "Kế hoạch tương lai",
+      "frames": 128,
+      "duration_s": 4.267,
+      "hyperframes_check": "passed",
+      "render": "build/scenes/S03/renders/pilot.mp4",
+      "qa_frames": ["build/qa/S03/open.png", "build/qa/S03/mid.png", "build/qa/S03/end.png"]
+    },
+    {
+      "scene_id": "S04",
+      "title": "Tập trung tài sản",
+      "frames": 121,
+      "duration_s": 4.033,
+      "hyperframes_check": "passed",
+      "render": "build/scenes/S04/renders/pilot.mp4",
+      "qa_frames": ["build/qa/S04/open.png", "build/qa/S04/mid.png", "build/qa/S04/end.png"]
+    },
+    {
+      "scene_id": "S05",
+      "title": "Malta — Vị trí & Căn nhà",
+      "frames": 171,
+      "duration_s": 5.700,
+      "hyperframes_check": "passed",
+      "render": "build/scenes/S05/renders/pilot.mp4",
+      "qa_frames": ["build/qa/S05/open.png", "build/qa/S05/mid.png", "build/qa/S05/end.png"]
+    },
+    {
+      "scene_id": "S06",
+      "title": "Kế hoạch chung gia đình",
+      "frames": 174,
+      "duration_s": 5.800,
+      "hyperframes_check": "passed",
+      "render": "build/scenes/S06/renders/pilot.mp4",
+      "qa_frames": ["build/qa/S06/open.png", "build/qa/S06/mid.png", "build/qa/S06/end.png"]
+    },
+    {
+      "scene_id": "S07",
+      "title": "Kết nối",
+      "frames": 140,
+      "duration_s": 4.667,
+      "hyperframes_check": "passed",
+      "render": "build/scenes/S07/renders/pilot.mp4",
+      "qa_frames": ["build/qa/S07/open.png", "build/qa/S07/mid.png", "build/qa/S07/end.png"]
+    },
+    {
+      "scene_id": "S08",
+      "title": "Kế hoạch tương lai",
+      "frames": 164,
+      "duration_s": 5.467,
+      "hyperframes_check": "passed",
+      "render": "build/scenes/S08/renders/pilot.mp4",
+      "qa_frames": ["build/qa/S08/open.png", "build/qa/S08/mid.png", "build/qa/S08/end.png"]
+    },
+    {
+      "scene_id": "S09",
+      "title": "Cơ chế phân bổ tài sản",
+      "frames": 224,
+      "duration_s": 7.467,
+      "hyperframes_check": "passed",
+      "render": "build/scenes/S09/renders/pilot.mp4",
+      "qa_frames": ["build/qa/S09/open.png", "build/qa/S09/mid.png", "build/qa/S09/end.png"]
+    },
+    {
+      "scene_id": "S10",
+      "title": "Tới 4 thế hệ",
+      "frames": 184,
+      "duration_s": 6.133,
+      "hyperframes_check": "passed",
+      "render": "build/scenes/S10/renders/pilot.mp4",
+      "qa_frames": ["build/qa/S10/open.png", "build/qa/S10/mid.png", "build/qa/S10/end.png"]
+    },
+    {
+      "scene_id": "S11",
+      "title": "Chuẩn bị cho tương lai",
+      "frames": 205,
+      "duration_s": 6.833,
+      "hyperframes_check": "passed",
+      "render": "build/scenes/S11/renders/pilot.mp4",
+      "qa_frames": ["build/qa/S11/open.png", "build/qa/S11/mid.png", "build/qa/S11/end.png"]
+    },
+    {
+      "scene_id": "S12",
+      "title": "Cơ hội",
+      "frames": 106,
+      "duration_s": 3.533,
+      "hyperframes_check": "passed",
+      "render": "build/scenes/S12/renders/pilot.mp4",
+      "qa_frames": ["build/qa/S12/open.png", "build/qa/S12/mid.png", "build/qa/S12/end.png"]
+    },
+    {
+      "scene_id": "S13",
+      "title": "Mở tầm nhìn",
+      "frames": 136,
+      "duration_s": 4.533,
+      "hyperframes_check": "passed",
+      "render": "build/scenes/S13/renders/pilot.mp4",
+      "qa_frames": ["build/qa/S13/open.png", "build/qa/S13/mid.png", "build/qa/S13/end.png"]
+    },
+    {
+      "scene_id": "S14",
+      "title": "Thêm một lựa chọn",
+      "frames": 206,
+      "duration_s": 6.867,
+      "hyperframes_check": "passed",
+      "render": "build/scenes/S14/renders/pilot.mp4",
+      "qa_frames": ["build/qa/S14/open.png", "build/qa/S14/mid.png", "build/qa/S14/end.png"]
+    }
+  ]
+}

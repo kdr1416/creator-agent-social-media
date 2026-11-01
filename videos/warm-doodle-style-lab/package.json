@@ -1,0 +1,10 @@
+{
+  "name":"warm-doodle-style-lab",
+  "private":true,
+  "type":"module",
+  "scripts":{
+    "check":"npx --yes hyperframes@0.8.170 check",
+    "dev":"npx --yes hyperframes@0.8.170 preview",
+    "render":"npx --yes hyperframes@0.8.170 render"
+  }
+}

@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>15 · Hoàn tất cùng người đồng hành</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'PilotDisplay';
+  src: url('assets/segoe-ui-black.ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arial.ttf');
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arialbd.ttf');
+  font-weight: 700;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; }
+
+#scene-15 {
+  position: relative;
+  width: 720px;
+  height: 1280px;
+  overflow: hidden;
+  background: #F3EEF7;
+  color: #30313B;
+  font-family: PilotSans, Arial, sans-serif;
+}
+
+#world {
+  position: absolute;
+  inset: 0;
+}
+
+/* Strip Labels */
+.strip {
+  position: absolute;
+  font-family: PilotDisplay, PilotSans, sans-serif;
+  font-weight: 900;
+  line-height: 1.1;
+  white-space: nowrap;
+  box-shadow: 4px 6px 0 #30313b15;
+  border-radius: 4px;
+  z-index: 30;
+  opacity: 0;
+  transform: translateY(-16px) scale(0.95);
+}
+#label-esora {
+  left: 120px;
+  top: 290px;
+  background: #1B6553;
+  color: #FFFFFF;
+  padding: 10px 22px;
+  font-size: 32px;
+}
+#label-nhat {
+  left: 450px;
+  top: 290px;
+  background: #087BC1;
+  color: #FFFFFF;
+  padding: 10px 22px;
+  font-size: 32px;
+}
+
+/* Perspective Wooden Desk */
+#desk-surface {
+  position: absolute;
+  left: 0;
+  top: 660px;
+  width: 720px;
+  height: 380px;
+  z-index: 5;
+}
+
+/* Character layers */
+#characters-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 15;
+}
+</style>
+</head>
+<body>
+<div id="scene-15" data-composition-id="scene-15" data-width="720" data-height="1280" data-start="0" data-duration="4.433333333333334">
+  <div id="world">
+    <!-- Background Decor: Studio Advisory Room Wall -->
+    <svg id="room-bg" viewBox="0 0 720 1280">
+      <line x1="0" y1="660" x2="720" y2="660" stroke="#DFD7EA" stroke-width="2"/>
+      <path d="M0 120L720 50L720 580L0 640Z" fill="#FFFDF8" opacity="0.35"/>
+      <!-- Soft book stack on shelf in background -->
+      <rect x="80" y="240" width="130" height="80" rx="3" fill="#E8DFEF" stroke="#D3C5DF" stroke-width="2"/>
+      <line x1="95" y1="265" x2="195" y2="265" stroke="#D3C5DF" stroke-width="2"/>
+      <line x1="95" y1="285" x2="180" y2="285" stroke="#D3C5DF" stroke-width="2"/>
+    </svg>
+
+    <!-- Perspective Wooden Desk -->
+    <div id="desk-surface">
+      <svg viewBox="0 0 720 380" width="100%" height="100%">
+        <polygon points="0,0 720,0 720,380 0,380" fill="#E6D3BE"/>
+        <line x1="0" y1="2" x2="720" y2="2" stroke="#30313B" stroke-width="3"/>
+        <path d="M50 80Q360 95 670 80" fill="none" stroke="#D8C2AA" stroke-width="2" stroke-linecap="round"/>
+        <path d="M30 200Q360 215 690 200" fill="none" stroke="#D8C2AA" stroke-width="2" stroke-linecap="round"/>
+        <rect x="0" y="375" width="720" height="5" fill="#30313B" opacity="0.2"/>
+      </svg>
+    </div>
+
+    <!-- Center Stage: The Portfolio being assembled & closed -->
+    <div id="portfolio-stage" style="position:absolute;left:180px;top:530px;width:360px;height:280px;z-index:12;">
+      <svg viewBox="0 0 360 280" width="100%" height="100%">
+        <!-- Closed Portfolio Shadow -->
+        <rect id="portfolio-shadow" x="12" y="16" width="310" height="230" rx="4" fill="#30313B" opacity="0.16"/>
+        
+        <!-- Base Backing of Portfolio -->
+        <g id="open-portfolio">
+          <path d="M10 20L175 10L340 22L330 240L175 250L10 240Z" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+          <path d="M25 28L170 18L170 238L25 230Z" fill="#FFFDF8" stroke="#30313B" stroke-width="2"/>
+          <path d="M180 18L325 28L315 230L180 238Z" fill="#FFFDF8" stroke="#30313B" stroke-width="2"/>
+          <!-- Spine -->
+          <line x1="175" y1="10" x2="175" y2="250" stroke="#055B90" stroke-width="3"/>
+        </g>
+
+        <!-- Final Insert Sheet from Scene 14 (slides in from right) -->
+        <g id="final-sheet" transform="translate(185, 20)">
+          <rect x="0" y="0" width="135" height="210" rx="2" fill="#FFFEFA" stroke="#30313B" stroke-width="2"/>
+          <polygon points="100,0 120,0 120,-8 100,-8" fill="#FF7A30" stroke="#30313B" stroke-width="1.5"/>
+          <line x1="15" y1="20" x2="80" y2="20" stroke="#505260" stroke-width="3" stroke-linecap="round"/>
+          <line x1="15" y1="35" x2="120" y2="35" stroke="#CFBFAD" stroke-width="1.8"/>
+          <line x1="15" y1="48" x2="115" y2="48" stroke="#CFBFAD" stroke-width="1.8"/>
+          <rect x="15" y="65" width="40" height="30" rx="2" fill="#FFF9F2" stroke="#E6D3C1" stroke-width="1.5"/>
+          <rect x="15" y="105" width="40" height="30" rx="2" fill="#F4F8FA" stroke="#D0DFE6" stroke-width="1.5"/>
+          <line x1="65" y1="75" x2="120" y2="75" stroke="#FF7A30" stroke-width="2"/>
+          <line x1="65" y1="115" x2="120" y2="115" stroke="#087BC1" stroke-width="2"/>
+        </g>
+
+        <!-- The Front Cover that Folds Closed (from right to left) -->
+        <g id="closing-cover" transform-origin="175 130" opacity="0">
+          <path d="M175 10L335 22L325 240L175 250Z" fill="#087BC1" stroke="#30313B" stroke-width="3.5"/>
+        </g>
+
+        <!-- Fully Closed Neat Portfolio Folder -->
+        <g id="closed-folder" opacity="0">
+          <rect x="35" y="15" width="280" height="235" rx="5" fill="#087BC1" stroke="#30313B" stroke-width="3.5"/>
+          <line x1="50" y1="15" x2="50" y2="250" stroke="#055B90" stroke-width="4"/>
+          <!-- Orange Bookmark at top right -->
+          <polygon points="245,15 275,15 275,0 245,0" fill="#FF7A30" stroke="#30313B" stroke-width="2"/>
+          <!-- Minh Nhật Nameplate Badge on cover -->
+          <g id="cover-nameplate" transform="translate(85, 95)">
+            <rect x="0" y="0" width="180" height="65" rx="3" fill="#FFFEFA" stroke="#30313B" stroke-width="2.5"/>
+            <text x="90" y="42" font-family="PilotDisplay, sans-serif" font-size="20" font-weight="900" text-anchor="middle" fill="#087BC1">MINH NHẬT</text>
+          </g>
+        </g>
+
+        <!-- Binder Clip (Held by Mentor, placed on top edge) -->
+        <g id="binder-clip" transform="translate(160, 4)">
+          <rect x="0" y="0" width="30" height="18" rx="2" fill="#3F3934" stroke="#30313B" stroke-width="2"/>
+          <path d="M5 0L15 -14L25 0" fill="none" stroke="#D3A77A" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Labels -->
+    <div id="label-esora" class="strip">ESORA</div>
+    <div id="label-nhat" class="strip">MINH NHẬT</div>
+
+    <!-- Characters Layer: Mentor (Left) & Nhật (Right) -->
+    <svg id="characters-layer" viewBox="0 0 720 1280">
+      
+      <!-- ==============================================
+           MENTOR (Left: x120–290, y640–1000)
+           Sage green #91B59F, round glasses, cream collar
+           ============================================== -->
+      <g id="mentor-group" transform="translate(130, 640)">
+        <g id="mentor-body-rig" transform-origin="80 230">
+          <ellipse cx="80" cy="300" rx="55" ry="12" fill="#30313B" opacity="0.14"/>
+          <!-- Torso -->
+          <path d="M35 105Q38 75 70 72L115 74Q140 78 138 110L130 220Q128 250 98 252L58 250Q30 248 28 215Z" fill="#91B59F" stroke="#30313B" stroke-width="3.3"/>
+          <polygon points="65,73 85,73 75,105" fill="#FAF6EE" stroke="#30313B" stroke-width="2.5"/>
+          <!-- Head / Hair -->
+          <path d="M45 65Q40 20 78 18Q120 18 122 55L122 72Q90 75 45 65Z" fill="#3F3934" stroke="#30313B" stroke-width="3"/>
+          <path d="M50 62Q52 88 80 90Q110 88 112 62Z" fill="#FCEBD6" stroke="#30313B" stroke-width="2.5"/>
+          <!-- Glasses -->
+          <circle cx="68" cy="65" r="10" fill="none" stroke="#30313B" stroke-width="2.8"/>
+          <circle cx="94" cy="65" r="10" fill="none" stroke="#30313B" stroke-width="2.8"/>
+          <line x1="78" y1="65" x2="84" y2="65" stroke="#30313B" stroke-width="2.8"/>
+          <ellipse cx="68" cy="67" rx="3.5" ry="4.5" fill="#30313B"/>
+          <ellipse cx="94" cy="67" rx="3.5" ry="4.5" fill="#30313B"/>
+          <path id="mentor-mouth" d="M72 82Q80 87 88 82" stroke="#30313B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          
+          <!-- Mentor Arm holding clip on the folder -->
+          <g id="mentor-arm" transform-origin="125 120">
+            <path d="M125 120Q160 150 190 140" fill="none" stroke="#30313B" stroke-width="5.5" stroke-linecap="round"/>
+            <circle cx="190" cy="140" r="7.5" fill="#FCEBD6" stroke="#30313B" stroke-width="2.5"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- ==============================================
+           STUDENT NHẬT (Right: x430–600, y640–1000)
+           Orange #FFAA28, purple cap, blue backpack
+           ============================================== -->
+      <g id="student-group" transform="translate(440, 640)">
+        <g id="student-body-rig" transform-origin="70 230">
+          <ellipse cx="70" cy="300" rx="55" ry="12" fill="#30313B" opacity="0.14"/>
+          <!-- Blue Backpack -->
+          <rect x="100" y="100" width="36" height="90" rx="14" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+          <!-- Torso -->
+          <path d="M28 100Q32 70 65 72L105 75Q128 78 125 110L118 200Q115 235 85 238L52 235Q25 234 22 205Z" fill="#FFAA28" stroke="#30313B" stroke-width="3.3"/>
+          <path d="M38 110Q45 90 65 92" fill="none" stroke="#FFD77B" stroke-width="4.5" stroke-linecap="round"/>
+          <!-- Purple Cap -->
+          <path d="M38 85Q28 45 72 43Q118 42 125 83Z" fill="#A990D5" stroke="#30313B" stroke-width="3"/>
+          <path d="M26 86Q68 68 120 84L142 90Q148 96 138 98L44 96" fill="#8B73C0" stroke="#30313B" stroke-width="3"/>
+          <!-- Face -->
+          <ellipse cx="60" cy="115" rx="4.5" ry="6.2" fill="#30313B"/>
+          <ellipse cx="88" cy="115" rx="4.5" ry="6.2" fill="#30313B"/>
+          <ellipse cx="48" cy="128" rx="8" ry="4" fill="#EE7C47" opacity="0.6"/>
+          <ellipse cx="100" cy="128" rx="8" ry="4" fill="#EE7C47" opacity="0.6"/>
+          <path id="student-mouth" d="M68 134Q78 141 84 134" stroke="#30313B" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+          <!-- Student Arm assembling folder -->
+          <g id="student-arm" transform-origin="30 130">
+            <path d="M30 130Q-15 160 -45 150" fill="none" stroke="#30313B" stroke-width="5.5" stroke-linecap="round"/>
+            <circle cx="-45" cy="150" r="7.5" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<script>
+(function() {
+  const tl = gsap.timeline({ paused: false });
+
+  // 0.00–1.100s: "Đó cũng chính là điều Esora"
+  // Sheet slides in smoothly into the open folder
+  tl.fromTo('#final-sheet', {
+    x: 240,
+    opacity: 0
+  }, {
+    x: 185,
+    opacity: 1,
+    duration: 0.65,
+    ease: 'power2.out'
+  }, 0.2);
+
+  // Student hand guides the sheet
+  tl.to('#student-arm', {
+    x: -12,
+    y: -8,
+    duration: 0.45,
+    ease: 'power2.out'
+  }, 0.2);
+
+  // 1.10–2.700s: "đồng hành cùng Minh Nhật"
+  // Folder cover closes over the pages
+  tl.to('#closing-cover', {
+    opacity: 1,
+    duration: 0.05
+  }, 1.2);
+
+  tl.fromTo('#closing-cover', {
+    scaleX: 1,
+    skewY: 0
+  }, {
+    scaleX: -1,
+    skewY: 6,
+    duration: 0.5,
+    ease: 'power2.inOut'
+  }, 1.2);
+
+  // Clean closed folder appears
+  tl.to('#open-portfolio, #final-sheet, #closing-cover', {
+    opacity: 0,
+    duration: 0.1
+  }, 1.7);
+
+  tl.to('#closed-folder', {
+    opacity: 1,
+    duration: 0.15
+  }, 1.7);
+
+  // Mentor releases the clip and pulls hand back
+  tl.to('#mentor-arm', {
+    x: -30,
+    y: 15,
+    rotation: -10,
+    duration: 0.5,
+    ease: 'power2.out'
+  }, 1.6);
+
+  // Mentor steps back half-pace approvingly
+  tl.to('#mentor-body-rig', {
+    x: -25,
+    duration: 0.6,
+    ease: 'power2.out'
+  }, 2.0);
+
+  // Labels pop in
+  tl.to('#label-esora', {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    duration: 0.4,
+    ease: 'back.out(1.3)'
+  }, 1.9);
+
+  tl.to('#label-nhat', {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    duration: 0.4,
+    ease: 'back.out(1.3)'
+  }, 2.1);
+
+  // 2.70–3.800s: "suốt hành trình ứng tuyển"
+  // Nhật picks up the completed portfolio
+  tl.to('#closed-folder', {
+    y: -15,
+    scale: 1.03,
+    duration: 0.55,
+    ease: 'power2.out'
+  }, 2.6);
+
+  tl.to('#student-arm', {
+    x: -5,
+    y: -18,
+    duration: 0.55,
+    ease: 'power2.out'
+  }, 2.6);
+
+  // Student smiles proudly
+  tl.to('#student-mouth', {
+    attr: { d: 'M68 132Q78 145 84 132' },
+    duration: 0.3
+  }, 2.7);
+
+  // 3.80–4.433s: "kết câu"
+  // Nhật brings the folder forward/right, camera perspective holds
+  tl.to('#student-group', {
+    x: 460,
+    duration: 0.6,
+    ease: 'power1.inOut'
+  }, 3.7);
+
+  tl.to('#portfolio-stage', {
+    x: 200,
+    duration: 0.6,
+    ease: 'power1.inOut'
+  }, 3.7);
+
+  // Hold at end
+  tl.to({ hold: 0 }, { hold: 1, duration: 4.433333333333334, ease: 'none' }, 0);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines['scene-15'] = tl;
+})();
+</script>
+</body>
+</html>

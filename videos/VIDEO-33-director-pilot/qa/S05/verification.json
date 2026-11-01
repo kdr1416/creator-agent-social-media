@@ -1,0 +1,80 @@
+{
+  "scene_id": "S05",
+  "video": "pilots\\S05\\renders\\pilot.mp4",
+  "file_sha256": "e24876dd818221cc7c541aa31311e5a30640b12762d15510d463d845ba352e50",
+  "video_codec": "h264",
+  "width": 720,
+  "height": 1280,
+  "fps": "30/1",
+  "video_frames": 172,
+  "video_duration": 5.733333,
+  "audio_codec": "aac",
+  "audio_duration": 5.733333,
+  "source_samples": 136952,
+  "source_duration": 5.706333333333333,
+  "picture_tail_over_voice_ms": 26.999667,
+  "voice_pcm_bit_exact_source_range": true,
+  "decoded_audio_correlation": 0.9987810262133117,
+  "decoded_audio_rms": 0.11010452668166854,
+  "decoded_vs_source_rms_ratio": 0.7752028623396335,
+  "hyperframes_check_ok": true,
+  "runtime_error_count": 0,
+  "layout_error_count": 0,
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0,
+      1,
+      2.1,
+      4,
+      5.5
+    ],
+    "checked": 1,
+    "passed": 1
+  },
+  "motion_assertions_enabled": false,
+  "proofs": [
+    {
+      "at": 0.1,
+      "frame": "qa\\S05\\frame-0.10.png",
+      "footer_pixel_range": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "at": 1.0,
+      "frame": "qa\\S05\\frame-1.00.png",
+      "footer_pixel_range": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "at": 2.1,
+      "frame": "qa\\S05\\frame-2.10.png",
+      "footer_pixel_range": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "at": 5.5,
+      "frame": "qa\\S05\\frame-5.50.png",
+      "footer_pixel_range": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "note": "AAC is lossy; copied PCM stays bit-exact. One-frame picture rounding is not voice stretching. Automated motion assertions were not authored; motion is reviewed with real frames and playback."
+}

@@ -1,0 +1,542 @@
+{
+  "version": 1,
+  "historyId": "92a1113c-5643-459d-97da-9746dd651398",
+  "currentRevision": "51920fc1-3377-4ff6-9215-d472a6ed84a3",
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\1d\\1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5"
+    },
+    "BRIEF.md": {
+      "hash": "285ab6d072215ca137147b193ff2fb472e182f62e5570b8a2274e13fe2e210d1",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\28\\285ab6d072215ca137147b193ff2fb472e182f62e5570b8a2274e13fe2e210d1"
+    },
+    "CLAUDE.md": {
+      "hash": "1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\1d\\1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5"
+    },
+    "assets/audio.wav": {
+      "hash": "d1635a2fad75789ae9a654e9dbdfe5a6fcb92f0078a99ff4d127728fe8dc1fdc",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\d1\\d1635a2fad75789ae9a654e9dbdfe5a6fcb92f0078a99ff4d127728fe8dc1fdc"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\c1\\c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "assets/scene-sans-bold.ttf": {
+      "hash": "aeb9e4a6ec5cc59f4d72df8189032d7dbb28f45161cf1552174818b5465dac4e",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\ae\\aeb9e4a6ec5cc59f4d72df8189032d7dbb28f45161cf1552174818b5465dac4e"
+    },
+    "frame.md": {
+      "hash": "2cbd54fab55e56162cec25ab36a4f538e703219f380429cb39b3f786c8446019",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\2c\\2cbd54fab55e56162cec25ab36a4f538e703219f380429cb39b3f786c8446019"
+    },
+    "hyperframes.json": {
+      "hash": "9313260261b6e431830877ee35083331270bc6b9a32d50650abe2bd58bdf558d",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\93\\9313260261b6e431830877ee35083331270bc6b9a32d50650abe2bd58bdf558d"
+    },
+    "index.html": {
+      "hash": "2edf005d7a9ae70769a0b1aa275d6d5cccb4e680aa05658f1c963fee49a70b86",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\2e\\2edf005d7a9ae70769a0b1aa275d6d5cccb4e680aa05658f1c963fee49a70b86"
+    },
+    "meta.json": {
+      "hash": "dfbd8a9c622f906c6a3679195c2733ca89dfd1ca3e1de83512a683f7fbb70507",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\df\\dfbd8a9c622f906c6a3679195c2733ca89dfd1ca3e1de83512a683f7fbb70507"
+    },
+    "package.json": {
+      "hash": "77cca5d2f48d32b1fdcecb79916264f47435526e12374ec6d2009ada0631618a",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\77\\77cca5d2f48d32b1fdcecb79916264f47435526e12374ec6d2009ada0631618a"
+    },
+    "qa/word-timings.json": {
+      "hash": "67bf0d94fc50a2acedcf5d5ac4e55ef97cf94351a5dc50509f6c749c9087db52",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\67\\67bf0d94fc50a2acedcf5d5ac4e55ef97cf94351a5dc50509f6c749c9087db52"
+    },
+    "qa/mobile-360x640.png": {
+      "hash": "c044852fe344a8f605f82b0fb168bf2b9c6957bd821698a937573f6cd15c68fd",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\c0\\c044852fe344a8f605f82b0fb168bf2b9c6957bd821698a937573f6cd15c68fd"
+    },
+    "qa/grayscale-thumbnail.png": {
+      "hash": "e6f78c6603d1f6fcddc1382b63da9b52eb1637b11b0d1c48155165712d7c9482",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\e6\\e6f78c6603d1f6fcddc1382b63da9b52eb1637b11b0d1c48155165712d7c9482"
+    },
+    "qa/three-frame-proof.jpg": {
+      "hash": "048209ab0fe925b97ee5d68df74244014c223320eb7615b8befe573edba567b0",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\04\\048209ab0fe925b97ee5d68df74244014c223320eb7615b8befe573edba567b0"
+    },
+    "qa/rendered-motion-sheet.jpg": {
+      "hash": "9dfbf4d72e418f6dad9ec056f92b0d04620ed09c6cc9b232cafdc1d7bcf26ddf",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\9d\\9dfbf4d72e418f6dad9ec056f92b0d04620ed09c6cc9b232cafdc1d7bcf26ddf"
+    },
+    "qa/review.json": {
+      "hash": "d4d557ad711198eee3c61482d6f0dc9edc9cad352d2dba375427555f5a4f7fcb",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\d4\\d4d557ad711198eee3c61482d6f0dc9edc9cad352d2dba375427555f5a4f7fcb"
+    },
+    "qa/review-v1.json": {
+      "hash": "279aa9b316f165db06f327c9afe0f78bf547bc0b8d0d5a24f58c93798b788137",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\27\\279aa9b316f165db06f327c9afe0f78bf547bc0b8d0d5a24f58c93798b788137"
+    },
+    "qa/mobile-v2.png": {
+      "hash": "63c11e8a07b49f2f751266cd569533cd046241163feaf3ad12aef82b10fff159",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\63\\63c11e8a07b49f2f751266cd569533cd046241163feaf3ad12aef82b10fff159"
+    },
+    "qa/grayscale-v2.png": {
+      "hash": "6c9a424d6b148057597fe7279bb79caf5f7a7a20d8559da5d3a29579cfb6981f",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\6c\\6c9a424d6b148057597fe7279bb79caf5f7a7a20d8559da5d3a29579cfb6981f"
+    },
+    "qa/rendered-motion-sheet-v2.jpg": {
+      "hash": "a952827c2e022f093933accee7513700f143802f67a8a756c0e7fbc5390efccd",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\a9\\a952827c2e022f093933accee7513700f143802f67a8a756c0e7fbc5390efccd"
+    }
+  },
+  "revisions": {
+    "c1740f10-2ad4-46a2-9ec3-c68e8153388d": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792171474118,
+      "endedAt": 1792171474121,
+      "files": {
+        "index.html": {
+          "before": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\e2\\e2ff309accdc321ee69411c79df7e51bdb89be519568328acdb28974a47852d6",
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\02\\0275201b2d0f9835cf00e6e6d676309c8aafc3ec3aca10e321002489fd9db09b"
+        }
+      }
+    },
+    "ecf0453c-5d1b-4765-b7e7-eb615a036695": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792171590598,
+      "endedAt": 1792171590713,
+      "files": {
+        "index.html": {
+          "before": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\02\\0275201b2d0f9835cf00e6e6d676309c8aafc3ec3aca10e321002489fd9db09b",
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\fe\\fe366e03b1b70bc8b2d5d51b8cb62e463755c5daa8ba772ea750553488af1483"
+        },
+        "qa/grayscale-thumbnail.png": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\e6\\e6f78c6603d1f6fcddc1382b63da9b52eb1637b11b0d1c48155165712d7c9482"
+        },
+        "qa/mobile-360x640.png": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\c0\\c044852fe344a8f605f82b0fb168bf2b9c6957bd821698a937573f6cd15c68fd"
+        },
+        "qa/three-frame-proof.jpg": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\04\\048209ab0fe925b97ee5d68df74244014c223320eb7615b8befe573edba567b0"
+        }
+      }
+    },
+    "ea257fa7-7b3a-45e5-a4b5-265a83d4bbc9": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792171651463,
+      "endedAt": 1792171653464,
+      "files": {
+        "qa/rendered-motion-sheet.jpg": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\9d\\9dfbf4d72e418f6dad9ec056f92b0d04620ed09c6cc9b232cafdc1d7bcf26ddf"
+        }
+      }
+    },
+    "271918c5-239a-4502-90f5-1b4dcda107a7": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792171697053,
+      "endedAt": 1792171699066,
+      "files": {
+        "qa/review.json": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\27\\279aa9b316f165db06f327c9afe0f78bf547bc0b8d0d5a24f58c93798b788137"
+        }
+      }
+    },
+    "776480d2-f9ee-4e83-90e3-1612fcdd6c89": {
+      "actor": {
+        "kind": "agent",
+        "name": "codex"
+      },
+      "label": "Fix rear arm occlusion in scene04",
+      "startedAt": 1792172631790,
+      "endedAt": 1792172665906,
+      "files": {
+        "index.html": {
+          "before": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\fe\\fe366e03b1b70bc8b2d5d51b8cb62e463755c5daa8ba772ea750553488af1483",
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\2e\\2edf005d7a9ae70769a0b1aa275d6d5cccb4e680aa05658f1c963fee49a70b86"
+        },
+        "qa/review-v1.json": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\27\\279aa9b316f165db06f327c9afe0f78bf547bc0b8d0d5a24f58c93798b788137"
+        }
+      }
+    },
+    "51920fc1-3377-4ff6-9215-d472a6ed84a3": {
+      "actor": {
+        "kind": "agent",
+        "name": "codex"
+      },
+      "label": "Fix rear arm occlusion in scene04",
+      "startedAt": 1792172631790,
+      "endedAt": 1792172805657.273,
+      "files": {
+        "frame.md": {
+          "before": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\1d\\1de268e3a00854f0a1d9bc213fab4fbca9138077f35f1f897c72f4263ac0f15d",
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\2c\\2cbd54fab55e56162cec25ab36a4f538e703219f380429cb39b3f786c8446019"
+        },
+        "qa/grayscale-v2.png": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\6c\\6c9a424d6b148057597fe7279bb79caf5f7a7a20d8559da5d3a29579cfb6981f"
+        },
+        "qa/mobile-v2.png": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\63\\63c11e8a07b49f2f751266cd569533cd046241163feaf3ad12aef82b10fff159"
+        },
+        "qa/rendered-motion-sheet-v2.jpg": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\a9\\a952827c2e022f093933accee7513700f143802f67a8a756c0e7fbc5390efccd"
+        },
+        "qa/review.json": {
+          "before": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\27\\279aa9b316f165db06f327c9afe0f78bf547bc0b8d0d5a24f58c93798b788137",
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\92a1113c-5643-459d-97da-9746dd651398\\blobs\\d4\\d4d557ad711198eee3c61482d6f0dc9edc9cad352d2dba375427555f5a4f7fcb"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "776480d2-f9ee-4e83-90e3-1612fcdd6c89",
+      "id": "945eded2-d5cc-4afe-8505-9cc17ae81215"
+    },
+    "revisions": {
+      "c1740f10-2ad4-46a2-9ec3-c68e8153388d": [
+        {
+          "id": "69f61a2f-a77f-4607-a533-9c82983149de",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792171483917,
+          "contentHash": "3b91d769fac09d9e7181bbb6d146e73ea72cd45711ce85399e64f6b3efa7db75",
+          "revision": "c1740f10-2ad4-46a2-9ec3-c68e8153388d",
+          "inputFingerprint": "4f7f120ac2dc96589d2e5a0a9b4ce6cb0cc63bc1a843f97dd8368d15d6593b77",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "9fc2fdd6-6c14-4951-a905-c14173e999fe"
+        }
+      ],
+      "776480d2-f9ee-4e83-90e3-1612fcdd6c89": [
+        {
+          "id": "945eded2-d5cc-4afe-8505-9cc17ae81215",
+          "scope": "project",
+          "report": "D:\\Năm 3\\flowkit-main\\videos\\china-education-scene-04\\.hyperframes\\artifacts\\checks\\945eded2-d5cc-4afe-8505-9cc17ae81215.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792172675555,
+          "contentHash": "3b91d769fac09d9e7181bbb6d146e73ea72cd45711ce85399e64f6b3efa7db75",
+          "revision": "776480d2-f9ee-4e83-90e3-1612fcdd6c89",
+          "inputFingerprint": "9702882ec2541ad3e99586ed9402b8532bee2c19df59c7d18ddb92f672401d97",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "9441f3b6-d7e1-4616-be05-2be0f7a94a2e",
+        "scope": "project",
+        "report": "D:\\Năm 3\\flowkit-main\\videos\\china-education-scene-04\\.hyperframes\\artifacts\\checks\\9441f3b6-d7e1-4616-be05-2be0f7a94a2e.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1792171369322,
+        "contentHash": "bbe1e7af34f81bbf19e4e58d9adf906336a21cbc1ac268bddbc393c7a282a5ff",
+        "revision": null,
+        "inputFingerprint": "bc6bd0387cf07b8c927e09b258413d46a47ea0d21d429aaa0ceb7cdebb55fb95",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "776480d2-f9ee-4e83-90e3-1612fcdd6c89",
+      "id": "0c53362e-737c-4979-b033-4054dbf11837-3"
+    },
+    "revisions": {
+      "c1740f10-2ad4-46a2-9ec3-c68e8153388d": [
+        {
+          "scope": "full",
+          "id": "3c99f9df-11d3-41e6-b438-8d7b97795b18-0",
+          "time": 0.35,
+          "metadata": {
+            "width": 720,
+            "height": 1280,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792171493842,
+          "contentHash": "9c0b374faba7b18e8f2efee25cc6f9bb493807df3f54edd4295468def5179fe4",
+          "revision": "c1740f10-2ad4-46a2-9ec3-c68e8153388d",
+          "inputFingerprint": "4f7f120ac2dc96589d2e5a0a9b4ce6cb0cc63bc1a843f97dd8368d15d6593b77",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "9fc2fdd6-6c14-4951-a905-c14173e999fe"
+        },
+        {
+          "scope": "full",
+          "id": "3c99f9df-11d3-41e6-b438-8d7b97795b18-1",
+          "time": 2.8,
+          "metadata": {
+            "width": 720,
+            "height": 1280,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792171493843,
+          "contentHash": "b14b1f284b78acfdead98c6f0c2efea25ecf43bfaa9ad081713ad00eb9ac78d9",
+          "revision": "c1740f10-2ad4-46a2-9ec3-c68e8153388d",
+          "inputFingerprint": "4f7f120ac2dc96589d2e5a0a9b4ce6cb0cc63bc1a843f97dd8368d15d6593b77",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "9fc2fdd6-6c14-4951-a905-c14173e999fe"
+        },
+        {
+          "scope": "full",
+          "id": "3c99f9df-11d3-41e6-b438-8d7b97795b18-2",
+          "time": 4.85,
+          "metadata": {
+            "width": 720,
+            "height": 1280,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792171493843,
+          "contentHash": "801d3bcf4c906eb40f814416cbca2c79306ab8cfe198d404218b6acb3819f5fb",
+          "revision": "c1740f10-2ad4-46a2-9ec3-c68e8153388d",
+          "inputFingerprint": "4f7f120ac2dc96589d2e5a0a9b4ce6cb0cc63bc1a843f97dd8368d15d6593b77",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "9fc2fdd6-6c14-4951-a905-c14173e999fe"
+        }
+      ],
+      "776480d2-f9ee-4e83-90e3-1612fcdd6c89": [
+        {
+          "scope": "full",
+          "id": "0c53362e-737c-4979-b033-4054dbf11837-0",
+          "image": "D:\\Năm 3\\flowkit-main\\videos\\china-education-scene-04\\.hyperframes\\artifacts\\snapshots\\4e0f6ab5-a2e1-4342-89bb-047b6cc8ba8f\\frame-00-at-0.35s.png",
+          "time": 0.35,
+          "metadata": {
+            "width": 720,
+            "height": 1280,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792172685862,
+          "contentHash": "b0ba8d41178da4d7d1fc7d6350dbd3a53450a5779e02888a22f92b7144f98ae2",
+          "revision": "776480d2-f9ee-4e83-90e3-1612fcdd6c89",
+          "inputFingerprint": "9702882ec2541ad3e99586ed9402b8532bee2c19df59c7d18ddb92f672401d97",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "0c53362e-737c-4979-b033-4054dbf11837-1",
+          "image": "D:\\Năm 3\\flowkit-main\\videos\\china-education-scene-04\\.hyperframes\\artifacts\\snapshots\\4e0f6ab5-a2e1-4342-89bb-047b6cc8ba8f\\frame-01-at-1.7s.png",
+          "time": 1.7,
+          "metadata": {
+            "width": 720,
+            "height": 1280,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792172685863,
+          "contentHash": "6f55d416976fc6d68be384c38cf88863acbb3db0c45e226d02baebaee3b8faa7",
+          "revision": "776480d2-f9ee-4e83-90e3-1612fcdd6c89",
+          "inputFingerprint": "9702882ec2541ad3e99586ed9402b8532bee2c19df59c7d18ddb92f672401d97",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "0c53362e-737c-4979-b033-4054dbf11837-2",
+          "image": "D:\\Năm 3\\flowkit-main\\videos\\china-education-scene-04\\.hyperframes\\artifacts\\snapshots\\4e0f6ab5-a2e1-4342-89bb-047b6cc8ba8f\\frame-02-at-2.8s.png",
+          "time": 2.8,
+          "metadata": {
+            "width": 720,
+            "height": 1280,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792172685863,
+          "contentHash": "93a493c17a26b797181ab811a3b1ff729d00b8b5735a30c62666c82e4fc2f034",
+          "revision": "776480d2-f9ee-4e83-90e3-1612fcdd6c89",
+          "inputFingerprint": "9702882ec2541ad3e99586ed9402b8532bee2c19df59c7d18ddb92f672401d97",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "0c53362e-737c-4979-b033-4054dbf11837-3",
+          "image": "D:\\Năm 3\\flowkit-main\\videos\\china-education-scene-04\\.hyperframes\\artifacts\\snapshots\\4e0f6ab5-a2e1-4342-89bb-047b6cc8ba8f\\frame-03-at-4.85s.png",
+          "time": 4.85,
+          "metadata": {
+            "width": 720,
+            "height": 1280,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792172685864,
+          "contentHash": "dfb4605eed7a32c068c7a8f0e27a5c1f5e11801da8244904a8b808630450ea05",
+          "revision": "776480d2-f9ee-4e83-90e3-1612fcdd6c89",
+          "inputFingerprint": "9702882ec2541ad3e99586ed9402b8532bee2c19df59c7d18ddb92f672401d97",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "0be1fce2-fd36-4231-8a11-53c0024c7cf5-0",
+        "image": "D:\\Năm 3\\flowkit-main\\videos\\china-education-scene-04\\.hyperframes\\artifacts\\snapshots\\ee5e7070-77e3-4d20-a76e-59efc5933224\\frame-00-at-0.35s.png",
+        "time": 0.35,
+        "metadata": {
+          "width": 720,
+          "height": 1280,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792171379403,
+        "contentHash": "aa6bde29a84c835581ff927063a9439ef7c1cabe627565bc3777216dcaecc634",
+        "revision": null,
+        "inputFingerprint": "bc6bd0387cf07b8c927e09b258413d46a47ea0d21d429aaa0ceb7cdebb55fb95",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "0be1fce2-fd36-4231-8a11-53c0024c7cf5-1",
+        "image": "D:\\Năm 3\\flowkit-main\\videos\\china-education-scene-04\\.hyperframes\\artifacts\\snapshots\\ee5e7070-77e3-4d20-a76e-59efc5933224\\frame-01-at-2.5s.png",
+        "time": 2.5,
+        "metadata": {
+          "width": 720,
+          "height": 1280,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792171379403,
+        "contentHash": "c6750627523038cbe73629b6ed6a74ef2e2f8019e675484e90d4ce3aa30f964a",
+        "revision": null,
+        "inputFingerprint": "bc6bd0387cf07b8c927e09b258413d46a47ea0d21d429aaa0ceb7cdebb55fb95",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "0be1fce2-fd36-4231-8a11-53c0024c7cf5-2",
+        "image": "D:\\Năm 3\\flowkit-main\\videos\\china-education-scene-04\\.hyperframes\\artifacts\\snapshots\\ee5e7070-77e3-4d20-a76e-59efc5933224\\frame-02-at-4.85s.png",
+        "time": 4.85,
+        "metadata": {
+          "width": 720,
+          "height": 1280,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792171379404,
+        "contentHash": "6dcaad3629090a344eaec3c36e8f326d1ae58766680650cb2421ca385b02bdad",
+        "revision": null,
+        "inputFingerprint": "bc6bd0387cf07b8c927e09b258413d46a47ea0d21d429aaa0ceb7cdebb55fb95",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "renders": {
+    "latest": {
+      "id": "9fc2fdd6-6c14-4951-a905-c14173e999fe",
+      "completedAt": 1792172730680,
+      "output": "D:\\Năm 3\\flowkit-main\\videos\\china-education-scene-04\\renders\\scene_04_v2.mp4",
+      "status": "completed",
+      "revision": "776480d2-f9ee-4e83-90e3-1612fcdd6c89"
+    },
+    "retainedRevisions": [
+      "776480d2-f9ee-4e83-90e3-1612fcdd6c89"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

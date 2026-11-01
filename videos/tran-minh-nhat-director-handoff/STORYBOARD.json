@@ -1,0 +1,1964 @@
+{
+  "project_slug": "tran-minh-nhat",
+  "scope": "Design14remaining scenes; freeze3existing selected pilots; no new rendering",
+  "film_duration": 68.2,
+  "new_scene_count": 14,
+  "reference_scene_ids": [
+    "scene_04",
+    "scene_06",
+    "scene_12"
+  ],
+  "design_principle": "Concrete designs per scene, not a universal template or fixed formula. Builder owns technical execution, director owns visual proposition.",
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "start_sample": 0,
+      "end_sample": 77087,
+      "sample_frames": 77087,
+      "raw_text": "Tôi có thể học ở bất kỳ đâu, vì tôi dám khác biệt.",
+      "sha256": "eda1eb638cf8afca0aefcba5826f8ad3b5fbcf278ebbb080dc1561c44c0140d6",
+      "corrected_text": "Tôi có thể học ở bất kỳ đâu, vì tôi dám khác biệt.",
+      "audio": "inputs/audio/scene_01.wav",
+      "duration": 3.2119583333333335,
+      "global_start": 0.0,
+      "global_end": 3.2119583333333335,
+      "title": "Góc học tập mở ra thế giới",
+      "intent": "Đặt tính chủ động và khác biệt làm tinh thần mở đầu; chưa hứa được nhận vào bất kỳ trường nào.",
+      "layout": "Medium shot căn phòng: cửa sổ x135–610/y350–670; bàn x95–615/y790–955; Nhật x340–480/y685–1000. Không vẽ bản đồ hoặc ba icon ngành.",
+      "opening_state": "Nhật đang học bên một cửa sổ đóng rèm; cuốn sổ xanh và ba lô ở trong tầm tay.",
+      "shots": [
+        {
+          "local_start": 0,
+          "local_end": 0.8,
+          "spoken_cue": "Tôi có thể học",
+          "action": "Nhật ngẩng khỏi sổ; tay rời mép trang để chạm rèm."
+        },
+        {
+          "local_start": 0.8,
+          "local_end": 2,
+          "spoken_cue": "ở bất kỳ đâu",
+          "action": "Nhật kéo rèm, bên ngoài mở thành một góc phố có lớp mái nhà xa gần; chiều sâu của môi trường xuất hiện thay cho màn hình thông tin."
+        },
+        {
+          "local_start": 2,
+          "local_end": 2.7,
+          "spoken_cue": "vì tôi dám khác biệt",
+          "action": "Nhật tự dán một miếng đánh dấu cam lên sổ xanh rồi cầm cuốn sổ lên; headline xuất hiện."
+        },
+        {
+          "local_start": 2.7,
+          "local_end": 3.2119583333333335,
+          "spoken_cue": "khác biệt — kết câu",
+          "action": "Giữ một nhịp ánh mắt tự tin và cuốn sổ, cắt trên hành động nâng sổ."
+        }
+      ],
+      "final_state": "Cuốn sổ xanh có dấu cam ở tay Nhật, cửa sổ đã mở.",
+      "visible_text_inventory": [
+        "DÁM KHÁC BIỆT"
+      ],
+      "protagonist_action": "Đọc → mở rèm → chủ động đánh dấu sổ; không mascot đứng cạnh nền chuyển động.",
+      "asset_ids": [
+        "student",
+        "room",
+        "notebook"
+      ],
+      "transition_to_next": "02 tiếp tục đúng cuốn sổ và tay đang nâng, đổi sang góc nhìn giới thiệu; không morph cả căn phòng thành chữ.",
+      "routing_reason": "Ý chính là khung cửa giấy mở lớp môi trường và dấu cá nhân trên sổ. HYBRID người thật sẽ thay đổi phong cách của chủ thể biểu tượng và không thể hiện lớp giấy mở; organic acting không cần để đọc quan hệ này.",
+      "scene_number": 1,
+      "production_action": "build_from_director_packet",
+      "render_mode": "HF_ONLY",
+      "raw_voice_immutable": true,
+      "timing_evidence": "Local cue windows are director estimates, not forced alignment. Builder aligns to copied voice without changing samples/duration.",
+      "composition_reason": "Khung hình phục vụ vật thể/hành động được mô tả; footer200px dành cho phụ đề nếu workflow sau cần, không đặt nội dung ở đó.",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector rõ quan hệ, khả thi; độ tạo khối đồng nhất khác gu giấy/ảnh người dùng đang chọn."
+        },
+        {
+          "id": "hf_existing:cartoon_collage",
+          "assessment": "Giữ nguồn ảnh thật khi có ý nghĩa, nét nhẹ, mascot và props giấy; khớp ba pilot hiện tại."
+        }
+      ],
+      "style_id": "hf_existing:cartoon_collage",
+      "style_reference": [
+        "planning/pilot_manifest.json",
+        "DIRECTOR_BRIEF.md"
+      ],
+      "style_reason": "Gu đã chọn từ ba pilot; khác biệt cảnh đến từ nội dung, không đổi style ngẫu nhiên. Isometric chỉ hữu ích khi cần cấu trúc; Bauhaus phù hợp beat ngắn nhưng không thay tình huống ở đây.",
+      "asset_contract": {
+        "ids": [
+          "student",
+          "room",
+          "notebook"
+        ],
+        "status": "existing library plus specified new illustrations; see ASSET_PLAN.json",
+        "independent_layers": "Mỗi bộ asset liệt kê phần tách lớp; không dùng ảnh phẳng thay asset cần khớp tay/đạo cụ."
+      },
+      "hf_signature_motion": "Nhật kéo rèm, bên ngoài mở thành một góc phố có lớp mái nhà xa gần; chiều sâu của môi trường xuất hiện thay cho màn hình thông tin. / Nhật tự dán một miếng đánh dấu cam lên sổ xanh rồi cầm cuốn sổ lên; headline xuất hiện.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow plate. Essential art/text above y1080 on720x1280.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "physical paper object",
+          "asset_id": "notebook",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        }
+      ],
+      "container_semantics": "Các đối tượng giấy/ảnh/kiến trúc có hành động thật trong cảnh, không phải hộp căn layout.",
+      "visible_text_budget": {
+        "rule": "Chỉ giữ các chuỗi liệt kê; headline/thông tin gắn vật thể, không đọc lại cả voice. Không bắt mọi cảnh cùng số nhãn hay cùng cỡ.",
+        "max_levels_per_item": 2
+      },
+      "mobile_legibility_plan": "Headline thường40–52px; nhãn30–36px. Shorten/reposition if360x640 proof fails; verified Vietnamese fonts in library. Không áp toàn bộ typography04 lên cảnh mới.",
+      "dark_mass_strategy": "Nền sáng theo bối cảnh, #30313B dùng cho nét và chữ; mặt phụ dùng tint thay nhiều khối navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "handoff": "02 tiếp tục đúng cuốn sổ và tay đang nâng, đổi sang góc nhìn giới thiệu; không morph cả căn phòng thành chữ.",
+      "uncertainties": [],
+      "character": true,
+      "transformation": "Nhật ngẩng khỏi sổ; tay rời mép trang để chạm rèm. Nhật kéo rèm, bên ngoài mở thành một góc phố có lớp mái nhà xa gần; chiều sâu của môi trường xuất hiện thay cho màn hình thông tin. Nhật tự dán một miếng đánh dấu cam lên sổ xanh rồi cầm cuốn sổ lên; headline xuất hiện. Giữ một nhịp ánh mắt tự tin và cuốn sổ, cắt trên hành động nâng sổ.",
+      "planned_output": "build/renders/scene_01.mp4",
+      "visual_verb": "Mở rèm và đánh dấu cuốn sổ"
+    },
+    {
+      "scene_id": "scene_02",
+      "start_sample": 77087,
+      "end_sample": 182085,
+      "sample_frames": 104998,
+      "raw_text": "Đó cũng là tin thần của Trần Minh Nhật, chàng trai đến từ IMIT Việt Nam,",
+      "sha256": "d70cf00e2adf2041ac1e71506a8a8d3f6744fa9fd306e24cd5f34a555b05d223",
+      "corrected_text": "Đó cũng là tinh thần của Trần Minh Nhật – chàng trai đến từ RMIT Việt Nam,",
+      "audio": "inputs/audio/scene_02.wav",
+      "duration": 4.374916666666667,
+      "global_start": 3.2119583333333335,
+      "global_end": 7.586875,
+      "title": "Làm quen với Minh Nhật",
+      "intent": "Gắn tên và xuất phát điểm RMIT Việt Nam với nhân vật, không tạo thẻ sinh viên hoặc giả ảnh người thật.",
+      "layout": "Tên trần x95–625/y270–410, hai dòng 50–58px; campus cutout x105–610/y460–720; Nhật với sổ x420–570/y780–1000.",
+      "opening_state": "Cuốn sổ từ01 đi vào khung; Nhật đặt nó lên mép bàn rồi bước ra đứng cạnh.",
+      "shots": [
+        {
+          "local_start": 0,
+          "local_end": 0.75,
+          "spoken_cue": "Đó cũng là tinh thần",
+          "action": "Theo cuốn sổ hạ xuống, máy lùi để thấy Nhật."
+        },
+        {
+          "local_start": 0.75,
+          "local_end": 2.25,
+          "spoken_cue": "Trần Minh Nhật",
+          "action": "Tên hiện hai nhịp TRẦN MINH / NHẬT; Nhật quay về người xem, giữ cuốn sổ có dấu cam."
+        },
+        {
+          "local_start": 2.25,
+          "local_end": 3.65,
+          "spoken_cue": "chàng trai đến từ RMIT Việt Nam",
+          "action": "Ảnh campus RMIT chính thức xuất hiện như một mảnh ảnh phía sau; nhãn RMIT Việt Nam gắn ngay vùng ảnh, không thêm logo tự chế."
+        },
+        {
+          "local_start": 3.65,
+          "local_end": 4.374916666666667,
+          "spoken_cue": "Việt Nam — kết câu",
+          "action": "Nhật mở sổ, lộ mép trang giấy dùng ở03."
+        }
+      ],
+      "final_state": "Tên đã đọc được; ảnh RMIT là bối cảnh; sổ vừa mở.",
+      "visible_text_inventory": [
+        "TRẦN MINH NHẬT",
+        "RMIT Việt Nam"
+      ],
+      "protagonist_action": "Đặt sổ, đứng giới thiệu và chủ động mở trang; nhân vật là biểu tượng, không phải chân dung xác thực.",
+      "asset_ids": [
+        "student",
+        "notebook",
+        "rmit_photo"
+      ],
+      "transition_to_next": "03 cận trang sổ đang mở; tên và ảnh RMIT ra khỏi khung bằng cắt sạch.",
+      "routing_reason": "Tên, ảnh cắt và trang mở tạo chân dung đồ hoạ. HYBRID diễn viên sẽ dễ bị nhận là Nhật thật; không có portrait/footage được cung cấp. Không cần diễn xuất thật để định danh bằng thông tin đã có trong voice.",
+      "scene_number": 2,
+      "production_action": "build_from_director_packet",
+      "render_mode": "HF_ONLY",
+      "raw_voice_immutable": true,
+      "timing_evidence": "Local cue windows are director estimates, not forced alignment. Builder aligns to copied voice without changing samples/duration.",
+      "composition_reason": "Khung hình phục vụ vật thể/hành động được mô tả; footer200px dành cho phụ đề nếu workflow sau cần, không đặt nội dung ở đó.",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector rõ quan hệ, khả thi; độ tạo khối đồng nhất khác gu giấy/ảnh người dùng đang chọn."
+        },
+        {
+          "id": "hf_existing:cartoon_collage",
+          "assessment": "Giữ nguồn ảnh thật khi có ý nghĩa, nét nhẹ, mascot và props giấy; khớp ba pilot hiện tại."
+        }
+      ],
+      "style_id": "hf_existing:cartoon_collage",
+      "style_reference": [
+        "planning/pilot_manifest.json",
+        "DIRECTOR_BRIEF.md"
+      ],
+      "style_reason": "Gu đã chọn từ ba pilot; khác biệt cảnh đến từ nội dung, không đổi style ngẫu nhiên. Isometric chỉ hữu ích khi cần cấu trúc; Bauhaus phù hợp beat ngắn nhưng không thay tình huống ở đây.",
+      "asset_contract": {
+        "ids": [
+          "student",
+          "notebook",
+          "rmit_photo"
+        ],
+        "status": "existing library plus specified new illustrations; see ASSET_PLAN.json",
+        "independent_layers": "Mỗi bộ asset liệt kê phần tách lớp; không dùng ảnh phẳng thay asset cần khớp tay/đạo cụ."
+      },
+      "hf_signature_motion": "Tên hiện hai nhịp TRẦN MINH / NHẬT; Nhật quay về người xem, giữ cuốn sổ có dấu cam. / Ảnh campus RMIT chính thức xuất hiện như một mảnh ảnh phía sau; nhãn RMIT Việt Nam gắn ngay vùng ảnh, không thêm logo tự chế.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow plate. Essential art/text above y1080 on720x1280.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "physical paper object",
+          "asset_id": "notebook",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        },
+        {
+          "object_type": "document",
+          "asset_id": "rmit_photo",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        }
+      ],
+      "container_semantics": "Các đối tượng giấy/ảnh/kiến trúc có hành động thật trong cảnh, không phải hộp căn layout.",
+      "visible_text_budget": {
+        "rule": "Chỉ giữ các chuỗi liệt kê; headline/thông tin gắn vật thể, không đọc lại cả voice. Không bắt mọi cảnh cùng số nhãn hay cùng cỡ.",
+        "max_levels_per_item": 2
+      },
+      "mobile_legibility_plan": "Headline thường40–52px; nhãn30–36px. Shorten/reposition if360x640 proof fails; verified Vietnamese fonts in library. Không áp toàn bộ typography04 lên cảnh mới.",
+      "dark_mass_strategy": "Nền sáng theo bối cảnh, #30313B dùng cho nét và chữ; mặt phụ dùng tint thay nhiều khối navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "handoff": "03 cận trang sổ đang mở; tên và ảnh RMIT ra khỏi khung bằng cắt sạch.",
+      "uncertainties": [],
+      "character": true,
+      "transformation": "Theo cuốn sổ hạ xuống, máy lùi để thấy Nhật. Tên hiện hai nhịp TRẦN MINH / NHẬT; Nhật quay về người xem, giữ cuốn sổ có dấu cam. Ảnh campus RMIT chính thức xuất hiện như một mảnh ảnh phía sau; nhãn RMIT Việt Nam gắn ngay vùng ảnh, không thêm logo tự chế. Nhật mở sổ, lộ mép trang giấy dùng ở03.",
+      "planned_output": "build/renders/scene_02.mp4",
+      "visual_verb": "Bước vào khung và mở sổ giới thiệu"
+    },
+    {
+      "scene_id": "scene_03",
+      "start_sample": 182085,
+      "end_sample": 298236,
+      "sample_frames": 116151,
+      "raw_text": "vừa chính thức chính phục thành công một trong những trường đại học nghiên cứu dành tiếng nhất Hà Lan.",
+      "sha256": "d22bc4d3a231f225a5ea64b1b5429644572e2aa44ffe9d6a31adcbbef2f768e4",
+      "corrected_text": "vừa chính thức chinh phục thành công một trong những trường đại học nghiên cứu danh tiếng nhất Hà Lan.",
+      "audio": "inputs/audio/scene_03.wav",
+      "duration": 4.839625,
+      "global_start": 7.586875,
+      "global_end": 12.4265,
+      "title": "Điểm đến Hà Lan",
+      "intent": "Cho người xem thấy địa điểm của thành quả, chuẩn bị cho cảnh nhận thư.",
+      "layout": "Cận mặt bàn. Bản đồ Hà Lan x160–540/y370–810; chấm Amsterdam có nhãn x360–595/y470–535; tay Nhật đi vào từ dưới, không route bay hoặc nhảy qua quốc gia khác.",
+      "opening_state": "Trang mở thành một bản đồ giấy gấp; chưa có tên VU hoặc huy chương.",
+      "shots": [
+        {
+          "local_start": 0,
+          "local_end": 1.1,
+          "spoken_cue": "vừa chính thức chinh phục thành công",
+          "action": "Nhật mở nếp gấp bản đồ bằng hai tay; giấy chiếm phần lớn khung."
+        },
+        {
+          "local_start": 1.1,
+          "local_end": 2.8,
+          "spoken_cue": "một trong những trường đại học nghiên cứu",
+          "action": "Chấm Amsterdam và một khối campus giấy nhỏ nâng lên tại chấm; chỉ định vị thành phố, không mô phỏng tỉ lệ campus."
+        },
+        {
+          "local_start": 2.8,
+          "local_end": 4.1,
+          "spoken_cue": "danh tiếng nhất Hà Lan",
+          "action": "Nhãn HÀ LAN được đọc rõ; hai tay gấp bản đồ xuống, một phong bì kem được đặt lên trước."
+        },
+        {
+          "local_start": 4.1,
+          "local_end": 4.839625,
+          "spoken_cue": "kết câu",
+          "action": "Đưa phong bì và Nhật về vùng bố cục mở đầu pilot04; giữ nắp đóng."
+        }
+      ],
+      "final_state": "Phong bì đóng lớn x75–645/y650–950; Nhật về phía phải; không mở thư sớm.",
+      "visible_text_inventory": [
+        "HÀ LAN",
+        "Amsterdam"
+      ],
+      "protagonist_action": "Mở bản đồ rồi đặt phong bì; không cầm cúp, không đưa thêm học bổng.",
+      "asset_ids": [
+        "student_hands",
+        "netherlands_map",
+        "envelope"
+      ],
+      "transition_to_next": "Match cut sang frame đầu pilot04 theo phong bì. Lấy ảnh chụp frame0 của pilot để căn, không sửa pilot04.",
+      "routing_reason": "Bản đồ giấy gấp và định vị chính xác là nội dung chính; HYBRID map prop thật thêm cảnh quay chứ không giúp đọc điểm đến tốt hơn, còn có nguy cơ chữ tự sinh trên bản đồ.",
+      "scene_number": 3,
+      "production_action": "build_from_director_packet",
+      "render_mode": "HF_ONLY",
+      "raw_voice_immutable": true,
+      "timing_evidence": "Local cue windows are director estimates, not forced alignment. Builder aligns to copied voice without changing samples/duration.",
+      "composition_reason": "Khung hình phục vụ vật thể/hành động được mô tả; footer200px dành cho phụ đề nếu workflow sau cần, không đặt nội dung ở đó.",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector rõ quan hệ, khả thi; độ tạo khối đồng nhất khác gu giấy/ảnh người dùng đang chọn."
+        },
+        {
+          "id": "hf_existing:cartoon_collage",
+          "assessment": "Giữ nguồn ảnh thật khi có ý nghĩa, nét nhẹ, mascot và props giấy; khớp ba pilot hiện tại."
+        }
+      ],
+      "style_id": "hf_existing:cartoon_collage",
+      "style_reference": [
+        "planning/pilot_manifest.json",
+        "DIRECTOR_BRIEF.md"
+      ],
+      "style_reason": "Gu đã chọn từ ba pilot; khác biệt cảnh đến từ nội dung, không đổi style ngẫu nhiên. Isometric chỉ hữu ích khi cần cấu trúc; Bauhaus phù hợp beat ngắn nhưng không thay tình huống ở đây.",
+      "asset_contract": {
+        "ids": [
+          "student_hands",
+          "netherlands_map",
+          "envelope"
+        ],
+        "status": "existing library plus specified new illustrations; see ASSET_PLAN.json",
+        "independent_layers": "Mỗi bộ asset liệt kê phần tách lớp; không dùng ảnh phẳng thay asset cần khớp tay/đạo cụ."
+      },
+      "hf_signature_motion": "Chấm Amsterdam và một khối campus giấy nhỏ nâng lên tại chấm; chỉ định vị thành phố, không mô phỏng tỉ lệ campus. / Nhãn HÀ LAN được đọc rõ; hai tay gấp bản đồ xuống, một phong bì kem được đặt lên trước.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow plate. Essential art/text above y1080 on720x1280.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "physical paper object",
+          "asset_id": "envelope",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        }
+      ],
+      "container_semantics": "Các đối tượng giấy/ảnh/kiến trúc có hành động thật trong cảnh, không phải hộp căn layout.",
+      "visible_text_budget": {
+        "rule": "Chỉ giữ các chuỗi liệt kê; headline/thông tin gắn vật thể, không đọc lại cả voice. Không bắt mọi cảnh cùng số nhãn hay cùng cỡ.",
+        "max_levels_per_item": 2
+      },
+      "mobile_legibility_plan": "Headline thường40–52px; nhãn30–36px. Shorten/reposition if360x640 proof fails; verified Vietnamese fonts in library. Không áp toàn bộ typography04 lên cảnh mới.",
+      "dark_mass_strategy": "Nền sáng theo bối cảnh, #30313B dùng cho nét và chữ; mặt phụ dùng tint thay nhiều khối navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "handoff": "Match cut sang frame đầu pilot04 theo phong bì. Lấy ảnh chụp frame0 của pilot để căn, không sửa pilot04.",
+      "uncertainties": [],
+      "character": true,
+      "transformation": "Nhật mở nếp gấp bản đồ bằng hai tay; giấy chiếm phần lớn khung. Chấm Amsterdam và một khối campus giấy nhỏ nâng lên tại chấm; chỉ định vị thành phố, không mô phỏng tỉ lệ campus. Nhãn HÀ LAN được đọc rõ; hai tay gấp bản đồ xuống, một phong bì kem được đặt lên trước. Đưa phong bì và Nhật về vùng bố cục mở đầu pilot04; giữ nắp đóng.",
+      "planned_output": "build/renders/scene_03.mp4",
+      "visual_verb": "Mở bản đồ và dựng điểm đến"
+    },
+    {
+      "scene_id": "scene_04",
+      "start_sample": 298236,
+      "end_sample": 442731,
+      "sample_frames": 144495,
+      "raw_text": "Xin chúc mừng Minh Nhật đã nhận thứ mở nhập học từ V-University Amsterdam, VU Amsterdam.",
+      "sha256": "55a4529187c2060f4201a2f1141a6f7517c2255dec5d4b102d3599d1d44c8b24",
+      "corrected_text": "Xin chúc mừng Minh Nhật đã nhận thư mời nhập học từ: Vrije Universiteit Amsterdam (VU Amsterdam).",
+      "audio": "inputs/audio/scene_04.wav",
+      "duration": 6.020625,
+      "global_start": 12.4265,
+      "global_end": 18.447125,
+      "title": "Phong thư mở ra điểm đến",
+      "intent": "Phong bì mở, ảnh campus VU xuất hiện và Nhật mừng kết quả.",
+      "layout": "Giữ bố cục nguồn pilot đã đóng băng, không tự thiết kế lại.",
+      "opening_state": "Lấy frame đầu chính nguồn pilot.",
+      "shots": [],
+      "final_state": "Lấy frame cuối chính nguồn pilot.",
+      "visible_text_inventory": [
+        "CHÚC MỪNG",
+        "MINH NHẬT!",
+        "VU AMSTERDAM",
+        "THƯ MỜI NHẬP HỌC"
+      ],
+      "protagonist_action": "Phản ứng mừng nhận thư.",
+      "asset_ids": [
+        "envelope",
+        "student",
+        "vu_photo"
+      ],
+      "transition_to_next": "05 bắt đầu từ đúng ảnh campus và phong bì cuối04.",
+      "routing_reason": "Cơ chế phong bì/collage là ẩn dụ thành quả; HYBRID mở thư thật dễ gợi bằng chứng tuyển sinh chưa được cung cấp.",
+      "reuse_pilot": {
+        "scene_id": "scene_04",
+        "source_directory": "videos/tran-minh-nhat-pilot",
+        "selected_export": "renders/tran-minh-nhat-pilot.mp4",
+        "frozen_source": "reference_pilots/scene_04/index.html",
+        "frozen_video": "reference_pilots/scene_04/renders/pilot.mp4",
+        "sha256": "ebbc154b445b67f5e11c372c53825516897ea58f33850643fc8002e6d0432c84",
+        "status": "existing selected pilot; no new render in this handoff task"
+      },
+      "scene_number": 4,
+      "production_action": "reuse_selected_pilot",
+      "render_mode": "HF_ONLY",
+      "raw_voice_immutable": true,
+      "timing_evidence": "Local cue windows are director estimates, not forced alignment. Builder aligns to copied voice without changing samples/duration.",
+      "composition_reason": "Khung hình phục vụ vật thể/hành động được mô tả; footer200px dành cho phụ đề nếu workflow sau cần, không đặt nội dung ở đó.",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector rõ quan hệ, khả thi; độ tạo khối đồng nhất khác gu giấy/ảnh người dùng đang chọn."
+        },
+        {
+          "id": "hf_existing:cartoon_collage",
+          "assessment": "Giữ nguồn ảnh thật khi có ý nghĩa, nét nhẹ, mascot và props giấy; khớp ba pilot hiện tại."
+        }
+      ],
+      "style_id": "hf_existing:cartoon_collage",
+      "style_reference": [
+        "planning/pilot_manifest.json",
+        "DIRECTOR_BRIEF.md"
+      ],
+      "style_reason": "Gu đã chọn từ ba pilot; khác biệt cảnh đến từ nội dung, không đổi style ngẫu nhiên. Isometric chỉ hữu ích khi cần cấu trúc; Bauhaus phù hợp beat ngắn nhưng không thay tình huống ở đây.",
+      "asset_contract": {
+        "ids": [
+          "envelope",
+          "student",
+          "vu_photo"
+        ],
+        "status": "existing library plus specified new illustrations; see ASSET_PLAN.json",
+        "independent_layers": "Mỗi bộ asset liệt kê phần tách lớp; không dùng ảnh phẳng thay asset cần khớp tay/đạo cụ."
+      },
+      "hf_signature_motion": "Phong bì mở, ảnh campus VU xuất hiện và Nhật mừng kết quả.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow plate. Essential art/text above y1080 on720x1280.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "physical paper object",
+          "asset_id": "envelope",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        },
+        {
+          "object_type": "document",
+          "asset_id": "vu_photo",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        }
+      ],
+      "container_semantics": "Các đối tượng giấy/ảnh/kiến trúc có hành động thật trong cảnh, không phải hộp căn layout.",
+      "visible_text_budget": {
+        "rule": "Chỉ giữ các chuỗi liệt kê; headline/thông tin gắn vật thể, không đọc lại cả voice. Không bắt mọi cảnh cùng số nhãn hay cùng cỡ.",
+        "max_levels_per_item": 2
+      },
+      "mobile_legibility_plan": "Headline thường40–52px; nhãn30–36px. Shorten/reposition if360x640 proof fails; verified Vietnamese fonts in library. Không áp toàn bộ typography04 lên cảnh mới.",
+      "dark_mass_strategy": "Nền sáng theo bối cảnh, #30313B dùng cho nét và chữ; mặt phụ dùng tint thay nhiều khối navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "handoff": "05 bắt đầu từ đúng ảnh campus và phong bì cuối04.",
+      "uncertainties": [],
+      "character": true,
+      "transformation": "Giữ đúng chuyển động nguồn pilot.",
+      "planned_output": "build/renders/scene_04.mp4",
+      "assembly_cleanup": "planning/pilot04_assembly_cleanup.json",
+      "visual_verb": "Mở thư mời nhập học"
+    },
+    {
+      "scene_id": "scene_05",
+      "start_sample": 442731,
+      "end_sample": 520028,
+      "sample_frames": 77297,
+      "raw_text": "Một trong những trường đại học nghiên cứu hàng đầu Hà Lan và Châu Âu,",
+      "sha256": "1c6864d8790820decbc676d294dc09690f92158299e1f9105a50b9304f66b1a6",
+      "corrected_text": "Một trong những trường đại học nghiên cứu hàng đầu Hà Lan và châu Âu,",
+      "audio": "inputs/audio/scene_05.wav",
+      "duration": 3.2207083333333335,
+      "global_start": 18.447125,
+      "global_end": 21.667833333333334,
+      "title": "Từ phong thư tới môi trường học thuật",
+      "intent": "Cho VU một không gian cụ thể, tránh dựng thành tích xếp hạng chưa kiểm chứng.",
+      "layout": "Ảnh campus VU bắt đầu tại đúng vị trí cuối04, tiến tới x104–616/y383–946; vỏ kiến trúc giấy của06 xuất hiện quanh mép trong đoạn chốt.",
+      "opening_state": "Giữ ảnh VU vừa nhô khỏi phong bì ở04; không chèn một title card mới.",
+      "shots": [
+        {
+          "local_start": 0,
+          "local_end": 0.75,
+          "spoken_cue": "Một trong những trường",
+          "action": "Máy bám ảnh campus, phong bì hạ khỏi đáy sân khấu; dải tên trường được giữ để đọc."
+        },
+        {
+          "local_start": 0.75,
+          "local_end": 2.25,
+          "spoken_cue": "đại học nghiên cứu hàng đầu",
+          "action": "Ảnh đứng lại như một tờ ảnh lớn. Hai chi tiết đời sống học thuật ở mép dưới: sách mở và một mặt bàn thí nghiệm trong cùng bối cảnh, không phải hai icon nổi."
+        },
+        {
+          "local_start": 2.25,
+          "local_end": 3.2207083333333335,
+          "spoken_cue": "Hà Lan và châu Âu",
+          "action": "Mép khung ảnh trở thành vỏ mô hình campus; chốt hình theo frame đầu06. Chi tiết sách/bàn ra ngoài crop."
+        }
+      ],
+      "final_state": "Ảnh trên mặt mô hình có tỉ lệ/vị trí như đầu06, sẵn sàng bóc mở mặt cắt.",
+      "visible_text_inventory": [
+        "VU AMSTERDAM"
+      ],
+      "protagonist_action": "Không thêm nhân vật: ảnh địa điểm và cấu trúc học thuật cần ưu tiên trong3.22s.",
+      "asset_ids": [
+        "vu_photo",
+        "campus_shell",
+        "research_props"
+      ],
+      "transition_to_next": "Cắt sang đầu pilot06 khi cùng mặt ảnh/vỏ kiến trúc. 06 tự thực hiện phần mở mặt cắt.",
+      "routing_reason": "Biến đổi ảnh cắt thành mô hình lớp giấy mang ý chính. HYBRID campus moving footage không hỗ trợ phép chuyển từ địa điểm sang cấu trúc lĩnh vực ở06; live motion sẽ chỉ thành wallpaper.",
+      "scene_number": 5,
+      "production_action": "build_from_director_packet",
+      "render_mode": "HF_ONLY",
+      "raw_voice_immutable": true,
+      "timing_evidence": "Local cue windows are director estimates, not forced alignment. Builder aligns to copied voice without changing samples/duration.",
+      "composition_reason": "Khung hình phục vụ vật thể/hành động được mô tả; footer200px dành cho phụ đề nếu workflow sau cần, không đặt nội dung ở đó.",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector rõ quan hệ, khả thi; độ tạo khối đồng nhất khác gu giấy/ảnh người dùng đang chọn."
+        },
+        {
+          "id": "hf_existing:cartoon_collage",
+          "assessment": "Giữ nguồn ảnh thật khi có ý nghĩa, nét nhẹ, mascot và props giấy; khớp ba pilot hiện tại."
+        }
+      ],
+      "style_id": "hf_existing:cartoon_collage",
+      "style_reference": [
+        "planning/pilot_manifest.json",
+        "DIRECTOR_BRIEF.md"
+      ],
+      "style_reason": "Gu đã chọn từ ba pilot; khác biệt cảnh đến từ nội dung, không đổi style ngẫu nhiên. Isometric chỉ hữu ích khi cần cấu trúc; Bauhaus phù hợp beat ngắn nhưng không thay tình huống ở đây.",
+      "asset_contract": {
+        "ids": [
+          "vu_photo",
+          "campus_shell",
+          "research_props"
+        ],
+        "status": "existing library plus specified new illustrations; see ASSET_PLAN.json",
+        "independent_layers": "Mỗi bộ asset liệt kê phần tách lớp; không dùng ảnh phẳng thay asset cần khớp tay/đạo cụ."
+      },
+      "hf_signature_motion": "Ảnh đứng lại như một tờ ảnh lớn. Hai chi tiết đời sống học thuật ở mép dưới: sách mở và một mặt bàn thí nghiệm trong cùng bối cảnh, không phải hai icon nổi. / Mép khung ảnh trở thành vỏ mô hình campus; chốt hình theo frame đầu06. Chi tiết sách/bàn ra ngoài crop.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow plate. Essential art/text above y1080 on720x1280.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "asset_id": "vu_photo",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        },
+        {
+          "object_type": "physical architectural model",
+          "asset_id": "campus_shell",
+          "bounds": "Theo nguồn06 hoặc layout05.",
+          "semantic_boundary": "Sàn, cột và vỏ mô hình nối các lĩnh vực trong cùng campus.",
+          "removal_consequence": "Mất quan hệ cùng một kiến trúc."
+        }
+      ],
+      "container_semantics": "Các đối tượng giấy/ảnh/kiến trúc có hành động thật trong cảnh, không phải hộp căn layout.",
+      "visible_text_budget": {
+        "rule": "Chỉ giữ các chuỗi liệt kê; headline/thông tin gắn vật thể, không đọc lại cả voice. Không bắt mọi cảnh cùng số nhãn hay cùng cỡ.",
+        "max_levels_per_item": 2
+      },
+      "mobile_legibility_plan": "Headline thường40–52px; nhãn30–36px. Shorten/reposition if360x640 proof fails; verified Vietnamese fonts in library. Không áp toàn bộ typography04 lên cảnh mới.",
+      "dark_mass_strategy": "Nền sáng theo bối cảnh, #30313B dùng cho nét và chữ; mặt phụ dùng tint thay nhiều khối navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "handoff": "Cắt sang đầu pilot06 khi cùng mặt ảnh/vỏ kiến trúc. 06 tự thực hiện phần mở mặt cắt.",
+      "uncertainties": [],
+      "character": false,
+      "transformation": "Máy bám ảnh campus, phong bì hạ khỏi đáy sân khấu; dải tên trường được giữ để đọc. Ảnh đứng lại như một tờ ảnh lớn. Hai chi tiết đời sống học thuật ở mép dưới: sách mở và một mặt bàn thí nghiệm trong cùng bối cảnh, không phải hai icon nổi. Mép khung ảnh trở thành vỏ mô hình campus; chốt hình theo frame đầu06. Chi tiết sách/bàn ra ngoài crop.",
+      "planned_output": "build/renders/scene_05.mp4",
+      "visual_verb": "Mở rộng ảnh trường thành môi trường học thuật"
+    },
+    {
+      "scene_id": "scene_06",
+      "start_sample": 520028,
+      "end_sample": 644652,
+      "sample_frames": 124624,
+      "raw_text": "nổi tiếng với các lĩnh vực kinh doanh, khoa học giữ liệu, trí tuệ nhân tạo, luật và khoa học sức khỏe.",
+      "sha256": "deb5086155956deaa12be2efee46c7d7a4d42f03d2b2feac0c9c9d5e74acf0ab",
+      "corrected_text": "nổi tiếng với các lĩnh vực Kinh doanh, Khoa học Dữ liệu, Trí tuệ nhân tạo, Luật và Khoa học Sức khỏe.",
+      "audio": "inputs/audio/scene_06.wav",
+      "duration": 5.192666666666667,
+      "global_start": 21.667833333333334,
+      "global_end": 26.8605,
+      "title": "Nhiều lĩnh vực cùng một campus",
+      "intent": "Mặt cắt kiến trúc mở năm không gian cùng trường; không chuỗi nhân quả.",
+      "layout": "Giữ bố cục nguồn pilot đã đóng băng, không tự thiết kế lại.",
+      "opening_state": "Lấy frame đầu chính nguồn pilot.",
+      "shots": [],
+      "final_state": "Lấy frame cuối chính nguồn pilot.",
+      "visible_text_inventory": [
+        "VU AMSTERDAM",
+        "Kinh doanh",
+        "Khoa học dữ liệu",
+        "Trí tuệ nhân tạo",
+        "Luật",
+        "Khoa học sức khoẻ"
+      ],
+      "protagonist_action": "Không nhân vật; tập hợp ngành cần diện tích.",
+      "asset_ids": [
+        "campus_shell",
+        "vu_photo"
+      ],
+      "transition_to_next": "07 hard cut sang cuộn bằng ở bối cảnh học thuật.",
+      "routing_reason": "Quan hệ tập hợp ngành trong cùng trường cần các lớp đồng hiện; người thật đi qua từng phòng sẽ biến thành hành trình sai nghĩa.",
+      "reuse_pilot": {
+        "scene_id": "scene_06",
+        "source_directory": "videos/tran-minh-nhat-style-lab-06-12/scene_06",
+        "selected_export": "renders/scene_06-v4.mp4",
+        "frozen_source": "reference_pilots/scene_06/index.html",
+        "frozen_video": "reference_pilots/scene_06/renders/pilot.mp4",
+        "sha256": "b1357d65a62a916d3f56bf544c2a498711dfc8975879f6c06e7a049888a7eaba",
+        "status": "existing selected pilot; no new render in this handoff task"
+      },
+      "scene_number": 6,
+      "production_action": "reuse_selected_pilot",
+      "render_mode": "HF_ONLY",
+      "raw_voice_immutable": true,
+      "timing_evidence": "Local cue windows are director estimates, not forced alignment. Builder aligns to copied voice without changing samples/duration.",
+      "composition_reason": "Khung hình phục vụ vật thể/hành động được mô tả; footer200px dành cho phụ đề nếu workflow sau cần, không đặt nội dung ở đó.",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector rõ quan hệ, khả thi; độ tạo khối đồng nhất khác gu giấy/ảnh người dùng đang chọn."
+        },
+        {
+          "id": "hf_existing:cartoon_collage",
+          "assessment": "Giữ nguồn ảnh thật khi có ý nghĩa, nét nhẹ, mascot và props giấy; khớp ba pilot hiện tại."
+        }
+      ],
+      "style_id": "hf_existing:cartoon_collage",
+      "style_reference": [
+        "planning/pilot_manifest.json",
+        "DIRECTOR_BRIEF.md"
+      ],
+      "style_reason": "Gu đã chọn từ ba pilot; khác biệt cảnh đến từ nội dung, không đổi style ngẫu nhiên. Isometric chỉ hữu ích khi cần cấu trúc; Bauhaus phù hợp beat ngắn nhưng không thay tình huống ở đây.",
+      "asset_contract": {
+        "ids": [
+          "campus_shell",
+          "vu_photo"
+        ],
+        "status": "existing library plus specified new illustrations; see ASSET_PLAN.json",
+        "independent_layers": "Mỗi bộ asset liệt kê phần tách lớp; không dùng ảnh phẳng thay asset cần khớp tay/đạo cụ."
+      },
+      "hf_signature_motion": "Mặt cắt kiến trúc mở năm không gian cùng trường; không chuỗi nhân quả.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow plate. Essential art/text above y1080 on720x1280.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "asset_id": "vu_photo",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        },
+        {
+          "object_type": "physical architectural model",
+          "asset_id": "campus_shell",
+          "bounds": "Theo nguồn06 hoặc layout05.",
+          "semantic_boundary": "Sàn, cột và vỏ mô hình nối các lĩnh vực trong cùng campus.",
+          "removal_consequence": "Mất quan hệ cùng một kiến trúc."
+        }
+      ],
+      "container_semantics": "Các đối tượng giấy/ảnh/kiến trúc có hành động thật trong cảnh, không phải hộp căn layout.",
+      "visible_text_budget": {
+        "rule": "Chỉ giữ các chuỗi liệt kê; headline/thông tin gắn vật thể, không đọc lại cả voice. Không bắt mọi cảnh cùng số nhãn hay cùng cỡ.",
+        "max_levels_per_item": 2
+      },
+      "mobile_legibility_plan": "Headline thường40–52px; nhãn30–36px. Shorten/reposition if360x640 proof fails; verified Vietnamese fonts in library. Không áp toàn bộ typography04 lên cảnh mới.",
+      "dark_mass_strategy": "Nền sáng theo bối cảnh, #30313B dùng cho nét và chữ; mặt phụ dùng tint thay nhiều khối navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "handoff": "07 hard cut sang cuộn bằng ở bối cảnh học thuật.",
+      "uncertainties": [],
+      "character": false,
+      "transformation": "Giữ đúng chuyển động nguồn pilot.",
+      "planned_output": "build/renders/scene_06.mp4",
+      "visual_verb": "Mở từng không gian chuyên ngành"
+    },
+    {
+      "scene_id": "scene_07",
+      "start_sample": 644652,
+      "end_sample": 747452,
+      "sample_frames": 102800,
+      "raw_text": "Tấm bằng từ VU Amsterdam, được các doanh nghiệp và tổ chức quốc tế đánh giá cao,",
+      "sha256": "6c283804c6904a47273a6ae0e5d04e661ccd7ccb58d73642941f08bcc257b4b3",
+      "corrected_text": "Tấm bằng từ VU Amsterdam được các doanh nghiệp và tổ chức quốc tế đánh giá cao,",
+      "audio": "inputs/audio/scene_07.wav",
+      "duration": 4.283333333333333,
+      "global_start": 26.8605,
+      "global_end": 31.143833333333333,
+      "title": "Giá trị học thuật trong bối cảnh quốc tế",
+      "intent": "Minh hoạ giá trị bằng cấp ở cấp trường, không nói Nhật đã tốt nghiệp hoặc có thư nhận việc.",
+      "layout": "Cuộn bằng tượng trưng x180–540/y480–785; một bàn đọc tài liệu ở tiền cảnh y820–980; bối cảnh nghiên cứu trái và nơi làm việc phải là hai cánh không gian mở, không hộp thông tin.",
+      "opening_state": "Hard cut từ mô hình06 sang cuộn giấy buộc dải xanh trên bàn; không tiếp tục chuyển từng ngành.",
+      "shots": [
+        {
+          "local_start": 0,
+          "local_end": 1,
+          "spoken_cue": "Tấm bằng từ VU Amsterdam",
+          "action": "Cuộn giấy bung ngang một phần; chỉ có tên trường và một dấu trang trung tính, không chữ ký/con dấu/serial chứng chỉ."
+        },
+        {
+          "local_start": 1,
+          "local_end": 2.6,
+          "spoken_cue": "được các doanh nghiệp và tổ chức quốc tế",
+          "action": "Góc nhìn mở rộng, thấy bàn nghiên cứu bên trái và bàn làm việc nhóm bên phải trong cùng một trường nhìn; không gắn logo nhà tuyển dụng."
+        },
+        {
+          "local_start": 2.6,
+          "local_end": 3.7,
+          "spoken_cue": "đánh giá cao",
+          "action": "Một bàn tay người đọc đưa tài liệu học thuật kèm cuộn giấy về vùng đọc, động tác xem xét có chủ ý; không tick đỗ hay bắt tay tuyển dụng."
+        },
+        {
+          "local_start": 3.7,
+          "local_end": 4.283333333333333,
+          "spoken_cue": "kết câu",
+          "action": "Giữ cuộn giấy và hai bối cảnh đủ nhận ra; dải xanh dẫn màu sang08, không ép biến hình."
+        }
+      ],
+      "final_state": "Giá trị học thuật được đặt trong môi trường học/nghiên cứu/làm việc, chưa có kết quả cá nhân.",
+      "visible_text_inventory": [
+        "VU Amsterdam",
+        "GIÁ TRỊ HỌC THUẬT"
+      ],
+      "protagonist_action": "Không Nhật trong cảnh này để tránh hiểu rằng Nhật đã nhận bằng; chỉ tay người đọc vô danh.",
+      "asset_ids": [
+        "credential_prop",
+        "international_workspaces",
+        "reader_hand"
+      ],
+      "transition_to_next": "Hard cut sang globe08; màu xanh cuộn bằng nối bằng màu, không cần transition có hiệu ứng.",
+      "routing_reason": "Cuộn giấy và hai cánh bối cảnh là minh hoạ khái niệm/giá trị học thuật. HYBRID bằng thật hoặc actor nhận bằng dễ bị hiểu thành chứng cứ tốt nghiệp/tuyển dụng của Nhật chưa có.",
+      "scene_number": 7,
+      "production_action": "build_from_director_packet",
+      "render_mode": "HF_ONLY",
+      "raw_voice_immutable": true,
+      "timing_evidence": "Local cue windows are director estimates, not forced alignment. Builder aligns to copied voice without changing samples/duration.",
+      "composition_reason": "Khung hình phục vụ vật thể/hành động được mô tả; footer200px dành cho phụ đề nếu workflow sau cần, không đặt nội dung ở đó.",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector rõ quan hệ, khả thi; độ tạo khối đồng nhất khác gu giấy/ảnh người dùng đang chọn."
+        },
+        {
+          "id": "hf_existing:cartoon_collage",
+          "assessment": "Giữ nguồn ảnh thật khi có ý nghĩa, nét nhẹ, mascot và props giấy; khớp ba pilot hiện tại."
+        }
+      ],
+      "style_id": "hf_existing:cartoon_collage",
+      "style_reference": [
+        "planning/pilot_manifest.json",
+        "DIRECTOR_BRIEF.md"
+      ],
+      "style_reason": "Gu đã chọn từ ba pilot; khác biệt cảnh đến từ nội dung, không đổi style ngẫu nhiên. Isometric chỉ hữu ích khi cần cấu trúc; Bauhaus phù hợp beat ngắn nhưng không thay tình huống ở đây.",
+      "asset_contract": {
+        "ids": [
+          "credential_prop",
+          "international_workspaces",
+          "reader_hand"
+        ],
+        "status": "existing library plus specified new illustrations; see ASSET_PLAN.json",
+        "independent_layers": "Mỗi bộ asset liệt kê phần tách lớp; không dùng ảnh phẳng thay asset cần khớp tay/đạo cụ."
+      },
+      "hf_signature_motion": "Góc nhìn mở rộng, thấy bàn nghiên cứu bên trái và bàn làm việc nhóm bên phải trong cùng một trường nhìn; không gắn logo nhà tuyển dụng. / Một bàn tay người đọc đưa tài liệu học thuật kèm cuộn giấy về vùng đọc, động tác xem xét có chủ ý; không tick đỗ hay bắt tay tuyển dụng.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow plate. Essential art/text above y1080 on720x1280.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "asset_id": "credential_prop",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        }
+      ],
+      "container_semantics": "Các đối tượng giấy/ảnh/kiến trúc có hành động thật trong cảnh, không phải hộp căn layout.",
+      "visible_text_budget": {
+        "rule": "Chỉ giữ các chuỗi liệt kê; headline/thông tin gắn vật thể, không đọc lại cả voice. Không bắt mọi cảnh cùng số nhãn hay cùng cỡ.",
+        "max_levels_per_item": 2
+      },
+      "mobile_legibility_plan": "Headline thường40–52px; nhãn30–36px. Shorten/reposition if360x640 proof fails; verified Vietnamese fonts in library. Không áp toàn bộ typography04 lên cảnh mới.",
+      "dark_mass_strategy": "Nền sáng theo bối cảnh, #30313B dùng cho nét và chữ; mặt phụ dùng tint thay nhiều khối navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "handoff": "Hard cut sang globe08; màu xanh cuộn bằng nối bằng màu, không cần transition có hiệu ứng.",
+      "uncertainties": [],
+      "character": false,
+      "transformation": "Cuộn giấy bung ngang một phần; chỉ có tên trường và một dấu trang trung tính, không chữ ký/con dấu/serial chứng chỉ. Góc nhìn mở rộng, thấy bàn nghiên cứu bên trái và bàn làm việc nhóm bên phải trong cùng một trường nhìn; không gắn logo nhà tuyển dụng. Một bàn tay người đọc đưa tài liệu học thuật kèm cuộn giấy về vùng đọc, động tác xem xét có chủ ý; không tick đỗ hay bắt tay tuyển dụng. Giữ cuộn giấy và hai bối cảnh đủ nhận ra; dải xanh dẫn màu sang08, không ép biến hình.",
+      "planned_output": "build/renders/scene_07.mp4",
+      "visual_verb": "Đưa tài liệu học thuật vào hành động đọc"
+    },
+    {
+      "scene_id": "scene_08",
+      "start_sample": 747452,
+      "end_sample": 822164,
+      "sample_frames": 74712,
+      "raw_text": "mở ra nhiều cơ hội học tập và nghề nghiệp trên toàn cầu.",
+      "sha256": "220bb11ee70b626ca989cb1b0785c8909b02350665bdc6413a659da637743d7d",
+      "corrected_text": "mở ra nhiều cơ hội học tập và nghề nghiệp trên toàn cầu.",
+      "audio": "inputs/audio/scene_08.wav",
+      "duration": 3.113,
+      "global_start": 31.143833333333333,
+      "global_end": 34.25683333333333,
+      "title": "Cơ hội là các lựa chọn mở",
+      "intent": "Thể hiện phạm vi toàn cầu và hai hướng học tập/nghề nghiệp mà không đảm bảo kết quả.",
+      "layout": "Globe giấy x140–585/y390–870; không gian học nhóm nhỏ nhô phía trên trái x110–315/y360–550; bàn làm việc phía phải x430–625/y565–760; Nhật ở tiền cảnh x385–540/y815–1010.",
+      "opening_state": "Nhật nhìn một địa cầu giấy, các lục địa là mảng sáng có nét viền mảnh.",
+      "shots": [
+        {
+          "local_start": 0,
+          "local_end": 0.8,
+          "spoken_cue": "mở ra nhiều cơ hội",
+          "action": "Nhật đẩy địa cầu xoay một góc nhỏ; không chạy máy bay qua các điểm."
+        },
+        {
+          "local_start": 0.8,
+          "local_end": 2,
+          "spoken_cue": "học tập và nghề nghiệp",
+          "action": "Một cảnh bàn học nhóm và một cảnh bàn làm việc mở lên từ bề mặt địa cầu, hai lựa chọn ngang hàng, không nối mũi tên nhân quả."
+        },
+        {
+          "local_start": 2,
+          "local_end": 3.113,
+          "spoken_cue": "trên toàn cầu",
+          "action": "Nhật nhìn lần lượt hai hướng và giữ cả hai hiện diện; chỉ một headline ngắn nếu đọc đủ."
+        }
+      ],
+      "final_state": "Hai khả năng cùng mở trên một thế giới, nhân vật chưa chọn kết quả.",
+      "visible_text_inventory": [
+        "CƠ HỘI RỘNG MỞ"
+      ],
+      "protagonist_action": "Xoay globe và quan sát lựa chọn; không đứng chỉ trang trí.",
+      "asset_ids": [
+        "student",
+        "paper_globe",
+        "opportunity_settings"
+      ],
+      "transition_to_next": "Cắt tương phản sang cận ảnh VU trên tường ở09: từ khả năng lớn quay về công việc rất cụ thể.",
+      "routing_reason": "Địa cầu giấy và hai khả năng cùng nâng từ bề mặt biểu đạt phạm vi/khả năng. HYBRID đi tới điểm đến thật có thể thêm kết quả du học hoặc công việc chưa xảy ra; organic camera không cải thiện quan hệ song song này.",
+      "scene_number": 8,
+      "production_action": "build_from_director_packet",
+      "render_mode": "HF_ONLY",
+      "raw_voice_immutable": true,
+      "timing_evidence": "Local cue windows are director estimates, not forced alignment. Builder aligns to copied voice without changing samples/duration.",
+      "composition_reason": "Khung hình phục vụ vật thể/hành động được mô tả; footer200px dành cho phụ đề nếu workflow sau cần, không đặt nội dung ở đó.",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector rõ quan hệ, khả thi; độ tạo khối đồng nhất khác gu giấy/ảnh người dùng đang chọn."
+        },
+        {
+          "id": "hf_existing:cartoon_collage",
+          "assessment": "Giữ nguồn ảnh thật khi có ý nghĩa, nét nhẹ, mascot và props giấy; khớp ba pilot hiện tại."
+        }
+      ],
+      "style_id": "hf_existing:cartoon_collage",
+      "style_reference": [
+        "planning/pilot_manifest.json",
+        "DIRECTOR_BRIEF.md"
+      ],
+      "style_reason": "Gu đã chọn từ ba pilot; khác biệt cảnh đến từ nội dung, không đổi style ngẫu nhiên. Isometric chỉ hữu ích khi cần cấu trúc; Bauhaus phù hợp beat ngắn nhưng không thay tình huống ở đây.",
+      "asset_contract": {
+        "ids": [
+          "student",
+          "paper_globe",
+          "opportunity_settings"
+        ],
+        "status": "existing library plus specified new illustrations; see ASSET_PLAN.json",
+        "independent_layers": "Mỗi bộ asset liệt kê phần tách lớp; không dùng ảnh phẳng thay asset cần khớp tay/đạo cụ."
+      },
+      "hf_signature_motion": "Một cảnh bàn học nhóm và một cảnh bàn làm việc mở lên từ bề mặt địa cầu, hai lựa chọn ngang hàng, không nối mũi tên nhân quả. / Nhật nhìn lần lượt hai hướng và giữ cả hai hiện diện; chỉ một headline ngắn nếu đọc đủ.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow plate. Essential art/text above y1080 on720x1280.",
+      "container_required": false,
+      "container_inventory": [],
+      "container_semantics": "none",
+      "visible_text_budget": {
+        "rule": "Chỉ giữ các chuỗi liệt kê; headline/thông tin gắn vật thể, không đọc lại cả voice. Không bắt mọi cảnh cùng số nhãn hay cùng cỡ.",
+        "max_levels_per_item": 2
+      },
+      "mobile_legibility_plan": "Headline thường40–52px; nhãn30–36px. Shorten/reposition if360x640 proof fails; verified Vietnamese fonts in library. Không áp toàn bộ typography04 lên cảnh mới.",
+      "dark_mass_strategy": "Nền sáng theo bối cảnh, #30313B dùng cho nét và chữ; mặt phụ dùng tint thay nhiều khối navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "handoff": "Cắt tương phản sang cận ảnh VU trên tường ở09: từ khả năng lớn quay về công việc rất cụ thể.",
+      "uncertainties": [],
+      "character": true,
+      "transformation": "Nhật đẩy địa cầu xoay một góc nhỏ; không chạy máy bay qua các điểm. Một cảnh bàn học nhóm và một cảnh bàn làm việc mở lên từ bề mặt địa cầu, hai lựa chọn ngang hàng, không nối mũi tên nhân quả. Nhật nhìn lần lượt hai hướng và giữ cả hai hiện diện; chỉ một headline ngắn nếu đọc đủ.",
+      "planned_output": "build/renders/scene_08.mp4",
+      "visual_verb": "Xoay địa cầu và mở những khả năng"
+    },
+    {
+      "scene_id": "scene_09",
+      "start_sample": 822164,
+      "end_sample": 903862,
+      "sample_frames": 81698,
+      "raw_text": "Đằng sau thành quả ấy là cả một quá trình chuẩn bị nghiêm túc.",
+      "sha256": "82456af6f2b7d993292bca0b847fa2df1fb8ffb2f0f6d758606baa9768ef37f6",
+      "corrected_text": "Đằng sau thành quả ấy là cả một quá trình chuẩn bị nghiêm túc.",
+      "audio": "inputs/audio/scene_09.wav",
+      "duration": 3.4040833333333333,
+      "global_start": 34.25683333333333,
+      "global_end": 37.660916666666665,
+      "title": "Đằng sau thành quả là một bàn làm việc",
+      "intent": "Đảo điểm nhìn từ thành quả sang quá trình chuẩn bị bằng một cú reveal môi trường.",
+      "layout": "Mở cận ảnh VU x100–620/y350–780; lùi thành wide room: ảnh trên tường x90–340/y350–520, bàn y700–960, Nhật viết ở x330–480/y650–1000. Cùng phòng01 nhưng có nhiều dấu vết làm việc hơn.",
+      "opening_state": "Ảnh VU có băng dính treo trên tường; chưa thấy người đang viết ở dưới.",
+      "shots": [
+        {
+          "local_start": 0,
+          "local_end": 0.85,
+          "spoken_cue": "Đằng sau thành quả ấy",
+          "action": "Máy lùi từ ảnh, lộ mép tường và đèn bàn."
+        },
+        {
+          "local_start": 0.85,
+          "local_end": 2.6,
+          "spoken_cue": "cả một quá trình chuẩn bị",
+          "action": "Lộ Nhật đang sửa một trang nháp, bên cạnh có hai bản nháp cũ và cuốn sổ xanh; tay gạch một nét rồi viết lại bằng bút cam."
+        },
+        {
+          "local_start": 2.6,
+          "local_end": 3.4040833333333333,
+          "spoken_cue": "nghiêm túc",
+          "action": "Nhật đặt bản đã sửa lên trên, đẩy bản cũ sang bên và nhìn lại; dừng trên hành động thay vì bắn thêm checklist."
+        }
+      ],
+      "final_state": "Một trang đang được cải thiện trên bàn, không chỉ chồng giấy trang trí.",
+      "visible_text_inventory": [
+        "PHÍA SAU THÀNH QUẢ"
+      ],
+      "protagonist_action": "Đọc lại, sửa, thay bản; góc phòng giữ sự tập trung.",
+      "asset_ids": [
+        "student",
+        "room",
+        "work_desk",
+        "draft_pages",
+        "vu_photo"
+      ],
+      "transition_to_next": "10 cận đúng trang đang sửa; mentor bước vào hành động ở góc đối diện bàn.",
+      "routing_reason": "Cú lùi từ ảnh thành quả lộ lớp bản nháp là một reveal được thiết kế. HYBRID người viết thật chỉ tái hiện cảnh làm việc, mất quan hệ lớp giấy/collage và nhân vật đã thống nhất.",
+      "scene_number": 9,
+      "production_action": "build_from_director_packet",
+      "render_mode": "HF_ONLY",
+      "raw_voice_immutable": true,
+      "timing_evidence": "Local cue windows are director estimates, not forced alignment. Builder aligns to copied voice without changing samples/duration.",
+      "composition_reason": "Khung hình phục vụ vật thể/hành động được mô tả; footer200px dành cho phụ đề nếu workflow sau cần, không đặt nội dung ở đó.",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector rõ quan hệ, khả thi; độ tạo khối đồng nhất khác gu giấy/ảnh người dùng đang chọn."
+        },
+        {
+          "id": "hf_existing:cartoon_collage",
+          "assessment": "Giữ nguồn ảnh thật khi có ý nghĩa, nét nhẹ, mascot và props giấy; khớp ba pilot hiện tại."
+        }
+      ],
+      "style_id": "hf_existing:cartoon_collage",
+      "style_reference": [
+        "planning/pilot_manifest.json",
+        "DIRECTOR_BRIEF.md"
+      ],
+      "style_reason": "Gu đã chọn từ ba pilot; khác biệt cảnh đến từ nội dung, không đổi style ngẫu nhiên. Isometric chỉ hữu ích khi cần cấu trúc; Bauhaus phù hợp beat ngắn nhưng không thay tình huống ở đây.",
+      "asset_contract": {
+        "ids": [
+          "student",
+          "room",
+          "work_desk",
+          "draft_pages",
+          "vu_photo"
+        ],
+        "status": "existing library plus specified new illustrations; see ASSET_PLAN.json",
+        "independent_layers": "Mỗi bộ asset liệt kê phần tách lớp; không dùng ảnh phẳng thay asset cần khớp tay/đạo cụ."
+      },
+      "hf_signature_motion": "Lộ Nhật đang sửa một trang nháp, bên cạnh có hai bản nháp cũ và cuốn sổ xanh; tay gạch một nét rồi viết lại bằng bút cam. / Nhật đặt bản đã sửa lên trên, đẩy bản cũ sang bên và nhìn lại; dừng trên hành động thay vì bắn thêm checklist.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow plate. Essential art/text above y1080 on720x1280.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "asset_id": "draft_pages",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        },
+        {
+          "object_type": "document",
+          "asset_id": "vu_photo",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        }
+      ],
+      "container_semantics": "Các đối tượng giấy/ảnh/kiến trúc có hành động thật trong cảnh, không phải hộp căn layout.",
+      "visible_text_budget": {
+        "rule": "Chỉ giữ các chuỗi liệt kê; headline/thông tin gắn vật thể, không đọc lại cả voice. Không bắt mọi cảnh cùng số nhãn hay cùng cỡ.",
+        "max_levels_per_item": 2
+      },
+      "mobile_legibility_plan": "Headline thường40–52px; nhãn30–36px. Shorten/reposition if360x640 proof fails; verified Vietnamese fonts in library. Không áp toàn bộ typography04 lên cảnh mới.",
+      "dark_mass_strategy": "Nền sáng theo bối cảnh, #30313B dùng cho nét và chữ; mặt phụ dùng tint thay nhiều khối navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "handoff": "10 cận đúng trang đang sửa; mentor bước vào hành động ở góc đối diện bàn.",
+      "uncertainties": [],
+      "character": true,
+      "transformation": "Máy lùi từ ảnh, lộ mép tường và đèn bàn. Lộ Nhật đang sửa một trang nháp, bên cạnh có hai bản nháp cũ và cuốn sổ xanh; tay gạch một nét rồi viết lại bằng bút cam. Nhật đặt bản đã sửa lên trên, đẩy bản cũ sang bên và nhìn lại; dừng trên hành động thay vì bắn thêm checklist.",
+      "planned_output": "build/renders/scene_09.mp4",
+      "visual_verb": "Sửa bản nháp tại bàn học"
+    },
+    {
+      "scene_id": "scene_10",
+      "start_sample": 903862,
+      "end_sample": 987529,
+      "sample_frames": 83667,
+      "raw_text": "Với sự đồng hành của đội ngủ Menthe Esora hơn 14 năm kinh nghiệm,",
+      "sha256": "f00769831a9390a7bf5e0ca3587b1bd6953da9bc597d65b8a318a1ed0b74de16",
+      "corrected_text": "Với sự đồng hành của đội ngũ Mentor Esora hơn 14 năm kinh nghiệm,",
+      "audio": "inputs/audio/scene_10.wav",
+      "duration": 3.486125,
+      "global_start": 37.660916666666665,
+      "global_end": 41.14704166666667,
+      "title": "Mentor giúp Nhật làm rõ lựa chọn",
+      "intent": "Thể hiện đồng hành bằng góp ý cụ thể, Nhật vẫn là tác giả và người quyết định.",
+      "layout": "Góc chéo qua bàn: Nhật trái x180–335/y650–1000; mentor phải x430–580/y625–1000; một trang lớn chung x210–510/y500–770. Mentor dáng gọn màu xanh lục nhạt, kính tròn, tỉ lệ cùng thế giới Nhật; không giống người thật cụ thể.",
+      "opening_state": "Trang nháp từ09 nằm giữa hai người. Mentor dùng đầu bút chỉ một đoạn trên chính trang.",
+      "shots": [
+        {
+          "local_start": 0,
+          "local_end": 0.75,
+          "spoken_cue": "Với sự đồng hành",
+          "action": "Mentor nghiêng người xem trang, Nhật nhìn theo đầu bút."
+        },
+        {
+          "local_start": 0.75,
+          "local_end": 2,
+          "spoken_cue": "đội ngũ Mentor Esora",
+          "action": "Mentor khoanh gọn một đoạn cần làm rõ, rồi đưa lại bút; nhãn MENTOR ESORA đặt gần nhân vật mentor, không có nét nối."
+        },
+        {
+          "local_start": 2,
+          "local_end": 3,
+          "spoken_cue": "hơn14năm kinh nghiệm",
+          "action": "Nhật tự viết lại đoạn ấy bằng bút cam, mentor quan sát và gật đầu. Không hiển thị số14 hoặc huy hiệu kinh nghiệm."
+        },
+        {
+          "local_start": 3,
+          "local_end": 3.486125,
+          "spoken_cue": "kết câu",
+          "action": "Giữ trang có một điểm sửa rõ; Nhật kéo trang về phía mình để đưa vào hồ sơ11."
+        }
+      ],
+      "final_state": "Trang sửa tốt hơn nhưng nét viết vẫn thuộc Nhật; mentor không viết hộ toàn bài.",
+      "visible_text_inventory": [
+        "MENTOR ESORA"
+      ],
+      "protagonist_action": "Hai vai rõ: mentor chỉ/góp ý; Nhật chỉnh sửa và sở hữu trang.",
+      "asset_ids": [
+        "student",
+        "mentor",
+        "work_desk",
+        "draft_pages",
+        "pen_pair"
+      ],
+      "transition_to_next": "11 chuyển overhead ngay khi Nhật kéo trang; dùng đúng tờ giấy ấy, không mở một bộ hồ sơ từ đầu khác.",
+      "routing_reason": "Hai nét bút/động tác trên cùng mặt giấy diễn đạt quyền tác giả và hỗ trợ, cần các lớp minh hoạ phối hợp. HYBRID cuộc tư vấn diễn viên có thể bị nhận là cuộc gặp thật chưa được cung cấp; không cần organic actor performance.",
+      "scene_number": 10,
+      "production_action": "build_from_director_packet",
+      "render_mode": "HF_ONLY",
+      "raw_voice_immutable": true,
+      "timing_evidence": "Local cue windows are director estimates, not forced alignment. Builder aligns to copied voice without changing samples/duration.",
+      "composition_reason": "Khung hình phục vụ vật thể/hành động được mô tả; footer200px dành cho phụ đề nếu workflow sau cần, không đặt nội dung ở đó.",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector rõ quan hệ, khả thi; độ tạo khối đồng nhất khác gu giấy/ảnh người dùng đang chọn."
+        },
+        {
+          "id": "hf_existing:cartoon_collage",
+          "assessment": "Giữ nguồn ảnh thật khi có ý nghĩa, nét nhẹ, mascot và props giấy; khớp ba pilot hiện tại."
+        }
+      ],
+      "style_id": "hf_existing:cartoon_collage",
+      "style_reference": [
+        "planning/pilot_manifest.json",
+        "DIRECTOR_BRIEF.md"
+      ],
+      "style_reason": "Gu đã chọn từ ba pilot; khác biệt cảnh đến từ nội dung, không đổi style ngẫu nhiên. Isometric chỉ hữu ích khi cần cấu trúc; Bauhaus phù hợp beat ngắn nhưng không thay tình huống ở đây.",
+      "asset_contract": {
+        "ids": [
+          "student",
+          "mentor",
+          "work_desk",
+          "draft_pages",
+          "pen_pair"
+        ],
+        "status": "existing library plus specified new illustrations; see ASSET_PLAN.json",
+        "independent_layers": "Mỗi bộ asset liệt kê phần tách lớp; không dùng ảnh phẳng thay asset cần khớp tay/đạo cụ."
+      },
+      "hf_signature_motion": "Mentor khoanh gọn một đoạn cần làm rõ, rồi đưa lại bút; nhãn MENTOR ESORA đặt gần nhân vật mentor, không có nét nối. / Nhật tự viết lại đoạn ấy bằng bút cam, mentor quan sát và gật đầu. Không hiển thị số14 hoặc huy hiệu kinh nghiệm.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow plate. Essential art/text above y1080 on720x1280.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "asset_id": "draft_pages",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        }
+      ],
+      "container_semantics": "Các đối tượng giấy/ảnh/kiến trúc có hành động thật trong cảnh, không phải hộp căn layout.",
+      "visible_text_budget": {
+        "rule": "Chỉ giữ các chuỗi liệt kê; headline/thông tin gắn vật thể, không đọc lại cả voice. Không bắt mọi cảnh cùng số nhãn hay cùng cỡ.",
+        "max_levels_per_item": 2
+      },
+      "mobile_legibility_plan": "Headline thường40–52px; nhãn30–36px. Shorten/reposition if360x640 proof fails; verified Vietnamese fonts in library. Không áp toàn bộ typography04 lên cảnh mới.",
+      "dark_mass_strategy": "Nền sáng theo bối cảnh, #30313B dùng cho nét và chữ; mặt phụ dùng tint thay nhiều khối navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "handoff": "11 chuyển overhead ngay khi Nhật kéo trang; dùng đúng tờ giấy ấy, không mở một bộ hồ sơ từ đầu khác.",
+      "uncertainties": [
+        "Mentor >14 years is not established by current source; private draft voice unchanged, no number graphic; review before publication."
+      ],
+      "character": true,
+      "transformation": "Mentor nghiêng người xem trang, Nhật nhìn theo đầu bút. Mentor khoanh gọn một đoạn cần làm rõ, rồi đưa lại bút; nhãn MENTOR ESORA đặt gần nhân vật mentor, không có nét nối. Nhật tự viết lại đoạn ấy bằng bút cam, mentor quan sát và gật đầu. Không hiển thị số14 hoặc huy hiệu kinh nghiệm. Giữ trang có một điểm sửa rõ; Nhật kéo trang về phía mình để đưa vào hồ sơ11.",
+      "planned_output": "build/renders/scene_10.mp4",
+      "visual_verb": "Trao lại bút để Nhật tự sửa bài"
+    },
+    {
+      "scene_id": "scene_11",
+      "start_sample": 987529,
+      "end_sample": 1073073,
+      "sample_frames": 85544,
+      "raw_text": "Minh Nhật đã xây dẫn một bộ hồ sơ không chỉ thể hiện thành tích học tập,",
+      "sha256": "1830222046517674e5d5eb59943e244e5290c3fd6a7297762f89d3404c5b8115",
+      "corrected_text": "Minh Nhật đã xây dựng một bộ hồ sơ không chỉ thể hiện thành tích học tập,",
+      "audio": "inputs/audio/scene_11.wav",
+      "duration": 3.5643333333333334,
+      "global_start": 41.14704166666667,
+      "global_end": 44.711375,
+      "title": "Thành tích là chất liệu của bộ hồ sơ",
+      "intent": "Hồ sơ phải có căn cứ, nhưng chưa đủ để nói hết về con người.",
+      "layout": "Overhead folder xanh như12: x72–660/y365–1001, mở trang. Tay Nhật từ dưới. Trang nháp ở giữa; hai mảnh giấy học tập là vật liệu ở mép trái, không chữ điểm/số liệu.",
+      "opening_state": "Bìa hồ sơ mở, trang từ10 đang được đặt vào; mép giấy có dấu cam của Nhật.",
+      "shots": [
+        {
+          "local_start": 0,
+          "local_end": 0.9,
+          "spoken_cue": "Minh Nhật đã xây dựng",
+          "action": "Nhật đặt trang đã chỉnh vào bìa và giữ góc để các lớp không rơi."
+        },
+        {
+          "local_start": 0.9,
+          "local_end": 2.4,
+          "spoken_cue": "một bộ hồ sơ",
+          "action": "Hai mảnh chất liệu học tập được luồn vào cùng trang: ghi chép và một trang hoạt động học tập minh hoạ, không làm giấy chứng nhận giả."
+        },
+        {
+          "local_start": 2.4,
+          "local_end": 3.5643333333333334,
+          "spoken_cue": "không chỉ thể hiện thành tích học tập",
+          "action": "Nhật lật một trang, để lộ trang còn lại trống cho cách tư duy/cá tính/mục tiêu; đưa bố cục về đầu12."
+        }
+      ],
+      "final_state": "Căn bố cục bìa xanh/trang trái-phải theo frame0 pilot12; những mảnh bằng chứng đã đi vào trang trước.",
+      "visible_text_inventory": [
+        "HỒ SƠ MINH NHẬT"
+      ],
+      "protagonist_action": "Tay đặt giấy, giữ góc và lật trang; có nguyên nhân/tiếp xúc/hệ quả.",
+      "asset_ids": [
+        "student_hands",
+        "portfolio",
+        "study_evidence",
+        "draft_pages"
+      ],
+      "transition_to_next": "Match cut sang pilot12 bảnv6. Không cho hình ghép/nhân vật/ảnh mục tiêu xuất hiện sớm ở11.",
+      "routing_reason": "Ghép vật liệu giấy thành hồ sơ và lật sang trang cá nhân là quan hệ đồ hoạ. HYBRID tài liệu thật đòi bằng chứng cá nhân chưa có và dễ làm giấy bịa trông xác thực.",
+      "scene_number": 11,
+      "production_action": "build_from_director_packet",
+      "render_mode": "HF_ONLY",
+      "raw_voice_immutable": true,
+      "timing_evidence": "Local cue windows are director estimates, not forced alignment. Builder aligns to copied voice without changing samples/duration.",
+      "composition_reason": "Khung hình phục vụ vật thể/hành động được mô tả; footer200px dành cho phụ đề nếu workflow sau cần, không đặt nội dung ở đó.",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector rõ quan hệ, khả thi; độ tạo khối đồng nhất khác gu giấy/ảnh người dùng đang chọn."
+        },
+        {
+          "id": "hf_existing:cartoon_collage",
+          "assessment": "Giữ nguồn ảnh thật khi có ý nghĩa, nét nhẹ, mascot và props giấy; khớp ba pilot hiện tại."
+        }
+      ],
+      "style_id": "hf_existing:cartoon_collage",
+      "style_reference": [
+        "planning/pilot_manifest.json",
+        "DIRECTOR_BRIEF.md"
+      ],
+      "style_reason": "Gu đã chọn từ ba pilot; khác biệt cảnh đến từ nội dung, không đổi style ngẫu nhiên. Isometric chỉ hữu ích khi cần cấu trúc; Bauhaus phù hợp beat ngắn nhưng không thay tình huống ở đây.",
+      "asset_contract": {
+        "ids": [
+          "student_hands",
+          "portfolio",
+          "study_evidence",
+          "draft_pages"
+        ],
+        "status": "existing library plus specified new illustrations; see ASSET_PLAN.json",
+        "independent_layers": "Mỗi bộ asset liệt kê phần tách lớp; không dùng ảnh phẳng thay asset cần khớp tay/đạo cụ."
+      },
+      "hf_signature_motion": "Hai mảnh chất liệu học tập được luồn vào cùng trang: ghi chép và một trang hoạt động học tập minh hoạ, không làm giấy chứng nhận giả. / Nhật lật một trang, để lộ trang còn lại trống cho cách tư duy/cá tính/mục tiêu; đưa bố cục về đầu12.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow plate. Essential art/text above y1080 on720x1280.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "asset_id": "portfolio",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        },
+        {
+          "object_type": "document",
+          "asset_id": "draft_pages",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        }
+      ],
+      "container_semantics": "Các đối tượng giấy/ảnh/kiến trúc có hành động thật trong cảnh, không phải hộp căn layout.",
+      "visible_text_budget": {
+        "rule": "Chỉ giữ các chuỗi liệt kê; headline/thông tin gắn vật thể, không đọc lại cả voice. Không bắt mọi cảnh cùng số nhãn hay cùng cỡ.",
+        "max_levels_per_item": 2
+      },
+      "mobile_legibility_plan": "Headline thường40–52px; nhãn30–36px. Shorten/reposition if360x640 proof fails; verified Vietnamese fonts in library. Không áp toàn bộ typography04 lên cảnh mới.",
+      "dark_mass_strategy": "Nền sáng theo bối cảnh, #30313B dùng cho nét và chữ; mặt phụ dùng tint thay nhiều khối navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "handoff": "Match cut sang pilot12 bảnv6. Không cho hình ghép/nhân vật/ảnh mục tiêu xuất hiện sớm ở11.",
+      "uncertainties": [],
+      "character": true,
+      "transformation": "Nhật đặt trang đã chỉnh vào bìa và giữ góc để các lớp không rơi. Hai mảnh chất liệu học tập được luồn vào cùng trang: ghi chép và một trang hoạt động học tập minh hoạ, không làm giấy chứng nhận giả. Nhật lật một trang, để lộ trang còn lại trống cho cách tư duy/cá tính/mục tiêu; đưa bố cục về đầu12.",
+      "planned_output": "build/renders/scene_11.mp4",
+      "visual_verb": "Ghép chất liệu học tập vào hồ sơ"
+    },
+    {
+      "scene_id": "scene_12",
+      "start_sample": 1073073,
+      "end_sample": 1179135,
+      "sample_frames": 106062,
+      "raw_text": "mà còn phản ánh rõ tư duy, cá tính và định hướng phát triển của bản thân.",
+      "sha256": "fdeb4c276a2ba33d9b081f44808f5c7d0d8ed1bb28adae597dfe54a4c11f6b0d",
+      "corrected_text": "mà còn phản ánh rõ tư duy, cá tính và định hướng phát triển của bản thân.",
+      "audio": "inputs/audio/scene_12.wav",
+      "duration": 4.41925,
+      "global_start": 44.711375,
+      "global_end": 49.130625,
+      "title": "Ba thành phần cốt lõi",
+      "intent": "Hình ghép/Tư duy, tự cá nhân hoá/Cá tính, ảnh mục tiêu trên kế hoạch/Định hướng; không leader lines.",
+      "layout": "Giữ bố cục nguồn pilot đã đóng băng, không tự thiết kế lại.",
+      "opening_state": "Lấy frame đầu chính nguồn pilot.",
+      "shots": [],
+      "final_state": "Lấy frame cuối chính nguồn pilot.",
+      "visible_text_inventory": [
+        "DẤU ẤN RIÊNG",
+        "Tư duy",
+        "Cá tính",
+        "Định hướng",
+        "VU Amsterdam"
+      ],
+      "protagonist_action": "Tự đội mũ/đeo ba lô, nhìn và hướng tay vào ảnh mục tiêu.",
+      "asset_ids": [
+        "portfolio",
+        "student",
+        "core_cutouts",
+        "vu_photo"
+      ],
+      "transition_to_next": "13 mở rộng sang các sổ vật lý khác; không sửa đuôi12.",
+      "routing_reason": "Ba lớp tư duy/cá tính/định hướng biểu hiện bằng cấu trúc hình; ẩn dụ giấy mở không phải người đang biểu diễn.",
+      "reuse_pilot": {
+        "scene_id": "scene_12",
+        "source_directory": "videos/tran-minh-nhat-style-lab-06-12/scene_12",
+        "selected_export": "renders/scene_12-v6.mp4",
+        "frozen_source": "reference_pilots/scene_12/index.html",
+        "frozen_video": "reference_pilots/scene_12/renders/pilot.mp4",
+        "sha256": "cf8cb7f8dbc7a3782938a51f292d8397f8d32cdc38378d0ecf9f1c9c2617e7df",
+        "status": "existing selected pilot; no new render in this handoff task"
+      },
+      "scene_number": 12,
+      "production_action": "reuse_selected_pilot",
+      "render_mode": "HF_ONLY",
+      "raw_voice_immutable": true,
+      "timing_evidence": "Local cue windows are director estimates, not forced alignment. Builder aligns to copied voice without changing samples/duration.",
+      "composition_reason": "Khung hình phục vụ vật thể/hành động được mô tả; footer200px dành cho phụ đề nếu workflow sau cần, không đặt nội dung ở đó.",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector rõ quan hệ, khả thi; độ tạo khối đồng nhất khác gu giấy/ảnh người dùng đang chọn."
+        },
+        {
+          "id": "hf_existing:cartoon_collage",
+          "assessment": "Giữ nguồn ảnh thật khi có ý nghĩa, nét nhẹ, mascot và props giấy; khớp ba pilot hiện tại."
+        }
+      ],
+      "style_id": "hf_existing:cartoon_collage",
+      "style_reference": [
+        "planning/pilot_manifest.json",
+        "DIRECTOR_BRIEF.md"
+      ],
+      "style_reason": "Gu đã chọn từ ba pilot; khác biệt cảnh đến từ nội dung, không đổi style ngẫu nhiên. Isometric chỉ hữu ích khi cần cấu trúc; Bauhaus phù hợp beat ngắn nhưng không thay tình huống ở đây.",
+      "asset_contract": {
+        "ids": [
+          "portfolio",
+          "student",
+          "core_cutouts",
+          "vu_photo"
+        ],
+        "status": "existing library plus specified new illustrations; see ASSET_PLAN.json",
+        "independent_layers": "Mỗi bộ asset liệt kê phần tách lớp; không dùng ảnh phẳng thay asset cần khớp tay/đạo cụ."
+      },
+      "hf_signature_motion": "Hình ghép/Tư duy, tự cá nhân hoá/Cá tính, ảnh mục tiêu trên kế hoạch/Định hướng; không leader lines.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow plate. Essential art/text above y1080 on720x1280.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "asset_id": "portfolio",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        },
+        {
+          "object_type": "document",
+          "asset_id": "vu_photo",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        }
+      ],
+      "container_semantics": "Các đối tượng giấy/ảnh/kiến trúc có hành động thật trong cảnh, không phải hộp căn layout.",
+      "visible_text_budget": {
+        "rule": "Chỉ giữ các chuỗi liệt kê; headline/thông tin gắn vật thể, không đọc lại cả voice. Không bắt mọi cảnh cùng số nhãn hay cùng cỡ.",
+        "max_levels_per_item": 2
+      },
+      "mobile_legibility_plan": "Headline thường40–52px; nhãn30–36px. Shorten/reposition if360x640 proof fails; verified Vietnamese fonts in library. Không áp toàn bộ typography04 lên cảnh mới.",
+      "dark_mass_strategy": "Nền sáng theo bối cảnh, #30313B dùng cho nét và chữ; mặt phụ dùng tint thay nhiều khối navy đặc.",
+      "accent_reason": "Đánh dấu lựa chọn mục tiêu học tập đã được người dùng chốt",
+      "accent_treatment": "Một nét khoanh ảnh campus trong nguồn12v6, không leader label.",
+      "handoff": "13 mở rộng sang các sổ vật lý khác; không sửa đuôi12.",
+      "uncertainties": [],
+      "character": true,
+      "transformation": "Giữ đúng chuyển động nguồn pilot.",
+      "planned_output": "build/renders/scene_12.mp4",
+      "visual_verb": "Giải tangram, tạo chân dung và khoanh đích đến"
+    },
+    {
+      "scene_id": "scene_13",
+      "start_sample": 1179135,
+      "end_sample": 1229581,
+      "sample_frames": 50446,
+      "raw_text": "Bộ ứng diên đều có một câu chuyện riêng.",
+      "sha256": "7b1ef75e605e5e81e0aa3cbfe04d7ab52dac4e2f14ead96f970a29e954c21b56",
+      "corrected_text": "Mỗi ứng viên đều có một câu chuyện riêng.",
+      "audio": "inputs/audio/scene_13.wav",
+      "duration": 2.101916666666667,
+      "global_start": 49.130625,
+      "global_end": 51.23254166666667,
+      "title": "Mỗi câu chuyện có một cấu trúc riêng",
+      "intent": "Khác biệt giữa ứng viên là câu chuyện, không phải phân hạng tốt/xấu.",
+      "layout": "Ba sổ vật lý có gáy, x95–625/y390–965, xếp fan nhẹ trên bàn. Cuốn của Nhật phía trước có bìa xanh và dấu cam; hai cuốn khác có chất liệu/mép kẹp khác nhau, không avatar/profile card.",
+      "opening_state": "Từ hồ sơ của12, camera lùi vừa đủ để thấy thêm hai cuốn sổ phía sau.",
+      "shots": [
+        {
+          "local_start": 0,
+          "local_end": 0.55,
+          "spoken_cue": "Mỗi ứng viên",
+          "action": "Hai sổ còn lại được đẩy vào cùng bàn, bố cục fan mở, không lặp clone đồng kích thước đều hàng."
+        },
+        {
+          "local_start": 0.55,
+          "local_end": 1.5,
+          "spoken_cue": "một câu chuyện riêng",
+          "action": "Mỗi sổ mở hé một trang khác cách sắp xếp giấy và dấu bút: cuốn Nhật giữ dấu cam; không tự gán sở thích/giải thưởng cho ai."
+        },
+        {
+          "local_start": 1.5,
+          "local_end": 2.101916666666667,
+          "spoken_cue": "riêng — chốt",
+          "action": "Cuốn Nhật ở phía trước nghiêng mở tiếp, hai cuốn sau vẫn có giá trị ngang nhau."
+        }
+      ],
+      "final_state": "Một cuốn được theo tiếp vì đây là câu chuyện Nhật, không vì hai cuốn kia bị loại.",
+      "visible_text_inventory": [
+        "CÂU CHUYỆN RIÊNG"
+      ],
+      "protagonist_action": "Không thêm nhân vật trong2.1s: chính các cuốn sổ thể hiện sự riêng biệt.",
+      "asset_ids": [
+        "notebook",
+        "story_notebooks"
+      ],
+      "transition_to_next": "14 bám vào cuốn của Nhật khi mở trang; cắt hai cuốn còn lại ra khỏi khung bằng crop.",
+      "routing_reason": "Khác biệt giữa ba vật thể giấy cùng loại là ý chính, thời lượng rất ngắn. HYBRID thêm ba người thật sẽ biến thành ba hồ sơ cá nhân tưởng có thật và phân tán nội dung.",
+      "scene_number": 13,
+      "production_action": "build_from_director_packet",
+      "render_mode": "HF_ONLY",
+      "raw_voice_immutable": true,
+      "timing_evidence": "Local cue windows are director estimates, not forced alignment. Builder aligns to copied voice without changing samples/duration.",
+      "composition_reason": "Khung hình phục vụ vật thể/hành động được mô tả; footer200px dành cho phụ đề nếu workflow sau cần, không đặt nội dung ở đó.",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector rõ quan hệ, khả thi; độ tạo khối đồng nhất khác gu giấy/ảnh người dùng đang chọn."
+        },
+        {
+          "id": "hf_existing:cartoon_collage",
+          "assessment": "Giữ nguồn ảnh thật khi có ý nghĩa, nét nhẹ, mascot và props giấy; khớp ba pilot hiện tại."
+        }
+      ],
+      "style_id": "hf_existing:cartoon_collage",
+      "style_reference": [
+        "planning/pilot_manifest.json",
+        "DIRECTOR_BRIEF.md"
+      ],
+      "style_reason": "Gu đã chọn từ ba pilot; khác biệt cảnh đến từ nội dung, không đổi style ngẫu nhiên. Isometric chỉ hữu ích khi cần cấu trúc; Bauhaus phù hợp beat ngắn nhưng không thay tình huống ở đây.",
+      "asset_contract": {
+        "ids": [
+          "notebook",
+          "story_notebooks"
+        ],
+        "status": "existing library plus specified new illustrations; see ASSET_PLAN.json",
+        "independent_layers": "Mỗi bộ asset liệt kê phần tách lớp; không dùng ảnh phẳng thay asset cần khớp tay/đạo cụ."
+      },
+      "hf_signature_motion": "Mỗi sổ mở hé một trang khác cách sắp xếp giấy và dấu bút: cuốn Nhật giữ dấu cam; không tự gán sở thích/giải thưởng cho ai. / Cuốn Nhật ở phía trước nghiêng mở tiếp, hai cuốn sau vẫn có giá trị ngang nhau.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow plate. Essential art/text above y1080 on720x1280.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "physical paper object",
+          "asset_id": "notebook",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        },
+        {
+          "object_type": "physical paper object",
+          "asset_id": "story_notebooks",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        }
+      ],
+      "container_semantics": "Các đối tượng giấy/ảnh/kiến trúc có hành động thật trong cảnh, không phải hộp căn layout.",
+      "visible_text_budget": {
+        "rule": "Chỉ giữ các chuỗi liệt kê; headline/thông tin gắn vật thể, không đọc lại cả voice. Không bắt mọi cảnh cùng số nhãn hay cùng cỡ.",
+        "max_levels_per_item": 2
+      },
+      "mobile_legibility_plan": "Headline thường40–52px; nhãn30–36px. Shorten/reposition if360x640 proof fails; verified Vietnamese fonts in library. Không áp toàn bộ typography04 lên cảnh mới.",
+      "dark_mass_strategy": "Nền sáng theo bối cảnh, #30313B dùng cho nét và chữ; mặt phụ dùng tint thay nhiều khối navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "handoff": "14 bám vào cuốn của Nhật khi mở trang; cắt hai cuốn còn lại ra khỏi khung bằng crop.",
+      "uncertainties": [],
+      "character": false,
+      "transformation": "Hai sổ còn lại được đẩy vào cùng bàn, bố cục fan mở, không lặp clone đồng kích thước đều hàng. Mỗi sổ mở hé một trang khác cách sắp xếp giấy và dấu bút: cuốn Nhật giữ dấu cam; không tự gán sở thích/giải thưởng cho ai. Cuốn Nhật ở phía trước nghiêng mở tiếp, hai cuốn sau vẫn có giá trị ngang nhau.",
+      "planned_output": "build/renders/scene_13.mp4",
+      "visual_verb": "Mở cuốn sổ mang dấu riêng"
+    },
+    {
+      "scene_id": "scene_14",
+      "start_sample": 1229581,
+      "end_sample": 1342447,
+      "sample_frames": 112866,
+      "raw_text": "Điều quan trọng là biết cách kể câu chuyện đó đúng cách để tạo dâu ấn với hội đồng tuyển sinh.",
+      "sha256": "1498e7d7fd86e1f60599aa45048c460048f73fecd1a1126c6a56f523be4d299b",
+      "corrected_text": "Điều quan trọng là biết cách kể câu chuyện đó đúng cách để tạo dấu ấn với hội đồng tuyển sinh.",
+      "audio": "inputs/audio/scene_14.wav",
+      "duration": 4.70275,
+      "global_start": 51.23254166666667,
+      "global_end": 55.935291666666664,
+      "title": "Kể có trọng tâm để người đọc hiểu mình",
+      "intent": "Biến chất liệu có sẵn thành câu chuyện có mạch, không dùng dấu đỗ của hội đồng.",
+      "layout": "Overhead một trang bài luận minh hoạ x125–595/y345–965. Ba chất liệu từ12 (tangram, chân dung, ảnh mục tiêu) đang ở lề/trang nháp; tay Nhật từ góc dưới phải. Dùng dấu in/đoạn nét không đọc được như chất liệu, không paragraph DOM.",
+      "opening_state": "Trang mở có nhiều mảnh cùng tranh sự chú ý, các mảnh thừa ở lề, chưa có trọng tâm.",
+      "shots": [
+        {
+          "local_start": 0,
+          "local_end": 1.05,
+          "spoken_cue": "Điều quan trọng",
+          "action": "Nhật chọn mảnh chính là chân dung có nét riêng và kéo vào đầu trang, các mảnh thừa được đẩy về lề."
+        },
+        {
+          "local_start": 1.05,
+          "local_end": 2.6,
+          "spoken_cue": "kể câu chuyện đó đúng cách",
+          "action": "Nhật đặt chất liệu chứng minh cách tư duy vào phần giữa, mục tiêu học tập ở phần kết; động tác sắp lại cùng một trang, không bật ba card mới."
+        },
+        {
+          "local_start": 2.6,
+          "local_end": 3.8,
+          "spoken_cue": "tạo dấu ấn",
+          "action": "Máy chuyển sang góc nhìn trang giấy được nhấc lên: đọc từ đầu đến kết dễ hơn, một khoảng trắng rõ quanh hình chính."
+        },
+        {
+          "local_start": 3.8,
+          "local_end": 4.70275,
+          "spoken_cue": "hội đồng tuyển sinh",
+          "action": "Giữ trang hoàn chỉnh trong tay Nhật, như một câu chuyện sẵn sàng được đọc; không dựng hội đồng giả hoặc con dấu trúng tuyển."
+        }
+      ],
+      "final_state": "Trang có ưu tiên đọc rõ, không phải một poster đầy đủ nhãn; tất cả ý giải thích còn ở voice.",
+      "visible_text_inventory": [
+        "KỂ CÓ TRỌNG TÂM"
+      ],
+      "protagonist_action": "Nhật trực tiếp biên tập và nhấc trang để đọc lại, không để mentor làm thay.",
+      "asset_ids": [
+        "student_hands",
+        "essay_page",
+        "core_cutouts"
+      ],
+      "transition_to_next": "15 trở lại góc bàn, Nhật hạ chính tờ hoàn chỉnh vào bìa; continuity theo mép giấy và kẹp cam.",
+      "routing_reason": "Sắp lại phân cấp trên mặt giấy chính là ý kể đúng cách. HYBRID người nói/đọc bài sẽ không cho thấy cấu trúc nội dung thay đổi rõ bằng các lớp ghép.",
+      "scene_number": 14,
+      "production_action": "build_from_director_packet",
+      "render_mode": "HF_ONLY",
+      "raw_voice_immutable": true,
+      "timing_evidence": "Local cue windows are director estimates, not forced alignment. Builder aligns to copied voice without changing samples/duration.",
+      "composition_reason": "Khung hình phục vụ vật thể/hành động được mô tả; footer200px dành cho phụ đề nếu workflow sau cần, không đặt nội dung ở đó.",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector rõ quan hệ, khả thi; độ tạo khối đồng nhất khác gu giấy/ảnh người dùng đang chọn."
+        },
+        {
+          "id": "hf_existing:cartoon_collage",
+          "assessment": "Giữ nguồn ảnh thật khi có ý nghĩa, nét nhẹ, mascot và props giấy; khớp ba pilot hiện tại."
+        }
+      ],
+      "style_id": "hf_existing:cartoon_collage",
+      "style_reference": [
+        "planning/pilot_manifest.json",
+        "DIRECTOR_BRIEF.md"
+      ],
+      "style_reason": "Gu đã chọn từ ba pilot; khác biệt cảnh đến từ nội dung, không đổi style ngẫu nhiên. Isometric chỉ hữu ích khi cần cấu trúc; Bauhaus phù hợp beat ngắn nhưng không thay tình huống ở đây.",
+      "asset_contract": {
+        "ids": [
+          "student_hands",
+          "essay_page",
+          "core_cutouts"
+        ],
+        "status": "existing library plus specified new illustrations; see ASSET_PLAN.json",
+        "independent_layers": "Mỗi bộ asset liệt kê phần tách lớp; không dùng ảnh phẳng thay asset cần khớp tay/đạo cụ."
+      },
+      "hf_signature_motion": "Nhật đặt chất liệu chứng minh cách tư duy vào phần giữa, mục tiêu học tập ở phần kết; động tác sắp lại cùng một trang, không bật ba card mới. / Máy chuyển sang góc nhìn trang giấy được nhấc lên: đọc từ đầu đến kết dễ hơn, một khoảng trắng rõ quanh hình chính.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow plate. Essential art/text above y1080 on720x1280.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "asset_id": "essay_page",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        }
+      ],
+      "container_semantics": "Các đối tượng giấy/ảnh/kiến trúc có hành động thật trong cảnh, không phải hộp căn layout.",
+      "visible_text_budget": {
+        "rule": "Chỉ giữ các chuỗi liệt kê; headline/thông tin gắn vật thể, không đọc lại cả voice. Không bắt mọi cảnh cùng số nhãn hay cùng cỡ.",
+        "max_levels_per_item": 2
+      },
+      "mobile_legibility_plan": "Headline thường40–52px; nhãn30–36px. Shorten/reposition if360x640 proof fails; verified Vietnamese fonts in library. Không áp toàn bộ typography04 lên cảnh mới.",
+      "dark_mass_strategy": "Nền sáng theo bối cảnh, #30313B dùng cho nét và chữ; mặt phụ dùng tint thay nhiều khối navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "handoff": "15 trở lại góc bàn, Nhật hạ chính tờ hoàn chỉnh vào bìa; continuity theo mép giấy và kẹp cam.",
+      "uncertainties": [],
+      "character": true,
+      "transformation": "Nhật chọn mảnh chính là chân dung có nét riêng và kéo vào đầu trang, các mảnh thừa được đẩy về lề. Nhật đặt chất liệu chứng minh cách tư duy vào phần giữa, mục tiêu học tập ở phần kết; động tác sắp lại cùng một trang, không bật ba card mới. Máy chuyển sang góc nhìn trang giấy được nhấc lên: đọc từ đầu đến kết dễ hơn, một khoảng trắng rõ quanh hình chính. Giữ trang hoàn chỉnh trong tay Nhật, như một câu chuyện sẵn sàng được đọc; không dựng hội đồng giả hoặc con dấu trúng tuyển.",
+      "planned_output": "build/renders/scene_14.mp4",
+      "visual_verb": "Chọn và sắp xếp chất liệu thành câu chuyện"
+    },
+    {
+      "scene_id": "scene_15",
+      "start_sample": 1342447,
+      "end_sample": 1448462,
+      "sample_frames": 106015,
+      "raw_text": "Đó cũng chính là điều Esora đã đồng hành cùng Minh Nhật trong suốt hành trình ứng tuyển.",
+      "sha256": "393c454a0822206e2a0c708d15bb44acbee533be4f5df9d3be2569e9bb06f26c",
+      "corrected_text": "Đó cũng chính là điều Esora đã đồng hành cùng Minh Nhật trong suốt hành trình ứng tuyển.",
+      "audio": "inputs/audio/scene_15.wav",
+      "duration": 4.417291666666666,
+      "global_start": 55.935291666666664,
+      "global_end": 60.352583333333335,
+      "title": "Hoàn tất cùng người đồng hành",
+      "intent": "Chốt vai trò hỗ trợ của Esora, quyền sở hữu câu chuyện vẫn ở Nhật.",
+      "layout": "Góc bàn gần: bìa hồ sơ x150–565/y540–855; Nhật phải x425–575/y700–1010, mentor trái x145–285/y690–1010. Bàn cùng09/10, không dựng cảnh bắt tay mới.",
+      "opening_state": "Nhật đặt trang hoàn chỉnh từ14 vào bìa; mentor đang giữ một chiếc kẹp mở.",
+      "shots": [
+        {
+          "local_start": 0,
+          "local_end": 1.1,
+          "spoken_cue": "Đó cũng chính là điều Esora",
+          "action": "Mentor giữ kẹp, Nhật đưa tờ cuối vào đúng chỗ, hai bàn tay phối hợp trên cùng đạo cụ."
+        },
+        {
+          "local_start": 1.1,
+          "local_end": 2.7,
+          "spoken_cue": "đồng hành cùng Minh Nhật",
+          "action": "Nhật tự đóng bìa và gắn nhãn tên mình; mentor buông kẹp sau khi giấy đã chắc."
+        },
+        {
+          "local_start": 2.7,
+          "local_end": 3.8,
+          "spoken_cue": "suốt hành trình ứng tuyển",
+          "action": "Nhật cầm bộ hồ sơ, mentor bước lùi nửa nhịp; Esora hiện dưới dạng chữ gần mentor, không logo tự chế."
+        },
+        {
+          "local_start": 3.8,
+          "local_end": 4.417291666666666,
+          "spoken_cue": "kết câu",
+          "action": "Nhật mang hồ sơ ra phía phải khung; máy để lại một khoảng nhìn về chương tiếp theo."
+        }
+      ],
+      "final_state": "Nhật cầm sản phẩm của chính mình, mentor ở vai trò hỗ trợ.",
+      "visible_text_inventory": [
+        "MINH NHẬT",
+        "ESORA"
+      ],
+      "protagonist_action": "Giữ kẹp → đặt giấy → đóng bìa → mentor buông → Nhật mang đi; không mannequin/handshake filler.",
+      "asset_ids": [
+        "student",
+        "mentor",
+        "work_desk",
+        "portfolio",
+        "binder_clip"
+      ],
+      "transition_to_next": "16 dùng một page-turn của hồ sơ ở mép khung để mở minh hoạ Hà Lan; không thêm chuyến bay/hộ chiếu chưa có trong voice.",
+      "routing_reason": "Hành động ghép giấy/kẹp phối hợp và chuyển chủ thể sở hữu là semantic choreography trong thế giới giấy đã thống nhất. HYBRID handshake không diễn tả quyền tác giả, footage gặp mặt cũng chưa được cung cấp.",
+      "scene_number": 15,
+      "production_action": "build_from_director_packet",
+      "render_mode": "HF_ONLY",
+      "raw_voice_immutable": true,
+      "timing_evidence": "Local cue windows are director estimates, not forced alignment. Builder aligns to copied voice without changing samples/duration.",
+      "composition_reason": "Khung hình phục vụ vật thể/hành động được mô tả; footer200px dành cho phụ đề nếu workflow sau cần, không đặt nội dung ở đó.",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector rõ quan hệ, khả thi; độ tạo khối đồng nhất khác gu giấy/ảnh người dùng đang chọn."
+        },
+        {
+          "id": "hf_existing:cartoon_collage",
+          "assessment": "Giữ nguồn ảnh thật khi có ý nghĩa, nét nhẹ, mascot và props giấy; khớp ba pilot hiện tại."
+        }
+      ],
+      "style_id": "hf_existing:cartoon_collage",
+      "style_reference": [
+        "planning/pilot_manifest.json",
+        "DIRECTOR_BRIEF.md"
+      ],
+      "style_reason": "Gu đã chọn từ ba pilot; khác biệt cảnh đến từ nội dung, không đổi style ngẫu nhiên. Isometric chỉ hữu ích khi cần cấu trúc; Bauhaus phù hợp beat ngắn nhưng không thay tình huống ở đây.",
+      "asset_contract": {
+        "ids": [
+          "student",
+          "mentor",
+          "work_desk",
+          "portfolio",
+          "binder_clip"
+        ],
+        "status": "existing library plus specified new illustrations; see ASSET_PLAN.json",
+        "independent_layers": "Mỗi bộ asset liệt kê phần tách lớp; không dùng ảnh phẳng thay asset cần khớp tay/đạo cụ."
+      },
+      "hf_signature_motion": "Nhật tự đóng bìa và gắn nhãn tên mình; mentor buông kẹp sau khi giấy đã chắc. / Nhật cầm bộ hồ sơ, mentor bước lùi nửa nhịp; Esora hiện dưới dạng chữ gần mentor, không logo tự chế.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow plate. Essential art/text above y1080 on720x1280.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "asset_id": "portfolio",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        }
+      ],
+      "container_semantics": "Các đối tượng giấy/ảnh/kiến trúc có hành động thật trong cảnh, không phải hộp căn layout.",
+      "visible_text_budget": {
+        "rule": "Chỉ giữ các chuỗi liệt kê; headline/thông tin gắn vật thể, không đọc lại cả voice. Không bắt mọi cảnh cùng số nhãn hay cùng cỡ.",
+        "max_levels_per_item": 2
+      },
+      "mobile_legibility_plan": "Headline thường40–52px; nhãn30–36px. Shorten/reposition if360x640 proof fails; verified Vietnamese fonts in library. Không áp toàn bộ typography04 lên cảnh mới.",
+      "dark_mass_strategy": "Nền sáng theo bối cảnh, #30313B dùng cho nét và chữ; mặt phụ dùng tint thay nhiều khối navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "handoff": "16 dùng một page-turn của hồ sơ ở mép khung để mở minh hoạ Hà Lan; không thêm chuyến bay/hộ chiếu chưa có trong voice.",
+      "uncertainties": [],
+      "character": true,
+      "transformation": "Mentor giữ kẹp, Nhật đưa tờ cuối vào đúng chỗ, hai bàn tay phối hợp trên cùng đạo cụ. Nhật tự đóng bìa và gắn nhãn tên mình; mentor buông kẹp sau khi giấy đã chắc. Nhật cầm bộ hồ sơ, mentor bước lùi nửa nhịp; Esora hiện dưới dạng chữ gần mentor, không logo tự chế. Nhật mang hồ sơ ra phía phải khung; máy để lại một khoảng nhìn về chương tiếp theo.",
+      "planned_output": "build/renders/scene_15.mp4",
+      "visual_verb": "Hoàn tất và tự mang bộ hồ sơ"
+    },
+    {
+      "scene_id": "scene_16",
+      "start_sample": 1448462,
+      "end_sample": 1522442,
+      "sample_frames": 73980,
+      "raw_text": "Trúc Minh Nhật sẽ có một hành trình thật được trở tại Hà Lan,",
+      "sha256": "0a984ea33a9e14fd276140463bb4e1a96552157b35870e6ca7c65e2e503b747a",
+      "corrected_text": "Chúc Minh Nhật sẽ có một hành trình thật rực rỡ tại Hà Lan,",
+      "audio": "inputs/audio/scene_16.wav",
+      "duration": 3.0825,
+      "global_start": 60.352583333333335,
+      "global_end": 63.43508333333333,
+      "title": "Chương mới được chúc mở ra",
+      "intent": "Lời chúc cho hành trình Hà Lan, không khẳng định Nhật đã nhập cảnh hay tốt nghiệp.",
+      "layout": "Wide cảnh kênh đào minh hoạ: cầu x80–650/y730–940; nước y840–1060; dãy mái nhà xa x100–630/y380–680. Nhật trên cầu x340–475/y700–980; một mép trang giấy còn thấy ở góc để rõ đây là chương mở.",
+      "opening_state": "Mép hồ sơ lật khỏi15; mặt sau trang là một phố kênh đào vẽ tay, không copy ảnh thành phố làm plate.",
+      "shots": [
+        {
+          "local_start": 0,
+          "local_end": 0.7,
+          "spoken_cue": "Chúc Minh Nhật",
+          "action": "Trang mở, Nhật bước vào nhịp đầu trên cầu; tạm không có headline."
+        },
+        {
+          "local_start": 0.7,
+          "local_end": 2,
+          "spoken_cue": "hành trình thật rực rỡ",
+          "action": "Nhật đeo ba lô và nhìn qua cầu; ánh nền mở sáng hơn, mặt nước gợn nhẹ, không pháo hoa hay cúp."
+        },
+        {
+          "local_start": 2,
+          "local_end": 3.0825,
+          "spoken_cue": "tại Hà Lan",
+          "action": "Nhật quay chào rồi hướng lại về phía trước; CHƯƠNG MỚI hiện ngắn trên vùng trời."
+        }
+      ],
+      "final_state": "Đường phố thật trong tranh tiếp diễn về phía phải; Nhật sẵn sàng bước tiếp.",
+      "visible_text_inventory": [
+        "CHƯƠNG MỚI"
+      ],
+      "protagonist_action": "Bước vào bối cảnh, nhìn và chào, sau đó quay lại phía trước; không đứng góc filler.",
+      "asset_ids": [
+        "student_walk",
+        "canal_scene",
+        "portfolio"
+      ],
+      "transition_to_next": "17 tiếp đúng bước chân/không gian, không reset nhân vật về đầu cầu hoặc đổi trang phục.",
+      "routing_reason": "Trang giấy mở thành môi trường khát vọng là lời chúc được minh hoạ. HYBRID footage diễn viên ở Hà Lan dễ bị đọc thành chuyến đi đã xảy ra; lớp giấy là nội dung chứ không chỉ lớp trang trí.",
+      "scene_number": 16,
+      "production_action": "build_from_director_packet",
+      "render_mode": "HF_ONLY",
+      "raw_voice_immutable": true,
+      "timing_evidence": "Local cue windows are director estimates, not forced alignment. Builder aligns to copied voice without changing samples/duration.",
+      "composition_reason": "Khung hình phục vụ vật thể/hành động được mô tả; footer200px dành cho phụ đề nếu workflow sau cần, không đặt nội dung ở đó.",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector rõ quan hệ, khả thi; độ tạo khối đồng nhất khác gu giấy/ảnh người dùng đang chọn."
+        },
+        {
+          "id": "hf_existing:cartoon_collage",
+          "assessment": "Giữ nguồn ảnh thật khi có ý nghĩa, nét nhẹ, mascot và props giấy; khớp ba pilot hiện tại."
+        }
+      ],
+      "style_id": "hf_existing:cartoon_collage",
+      "style_reference": [
+        "planning/pilot_manifest.json",
+        "DIRECTOR_BRIEF.md"
+      ],
+      "style_reason": "Gu đã chọn từ ba pilot; khác biệt cảnh đến từ nội dung, không đổi style ngẫu nhiên. Isometric chỉ hữu ích khi cần cấu trúc; Bauhaus phù hợp beat ngắn nhưng không thay tình huống ở đây.",
+      "asset_contract": {
+        "ids": [
+          "student_walk",
+          "canal_scene",
+          "portfolio"
+        ],
+        "status": "existing library plus specified new illustrations; see ASSET_PLAN.json",
+        "independent_layers": "Mỗi bộ asset liệt kê phần tách lớp; không dùng ảnh phẳng thay asset cần khớp tay/đạo cụ."
+      },
+      "hf_signature_motion": "Nhật đeo ba lô và nhìn qua cầu; ánh nền mở sáng hơn, mặt nước gợn nhẹ, không pháo hoa hay cúp. / Nhật quay chào rồi hướng lại về phía trước; CHƯƠNG MỚI hiện ngắn trên vùng trời.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow plate. Essential art/text above y1080 on720x1280.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "asset_id": "portfolio",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        }
+      ],
+      "container_semantics": "Các đối tượng giấy/ảnh/kiến trúc có hành động thật trong cảnh, không phải hộp căn layout.",
+      "visible_text_budget": {
+        "rule": "Chỉ giữ các chuỗi liệt kê; headline/thông tin gắn vật thể, không đọc lại cả voice. Không bắt mọi cảnh cùng số nhãn hay cùng cỡ.",
+        "max_levels_per_item": 2
+      },
+      "mobile_legibility_plan": "Headline thường40–52px; nhãn30–36px. Shorten/reposition if360x640 proof fails; verified Vietnamese fonts in library. Không áp toàn bộ typography04 lên cảnh mới.",
+      "dark_mass_strategy": "Nền sáng theo bối cảnh, #30313B dùng cho nét và chữ; mặt phụ dùng tint thay nhiều khối navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "handoff": "17 tiếp đúng bước chân/không gian, không reset nhân vật về đầu cầu hoặc đổi trang phục.",
+      "uncertainties": [],
+      "character": true,
+      "transformation": "Trang mở, Nhật bước vào nhịp đầu trên cầu; tạm không có headline. Nhật đeo ba lô và nhìn qua cầu; ánh nền mở sáng hơn, mặt nước gợn nhẹ, không pháo hoa hay cúp. Nhật quay chào rồi hướng lại về phía trước; CHƯƠNG MỚI hiện ngắn trên vùng trời.",
+      "planned_output": "build/renders/scene_16.mp4",
+      "visual_verb": "Bước vào không gian kênh đào mới"
+    },
+    {
+      "scene_id": "scene_17",
+      "start_sample": 1522442,
+      "end_sample": 1636800,
+      "sample_frames": 114358,
+      "raw_text": "tiếp tục phát quy bản lĩnh, khám phá những câu hội mới và chinh phục nhiều cuộc mốc lớn hơn trong tương lai.",
+      "sha256": "30ed3ceca54a8c0930f0cc6b6b8b0e32b8bc494cd90255db7491cd3f44613872",
+      "corrected_text": "tiếp tục phát huy bản lĩnh, khám phá những cơ hội mới và chinh phục nhiều cột mốc lớn hơn trong tương lai.",
+      "audio": "inputs/audio/scene_17.wav",
+      "duration": 4.764916666666666,
+      "global_start": 63.43508333333333,
+      "global_end": 68.2,
+      "title": "Hành trình còn tiếp",
+      "intent": "Kết bằng sự chủ động và tương lai mở, không invent nghề nghiệp/học vị/mức lương.",
+      "layout": "Bám Nhật từ góc3/4 trong cùng phố16. Nhật x300–435/y685–1005; không gian phía trước mở x430–680/y390–940. Máy kéo rộng vừa phải; nội dung vẫn chiếm đến y1040.",
+      "opening_state": "Nhật tiếp bước trên cầu rồi mở cuốn sổ xanh bên mình; những trang phía sau còn trắng.",
+      "shots": [
+        {
+          "local_start": 0,
+          "local_end": 1.3,
+          "spoken_cue": "tiếp tục phát huy bản lĩnh",
+          "action": "Nhật dừng một nhịp, mở sổ và kẹp trang mới; giữ dấu cam của cảnh01 như callback."
+        },
+        {
+          "local_start": 1.3,
+          "local_end": 2.8,
+          "spoken_cue": "khám phá những cơ hội mới",
+          "action": "Nhật khép sổ vào tay và bước khỏi nhịp cầu, khung nhìn mở thêm khoảng phố phía trước, không bay qua các career icons."
+        },
+        {
+          "local_start": 2.8,
+          "local_end": 4.15,
+          "spoken_cue": "chinh phục nhiều cột mốc lớn hơn",
+          "action": "Nhật bước tiếp trong môi trường, mái nhà/tiền cảnh dịch theo parallax thật của góc nhìn; không mốc số/đích nghề nghiệp."
+        },
+        {
+          "local_start": 4.15,
+          "local_end": 4.764916666666666,
+          "spoken_cue": "trong tương lai",
+          "action": "Giữ Nhật đang hướng tới phần phố ngoài khung cùng HÀNH TRÌNH CÒN TIẾP; kết nhẹ0.6s, không thêm CTA."
+        }
+      ],
+      "final_state": "Có người đang đi tiếp và những trang chưa viết; không chốt một kết quả ngoài voice.",
+      "visible_text_inventory": [
+        "HÀNH TRÌNH CÒN TIẾP"
+      ],
+      "protagonist_action": "Mở sổ, đánh dấu trang mới rồi chủ động đi tiếp; không chinh phục mục tiêu bịa.",
+      "asset_ids": [
+        "student_walk",
+        "canal_scene",
+        "notebook"
+      ],
+      "transition_to_next": "Kết phim bằng hold0.6s và kết voice gốc; không logo/đăng ký/mời liên hệ tự thêm.",
+      "routing_reason": "Thế giới vẽ tiếp ra khỏi trang và callback cuốn sổ mang ý hành trình chưa hoàn tất. HYBRID montage công việc/tốt nghiệp sẽ thêm kết quả chưa có; chuyển động lớp giấy và bước đi vector đủ rõ.",
+      "scene_number": 17,
+      "production_action": "build_from_director_packet",
+      "render_mode": "HF_ONLY",
+      "raw_voice_immutable": true,
+      "timing_evidence": "Local cue windows are director estimates, not forced alignment. Builder aligns to copied voice without changing samples/duration.",
+      "composition_reason": "Khung hình phục vụ vật thể/hành động được mô tả; footer200px dành cho phụ đề nếu workflow sau cần, không đặt nội dung ở đó.",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector rõ quan hệ, khả thi; độ tạo khối đồng nhất khác gu giấy/ảnh người dùng đang chọn."
+        },
+        {
+          "id": "hf_existing:cartoon_collage",
+          "assessment": "Giữ nguồn ảnh thật khi có ý nghĩa, nét nhẹ, mascot và props giấy; khớp ba pilot hiện tại."
+        }
+      ],
+      "style_id": "hf_existing:cartoon_collage",
+      "style_reference": [
+        "planning/pilot_manifest.json",
+        "DIRECTOR_BRIEF.md"
+      ],
+      "style_reason": "Gu đã chọn từ ba pilot; khác biệt cảnh đến từ nội dung, không đổi style ngẫu nhiên. Isometric chỉ hữu ích khi cần cấu trúc; Bauhaus phù hợp beat ngắn nhưng không thay tình huống ở đây.",
+      "asset_contract": {
+        "ids": [
+          "student_walk",
+          "canal_scene",
+          "notebook"
+        ],
+        "status": "existing library plus specified new illustrations; see ASSET_PLAN.json",
+        "independent_layers": "Mỗi bộ asset liệt kê phần tách lớp; không dùng ảnh phẳng thay asset cần khớp tay/đạo cụ."
+      },
+      "hf_signature_motion": "Nhật khép sổ vào tay và bước khỏi nhịp cầu, khung nhìn mở thêm khoảng phố phía trước, không bay qua các career icons. / Nhật bước tiếp trong môi trường, mái nhà/tiền cảnh dịch theo parallax thật của góc nhìn; không mốc số/đích nghề nghiệp.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow plate. Essential art/text above y1080 on720x1280.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "physical paper object",
+          "asset_id": "notebook",
+          "bounds": "Theo layout của cảnh; không vẽ khung thông tin độc lập.",
+          "semantic_boundary": "Bề mặt ảnh/giấy/sổ là nơi tác động mở, đọc, ghép hoặc gấp.",
+          "removal_consequence": "Bỏ mặt vật liệu sẽ mất hành động và quan hệ được thiết kế."
+        }
+      ],
+      "container_semantics": "Các đối tượng giấy/ảnh/kiến trúc có hành động thật trong cảnh, không phải hộp căn layout.",
+      "visible_text_budget": {
+        "rule": "Chỉ giữ các chuỗi liệt kê; headline/thông tin gắn vật thể, không đọc lại cả voice. Không bắt mọi cảnh cùng số nhãn hay cùng cỡ.",
+        "max_levels_per_item": 2
+      },
+      "mobile_legibility_plan": "Headline thường40–52px; nhãn30–36px. Shorten/reposition if360x640 proof fails; verified Vietnamese fonts in library. Không áp toàn bộ typography04 lên cảnh mới.",
+      "dark_mass_strategy": "Nền sáng theo bối cảnh, #30313B dùng cho nét và chữ; mặt phụ dùng tint thay nhiều khối navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "handoff": "Kết phim bằng hold0.6s và kết voice gốc; không logo/đăng ký/mời liên hệ tự thêm.",
+      "uncertainties": [],
+      "character": true,
+      "transformation": "Nhật dừng một nhịp, mở sổ và kẹp trang mới; giữ dấu cam của cảnh01 như callback. Nhật khép sổ vào tay và bước khỏi nhịp cầu, khung nhìn mở thêm khoảng phố phía trước, không bay qua các career icons. Nhật bước tiếp trong môi trường, mái nhà/tiền cảnh dịch theo parallax thật của góc nhìn; không mốc số/đích nghề nghiệp. Giữ Nhật đang hướng tới phần phố ngoài khung cùng HÀNH TRÌNH CÒN TIẾP; kết nhẹ0.6s, không thêm CTA.",
+      "planned_output": "build/renders/scene_17.mp4",
+      "visual_verb": "Đánh dấu trang tiếp theo và bước tiếp"
+    }
+  ]
+}

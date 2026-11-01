@@ -1,0 +1,127 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 0.5,
+        "selector": "#geography",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -751.09,
+          "top": -1256.28,
+          "right": 1036.11,
+          "bottom": 1040,
+          "width": 1787.2,
+          "height": 2296.28
+        },
+        "containerSelector": "#root > svg:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 720,
+          "bottom": 1280,
+          "width": 720,
+          "height": 1280
+        },
+        "overflow": {
+          "left": 751.09,
+          "right": 316.11,
+          "top": 1256.28
+        },
+        "dataAttributes": {
+          "data-hf-svg-reference-aliases": "[{\"name\":\"clip-path\",\"localName\":\"clip-path\",\"namespaceURI\":null,\"before\":\"url(#map-window)\",\"after\":\"url(#map-window)\"}]"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -751.09,
+          "y": -1256.28,
+          "width": 1787.2,
+          "height": 2296.28
+        },
+        "firstSeen": 0.5,
+        "lastSeen": 0.5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          0.5
+        ]
+      }
+    ],
+    "duration": 1,
+    "samples": [
+      0.5
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 1,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.5
+    ],
+    "checked": 0,
+    "passed": 0
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "saved": {
+    "id": "f33e433d-8d6a-4466-a4cc-486456fca72a",
+    "revision": "649730a7-f7b5-4e4a-9207-ca8e2c47572a",
+    "report": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S05-design-restart-r1\\02-contact\\.hyperframes\\artifacts\\checks\\f33e433d-8d6a-4466-a4cc-486456fca72a.json",
+    "attribution": "recorded-revision"
+  },
+  "_meta": {
+    "version": "0.8.170",
+    "latestVersion": "0.8.170",
+    "updateAvailable": false
+  }
+}

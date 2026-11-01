@@ -1,0 +1,22 @@
+{
+  "status": "AWAITING VISUAL STYLE REVIEW",
+  "visual_review": {
+    "status": "pending",
+    "reviewer": null,
+    "approved_at": null,
+    "approval_evidence": null,
+    "reviewed_revision": null
+  },
+  "candidate_revision": "core-visual-r2",
+  "candidate_fingerprint": "2443b08bbf0efbb362fc7d408742416a34daea9f41e5f0b82a8a680173c8e066",
+  "evidence": [
+    "comparison.png",
+    "S03-A.png",
+    "S03-B.png",
+    "S08-A.png",
+    "S08-B.png"
+  ],
+  "animation_status": "PLANNED_NOT_IMPLEMENTED",
+  "production_approval_unchanged": true,
+  "next_action": "Human visual review of four PNGs; do not animate or render MP4 until explicit visual approval and authorized next step"
+}

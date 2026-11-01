@@ -1,0 +1,11 @@
+{
+  "scene_id": "S05",
+  "version": "final-frame-v4",
+  "status": "proposed_pending_user_review",
+  "frame": "revisions/S05-final-frame-v4/FINAL_FRAME.png",
+  "frame_sha256": "b14ac47a66d3862d8f1555c7805bb21e396bbe2b93d86b24e2863a35a9ec597a",
+  "source": "revisions/S05-final-frame-v4/index.html",
+  "concept": "Residential street vignette, shared pavement, adjacent home, mascot holds a folded plan and compares the entrance. No independent model / photographic backdrop / paper-house mechanism.",
+  "motion_rendered": false,
+  "S09_changed": false
+}

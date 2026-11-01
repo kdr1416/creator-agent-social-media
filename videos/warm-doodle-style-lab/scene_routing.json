@@ -1,0 +1,301 @@
+{
+  "scope": "Three-scene isolated sampler; not a routing rewrite of the original16-scene film.",
+  "selection": {
+    "method": "random.SystemRandom().sample(pool,3), drawn once and retained",
+    "eligible_pool": [
+      "scene_01",
+      "scene_02",
+      "scene_04",
+      "scene_05",
+      "scene_07",
+      "scene_08",
+      "scene_09",
+      "scene_11",
+      "scene_13",
+      "scene_15"
+    ],
+    "pool_reason": "Retain existing HF_ONLY engine routing for an illustrated style trial; do not replace Flow scenes or production.",
+    "selected": [
+      "scene_04",
+      "scene_09",
+      "scene_13"
+    ],
+    "excluded": "Existing FLOW_ONLY/HYBRID scenes were outside this illustrative trial pool."
+  },
+  "mode_counts": {
+    "HF_ONLY": 3
+  },
+  "film_level_audit": "All3 chosen scenes remain HF_ONLY. Reconsidered because >60% and3 consecutive: retain as each has distinct vector mechanism (travel/map, causal mechanical track, preparation/reveal); organic footage would replace rather than strengthen this illustrated trial.",
+  "scenes": [
+    {
+      "scene_id": "scene_04",
+      "audio_source": "assets/scene_04.wav",
+      "source_timeline": {
+        "start": 14.143,
+        "end": 17.436,
+        "start_sample": 339432,
+        "end_sample": 418464
+      },
+      "duration": 3.293,
+      "raw_text": "Han University of Applied Sciences, Hà Lan",
+      "source_text": "HAN University of Applied Sciences (Hà Lan)",
+      "corrected_text": "HAN University of Applied Sciences (Hà Lan)",
+      "audio_preserved": true,
+      "voice_mismatch_note": "No audio edit.",
+      "render_mode": "HF_ONLY",
+      "previous_mode": "HF_ONLY",
+      "routing_reason": "Independent vector props and spatial transformations carry the explanation; live-action acting would not explain this visual mechanism better.",
+      "style_candidates": [
+        {
+          "style_id": "kurzgesagt",
+          "tradeoff": "Clear layered illustration but polished geometric finish differs from the requested warm paper reference."
+        },
+        {
+          "style_id": "hf_existing:warm-doodle-original",
+          "tradeoff": "Original fine-line paper illustration matches requested taste and supports the causal prop action."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-original",
+      "style_reference": "frame.md and user-supplied reference video",
+      "style_reason": "User requested a new warm hand-drawn treatment; preserve engine and redesign visual staging.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "Open canvas; no footage overlay.",
+      "handoff": "Registered sub-composition mounted in index.html; source audio copied unchanged.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "mobile_legibility_plan": "Essential text >=28px at720 canvas; inspect360×640 proofs; no paragraph copy.",
+      "dark_mass_strategy": "Brown fine outlines and pale filled props; no major solid navy/charcoal shapes.",
+      "publication_scope": "Private style experiment; not a replacement production scene.",
+      "visual_verb": "travel-and-arrive",
+      "opening_state": "A student and suitcase approach an illustrated atlas landmass.",
+      "transformation": "The student follows a curved route while a pin settles over an unbranded school.",
+      "final_state": "Student arrives and gestures toward the destination; HAN name remains readable.",
+      "protagonist_action": "Walk with luggage, then indicate the school.",
+      "hf_signature_motion": "Luggage and walking student share a route; arrival resolves the location.",
+      "asset_contract": [
+        "original atlas silhouette",
+        "canal/bridge/tulip layers",
+        "campus roof/windows/door",
+        "destination pin",
+        "student head/far arm/near arm/legs",
+        "suitcase and handle"
+      ],
+      "timed_beats": [
+        {
+          "range": "0–0.8",
+          "action": "Title builds while student starts walking."
+        },
+        {
+          "range": "0.8–1.95",
+          "action": "Pin settles; student/luggage reach campus."
+        },
+        {
+          "range": "2.03–3.293",
+          "action": "Gesture and arrival resolve."
+        }
+      ],
+      "visible_text_inventory": [
+        "HAN",
+        "University of Applied Sciences",
+        "Hà Lan"
+      ],
+      "container_inventory": [],
+      "visible_text_budget": 8,
+      "container_required": false
+    },
+    {
+      "scene_id": "scene_09",
+      "audio_source": "assets/scene_09.wav",
+      "source_timeline": {
+        "start": 33.23,
+        "end": 39.699,
+        "start_sample": 797520,
+        "end_sample": 952776
+      },
+      "duration": 6.469,
+      "raw_text": "trường nổi bật với các trường trình đào tạo về kinh doanh, logistic, kỹ thuật và truyền thông trong mô trường học tập quốc tế năng động.",
+      "source_text": "trường nổi bật với các chương trình đào tạo về Kinh doanh, Logistics, Kỹ thuật và Truyền thông trong môi trường học tập quốc tế năng động.",
+      "corrected_text": "Trường có các chương trình về Kinh doanh, Logistics, Kỹ thuật và Truyền thông; minh hoạ môi trường học tập kết nối.",
+      "audio_preserved": true,
+      "voice_mismatch_note": "Promotional wording retained in original audio; corrected_text is a separate editorial layer.",
+      "render_mode": "HF_ONLY",
+      "previous_mode": "HF_ONLY",
+      "routing_reason": "Independent vector props and spatial transformations carry the explanation; live-action acting would not explain this visual mechanism better.",
+      "style_candidates": [
+        {
+          "style_id": "kurzgesagt",
+          "tradeoff": "Clear layered illustration but polished geometric finish differs from the requested warm paper reference."
+        },
+        {
+          "style_id": "hf_existing:warm-doodle-original",
+          "tradeoff": "Original fine-line paper illustration matches requested taste and supports the causal prop action."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-original",
+      "style_reference": "frame.md and user-supplied reference video",
+      "style_reason": "User requested a new warm hand-drawn treatment; preserve engine and redesign visual staging.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "Open canvas; no footage overlay.",
+      "handoff": "Registered sub-composition mounted in index.html; source audio copied unchanged.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "mobile_legibility_plan": "Essential text >=28px at720 canvas; inspect360×640 proofs; no paragraph copy.",
+      "dark_mass_strategy": "Brown fine outlines and pale filled props; no major solid navy/charcoal shapes.",
+      "publication_scope": "Private style experiment; not a replacement production scene.",
+      "visual_verb": "connect-and-transform",
+      "opening_state": "Four physical learning metaphors sit on an open S-curve track.",
+      "transformation": "Student pushes parcel to the logistics cart; it reaches the gear, which turns and sends a signal to the microphone.",
+      "final_state": "Connected system is active; completed labels collapse.",
+      "protagonist_action": "Push parcel, release at cart, observe the output.",
+      "hf_signature_motion": "A travelling parcel activates a rotating gear and connected broadcast.",
+      "asset_contract": [
+        "student multi-part rig",
+        "briefcase flap/handle",
+        "parcel body/tape",
+        "cart frame/wheels",
+        "S-curve track",
+        "gear teeth/hub",
+        "cable and microphone",
+        "broadcast paths"
+      ],
+      "timed_beats": [
+        {
+          "range": "0–1.2",
+          "action": "Business label and parcel push."
+        },
+        {
+          "range": "1.25–2.65",
+          "action": "Logistics transfer to cart."
+        },
+        {
+          "range": "2.65–4.05",
+          "action": "Engineering gear turns after parcel arrival."
+        },
+        {
+          "range": "4.05–6.469",
+          "action": "Microphone broadcasts; system resolves."
+        }
+      ],
+      "visible_text_inventory": [
+        "Rotterdam UAS",
+        "Học qua những kết nối",
+        "Kinh doanh",
+        "Logistics",
+        "Kỹ thuật",
+        "Truyền thông"
+      ],
+      "container_inventory": [
+        {
+          "object_type": "physical_object",
+          "bounds": "briefcase at x145–282,y330–416",
+          "semantic_boundary": "A briefcase shell and flap identify the business prop.",
+          "removal_consequence": "It ceases to depict a briefcase; no information is boxed inside."
+        },
+        {
+          "object_type": "physical_object",
+          "bounds": "moving parcel about75×75px",
+          "semantic_boundary": "Faces and tape depict a physical parcel.",
+          "removal_consequence": "The logistics handoff loses the object being delivered."
+        }
+      ],
+      "visible_text_budget": "One short hook plus context and one temporary field label at a time.",
+      "container_required": true
+    },
+    {
+      "scene_id": "scene_13",
+      "audio_source": "assets/scene_13.wav",
+      "source_timeline": {
+        "start": 53.387,
+        "end": 57.701,
+        "start_sample": 1281288,
+        "end_sample": 1384824
+      },
+      "duration": 4.314,
+      "raw_text": "Đang sau, ba thương mời nhập học là quá trình chuẩn bị nghiêm túc và định hướng rõ ràng.",
+      "source_text": "Đằng sau ba thư mời nhập học là quá trình chuẩn bị nghiêm túc và định hướng rõ ràng.",
+      "corrected_text": "Đằng sau ba thư mời nhập học là quá trình chuẩn bị nghiêm túc và định hướng rõ ràng.",
+      "audio_preserved": true,
+      "voice_mismatch_note": "No audio edit.",
+      "render_mode": "HF_ONLY",
+      "previous_mode": "HF_ONLY",
+      "routing_reason": "Independent vector props and spatial transformations carry the explanation; live-action acting would not explain this visual mechanism better.",
+      "style_candidates": [
+        {
+          "style_id": "kurzgesagt",
+          "tradeoff": "Clear layered illustration but polished geometric finish differs from the requested warm paper reference."
+        },
+        {
+          "style_id": "hf_existing:warm-doodle-original",
+          "tradeoff": "Original fine-line paper illustration matches requested taste and supports the causal prop action."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-original",
+      "style_reference": "frame.md and user-supplied reference video",
+      "style_reason": "User requested a new warm hand-drawn treatment; preserve engine and redesign visual staging.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "Open canvas; no footage overlay.",
+      "handoff": "Registered sub-composition mounted in index.html; source audio copied unchanged.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "mobile_legibility_plan": "Essential text >=28px at720 canvas; inspect360×640 proofs; no paragraph copy.",
+      "dark_mass_strategy": "Brown fine outlines and pale filled props; no major solid navy/charcoal shapes.",
+      "publication_scope": "Private style experiment; not a replacement production scene.",
+      "visual_verb": "prepare-and-reveal",
+      "opening_state": "Student works at a desk with a worksheet, pen and dossier.",
+      "transformation": "Hand traces a check, direction line grows, folder closes and three plain envelopes rise.",
+      "final_state": "Three envelopes visibly resolve above the prepared dossier.",
+      "protagonist_action": "Mark worksheet, close preparation, present result.",
+      "hf_signature_motion": "A physical pen/check and closed dossier causally reveal three envelopes.",
+      "asset_contract": [
+        "student head/arms/legs",
+        "foreground grip/pen",
+        "worksheet and check stroke",
+        "folder base and moving cover",
+        "three envelope bodies/flaps/check marks",
+        "desk/lamp layers",
+        "direction path and arrow head"
+      ],
+      "timed_beats": [
+        {
+          "range": "0–0.84",
+          "action": "Pen marks worksheet with sustained contact."
+        },
+        {
+          "range": "0.9–2.35",
+          "action": "Pen initiates direction path."
+        },
+        {
+          "range": "2.15–2.55",
+          "action": "Prepared dossier closes."
+        },
+        {
+          "range": "2.55–4.314",
+          "action": "Three envelopes rise and student presents them."
+        }
+      ],
+      "visible_text_inventory": [
+        "Chuẩn bị kỹ.",
+        "Đi đúng hướng."
+      ],
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "bounds": "x293–492,y723–831",
+          "semantic_boundary": "A physical worksheet inside a dossier.",
+          "removal_consequence": "The check/close action loses its document."
+        },
+        {
+          "object_type": "physical_object",
+          "bounds": "three envelopes near x271/414/554,y438–491",
+          "semantic_boundary": "Envelope outlines/flaps communicate the literal three offer letters.",
+          "removal_consequence": "The result is no longer recognisable as three letters."
+        }
+      ],
+      "visible_text_budget": 7,
+      "container_required": true
+    }
+  ]
+}

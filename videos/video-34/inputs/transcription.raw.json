@@ -1,0 +1,2417 @@
+{
+  "language": "vi",
+  "language_probability": 1,
+  "duration": 93.04,
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 4.54,
+      "text": "Người mau ta và người Việt có một điểm rất giống nhau, đều yêu thích cuộc sống ngoài trời.",
+      "words": [
+        {
+          "word": "Người",
+          "start": 0.0,
+          "end": 0.48,
+          "probability": 0.956
+        },
+        {
+          "word": "mau",
+          "start": 0.48,
+          "end": 0.72,
+          "probability": 0.304
+        },
+        {
+          "word": "ta",
+          "start": 0.72,
+          "end": 0.9,
+          "probability": 0.739
+        },
+        {
+          "word": "và",
+          "start": 0.9,
+          "end": 1.1,
+          "probability": 0.991
+        },
+        {
+          "word": "người",
+          "start": 1.1,
+          "end": 1.26,
+          "probability": 0.996
+        },
+        {
+          "word": "Việt",
+          "start": 1.26,
+          "end": 1.5,
+          "probability": 0.831
+        },
+        {
+          "word": "có",
+          "start": 1.5,
+          "end": 1.72,
+          "probability": 0.99
+        },
+        {
+          "word": "một",
+          "start": 1.72,
+          "end": 1.86,
+          "probability": 0.711
+        },
+        {
+          "word": "điểm",
+          "start": 1.86,
+          "end": 2.12,
+          "probability": 0.974
+        },
+        {
+          "word": "rất",
+          "start": 2.12,
+          "end": 2.28,
+          "probability": 0.975
+        },
+        {
+          "word": "giống",
+          "start": 2.28,
+          "end": 2.46,
+          "probability": 0.953
+        },
+        {
+          "word": "nhau,",
+          "start": 2.46,
+          "end": 2.76,
+          "probability": 0.996
+        },
+        {
+          "word": "đều",
+          "start": 3.18,
+          "end": 3.32,
+          "probability": 0.827
+        },
+        {
+          "word": "yêu",
+          "start": 3.32,
+          "end": 3.48,
+          "probability": 0.981
+        },
+        {
+          "word": "thích",
+          "start": 3.48,
+          "end": 3.64,
+          "probability": 0.989
+        },
+        {
+          "word": "cuộc",
+          "start": 3.64,
+          "end": 3.8,
+          "probability": 0.998
+        },
+        {
+          "word": "sống",
+          "start": 3.8,
+          "end": 4.06,
+          "probability": 0.988
+        },
+        {
+          "word": "ngoài",
+          "start": 4.06,
+          "end": 4.26,
+          "probability": 0.942
+        },
+        {
+          "word": "trời.",
+          "start": 4.26,
+          "end": 4.54,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 4.96,
+      "end": 9.84,
+      "text": "Có lẽ việc cùng gắn liền với biển và khi hậu nhiều nắng, người mau ta cũng có lối sống khá giống người Việt.",
+      "words": [
+        {
+          "word": "Có",
+          "start": 4.96,
+          "end": 5.14,
+          "probability": 0.951
+        },
+        {
+          "word": "lẽ",
+          "start": 5.14,
+          "end": 5.34,
+          "probability": 0.996
+        },
+        {
+          "word": "việc",
+          "start": 5.34,
+          "end": 5.52,
+          "probability": 0.935
+        },
+        {
+          "word": "cùng",
+          "start": 5.52,
+          "end": 5.7,
+          "probability": 0.802
+        },
+        {
+          "word": "gắn",
+          "start": 5.7,
+          "end": 5.86,
+          "probability": 0.842
+        },
+        {
+          "word": "liền",
+          "start": 5.86,
+          "end": 6.1,
+          "probability": 0.914
+        },
+        {
+          "word": "với",
+          "start": 6.1,
+          "end": 6.24,
+          "probability": 0.975
+        },
+        {
+          "word": "biển",
+          "start": 6.24,
+          "end": 6.5,
+          "probability": 0.924
+        },
+        {
+          "word": "và",
+          "start": 6.5,
+          "end": 6.66,
+          "probability": 0.868
+        },
+        {
+          "word": "khi",
+          "start": 6.66,
+          "end": 6.8,
+          "probability": 0.882
+        },
+        {
+          "word": "hậu",
+          "start": 6.8,
+          "end": 7.0,
+          "probability": 0.967
+        },
+        {
+          "word": "nhiều",
+          "start": 7.0,
+          "end": 7.18,
+          "probability": 0.984
+        },
+        {
+          "word": "nắng,",
+          "start": 7.18,
+          "end": 7.42,
+          "probability": 0.989
+        },
+        {
+          "word": "người",
+          "start": 7.76,
+          "end": 7.86,
+          "probability": 0.944
+        },
+        {
+          "word": "mau",
+          "start": 7.86,
+          "end": 8.06,
+          "probability": 0.954
+        },
+        {
+          "word": "ta",
+          "start": 8.06,
+          "end": 8.26,
+          "probability": 0.994
+        },
+        {
+          "word": "cũng",
+          "start": 8.26,
+          "end": 8.48,
+          "probability": 0.991
+        },
+        {
+          "word": "có",
+          "start": 8.48,
+          "end": 8.66,
+          "probability": 0.985
+        },
+        {
+          "word": "lối",
+          "start": 8.66,
+          "end": 8.76,
+          "probability": 0.811
+        },
+        {
+          "word": "sống",
+          "start": 8.76,
+          "end": 9.0,
+          "probability": 0.975
+        },
+        {
+          "word": "khá",
+          "start": 9.0,
+          "end": 9.26,
+          "probability": 0.964
+        },
+        {
+          "word": "giống",
+          "start": 9.26,
+          "end": 9.44,
+          "probability": 0.992
+        },
+        {
+          "word": "người",
+          "start": 9.44,
+          "end": 9.62,
+          "probability": 0.995
+        },
+        {
+          "word": "Việt.",
+          "start": 9.62,
+          "end": 9.84,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 10.2,
+      "end": 14.52,
+      "text": "Họ thích đi bộ vào buổi sáng hoặc chiều muộn, chạy bộ dọc bơ biển, ngồi cà phê ngoài trời,",
+      "words": [
+        {
+          "word": "Họ",
+          "start": 10.2,
+          "end": 10.32,
+          "probability": 0.969
+        },
+        {
+          "word": "thích",
+          "start": 10.32,
+          "end": 10.5,
+          "probability": 0.998
+        },
+        {
+          "word": "đi",
+          "start": 10.5,
+          "end": 10.62,
+          "probability": 0.996
+        },
+        {
+          "word": "bộ",
+          "start": 10.62,
+          "end": 10.82,
+          "probability": 0.919
+        },
+        {
+          "word": "vào",
+          "start": 10.82,
+          "end": 10.94,
+          "probability": 0.982
+        },
+        {
+          "word": "buổi",
+          "start": 10.94,
+          "end": 11.12,
+          "probability": 0.898
+        },
+        {
+          "word": "sáng",
+          "start": 11.12,
+          "end": 11.36,
+          "probability": 0.994
+        },
+        {
+          "word": "hoặc",
+          "start": 11.36,
+          "end": 11.64,
+          "probability": 0.988
+        },
+        {
+          "word": "chiều",
+          "start": 11.64,
+          "end": 11.84,
+          "probability": 0.854
+        },
+        {
+          "word": "muộn,",
+          "start": 11.84,
+          "end": 12.18,
+          "probability": 0.794
+        },
+        {
+          "word": "chạy",
+          "start": 12.4,
+          "end": 12.54,
+          "probability": 0.976
+        },
+        {
+          "word": "bộ",
+          "start": 12.54,
+          "end": 12.72,
+          "probability": 0.977
+        },
+        {
+          "word": "dọc",
+          "start": 12.72,
+          "end": 12.92,
+          "probability": 0.92
+        },
+        {
+          "word": "bơ",
+          "start": 12.92,
+          "end": 13.0,
+          "probability": 0.799
+        },
+        {
+          "word": "biển,",
+          "start": 13.0,
+          "end": 13.26,
+          "probability": 0.979
+        },
+        {
+          "word": "ngồi",
+          "start": 13.58,
+          "end": 13.68,
+          "probability": 0.641
+        },
+        {
+          "word": "cà",
+          "start": 13.68,
+          "end": 13.86,
+          "probability": 0.838
+        },
+        {
+          "word": "phê",
+          "start": 13.86,
+          "end": 14.02,
+          "probability": 0.958
+        },
+        {
+          "word": "ngoài",
+          "start": 14.02,
+          "end": 14.26,
+          "probability": 0.998
+        },
+        {
+          "word": "trời,",
+          "start": 14.26,
+          "end": 14.52,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 14.84,
+      "end": 18.58,
+      "text": "gặp gỡ bạn bè tại các quản trường, hay dành cuối tuần cùng gia đình bên bãi biển.",
+      "words": [
+        {
+          "word": "gặp",
+          "start": 14.84,
+          "end": 14.96,
+          "probability": 0.995
+        },
+        {
+          "word": "gỡ",
+          "start": 14.96,
+          "end": 15.1,
+          "probability": 0.944
+        },
+        {
+          "word": "bạn",
+          "start": 15.1,
+          "end": 15.28,
+          "probability": 0.907
+        },
+        {
+          "word": "bè",
+          "start": 15.28,
+          "end": 15.48,
+          "probability": 0.925
+        },
+        {
+          "word": "tại",
+          "start": 15.48,
+          "end": 15.68,
+          "probability": 0.972
+        },
+        {
+          "word": "các",
+          "start": 15.68,
+          "end": 15.84,
+          "probability": 0.998
+        },
+        {
+          "word": "quản",
+          "start": 15.84,
+          "end": 16.06,
+          "probability": 0.672
+        },
+        {
+          "word": "trường,",
+          "start": 16.06,
+          "end": 16.34,
+          "probability": 0.995
+        },
+        {
+          "word": "hay",
+          "start": 16.64,
+          "end": 16.72,
+          "probability": 0.76
+        },
+        {
+          "word": "dành",
+          "start": 16.72,
+          "end": 16.88,
+          "probability": 0.888
+        },
+        {
+          "word": "cuối",
+          "start": 16.88,
+          "end": 17.08,
+          "probability": 0.984
+        },
+        {
+          "word": "tuần",
+          "start": 17.08,
+          "end": 17.28,
+          "probability": 0.893
+        },
+        {
+          "word": "cùng",
+          "start": 17.28,
+          "end": 17.54,
+          "probability": 0.982
+        },
+        {
+          "word": "gia",
+          "start": 17.54,
+          "end": 17.74,
+          "probability": 0.996
+        },
+        {
+          "word": "đình",
+          "start": 17.74,
+          "end": 17.92,
+          "probability": 0.994
+        },
+        {
+          "word": "bên",
+          "start": 17.92,
+          "end": 18.12,
+          "probability": 0.924
+        },
+        {
+          "word": "bãi",
+          "start": 18.12,
+          "end": 18.34,
+          "probability": 0.948
+        },
+        {
+          "word": "biển.",
+          "start": 18.34,
+          "end": 18.58,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 19.58,
+      "end": 21.82,
+      "text": "Đó cũng là những hình ảnh rất quen thuộc ở Việt Nam.",
+      "words": [
+        {
+          "word": "Đó",
+          "start": 19.58,
+          "end": 19.84,
+          "probability": 0.995
+        },
+        {
+          "word": "cũng",
+          "start": 19.84,
+          "end": 20.06,
+          "probability": 0.992
+        },
+        {
+          "word": "là",
+          "start": 20.06,
+          "end": 20.22,
+          "probability": 0.976
+        },
+        {
+          "word": "những",
+          "start": 20.22,
+          "end": 20.34,
+          "probability": 0.997
+        },
+        {
+          "word": "hình",
+          "start": 20.34,
+          "end": 20.54,
+          "probability": 0.968
+        },
+        {
+          "word": "ảnh",
+          "start": 20.54,
+          "end": 20.76,
+          "probability": 0.994
+        },
+        {
+          "word": "rất",
+          "start": 20.76,
+          "end": 20.92,
+          "probability": 0.99
+        },
+        {
+          "word": "quen",
+          "start": 20.92,
+          "end": 21.12,
+          "probability": 0.97
+        },
+        {
+          "word": "thuộc",
+          "start": 21.12,
+          "end": 21.36,
+          "probability": 0.844
+        },
+        {
+          "word": "ở",
+          "start": 21.36,
+          "end": 21.48,
+          "probability": 0.979
+        },
+        {
+          "word": "Việt",
+          "start": 21.48,
+          "end": 21.58,
+          "probability": 0.994
+        },
+        {
+          "word": "Nam.",
+          "start": 21.58,
+          "end": 21.82,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start": 22.46,
+      "end": 26.24,
+      "text": "Người Việt thích dạo công viên, đi bộ ven xong, ngồi quán cà phê trò chuyện,",
+      "words": [
+        {
+          "word": "Người",
+          "start": 22.46,
+          "end": 22.64,
+          "probability": 0.969
+        },
+        {
+          "word": "Việt",
+          "start": 22.64,
+          "end": 22.88,
+          "probability": 0.996
+        },
+        {
+          "word": "thích",
+          "start": 22.88,
+          "end": 23.16,
+          "probability": 0.937
+        },
+        {
+          "word": "dạo",
+          "start": 23.16,
+          "end": 23.34,
+          "probability": 0.836
+        },
+        {
+          "word": "công",
+          "start": 23.34,
+          "end": 23.5,
+          "probability": 0.968
+        },
+        {
+          "word": "viên,",
+          "start": 23.5,
+          "end": 23.72,
+          "probability": 0.993
+        },
+        {
+          "word": "đi",
+          "start": 24.08,
+          "end": 24.16,
+          "probability": 0.998
+        },
+        {
+          "word": "bộ",
+          "start": 24.16,
+          "end": 24.36,
+          "probability": 0.993
+        },
+        {
+          "word": "ven",
+          "start": 24.36,
+          "end": 24.56,
+          "probability": 0.846
+        },
+        {
+          "word": "xong,",
+          "start": 24.56,
+          "end": 24.78,
+          "probability": 0.612
+        },
+        {
+          "word": "ngồi",
+          "start": 25.1,
+          "end": 25.18,
+          "probability": 0.951
+        },
+        {
+          "word": "quán",
+          "start": 25.18,
+          "end": 25.38,
+          "probability": 0.85
+        },
+        {
+          "word": "cà",
+          "start": 25.38,
+          "end": 25.58,
+          "probability": 0.965
+        },
+        {
+          "word": "phê",
+          "start": 25.58,
+          "end": 25.74,
+          "probability": 0.994
+        },
+        {
+          "word": "trò",
+          "start": 25.74,
+          "end": 25.96,
+          "probability": 0.942
+        },
+        {
+          "word": "chuyện,",
+          "start": 25.96,
+          "end": 26.24,
+          "probability": 0.981
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start": 26.24,
+      "end": 28.02,
+      "text": "hay đưa con đi biển vào dịp cuối tuần.",
+      "words": [
+        {
+          "word": "hay",
+          "start": 26.24,
+          "end": 26.54,
+          "probability": 0.525
+        },
+        {
+          "word": "đưa",
+          "start": 26.54,
+          "end": 26.74,
+          "probability": 0.994
+        },
+        {
+          "word": "con",
+          "start": 26.74,
+          "end": 26.9,
+          "probability": 0.991
+        },
+        {
+          "word": "đi",
+          "start": 26.9,
+          "end": 27.04,
+          "probability": 0.991
+        },
+        {
+          "word": "biển",
+          "start": 27.04,
+          "end": 27.28,
+          "probability": 0.97
+        },
+        {
+          "word": "vào",
+          "start": 27.28,
+          "end": 27.46,
+          "probability": 0.985
+        },
+        {
+          "word": "dịp",
+          "start": 27.46,
+          "end": 27.68,
+          "probability": 0.95
+        },
+        {
+          "word": "cuối",
+          "start": 27.68,
+          "end": 27.84,
+          "probability": 0.909
+        },
+        {
+          "word": "tuần.",
+          "start": 27.84,
+          "end": 28.02,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 29.16,
+      "end": 34.8,
+      "text": "Chính sự tương đồng trong nhiệm sống này giúp nhiều gia đình Việt cảm thấy mau ta không quá xa lạ khi chuyển đến sân sống.",
+      "words": [
+        {
+          "word": "Chính",
+          "start": 29.16,
+          "end": 29.38,
+          "probability": 0.859
+        },
+        {
+          "word": "sự",
+          "start": 29.38,
+          "end": 29.64,
+          "probability": 0.961
+        },
+        {
+          "word": "tương",
+          "start": 29.64,
+          "end": 29.82,
+          "probability": 0.973
+        },
+        {
+          "word": "đồng",
+          "start": 29.82,
+          "end": 30.0,
+          "probability": 0.933
+        },
+        {
+          "word": "trong",
+          "start": 30.0,
+          "end": 30.24,
+          "probability": 0.995
+        },
+        {
+          "word": "nhiệm",
+          "start": 30.24,
+          "end": 30.44,
+          "probability": 0.654
+        },
+        {
+          "word": "sống",
+          "start": 30.44,
+          "end": 30.58,
+          "probability": 0.908
+        },
+        {
+          "word": "này",
+          "start": 30.58,
+          "end": 30.8,
+          "probability": 0.992
+        },
+        {
+          "word": "giúp",
+          "start": 30.8,
+          "end": 31.24,
+          "probability": 0.971
+        },
+        {
+          "word": "nhiều",
+          "start": 31.24,
+          "end": 31.44,
+          "probability": 0.999
+        },
+        {
+          "word": "gia",
+          "start": 31.44,
+          "end": 31.56,
+          "probability": 0.991
+        },
+        {
+          "word": "đình",
+          "start": 31.56,
+          "end": 31.72,
+          "probability": 0.981
+        },
+        {
+          "word": "Việt",
+          "start": 31.72,
+          "end": 31.9,
+          "probability": 0.025
+        },
+        {
+          "word": "cảm",
+          "start": 31.9,
+          "end": 32.12,
+          "probability": 0.983
+        },
+        {
+          "word": "thấy",
+          "start": 32.12,
+          "end": 32.28,
+          "probability": 0.999
+        },
+        {
+          "word": "mau",
+          "start": 32.28,
+          "end": 32.5,
+          "probability": 0.167
+        },
+        {
+          "word": "ta",
+          "start": 32.5,
+          "end": 32.68,
+          "probability": 0.486
+        },
+        {
+          "word": "không",
+          "start": 32.68,
+          "end": 33.08,
+          "probability": 0.896
+        },
+        {
+          "word": "quá",
+          "start": 33.08,
+          "end": 33.34,
+          "probability": 0.616
+        },
+        {
+          "word": "xa",
+          "start": 33.34,
+          "end": 33.58,
+          "probability": 0.967
+        },
+        {
+          "word": "lạ",
+          "start": 33.58,
+          "end": 33.78,
+          "probability": 0.906
+        },
+        {
+          "word": "khi",
+          "start": 33.78,
+          "end": 33.98,
+          "probability": 0.984
+        },
+        {
+          "word": "chuyển",
+          "start": 33.98,
+          "end": 34.24,
+          "probability": 0.906
+        },
+        {
+          "word": "đến",
+          "start": 34.24,
+          "end": 34.38,
+          "probability": 0.982
+        },
+        {
+          "word": "sân",
+          "start": 34.38,
+          "end": 34.54,
+          "probability": 0.644
+        },
+        {
+          "word": "sống.",
+          "start": 34.54,
+          "end": 34.8,
+          "probability": 0.79
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 35.7,
+      "end": 40.2,
+      "text": "Một trong những điều làm nên chất lượng sống của mau ta không chỉ là hệ thống giáo dục hay y tế,",
+      "words": [
+        {
+          "word": "Một",
+          "start": 35.7,
+          "end": 35.88,
+          "probability": 0.961
+        },
+        {
+          "word": "trong",
+          "start": 35.88,
+          "end": 36.2,
+          "probability": 0.994
+        },
+        {
+          "word": "những",
+          "start": 36.2,
+          "end": 36.36,
+          "probability": 0.996
+        },
+        {
+          "word": "điều",
+          "start": 36.36,
+          "end": 36.6,
+          "probability": 0.997
+        },
+        {
+          "word": "làm",
+          "start": 36.6,
+          "end": 36.78,
+          "probability": 0.959
+        },
+        {
+          "word": "nên",
+          "start": 36.78,
+          "end": 36.96,
+          "probability": 0.956
+        },
+        {
+          "word": "chất",
+          "start": 36.96,
+          "end": 37.18,
+          "probability": 0.702
+        },
+        {
+          "word": "lượng",
+          "start": 37.18,
+          "end": 37.3,
+          "probability": 0.995
+        },
+        {
+          "word": "sống",
+          "start": 37.3,
+          "end": 37.52,
+          "probability": 0.984
+        },
+        {
+          "word": "của",
+          "start": 37.52,
+          "end": 37.66,
+          "probability": 0.993
+        },
+        {
+          "word": "mau",
+          "start": 37.66,
+          "end": 37.86,
+          "probability": 0.965
+        },
+        {
+          "word": "ta",
+          "start": 37.86,
+          "end": 38.06,
+          "probability": 0.996
+        },
+        {
+          "word": "không",
+          "start": 38.06,
+          "end": 38.48,
+          "probability": 0.904
+        },
+        {
+          "word": "chỉ",
+          "start": 38.48,
+          "end": 38.68,
+          "probability": 0.994
+        },
+        {
+          "word": "là",
+          "start": 38.68,
+          "end": 38.86,
+          "probability": 0.972
+        },
+        {
+          "word": "hệ",
+          "start": 38.86,
+          "end": 39.04,
+          "probability": 0.98
+        },
+        {
+          "word": "thống",
+          "start": 39.04,
+          "end": 39.2,
+          "probability": 0.989
+        },
+        {
+          "word": "giáo",
+          "start": 39.2,
+          "end": 39.42,
+          "probability": 0.887
+        },
+        {
+          "word": "dục",
+          "start": 39.42,
+          "end": 39.6,
+          "probability": 0.963
+        },
+        {
+          "word": "hay",
+          "start": 39.6,
+          "end": 39.8,
+          "probability": 0.87
+        },
+        {
+          "word": "y",
+          "start": 39.8,
+          "end": 39.94,
+          "probability": 0.813
+        },
+        {
+          "word": "tế,",
+          "start": 39.94,
+          "end": 40.2,
+          "probability": 0.95
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 40.42,
+      "end": 44.48,
+      "text": "mà còn là văn hóa sống chậm, cân bằng giữa công việc và thời gian dành cho bản thân.",
+      "words": [
+        {
+          "word": "mà",
+          "start": 40.42,
+          "end": 40.6,
+          "probability": 0.979
+        },
+        {
+          "word": "còn",
+          "start": 40.6,
+          "end": 40.74,
+          "probability": 0.992
+        },
+        {
+          "word": "là",
+          "start": 40.74,
+          "end": 40.9,
+          "probability": 0.989
+        },
+        {
+          "word": "văn",
+          "start": 40.9,
+          "end": 41.04,
+          "probability": 0.979
+        },
+        {
+          "word": "hóa",
+          "start": 41.04,
+          "end": 41.28,
+          "probability": 0.94
+        },
+        {
+          "word": "sống",
+          "start": 41.28,
+          "end": 41.5,
+          "probability": 0.812
+        },
+        {
+          "word": "chậm,",
+          "start": 41.5,
+          "end": 41.82,
+          "probability": 0.835
+        },
+        {
+          "word": "cân",
+          "start": 42.14,
+          "end": 42.26,
+          "probability": 0.857
+        },
+        {
+          "word": "bằng",
+          "start": 42.26,
+          "end": 42.48,
+          "probability": 0.867
+        },
+        {
+          "word": "giữa",
+          "start": 42.48,
+          "end": 42.68,
+          "probability": 0.66
+        },
+        {
+          "word": "công",
+          "start": 42.68,
+          "end": 42.8,
+          "probability": 0.928
+        },
+        {
+          "word": "việc",
+          "start": 42.8,
+          "end": 42.98,
+          "probability": 0.997
+        },
+        {
+          "word": "và",
+          "start": 42.98,
+          "end": 43.3,
+          "probability": 0.984
+        },
+        {
+          "word": "thời",
+          "start": 43.3,
+          "end": 43.46,
+          "probability": 0.996
+        },
+        {
+          "word": "gian",
+          "start": 43.46,
+          "end": 43.68,
+          "probability": 0.986
+        },
+        {
+          "word": "dành",
+          "start": 43.68,
+          "end": 43.88,
+          "probability": 0.82
+        },
+        {
+          "word": "cho",
+          "start": 43.88,
+          "end": 44.06,
+          "probability": 0.999
+        },
+        {
+          "word": "bản",
+          "start": 44.06,
+          "end": 44.24,
+          "probability": 0.996
+        },
+        {
+          "word": "thân.",
+          "start": 44.24,
+          "end": 44.48,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start": 45.0,
+      "end": 49.92,
+      "text": "Giá đình, trẻ em có nhiều cơ hội tham gia các hoạt động ngoài trời, vận động và khám phá thiền nhiên.",
+      "words": [
+        {
+          "word": "Giá",
+          "start": 45.0,
+          "end": 45.16,
+          "probability": 0.516
+        },
+        {
+          "word": "đình,",
+          "start": 45.16,
+          "end": 45.38,
+          "probability": 0.738
+        },
+        {
+          "word": "trẻ",
+          "start": 46.06,
+          "end": 46.24,
+          "probability": 0.973
+        },
+        {
+          "word": "em",
+          "start": 46.24,
+          "end": 46.36,
+          "probability": 0.99
+        },
+        {
+          "word": "có",
+          "start": 46.36,
+          "end": 46.48,
+          "probability": 0.994
+        },
+        {
+          "word": "nhiều",
+          "start": 46.48,
+          "end": 46.64,
+          "probability": 0.997
+        },
+        {
+          "word": "cơ",
+          "start": 46.64,
+          "end": 46.8,
+          "probability": 0.779
+        },
+        {
+          "word": "hội",
+          "start": 46.8,
+          "end": 47.0,
+          "probability": 0.995
+        },
+        {
+          "word": "tham",
+          "start": 47.0,
+          "end": 47.2,
+          "probability": 0.99
+        },
+        {
+          "word": "gia",
+          "start": 47.2,
+          "end": 47.38,
+          "probability": 0.995
+        },
+        {
+          "word": "các",
+          "start": 47.38,
+          "end": 47.52,
+          "probability": 0.983
+        },
+        {
+          "word": "hoạt",
+          "start": 47.52,
+          "end": 47.68,
+          "probability": 0.992
+        },
+        {
+          "word": "động",
+          "start": 47.68,
+          "end": 47.82,
+          "probability": 1.0
+        },
+        {
+          "word": "ngoài",
+          "start": 47.82,
+          "end": 48.02,
+          "probability": 0.964
+        },
+        {
+          "word": "trời,",
+          "start": 48.02,
+          "end": 48.28,
+          "probability": 0.991
+        },
+        {
+          "word": "vận",
+          "start": 48.66,
+          "end": 48.74,
+          "probability": 0.974
+        },
+        {
+          "word": "động",
+          "start": 48.74,
+          "end": 48.96,
+          "probability": 0.993
+        },
+        {
+          "word": "và",
+          "start": 48.96,
+          "end": 49.18,
+          "probability": 0.978
+        },
+        {
+          "word": "khám",
+          "start": 49.18,
+          "end": 49.36,
+          "probability": 0.927
+        },
+        {
+          "word": "phá",
+          "start": 49.36,
+          "end": 49.52,
+          "probability": 0.956
+        },
+        {
+          "word": "thiền",
+          "start": 49.52,
+          "end": 49.7,
+          "probability": 0.712
+        },
+        {
+          "word": "nhiên.",
+          "start": 49.7,
+          "end": 49.92,
+          "probability": 0.81
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 50.5,
+      "end": 54.7,
+      "text": "Người lớn có thể tận hưởng không gian công cộng an toàn, sạch đẹp và gần gũi với biển.",
+      "words": [
+        {
+          "word": "Người",
+          "start": 50.5,
+          "end": 50.66,
+          "probability": 0.963
+        },
+        {
+          "word": "lớn",
+          "start": 50.66,
+          "end": 50.96,
+          "probability": 1.0
+        },
+        {
+          "word": "có",
+          "start": 50.96,
+          "end": 51.16,
+          "probability": 0.983
+        },
+        {
+          "word": "thể",
+          "start": 51.16,
+          "end": 51.3,
+          "probability": 0.999
+        },
+        {
+          "word": "tận",
+          "start": 51.3,
+          "end": 51.48,
+          "probability": 0.991
+        },
+        {
+          "word": "hưởng",
+          "start": 51.48,
+          "end": 51.64,
+          "probability": 0.988
+        },
+        {
+          "word": "không",
+          "start": 51.64,
+          "end": 51.88,
+          "probability": 0.825
+        },
+        {
+          "word": "gian",
+          "start": 51.88,
+          "end": 52.1,
+          "probability": 0.925
+        },
+        {
+          "word": "công",
+          "start": 52.1,
+          "end": 52.36,
+          "probability": 0.559
+        },
+        {
+          "word": "cộng",
+          "start": 52.36,
+          "end": 52.64,
+          "probability": 0.753
+        },
+        {
+          "word": "an",
+          "start": 52.64,
+          "end": 52.78,
+          "probability": 0.942
+        },
+        {
+          "word": "toàn,",
+          "start": 52.78,
+          "end": 53.08,
+          "probability": 0.93
+        },
+        {
+          "word": "sạch",
+          "start": 53.4,
+          "end": 53.54,
+          "probability": 0.977
+        },
+        {
+          "word": "đẹp",
+          "start": 53.54,
+          "end": 53.8,
+          "probability": 0.992
+        },
+        {
+          "word": "và",
+          "start": 53.8,
+          "end": 54.02,
+          "probability": 0.97
+        },
+        {
+          "word": "gần",
+          "start": 54.02,
+          "end": 54.18,
+          "probability": 0.953
+        },
+        {
+          "word": "gũi",
+          "start": 54.18,
+          "end": 54.38,
+          "probability": 0.878
+        },
+        {
+          "word": "với",
+          "start": 54.38,
+          "end": 54.46,
+          "probability": 0.561
+        },
+        {
+          "word": "biển.",
+          "start": 54.46,
+          "end": 54.7,
+          "probability": 0.99
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start": 55.45,
+      "end": 59.67,
+      "text": "Đối với nhiều bực phủ huyên, điều đáng giá không chỉ là con được học ở một ngôi trường tốt,",
+      "words": [
+        {
+          "word": "Đối",
+          "start": 55.45,
+          "end": 55.85,
+          "probability": 0.909
+        },
+        {
+          "word": "với",
+          "start": 55.85,
+          "end": 56.01,
+          "probability": 0.985
+        },
+        {
+          "word": "nhiều",
+          "start": 56.01,
+          "end": 56.15,
+          "probability": 0.877
+        },
+        {
+          "word": "bực",
+          "start": 56.15,
+          "end": 56.27,
+          "probability": 0.676
+        },
+        {
+          "word": "phủ",
+          "start": 56.27,
+          "end": 56.45,
+          "probability": 0.754
+        },
+        {
+          "word": "huyên,",
+          "start": 56.45,
+          "end": 56.67,
+          "probability": 0.835
+        },
+        {
+          "word": "điều",
+          "start": 57.07,
+          "end": 57.17,
+          "probability": 0.991
+        },
+        {
+          "word": "đáng",
+          "start": 57.17,
+          "end": 57.35,
+          "probability": 0.934
+        },
+        {
+          "word": "giá",
+          "start": 57.35,
+          "end": 57.61,
+          "probability": 0.979
+        },
+        {
+          "word": "không",
+          "start": 57.61,
+          "end": 57.79,
+          "probability": 0.991
+        },
+        {
+          "word": "chỉ",
+          "start": 57.79,
+          "end": 57.95,
+          "probability": 0.998
+        },
+        {
+          "word": "là",
+          "start": 57.95,
+          "end": 58.11,
+          "probability": 0.993
+        },
+        {
+          "word": "con",
+          "start": 58.11,
+          "end": 58.27,
+          "probability": 0.993
+        },
+        {
+          "word": "được",
+          "start": 58.27,
+          "end": 58.45,
+          "probability": 0.989
+        },
+        {
+          "word": "học",
+          "start": 58.45,
+          "end": 58.65,
+          "probability": 0.998
+        },
+        {
+          "word": "ở",
+          "start": 58.65,
+          "end": 58.89,
+          "probability": 0.981
+        },
+        {
+          "word": "một",
+          "start": 58.89,
+          "end": 59.05,
+          "probability": 0.942
+        },
+        {
+          "word": "ngôi",
+          "start": 59.05,
+          "end": 59.25,
+          "probability": 0.826
+        },
+        {
+          "word": "trường",
+          "start": 59.25,
+          "end": 59.41,
+          "probability": 0.965
+        },
+        {
+          "word": "tốt,",
+          "start": 59.41,
+          "end": 59.67,
+          "probability": 0.866
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 60.01,
+      "end": 66.21,
+      "text": "mà còn là được lớn lên trong một ngôi trường khuyến khích, vận động, giao tiếp và phát triển toàn diện cả về thể chất lẫn tinh thần.",
+      "words": [
+        {
+          "word": "mà",
+          "start": 60.01,
+          "end": 60.13,
+          "probability": 0.977
+        },
+        {
+          "word": "còn",
+          "start": 60.13,
+          "end": 60.27,
+          "probability": 0.972
+        },
+        {
+          "word": "là",
+          "start": 60.27,
+          "end": 60.41,
+          "probability": 0.85
+        },
+        {
+          "word": "được",
+          "start": 60.41,
+          "end": 60.53,
+          "probability": 0.989
+        },
+        {
+          "word": "lớn",
+          "start": 60.53,
+          "end": 60.85,
+          "probability": 0.996
+        },
+        {
+          "word": "lên",
+          "start": 60.85,
+          "end": 61.03,
+          "probability": 0.996
+        },
+        {
+          "word": "trong",
+          "start": 61.03,
+          "end": 61.23,
+          "probability": 0.993
+        },
+        {
+          "word": "một",
+          "start": 61.23,
+          "end": 61.33,
+          "probability": 0.967
+        },
+        {
+          "word": "ngôi",
+          "start": 61.33,
+          "end": 61.53,
+          "probability": 0.956
+        },
+        {
+          "word": "trường",
+          "start": 61.53,
+          "end": 61.75,
+          "probability": 0.999
+        },
+        {
+          "word": "khuyến",
+          "start": 61.75,
+          "end": 62.09,
+          "probability": 0.828
+        },
+        {
+          "word": "khích,",
+          "start": 62.09,
+          "end": 62.25,
+          "probability": 0.954
+        },
+        {
+          "word": "vận",
+          "start": 62.49,
+          "end": 62.61,
+          "probability": 0.74
+        },
+        {
+          "word": "động,",
+          "start": 62.61,
+          "end": 62.83,
+          "probability": 0.981
+        },
+        {
+          "word": "giao",
+          "start": 63.23,
+          "end": 63.33,
+          "probability": 0.916
+        },
+        {
+          "word": "tiếp",
+          "start": 63.33,
+          "end": 63.51,
+          "probability": 0.993
+        },
+        {
+          "word": "và",
+          "start": 63.51,
+          "end": 63.89,
+          "probability": 0.923
+        },
+        {
+          "word": "phát",
+          "start": 63.89,
+          "end": 64.07,
+          "probability": 0.985
+        },
+        {
+          "word": "triển",
+          "start": 64.07,
+          "end": 64.31,
+          "probability": 0.988
+        },
+        {
+          "word": "toàn",
+          "start": 64.31,
+          "end": 64.59,
+          "probability": 0.986
+        },
+        {
+          "word": "diện",
+          "start": 64.59,
+          "end": 64.83,
+          "probability": 0.957
+        },
+        {
+          "word": "cả",
+          "start": 64.83,
+          "end": 65.05,
+          "probability": 0.932
+        },
+        {
+          "word": "về",
+          "start": 65.05,
+          "end": 65.21,
+          "probability": 0.755
+        },
+        {
+          "word": "thể",
+          "start": 65.21,
+          "end": 65.37,
+          "probability": 0.888
+        },
+        {
+          "word": "chất",
+          "start": 65.37,
+          "end": 65.59,
+          "probability": 0.888
+        },
+        {
+          "word": "lẫn",
+          "start": 65.59,
+          "end": 65.81,
+          "probability": 0.9
+        },
+        {
+          "word": "tinh",
+          "start": 65.81,
+          "end": 66.01,
+          "probability": 0.869
+        },
+        {
+          "word": "thần.",
+          "start": 66.01,
+          "end": 66.21,
+          "probability": 0.979
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start": 67.44,
+      "end": 72.64,
+      "text": "Chỉ với khoảng 3,8 tỷ đồng, chương trình thể sân mau ta mang đến cơ hội định cư cho 4 thế hệ,",
+      "words": [
+        {
+          "word": "Chỉ",
+          "start": 67.44,
+          "end": 67.7,
+          "probability": 0.886
+        },
+        {
+          "word": "với",
+          "start": 67.7,
+          "end": 67.86,
+          "probability": 0.95
+        },
+        {
+          "word": "khoảng",
+          "start": 67.86,
+          "end": 68.18,
+          "probability": 0.987
+        },
+        {
+          "word": "3",
+          "start": 68.18,
+          "end": 68.38,
+          "probability": 0.974
+        },
+        {
+          "word": ",8",
+          "start": 68.38,
+          "end": 68.7,
+          "probability": 0.958
+        },
+        {
+          "word": "tỷ",
+          "start": 68.7,
+          "end": 68.9,
+          "probability": 0.916
+        },
+        {
+          "word": "đồng,",
+          "start": 68.9,
+          "end": 69.1,
+          "probability": 0.922
+        },
+        {
+          "word": "chương",
+          "start": 69.46,
+          "end": 69.52,
+          "probability": 0.96
+        },
+        {
+          "word": "trình",
+          "start": 69.52,
+          "end": 69.68,
+          "probability": 0.998
+        },
+        {
+          "word": "thể",
+          "start": 69.68,
+          "end": 69.84,
+          "probability": 0.199
+        },
+        {
+          "word": "sân",
+          "start": 69.84,
+          "end": 70.04,
+          "probability": 0.191
+        },
+        {
+          "word": "mau",
+          "start": 70.04,
+          "end": 70.22,
+          "probability": 0.451
+        },
+        {
+          "word": "ta",
+          "start": 70.22,
+          "end": 70.42,
+          "probability": 0.424
+        },
+        {
+          "word": "mang",
+          "start": 70.42,
+          "end": 70.78,
+          "probability": 0.901
+        },
+        {
+          "word": "đến",
+          "start": 70.78,
+          "end": 71.0,
+          "probability": 0.992
+        },
+        {
+          "word": "cơ",
+          "start": 71.0,
+          "end": 71.18,
+          "probability": 0.936
+        },
+        {
+          "word": "hội",
+          "start": 71.18,
+          "end": 71.34,
+          "probability": 0.947
+        },
+        {
+          "word": "định",
+          "start": 71.34,
+          "end": 71.54,
+          "probability": 0.936
+        },
+        {
+          "word": "cư",
+          "start": 71.54,
+          "end": 71.76,
+          "probability": 0.661
+        },
+        {
+          "word": "cho",
+          "start": 71.76,
+          "end": 72.02,
+          "probability": 0.955
+        },
+        {
+          "word": "4",
+          "start": 72.02,
+          "end": 72.24,
+          "probability": 0.836
+        },
+        {
+          "word": "thế",
+          "start": 72.24,
+          "end": 72.42,
+          "probability": 0.981
+        },
+        {
+          "word": "hệ,",
+          "start": 72.42,
+          "end": 72.64,
+          "probability": 0.99
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "start": 73.1,
+      "end": 78.38,
+      "text": "không chỉ mở ra cánh cưa đến châu Âu, đây còn là cơ hội để cả gia đình tận hữu một lối sống lạnh mạnh",
+      "words": [
+        {
+          "word": "không",
+          "start": 73.1,
+          "end": 73.28,
+          "probability": 0.974
+        },
+        {
+          "word": "chỉ",
+          "start": 73.28,
+          "end": 73.52,
+          "probability": 0.998
+        },
+        {
+          "word": "mở",
+          "start": 73.52,
+          "end": 73.76,
+          "probability": 0.979
+        },
+        {
+          "word": "ra",
+          "start": 73.76,
+          "end": 73.94,
+          "probability": 0.973
+        },
+        {
+          "word": "cánh",
+          "start": 73.94,
+          "end": 74.12,
+          "probability": 0.948
+        },
+        {
+          "word": "cưa",
+          "start": 74.12,
+          "end": 74.3,
+          "probability": 0.722
+        },
+        {
+          "word": "đến",
+          "start": 74.3,
+          "end": 74.46,
+          "probability": 0.987
+        },
+        {
+          "word": "châu",
+          "start": 74.46,
+          "end": 74.66,
+          "probability": 0.822
+        },
+        {
+          "word": "Âu,",
+          "start": 74.66,
+          "end": 75.02,
+          "probability": 0.965
+        },
+        {
+          "word": "đây",
+          "start": 75.18,
+          "end": 75.28,
+          "probability": 0.993
+        },
+        {
+          "word": "còn",
+          "start": 75.28,
+          "end": 75.44,
+          "probability": 0.981
+        },
+        {
+          "word": "là",
+          "start": 75.44,
+          "end": 75.56,
+          "probability": 0.997
+        },
+        {
+          "word": "cơ",
+          "start": 75.56,
+          "end": 75.72,
+          "probability": 0.993
+        },
+        {
+          "word": "hội",
+          "start": 75.72,
+          "end": 75.98,
+          "probability": 0.999
+        },
+        {
+          "word": "để",
+          "start": 75.98,
+          "end": 76.28,
+          "probability": 0.987
+        },
+        {
+          "word": "cả",
+          "start": 76.28,
+          "end": 76.48,
+          "probability": 0.981
+        },
+        {
+          "word": "gia",
+          "start": 76.48,
+          "end": 76.64,
+          "probability": 0.993
+        },
+        {
+          "word": "đình",
+          "start": 76.64,
+          "end": 76.84,
+          "probability": 0.989
+        },
+        {
+          "word": "tận",
+          "start": 76.84,
+          "end": 77.14,
+          "probability": 0.981
+        },
+        {
+          "word": "hữu",
+          "start": 77.14,
+          "end": 77.4,
+          "probability": 0.926
+        },
+        {
+          "word": "một",
+          "start": 77.4,
+          "end": 77.48,
+          "probability": 0.891
+        },
+        {
+          "word": "lối",
+          "start": 77.48,
+          "end": 77.64,
+          "probability": 0.981
+        },
+        {
+          "word": "sống",
+          "start": 77.64,
+          "end": 77.86,
+          "probability": 0.799
+        },
+        {
+          "word": "lạnh",
+          "start": 77.86,
+          "end": 78.1,
+          "probability": 0.911
+        },
+        {
+          "word": "mạnh",
+          "start": 78.1,
+          "end": 78.38,
+          "probability": 0.986
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "start": 78.38,
+      "end": 80.88,
+      "text": "gần của vi thi nhiên dạc cân bằng hơn mỗi ngày.",
+      "words": [
+        {
+          "word": "gần",
+          "start": 78.38,
+          "end": 78.8,
+          "probability": 0.829
+        },
+        {
+          "word": "của",
+          "start": 78.8,
+          "end": 78.92,
+          "probability": 0.699
+        },
+        {
+          "word": "vi",
+          "start": 78.92,
+          "end": 79.04,
+          "probability": 0.246
+        },
+        {
+          "word": "thi",
+          "start": 79.04,
+          "end": 79.2,
+          "probability": 0.749
+        },
+        {
+          "word": "nhiên",
+          "start": 79.2,
+          "end": 79.5,
+          "probability": 0.672
+        },
+        {
+          "word": "dạc",
+          "start": 79.5,
+          "end": 79.92,
+          "probability": 0.656
+        },
+        {
+          "word": "cân",
+          "start": 79.92,
+          "end": 80.1,
+          "probability": 0.835
+        },
+        {
+          "word": "bằng",
+          "start": 80.1,
+          "end": 80.28,
+          "probability": 0.924
+        },
+        {
+          "word": "hơn",
+          "start": 80.28,
+          "end": 80.5,
+          "probability": 0.997
+        },
+        {
+          "word": "mỗi",
+          "start": 80.5,
+          "end": 80.66,
+          "probability": 0.982
+        },
+        {
+          "word": "ngày.",
+          "start": 80.66,
+          "end": 80.88,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start": 80.88,
+      "end": 84.28,
+      "text": "Bởi đôi khi, hạnh phúc không đến từ việc sống nhanh hơn,",
+      "words": [
+        {
+          "word": "Bởi",
+          "start": 80.88,
+          "end": 81.56,
+          "probability": 0.812
+        },
+        {
+          "word": "đôi",
+          "start": 81.56,
+          "end": 81.68,
+          "probability": 0.881
+        },
+        {
+          "word": "khi,",
+          "start": 81.68,
+          "end": 81.88,
+          "probability": 0.996
+        },
+        {
+          "word": "hạnh",
+          "start": 82.24,
+          "end": 82.4,
+          "probability": 0.897
+        },
+        {
+          "word": "phúc",
+          "start": 82.4,
+          "end": 82.6,
+          "probability": 0.997
+        },
+        {
+          "word": "không",
+          "start": 82.6,
+          "end": 82.86,
+          "probability": 0.99
+        },
+        {
+          "word": "đến",
+          "start": 82.86,
+          "end": 83.1,
+          "probability": 0.994
+        },
+        {
+          "word": "từ",
+          "start": 83.1,
+          "end": 83.3,
+          "probability": 0.997
+        },
+        {
+          "word": "việc",
+          "start": 83.3,
+          "end": 83.48,
+          "probability": 0.99
+        },
+        {
+          "word": "sống",
+          "start": 83.48,
+          "end": 83.8,
+          "probability": 0.987
+        },
+        {
+          "word": "nhanh",
+          "start": 83.8,
+          "end": 84.08,
+          "probability": 0.966
+        },
+        {
+          "word": "hơn,",
+          "start": 84.08,
+          "end": 84.28,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start": 84.58,
+      "end": 88.18,
+      "text": "mà đến từ việc có nhiều thời gian hơn để đi dạo cùng con,",
+      "words": [
+        {
+          "word": "mà",
+          "start": 84.58,
+          "end": 84.84,
+          "probability": 0.874
+        },
+        {
+          "word": "đến",
+          "start": 84.84,
+          "end": 85.02,
+          "probability": 0.99
+        },
+        {
+          "word": "từ",
+          "start": 85.02,
+          "end": 85.2,
+          "probability": 0.998
+        },
+        {
+          "word": "việc",
+          "start": 85.2,
+          "end": 85.46,
+          "probability": 0.998
+        },
+        {
+          "word": "có",
+          "start": 85.46,
+          "end": 85.78,
+          "probability": 0.987
+        },
+        {
+          "word": "nhiều",
+          "start": 85.78,
+          "end": 86.04,
+          "probability": 1.0
+        },
+        {
+          "word": "thời",
+          "start": 86.04,
+          "end": 86.26,
+          "probability": 0.997
+        },
+        {
+          "word": "gian",
+          "start": 86.26,
+          "end": 86.5,
+          "probability": 0.999
+        },
+        {
+          "word": "hơn",
+          "start": 86.5,
+          "end": 86.74,
+          "probability": 0.999
+        },
+        {
+          "word": "để",
+          "start": 86.74,
+          "end": 87.22,
+          "probability": 0.818
+        },
+        {
+          "word": "đi",
+          "start": 87.22,
+          "end": 87.38,
+          "probability": 0.998
+        },
+        {
+          "word": "dạo",
+          "start": 87.38,
+          "end": 87.68,
+          "probability": 0.73
+        },
+        {
+          "word": "cùng",
+          "start": 87.68,
+          "end": 87.86,
+          "probability": 0.994
+        },
+        {
+          "word": "con,",
+          "start": 87.86,
+          "end": 88.18,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start": 88.68,
+      "end": 92.72,
+      "text": "rồi cà phê với người thân và tận hưởng những điều dạn dị cuộc cuộc sống.",
+      "words": [
+        {
+          "word": "rồi",
+          "start": 88.68,
+          "end": 88.72,
+          "probability": 0.297
+        },
+        {
+          "word": "cà",
+          "start": 88.72,
+          "end": 88.96,
+          "probability": 0.633
+        },
+        {
+          "word": "phê",
+          "start": 88.96,
+          "end": 89.26,
+          "probability": 0.969
+        },
+        {
+          "word": "với",
+          "start": 89.26,
+          "end": 89.48,
+          "probability": 0.996
+        },
+        {
+          "word": "người",
+          "start": 89.48,
+          "end": 89.66,
+          "probability": 0.998
+        },
+        {
+          "word": "thân",
+          "start": 89.66,
+          "end": 89.98,
+          "probability": 0.99
+        },
+        {
+          "word": "và",
+          "start": 89.98,
+          "end": 90.5,
+          "probability": 0.901
+        },
+        {
+          "word": "tận",
+          "start": 90.5,
+          "end": 90.7,
+          "probability": 0.995
+        },
+        {
+          "word": "hưởng",
+          "start": 90.7,
+          "end": 90.9,
+          "probability": 0.994
+        },
+        {
+          "word": "những",
+          "start": 90.9,
+          "end": 91.12,
+          "probability": 0.997
+        },
+        {
+          "word": "điều",
+          "start": 91.12,
+          "end": 91.38,
+          "probability": 0.992
+        },
+        {
+          "word": "dạn",
+          "start": 91.38,
+          "end": 91.72,
+          "probability": 0.555
+        },
+        {
+          "word": "dị",
+          "start": 91.72,
+          "end": 92.02,
+          "probability": 0.961
+        },
+        {
+          "word": "cuộc",
+          "start": 92.02,
+          "end": 92.28,
+          "probability": 0.562
+        },
+        {
+          "word": "cuộc",
+          "start": 92.28,
+          "end": 92.44,
+          "probability": 0.996
+        },
+        {
+          "word": "sống.",
+          "start": 92.44,
+          "end": 92.72,
+          "probability": 0.998
+        }
+      ]
+    }
+  ]
+}

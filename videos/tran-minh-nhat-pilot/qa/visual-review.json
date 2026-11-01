@@ -1,0 +1,49 @@
+{
+  "status": "candidate; user visual acceptance pending",
+  "observed_frames": [
+    0.5,
+    1.7,
+    2.4,
+    3.4,
+    4.7,
+    5.8
+  ],
+  "mobile_review": "Main labels readable at 360x640; no paragraph; footer reserved.",
+  "grayscale_review": "Envelope/photo/mascot separate in value; no multiple merged charcoal masses.",
+  "known_limitations": [
+    "Opening has a quieter central gap before the paper reveal; visual density differs from the reference street shot.",
+    "Arial bold headers are heavier than the unidentified reference font.",
+    "Mascot reacts to the unfolding letter; it does not maintain a literal grip throughout the flap hinge.",
+    "Cue staging is approximate from the supplied slice; no certified word alignment.",
+    "One isolated pilot does not validate 17-scene continuity."
+  ],
+  "layout_warning_review": {
+    "rotation_pivot_drift #arm-far": "Expected shoulder joint, not a centered spinning object. Shoulder remains attached in sampled reach/celebration poses; bounding-box center naturally travels."
+  },
+  "reference_alignment": {
+    "colour": {
+      "status": "partial",
+      "evidence": "Reference cream+blue/orange at13.07s; pilot5.8s same roles, not sampled identical hue."
+    },
+    "type": {
+      "status": "partial",
+      "evidence": "Tilted white-on-blue strip used; font/weight differs."
+    },
+    "asset_mix": {
+      "status": "aligned treatment",
+      "evidence": "Reference real UI + illustrated mascot; pilot official campus photo + illustrated paper/mascot."
+    },
+    "composition": {
+      "status": "partial",
+      "evidence": "Large central physical object and smaller reacting subject; more quiet space in pilot opening."
+    },
+    "mascot": {
+      "status": "partial by design",
+      "evidence": "Thin-limbed orange compact character; original square body, cap and backpack."
+    },
+    "motion": {
+      "status": "partial",
+      "evidence": "Letter hinge/extraction and short hop; opening reframe gentler than reference street pullback."
+    }
+  }
+}

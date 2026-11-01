@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "historyId": "59138a38-d4f8-4688-b614-bd2dea28dd3c",
+  "currentRevision": "e44e81c4-e509-46f9-978e-aea3b3863f6d",
+  "pendingChanges": false,
+  "files": {
+    "DIRECTION.json": {
+      "hash": "2aedcacbea1d5581fe519599172e07f8e84aba0b8755a250610b7aa982c1f0c1",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\59138a38-d4f8-4688-b614-bd2dea28dd3c\\blobs\\2a\\2aedcacbea1d5581fe519599172e07f8e84aba0b8755a250610b7aa982c1f0c1"
+    },
+    "assets/display.ttf": {
+      "hash": "be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\59138a38-d4f8-4688-b614-bd2dea28dd3c\\blobs\\be\\be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\59138a38-d4f8-4688-b614-bd2dea28dd3c\\blobs\\c1\\c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "assets/valletta.jpg": {
+      "hash": "24feb59728bcecee42267433b77bc982d1467389f1818b4ee6478474e7eccebc",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\59138a38-d4f8-4688-b614-bd2dea28dd3c\\blobs\\24\\24feb59728bcecee42267433b77bc982d1467389f1818b4ee6478474e7eccebc"
+    },
+    "assets/voice.wav": {
+      "hash": "662198c94d17a7fdb75a120490c24b3399744eb4b9c70361524153488c3e65bf",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\59138a38-d4f8-4688-b614-bd2dea28dd3c\\blobs\\66\\662198c94d17a7fdb75a120490c24b3399744eb4b9c70361524153488c3e65bf"
+    },
+    "hyperframes.json": {
+      "hash": "c8d5feecee0bd5a9b1c164bd703daa2e33f28b2699c764de877b5cad50ebf608",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\59138a38-d4f8-4688-b614-bd2dea28dd3c\\blobs\\c8\\c8d5feecee0bd5a9b1c164bd703daa2e33f28b2699c764de877b5cad50ebf608"
+    },
+    "index.html": {
+      "hash": "072578ec99865420807525e5bcf6e4c9c45e44f291d08975ce346a8808082c84",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\59138a38-d4f8-4688-b614-bd2dea28dd3c\\blobs\\07\\072578ec99865420807525e5bcf6e4c9c45e44f291d08975ce346a8808082c84"
+    },
+    "qa-check.json": {
+      "hash": "278e3d11d7d5339f6d386f073ef41518549dc58f6f0e5c690c0af3445a00a165",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\59138a38-d4f8-4688-b614-bd2dea28dd3c\\blobs\\27\\278e3d11d7d5339f6d386f073ef41518549dc58f6f0e5c690c0af3445a00a165"
+    },
+    "CHECK_FRAMES.jpg": {
+      "hash": "8cd02a6f16dde8a84132fade8d8555ee620db4f4250aacdb9c45767da9895541",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\59138a38-d4f8-4688-b614-bd2dea28dd3c\\blobs\\8c\\8cd02a6f16dde8a84132fade8d8555ee620db4f4250aacdb9c45767da9895541"
+    },
+    "render.log": {
+      "hash": "2d4e8d11599883befda835c821f654a5bf8acdc6c09619903011eb38d61e3c89",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\59138a38-d4f8-4688-b614-bd2dea28dd3c\\blobs\\2d\\2d4e8d11599883befda835c821f654a5bf8acdc6c09619903011eb38d61e3c89"
+    }
+  },
+  "revisions": {
+    "e44e81c4-e509-46f9-978e-aea3b3863f6d": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793023728700,
+      "endedAt": 1793023728775,
+      "files": {
+        "CHECK_FRAMES.jpg": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\59138a38-d4f8-4688-b614-bd2dea28dd3c\\blobs\\8c\\8cd02a6f16dde8a84132fade8d8555ee620db4f4250aacdb9c45767da9895541"
+        },
+        "qa-check.json": {
+          "before": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\59138a38-d4f8-4688-b614-bd2dea28dd3c\\blobs\\e3\\e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\59138a38-d4f8-4688-b614-bd2dea28dd3c\\blobs\\27\\278e3d11d7d5339f6d386f073ef41518549dc58f6f0e5c690c0af3445a00a165"
+        },
+        "render.log": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\59138a38-d4f8-4688-b614-bd2dea28dd3c\\blobs\\2d\\2d4e8d11599883befda835c821f654a5bf8acdc6c09619903011eb38d61e3c89"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "9da8540d-353b-4b7d-b0bb-a616eda76cd2"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "9da8540d-353b-4b7d-b0bb-a616eda76cd2",
+        "scope": "project",
+        "report": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S05-motion-r2\\.hyperframes\\artifacts\\checks\\9da8540d-353b-4b7d-b0bb-a616eda76cd2.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "at": [
+              0.3,
+              2.15,
+              3.15,
+              3.75,
+              4.35,
+              5.3
+            ],
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": true,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793023608293,
+        "contentHash": "0e845d974a2f2eb8d0eb0cd2345ad03e5056d9fae2c504451894b62c83076efc",
+        "revision": null,
+        "inputFingerprint": "b7108d8e6b6a7f2726a9e71e2535fe48be0709f06248bb1606abd76072743a31",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "9da8540d-353b-4b7d-b0bb-a616eda76cd2-4"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "9da8540d-353b-4b7d-b0bb-a616eda76cd2-0",
+        "scope": "full",
+        "image": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S05-motion-r2\\.hyperframes\\artifacts\\snapshots\\6db2195f-805f-4293-8198-1a434f9452ef\\frame-00-at-0.3s.png",
+        "time": 0.3,
+        "metadata": {
+          "checkId": "9da8540d-353b-4b7d-b0bb-a616eda76cd2",
+          "width": 720,
+          "height": 1280
+        },
+        "createdAt": 1793023608293,
+        "contentHash": "fae89ebd1f161770ae74fc30f204bd10d9a981702496b3724714d519e782dc78",
+        "revision": null,
+        "inputFingerprint": "b7108d8e6b6a7f2726a9e71e2535fe48be0709f06248bb1606abd76072743a31",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "9da8540d-353b-4b7d-b0bb-a616eda76cd2-1",
+        "scope": "full",
+        "image": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S05-motion-r2\\.hyperframes\\artifacts\\snapshots\\6db2195f-805f-4293-8198-1a434f9452ef\\frame-01-at-2.1s.png",
+        "time": 2.15,
+        "metadata": {
+          "checkId": "9da8540d-353b-4b7d-b0bb-a616eda76cd2",
+          "width": 720,
+          "height": 1280
+        },
+        "createdAt": 1793023608293,
+        "contentHash": "f322991b8eccc75bcb422beaea7f927d40b4194dc78baa5c77af51b4c75a62a5",
+        "revision": null,
+        "inputFingerprint": "b7108d8e6b6a7f2726a9e71e2535fe48be0709f06248bb1606abd76072743a31",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "9da8540d-353b-4b7d-b0bb-a616eda76cd2-2",
+        "scope": "full",
+        "image": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S05-motion-r2\\.hyperframes\\artifacts\\snapshots\\6db2195f-805f-4293-8198-1a434f9452ef\\frame-02-at-3.1s.png",
+        "time": 3.15,
+        "metadata": {
+          "checkId": "9da8540d-353b-4b7d-b0bb-a616eda76cd2",
+          "width": 720,
+          "height": 1280
+        },
+        "createdAt": 1793023608293,
+        "contentHash": "dfd9df136b11827e78d71159ee02a3e84d794dd1acff3c2e1c7abd51e28b2aea",
+        "revision": null,
+        "inputFingerprint": "b7108d8e6b6a7f2726a9e71e2535fe48be0709f06248bb1606abd76072743a31",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "9da8540d-353b-4b7d-b0bb-a616eda76cd2-3",
+        "scope": "full",
+        "image": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S05-motion-r2\\.hyperframes\\artifacts\\snapshots\\6db2195f-805f-4293-8198-1a434f9452ef\\frame-03-at-3.8s.png",
+        "time": 3.75,
+        "metadata": {
+          "checkId": "9da8540d-353b-4b7d-b0bb-a616eda76cd2",
+          "width": 720,
+          "height": 1280
+        },
+        "createdAt": 1793023608294,
+        "contentHash": "f209894125ce586f026bf46fccc3c6f1c43d3464d494b5c8f6e1ee7633442da0",
+        "revision": null,
+        "inputFingerprint": "b7108d8e6b6a7f2726a9e71e2535fe48be0709f06248bb1606abd76072743a31",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "9da8540d-353b-4b7d-b0bb-a616eda76cd2-4",
+        "scope": "full",
+        "image": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S05-motion-r2\\.hyperframes\\artifacts\\snapshots\\6db2195f-805f-4293-8198-1a434f9452ef\\frame-04-at-5.3s.png",
+        "time": 5.3,
+        "metadata": {
+          "checkId": "9da8540d-353b-4b7d-b0bb-a616eda76cd2",
+          "width": 720,
+          "height": 1280
+        },
+        "createdAt": 1793023608294,
+        "contentHash": "619b17c24c23b15462a64e59e1304f4f9f9dad53ce1f93194ba81715d5dd4104",
+        "revision": null,
+        "inputFingerprint": "b7108d8e6b6a7f2726a9e71e2535fe48be0709f06248bb1606abd76072743a31",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "renders": {
+    "latest": {
+      "id": "0a280676-3d67-41af-80d9-927e4141cd29",
+      "completedAt": 1793023750673,
+      "output": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S05-motion-r2\\renders\\pilot.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

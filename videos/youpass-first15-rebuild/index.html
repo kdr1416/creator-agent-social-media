@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>YouPass — dựng lại15 giây đầu, không audio</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/gsap.min.js"></script>
+<script src="assets/youpass-kit.js"></script>
+<style>
+#yp-main{position:relative;width:100%;height:100%;overflow:hidden;background:#FFF3E8}
+.yp-slot{position:absolute;inset:0;width:100%;height:100%}
+#yp-seam-flash{position:absolute;inset:0;background:#FFF7E4;opacity:0;pointer-events:none;z-index:20}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-fexk" id="yp-main" data-composition-id="yp-main" data-width="720" data-height="1280" data-start="0" data-duration="15">
+ <div data-hf-id="hf-8iac" id="yp-host-street" class="yp-slot" data-composition-id="yp-street" data-composition-src="compositions/yp-street.html" data-start="0" data-duration="4.233" data-track-index="1" data-width="720" data-height="1280"></div>
+ <div data-hf-id="hf-1dk1" id="yp-host-night" class="yp-slot" data-composition-id="yp-night" data-composition-src="compositions/yp-night.html" data-start="4.233" data-duration="1.1" data-track-index="1" data-width="720" data-height="1280"></div>
+ <div data-hf-id="hf-5bez" id="yp-host-room" class="yp-slot" data-composition-id="yp-room" data-composition-src="compositions/yp-room.html" data-start="5.333" data-duration="4.067" data-track-index="1" data-width="720" data-height="1280"></div>
+ <div data-hf-id="hf-sbta" id="yp-host-laptop" class="yp-slot" data-composition-id="yp-laptop" data-composition-src="compositions/yp-laptop.html" data-start="9.4" data-duration="1.9" data-track-index="1" data-width="720" data-height="1280"></div>
+ <div data-hf-id="hf-dqjd" id="yp-host-study" class="yp-slot" data-composition-id="yp-study" data-composition-src="compositions/yp-study.html" data-start="11.3" data-duration="3.7" data-track-index="1" data-width="720" data-height="1280"></div>
+ <div data-hf-id="hf-ggtg" id="yp-seam-flash"></div>
+</div>
+<script>
+(()=>{const tl=gsap.timeline({paused:true});const hold={v:0};tl.to(hold,{v:1,duration:15,ease:'none'},0);tl.fromTo('#yp-seam-flash',{opacity:.42},{opacity:0,duration:.24,ease:'power1.out',immediateRender:false},5.333);tl.fromTo('#yp-seam-flash',{opacity:.48},{opacity:0,duration:.24,ease:'power1.out',immediateRender:false},11.3);window.__timelines['yp-main']=tl;})();
+</script>
+</body>
+</html>

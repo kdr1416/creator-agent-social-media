@@ -1,0 +1,56 @@
+graph TB
+    subgraph ClientAndAgents["Orchestration & Client Layer"]
+        CLI["AI Coding Agents (Antigravity / Claude Code / Codex Skills)"]
+        Dash["React 18 Dashboard (Vite + Tailwind + shadcn/ui)"]
+        SP["Chrome Extension Side Panel"]
+    end
+
+    subgraph FastAPIServer["Flow Kit Core Backend (FastAPI on 127.0.0.1:8100)"]
+        Router["API Routers (/api/projects, /scenes, /requests, /videos...)"]
+        DB[(SQLite WAL: flow_agent.db)]
+        Bus["Async EventBus (Pub/Sub)"]
+        Worker["WorkerController & APIRateLimiter"]
+        OpService["OperationService & ProviderRegistry"]
+        Reviewer["Video Review Engine (Claude Vision / CLI Subprocess)"]
+        AudioEng["Audio Engine (OmniVoice TTS + Suno BGM)"]
+        FFmpegSvc["Post-Process Engine (FFmpeg Concat/Trim)"]
+    end
+
+    subgraph ExtensionBridge["Chrome Extension Bridge (MV3)"]
+        WS["WebSocket Client (ws://127.0.0.1:9222)"]
+        BG["Background Service Worker (background.js)"]
+        Trap["Anti-Hijack Trap (hijack_bypass.js)"]
+        Injected["MAIN World Script (injected.js)"]
+    end
+
+    subgraph ExternalBackends["External Generation Services"]
+        GoogleFlow["flow.google.com (Veo 2/3, Gemini Omni Flash, Nano Banana)"]
+        MuseGateway["muse2api Gateway (muse.ai)"]
+        AssistantQueue["Local Assistant Worker Queue (provider_job table)"]
+        YouTubeAPI["YouTube Data API v3 (OAuth2)"]
+    end
+
+    CLI -->|REST /batch| Router
+    Dash -->|REST & WS| Router
+    SP -->|WS /ws/dashboard| Router
+    Router --> DB
+    Router --> Worker
+    Worker --> OpService
+    Worker --> Bus
+    Bus -->|WS broadcast| Dash
+    Bus -->|WS broadcast| SP
+
+    OpService -->|FlowProvider| WS
+    OpService -->|Muse2APIProvider| MuseGateway
+    OpService -->|AssistantProvider| AssistantQueue
+
+    WS <--> BG
+    BG -->|chrome.scripting.executeScript| Injected
+    Trap -->|Preserve pristine execute| Injected
+    Injected -->|batchexecute POST + reCAPTCHA| GoogleFlow
+
+    Worker --> Reviewer
+    Reviewer -->|Claude API / CLI subp| OpService
+    Router --> AudioEng
+    Router --> FFmpegSvc
+    Router --> YouTubeAPI

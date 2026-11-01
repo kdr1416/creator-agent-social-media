@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "historyId": "f8af1ba8-4ac8-4627-8106-88e75632f66a",
+  "currentRevision": "bc5c01ad-256d-470d-a516-f280dd4c59c6",
+  "pendingChanges": false,
+  "files": {
+    "assets/font.ttf": {
+      "hash": "be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\be\\be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\c1\\c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "index.html": {
+      "hash": "27dba9d9c6982934b6cdcc4622936ca2dd9d401ede3bc0c5fa4e1ffb5dc207a2",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\27\\27dba9d9c6982934b6cdcc4622936ca2dd9d401ede3bc0c5fa4e1ffb5dc207a2"
+    },
+    "layered-art.svg": {
+      "hash": "22a3ead36cea82d44853b7450a63f7a69bb06f0641a2675481f345fd1a1c6b3a",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\22\\22a3ead36cea82d44853b7450a63f7a69bb06f0641a2675481f345fd1a1c6b3a"
+    },
+    "frames/frame-00-at-0.5s.png": {
+      "hash": "389fe61bfe4ffbfa0804eb014c80b1e14658da6f918b4cc56efc18335d33162a",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\38\\389fe61bfe4ffbfa0804eb014c80b1e14658da6f918b4cc56efc18335d33162a"
+    },
+    "frames/contact-sheet.jpg": {
+      "hash": "01c5c360f3bb60308105b8f84ef01926af7b8b4aab478108e999ef13dcf3f406",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\01\\01c5c360f3bb60308105b8f84ef01926af7b8b4aab478108e999ef13dcf3f406"
+    },
+    "snapshot.log": {
+      "hash": "a4c55873d0912f4b114a3b5e752e594ee998f535076da71497417a3d07f0c5fb",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\a4\\a4c55873d0912f4b114a3b5e752e594ee998f535076da71497417a3d07f0c5fb"
+    },
+    "mobile.png": {
+      "hash": "fb6c8a198289381135ff46c30c1ff30ad631561681dc42b320e4fe2346eef152",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\fb\\fb6c8a198289381135ff46c30c1ff30ad631561681dc42b320e4fe2346eef152"
+    },
+    "thumbnail.jpg": {
+      "hash": "a2cc5033191a233a1d26e0672f5b4a63270bb6c78559f1cf1e77153030afc546",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\a2\\a2cc5033191a233a1d26e0672f5b4a63270bb6c78559f1cf1e77153030afc546"
+    },
+    "grayscale.png": {
+      "hash": "2c25c69b35b5938789b1b4196292bbc823835adc5d32d571ad5c24189f11992d",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\2c\\2c25c69b35b5938789b1b4196292bbc823835adc5d32d571ad5c24189f11992d"
+    }
+  },
+  "revisions": {
+    "bc5c01ad-256d-470d-a516-f280dd4c59c6": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793033403207,
+      "endedAt": 1793033403434,
+      "files": {
+        "frames/contact-sheet.jpg": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\01\\01c5c360f3bb60308105b8f84ef01926af7b8b4aab478108e999ef13dcf3f406"
+        },
+        "frames/frame-00-at-0.5s.png": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\38\\389fe61bfe4ffbfa0804eb014c80b1e14658da6f918b4cc56efc18335d33162a"
+        },
+        "grayscale.png": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\2c\\2c25c69b35b5938789b1b4196292bbc823835adc5d32d571ad5c24189f11992d"
+        },
+        "index.html": {
+          "before": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\f3\\f3ec91f68b8f157650f9880e99567fb99511875eebd25cae1520c9c9901b3024",
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\27\\27dba9d9c6982934b6cdcc4622936ca2dd9d401ede3bc0c5fa4e1ffb5dc207a2"
+        },
+        "layered-art.svg": {
+          "before": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\49\\490e1b79af4f5169a0f07b1dd4ee71e9f9faf919379aaca6d8d9527993d72abb",
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\22\\22a3ead36cea82d44853b7450a63f7a69bb06f0641a2675481f345fd1a1c6b3a"
+        },
+        "mobile.png": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\fb\\fb6c8a198289381135ff46c30c1ff30ad631561681dc42b320e4fe2346eef152"
+        },
+        "snapshot.log": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\a4\\a4c55873d0912f4b114a3b5e752e594ee998f535076da71497417a3d07f0c5fb"
+        },
+        "thumbnail.jpg": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f8af1ba8-4ac8-4627-8106-88e75632f66a\\blobs\\a2\\a2cc5033191a233a1d26e0672f5b4a63270bb6c78559f1cf1e77153030afc546"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "72a882d3-ac32-4440-9f46-fa6e78a0702d-0"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "72a882d3-ac32-4440-9f46-fa6e78a0702d-0",
+        "image": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S07-S08-design-r1\\S07\\03-connected\\frames\\frame-00-at-0.5s.png",
+        "time": 0.5,
+        "metadata": {
+          "width": 720,
+          "height": 1280,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793033408167,
+        "contentHash": "cef9cbf7353f7e589ea9d6f607cc90ce76e4a0a9b0df022514ebe1c4cc2093ec",
+        "revision": null,
+        "inputFingerprint": "35bf1ab8ad928be23d468a52079ba55eab11e7a942e5d0748dc47c2795c01952",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      }
+    ]
+  }
+}

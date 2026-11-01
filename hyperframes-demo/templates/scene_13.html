@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=720, height=1280" />
+    <title>Scene 13 - ESORA: Lộ Trình Chiến Lược Đa Chiều</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        color: #0f172a;
+        font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+        overflow: hidden;
+      }
+      #root {
+        position: relative;
+        width: 720px;
+        height: 1280px;
+        overflow: hidden;
+        background: #ffffff;
+      }
+
+      /* ── AMBIENT OPEN-CANVAS BACKGROUND ── */
+      .bg-canvas {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .bg-glow {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          circle at 50% 46%,
+          rgba(241, 245, 249, 0.95) 0%,
+          rgba(255, 255, 255, 1) 75%
+        );
+      }
+      .bg-grid {
+        position: absolute;
+        inset: 0;
+        background-image: 
+          linear-gradient(to right, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+        background-size: 40px 40px;
+        opacity: 0.65;
+      }
+
+      /* ── TOP BRAND MARK & HEADLINE (Y: 60px – 180px) ── */
+      .brand-mark {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-size: 13px;
+        letter-spacing: 3px;
+        color: #c2410c;
+        text-transform: uppercase;
+        z-index: 45;
+      }
+      .headline-container {
+        position: absolute;
+        top: 96px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 45;
+        padding: 0 40px;
+      }
+      .main-title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 34px;
+        line-height: 1.15;
+        color: #0f172a;
+        margin: 0;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+      }
+      .title-accent-bar {
+        width: 240px;
+        height: 8px;
+        background: #fde047;
+        margin: 10px auto 0 auto;
+        border-radius: 4px;
+        transform-origin: center;
+      }
+
+      /* ── MAIN VISUAL STAGE (Y: 200px to 1050px -> 230px CLEAN FOOTER) ── */
+      .visual-stage {
+        position: absolute;
+        top: 200px;
+        left: 0;
+        width: 720px;
+        height: 850px;
+        z-index: 20;
+      }
+      .stage-ground-line {
+        position: absolute;
+        bottom: 0;
+        left: 48px;
+        width: 624px;
+        height: 3px;
+        background: #cbd5e1;
+        border-radius: 2px;
+      }
+
+      /* ── PHASE 1: NARROW STEP CONFINEMENT BOUNDARY ── */
+      .narrow-boundary {
+        position: absolute;
+        top: 310px;
+        left: 100px;
+        width: 520px;
+        height: 150px;
+        border: 2.5px dashed #cbd5e1;
+        border-radius: 24px;
+        background: rgba(248, 250, 252, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 24px;
+        z-index: 22;
+        transform-origin: center center;
+      }
+      .step-node {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+      .step-icon-circle {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: #ffffff;
+        border: 2.5px solid #94a3b8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+      }
+      .step-label {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-size: 13px;
+        color: #64748b;
+        letter-spacing: 0.5px;
+      }
+      .step-divider-arrow {
+        width: 60px;
+        height: 2px;
+        border-top: 2px dashed #94a3b8;
+        position: relative;
+      }
+      .step-divider-arrow::after {
+        content: "";
+        position: absolute;
+        right: -4px;
+        top: -5px;
+        border-left: 6px solid #94a3b8;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+      }
+
+      /* ── STRATEGIC ROADMAP GRID & ORBITS (SVG OVERLAY) ── */
+      .roadmap-svg-layer {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 720px;
+        height: 700px;
+        z-index: 15;
+        pointer-events: none;
+      }
+
+      /* Orbit Milestone Nodes */
+      .orbit-node {
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: #ffffff;
+        border: 3px solid #ff6b2b;
+        box-shadow: 0 6px 16px rgba(255, 107, 43, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 25;
+      }
+      .orbit-node-a { top: 90px; left: 110px; }
+      .orbit-node-b { top: 90px; right: 110px; }
+      .orbit-node-c { top: 480px; left: 100px; }
+      .orbit-node-d { top: 480px; right: 100px; }
+
+      .pulse-ring {
+        position: absolute;
+        inset: -8px;
+        border-radius: 50%;
+        border: 2px solid rgba(255, 107, 43, 0.4);
+        pointer-events: none;
+      }
+
+      /* ── ESORA GOLDEN STRATEGIC COMPASS (CENTER Y: 260px) ── */
+      .compass-container {
+        position: absolute;
+        top: 155px;
+        left: 220px;
+        width: 280px;
+        height: 280px;
+        z-index: 30;
+      }
+      .compass-dial-back {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        background: radial-gradient(circle at 50% 50%, #ffffff 0%, #f8fafc 80%, #f1f5f9 100%);
+        border: 7px solid #0f172a;
+        box-shadow: 0 16px 36px rgba(15, 23, 42, 0.16), 0 0 0 3px #fde047;
+      }
+      .compass-radar-ping {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        border: 3px solid #fde047;
+        opacity: 0;
+        pointer-events: none;
+      }
+      .compass-needle-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 280px;
+        transform-origin: 140px 140px;
+        z-index: 35;
+      }
+
+      /* ── SYNTHESIS STATUS ANCHOR BADGE (Y: 670px) ── */
+      .anchor-badge {
+        position: absolute;
+        top: 660px;
+        left: 140px;
+        width: 440px;
+        height: 72px;
+        background: #0f172a;
+        border: 3px solid #ff6b2b;
+        border-radius: 20px;
+        box-shadow: 0 16px 32px rgba(15, 23, 42, 0.22);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        z-index: 40;
+      }
+      .anchor-star-icon {
+        width: 38px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .anchor-text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 21px;
+        color: #ffffff;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="clip" data-composition-id="main" data-width="720" data-height="1280" data-duration="6">
+      <audio id="voice-track" src="./assets/audio.wav" data-start="0" data-duration="6" preload="auto"></audio>
+
+      <!-- Ambient Canvas Background -->
+      <div class="bg-canvas">
+        <div class="bg-glow"></div>
+        <div class="bg-grid"></div>
+      </div>
+
+      <!-- Top Branding (Client: ESORA) -->
+      <div class="brand-mark" id="brand-mark" data-layout-allow-overlap data-layout-allow-occlusion>
+        ESORA • DU HỌC CANADA
+      </div>
+
+      <!-- Open-Canvas Headline (No Card/Pill) -->
+      <div class="headline-container" data-layout-allow-overlap data-layout-allow-occlusion>
+        <h1 class="main-title" id="main-title">ESORA: LỘ TRÌNH CHIẾN LƯỢC</h1>
+        <div class="title-accent-bar" id="title-accent"></div>
+      </div>
+
+      <!-- Main Visual Stage (Y: 200px – 1050px, Footer clean >= 220px) -->
+      <div class="visual-stage">
+        <!-- Baseline Ground Reference Line -->
+        <div class="stage-ground-line" data-layout-allow-overlap data-layout-allow-occlusion></div>
+
+        <!-- ── SVG STRATEGIC ROADMAP GRID & RADIAL AZIMUTH ── -->
+        <svg class="roadmap-svg-layer" viewBox="0 0 720 700" fill="none" data-layout-allow-overlap data-layout-allow-occlusion>
+          <!-- Coordinate Azimuth Radians -->
+          <line class="azimuth-line" x1="360" y1="50" x2="360" y2="550" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="6 6" />
+          <line class="azimuth-line" x1="110" y1="300" x2="610" y2="300" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="6 6" />
+          <line class="azimuth-line" x1="180" y1="120" x2="540" y2="480" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 6" />
+          <line class="azimuth-line" x1="180" y1="480" x2="540" y2="120" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 6" />
+
+          <!-- Concentric Strategic Range Rings -->
+          <circle id="orbit-ring-inner" cx="360" cy="300" r="140" stroke="#E2E8F0" stroke-width="2" stroke-dasharray="8 6" />
+          <circle id="orbit-ring-outer" cx="360" cy="300" r="230" stroke="#FED7AA" stroke-width="2.5" stroke-dasharray="10 8" />
+
+          <!-- Multi-dimensional Connecting Vectors (Brand Orange #FF6B2B) -->
+          <path id="vector-path-left" d="M 360 300 Q 230 200 134 114" stroke="#FF6B2B" stroke-width="3" stroke-linecap="round" fill="none" />
+          <path id="vector-path-right" d="M 360 300 Q 490 200 586 114" stroke="#FF6B2B" stroke-width="3" stroke-linecap="round" fill="none" />
+          <path id="vector-path-botleft" d="M 360 300 Q 220 400 124 504" stroke="#FDE047" stroke-width="3" stroke-linecap="round" fill="none" />
+          <path id="vector-path-botright" d="M 360 300 Q 500 400 596 504" stroke="#FF6B2B" stroke-width="3" stroke-linecap="round" fill="none" />
+        </svg>
+
+        <!-- 4 Orbit Strategic Nodes (Milestones) -->
+        <div class="orbit-node orbit-node-a" id="orbit-node-a" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="pulse-ring"></div>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#FF6B2B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="orbit-node orbit-node-b" id="orbit-node-b" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="pulse-ring"></div>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="#FF6B2B" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="orbit-node orbit-node-c" id="orbit-node-c" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="pulse-ring"></div>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#0F172A" stroke-width="2.2"/>
+            <polyline points="14 2 14 8 20 8" stroke="#0F172A" stroke-width="2.2"/>
+          </svg>
+        </div>
+        <div class="orbit-node orbit-node-d" id="orbit-node-d" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="pulse-ring"></div>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" stroke="#FF6B2B" stroke-width="2.2" stroke-linecap="round"/>
+            <polyline points="17 6 23 6 23 12" stroke="#FF6B2B" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <!-- ── PHASE 1: NARROW STEP CONFINEMENT BOUNDARY ── -->
+        <div class="narrow-boundary" id="narrow-boundary" data-layout-allow-overlap data-layout-allow-occlusion>
+          <!-- Step 1: Chọn trường -->
+          <div class="step-node" id="step-node-1">
+            <div class="step-icon-circle">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                <path d="M3 21h18M3 10h18M5 10v11M19 10v11M9 10v11M15 10v11M12 3l9 7H3l9-7z" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="step-label">CHỌN TRƯỜNG</span>
+          </div>
+
+          <div class="step-divider-arrow" id="step-arrow"></div>
+
+          <!-- Step 2: Hồ sơ -->
+          <div class="step-node" id="step-node-2">
+            <div class="step-icon-circle">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" stroke="#0F172A" stroke-width="2"/>
+                <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="step-label">HỒ SƠ</span>
+          </div>
+        </div>
+
+        <!-- ── ESORA GOLDEN STRATEGIC COMPASS (CENTER Y: 155px – 435px) ── -->
+        <div class="compass-container" id="compass-wrap" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="compass-dial-back">
+            <!-- Compass Dial Face SVG -->
+            <svg width="266" height="266" viewBox="0 0 266 266" fill="none" style="position: absolute; inset: 0;">
+              <!-- Concentric subtle degree dial -->
+              <circle cx="133" cy="133" r="115" stroke="#E2E8F0" stroke-width="1.5"/>
+              <circle cx="133" cy="133" r="95" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="4 4"/>
+              
+              <!-- Degree Ticks -->
+              <line x1="133" y1="16" x2="133" y2="24" stroke="#FF6B2B" stroke-width="3"/>
+              <line x1="250" y1="133" x2="242" y2="133" stroke="#64748B" stroke-width="2.5"/>
+              <line x1="133" y1="250" x2="133" y2="242" stroke="#64748B" stroke-width="2.5"/>
+              <line x1="16" y1="133" x2="24" y2="133" stroke="#64748B" stroke-width="2.5"/>
+
+              <!-- 4 Cardinal Labels -->
+              <text x="133" y="38" text-anchor="middle" font-family="Montserrat" font-weight="900" font-size="16" fill="#FF6B2B">N</text>
+              <text x="226" y="139" text-anchor="middle" font-family="Montserrat" font-weight="800" font-size="14" fill="#64748B">E</text>
+              <text x="133" y="232" text-anchor="middle" font-family="Montserrat" font-weight="800" font-size="14" fill="#64748B">S</text>
+              <text x="40" y="139" text-anchor="middle" font-family="Montserrat" font-weight="800" font-size="14" fill="#64748B">W</text>
+
+              <!-- Subtle Geometric Rose Behind Needle -->
+              <polygon points="133,55 141,125 133,133 125,125" fill="#FED7AA" opacity="0.6"/>
+              <polygon points="211,133 141,141 133,133 141,125" fill="#E2E8F0" opacity="0.6"/>
+              <polygon points="133,211 125,141 133,133 141,141" fill="#E2E8F0" opacity="0.6"/>
+              <polygon points="55,133 125,125 133,133 125,141" fill="#E2E8F0" opacity="0.6"/>
+            </svg>
+          </div>
+
+          <!-- Compass Radar Ping Pulse -->
+          <div class="compass-radar-ping" id="compass-ping"></div>
+
+          <!-- Rotating Magnetic Needle Assembly -->
+          <div class="compass-needle-wrap" id="compass-needle">
+            <svg width="280" height="280" viewBox="0 0 280 280" fill="none">
+              <!-- North Pointer (Bright Gold / Orange #FF6B2B & #FDE047) -->
+              <polygon points="140,52 151,135 140,140" fill="#FF6B2B"/>
+              <polygon points="140,52 129,135 140,140" fill="#FDE047"/>
+
+              <!-- South Pointer (Dark Technical Navy) -->
+              <polygon points="140,228 151,145 140,140" fill="#1E293B"/>
+              <polygon points="140,228 129,145 140,140" fill="#0F172A"/>
+
+              <!-- Center Pivot Jewel & Cap -->
+              <circle cx="140" cy="140" r="14" fill="#0F172A" stroke="#FDE047" stroke-width="3"/>
+              <circle cx="140" cy="140" r="6" fill="#FDE047"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- ── SYNTHESIS STATUS ANCHOR BADGE (Y: 640px) ── -->
+        <div class="anchor-badge" id="anchor-badge" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="anchor-star-icon">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
+              <!-- 8-point Guidance Star in Warm Yellow #FDE047 -->
+              <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="#FDE047" stroke="#FF6B2B" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <div class="anchor-text">ĐỊNH HƯỚNG TOÀN DIỆN</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GSAP Master Animation Sync (6.00s Duration) -->
+    <script>
+      const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+
+      // Initial Property Setup (Zero CSS transform conflict)
+      gsap.set(["#brand-mark", "#main-title", "#title-accent"], { opacity: 0, y: -15 });
+      gsap.set("#title-accent", { scaleX: 0 });
+      gsap.set("#narrow-boundary", { opacity: 0, scale: 0.9 });
+      gsap.set([".azimuth-line", "#orbit-ring-inner", "#orbit-ring-outer"], { opacity: 0 });
+      gsap.set(["#vector-path-left", "#vector-path-right", "#vector-path-botleft", "#vector-path-botright"], {
+        strokeDasharray: 300,
+        strokeDashoffset: 300,
+        opacity: 0
+      });
+      gsap.set([".orbit-node-a", ".orbit-node-b", ".orbit-node-c", ".orbit-node-d"], {
+        opacity: 0,
+        scale: 0.2
+      });
+      gsap.set("#compass-wrap", { opacity: 0, scale: 0.7 });
+      gsap.set("#compass-needle", { rotation: -75 });
+      gsap.set("#anchor-badge", { opacity: 0, y: 25 });
+
+      // ── BEAT 1 (0.0s – 1.8s): CONVENTIONAL 2-STEP ENTRY ──
+      // Speech: "Vì vậy, tại ESORA..."
+      tl.to("#brand-mark", {
+        opacity: 1,
+        y: 0,
+        duration: 0.45,
+        ease: "power2.out"
+      }, 0.1);
+
+      tl.to("#main-title", {
+        opacity: 1,
+        y: 0,
+        duration: 0.55,
+        ease: "back.out(1.2)"
+      }, 0.25);
+
+      tl.to("#title-accent", {
+        opacity: 1,
+        y: 0,
+        scaleX: 1,
+        duration: 0.5,
+        ease: "power2.out"
+      }, 0.45);
+
+      // Narrow conventional 2-step boundary appears
+      tl.to("#narrow-boundary", {
+        opacity: 1,
+        scale: 1,
+        duration: 0.6,
+        ease: "back.out(1.4)"
+      }, 0.6);
+
+      // ── BEAT 2 (1.8s – 3.8s): BOUNDARY BREAKTHROUGH & STRATEGIC UNFURL ──
+      // Speech: "...việc xây dựng lộ trình du học không chỉ dừng ở việc chọn trường hay chuẩn bị hồ sơ."
+      
+      // 1.8s: Narrow boundary flashes orange and expands outwards into oblivion
+      tl.to("#narrow-boundary", {
+        borderColor: "#FF6B2B",
+        scale: 1.18,
+        opacity: 0,
+        duration: 0.65,
+        ease: "power2.in"
+      }, 1.8);
+
+      // Compass descends directly into the center
+      tl.to("#compass-wrap", {
+        opacity: 1,
+        scale: 1,
+        duration: 0.7,
+        ease: "back.out(1.5)"
+      }, 2.0);
+
+      // Radial roadmap azimuth lines & concentric range rings fade in
+      tl.to([".azimuth-line", "#orbit-ring-inner", "#orbit-ring-outer"], {
+        opacity: 1,
+        stagger: 0.08,
+        duration: 0.6,
+        ease: "power1.out"
+      }, 2.2);
+
+      // Vectors draw outwards in multi-dimensional directions
+      tl.to(["#vector-path-left", "#vector-path-right", "#vector-path-botleft", "#vector-path-botright"], {
+        opacity: 1,
+        strokeDashoffset: 0,
+        stagger: 0.1,
+        duration: 0.75,
+        ease: "power2.inOut"
+      }, 2.4);
+
+      // 4 Milestone Nodes pop into existence at the ends of vectors
+      tl.to([".orbit-node-a", ".orbit-node-b", ".orbit-node-c", ".orbit-node-d"], {
+        opacity: 1,
+        scale: 1,
+        stagger: 0.08,
+        duration: 0.45,
+        ease: "back.out(2)"
+      }, 2.8);
+
+      // Compass needle swings energetically and locks North (Future Target)
+      tl.to("#compass-needle", {
+        rotation: 30,
+        duration: 0.4,
+        ease: "power2.inOut"
+      }, 2.6);
+
+      tl.to("#compass-needle", {
+        rotation: -12,
+        duration: 0.35,
+        ease: "power2.inOut"
+      }, 3.02);
+
+      tl.to("#compass-needle", {
+        rotation: 0,
+        duration: 0.45,
+        ease: "elastic.out(1, 0.4)"
+      }, 3.39);
+
+      // Compass radar ping ripples outward when needle locks
+      tl.to("#compass-ping", {
+        opacity: 0.9,
+        scale: 1.45,
+        duration: 0.35,
+        ease: "power2.out"
+      }, 3.55);
+
+      tl.to("#compass-ping", {
+        opacity: 0,
+        duration: 0.3,
+        ease: "power1.in"
+      }, 3.90);
+
+      // ── BEAT 3 (3.8s – 6.0s): STRATEGIC SYNTHESIS ANCHOR LOCK ──
+      // Speech holds final resolution
+      tl.to("#anchor-badge", {
+        opacity: 1,
+        y: 0,
+        duration: 0.55,
+        ease: "back.out(1.6)"
+      }, 3.8);
+
+      // Subtle living pulse on milestone nodes and compass
+      tl.to(".pulse-ring", {
+        scale: 1.35,
+        opacity: 0,
+        duration: 0.8,
+        repeat: 1,
+        yoyo: true,
+        ease: "power1.inOut"
+      }, 4.2);
+
+      // Final Hold (4.8s – 6.0s)
+      tl.to({}, { duration: 1.2 }, 4.8);
+    </script>
+  </body>
+</html>

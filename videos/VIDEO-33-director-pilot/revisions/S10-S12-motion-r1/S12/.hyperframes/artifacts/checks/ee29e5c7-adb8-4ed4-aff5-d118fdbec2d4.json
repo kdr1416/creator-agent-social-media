@@ -1,0 +1,159 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "rotation_pivot_drift",
+        "severity": "warning",
+        "time": 3.335,
+        "selector": "#rotor",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 201.43,
+          "y": 1188.505,
+          "width": 272.76,
+          "height": 290.91
+        },
+        "rect": {
+          "left": 201.43,
+          "top": 1188.505,
+          "right": 474.19,
+          "bottom": 1479.415,
+          "width": 272.76,
+          "height": 290.91
+        },
+        "message": "Rotating element's bounding-box center drifts 1434px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).",
+        "fixHint": "The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.",
+        "firstSeen": 3.335,
+        "lastSeen": 3.335,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          3.335
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 1.766,
+        "selector": "#rotor-placement",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 885.75,
+          "top": 133.06,
+          "right": 1204.69,
+          "bottom": 454.31,
+          "width": 318.94,
+          "height": 321.25
+        },
+        "containerSelector": "div.shot > svg:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 720,
+          "bottom": 1280,
+          "width": 720,
+          "height": 1280
+        },
+        "overflow": {
+          "right": 484.69
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 885.75,
+          "y": 133.06,
+          "width": 318.94,
+          "height": 321.25
+        },
+        "firstSeen": 1.766,
+        "lastSeen": 3.335,
+        "occurrences": 5,
+        "heldMs": 1569,
+        "times": [
+          1.766,
+          2.158,
+          2.55,
+          2.943,
+          3.335
+        ]
+      }
+    ],
+    "duration": 3.531458333333,
+    "samples": [
+      0.196,
+      0.589,
+      0.981,
+      1.373,
+      1.766,
+      2.158,
+      2.55,
+      2.943,
+      3.335
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 2,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.196,
+      0.981,
+      1.766,
+      2.55,
+      3.335
+    ],
+    "checked": 5,
+    "passed": 5
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

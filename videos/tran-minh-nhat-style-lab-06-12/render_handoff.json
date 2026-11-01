@@ -1,0 +1,71 @@
+{
+  "project_slug": "tran-minh-nhat",
+  "branch": "style-lab-06-12",
+  "status": "rendered_for_visual_review",
+  "scope": [
+    "scene_06",
+    "scene_12"
+  ],
+  "isolation": {
+    "base_directory": "videos/tran-minh-nhat-style-lab-06-12",
+    "paths_relative_to": "this handoff file parent",
+    "write_policy": "All new work stays inside this lab or a separately named experiment directory; never write main scratch files, prior pilot or database.",
+    "original_workflow_updated": false,
+    "protected_files_verified": 780
+  },
+  "design": "planning/storyboard.json",
+  "design_readable": "planning/storyboard.md",
+  "asset_ledger": "planning/asset-ledger.json",
+  "visual_review": "qa/visual-review.json",
+  "source_integrity": "qa/source-integrity.json",
+  "scenes": [
+    {
+      "scene_id": "scene_06",
+      "engine": "HF_ONLY",
+      "source": "scene_06/index.html",
+      "voice": "scene_06/assets/audio.wav",
+      "voice_sha256": "deb5086155956deaa12be2efee46c7d7a4d42f03d2b2feac0c9c9d5e74acf0ab",
+      "export": "renders/scene_06-v4.mp4",
+      "export_sha256": "b1357d65a62a916d3f56bf544c2a498711dfc8975879f6c06e7a049888a7eaba",
+      "voice_duration": 5.192666666666667,
+      "export_duration": 5.2,
+      "audio_correlation": 0.9999611315452362,
+      "qa": "scene_06/qa/review.json",
+      "technical_check": "scene_06/qa/check-vietnamese-v3.json",
+      "technical_pass": true,
+      "previous_export": "renders/scene_06.mp4"
+    },
+    {
+      "scene_id": "scene_12",
+      "engine": "HF_ONLY",
+      "source": "scene_12/index.html",
+      "voice": "scene_12/assets/audio.wav",
+      "voice_sha256": "fdeb4c276a2ba33d9b081f44808f5c7d0d8ed1bb28adae597dfe54a4c11f6b0d",
+      "export": "renders/scene_12-v6.mp4",
+      "export_sha256": "cf8cb7f8dbc7a3782938a51f292d8397f8d32cdc38378d0ecf9f1c9c2617e7df",
+      "voice_duration": 4.41925,
+      "export_duration": 4.433333333333334,
+      "audio_correlation": 0.9999556206532196,
+      "qa": "scene_12/qa/review.json",
+      "technical_check": "scene_12/qa/check-campus-v6.json",
+      "technical_pass": true,
+      "previous_export": "renders/scene_12.mp4",
+      "semantic_design": "reasoning puzzle, self-dressing personality, chosen campus on study plan; no label leader lines",
+      "rig": "scene_12/assets/portrait-v5.js"
+    }
+  ],
+  "next_action": "Review both new visual families alongside scene04 pilot. Do not generate remaining scenes without user instruction. This package records assets and treatment, not mandatory template layouts.",
+  "revision": 6,
+  "feedback_applied": [
+    "Verified Vietnamese heavy font",
+    "No illustration disclaimers",
+    "No label leader lines",
+    "Direction is chosen VU campus on a planning sheet; no future-self sketch/reticle"
+  ],
+  "current_display_font": "Segoe UI Black900; Vietnamese cmap coverage verified, NFC text",
+  "font_coverage": "qa/font-coverage-v3.json",
+  "removed_on_screen_text": [
+    "Không gian minh hoạ",
+    "Hình minh hoạ"
+  ]
+}

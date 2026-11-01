@@ -1,0 +1,127 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 2.783,
+        "selector": "#assets-camera-viewport",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 134.6,
+          "top": 462.6,
+          "right": 1057.2,
+          "bottom": 1021.2,
+          "width": 922.6,
+          "height": 558.6
+        },
+        "containerSelector": "#assets-shot > svg:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 720,
+          "bottom": 1280,
+          "width": 720,
+          "height": 1280
+        },
+        "overflow": {
+          "right": 337.2
+        },
+        "dataAttributes": {
+          "data-hf-svg-reference-aliases": "[{\"name\":\"clip-path\",\"localName\":\"clip-path\",\"namespaceURI\":null,\"before\":\"url(#assets-camera-clip)\",\"after\":\"url(#assets-camera-clip)\"}]"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 134.6,
+          "y": 462.6,
+          "width": 922.6,
+          "height": 558.6
+        },
+        "firstSeen": 2.783,
+        "lastSeen": 3.288,
+        "occurrences": 2,
+        "heldMs": 504.9999999999999,
+        "times": [
+          2.783,
+          3.288
+        ]
+      }
+    ],
+    "duration": 4.553208333333,
+    "samples": [
+      0.253,
+      0.759,
+      1.265,
+      1.771,
+      2.277,
+      2.783,
+      3.288,
+      3.794,
+      4.3
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 1,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.253,
+      1.265,
+      2.277,
+      3.288,
+      4.3
+    ],
+    "checked": 13,
+    "passed": 13
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "phase": "static_frames_approved_ready_for_motion_test",
+  "user_approved": true,
+  "frames": [
+    {
+      "file": "S07\\01-ready\\frames\\frame-00-at-0.5s.png",
+      "sha256": "fda00b4413fbdda30b866dbca32fd0c33c0093ffc58487e8a32d36450d95b3b1"
+    },
+    {
+      "file": "S07\\02-contact\\frames\\frame-00-at-0.5s.png",
+      "sha256": "a9c298bac861f30bfae622e7762688587931d276e3e989f60c38aa9a1763eeb6"
+    },
+    {
+      "file": "S07\\03-connected\\frames\\frame-00-at-0.5s.png",
+      "sha256": "cef9cbf7353f7e589ea9d6f607cc90ce76e4a0a9b0df022514ebe1c4cc2093ec"
+    },
+    {
+      "file": "S08\\01-arrive\\frames\\frame-00-at-0.5s.png",
+      "sha256": "f03f691412320fc1d56f82f948c526bbffa2f9e98993ec715d9648a6b5287b7b"
+    },
+    {
+      "file": "S08\\02-greet\\frames\\frame-00-at-0.5s.png",
+      "sha256": "f772f3f88dd4532808804ca5f5da6f6de83f7ef0bf827cd2daa9dc2cb53c55f7"
+    },
+    {
+      "file": "S08\\03-study\\frames\\frame-00-at-0.5s.png",
+      "sha256": "896ffe4bfc26af6377e9320268368c248e383c225805bdef1ec949b7ff9fdab5"
+    },
+    {
+      "file": "S08\\04-living\\frames\\frame-00-at-0.5s.png",
+      "sha256": "3320b7e69a82d42446686e298b2863189971ab2e7f35c405b5966f5642593cbe"
+    },
+    {
+      "file": "S08\\05-work\\frames\\frame-00-at-0.5s.png",
+      "sha256": "7673094110caea0767a8f8eb1b25a544f0e222298fc2e2b31ad5a18684fa525a"
+    }
+  ],
+  "S07_poses": 3,
+  "S08_frames": 5,
+  "new_mp4_created": false,
+  "audio_modified": false,
+  "main_build_modified": false,
+  "representative_checks": {
+    "S07/02-contact": true,
+    "S08/02-greet": true
+  },
+  "QA_scope": "Eight captured static vector frames visually inspected via sequence sheets; mobile/thumbnail/grayscale proofs generated; representative S07 contact and S08 greeting pass check. No motion interpolation or voice playback exists in this candidate.",
+  "style_alignment": {
+    "colour": "cream/peach/lilac with vivid orange mascot, purple cap and blue bag",
+    "type": "local Segoe UI Black with short Vietnamese headings",
+    "asset_mix": "all-vector scenes; deliberate because call/travel actions need clear rig contact, no documentary photo required here",
+    "composition": "large physical screen, full body figures, dedicated activity views; 200px footer clear",
+    "mascot": "original approved identity, anchored arm poses",
+    "motion": "planned only, not validated"
+  },
+  "review": "REVIEW.html",
+  "direction": "DIRECTION.md",
+  "remaining_proposals": "REMAINING_SCENE_PLAN.md",
+  "approval": {
+    "version": "S07-S08-design-r1",
+    "approval_status": "approved",
+    "approval_date_local": "2026-10-27",
+    "timezone": "Asia/Saigon",
+    "user_message_verbatim": "oke duyệt cái này",
+    "approval_scope": "S07 and S08 static frames, character design, composition and proposed action sequence",
+    "motion_approved": false,
+    "master_replacement_approved": false,
+    "remaining_scene_proposals_approved": false,
+    "frames": [
+      {
+        "file": "S07\\01-ready\\frames\\frame-00-at-0.5s.png",
+        "sha256": "fda00b4413fbdda30b866dbca32fd0c33c0093ffc58487e8a32d36450d95b3b1"
+      },
+      {
+        "file": "S07\\02-contact\\frames\\frame-00-at-0.5s.png",
+        "sha256": "a9c298bac861f30bfae622e7762688587931d276e3e989f60c38aa9a1763eeb6"
+      },
+      {
+        "file": "S07\\03-connected\\frames\\frame-00-at-0.5s.png",
+        "sha256": "cef9cbf7353f7e589ea9d6f607cc90ce76e4a0a9b0df022514ebe1c4cc2093ec"
+      },
+      {
+        "file": "S08\\01-arrive\\frames\\frame-00-at-0.5s.png",
+        "sha256": "f03f691412320fc1d56f82f948c526bbffa2f9e98993ec715d9648a6b5287b7b"
+      },
+      {
+        "file": "S08\\02-greet\\frames\\frame-00-at-0.5s.png",
+        "sha256": "f772f3f88dd4532808804ca5f5da6f6de83f7ef0bf827cd2daa9dc2cb53c55f7"
+      },
+      {
+        "file": "S08\\03-study\\frames\\frame-00-at-0.5s.png",
+        "sha256": "896ffe4bfc26af6377e9320268368c248e383c225805bdef1ec949b7ff9fdab5"
+      },
+      {
+        "file": "S08\\04-living\\frames\\frame-00-at-0.5s.png",
+        "sha256": "3320b7e69a82d42446686e298b2863189971ab2e7f35c405b5966f5642593cbe"
+      },
+      {
+        "file": "S08\\05-work\\frames\\frame-00-at-0.5s.png",
+        "sha256": "7673094110caea0767a8f8eb1b25a544f0e222298fc2e2b31ad5a18684fa525a"
+      }
+    ]
+  },
+  "next_action": "Antigravity builds separate S07/S08 motion pilots from approved frames for user review; preserve voice/sample timing; do not replace master."
+}

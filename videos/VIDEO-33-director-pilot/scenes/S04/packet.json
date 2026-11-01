@@ -1,0 +1,231 @@
+{
+  "scene_number": 4,
+  "scene_id": "S04",
+  "start": 14.12075,
+  "end": 18.151208333333333,
+  "start_sample": 338898,
+  "end_sample": 435629,
+  "source_segments": [
+    4
+  ],
+  "raw_text": "Liệu toàn bộ tài sản của gia đình có nên chỉ tập trung ở Việt Nam.",
+  "corrected_text": "Liệu toàn bộ tài sản của gia đình có nên chỉ tập trung ở Việt Nam?",
+  "semantic_type": "concentration metaphor",
+  "visual_center": "Tập trung vào một nơi?",
+  "organic_motion_need": "Không cần; vật thể/quan hệ là chủ thể.",
+  "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+  "preferred_mode": "HF_ONLY",
+  "routing_confidence": "high",
+  "routing_reason": "Tập trung vào một nơi?: hành động chủ đạo là nghiêng / đặt câu hỏi các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ concentration metaphor, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+  "flow_contribution": "none",
+  "hf_contribution": "Khay hơi nghiêng do tải lệch; dấu hỏi xuất hiện trong khoảng trống vừa mở. Không có đồ vật rơi hoặc cảnh khủng hoảng.",
+  "fallback_mode": null,
+  "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+  "character": "no",
+  "title": "Tập trung vào một nơi?",
+  "takeaway": "Câu hỏi về mức độ tập trung tài sản, không phải yêu cầu bán tài sản Việt Nam.",
+  "audio_source": [
+    "inputs/audio/seg_04.wav"
+  ],
+  "duration": 4.030458333333334,
+  "sample_frames": 96731,
+  "raw_segments": [
+    {
+      "seg_id": 4,
+      "segment_id": "seg_04",
+      "audio_slice": "audio_slices/seg_04.wav",
+      "start_sample": 338898,
+      "end_sample": 435629,
+      "sample_frames": 96731,
+      "start": 14.121,
+      "end": 18.151,
+      "duration": 4.03,
+      "sha256": "3a77bee8bd6c8f1504ef92cdcbdb3b66e85e3334a3ed70512b978a6c4b1643c3",
+      "raw_text": "Liệu toàn bộ tài sản của gia đình có nên chỉ tập trung ở Việt Nam.",
+      "corrected_text": "Liệu toàn bộ tài sản của gia đình có nên chỉ tập trung ở Việt Nam?",
+      "uncertainties": [
+        "Dấu câu: ASR nhận dạng dấu chấm; đây là câu hỏi tu từ đặt vấn đề, chuẩn hoá thành dấu chấm hỏi '?'."
+      ]
+    }
+  ],
+  "render_mode": "HF_ONLY",
+  "style_candidates": [
+    {
+      "id": "hf_existing:warm-doodle-mixed-media",
+      "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+    },
+    {
+      "id": "kurzgesagt",
+      "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+    },
+    {
+      "id": "izometrik",
+      "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+    },
+    {
+      "id": "bauhaus",
+      "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+    }
+  ],
+  "style_id": "hf_existing:warm-doodle-mixed-media",
+  "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+  "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+  "visual_verb": "nghiêng / đặt câu hỏi",
+  "composition": "Một chiếc khay giấy thật lớn trên nền lilac; mọi nhà/xu nằm cùng một phía, không có khay quốc gia đối lập màu đỏ/xanh.",
+  "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+  "opening_state": "Khay nằm gần giữa, toàn bộ khối tài sản tụ về một góc.",
+  "transformation": "Khay hơi nghiêng do tải lệch; dấu hỏi xuất hiện trong khoảng trống vừa mở. Không có đồ vật rơi hoặc cảnh khủng hoảng.",
+  "final_state": "Khay vẫn giữ mọi tài sản, dấu hỏi giữ lại câu cân nhắc.",
+  "protagonist_action": "Không mascot để giữ câu hỏi đơn giản và tránh diễn cảm sợ hãi.",
+  "mascot_role": "Không mascot để giữ câu hỏi đơn giản và tránh diễn cảm sợ hãi.",
+  "visual_family": "concentration metaphor",
+  "timed_beats": [
+    {
+      "local_seconds": 0,
+      "spoken_cue": "đầu lát nguồn",
+      "action": "Khay nằm gần giữa, toàn bộ khối tài sản tụ về một góc.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 1.008,
+      "spoken_cue": "cụm ý đầu — đối chiếu WAV",
+      "action": "Khay hơi nghiêng do tải lệch",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 2.418,
+      "spoken_cue": "cụm ý sau — đối chiếu WAV",
+      "action": "Khay hơi nghiêng do tải lệch; dấu hỏi xuất hiện trong khoảng trống vừa mở. Không có đồ vật rơi hoặc cảnh khủng hoảng.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 3.345,
+      "spoken_cue": "đuôi câu / nghỉ",
+      "action": "Khay vẫn giữ mọi tài sản, dấu hỏi giữ lại câu cân nhắc.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    }
+  ],
+  "motion_emphasis_sequence": [
+    "Khay nằm gần giữa, toàn bộ khối tài sản tụ về một góc.",
+    "Khay hơi nghiêng do tải lệch",
+    "Khay hơi nghiêng do tải lệch; dấu hỏi xuất hiện trong khoảng trống vừa mở. Không có đồ vật rơi hoặc cảnh khủng hoảng.",
+    "Khay vẫn giữ mọi tài sản, dấu hỏi giữ lại câu cân nhắc."
+  ],
+  "hf_signature_motion": "Khay hơi nghiêng do tải lệch; dấu hỏi xuất hiện trong khoảng trống vừa mở. Không có đồ vật rơi hoặc cảnh khủng hoảng.",
+  "flow_action": null,
+  "flow_camera": null,
+  "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+  "asset_contract": [
+    {
+      "layer": "paper-tray",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "house-token",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "coin-token",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "question-mark",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "location-label",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    }
+  ],
+  "container_required": false,
+  "container_inventory": [],
+  "container_semantics": [],
+  "visible_text_budget": {
+    "max_simultaneous_words": 2,
+    "max_levels": 2,
+    "paragraphs": 0
+  },
+  "visible_text_inventory": [
+    {
+      "text": "MỘT NƠI?",
+      "size_px": 54,
+      "role": "anchor",
+      "simultaneous": true
+    },
+    {
+      "text": "Việt Nam",
+      "size_px": 54,
+      "role": "anchor",
+      "simultaneous": true
+    }
+  ],
+  "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Chữ trần trên nền sáng; không sweep.",
+  "accent_reason": "none",
+  "accent_treatment": "none",
+  "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+  "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+  "handoff": "Cắt sang mặt giấy mới mở ở Malta. Không cho xu tự bay khỏi Việt Nam.",
+  "continuity_risk": "Không quy kết Việt Nam rủi ro hơn quốc gia khác; đây là câu hỏi biên tập.",
+  "pilot": false,
+  "status": "designed_not_produced",
+  "must_keep": [
+    "Câu hỏi về mức độ tập trung tài sản, không phải yêu cầu bán tài sản Việt Nam.",
+    "Khay hơi nghiêng do tải lệch; dấu hỏi xuất hiện trong khoảng trống vừa mở. Không có đồ vật rơi hoặc cảnh khủng hoảng.",
+    "voice/sample bounds",
+    "mascot identity, warm light palette, footer 200px",
+    "zero added CTA or documentary claims"
+  ],
+  "flexible": [
+    "Toạ độ/kích thước trong safe area",
+    "easing/pose/chi tiết nét",
+    "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+  ],
+  "reference_alignment": {
+    "colour_relationships": {
+      "reference_evidence": "Brief: cream/peach/lilac + accents",
+      "candidate_evidence": "S04: warm ground and vivid orange/blue/purple",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "typography_treatment": {
+      "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+      "candidate_evidence": "S04: local shipped font, sparse native text",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "asset_mix": {
+      "reference_evidence": "Reference 04/06: real campus plus drawing",
+      "candidate_evidence": "S04: Valletta photo where geographic evidence is needed; vector/physical paper elsewhere",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "composition": {
+      "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+      "candidate_evidence": "S04: Một chiếc khay giấy thật lớn trên nền lilac; mọi nhà/xu nằm cùng một phía, không có khay quốc gia đối lập màu đỏ/xanh.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "mascot_language": {
+      "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+      "candidate_evidence": "S04: Không mascot để giữ câu hỏi đơn giản và tránh diễn cảm sợ hãi.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "motion_rhythm": {
+      "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+      "candidate_evidence": "S04: Khay hơi nghiêng do tải lệch; dấu hỏi xuất hiện trong khoảng trống vừa mở. Không có đồ vật rơi hoặc cảnh khủng hoảng.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    }
+  }
+}

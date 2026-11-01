@@ -1,0 +1,121 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>S04 · Tập trung vào một nơi?</title><script src="assets/gsap.min.js"></script><style>
+@font-face{font-family:PilotDisplay;src:url('assets/segoe-ui-black.ttf');font-weight:900;font-display:block}
+@font-face{font-family:PilotSans;src:url('assets/arial.ttf');font-display:block}
+*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden}
+.composition{position:relative;width:100%;height:100%;overflow:hidden;color:#30313B;font-family:PilotDisplay,sans-serif}
+.ground{position:absolute;inset:0}.art{position:absolute;inset:0;width:720px;height:1280px;overflow:hidden}
+.feature{position:absolute;z-index:5;white-space:nowrap;font-weight:900;line-height:1.24;text-align:center;top:172px;left:170px;width:380px;padding:17px 20px;background:#087BC1;color:#FFFDF4;font-size:52px;box-shadow:5px 7px 0 #30313b12}
+</style></head><body>
+<div id="v33-s04" class="composition" data-composition-id="v33-s04" data-width="720" data-height="1280" data-start="0" data-duration="4.0305" data-fps="30">
+<div class="ground" style="background:#F0EAFB"></div>
+<svg id="p04-art" class="art" xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280" data-layout-allow-overflow>
+  <defs>
+    <filter id="p04-shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#695572" flood-opacity=".15"/>
+    </filter>
+  </defs>
+  <!-- Background ground shadow -->
+  <ellipse cx="360" cy="1005" rx="270" ry="24" fill="#D7CBE3" opacity=".6"/>
+
+  <!-- Pivot stand (Chân đế cân bằng) -->
+  <g id="p04-pivot" transform="translate(360, 890)">
+    <polygon points="-40,65 0,0 40,65" fill="#DDBB97" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+    <ellipse cx="0" cy="0" rx="14" ry="10" fill="#B38E6A" stroke="#30313B" stroke-width="2.5"/>
+  </g>
+
+  <!-- Large paper balance tray (Khay giấy thật lớn cân bằng) -->
+  <g id="p04-tray" filter="url(#p04-shadow)" transform="translate(360, 875)">
+    <!-- Base tray board -->
+    <polygon points="-280,-25 280,-25 250,35 -250,35" fill="#FFFDF4" stroke="#30313B" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="-250,35 250,35 240,55 -240,55" fill="#E4D2BE" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Folded rims of tray -->
+    <path d="M-280 -25L-250 35M280 -25L250 35" stroke="#C4AD96" stroke-width="2.5"/>
+
+    <!-- Left side of tray: initially empty, question mark appears here -->
+    <g id="p04-left-side" transform="translate(-130, -50)">
+      <!-- Subtle target circle on tray -->
+      <ellipse cx="0" cy="20" rx="70" ry="25" fill="#EBE0F4" stroke="#CBB9DC" stroke-width="2" stroke-dasharray="6 6"/>
+      <!-- Large question mark -->
+      <g id="p04-question" opacity="0" transform="translate(0, -60)">
+        <ellipse cx="0" cy="35" rx="42" ry="12" fill="#D7CBE3" opacity=".5"/>
+        <path d="M-22 -85C-22 -125, 22 -125, 22 -85C22 -65, 0 -55, 0 -30" fill="none" stroke="#A990D5" stroke-width="14" stroke-linecap="round"/>
+        <path d="M-22 -85C-22 -125, 22 -125, 22 -85C22 -65, 0 -55, 0 -30" fill="none" stroke="#087BC1" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="0" cy="5" r="7.5" fill="#087BC1" stroke="#30313B" stroke-width="2.5"/>
+      </g>
+    </g>
+
+    <!-- Right side of tray: ALL family assets concentrated here (Nhà, vàng, sổ đỏ) -->
+    <g id="p04-right-assets" transform="translate(130, -30)">
+      <!-- Base cluster shadow -->
+      <ellipse cx="0" cy="25" rx="100" ry="28" fill="#D2BEAA" opacity=".5"/>
+
+      <!-- House token -->
+      <g id="p04-house" transform="translate(-45, -95) scale(0.95)">
+        <polygon points="10,65 75,25 140,65 140,150 10,150" fill="#FFD59B" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+        <polygon points="0,67 75,12 150,67 135,78 75,34 15,78" fill="#D48DA2" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+        <rect x="25" y="85" width="26" height="32" rx="2" fill="#FFFBEA" stroke="#30313B" stroke-width="2.2"/>
+        <rect x="88" y="85" width="26" height="32" rx="2" fill="#FFFBEA" stroke="#30313B" stroke-width="2.2"/>
+        <path d="M58 150V105Q75 92 92 105V150" fill="#087BC1" stroke="#30313B" stroke-width="2.6"/>
+      </g>
+
+      <!-- Land deed / folder document -->
+      <g id="p04-deed" transform="translate(40, -60) rotate(12)">
+        <rect x="-30" y="-45" width="60" height="90" rx="5" fill="#FFFBEA" stroke="#30313B" stroke-width="2.6"/>
+        <line x1="-20" y1="-25" x2="15" y2="-25" stroke="#D1BEA8" stroke-width="2.5"/>
+        <line x1="-20" y1="-10" x2="20" y2="-10" stroke="#D1BEA8" stroke-width="2.5"/>
+        <line x1="-20" y1="5" x2="10" y2="5" stroke="#D1BEA8" stroke-width="2.5"/>
+        <!-- Red seal / ribbon -->
+        <circle cx="10" cy="25" r="9" fill="#E06D53" stroke="#30313B" stroke-width="2"/>
+        <path d="M10 25L5 42M10 25L15 42" stroke="#E06D53" stroke-width="3" stroke-linecap="round"/>
+      </g>
+
+      <!-- Coins stack -->
+      <g id="p04-coins" transform="translate(25, 5)">
+        <ellipse cx="0" cy="0" rx="34" ry="16" fill="#C99E52" stroke="#30313B" stroke-width="2.5"/>
+        <ellipse cx="0" cy="-6" rx="34" ry="16" fill="#FFDA8A" stroke="#30313B" stroke-width="2.5"/>
+        <ellipse cx="0" cy="-14" rx="34" ry="16" fill="#C99E52" stroke="#30313B" stroke-width="2.5"/>
+        <ellipse cx="0" cy="-20" rx="34" ry="16" fill="#FFDA8A" stroke="#30313B" stroke-width="2.5"/>
+        <ellipse cx="0" cy="-28" rx="34" ry="16" fill="#C99E52" stroke="#30313B" stroke-width="2.5"/>
+        <ellipse cx="0" cy="-34" rx="34" ry="16" fill="#FFDA8A" stroke="#30313B" stroke-width="2.5"/>
+        <circle cx="0" cy="-34" r="5" fill="#FFFDF4"/>
+      </g>
+
+      <!-- Location label tag: "Việt Nam" -->
+      <g id="p04-vn-tag" transform="translate(0, 48)">
+        <rect x="-65" y="-18" width="130" height="36" rx="18" fill="#FFFBEA" stroke="#30313B" stroke-width="2.4"/>
+        <text x="0" y="7" text-anchor="middle" font-family="PilotDisplay, sans-serif" font-weight="900" font-size="20" fill="#30313B">VIỆT NAM</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<div id="p04-title" class="feature">MỘT NƠI?</div>
+<audio id="v33-s04-voice" class="clip" src="assets/voice.wav" data-start="0" data-duration="4.0305" data-track-index="2"></audio>
+</div>
+<script>
+(()=>{
+  const tl = gsap.timeline({paused:true});
+
+  // 1. Title entry
+  tl.fromTo('#p04-title', {rotation:-2, y:12, opacity:0}, {rotation:-1, y:0, opacity:1, duration:0.32, ease:'back.out(1.2)'}, 0.12);
+
+  // 2. Initial state: Tray appears level on pivot (0.2s)
+  tl.fromTo('#p04-tray', {scale:0.8, opacity:0, svgOrigin:'360 875'}, {scale:1, opacity:1, duration:0.5, ease:'power2.out'}, 0.2);
+
+  // 3. Tray slowly tilts as weight of right-side assets kicks in (1.0s -> 2.4s)
+  // Tilts clockwise around pivot (rotation: 4.8 degrees)
+  tl.to('#p04-tray', {rotation:4.8, svgOrigin:'360 875', duration:1.35, ease:'power1.inOut'}, 1.05);
+
+  // 4. Large Question mark pops up in open left space (2.4s -> 3.3s)
+  tl.fromTo('#p04-question', {scale:0.1, opacity:0, y:20, svgOrigin:'230 780'}, {scale:1, opacity:1, y:-60, duration:0.75, ease:'back.out(1.3)'}, 2.4);
+
+  // 5. Subtle micro-sway to show natural balance without falling
+  tl.to('#p04-tray', {rotation:4.2, svgOrigin:'360 875', duration:0.6, ease:'sine.inOut'}, 2.7);
+  tl.to('#p04-tray', {rotation:4.6, svgOrigin:'360 875', duration:0.6, ease:'sine.inOut'}, 3.3);
+
+  // Hold cleanly till end
+  tl.to({hold:0}, {hold:1, duration:4.0305, ease:'none'}, 0);
+
+  window.__timelines['v33-s04'] = tl;
+})();
+</script>
+</body></html>

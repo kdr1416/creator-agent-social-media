@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "historyId": "9b25c8cd-2701-4190-ada7-642d1d36e0ef",
+  "currentRevision": "b9f44e0c-b389-4951-829f-972c5b7c99b3",
+  "pendingChanges": false,
+  "files": {
+    "assets/font.ttf": {
+      "hash": "be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\9b25c8cd-2701-4190-ada7-642d1d36e0ef\\blobs\\be\\be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\9b25c8cd-2701-4190-ada7-642d1d36e0ef\\blobs\\c1\\c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "index.html": {
+      "hash": "038d5bd47ef19ed48e49ab8fbba260283e01f6662d4556cb2ddef41d19db3dd5",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\9b25c8cd-2701-4190-ada7-642d1d36e0ef\\blobs\\03\\038d5bd47ef19ed48e49ab8fbba260283e01f6662d4556cb2ddef41d19db3dd5"
+    },
+    "layered-art.svg": {
+      "hash": "a5010977c43072224acb9876aae78c52f42f522189ac86acc8cf7142dbc2ee95",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\9b25c8cd-2701-4190-ada7-642d1d36e0ef\\blobs\\a5\\a5010977c43072224acb9876aae78c52f42f522189ac86acc8cf7142dbc2ee95"
+    },
+    "frames/frame-00-at-0.5s.png": {
+      "hash": "ed87c69e804f48744854d18f42ab765f931405910aec47fb916dda12526a26bd",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\9b25c8cd-2701-4190-ada7-642d1d36e0ef\\blobs\\ed\\ed87c69e804f48744854d18f42ab765f931405910aec47fb916dda12526a26bd"
+    },
+    "frames/contact-sheet.jpg": {
+      "hash": "5256da2896a8a3bbcefbcaf0d7b3ee9d9eb029f480e29471776a21997795af80",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\9b25c8cd-2701-4190-ada7-642d1d36e0ef\\blobs\\52\\5256da2896a8a3bbcefbcaf0d7b3ee9d9eb029f480e29471776a21997795af80"
+    },
+    "snapshot.log": {
+      "hash": "535682d2d8a1359bf5d7f88e7663c3883bdc5aba0cb0bfc43b3b6d097a9f26bf",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\9b25c8cd-2701-4190-ada7-642d1d36e0ef\\blobs\\53\\535682d2d8a1359bf5d7f88e7663c3883bdc5aba0cb0bfc43b3b6d097a9f26bf"
+    },
+    "mobile.png": {
+      "hash": "70b34889c86a6f4459322be816e851643063f0b1373dbd5df665d25d75c3de57",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\9b25c8cd-2701-4190-ada7-642d1d36e0ef\\blobs\\70\\70b34889c86a6f4459322be816e851643063f0b1373dbd5df665d25d75c3de57"
+    },
+    "grayscale.png": {
+      "hash": "5739418b08094eb6060e1db64ab96f155ee1c465ce45a0b5fc663c4f3af43c3a",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\9b25c8cd-2701-4190-ada7-642d1d36e0ef\\blobs\\57\\5739418b08094eb6060e1db64ab96f155ee1c465ce45a0b5fc663c4f3af43c3a"
+    }
+  },
+  "revisions": {
+    "b9f44e0c-b389-4951-829f-972c5b7c99b3": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793079458586,
+      "endedAt": 1793079458809,
+      "files": {
+        "frames/contact-sheet.jpg": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\9b25c8cd-2701-4190-ada7-642d1d36e0ef\\blobs\\52\\5256da2896a8a3bbcefbcaf0d7b3ee9d9eb029f480e29471776a21997795af80"
+        },
+        "frames/frame-00-at-0.5s.png": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\9b25c8cd-2701-4190-ada7-642d1d36e0ef\\blobs\\ed\\ed87c69e804f48744854d18f42ab765f931405910aec47fb916dda12526a26bd"
+        },
+        "grayscale.png": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\9b25c8cd-2701-4190-ada7-642d1d36e0ef\\blobs\\57\\5739418b08094eb6060e1db64ab96f155ee1c465ce45a0b5fc663c4f3af43c3a"
+        },
+        "index.html": {
+          "before": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\9b25c8cd-2701-4190-ada7-642d1d36e0ef\\blobs\\69\\69d8551eb7541bd423e24d94182197a2054c612cfe1dba604b10a551160cfa0e",
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\9b25c8cd-2701-4190-ada7-642d1d36e0ef\\blobs\\03\\038d5bd47ef19ed48e49ab8fbba260283e01f6662d4556cb2ddef41d19db3dd5"
+        },
+        "layered-art.svg": {
+          "before": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\9b25c8cd-2701-4190-ada7-642d1d36e0ef\\blobs\\2d\\2d5d830253e44e17e174a4f96e2d1ff647162de9fc3331d76331464d60fd73ce",
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\9b25c8cd-2701-4190-ada7-642d1d36e0ef\\blobs\\a5\\a5010977c43072224acb9876aae78c52f42f522189ac86acc8cf7142dbc2ee95"
+        },
+        "mobile.png": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\9b25c8cd-2701-4190-ada7-642d1d36e0ef\\blobs\\70\\70b34889c86a6f4459322be816e851643063f0b1373dbd5df665d25d75c3de57"
+        },
+        "snapshot.log": {
+          "before": null,
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\9b25c8cd-2701-4190-ada7-642d1d36e0ef\\blobs\\53\\535682d2d8a1359bf5d7f88e7663c3883bdc5aba0cb0bfc43b3b6d097a9f26bf"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "a84001bb-dade-4b95-95bd-dc37c760374d-0"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "a84001bb-dade-4b95-95bd-dc37c760374d-0",
+        "image": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S10-S12-design-r1\\S12\\01-ready\\frames\\frame-00-at-0.5s.png",
+        "time": 0.5,
+        "metadata": {
+          "width": 720,
+          "height": 1280,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793079463464,
+        "contentHash": "76df08d60326145e55d50523b8fe322789d58b221c2aa17274a464ca7f72e20f",
+        "revision": null,
+        "inputFingerprint": "5da80fbbf77dd33a211e1e3cd23ccd8498a461d13a12c4c78a387662a1a639fc",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      }
+    ]
+  }
+}

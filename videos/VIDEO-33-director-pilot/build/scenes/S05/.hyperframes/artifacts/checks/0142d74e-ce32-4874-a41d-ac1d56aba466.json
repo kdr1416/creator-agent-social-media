@@ -1,0 +1,102 @@
+{
+  "ok": false,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 5.7063,
+    "samples": [
+      0.2,
+      2,
+      3.5,
+      4.8
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": false,
+    "errorCount": 1,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "error",
+        "message": "Contrast is 2.73:1; WCAG AA requires 3:1.",
+        "text": "SICILY",
+        "fg": "rgb(156,133,115)",
+        "bg": "rgb(232,228,206)",
+        "ratio": 2.73,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(148,126,109)",
+        "large": true,
+        "selector": "div > svg > g:nth-of-type(1) > text",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 500,
+          "y": 301,
+          "width": 79.984375,
+          "height": 30
+        },
+        "time": 0.2,
+        "times": [
+          0.2,
+          2,
+          3.5
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      0.2,
+      2,
+      3.5,
+      4.8
+    ],
+    "checked": 5,
+    "passed": 2
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "pilots": [
+    {
+      "scene": "S10",
+      "path": "S10\\renders\\pilot.mp4",
+      "sha256": "826e690c8bb30d88bcee94011f13ddd9743969fea2180ea90f057bd6d7602111",
+      "source_duration": 6.156875,
+      "video_duration": 6.166667,
+      "audio_duration": 6.166667,
+      "video_frames": 185,
+      "audio_codec": "aac",
+      "audio_sample_rate": "48000",
+      "audio_channels": 2,
+      "source_voice_sha256": "896700b281fa56ebba34c28bd695bc49ce565471536bbb46c572b1b4790f28c5",
+      "source_pcm_bit_exact": true,
+      "decoded_aac_correlation": 0.9998904412246952,
+      "decoded_rms": 0.1909072995185852,
+      "hyperframes_check_ok": true,
+      "lint_warning_count": 0,
+      "proof_times": [
+        0.1,
+        1.6,
+        2.65,
+        2.8,
+        3.3,
+        3.95,
+        4.43,
+        5.39,
+        6.02
+      ],
+      "contact_sampling_fps": 12,
+      "motion_approved": false
+    },
+    {
+      "scene": "S12",
+      "path": "S12\\renders\\pilot.mp4",
+      "sha256": "3f29380666fad23ba12ba5ac284dfe27e4e6aab4131f2ff5bd840837a0c16b51",
+      "source_duration": 3.531458333333333,
+      "video_duration": 3.533333,
+      "audio_duration": 3.533333,
+      "video_frames": 106,
+      "audio_codec": "aac",
+      "audio_sample_rate": "48000",
+      "audio_channels": 2,
+      "source_voice_sha256": "dd4a08a93c400c6b52ac0ec599b0340f51429fad3d1ff14ad4540ee44981f16f",
+      "source_pcm_bit_exact": true,
+      "decoded_aac_correlation": 0.9998363243075014,
+      "decoded_rms": 0.1654970943927765,
+      "hyperframes_check_ok": true,
+      "lint_warning_count": 0,
+      "proof_times": [
+        0.1,
+        0.84,
+        1.02,
+        1.13,
+        1.4,
+        1.75,
+        2.2,
+        2.8,
+        3.4
+      ],
+      "contact_sampling_fps": 12,
+      "motion_approved": false
+    }
+  ],
+  "approved_six_frame_hashes_unchanged": true,
+  "previous_master_and_clean_unchanged": true,
+  "browser_playback": {
+    "S10": "ended observed at 6.17s",
+    "S12": "ended observed at 3.53s",
+    "scope": "Both encoded videos played to completion; source PCM/AAC checked separately; contact/mobile/grayscale and encoded fixed hub inspected. No independent phonetic transcription."
+  },
+  "full_film_replaced": false,
+  "encoded_rotor_pivot_verification": {
+    "expected_scene_point": [
+      490,
+      505
+    ],
+    "measured": [
+      {
+        "file": "S12\\qa\\frame-04-1.400s.png",
+        "hub_center": [
+          489.49646017699115,
+          504.5230088495575
+        ]
+      },
+      {
+        "file": "S12\\qa\\frame-06-2.200s.png",
+        "hub_center": [
+          489.58807829181495,
+          504.5062277580071
+        ]
+      },
+      {
+        "file": "S12\\qa\\frame-08-3.400s.png",
+        "hub_center": [
+          489.504,
+          504.53777777777776
+        ]
+      }
+    ],
+    "tolerance_pixels": 1.5,
+    "result": "pass"
+  },
+  "previous_approved_pilots_unchanged": [
+    "S01",
+    "S09",
+    "S07",
+    "S08",
+    "S06",
+    "S11"
+  ]
+}

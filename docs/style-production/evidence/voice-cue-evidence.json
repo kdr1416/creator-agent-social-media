@@ -1,0 +1,122 @@
+[
+  {
+    "scene": "S03",
+    "word_numbers_1based": [
+      46,
+      47
+    ],
+    "raw_phrase": "đi bộ",
+    "global_start": 10.5,
+    "global_end": 10.82,
+    "local_audio_start": 0.3339166666666671,
+    "local_audio_end": 0.6539166666666674
+  },
+  {
+    "scene": "S03",
+    "word_numbers_1based": [
+      54,
+      55
+    ],
+    "raw_phrase": "chạy bộ",
+    "global_start": 12.4,
+    "global_end": 12.72,
+    "local_audio_start": 2.2339166666666674,
+    "local_audio_end": 2.5539166666666677
+  },
+  {
+    "scene": "S03",
+    "word_numbers_1based": [
+      60,
+      61
+    ],
+    "raw_phrase": "cà phê",
+    "global_start": 13.68,
+    "global_end": 14.02,
+    "local_audio_start": 3.513916666666667,
+    "local_audio_end": 3.8539166666666667
+  },
+  {
+    "scene": "S03",
+    "word_numbers_1based": [
+      66,
+      67
+    ],
+    "raw_phrase": "bạn bè",
+    "global_start": 15.1,
+    "global_end": 15.48,
+    "local_audio_start": 4.933916666666667,
+    "local_audio_end": 5.3139166666666675
+  },
+  {
+    "scene": "S03",
+    "word_numbers_1based": [
+      77,
+      78
+    ],
+    "raw_phrase": "gia đình",
+    "global_start": 17.54,
+    "global_end": 17.92,
+    "local_audio_start": 7.373916666666666,
+    "local_audio_end": 7.753916666666669
+  },
+  {
+    "scene": "S08",
+    "word_numbers_1based": [
+      172,
+      173
+    ],
+    "raw_phrase": "sống chậm,",
+    "global_start": 41.28,
+    "global_end": 41.82,
+    "local_audio_start": 1.009999999999998,
+    "local_audio_end": 1.5499999999999972
+  },
+  {
+    "scene": "S08",
+    "word_numbers_1based": [
+      174,
+      175
+    ],
+    "raw_phrase": "cân bằng",
+    "global_start": 42.14,
+    "global_end": 42.48,
+    "local_audio_start": 1.8699999999999974,
+    "local_audio_end": 2.2099999999999937
+  },
+  {
+    "scene": "S08",
+    "word_numbers_1based": [
+      177,
+      178
+    ],
+    "raw_phrase": "công việc",
+    "global_start": 42.68,
+    "global_end": 42.98,
+    "local_audio_start": 2.4099999999999966,
+    "local_audio_end": 2.7099999999999937
+  },
+  {
+    "scene": "S08",
+    "word_numbers_1based": [
+      180,
+      181
+    ],
+    "raw_phrase": "thời gian",
+    "global_start": 43.3,
+    "global_end": 43.68,
+    "local_audio_start": 3.029999999999994,
+    "local_audio_end": 3.4099999999999966
+  },
+  {
+    "scene": "S08",
+    "word_numbers_1based": [
+      186,
+      187
+    ],
+    "raw_phrase": "Giá đình,",
+    "global_start": 45.0,
+    "global_end": 45.38,
+    "local_audio_start": 4.729999999999997,
+    "local_audio_end": 5.109999999999999
+  }
+]

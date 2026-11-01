@@ -1,0 +1,50 @@
+{
+  "project_slug": "tran-minh-nhat",
+  "stage": "storyboard_ready_pilot_rendered_awaiting_visual_feedback",
+  "all_film_scenes": 17,
+  "rendered_scenes": [
+    "scene_04"
+  ],
+  "not_rendered": [
+    "scene_01",
+    "scene_02",
+    "scene_03",
+    "scene_05",
+    "scene_06",
+    "scene_07",
+    "scene_08",
+    "scene_09",
+    "scene_10",
+    "scene_11",
+    "scene_12",
+    "scene_13",
+    "scene_14",
+    "scene_15",
+    "scene_16",
+    "scene_17"
+  ],
+  "source_files_unchanged": true,
+  "publication_holds": [
+    "scene_10 mentor >14 years unsupported by current official about page"
+  ],
+  "original_production_status_preserved": true,
+  "audio_handoff": "scratch/audio_handoff.json",
+  "routing_json": "scratch/scene_routing.json",
+  "routing_md": "scratch/scene_routing.md",
+  "storyboard_md": "scratch/storyboard.md",
+  "storyboard_json": "videos/tran-minh-nhat-pilot/planning/storyboard.json",
+  "pilot": {
+    "scene_id": "scene_04",
+    "source_audio": "scratch/audio_slices/scene_04.wav",
+    "source_start_sample": 298236,
+    "source_end_sample": 442731,
+    "source_duration": 6.020625,
+    "export_duration": 6.033333333333333,
+    "export": "videos/tran-minh-nhat-pilot/renders/tran-minh-nhat-pilot.mp4",
+    "source": "videos/tran-minh-nhat-pilot/index.html",
+    "qa": "videos/tran-minh-nhat-pilot/qa/review.json",
+    "visual_review": "videos/tran-minh-nhat-pilot/qa/visual-review.json"
+  },
+  "next_action": "Collect feedback on pilot style and storyboard; remaining16 scenes are not authorized by this pilot request. Keep Phase A voice files immutable. Recheck scene10 claim before public release.",
+  "engine_note": "100%HF audited on semantic staging, not Flow availability. No server mutations."
+}

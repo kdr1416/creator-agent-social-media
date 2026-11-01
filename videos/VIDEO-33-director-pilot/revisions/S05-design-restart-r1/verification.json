@@ -1,0 +1,30 @@
+{
+  "frames": [
+    {
+      "frame": "01-hold",
+      "sha256": "df0714809f17854c467ba305606c6a00092ce772f71b0811b078357d9af8e074",
+      "check_ok": true
+    },
+    {
+      "frame": "02-contact",
+      "sha256": "70a4d0d4c6eedf9dff40374961d51f854a0c825ff42f87689d54382fb6d7ba2c",
+      "check_ok": true
+    },
+    {
+      "frame": "03-release",
+      "sha256": "e946ba3fb7305481caaa193785f41f6848a46e55cf2f20b003f1ef4d910db3ea",
+      "check_ok": true
+    },
+    {
+      "frame": "04-house",
+      "sha256": "2aba1d7babe2def4b41c9202bdcebef6bbba82eb4bae95aea64d77beac132b82",
+      "check_ok": true
+    }
+  ],
+  "mobile_and_grayscale_created": true,
+  "motion_not_produced": true,
+  "source_storyboard_copy_matches": true,
+  "source_photo_copy_matches": true,
+  "previous_approved_pilots_unchanged": true,
+  "browser_review_entry_verified": true
+}

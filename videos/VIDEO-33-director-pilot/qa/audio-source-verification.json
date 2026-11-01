@@ -1,0 +1,10 @@
+{
+  "sample_rate": 24000,
+  "frames": 1803840,
+  "duration": 75.16,
+  "contiguous": true,
+  "pcm_reassembly_bit_exact": true,
+  "pcm_sha256": "80e095d3d1f20219de642dec538560a51aadf97fec1493f59524da228b5e0e00",
+  "file_sha256": "cbd5a88b99c252d09ea86493377951aed1267186a5cb9ff11afe00947133e941",
+  "zero_crossings_independently_verified": false
+}

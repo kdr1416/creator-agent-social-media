@@ -1,0 +1,29 @@
+{
+  "approved_pilots": [
+    {
+      "scene_id": "S06",
+      "version": "S06-S11-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "user_message_verbatim": "mình duyệt s06 và s11. tiếp tục làm frame s10 và s12 đi",
+      "approval_date_local": "2026-10-27",
+      "video_path": "revisions/S06-S11-motion-r1/S06/renders/pilot.mp4",
+      "video_sha256": "c8ed21880a6a85ace4741f274ecac9bc04b6debec5823a8f9a641a211de05e51",
+      "master_replacement_authorized": false,
+      "full_film_production_authorized": false
+    },
+    {
+      "scene_id": "S11",
+      "version": "S06-S11-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "user_message_verbatim": "mình duyệt s06 và s11. tiếp tục làm frame s10 và s12 đi",
+      "approval_date_local": "2026-10-27",
+      "video_path": "revisions/S06-S11-motion-r1/S11/renders/pilot.mp4",
+      "video_sha256": "8c2a703c3d78fedf4e696036933f5b6a60b6693c6f36043392fe10ac35766398",
+      "master_replacement_authorized": false,
+      "full_film_production_authorized": false
+    }
+  ],
+  "master_replaced": false
+}

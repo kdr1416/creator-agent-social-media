@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "reference": "creative/style-bible.md",
+  "style_id": "warm-mediterranean-editorial-illustration",
+  "palette": {
+    "ink": "#243343",
+    "esora_related_navy": "#252B68",
+    "esora_related_blue": "#2E64A5",
+    "limestone": "#E9D3AC",
+    "warm_ground": "#F6F1E7",
+    "sea": "#3F8D9B",
+    "clay": "#B96C51"
+  },
+  "fonts": {
+    "candidate": "Be Vietnam Pro",
+    "status": "proposed_local_availability_and_license_not_verified",
+    "official_brand_font": false
+  },
+  "spacing": {},
+  "subtitles": {
+    "enabled": false,
+    "treatment": null
+  },
+  "characters": {
+    "enabled": false,
+    "assets": [],
+    "proposed": true,
+    "note": "Family casting/illustration pending review; no character assets created"
+  },
+  "motion": {
+    "shared_constraints": [],
+    "scene_overrides": {},
+    "proposed_principles": [
+      "causal action and contact",
+      "attention hierarchy",
+      "spatial and motion continuity"
+    ],
+    "note": "No common easing/preset approved; choreography in storyboard.md"
+  },
+  "approved_constraints": [],
+  "status": "proposed_not_approved",
+  "proposal_notes": {
+    "palette": "Creative estimates; not official brand colors",
+    "canvas": "9:16 confirmed; 1080x1920 proposed only",
+    "fps": "30 proposed only; project manifest unchanged",
+    "logo": "Original JPEG ratio 2046/2048; contain without recolor or crop"
+  }
+}

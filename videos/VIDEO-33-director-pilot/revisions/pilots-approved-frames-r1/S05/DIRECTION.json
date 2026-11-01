@@ -1,0 +1,19 @@
+{
+  "scene_id": "S05",
+  "revision": "approved-frames-motion-r1",
+  "based_on_approved_frame": "S05-v3",
+  "duration": 5.706333333333333,
+  "source_start_sample": 435629,
+  "source_end_sample": 572581,
+  "proof_times": [
+    0.15,
+    2.0,
+    3.72,
+    4.62,
+    5.35
+  ],
+  "motion_approval": "pending_user_review",
+  "final_frame_approval": "previously_approved",
+  "timing_evidence": "Original whisper_raw word times used as approximate cue evidence, not independent perceptual listening. S05 bất động sản at 22.50s global ~=4.349s local. S09 nhiều thị trường at 42.24s global ~=2.440s local.",
+  "signature": "Photo opens, hand contacts tab, joined facade hinges up; enclosed green balcony opens on bất động sản."
+}

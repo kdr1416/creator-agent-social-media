@@ -1,0 +1,142 @@
+[
+  {
+    "scene_id": "S01",
+    "start_sample": 0,
+    "end_sample": 144466,
+    "global_start_frame": 0,
+    "global_end_frame": 181,
+    "picture_frames": 181,
+    "fps": 30,
+    "grid_error_ms": 0.0
+  },
+  {
+    "scene_id": "S02",
+    "start_sample": 144466,
+    "end_sample": 236998,
+    "global_start_frame": 181,
+    "global_end_frame": 296,
+    "picture_frames": 115,
+    "fps": 30,
+    "grid_error_ms": 13.91667
+  },
+  {
+    "scene_id": "S03",
+    "start_sample": 236998,
+    "end_sample": 338898,
+    "global_start_frame": 296,
+    "global_end_frame": 424,
+    "picture_frames": 128,
+    "fps": 30,
+    "grid_error_ms": -8.25
+  },
+  {
+    "scene_id": "S04",
+    "start_sample": 338898,
+    "end_sample": 435629,
+    "global_start_frame": 424,
+    "global_end_frame": 545,
+    "picture_frames": 121,
+    "fps": 30,
+    "grid_error_ms": 12.58333
+  },
+  {
+    "scene_id": "S05",
+    "start_sample": 435629,
+    "end_sample": 572581,
+    "global_start_frame": 545,
+    "global_end_frame": 716,
+    "picture_frames": 171,
+    "fps": 30,
+    "grid_error_ms": 15.45833
+  },
+  {
+    "scene_id": "S06",
+    "start_sample": 572581,
+    "end_sample": 711699,
+    "global_start_frame": 716,
+    "global_end_frame": 890,
+    "picture_frames": 174,
+    "fps": 30,
+    "grid_error_ms": 9.125
+  },
+  {
+    "scene_id": "S07",
+    "start_sample": 711699,
+    "end_sample": 823751,
+    "global_start_frame": 890,
+    "global_end_frame": 1030,
+    "picture_frames": 140,
+    "fps": 30,
+    "grid_error_ms": 12.54167
+  },
+  {
+    "scene_id": "S08",
+    "start_sample": 823751,
+    "end_sample": 955202,
+    "global_start_frame": 1030,
+    "global_end_frame": 1194,
+    "picture_frames": 164,
+    "fps": 30,
+    "grid_error_ms": 10.375
+  },
+  {
+    "scene_id": "S09",
+    "start_sample": 955202,
+    "end_sample": 1134024,
+    "global_start_frame": 1194,
+    "global_end_frame": 1418,
+    "picture_frames": 224,
+    "fps": 30,
+    "grid_error_ms": -0.08333
+  },
+  {
+    "scene_id": "S10",
+    "start_sample": 1134024,
+    "end_sample": 1281789,
+    "global_start_frame": 1418,
+    "global_end_frame": 1602,
+    "picture_frames": 184,
+    "fps": 30,
+    "grid_error_ms": 15.66667
+  },
+  {
+    "scene_id": "S11",
+    "start_sample": 1281789,
+    "end_sample": 1445273,
+    "global_start_frame": 1602,
+    "global_end_frame": 1807,
+    "picture_frames": 205,
+    "fps": 30,
+    "grid_error_ms": -7.875
+  },
+  {
+    "scene_id": "S12",
+    "start_sample": 1445273,
+    "end_sample": 1530028,
+    "global_start_frame": 1807,
+    "global_end_frame": 1913,
+    "picture_frames": 106,
+    "fps": 30,
+    "grid_error_ms": 13.625
+  },
+  {
+    "scene_id": "S13",
+    "start_sample": 1530028,
+    "end_sample": 1639305,
+    "global_start_frame": 1913,
+    "global_end_frame": 2049,
+    "picture_frames": 136,
+    "fps": 30,
+    "grid_error_ms": 15.5
+  },
+  {
+    "scene_id": "S14",
+    "start_sample": 1639305,
+    "end_sample": 1803840,
+    "global_start_frame": 2049,
+    "global_end_frame": 2255,
+    "picture_frames": 206,
+    "fps": 30,
+    "grid_error_ms": -4.375
+  }
+]

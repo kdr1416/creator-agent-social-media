@@ -1,0 +1,53 @@
+{
+  "A": {
+    "name": "PREMIUM STYLIZED VECTOR",
+    "sub": "Soft sculpted shapes / warm, observant / everyday ease",
+    "skin": "#EAB18D",
+    "shade": "#CC8A69",
+    "hi": "#F8D3AD",
+    "hair": "#253C4B",
+    "shine": "#496574",
+    "shirt": "#E77759",
+    "cloth": "#F8E8CF",
+    "pants": "#226D7B",
+    "shadow": "#174F64",
+    "child": "#EAB74F",
+    "head": -193,
+    "hs": 0.86,
+    "foot": 250
+  },
+  "B": {
+    "name": "MODERN EDITORIAL",
+    "sub": "Longer proportions / tailored silhouette / quiet confidence",
+    "skin": "#C89371",
+    "shade": "#A96C52",
+    "hi": "#E6B18C",
+    "hair": "#252F3F",
+    "shine": "#4D5262",
+    "shirt": "#F4E4C9",
+    "cloth": "#E0C9A5",
+    "pants": "#14566A",
+    "shadow": "#0E3D55",
+    "child": "#D76E51",
+    "head": -201,
+    "hs": 0.67,
+    "foot": 265
+  },
+  "C": {
+    "name": "EXPRESSIVE GEOMETRIC",
+    "sub": "Angular counterforms / graphic charm / elastic personality",
+    "skin": "#F1AE83",
+    "shade": "#D5805F",
+    "hi": "#FFD1A0",
+    "hair": "#243958",
+    "shine": "#4A5E7B",
+    "shirt": "#298A9E",
+    "cloth": "#8AC8C4",
+    "pants": "#E16B53",
+    "shadow": "#BE4D43",
+    "child": "#F3C550",
+    "head": -176,
+    "hs": 1.05,
+    "foot": 225
+  }
+}

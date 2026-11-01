@@ -1,0 +1,72 @@
+{
+  "scene_id": "S05",
+  "revision": "album-pilot-v5-r1",
+  "based_on": "approved S05 final-frame-v5",
+  "duration": 5.706333333333333,
+  "source_start_sample": 435629,
+  "source_end_sample": 572581,
+  "signature": "Finish opening an already held photographic album from a lifted right half to the approved flat spread. Hands track two page-margin points throughout. The real house never becomes a separate object.",
+  "opening_interval": [
+    2.42,
+    4.77
+  ],
+  "initial_angle": 50,
+  "hinge": [
+    350,
+    780
+  ],
+  "perspective": 1400,
+  "grips": {
+    "far": [
+      [
+        480,
+        590
+      ],
+      [
+        502.5,
+        497.2
+      ]
+    ],
+    "near": [
+      [
+        610,
+        595
+      ],
+      [
+        594.9,
+        509.3
+      ]
+    ]
+  },
+  "proof_times": [
+    0.15,
+    2.2,
+    3.15,
+    3.75,
+    4.5,
+    5.35
+  ],
+  "approval": "motion_pending_user_review",
+  "original_voice_sha256": "662198c94d17a7fdb75a120490c24b3399744eb4b9c70361524153488c3e65bf",
+  "static_reference_sha256": "f1fd553cc3f8df5cbc0677b5d4104def3983760cdc730dca9190ac815b76d55b",
+  "video_path": "revisions\\S05-album-pilot-v5-r1\\renders\\pilot.mp4",
+  "video_sha256": "4c791e18d43440e6f2378fd773420e59f4cc154bc327c5be61f80341154c99fd",
+  "video_duration": 5.733333,
+  "audio_duration": 5.733333,
+  "video_frames": 172,
+  "original_pcm_bit_exact": true,
+  "aac_correlation": 0.9987810262133117,
+  "decoded_rms": 0.11010452668166854,
+  "hyperframes_check_ok": true,
+  "findings": {
+    "lint": [],
+    "runtime": [],
+    "layout": [],
+    "contrast": []
+  },
+  "approved_static_frame": "revisions/S05-final-frame-v5/FINAL_FRAME.png",
+  "lossless_final_frame_mean_pixel_difference": 0.005629340277777777,
+  "S09_sha256_unchanged": "a6cbf6ec62a12bf74f4cdcc076f27c1ac839f4e984c35aeba1bf2dc9b44cd90e",
+  "motion_status": "rendered_pending_user_review",
+  "browser_playback": "Observed native browser playback: 5.73 / 5.73s · Đã phát hết. Perceptual listening not independently claimed."
+}

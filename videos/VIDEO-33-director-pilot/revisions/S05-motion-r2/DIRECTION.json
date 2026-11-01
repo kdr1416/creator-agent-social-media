@@ -1,0 +1,30 @@
+{
+  "scene": "S05",
+  "revision": "motion-r2",
+  "reason": "User rejected r1 as illogical / rubbery. Building and balcony stay completely rigid; one printed paper leaf opens about its real corner hinge. Actor side-steps while holding the same free edge, releases before settling.",
+  "duration": 5.706333333333333,
+  "hinge": [
+    431,
+    681
+  ],
+  "cover_size": [
+    337,
+    562
+  ],
+  "perspective": 1400,
+  "opening_interval": [
+    2.52,
+    4.54
+  ],
+  "proof_times": [
+    0.3,
+    2.15,
+    3.15,
+    3.75,
+    4.35,
+    5.3
+  ],
+  "voice_sha256": "662198c94d17a7fdb75a120490c24b3399744eb4b9c70361524153488c3e65bf",
+  "S09": "unchanged; use revisions/pilots-approved-frames-r1/S09/renders/pilot.mp4",
+  "approval": "pending_user_review"
+}

@@ -1,0 +1,139 @@
+{
+  "schema_version": 2,
+  "assets": [
+    {
+      "id": "esora-avatar-original",
+      "path": "assets/brand/esora-avatar-original.jpg",
+      "type": "brand_logo_reference",
+      "source": "https://www.facebook.com/esoraimmi68",
+      "source_photo": "https://www.facebook.com/photo/?fbid=834493896000096&set=a.129055963210563",
+      "user_authorization": "User explicitly identified page avatar as the project logo",
+      "sha256": "f34096f78bc3c030b536c446efe71273c32f18b55cc33306705ab09ce0aa313e",
+      "width": 2046,
+      "height": 2048,
+      "treatment": "Original JPEG preserved; not redrawn, cropped, upscaled or background-removed",
+      "rights": "User-designated brand asset for this project; no independent rights audit"
+    },
+    {
+      "id": "S03-original-coast",
+      "path": "assets/illustration/S03-coast.svg",
+      "type": "original_editable_svg",
+      "source": "Original R1 project illustration; components/revise_pilot_r1.py",
+      "rights": "Original project artwork; no external stock illustration",
+      "sha256": "9ec9d1c5ea62b204054e0ad47c0dbb5850b4333298f39a14d93c6abdbc7223e3",
+      "used_by": [
+        "S03"
+      ],
+      "status": "created_for_experimental_pilot_not_approved",
+      "revision": "R1 redesign; previous file in build/revision-r1-before"
+    },
+    {
+      "id": "S03-voice-excerpt",
+      "path": "scenes/S03/voice-excerpt.wav",
+      "type": "derived_pcm_audio",
+      "source": "Immutable user master; exact scene sample slice, no resampling",
+      "rights": "User-supplied audio; excerpt only",
+      "sha256": "0dc7bf0253b1672b7cb50e21119926eb6006a59a02961e2410f8a18bc1c44dd2",
+      "used_by": [
+        "S03"
+      ],
+      "status": "created_for_experimental_pilot_not_approved"
+    },
+    {
+      "id": "S03-gsap-runtime",
+      "path": "scenes/S03/assets/gsap.min.js",
+      "type": "local_runtime_copy",
+      "source": "Existing C1 installed GSAP distribution; copied without alteration",
+      "rights": "GSAP license notice preserved in file",
+      "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "used_by": [
+        "S03"
+      ],
+      "status": "created_for_experimental_pilot_not_approved"
+    },
+    {
+      "id": "S08-original-home",
+      "path": "assets/illustration/S08-home.svg",
+      "type": "original_editable_svg",
+      "source": "Original R1 project illustration; components/revise_pilot_r1.py",
+      "rights": "Original project artwork; no external stock illustration",
+      "sha256": "d3cb9030366d525724cb62b2b641cc788ddd7c360d610059ba90f810ae5767b6",
+      "used_by": [
+        "S08"
+      ],
+      "status": "created_for_experimental_pilot_not_approved",
+      "revision": "R1 redesign; previous file in build/revision-r1-before"
+    },
+    {
+      "id": "S08-voice-excerpt",
+      "path": "scenes/S08/voice-excerpt.wav",
+      "type": "derived_pcm_audio",
+      "source": "Immutable user master; exact scene sample slice, no resampling",
+      "rights": "User-supplied audio; excerpt only",
+      "sha256": "ad5114136dc8753d054737fc28e69d3755d805635766618bcad97893b8ec0778",
+      "used_by": [
+        "S08"
+      ],
+      "status": "created_for_experimental_pilot_not_approved"
+    },
+    {
+      "id": "S08-gsap-runtime",
+      "path": "scenes/S08/assets/gsap.min.js",
+      "type": "local_runtime_copy",
+      "source": "Existing C1 installed GSAP distribution; copied without alteration",
+      "rights": "GSAP license notice preserved in file",
+      "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "used_by": [
+        "S08"
+      ],
+      "status": "created_for_experimental_pilot_not_approved"
+    },
+    {
+      "id": "gsap-shared-local-runtime",
+      "path": "assets/vendor/gsap.min.js",
+      "type": "local_runtime_copy",
+      "source": "Existing installed GSAP distribution, retained locally for scene regeneration",
+      "rights": "GSAP license notice preserved in file",
+      "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "used_by": [
+        "S03",
+        "S08"
+      ],
+      "status": "existing_runtime_copied_without_installation"
+    },
+    {
+      "id": "R1-font-shared",
+      "path": "assets/fonts/pilot-bold.ttf",
+      "type": "local_font_copy",
+      "source": "C:/Windows/Fonts/arialbd.ttf",
+      "rights": "Existing Windows Arial Bold; local project use, redistribution license not independently verified",
+      "sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+      "used_by": [
+        "S03",
+        "S08"
+      ]
+    },
+    {
+      "id": "R1-font-S03",
+      "path": "scenes/S03/assets/pilot-bold.ttf",
+      "type": "local_font_copy",
+      "source": "C:/Windows/Fonts/arialbd.ttf",
+      "rights": "Existing Windows Arial Bold; local project use, redistribution license not independently verified",
+      "sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+      "used_by": [
+        "S03"
+      ]
+    },
+    {
+      "id": "R1-font-S08",
+      "path": "scenes/S08/assets/pilot-bold.ttf",
+      "type": "local_font_copy",
+      "source": "C:/Windows/Fonts/arialbd.ttf",
+      "rights": "Existing Windows Arial Bold; local project use, redistribution license not independently verified",
+      "sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+      "used_by": [
+        "S08"
+      ]
+    }
+  ]
+}

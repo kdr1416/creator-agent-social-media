@@ -1,0 +1,29 @@
+{
+  "approved_pilots": [
+    {
+      "scene_id": "S10",
+      "version": "S10-S12-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "approval_date_local": "2026-10-27",
+      "user_message_verbatim": "oke duyệt. tiếp tục đi",
+      "video_path": "revisions/S10-S12-motion-r1/S10/renders/pilot.mp4",
+      "video_sha256": "826e690c8bb30d88bcee94011f13ddd9743969fea2180ea90f057bd6d7602111",
+      "master_replacement_authorized": false,
+      "full_film_production_authorized": false
+    },
+    {
+      "scene_id": "S12",
+      "version": "S10-S12-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "approval_date_local": "2026-10-27",
+      "user_message_verbatim": "oke duyệt. tiếp tục đi",
+      "video_path": "revisions/S10-S12-motion-r1/S12/renders/pilot.mp4",
+      "video_sha256": "3f29380666fad23ba12ba5ac284dfe27e4e6aab4131f2ff5bd840837a0c16b51",
+      "master_replacement_authorized": false,
+      "full_film_production_authorized": false
+    }
+  ],
+  "master_replaced": false
+}

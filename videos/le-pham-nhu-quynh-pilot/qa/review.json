@@ -1,0 +1,94 @@
+{
+  "project_slug": "le-pham-nhu-quynh",
+  "scene_id": "scene_15",
+  "status": "approved_by_user",
+  "scope": "Only pilot scene; not full-film approval",
+  "engine": "HF_ONLY",
+  "style": "kurzgesagt",
+  "input_validation": {
+    "source_transcript_and_all_16_slices_hashes": "passed",
+    "pcm_reconstruction": "bit-perfect",
+    "source_files_unchanged": true,
+    "pilot_audio_copy_sha256": "c8561731374c10d98d2eccba52de7900fd5f8211b11d918d584d857637223d95"
+  },
+  "render": {
+    "path": "renders/scene_15.mp4",
+    "sha256": "4c0594cc6ed903efc4e511fd34641a5c51dd1e82521533008fed528d9dda78b4",
+    "codec": "H.264",
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "frames": 197,
+    "audio_codec": "AAC",
+    "audio_sample_rate": 48000,
+    "source_wav_duration": 6.544,
+    "container_duration": 6.566667,
+    "duration_delta": 0.022667,
+    "audio_peak_db": -2.3,
+    "cli_version": "0.8.170",
+    "versioned_output": "output/le-pham-nhu-quynh/scene_15-ending-v2.mp4"
+  },
+  "automated_check": {
+    "ok": true,
+    "version": "0.8.170",
+    "samples": [
+      0.55,
+      3.85,
+      4.8,
+      5.25,
+      5.8,
+      6.54
+    ],
+    "lint": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "runtime": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "layout": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "contrast": {
+      "checked": 1,
+      "passed": 1
+    },
+    "automated_motion_assertions_enabled": false,
+    "recording_note": "Summarized from final CLI stdout; Studio history lock prevents CLI history persistence."
+  },
+  "visual_review": {
+    "opening_signature_final": "Inspected snapshot contact sheet and actual rendered 4fps sheet including new end frames.",
+    "mobile_360x640": "passed",
+    "thumbnail_grayscale": "passed",
+    "arm_occlusion": "far arm behind torso; near arm foreground; connected elbows/hands",
+    "footer": "main content above y=1080; 200px footer clear",
+    "containers": "one real binder with spine/rings/turning paper; no generic information cards",
+    "redundancy": "page icons yield to hero icons; labels replace each other",
+    "playback": "Studio replay advanced from 00:00 to t=6.544 and returned to Play.",
+    "ending": "One dimensional globe rises from binder, integrated campus horizon appears, folded paper plane follows a drawn curved flight path. No thin dangling campus stems."
+  },
+  "proof_files": [
+    "qa/ending-v2.png",
+    "qa/ending-v2-mobile.png",
+    "qa/ending-v2-grayscale.png",
+    "qa/ending-v2-motion-sheet.jpg",
+    "qa/check-summary.json",
+    "qa/ending-v2-probe.json"
+  ],
+  "limitations": [
+    "Generic illustrated student, not a verified portrait of Như Quỳnh.",
+    "No BGM/SFX added; original voice is the only audio.",
+    "Word timing from local ASR is approximate; original transcript and timing remain authoritative.",
+    "Scene 14 has a publication hold for the spoken experience claim."
+  ],
+  "source_index_sha256": "e08b0f8599ae40fdb7c00b47948e9e62e645fc4116f53c853ec56bcfc67f64d0",
+  "revision": "ending-v2",
+  "user_approval": {
+    "revision": "ending-v2",
+    "date": "2026-10-18",
+    "evidence": "User: oke ổn rồi á",
+    "scope": "Pilot visual treatment and ending v2 approved; remaining scenes follow storyboard, retain scene_14 publication hold."
+  }
+}

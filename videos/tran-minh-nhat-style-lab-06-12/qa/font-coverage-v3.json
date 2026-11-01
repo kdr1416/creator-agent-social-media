@@ -1,0 +1,10 @@
+{
+  "method": "TrueType cmap Unicode format4/12 glyph coverage for all visible Vietnamese strings",
+  "rejected_font": "Arial Black (ariblk.ttf)",
+  "missing_glyphs": "ưạẤẻệịọớứữ",
+  "selected_font": "Segoe UI Black (seguibl.ttf)",
+  "selected_weight": 900,
+  "missing_glyphs_selected": [],
+  "unicode_normalization": "NFC",
+  "source": "C:/Windows/Fonts/seguibl.ttf"
+}

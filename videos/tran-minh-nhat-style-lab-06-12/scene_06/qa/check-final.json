@@ -1,0 +1,103 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 5.192666666667,
+    "samples": [
+      0.288,
+      0.865,
+      1.442,
+      2.019,
+      2.596,
+      3.173,
+      3.75,
+      4.327,
+      4.904
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.288,
+      1.442,
+      2.596,
+      3.75,
+      4.904
+    ],
+    "checked": 14,
+    "passed": 14
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": true,
+    "files": [
+      ".hyperframes\\artifacts\\snapshots\\6f79ed78-437f-4982-b4f2-64dae78544ca\\frame-00-at-0.3s.png",
+      ".hyperframes\\artifacts\\snapshots\\6f79ed78-437f-4982-b4f2-64dae78544ca\\frame-01-at-1.4s.png",
+      ".hyperframes\\artifacts\\snapshots\\6f79ed78-437f-4982-b4f2-64dae78544ca\\frame-02-at-2.6s.png",
+      ".hyperframes\\artifacts\\snapshots\\6f79ed78-437f-4982-b4f2-64dae78544ca\\frame-03-at-3.8s.png",
+      ".hyperframes\\artifacts\\snapshots\\6f79ed78-437f-4982-b4f2-64dae78544ca\\frame-04-at-4.9s.png"
+    ],
+    "times": [
+      0.288,
+      1.442,
+      2.596,
+      3.75,
+      4.904
+    ],
+    "findingFiles": []
+  },
+  "saved": {
+    "id": "c4a4db06-d36e-4b55-8f1f-ce5295053b10",
+    "revision": "b0d223a0-894d-4ecd-855c-ca4d30218235",
+    "report": "D:\\Năm 3\\flowkit-main\\videos\\tran-minh-nhat-style-lab-06-12\\scene_06\\.hyperframes\\artifacts\\checks\\c4a4db06-d36e-4b55-8f1f-ce5295053b10.json",
+    "attribution": "recorded-revision"
+  },
+  "_meta": {
+    "version": "0.8.170",
+    "latestVersion": "0.8.170",
+    "updateAvailable": false
+  }
+}

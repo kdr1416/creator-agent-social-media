@@ -1,0 +1,123 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "rotation_pivot_drift",
+        "severity": "warning",
+        "time": 5.686,
+        "selector": "#arm-far",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 475.02,
+          "y": 834.195,
+          "width": 59.98,
+          "height": 52.81
+        },
+        "rect": {
+          "left": 475.02,
+          "top": 834.195,
+          "right": 535,
+          "bottom": 887.005,
+          "width": 59.98,
+          "height": 52.81
+        },
+        "message": "Rotating element's bounding-box center drifts 30px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).",
+        "fixHint": "The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.",
+        "firstSeen": 5.686,
+        "lastSeen": 5.686,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5.686
+        ]
+      }
+    ],
+    "duration": 6.020625,
+    "samples": [
+      0.334,
+      1.003,
+      1.672,
+      2.341,
+      3.01,
+      3.679,
+      4.348,
+      5.017,
+      5.686
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 1,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.334,
+      1.672,
+      3.01,
+      4.348,
+      5.686
+    ],
+    "checked": 18,
+    "passed": 18
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "saved": {
+    "id": "170b8b8c-7d55-46e4-b0f5-b6b9bb029ee3",
+    "revision": "cebae640-4ba7-4520-aef9-b202d43d2a1a",
+    "report": "D:\\Năm 3\\flowkit-main\\videos\\tran-minh-nhat-pilot\\.hyperframes\\artifacts\\checks\\170b8b8c-7d55-46e4-b0f5-b6b9bb029ee3.json",
+    "attribution": "recorded-revision"
+  },
+  "_meta": {
+    "version": "0.8.170",
+    "latestVersion": "0.8.170",
+    "updateAvailable": false
+  }
+}

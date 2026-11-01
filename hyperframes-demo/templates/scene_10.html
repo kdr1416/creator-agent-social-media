@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=720, height=1280" />
+    <title>Scene 10 - Mindset Shift: Beyond Visa Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        color: #0f172a;
+        font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+        overflow: hidden;
+      }
+      #root {
+        position: relative;
+        width: 720px;
+        height: 1280px;
+        overflow: hidden;
+        background: #ffffff;
+      }
+
+      /* ── SUBTLE OPEN-CANVAS AMBIENT BACKGROUND ── */
+      .bg-canvas {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .bg-glow {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          circle at 50% 45%,
+          rgba(241, 245, 249, 0.95) 0%,
+          rgba(255, 255, 255, 1) 75%
+        );
+      }
+      .bg-grid {
+        position: absolute;
+        inset: 0;
+        background-image: 
+          linear-gradient(to right, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+        background-size: 40px 40px;
+        opacity: 0.65;
+      }
+
+      /* ── OPEN-CANVAS UNBOXED HEADLINE ── */
+      .headline-container {
+        position: absolute;
+        top: 135px;
+        left: 0;
+        width: 720px;
+        padding: 0 44px;
+        text-align: center;
+        z-index: 50;
+      }
+      .main-title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 38px;
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #0f172a;
+        margin: 0;
+        display: inline-block;
+      }
+      .title-accent-bar {
+        height: 6px;
+        background: #fde047;
+        margin: 10px auto 0 auto;
+        width: 220px;
+        border-radius: 3px;
+        transform-origin: center;
+      }
+
+      /* ── STAGE VISUAL AREA (Y: 230px to 1060px, strictly clears 200px footer) ── */
+      .visual-stage {
+        position: absolute;
+        top: 230px;
+        left: 0;
+        width: 720px;
+        height: 830px;
+        z-index: 20;
+      }
+
+      /* Grounding Pedestal Line at Y: 1050px in root */
+      .stage-ground-line {
+        position: absolute;
+        bottom: 10px;
+        left: 48px;
+        right: 48px;
+        height: 4px;
+        background: #e2e8f0;
+        border-radius: 2px;
+        z-index: 15;
+      }
+
+      /* ── PHYSICAL PROP: VISA DOSSIER FOLDER (HỒ SƠ VISA) ── */
+      .dossier-wrap {
+        position: absolute;
+        top: 70px;
+        left: 170px;
+        width: 380px;
+        height: 520px;
+        z-index: 30;
+        transform-origin: center center;
+      }
+      .dossier-folder {
+        position: absolute;
+        inset: 0;
+        background: #f8fafc;
+        border: 3px solid #0f172a;
+        border-radius: 16px;
+        box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12), 0 8px 0 #0f172a;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .dossier-tab {
+        position: absolute;
+        top: -24px;
+        left: 32px;
+        width: 140px;
+        height: 26px;
+        background: #0f172a;
+        border-radius: 8px 8px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 11px;
+        letter-spacing: 0.12em;
+      }
+      .dossier-badge-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 14px;
+      }
+      .dossier-title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 26px;
+        color: #0f172a;
+        margin-top: 14px;
+        letter-spacing: 0.02em;
+      }
+      .dossier-body-lines {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .dossier-line {
+        height: 10px;
+        background: #e2e8f0;
+        border-radius: 5px;
+      }
+      .dossier-step-label {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 800;
+        font-size: 13px;
+        color: #475569;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        border-top: 2px dashed #cbd5e1;
+        padding-top: 12px;
+      }
+
+      /* ── WARNING DENIAL STRIKE (DẤU PHỦ ĐỊNH CẢNH BÁO ✕) ── */
+      .denial-strike-wrap {
+        position: absolute;
+        top: 170px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 190px;
+        height: 190px;
+        z-index: 45;
+        pointer-events: none;
+      }
+      .denial-ring {
+        position: absolute;
+        inset: 0;
+        border: 7px solid #ff6b2b;
+        border-radius: 50%;
+        box-shadow: 0 10px 24px rgba(255, 107, 43, 0.25);
+      }
+      .denial-cross {
+        position: absolute;
+        inset: 0;
+      }
+
+      /* ── EXPANDING ROADMAP / JOURNEY PATH (LỘ TRÌNH DÀI HẠN) ── */
+      .journey-stage {
+        position: absolute;
+        top: 40px;
+        left: 330px;
+        width: 370px;
+        height: 760px;
+        z-index: 25;
+        opacity: 0;
+      }
+      .roadmap-callout {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .roadmap-title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 30px;
+        color: #0f172a;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        margin: 0;
+      }
+      .roadmap-highlight-bar {
+        height: 8px;
+        background: #fde047;
+        width: 240px;
+        border-radius: 4px;
+        margin: 8px 0 18px 0;
+        transform-origin: left;
+      }
+
+      /* Milestone Path Graphic */
+      .path-svg-wrap {
+        position: absolute;
+        top: 110px;
+        left: 10px;
+        width: 340px;
+        height: 380px;
+      }
+      .milestone-tag {
+        position: absolute;
+        background: #0f172a;
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 13px;
+        padding: 6px 14px;
+        border-radius: 8px;
+        border: 2px solid #ff6b2b;
+        box-shadow: 0 4px 0 #ff6b2b;
+        white-space: nowrap;
+      }
+
+      /* ── GUIDING CHARACTER (NHÂN VẬT ĐỊNH HƯỚNG TƯ VẤN) ── */
+      .char-wrap {
+        position: absolute;
+        bottom: 12px;
+        right: 10px;
+        width: 260px;
+        height: 380px;
+        z-index: 35;
+        pointer-events: none;
+      }
+
+      audio {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-width="720"
+      data-height="1280"
+      data-duration="6.4"
+    >
+      <!-- Background Ambient -->
+      <div class="bg-canvas" data-layout-allow-overflow>
+        <div class="bg-glow"></div>
+        <div class="bg-grid"></div>
+      </div>
+
+      <!-- Audio Track -->
+      <audio
+        id="bg-audio"
+        src="./assets/audio.wav"
+        data-track="voice"
+        data-start="0s"
+        data-duration="6.4s"
+        preload="auto"
+      ></audio>
+
+      <!-- Open-Canvas Headline -->
+      <div class="headline-container" data-layout-allow-overflow>
+        <h1 class="main-title" id="main-title">KHÔNG CHỈ ĐỦ TIỀN NỘP HỒ SƠ</h1>
+        <div class="title-accent-bar" id="title-accent"></div>
+      </div>
+
+      <!-- Main Visual Stage (Y: 230px to 1060px -> Leaves 200px Clean Subtitle Footer) -->
+      <div class="visual-stage" data-layout-allow-overflow data-layout-allow-overlap>
+        <div class="stage-ground-line" id="stage-ground" data-layout-allow-overlap data-layout-allow-occlusion></div>
+
+        <!-- Physical Visa Dossier Folder -->
+        <div
+          class="dossier-wrap"
+          id="dossier-wrap"
+          data-layout-allow-overflow
+          data-layout-allow-overlap
+          data-layout-allow-occlusion
+        >
+          <div class="dossier-tab">VISA DOSSIER</div>
+          <div class="dossier-folder">
+            <div class="dossier-badge-row">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#0F172A">
+                <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm-1 9h-2V7h2v4zm0 4h-2v-2h2v2z"/>
+              </svg>
+              <span style="font-size: 11px; font-weight: 800; color: #64748B; letter-spacing: 0.1em;">
+                CANADA
+              </span>
+            </div>
+
+            <div>
+              <div class="dossier-title">HỒ SƠ VISA</div>
+              <div class="dossier-body-lines">
+                <div class="dossier-line" style="width: 100%;"></div>
+                <div class="dossier-line" style="width: 85%;"></div>
+                <div class="dossier-line" style="width: 70%;"></div>
+                <div class="dossier-line" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="dossier-step-label">BƯỚC ĐẦU: NỘP ĐƠN</div>
+          </div>
+        </div>
+
+        <!-- Warning Denial Strike (Dấu Phủ Định ✕) -->
+        <div
+          class="denial-strike-wrap"
+          id="denial-wrap"
+          data-layout-allow-overflow
+          data-layout-allow-overlap
+        >
+          <div class="denial-ring"></div>
+          <svg class="denial-cross" viewBox="0 0 100 100" fill="none">
+            <line x1="28" y1="28" x2="72" y2="72" stroke="#FF6B2B" stroke-width="12" stroke-linecap="round"/>
+            <line x1="72" y1="28" x2="28" y2="72" stroke="#FF6B2B" stroke-width="12" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <!-- Expanding Roadmap / Long-Term Journey (Right Side) -->
+        <div
+          class="journey-stage"
+          id="journey-stage"
+          data-layout-allow-overflow
+          data-layout-allow-overlap
+        >
+          <!-- Headline for Roadmap -->
+          <div class="roadmap-callout">
+            <h2 class="roadmap-title">LỘ TRÌNH TOÀN KHÓA</h2>
+            <div class="roadmap-highlight-bar" id="roadmap-bar"></div>
+          </div>
+
+          <!-- Expanding Path SVG Graphic -->
+          <div class="path-svg-wrap" data-layout-allow-overflow>
+            <svg
+              width="340"
+              height="380"
+              viewBox="0 0 300 340"
+              fill="none"
+              data-layout-allow-overflow
+            >
+              <!-- Winding Milestone Road -->
+              <path
+                id="journey-path-line"
+                d="M20 290 C60 270 90 200 140 180 C200 160 220 80 270 40"
+                stroke="#0F172A"
+                stroke-width="8"
+                stroke-linecap="round"
+                stroke-dasharray="12 8"
+              />
+              <!-- Destination Sun / Flag -->
+              <circle cx="270" cy="40" r="18" fill="#FF6B2B" />
+              <path d="M264 32 L276 40 L264 48 Z" fill="#FFFFFF"/>
+            </svg>
+
+            <!-- Milestones along the road -->
+            <div
+              class="milestone-tag"
+              id="ms-1"
+              data-layout-allow-overlap
+              data-layout-allow-occlusion
+              style="bottom: 80px; left: 60px;"
+            >
+              NĂM 1
+            </div>
+            <div
+              class="milestone-tag"
+              id="ms-2"
+              data-layout-allow-overlap
+              data-layout-allow-occlusion
+              style="bottom: 175px; left: 125px;"
+            >
+              NĂM 2+
+            </div>
+            <div
+              class="milestone-tag"
+              id="ms-3"
+              data-layout-allow-overlap
+              data-layout-allow-occlusion
+              style="top: 20px; right: 35px; color: #FDE047;"
+            >
+              TỐT NGHIỆP
+            </div>
+          </div>
+        </div>
+
+        <!-- Guiding Character Rig -->
+        <div class="char-wrap" id="char-wrap" data-layout-allow-overflow data-layout-allow-overlap>
+          <svg
+            width="260"
+            height="380"
+            viewBox="0 0 200 300"
+            fill="none"
+            data-layout-allow-overflow
+          >
+            <!-- Torso / Suit -->
+            <path d="M50 300 L65 170 C70 150 130 150 135 170 L150 300 Z" fill="#0F172A"/>
+            <!-- White Collar & Orange Tie -->
+            <polygon points="100,165 85,185 115,185" fill="#FFFFFF"/>
+            <polygon points="96,185 104,185 107,240 100,250 93,240" fill="#FF6B2B"/>
+
+            <!-- Head & Face -->
+            <g id="char-head">
+              <!-- Neck -->
+              <rect x="92" y="145" width="16" height="25" fill="#FED7AA"/>
+              <!-- Head oval -->
+              <ellipse cx="100" cy="115" rx="38" ry="42" fill="#FED7AA" stroke="#0F172A" stroke-width="3"/>
+              <!-- Hair -->
+              <path d="M62 105 C62 80 80 70 100 70 C120 70 138 80 138 105 C138 95 125 80 100 80 C75 80 62 95 62 105 Z" fill="#0F172A"/>
+              <!-- Eyeglasses -->
+              <rect x="74" y="105" width="22" height="16" rx="4" fill="none" stroke="#0F172A" stroke-width="3"/>
+              <rect x="104" y="105" width="22" height="16" rx="4" fill="none" stroke="#0F172A" stroke-width="3"/>
+              <line x1="96" y1="113" x2="104" y2="113" stroke="#0F172A" stroke-width="3"/>
+              <!-- Eyes -->
+              <circle cx="85" cy="113" r="3" fill="#0F172A"/>
+              <circle cx="115" cy="113" r="3" fill="#0F172A"/>
+              <!-- Confident Smile -->
+              <path d="M88 135 Q100 145 112 135" stroke="#0F172A" stroke-width="3" stroke-linecap="round" fill="none"/>
+            </g>
+
+            <!-- Arm Pointing Forward to Long-Term Journey -->
+            <g id="char-arm">
+              <path d="M75 180 Q40 190 20 160" stroke="#0F172A" stroke-width="22" stroke-linecap="round" fill="none"/>
+              <circle cx="18" cy="155" r="14" fill="#FED7AA" stroke="#0F172A" stroke-width="2.5"/>
+            </g>
+          </svg>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- GSAP Master Animation Timeline -->
+    <script>
+      const tl = gsap.timeline();
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+
+      // Initial State
+      gsap.set("#main-title", { opacity: 0, y: -20 });
+      gsap.set("#title-accent", { scaleX: 0 });
+      gsap.set("#stage-ground", { opacity: 0, scaleX: 0 });
+      gsap.set("#dossier-wrap", { opacity: 0, y: 70, scale: 0.95 });
+      gsap.set("#denial-wrap", { opacity: 0, scale: 2.4, rotate: -25 });
+      gsap.set("#journey-stage", { opacity: 0 });
+      gsap.set("#roadmap-bar", { scaleX: 0 });
+      gsap.set("#ms-1", { opacity: 0, scale: 0.6 });
+      gsap.set("#ms-2", { opacity: 0, scale: 0.6 });
+      gsap.set("#ms-3", { opacity: 0, scale: 0.6 });
+      gsap.set("#char-wrap", { opacity: 0, x: 50 });
+
+      // ── BEAT 1 (0.0s – 2.2s): KHÔNG CHỈ ĐỦ TIỀN NỘP HỒ SƠ ──
+      tl.to("#main-title", {
+        opacity: 1,
+        y: 0,
+        duration: 0.55,
+        ease: "power3.out"
+      }, 0.2);
+
+      tl.to("#title-accent", {
+        scaleX: 1,
+        duration: 0.5,
+        ease: "power2.out"
+      }, 0.45);
+
+      tl.to("#stage-ground", {
+        opacity: 1,
+        scaleX: 1,
+        duration: 0.6,
+        ease: "power2.out"
+      }, 0.35);
+
+      // Visa Dossier enters center stage
+      tl.to("#dossier-wrap", {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.7,
+        ease: "back.out(1.4)"
+      }, 0.55);
+
+      // ── BEAT 2 (2.2s – 4.5s): SIGNATURE MOTION 1 — WARNING DENIAL STRIKE (✕) ──
+      // Speech: "...tài chính không nên chỉ được tính đơn giản..."
+      tl.to("#denial-wrap", {
+        opacity: 1,
+        scale: 1,
+        rotate: 0,
+        duration: 0.38,
+        ease: "back.out(3.2)"
+      }, 2.3);
+
+      // Impact shake on dossier
+      tl.to("#dossier-wrap", {
+        y: "+=6",
+        duration: 0.08,
+        yoyo: true,
+        repeat: 1,
+        ease: "power1.inOut"
+      }, 2.45);
+
+      // Dossier scales down and slides leftward to become "BƯỚC ĐẦU" anchor
+      tl.to(["#dossier-wrap", "#denial-wrap"], {
+        x: -150,
+        y: 60,
+        scale: 0.65,
+        duration: 0.75,
+        ease: "power3.inOut"
+      }, 3.1);
+
+      // ── BEAT 3 (4.5s – 6.4s): HORIZON ROADMAP & GUIDING CHARACTER ──
+      // Speech: "...là đủ tiền để nộp hồ sơ."
+      tl.to("#journey-stage", {
+        opacity: 1,
+        duration: 0.5,
+        ease: "power2.out"
+      }, 3.7);
+
+      tl.to("#roadmap-bar", {
+        scaleX: 1,
+        duration: 0.45,
+        ease: "power2.out"
+      }, 4.0);
+
+      // Milestones along journey appear sequentially
+      tl.to("#ms-1", {
+        opacity: 1,
+        scale: 1,
+        duration: 0.35,
+        ease: "back.out(2)"
+      }, 4.2);
+
+      tl.to("#ms-2", {
+        opacity: 1,
+        scale: 1,
+        duration: 0.35,
+        ease: "back.out(2)"
+      }, 4.5);
+
+      tl.to("#ms-3", {
+        opacity: 1,
+        scale: 1,
+        duration: 0.4,
+        ease: "back.out(2.2)"
+      }, 4.8);
+
+      // Guiding character steps in with confident gesture
+      tl.to("#char-wrap", {
+        opacity: 1,
+        x: 0,
+        duration: 0.6,
+        ease: "power2.out"
+      }, 4.4);
+
+      tl.to("#char-head", {
+        y: -4,
+        duration: 0.25,
+        yoyo: true,
+        repeat: 1,
+        ease: "power1.inOut"
+      }, 4.9);
+
+      // Final Hold from 5.4s to 6.4s
+      tl.to({}, { duration: 1.0 }, 5.4);
+    </script>
+  </body>
+</html>

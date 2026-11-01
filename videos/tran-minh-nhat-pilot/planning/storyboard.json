@@ -1,0 +1,2018 @@
+{
+  "project_slug": "tran-minh-nhat",
+  "status": "storyboard draft + one pilot; not full-film approval",
+  "total_duration": 68.2,
+  "source": "scratch/audio_handoff.json",
+  "voice_policy": "Immutable original PCM, sample-accurate slices; no TTS, stretch, recut or added music.",
+  "style_preference": "kurzgesagt considered; user supplied cartoon-collage direction wins this experiment",
+  "style_scope": "HF_ONLY",
+  "preserve_existing_hf_treatments": true,
+  "film_visual_direction": "Nét riêng mở ra chương mới. Kem/peach/lilac, xanh headline, cam nhân vật; ảnh trường chính thức như mảnh collage; không montage icon.",
+  "protagonist": {
+    "design": "Original orange rounded-square student mascot, purple cap and blue backpack. Symbolic stand-in, not likeness of Trần Minh Nhật.",
+    "scene_count": 13,
+    "percentage": 76.47058823529412
+  },
+  "routing_audit": {
+    "HF_ONLY": 17,
+    "HF_ONLY_percent": 100,
+    "triggered_review": [
+      "HF_ONLY >60%",
+      "17 consecutive HF_ONLY"
+    ],
+    "decision": "retain after per-scene HYBRID evaluation",
+    "reason": "Đây là hệ kể chuyện bằng biến đổi vật liệu giấy và hình minh hoạ; không phải 17 plate người thật bị đổi engine để chạy nhanh. Các cảnh 02/04/10/11/16 có tương tác người/đồ vật đã được đánh giá riêng. Nếu chuyển sang phỏng vấn, ảnh chân dung thật hoặc quan sát đời sống campus, phải route lại.",
+    "flow_service": "127.0.0.1:8100 unavailable at preflight; this is not the selection reason."
+  },
+  "pilot_scene": "scene_04",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "scene_id": "scene_01",
+      "start": 0.0,
+      "end": 3.2119583333333335,
+      "raw_text": "Tôi có thể học ở bất kỳ đâu, vì tôi dám khác biệt.",
+      "corrected_text": "Tôi có thể học ở bất kỳ đâu, vì tôi dám khác biệt.",
+      "semantic_type": "identity",
+      "visual_center": "Đường nét riêng biến thành cánh cửa học tập",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Một nét vẽ cá nhân hoá biến hình, không phải diễn xuất đi bộ; HYBRID thêm người thật sẽ che quan hệ nét-vẽ/cánh-cửa.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Đường nét riêng biến thành cánh cửa học tập",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 3.2119583333333335,
+      "audio_slice": "scratch/audio_slices/scene_01.wav",
+      "audio_sha256": "eda1eb638cf8afca0aefcba5826f8ad3b5fbcf278ebbb080dc1561c44c0140d6",
+      "render_mode": "HF_ONLY",
+      "title": "Nét riêng mở cửa",
+      "visual_verb": "Nét zigzag duỗi thành đường viền một cửa sổ, Nhật tự đẩy cửa mở.",
+      "narrative_visual": "Cận nét bút cam zigzag trên giấy kem. Nét zigzag duỗi thành đường viền một cửa sổ, Nhật tự đẩy cửa mở.",
+      "opening_state": "Cận nét bút cam zigzag trên giấy kem.",
+      "transformation": "Nét zigzag duỗi thành đường viền một cửa sổ, Nhật tự đẩy cửa mở.",
+      "final_state": "Một không gian học tập nhỏ hiện ra phía bên kia.",
+      "protagonist_action": "Nhật vẽ rồi mở cánh cửa mình tạo.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            0.739
+          ],
+          "action": "Cận nét bút cam zigzag trên giấy kem."
+        },
+        {
+          "range": [
+            0.739,
+            2.505
+          ],
+          "action": "Nét zigzag duỗi thành đường viền một cửa sổ, Nhật tự đẩy cửa mở."
+        },
+        {
+          "range": [
+            2.505,
+            3.2119583333333335
+          ],
+          "action": "Một không gian học tập nhỏ hiện ra phía bên kia."
+        }
+      ],
+      "timing_evidence": "Phase timing proportional estimate; align spoken cues before each unbuilt scene render. Pilot has measured/inspected cues separately.",
+      "hf_signature_motion": "Nét zigzag duỗi thành đường viền một cửa sổ, Nhật tự đẩy cửa mở.",
+      "signature_motion": "Nét zigzag duỗi thành đường viền một cửa sổ, Nhật tự đẩy cửa mở.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": false,
+      "container_inventory": [],
+      "container_semantics": "none",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "simultaneous_labels_max": 1,
+        "rule": "Short labels only; no paragraphs. Labels in scene06 replace earlier labels."
+      },
+      "visible_text_inventory": [
+        "DÁM KHÁC BIỆT"
+      ],
+      "mobile_legibility_plan": "Main type 40–54px, labels >=28px; review at 360×640. No essential micro-copy.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "status": "planned, not generated",
+        "independent_layers": [
+          "background",
+          "main physical/illustrated setting",
+          "foreground prop layers",
+          "text strips",
+          "original mascot body",
+          "eyes and mouth",
+          "far arm",
+          "near arm",
+          "legs"
+        ],
+        "provenance": "Original SVG illustration; institutional media only from official source, record exact URL/hash before build. No supplied portrait/offer letter exists."
+      },
+      "handoff": "Cửa sổ thu về mép trang sổ cảnh 02.",
+      "transition_to_next": "Cửa sổ thu về mép trang sổ cảnh 02.",
+      "fact_status": "editorial/illustrative",
+      "publication_hold": false,
+      "start_sample": 0,
+      "end_sample": 77087,
+      "sample_frames": 77087
+    },
+    {
+      "scene_number": 2,
+      "scene_id": "scene_02",
+      "start": 3.2119583333333335,
+      "end": 7.586875,
+      "raw_text": "Đó cũng là tin thần của Trần Minh Nhật, chàng trai đến từ IMIT Việt Nam,",
+      "corrected_text": "Đó cũng là tinh thần của Trần Minh Nhật – chàng trai đến từ RMIT Việt Nam,",
+      "semantic_type": "introduction",
+      "visual_center": "Tên Nhật xuất hiện từ trang sổ sinh viên",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Trang sổ chuyển thành chân dung biểu tượng; không có ảnh cá nhân được cấp nên HYBRID người thật dễ gây hiểu nhầm nhân thân.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Tên Nhật xuất hiện từ trang sổ sinh viên",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 4.374916666666667,
+      "audio_slice": "scratch/audio_slices/scene_02.wav",
+      "audio_sha256": "d70cf00e2adf2041ac1e71506a8a8d3f6744fa9fd306e24cd5f34a555b05d223",
+      "render_mode": "HF_ONLY",
+      "title": "Từ RMIT đến câu chuyện Nhật",
+      "visual_verb": "Nhật kéo trang sang bên, tên và RMIT Việt Nam lộ từ dưới ảnh cắt campus nguồn chính thức.",
+      "narrative_visual": "Trang sổ có hình nhân vật đang bước ra khỏi mép giấy. Nhật kéo trang sang bên, tên và RMIT Việt Nam lộ từ dưới ảnh cắt campus nguồn chính thức.",
+      "opening_state": "Trang sổ có hình nhân vật đang bước ra khỏi mép giấy.",
+      "transformation": "Nhật kéo trang sang bên, tên và RMIT Việt Nam lộ từ dưới ảnh cắt campus nguồn chính thức.",
+      "final_state": "Tên gắn với nhân vật, RMIT chỉ là xuất phát điểm.",
+      "protagonist_action": "Nhật mở trang giới thiệu; không giả chân dung thật.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            1.006
+          ],
+          "action": "Trang sổ có hình nhân vật đang bước ra khỏi mép giấy."
+        },
+        {
+          "range": [
+            1.006,
+            3.412
+          ],
+          "action": "Nhật kéo trang sang bên, tên và RMIT Việt Nam lộ từ dưới ảnh cắt campus nguồn chính thức."
+        },
+        {
+          "range": [
+            3.412,
+            4.374916666666667
+          ],
+          "action": "Tên gắn với nhân vật, RMIT chỉ là xuất phát điểm."
+        }
+      ],
+      "timing_evidence": "Phase timing proportional estimate; align spoken cues before each unbuilt scene render. Pilot has measured/inspected cues separately.",
+      "hf_signature_motion": "Nhật kéo trang sang bên, tên và RMIT Việt Nam lộ từ dưới ảnh cắt campus nguồn chính thức.",
+      "signature_motion": "Nhật kéo trang sang bên, tên và RMIT Việt Nam lộ từ dưới ảnh cắt campus nguồn chính thức.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "bounds": "main stage x70–650, y350–1000 (720×1280)",
+          "semantic_boundary": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+          "removal_consequence": "Bỏ ranh giới sẽ mất động tác mở/lật/ghép hoặc nguồn gốc vật liệu của ý kể."
+        }
+      ],
+      "container_semantics": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "simultaneous_labels_max": 2,
+        "rule": "Short labels only; no paragraphs. Labels in scene06 replace earlier labels."
+      },
+      "visible_text_inventory": [
+        "TRẦN MINH NHẬT",
+        "RMIT Việt Nam"
+      ],
+      "mobile_legibility_plan": "Main type 40–54px, labels >=28px; review at 360×640. No essential micro-copy.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "status": "planned, not generated",
+        "independent_layers": [
+          "background",
+          "main physical/illustrated setting",
+          "foreground prop layers",
+          "text strips",
+          "original mascot body",
+          "eyes and mouth",
+          "far arm",
+          "near arm",
+          "legs"
+        ],
+        "provenance": "Original SVG illustration; institutional media only from official source, record exact URL/hash before build. No supplied portrait/offer letter exists."
+      },
+      "handoff": "Trang sổ xoay thành cửa ở cảnh 03.",
+      "transition_to_next": "Trang sổ xoay thành cửa ở cảnh 03.",
+      "fact_status": "user-provided personal narrative; no independent admissions evidence",
+      "publication_hold": false,
+      "start_sample": 77087,
+      "end_sample": 182085,
+      "sample_frames": 104998
+    },
+    {
+      "scene_number": 3,
+      "scene_id": "scene_03",
+      "start": 7.586875,
+      "end": 12.4265,
+      "raw_text": "vừa chính thức chính phục thành công một trong những trường đại học nghiên cứu dành tiếng nhất Hà Lan.",
+      "corrected_text": "vừa chính thức chinh phục thành công một trong những trường đại học nghiên cứu danh tiếng nhất Hà Lan.",
+      "semantic_type": "achievement",
+      "visual_center": "Cánh cửa giấy bật mở về Amsterdam",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Chuyển đổi cửa giấy thành địa điểm là ý chính; HYBRID cảnh campus thuần túy không thể hiện ngưỡng thành quả.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Cánh cửa giấy bật mở về Amsterdam",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 4.839625,
+      "audio_slice": "scratch/audio_slices/scene_03.wav",
+      "audio_sha256": "d22bc4d3a231f225a5ea64b1b5429644572e2aa44ffe9d6a31adcbbef2f768e4",
+      "render_mode": "HF_ONLY",
+      "title": "Một ngưỡng mới",
+      "visual_verb": "Nhật đẩy cửa; phía trong đổi thành đường mái Hà Lan và mảnh campus chưa gọi tên.",
+      "narrative_visual": "Cánh cửa giấy đóng giữa nền tím nhạt; bên ngoài là vài nét phố Việt minh hoạ. Nhật đẩy cửa; phía trong đổi thành đường mái Hà Lan và mảnh campus chưa gọi tên.",
+      "opening_state": "Cánh cửa giấy đóng giữa nền tím nhạt; bên ngoài là vài nét phố Việt minh hoạ.",
+      "transformation": "Nhật đẩy cửa; phía trong đổi thành đường mái Hà Lan và mảnh campus chưa gọi tên.",
+      "final_state": "Mắt nhìn qua ngưỡng, chuẩn bị gọi tên nơi đến.",
+      "protagonist_action": "Nhật mở cửa và ngước nhìn; không leo núi/cúp thành tích.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            1.113
+          ],
+          "action": "Cánh cửa giấy đóng giữa nền tím nhạt; bên ngoài là vài nét phố Việt minh hoạ."
+        },
+        {
+          "range": [
+            1.113,
+            3.775
+          ],
+          "action": "Nhật đẩy cửa; phía trong đổi thành đường mái Hà Lan và mảnh campus chưa gọi tên."
+        },
+        {
+          "range": [
+            3.775,
+            4.839625
+          ],
+          "action": "Mắt nhìn qua ngưỡng, chuẩn bị gọi tên nơi đến."
+        }
+      ],
+      "timing_evidence": "Phase timing proportional estimate; align spoken cues before each unbuilt scene render. Pilot has measured/inspected cues separately.",
+      "hf_signature_motion": "Nhật đẩy cửa; phía trong đổi thành đường mái Hà Lan và mảnh campus chưa gọi tên.",
+      "signature_motion": "Nhật đẩy cửa; phía trong đổi thành đường mái Hà Lan và mảnh campus chưa gọi tên.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": false,
+      "container_inventory": [],
+      "container_semantics": "none",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "simultaneous_labels_max": 1,
+        "rule": "Short labels only; no paragraphs. Labels in scene06 replace earlier labels."
+      },
+      "visible_text_inventory": [
+        "HÀ LAN"
+      ],
+      "mobile_legibility_plan": "Main type 40–54px, labels >=28px; review at 360×640. No essential micro-copy.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "status": "planned, not generated",
+        "independent_layers": [
+          "background",
+          "main physical/illustrated setting",
+          "foreground prop layers",
+          "text strips",
+          "original mascot body",
+          "eyes and mouth",
+          "far arm",
+          "near arm",
+          "legs"
+        ],
+        "provenance": "Original SVG illustration; institutional media only from official source, record exact URL/hash before build. No supplied portrait/offer letter exists."
+      },
+      "handoff": "Mép cửa match-cut vào mép phong bì.",
+      "transition_to_next": "Mép cửa match-cut vào mép phong bì.",
+      "fact_status": "user-provided personal narrative; no independent admissions evidence",
+      "publication_hold": false,
+      "start_sample": 182085,
+      "end_sample": 298236,
+      "sample_frames": 116151
+    },
+    {
+      "scene_number": 4,
+      "scene_id": "scene_04",
+      "start": 12.4265,
+      "end": 18.447125,
+      "raw_text": "Xin chúc mừng Minh Nhật đã nhận thứ mở nhập học từ V-University Amsterdam, VU Amsterdam.",
+      "corrected_text": "Xin chúc mừng Minh Nhật đã nhận thư mời nhập học từ: Vrije Universiteit Amsterdam (VU Amsterdam).",
+      "semantic_type": "admission",
+      "visual_center": "Phong bì mở, ảnh VU được kéo ra",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Cơ chế phong bì/collage là ẩn dụ thành quả; HYBRID mở thư thật dễ gợi bằng chứng tuyển sinh chưa được cung cấp.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Phong bì mở, ảnh VU được kéo ra",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 6.020625,
+      "audio_slice": "scratch/audio_slices/scene_04.wav",
+      "audio_sha256": "55a4529187c2060f4201a2f1141a6f7517c2255dec5d4b102d3599d1d44c8b24",
+      "render_mode": "HF_ONLY",
+      "title": "Phong thư mở ra điểm đến",
+      "visual_verb": "Nắp mở đúng cụm thư mời; mảnh ảnh campus VU trượt lên khỏi phong bì; Nhật nhấc tay mừng.",
+      "narrative_visual": "Phong bì lớn ở giữa nền kem; Nhật chạm góc nắp, mắt nhìn lên dải Chúc mừng. Nắp mở đúng cụm thư mời; mảnh ảnh campus VU trượt lên khỏi phong bì; Nhật nhấc tay mừng.",
+      "opening_state": "Phong bì lớn ở giữa nền kem; Nhật chạm góc nắp, mắt nhìn lên dải Chúc mừng.",
+      "transformation": "Nắp mở đúng cụm thư mời; mảnh ảnh campus VU trượt lên khỏi phong bì; Nhật nhấc tay mừng.",
+      "final_state": "Tên VU Amsterdam đọc được cùng ảnh nguồn; phong bì vẫn ở dưới làm điểm neo.",
+      "protagonist_action": "Ngóng nhìn phong thư mở; mắt và tay theo ảnh; một nhịp ăn mừng. Không claim giữ góc nắp suốt động tác.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            1.385
+          ],
+          "action": "Phong bì lớn ở giữa nền kem; Nhật chạm góc nắp, mắt nhìn lên dải Chúc mừng."
+        },
+        {
+          "range": [
+            1.385,
+            4.696
+          ],
+          "action": "Nắp mở đúng cụm thư mời; mảnh ảnh campus VU trượt lên khỏi phong bì; Nhật nhấc tay mừng."
+        },
+        {
+          "range": [
+            4.696,
+            6.020625
+          ],
+          "action": "Tên VU Amsterdam đọc được cùng ảnh nguồn; phong bì vẫn ở dưới làm điểm neo."
+        }
+      ],
+      "timing_evidence": "Approximate spoken-cue staging; reviewed sampled rendered states; no word alignment generated.",
+      "hf_signature_motion": "Nắp mở đúng cụm thư mời; mảnh ảnh campus VU trượt lên khỏi phong bì; Nhật nhấc tay mừng.",
+      "signature_motion": "Nắp mở đúng cụm thư mời; mảnh ảnh campus VU trượt lên khỏi phong bì; Nhật nhấc tay mừng.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "bounds": "main stage x70–650, y350–1000 (720×1280)",
+          "semantic_boundary": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+          "removal_consequence": "Bỏ ranh giới sẽ mất động tác mở/lật/ghép hoặc nguồn gốc vật liệu của ý kể."
+        }
+      ],
+      "container_semantics": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "simultaneous_labels_max": 4,
+        "rule": "Short labels only; no paragraphs. Labels in scene06 replace earlier labels."
+      },
+      "visible_text_inventory": [
+        "CHÚC MỪNG",
+        "MINH NHẬT!",
+        "VU AMSTERDAM",
+        "THƯ MỜI NHẬP HỌC"
+      ],
+      "mobile_legibility_plan": "Main type 40–54px, labels >=28px; review at 360×640. No essential micro-copy.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "status": "built in pilot",
+        "independent_layers": [
+          "background",
+          "main physical/illustrated setting",
+          "foreground prop layers",
+          "text strips",
+          "original mascot body",
+          "eyes and mouth",
+          "far arm",
+          "near arm",
+          "legs"
+        ],
+        "provenance": "Original SVG illustration; institutional media only from official source, record exact URL/hash before build. No supplied portrait/offer letter exists."
+      },
+      "handoff": "Ảnh campus mở rộng sang cảnh 05; không wipe trừu tượng.",
+      "transition_to_next": "Ảnh campus mở rộng sang cảnh 05; không wipe trừu tượng.",
+      "fact_status": "user-provided personal narrative; no independent admissions evidence",
+      "publication_hold": false,
+      "start_sample": 298236,
+      "end_sample": 442731,
+      "sample_frames": 144495
+    },
+    {
+      "scene_number": 5,
+      "scene_id": "scene_05",
+      "start": 18.447125,
+      "end": 21.667833333333334,
+      "raw_text": "Một trong những trường đại học nghiên cứu hàng đầu Hà Lan và Châu Âu,",
+      "corrected_text": "Một trong những trường đại học nghiên cứu hàng đầu Hà Lan và châu Âu,",
+      "semantic_type": "institution",
+      "visual_center": "Ảnh campus mở rộng thành không gian nghiên cứu",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Ảnh nguồn được tái bố cục để định danh trường; không cần diễn viên hay motion môi trường giả.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Ảnh campus mở rộng thành không gian nghiên cứu",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 3.2207083333333335,
+      "audio_slice": "scratch/audio_slices/scene_05.wav",
+      "audio_sha256": "1c6864d8790820decbc676d294dc09690f92158299e1f9105a50b9304f66b1a6",
+      "render_mode": "HF_ONLY",
+      "title": "Trường như một môi trường nghiên cứu",
+      "visual_verb": "Khung ảnh được mở cạnh, lộ bản vẽ nhiều lớp của khu học/thư viện quanh công trình.",
+      "narrative_visual": "Ảnh campus từ thư chiếm phần giữa; dải tên giữ nguyên. Khung ảnh được mở cạnh, lộ bản vẽ nhiều lớp của khu học/thư viện quanh công trình.",
+      "opening_state": "Ảnh campus từ thư chiếm phần giữa; dải tên giữ nguyên.",
+      "transformation": "Khung ảnh được mở cạnh, lộ bản vẽ nhiều lớp của khu học/thư viện quanh công trình.",
+      "final_state": "Trường là một môi trường nghiên cứu, không thêm huy chương hay bảng xếp hạng.",
+      "protagonist_action": "Không có nhân vật: ưu tiên định danh địa điểm.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            0.741
+          ],
+          "action": "Ảnh campus từ thư chiếm phần giữa; dải tên giữ nguyên."
+        },
+        {
+          "range": [
+            0.741,
+            2.512
+          ],
+          "action": "Khung ảnh được mở cạnh, lộ bản vẽ nhiều lớp của khu học/thư viện quanh công trình."
+        },
+        {
+          "range": [
+            2.512,
+            3.2207083333333335
+          ],
+          "action": "Trường là một môi trường nghiên cứu, không thêm huy chương hay bảng xếp hạng."
+        }
+      ],
+      "timing_evidence": "Phase timing proportional estimate; align spoken cues before each unbuilt scene render. Pilot has measured/inspected cues separately.",
+      "hf_signature_motion": "Khung ảnh được mở cạnh, lộ bản vẽ nhiều lớp của khu học/thư viện quanh công trình.",
+      "signature_motion": "Khung ảnh được mở cạnh, lộ bản vẽ nhiều lớp của khu học/thư viện quanh công trình.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "identifiable physical object",
+          "bounds": "main stage x70–650, y350–1000 (720×1280)",
+          "semantic_boundary": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+          "removal_consequence": "Bỏ ranh giới sẽ mất động tác mở/lật/ghép hoặc nguồn gốc vật liệu của ý kể."
+        }
+      ],
+      "container_semantics": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "simultaneous_labels_max": 1,
+        "rule": "Short labels only; no paragraphs. Labels in scene06 replace earlier labels."
+      },
+      "visible_text_inventory": [
+        "VU AMSTERDAM"
+      ],
+      "mobile_legibility_plan": "Main type 40–54px, labels >=28px; review at 360×640. No essential micro-copy.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "status": "planned, not generated",
+        "independent_layers": [
+          "background",
+          "main physical/illustrated setting",
+          "foreground prop layers",
+          "text strips"
+        ],
+        "provenance": "Original SVG illustration; institutional media only from official source, record exact URL/hash before build. No supplied portrait/offer letter exists."
+      },
+      "handoff": "Zoom vào một vùng campus để mở các ngành.",
+      "transition_to_next": "Zoom vào một vùng campus để mở các ngành.",
+      "fact_status": "institutional context supported; no ranking/guarantee visual added",
+      "publication_hold": false,
+      "start_sample": 442731,
+      "end_sample": 520028,
+      "sample_frames": 77297
+    },
+    {
+      "scene_number": 6,
+      "scene_id": "scene_06",
+      "start": 21.667833333333334,
+      "end": 26.8605,
+      "raw_text": "nổi tiếng với các lĩnh vực kinh doanh, khoa học giữ liệu, trí tuệ nhân tạo, luật và khoa học sức khỏe.",
+      "corrected_text": "nổi tiếng với các lĩnh vực Kinh doanh, Khoa học Dữ liệu, Trí tuệ nhân tạo, Luật và Khoa học Sức khỏe.",
+      "semantic_type": "membership",
+      "visual_center": "Năm cửa sổ nghiên cứu thuộc cùng campus",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Quan hệ tập hợp ngành trong cùng trường cần các lớp đồng hiện; người thật đi qua từng phòng sẽ biến thành hành trình sai nghĩa.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Năm cửa sổ nghiên cứu thuộc cùng campus",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 5.192666666666667,
+      "audio_slice": "scratch/audio_slices/scene_06.wav",
+      "audio_sha256": "deb5086155956deaa12be2efee46c7d7a4d42f03d2b2feac0c9c9d5e74acf0ab",
+      "render_mode": "HF_ONLY",
+      "title": "Nhiều lĩnh vực cùng một trường",
+      "visual_verb": "Lần lượt sáng năm vùng: bàn phân tích kinh doanh, dữ liệu, mô hình AI, sách luật, bàn nghiên cứu sức khoẻ; các vùng không nối thành dây chuyền.",
+      "narrative_visual": "Một campus mở mặt cắt với nhiều không gian trong cùng kiến trúc. Lần lượt sáng năm vùng: bàn phân tích kinh doanh, dữ liệu, mô hình AI, sách luật, bàn nghiên cứu sức khoẻ; các vùng không nối thành dây chuyền.",
+      "opening_state": "Một campus mở mặt cắt với nhiều không gian trong cùng kiến trúc.",
+      "transformation": "Lần lượt sáng năm vùng: bàn phân tích kinh doanh, dữ liệu, mô hình AI, sách luật, bàn nghiên cứu sức khoẻ; các vùng không nối thành dây chuyền.",
+      "final_state": "Tất cả thuộc cùng trường; chỉ hai nhãn đang đọc nổi tại một lúc.",
+      "protagonist_action": "Không thêm nhân vật vì tập hợp ngành cần đọc được; không dùng icon rời/gear dây chuyền.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            1.194
+          ],
+          "action": "Một campus mở mặt cắt với nhiều không gian trong cùng kiến trúc."
+        },
+        {
+          "range": [
+            1.194,
+            4.05
+          ],
+          "action": "Lần lượt sáng năm vùng: bàn phân tích kinh doanh, dữ liệu, mô hình AI, sách luật, bàn nghiên cứu sức khoẻ; các vùng không nối thành dây chuyền."
+        },
+        {
+          "range": [
+            4.05,
+            5.192666666666667
+          ],
+          "action": "Tất cả thuộc cùng trường; chỉ hai nhãn đang đọc nổi tại một lúc."
+        }
+      ],
+      "timing_evidence": "Phase timing proportional estimate; align spoken cues before each unbuilt scene render. Pilot has measured/inspected cues separately.",
+      "hf_signature_motion": "Lần lượt sáng năm vùng: bàn phân tích kinh doanh, dữ liệu, mô hình AI, sách luật, bàn nghiên cứu sức khoẻ; các vùng không nối thành dây chuyền.",
+      "signature_motion": "Lần lượt sáng năm vùng: bàn phân tích kinh doanh, dữ liệu, mô hình AI, sách luật, bàn nghiên cứu sức khoẻ; các vùng không nối thành dây chuyền.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": false,
+      "container_inventory": [],
+      "container_semantics": "none",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "simultaneous_labels_max": 2,
+        "rule": "Short labels only; no paragraphs. Labels in scene06 replace earlier labels."
+      },
+      "visible_text_inventory": [
+        "Kinh doanh",
+        "Dữ liệu",
+        "AI",
+        "Luật",
+        "Sức khoẻ"
+      ],
+      "mobile_legibility_plan": "Main type 40–54px, labels >=28px; review at 360×640. No essential micro-copy.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "status": "planned, not generated",
+        "independent_layers": [
+          "background",
+          "main physical/illustrated setting",
+          "foreground prop layers",
+          "text strips"
+        ],
+        "provenance": "Original SVG illustration; institutional media only from official source, record exact URL/hash before build. No supplied portrait/offer letter exists."
+      },
+      "handoff": "Mặt cắt khép lại thành bìa giấy.",
+      "transition_to_next": "Mặt cắt khép lại thành bìa giấy.",
+      "fact_status": "institutional context supported; no ranking/guarantee visual added",
+      "publication_hold": false,
+      "start_sample": 520028,
+      "end_sample": 644652,
+      "sample_frames": 124624
+    },
+    {
+      "scene_number": 7,
+      "scene_id": "scene_07",
+      "start": 26.8605,
+      "end": 31.143833333333333,
+      "raw_text": "Tấm bằng từ VU Amsterdam, được các doanh nghiệp và tổ chức quốc tế đánh giá cao,",
+      "corrected_text": "Tấm bằng từ VU Amsterdam được các doanh nghiệp và tổ chức quốc tế đánh giá cao,",
+      "semantic_type": "recognition",
+      "visual_center": "Tấm bằng minh hoạ ở giữa mạng liên hệ quốc tế",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Các liên hệ là khả năng/nhận diện, không phải lời mời việc; plate diễn viên bắt tay có thể hàm ý kết quả việc làm đã xảy ra.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Tấm bằng minh hoạ ở giữa mạng liên hệ quốc tế",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 4.283333333333333,
+      "audio_slice": "scratch/audio_slices/scene_07.wav",
+      "audio_sha256": "6c283804c6904a47273a6ae0e5d04e661ccd7ccb58d73642941f08bcc257b4b3",
+      "render_mode": "HF_ONLY",
+      "title": "Giá trị học thuật trong mạng liên hệ",
+      "visual_verb": "Các đường liên hệ mở ra hình nơi nghiên cứu và làm việc ở xa, không có dấu nhận việc.",
+      "narrative_visual": "Tấm bằng minh hoạ đơn giản lớn ở giữa; không chữ ký hay điểm số. Các đường liên hệ mở ra hình nơi nghiên cứu và làm việc ở xa, không có dấu nhận việc.",
+      "opening_state": "Tấm bằng minh hoạ đơn giản lớn ở giữa; không chữ ký hay điểm số.",
+      "transformation": "Các đường liên hệ mở ra hình nơi nghiên cứu và làm việc ở xa, không có dấu nhận việc.",
+      "final_state": "Duy trì khả năng kết nối, không chốt kết quả hay mức lương.",
+      "protagonist_action": "Không nhân vật để giữ bằng và mạng liên hệ làm trọng tâm.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            0.985
+          ],
+          "action": "Tấm bằng minh hoạ đơn giản lớn ở giữa; không chữ ký hay điểm số."
+        },
+        {
+          "range": [
+            0.985,
+            3.341
+          ],
+          "action": "Các đường liên hệ mở ra hình nơi nghiên cứu và làm việc ở xa, không có dấu nhận việc."
+        },
+        {
+          "range": [
+            3.341,
+            4.283333333333333
+          ],
+          "action": "Duy trì khả năng kết nối, không chốt kết quả hay mức lương."
+        }
+      ],
+      "timing_evidence": "Phase timing proportional estimate; align spoken cues before each unbuilt scene render. Pilot has measured/inspected cues separately.",
+      "hf_signature_motion": "Các đường liên hệ mở ra hình nơi nghiên cứu và làm việc ở xa, không có dấu nhận việc.",
+      "signature_motion": "Các đường liên hệ mở ra hình nơi nghiên cứu và làm việc ở xa, không có dấu nhận việc.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "bounds": "main stage x70–650, y350–1000 (720×1280)",
+          "semantic_boundary": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+          "removal_consequence": "Bỏ ranh giới sẽ mất động tác mở/lật/ghép hoặc nguồn gốc vật liệu của ý kể."
+        }
+      ],
+      "container_semantics": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "simultaneous_labels_max": 1,
+        "rule": "Short labels only; no paragraphs. Labels in scene06 replace earlier labels."
+      },
+      "visible_text_inventory": [
+        "GIÁ TRỊ HỌC THUẬT"
+      ],
+      "mobile_legibility_plan": "Main type 40–54px, labels >=28px; review at 360×640. No essential micro-copy.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "status": "planned, not generated",
+        "independent_layers": [
+          "background",
+          "main physical/illustrated setting",
+          "foreground prop layers",
+          "text strips"
+        ],
+        "provenance": "Original SVG illustration; institutional media only from official source, record exact URL/hash before build. No supplied portrait/offer letter exists."
+      },
+      "handoff": "Một đường liên hệ dẫn sang cảnh cơ hội.",
+      "transition_to_next": "Một đường liên hệ dẫn sang cảnh cơ hội.",
+      "fact_status": "institutional context supported; no ranking/guarantee visual added",
+      "publication_hold": false,
+      "start_sample": 644652,
+      "end_sample": 747452,
+      "sample_frames": 102800
+    },
+    {
+      "scene_number": 8,
+      "scene_id": "scene_08",
+      "start": 31.143833333333333,
+      "end": 34.25683333333333,
+      "raw_text": "mở ra nhiều cơ hội học tập và nghề nghiệp trên toàn cầu.",
+      "corrected_text": "mở ra nhiều cơ hội học tập và nghề nghiệp trên toàn cầu.",
+      "semantic_type": "possibility",
+      "visual_center": "Từ campus mở ra nhiều nhánh cơ hội",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Các nhánh cong mở đồng thời, không phải lộ trình chắc chắn; HYBRID bay đến nơi cụ thể dễ thêm dữ kiện.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Từ campus mở ra nhiều nhánh cơ hội",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 3.113,
+      "audio_slice": "scratch/audio_slices/scene_08.wav",
+      "audio_sha256": "220bb11ee70b626ca989cb1b0785c8909b02350665bdc6413a659da637743d7d",
+      "render_mode": "HF_ONLY",
+      "title": "Cơ hội mở, chưa định sẵn",
+      "visual_verb": "Giấy mở thành các nhánh cong: học tiếp, nghiên cứu, công việc; Nhật quan sát và chọn hướng nhìn.",
+      "narrative_visual": "Nhật đứng ở điểm xuất phát cạnh trang campus. Giấy mở thành các nhánh cong: học tiếp, nghiên cứu, công việc; Nhật quan sát và chọn hướng nhìn.",
+      "opening_state": "Nhật đứng ở điểm xuất phát cạnh trang campus.",
+      "transformation": "Giấy mở thành các nhánh cong: học tiếp, nghiên cứu, công việc; Nhật quan sát và chọn hướng nhìn.",
+      "final_state": "Nhánh còn mở ngoài khung, không có job offer.",
+      "protagonist_action": "Nhật xem các lựa chọn; chưa đến đích.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            0.716
+          ],
+          "action": "Nhật đứng ở điểm xuất phát cạnh trang campus."
+        },
+        {
+          "range": [
+            0.716,
+            2.428
+          ],
+          "action": "Giấy mở thành các nhánh cong: học tiếp, nghiên cứu, công việc; Nhật quan sát và chọn hướng nhìn."
+        },
+        {
+          "range": [
+            2.428,
+            3.113
+          ],
+          "action": "Nhánh còn mở ngoài khung, không có job offer."
+        }
+      ],
+      "timing_evidence": "Phase timing proportional estimate; align spoken cues before each unbuilt scene render. Pilot has measured/inspected cues separately.",
+      "hf_signature_motion": "Giấy mở thành các nhánh cong: học tiếp, nghiên cứu, công việc; Nhật quan sát và chọn hướng nhìn.",
+      "signature_motion": "Giấy mở thành các nhánh cong: học tiếp, nghiên cứu, công việc; Nhật quan sát và chọn hướng nhìn.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": false,
+      "container_inventory": [],
+      "container_semantics": "none",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "simultaneous_labels_max": 1,
+        "rule": "Short labels only; no paragraphs. Labels in scene06 replace earlier labels."
+      },
+      "visible_text_inventory": [
+        "CƠ HỘI RỘNG MỞ"
+      ],
+      "mobile_legibility_plan": "Main type 40–54px, labels >=28px; review at 360×640. No essential micro-copy.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "status": "planned, not generated",
+        "independent_layers": [
+          "background",
+          "main physical/illustrated setting",
+          "foreground prop layers",
+          "text strips",
+          "original mascot body",
+          "eyes and mouth",
+          "far arm",
+          "near arm",
+          "legs"
+        ],
+        "provenance": "Original SVG illustration; institutional media only from official source, record exact URL/hash before build. No supplied portrait/offer letter exists."
+      },
+      "handoff": "Một nhánh cuộn ngược về bàn chuẩn bị.",
+      "transition_to_next": "Một nhánh cuộn ngược về bàn chuẩn bị.",
+      "fact_status": "institutional context supported; no ranking/guarantee visual added",
+      "publication_hold": false,
+      "start_sample": 747452,
+      "end_sample": 822164,
+      "sample_frames": 74712
+    },
+    {
+      "scene_number": 9,
+      "scene_id": "scene_09",
+      "start": 34.25683333333333,
+      "end": 37.660916666666665,
+      "raw_text": "Đằng sau thành quả ấy là cả một quá trình chuẩn bị nghiêm túc.",
+      "corrected_text": "Đằng sau thành quả ấy là cả một quá trình chuẩn bị nghiêm túc.",
+      "semantic_type": "rewind",
+      "visual_center": "Lật mặt sau thành quả về bàn nháp",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Đảo collage thành các lớp bản nháp diễn đạt quan hệ thành quả/công sức; quay bàn thật chỉ mô tả người viết, mất cú lật ý.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Lật mặt sau thành quả về bàn nháp",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 3.4040833333333333,
+      "audio_slice": "scratch/audio_slices/scene_09.wav",
+      "audio_sha256": "82456af6f2b7d993292bca0b847fa2df1fb8ffb2f0f6d758606baa9768ef37f6",
+      "render_mode": "HF_ONLY",
+      "title": "Đằng sau bức hình đẹp",
+      "visual_verb": "Nhật lật mặt sau khung; phía sau là giấy nháp, ghi chú và các lần sửa chồng nhẹ.",
+      "narrative_visual": "Khung ảnh thành quả ở cảnh trước nằm trên bàn. Nhật lật mặt sau khung; phía sau là giấy nháp, ghi chú và các lần sửa chồng nhẹ.",
+      "opening_state": "Khung ảnh thành quả ở cảnh trước nằm trên bàn.",
+      "transformation": "Nhật lật mặt sau khung; phía sau là giấy nháp, ghi chú và các lần sửa chồng nhẹ.",
+      "final_state": "Bàn làm việc đầy dấu vết công sức, không chồng checklist.",
+      "protagonist_action": "Nhật lật khung và cúi vào bàn sửa bài.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            0.783
+          ],
+          "action": "Khung ảnh thành quả ở cảnh trước nằm trên bàn."
+        },
+        {
+          "range": [
+            0.783,
+            2.655
+          ],
+          "action": "Nhật lật mặt sau khung; phía sau là giấy nháp, ghi chú và các lần sửa chồng nhẹ."
+        },
+        {
+          "range": [
+            2.655,
+            3.4040833333333333
+          ],
+          "action": "Bàn làm việc đầy dấu vết công sức, không chồng checklist."
+        }
+      ],
+      "timing_evidence": "Phase timing proportional estimate; align spoken cues before each unbuilt scene render. Pilot has measured/inspected cues separately.",
+      "hf_signature_motion": "Nhật lật mặt sau khung; phía sau là giấy nháp, ghi chú và các lần sửa chồng nhẹ.",
+      "signature_motion": "Nhật lật mặt sau khung; phía sau là giấy nháp, ghi chú và các lần sửa chồng nhẹ.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "bounds": "main stage x70–650, y350–1000 (720×1280)",
+          "semantic_boundary": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+          "removal_consequence": "Bỏ ranh giới sẽ mất động tác mở/lật/ghép hoặc nguồn gốc vật liệu của ý kể."
+        }
+      ],
+      "container_semantics": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "simultaneous_labels_max": 1,
+        "rule": "Short labels only; no paragraphs. Labels in scene06 replace earlier labels."
+      },
+      "visible_text_inventory": [
+        "PHÍA SAU THÀNH QUẢ"
+      ],
+      "mobile_legibility_plan": "Main type 40–54px, labels >=28px; review at 360×640. No essential micro-copy.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "status": "planned, not generated",
+        "independent_layers": [
+          "background",
+          "main physical/illustrated setting",
+          "foreground prop layers",
+          "text strips",
+          "original mascot body",
+          "eyes and mouth",
+          "far arm",
+          "near arm",
+          "legs"
+        ],
+        "provenance": "Original SVG illustration; institutional media only from official source, record exact URL/hash before build. No supplied portrait/offer letter exists."
+      },
+      "handoff": "Giữ bàn này cho mentor bước vào.",
+      "transition_to_next": "Giữ bàn này cho mentor bước vào.",
+      "fact_status": "editorial/illustrative",
+      "publication_hold": false,
+      "start_sample": 822164,
+      "end_sample": 903862,
+      "sample_frames": 81698
+    },
+    {
+      "scene_number": 10,
+      "scene_id": "scene_10",
+      "start": 37.660916666666665,
+      "end": 41.14704166666667,
+      "raw_text": "Với sự đồng hành của đội ngủ Menthe Esora hơn 14 năm kinh nghiệm,",
+      "corrected_text": "Với sự đồng hành của đội ngũ Mentor Esora hơn 14 năm kinh nghiệm,",
+      "semantic_type": "support",
+      "visual_center": "Hai bút cùng chỉnh một trang kế hoạch",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Đường sửa góp ý và nét bút học viên cần phân biệt tác giả; HYBRID hai diễn viên dễ biến thành cuộc gặp cụ thể không được cung cấp.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Hai bút cùng chỉnh một trang kế hoạch",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 3.486125,
+      "audio_slice": "scratch/audio_slices/scene_10.wav",
+      "audio_sha256": "f00769831a9390a7bf5e0ca3587b1bd6953da9bc597d65b8a318a1ed0b74de16",
+      "render_mode": "HF_ONLY",
+      "title": "Đồng hành thực sự",
+      "visual_verb": "Mentor chỉ vào một đoạn; Nhật sửa bằng bút cam, vẫn nắm quyền viết.",
+      "narrative_visual": "Nhật ngồi bên bản kế hoạch, mentor nhỏ màu xanh ở phía đối diện. Mentor chỉ vào một đoạn; Nhật sửa bằng bút cam, vẫn nắm quyền viết.",
+      "opening_state": "Nhật ngồi bên bản kế hoạch, mentor nhỏ màu xanh ở phía đối diện.",
+      "transformation": "Mentor chỉ vào một đoạn; Nhật sửa bằng bút cam, vẫn nắm quyền viết.",
+      "final_state": "Trang gọn hơn, hai nét đóng góp được phân biệt.",
+      "protagonist_action": "Mentor chỉ, Nhật chỉnh bài; không bắt tay lấp cảnh.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            0.802
+          ],
+          "action": "Nhật ngồi bên bản kế hoạch, mentor nhỏ màu xanh ở phía đối diện."
+        },
+        {
+          "range": [
+            0.802,
+            2.719
+          ],
+          "action": "Mentor chỉ vào một đoạn; Nhật sửa bằng bút cam, vẫn nắm quyền viết."
+        },
+        {
+          "range": [
+            2.719,
+            3.486125
+          ],
+          "action": "Trang gọn hơn, hai nét đóng góp được phân biệt."
+        }
+      ],
+      "timing_evidence": "Phase timing proportional estimate; align spoken cues before each unbuilt scene render. Pilot has measured/inspected cues separately.",
+      "hf_signature_motion": "Mentor chỉ vào một đoạn; Nhật sửa bằng bút cam, vẫn nắm quyền viết.",
+      "signature_motion": "Mentor chỉ vào một đoạn; Nhật sửa bằng bút cam, vẫn nắm quyền viết.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "bounds": "main stage x70–650, y350–1000 (720×1280)",
+          "semantic_boundary": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+          "removal_consequence": "Bỏ ranh giới sẽ mất động tác mở/lật/ghép hoặc nguồn gốc vật liệu của ý kể."
+        }
+      ],
+      "container_semantics": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "simultaneous_labels_max": 1,
+        "rule": "Short labels only; no paragraphs. Labels in scene06 replace earlier labels."
+      },
+      "visible_text_inventory": [
+        "MENTOR ESORA"
+      ],
+      "mobile_legibility_plan": "Main type 40–54px, labels >=28px; review at 360×640. No essential micro-copy.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "status": "planned, not generated",
+        "independent_layers": [
+          "background",
+          "main physical/illustrated setting",
+          "foreground prop layers",
+          "text strips",
+          "original mascot body",
+          "eyes and mouth",
+          "far arm",
+          "near arm",
+          "legs"
+        ],
+        "provenance": "Original SVG illustration; institutional media only from official source, record exact URL/hash before build. No supplied portrait/offer letter exists."
+      },
+      "handoff": "Trang chỉnh sửa chuyển thành hồ sơ.",
+      "transition_to_next": "Trang chỉnh sửa chuyển thành hồ sơ.",
+      "fact_status": "HOLD: voice says mentor >14 years; official Esora about page says organisation >13 years. No 14-year graphic.",
+      "publication_hold": true,
+      "start_sample": 903862,
+      "end_sample": 987529,
+      "sample_frames": 83667
+    },
+    {
+      "scene_number": 11,
+      "scene_id": "scene_11",
+      "start": 41.14704166666667,
+      "end": 44.711375,
+      "raw_text": "Minh Nhật đã xây dẫn một bộ hồ sơ không chỉ thể hiện thành tích học tập,",
+      "corrected_text": "Minh Nhật đã xây dựng một bộ hồ sơ không chỉ thể hiện thành tích học tập,",
+      "semantic_type": "evidence",
+      "visual_center": "Gom thành tích vào bộ hồ sơ vật lý",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Các mảnh bằng chứng ghép vào bìa hồ sơ không có điểm số bịa; HYBRID document thật đòi tài liệu cá nhân chưa có.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Gom thành tích vào bộ hồ sơ vật lý",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 3.5643333333333334,
+      "audio_slice": "scratch/audio_slices/scene_11.wav",
+      "audio_sha256": "1830222046517674e5d5eb59943e244e5290c3fd6a7297762f89d3404c5b8115",
+      "render_mode": "HF_ONLY",
+      "title": "Thành tích là chất liệu",
+      "visual_verb": "Nhật đặt mảnh vào trang, rồi các chất liệu học tập khác được ghép có chủ ý.",
+      "narrative_visual": "Bìa hồ sơ mở trên bàn; Nhật cầm một mảnh minh hoạ hoạt động học tập. Nhật đặt mảnh vào trang, rồi các chất liệu học tập khác được ghép có chủ ý.",
+      "opening_state": "Bìa hồ sơ mở trên bàn; Nhật cầm một mảnh minh hoạ hoạt động học tập.",
+      "transformation": "Nhật đặt mảnh vào trang, rồi các chất liệu học tập khác được ghép có chủ ý.",
+      "final_state": "Hồ sơ có bằng chứng, không có GPA/chứng chỉ bịa.",
+      "protagonist_action": "Nhật tự chọn và gắn bằng chứng.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            0.82
+          ],
+          "action": "Bìa hồ sơ mở trên bàn; Nhật cầm một mảnh minh hoạ hoạt động học tập."
+        },
+        {
+          "range": [
+            0.82,
+            2.78
+          ],
+          "action": "Nhật đặt mảnh vào trang, rồi các chất liệu học tập khác được ghép có chủ ý."
+        },
+        {
+          "range": [
+            2.78,
+            3.5643333333333334
+          ],
+          "action": "Hồ sơ có bằng chứng, không có GPA/chứng chỉ bịa."
+        }
+      ],
+      "timing_evidence": "Phase timing proportional estimate; align spoken cues before each unbuilt scene render. Pilot has measured/inspected cues separately.",
+      "hf_signature_motion": "Nhật đặt mảnh vào trang, rồi các chất liệu học tập khác được ghép có chủ ý.",
+      "signature_motion": "Nhật đặt mảnh vào trang, rồi các chất liệu học tập khác được ghép có chủ ý.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "bounds": "main stage x70–650, y350–1000 (720×1280)",
+          "semantic_boundary": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+          "removal_consequence": "Bỏ ranh giới sẽ mất động tác mở/lật/ghép hoặc nguồn gốc vật liệu của ý kể."
+        }
+      ],
+      "container_semantics": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "simultaneous_labels_max": 1,
+        "rule": "Short labels only; no paragraphs. Labels in scene06 replace earlier labels."
+      },
+      "visible_text_inventory": [
+        "HỒ SƠ ỨNG TUYỂN"
+      ],
+      "mobile_legibility_plan": "Main type 40–54px, labels >=28px; review at 360×640. No essential micro-copy.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "status": "planned, not generated",
+        "independent_layers": [
+          "background",
+          "main physical/illustrated setting",
+          "foreground prop layers",
+          "text strips",
+          "original mascot body",
+          "eyes and mouth",
+          "far arm",
+          "near arm",
+          "legs"
+        ],
+        "provenance": "Original SVG illustration; institutional media only from official source, record exact URL/hash before build. No supplied portrait/offer letter exists."
+      },
+      "handoff": "Mé ảnh kéo ra thành góc nhìn cá nhân.",
+      "transition_to_next": "Mé ảnh kéo ra thành góc nhìn cá nhân.",
+      "fact_status": "user-provided personal narrative; no independent admissions evidence",
+      "publication_hold": false,
+      "start_sample": 987529,
+      "end_sample": 1073073,
+      "sample_frames": 85544
+    },
+    {
+      "scene_number": 12,
+      "scene_id": "scene_12",
+      "start": 44.711375,
+      "end": 49.130625,
+      "raw_text": "mà còn phản ánh rõ tư duy, cá tính và định hướng phát triển của bản thân.",
+      "corrected_text": "mà còn phản ánh rõ tư duy, cá tính và định hướng phát triển của bản thân.",
+      "semantic_type": "identity",
+      "visual_center": "Hồ sơ mở ra thành thế giới riêng của Nhật",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Ba lớp tư duy/cá tính/định hướng biểu hiện bằng cấu trúc hình; ẩn dụ giấy mở không phải người đang biểu diễn.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Hồ sơ mở ra thành thế giới riêng của Nhật",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 4.41925,
+      "audio_slice": "scratch/audio_slices/scene_12.wav",
+      "audio_sha256": "fdeb4c276a2ba33d9b081f44808f5c7d0d8ed1bb28adae597dfe54a4c11f6b0d",
+      "render_mode": "HF_ONLY",
+      "title": "Hồ sơ có một con người ở trong",
+      "visual_verb": "Nét bút phát triển thành cách Nhật giải quyết một hình ghép, chọn màu riêng, rồi mở hướng trên trang; cùng một cảnh được phát triển, không ba ô.",
+      "narrative_visual": "Hồ sơ đang mở, bút cam nối từ nét sửa ở cảnh 11. Nét bút phát triển thành cách Nhật giải quyết một hình ghép, chọn màu riêng, rồi mở hướng trên trang; cùng một cảnh được phát triển, không ba ô.",
+      "opening_state": "Hồ sơ đang mở, bút cam nối từ nét sửa ở cảnh 11.",
+      "transformation": "Nét bút phát triển thành cách Nhật giải quyết một hình ghép, chọn màu riêng, rồi mở hướng trên trang; cùng một cảnh được phát triển, không ba ô.",
+      "final_state": "Thế giới riêng hiện ra từ mặt giấy.",
+      "protagonist_action": "Nhật xoay một mảnh hình, quyết định cách ghép và hướng tới phần chưa hoàn tất.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            1.016
+          ],
+          "action": "Hồ sơ đang mở, bút cam nối từ nét sửa ở cảnh 11."
+        },
+        {
+          "range": [
+            1.016,
+            3.447
+          ],
+          "action": "Nét bút phát triển thành cách Nhật giải quyết một hình ghép, chọn màu riêng, rồi mở hướng trên trang; cùng một cảnh được phát triển, không ba ô."
+        },
+        {
+          "range": [
+            3.447,
+            4.41925
+          ],
+          "action": "Thế giới riêng hiện ra từ mặt giấy."
+        }
+      ],
+      "timing_evidence": "Phase timing proportional estimate; align spoken cues before each unbuilt scene render. Pilot has measured/inspected cues separately.",
+      "hf_signature_motion": "Nét bút phát triển thành cách Nhật giải quyết một hình ghép, chọn màu riêng, rồi mở hướng trên trang; cùng một cảnh được phát triển, không ba ô.",
+      "signature_motion": "Nét bút phát triển thành cách Nhật giải quyết một hình ghép, chọn màu riêng, rồi mở hướng trên trang; cùng một cảnh được phát triển, không ba ô.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "bounds": "main stage x70–650, y350–1000 (720×1280)",
+          "semantic_boundary": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+          "removal_consequence": "Bỏ ranh giới sẽ mất động tác mở/lật/ghép hoặc nguồn gốc vật liệu của ý kể."
+        }
+      ],
+      "container_semantics": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "simultaneous_labels_max": 3,
+        "rule": "Short labels only; no paragraphs. Labels in scene06 replace earlier labels."
+      },
+      "visible_text_inventory": [
+        "TƯ DUY",
+        "CÁ TÍNH",
+        "ĐỊNH HƯỚNG"
+      ],
+      "mobile_legibility_plan": "Main type 40–54px, labels >=28px; review at 360×640. No essential micro-copy.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "status": "planned, not generated",
+        "independent_layers": [
+          "background",
+          "main physical/illustrated setting",
+          "foreground prop layers",
+          "text strips",
+          "original mascot body",
+          "eyes and mouth",
+          "far arm",
+          "near arm",
+          "legs"
+        ],
+        "provenance": "Original SVG illustration; institutional media only from official source, record exact URL/hash before build. No supplied portrait/offer letter exists."
+      },
+      "handoff": "Trang giấy tách ra để đối chiếu các câu chuyện.",
+      "transition_to_next": "Trang giấy tách ra để đối chiếu các câu chuyện.",
+      "fact_status": "user-provided personal narrative; no independent admissions evidence",
+      "publication_hold": false,
+      "start_sample": 1073073,
+      "end_sample": 1179135,
+      "sample_frames": 106062
+    },
+    {
+      "scene_number": 13,
+      "scene_id": "scene_13",
+      "start": 49.130625,
+      "end": 51.23254166666667,
+      "raw_text": "Bộ ứng diên đều có một câu chuyện riêng.",
+      "corrected_text": "Mỗi ứng viên đều có một câu chuyện riêng.",
+      "semantic_type": "individuality",
+      "visual_center": "Các nét chữ riêng tạo thành nhiều cuốn sổ khác nhau",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Khác biệt nằm ở cùng vật thể có dấu vết khác nhau; thêm nhân vật sẽ phân tán beat chỉ dài 2.1 giây.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Các nét chữ riêng tạo thành nhiều cuốn sổ khác nhau",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 2.101916666666667,
+      "audio_slice": "scratch/audio_slices/scene_13.wav",
+      "audio_sha256": "7b1ef75e605e5e81e0aa3cbfe04d7ab52dac4e2f14ead96f970a29e954c21b56",
+      "render_mode": "HF_ONLY",
+      "title": "Mỗi câu chuyện một dấu tay",
+      "visual_verb": "Các nét vẽ/tờ kẹp khác nhau xuất hiện; một cuốn mang nét cam của Nhật.",
+      "narrative_visual": "Cận ba cuốn sổ có cùng kích thước và cấu trúc vật lý. Các nét vẽ/tờ kẹp khác nhau xuất hiện; một cuốn mang nét cam của Nhật.",
+      "opening_state": "Cận ba cuốn sổ có cùng kích thước và cấu trúc vật lý.",
+      "transformation": "Các nét vẽ/tờ kẹp khác nhau xuất hiện; một cuốn mang nét cam của Nhật.",
+      "final_state": "Khác biệt thể hiện bằng dấu vết, không xếp hạng người.",
+      "protagonist_action": "Không nhân vật vì beat 2.1 giây; cuốn sổ có dấu riêng đã đủ.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            0.483
+          ],
+          "action": "Cận ba cuốn sổ có cùng kích thước và cấu trúc vật lý."
+        },
+        {
+          "range": [
+            0.483,
+            1.639
+          ],
+          "action": "Các nét vẽ/tờ kẹp khác nhau xuất hiện; một cuốn mang nét cam của Nhật."
+        },
+        {
+          "range": [
+            1.639,
+            2.101916666666667
+          ],
+          "action": "Khác biệt thể hiện bằng dấu vết, không xếp hạng người."
+        }
+      ],
+      "timing_evidence": "Phase timing proportional estimate; align spoken cues before each unbuilt scene render. Pilot has measured/inspected cues separately.",
+      "hf_signature_motion": "Các nét vẽ/tờ kẹp khác nhau xuất hiện; một cuốn mang nét cam của Nhật.",
+      "signature_motion": "Các nét vẽ/tờ kẹp khác nhau xuất hiện; một cuốn mang nét cam của Nhật.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "bounds": "main stage x70–650, y350–1000 (720×1280)",
+          "semantic_boundary": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+          "removal_consequence": "Bỏ ranh giới sẽ mất động tác mở/lật/ghép hoặc nguồn gốc vật liệu của ý kể."
+        }
+      ],
+      "container_semantics": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "simultaneous_labels_max": 1,
+        "rule": "Short labels only; no paragraphs. Labels in scene06 replace earlier labels."
+      },
+      "visible_text_inventory": [
+        "CÂU CHUYỆN RIÊNG"
+      ],
+      "mobile_legibility_plan": "Main type 40–54px, labels >=28px; review at 360×640. No essential micro-copy.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "status": "planned, not generated",
+        "independent_layers": [
+          "background",
+          "main physical/illustrated setting",
+          "foreground prop layers",
+          "text strips"
+        ],
+        "provenance": "Original SVG illustration; institutional media only from official source, record exact URL/hash before build. No supplied portrait/offer letter exists."
+      },
+      "handoff": "Camera theo cuốn của Nhật mở ra.",
+      "transition_to_next": "Camera theo cuốn của Nhật mở ra.",
+      "fact_status": "editorial/illustrative",
+      "publication_hold": false,
+      "start_sample": 1179135,
+      "end_sample": 1229581,
+      "sample_frames": 50446
+    },
+    {
+      "scene_number": 14,
+      "scene_id": "scene_14",
+      "start": 51.23254166666667,
+      "end": 55.935291666666664,
+      "raw_text": "Điều quan trọng là biết cách kể câu chuyện đó đúng cách để tạo dâu ấn với hội đồng tuyển sinh.",
+      "corrected_text": "Điều quan trọng là biết cách kể câu chuyện đó đúng cách để tạo dấu ấn với hội đồng tuyển sinh.",
+      "semantic_type": "communication",
+      "visual_center": "Mảnh chuyện được biên tập thành một trang có nhịp rõ",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Phân cấp và sắp xếp chứng minh cách kể, không mô phỏng hội đồng đánh giá hay bịa kết quả.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Mảnh chuyện được biên tập thành một trang có nhịp rõ",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 4.70275,
+      "audio_slice": "scratch/audio_slices/scene_14.wav",
+      "audio_sha256": "1498e7d7fd86e1f60599aa45048c460048f73fecd1a1126c6a56f523be4d299b",
+      "render_mode": "HF_ONLY",
+      "title": "Kể có chủ ý",
+      "visual_verb": "Nhật kéo mảnh chính lên vị trí nổi bật, bớt mảnh thừa; nét bút liên kết tạo mạch đọc.",
+      "narrative_visual": "Trang sổ Nhật với các mảnh câu chuyện chưa có thứ tự. Nhật kéo mảnh chính lên vị trí nổi bật, bớt mảnh thừa; nét bút liên kết tạo mạch đọc.",
+      "opening_state": "Trang sổ Nhật với các mảnh câu chuyện chưa có thứ tự.",
+      "transformation": "Nhật kéo mảnh chính lên vị trí nổi bật, bớt mảnh thừa; nét bút liên kết tạo mạch đọc.",
+      "final_state": "Một trang có trọng tâm, người xem hiểu việc biên tập tạo rõ nghĩa.",
+      "protagonist_action": "Nhật trực tiếp biên tập; không cần hội đồng giả.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            1.082
+          ],
+          "action": "Trang sổ Nhật với các mảnh câu chuyện chưa có thứ tự."
+        },
+        {
+          "range": [
+            1.082,
+            3.668
+          ],
+          "action": "Nhật kéo mảnh chính lên vị trí nổi bật, bớt mảnh thừa; nét bút liên kết tạo mạch đọc."
+        },
+        {
+          "range": [
+            3.668,
+            4.70275
+          ],
+          "action": "Một trang có trọng tâm, người xem hiểu việc biên tập tạo rõ nghĩa."
+        }
+      ],
+      "timing_evidence": "Phase timing proportional estimate; align spoken cues before each unbuilt scene render. Pilot has measured/inspected cues separately.",
+      "hf_signature_motion": "Nhật kéo mảnh chính lên vị trí nổi bật, bớt mảnh thừa; nét bút liên kết tạo mạch đọc.",
+      "signature_motion": "Nhật kéo mảnh chính lên vị trí nổi bật, bớt mảnh thừa; nét bút liên kết tạo mạch đọc.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "bounds": "main stage x70–650, y350–1000 (720×1280)",
+          "semantic_boundary": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+          "removal_consequence": "Bỏ ranh giới sẽ mất động tác mở/lật/ghép hoặc nguồn gốc vật liệu của ý kể."
+        }
+      ],
+      "container_semantics": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "simultaneous_labels_max": 1,
+        "rule": "Short labels only; no paragraphs. Labels in scene06 replace earlier labels."
+      },
+      "visible_text_inventory": [
+        "KỂ ĐÚNG CÁCH"
+      ],
+      "mobile_legibility_plan": "Main type 40–54px, labels >=28px; review at 360×640. No essential micro-copy.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "status": "planned, not generated",
+        "independent_layers": [
+          "background",
+          "main physical/illustrated setting",
+          "foreground prop layers",
+          "text strips",
+          "original mascot body",
+          "eyes and mouth",
+          "far arm",
+          "near arm",
+          "legs"
+        ],
+        "provenance": "Original SVG illustration; institutional media only from official source, record exact URL/hash before build. No supplied portrait/offer letter exists."
+      },
+      "handoff": "Nét liên kết đi sang mentor cảnh 15.",
+      "transition_to_next": "Nét liên kết đi sang mentor cảnh 15.",
+      "fact_status": "editorial/illustrative",
+      "publication_hold": false,
+      "start_sample": 1229581,
+      "end_sample": 1342447,
+      "sample_frames": 112866
+    },
+    {
+      "scene_number": 15,
+      "scene_id": "scene_15",
+      "start": 55.935291666666664,
+      "end": 60.352583333333335,
+      "raw_text": "Đó cũng chính là điều Esora đã đồng hành cùng Minh Nhật trong suốt hành trình ứng tuyển.",
+      "corrected_text": "Đó cũng chính là điều Esora đã đồng hành cùng Minh Nhật trong suốt hành trình ứng tuyển.",
+      "semantic_type": "partnership",
+      "visual_center": "Hai nét vẽ đồng hành giữ nguyên chữ ký của Nhật",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Nét cá nhân vẫn chủ đạo qua các mốc sửa bài; HYBRID handshake không truyền đạt ai sở hữu câu chuyện.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Hai nét vẽ đồng hành giữ nguyên chữ ký của Nhật",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 4.417291666666666,
+      "audio_slice": "scratch/audio_slices/scene_15.wav",
+      "audio_sha256": "393c454a0822206e2a0c708d15bb44acbee533be4f5df9d3be2569e9bb06f26c",
+      "render_mode": "HF_ONLY",
+      "title": "Đồng hành, giữ tiếng nói riêng",
+      "visual_verb": "Mentor đưa ghim, Nhật ghim nét cam của mình làm dấu kết; hai người đẩy hồ sơ tới mép bàn.",
+      "narrative_visual": "Nhật và mentor cùng nhìn trang đã biên tập. Mentor đưa ghim, Nhật ghim nét cam của mình làm dấu kết; hai người đẩy hồ sơ tới mép bàn.",
+      "opening_state": "Nhật và mentor cùng nhìn trang đã biên tập.",
+      "transformation": "Mentor đưa ghim, Nhật ghim nét cam của mình làm dấu kết; hai người đẩy hồ sơ tới mép bàn.",
+      "final_state": "Hồ sơ hoàn thiện với dấu riêng vẫn là của Nhật.",
+      "protagonist_action": "Đưa ghim → Nhật gắn → cùng hoàn tất.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            1.016
+          ],
+          "action": "Nhật và mentor cùng nhìn trang đã biên tập."
+        },
+        {
+          "range": [
+            1.016,
+            3.445
+          ],
+          "action": "Mentor đưa ghim, Nhật ghim nét cam của mình làm dấu kết; hai người đẩy hồ sơ tới mép bàn."
+        },
+        {
+          "range": [
+            3.445,
+            4.417291666666666
+          ],
+          "action": "Hồ sơ hoàn thiện với dấu riêng vẫn là của Nhật."
+        }
+      ],
+      "timing_evidence": "Phase timing proportional estimate; align spoken cues before each unbuilt scene render. Pilot has measured/inspected cues separately.",
+      "hf_signature_motion": "Mentor đưa ghim, Nhật ghim nét cam của mình làm dấu kết; hai người đẩy hồ sơ tới mép bàn.",
+      "signature_motion": "Mentor đưa ghim, Nhật ghim nét cam của mình làm dấu kết; hai người đẩy hồ sơ tới mép bàn.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": true,
+      "container_inventory": [
+        {
+          "object_type": "document",
+          "bounds": "main stage x70–650, y350–1000 (720×1280)",
+          "semantic_boundary": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+          "removal_consequence": "Bỏ ranh giới sẽ mất động tác mở/lật/ghép hoặc nguồn gốc vật liệu của ý kể."
+        }
+      ],
+      "container_semantics": "Bề mặt giấy/ảnh/phong bì thật trong thế giới minh hoạ; không phải hộp bố cục thông tin.",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "simultaneous_labels_max": 1,
+        "rule": "Short labels only; no paragraphs. Labels in scene06 replace earlier labels."
+      },
+      "visible_text_inventory": [
+        "ESORA × MINH NHẬT"
+      ],
+      "mobile_legibility_plan": "Main type 40–54px, labels >=28px; review at 360×640. No essential micro-copy.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "status": "planned, not generated",
+        "independent_layers": [
+          "background",
+          "main physical/illustrated setting",
+          "foreground prop layers",
+          "text strips",
+          "original mascot body",
+          "eyes and mouth",
+          "far arm",
+          "near arm",
+          "legs"
+        ],
+        "provenance": "Original SVG illustration; institutional media only from official source, record exact URL/hash before build. No supplied portrait/offer letter exists."
+      },
+      "handoff": "Trang được đẩy trở thành phong cảnh chương mới.",
+      "transition_to_next": "Trang được đẩy trở thành phong cảnh chương mới.",
+      "fact_status": "user-provided personal narrative; no independent admissions evidence",
+      "publication_hold": false,
+      "start_sample": 1342447,
+      "end_sample": 1448462,
+      "sample_frames": 106015
+    },
+    {
+      "scene_number": 16,
+      "scene_id": "scene_16",
+      "start": 60.352583333333335,
+      "end": 63.43508333333333,
+      "raw_text": "Trúc Minh Nhật sẽ có một hành trình thật được trở tại Hà Lan,",
+      "corrected_text": "Chúc Minh Nhật sẽ có một hành trình thật rực rỡ tại Hà Lan,",
+      "semantic_type": "wish",
+      "visual_center": "Trang giấy thành bờ kênh Amsterdam minh hoạ",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Chuyển trang là lời chúc mở chương, không phải footage chứng minh đã nhập cảnh; actor thật sẽ khiến thời điểm mơ hồ.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Trang giấy thành bờ kênh Amsterdam minh hoạ",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 3.0825,
+      "audio_slice": "scratch/audio_slices/scene_16.wav",
+      "audio_sha256": "0a984ea33a9e14fd276140463bb4e1a96552157b35870e6ca7c65e2e503b747a",
+      "render_mode": "HF_ONLY",
+      "title": "Một chương mới ở Hà Lan",
+      "visual_verb": "Nhật đeo ba lô bước qua mép trang, ngoái chào rồi nhìn về phía trước.",
+      "narrative_visual": "Tờ giấy mở ngang thành phố kênh đào minh hoạ. Nhật đeo ba lô bước qua mép trang, ngoái chào rồi nhìn về phía trước.",
+      "opening_state": "Tờ giấy mở ngang thành phố kênh đào minh hoạ.",
+      "transformation": "Nhật đeo ba lô bước qua mép trang, ngoái chào rồi nhìn về phía trước.",
+      "final_state": "Không gian sáng, cảm giác bắt đầu; không khẳng định đã đến nơi thật.",
+      "protagonist_action": "Bước qua trang và chào; không đứng idle.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            0.709
+          ],
+          "action": "Tờ giấy mở ngang thành phố kênh đào minh hoạ."
+        },
+        {
+          "range": [
+            0.709,
+            2.404
+          ],
+          "action": "Nhật đeo ba lô bước qua mép trang, ngoái chào rồi nhìn về phía trước."
+        },
+        {
+          "range": [
+            2.404,
+            3.0825
+          ],
+          "action": "Không gian sáng, cảm giác bắt đầu; không khẳng định đã đến nơi thật."
+        }
+      ],
+      "timing_evidence": "Phase timing proportional estimate; align spoken cues before each unbuilt scene render. Pilot has measured/inspected cues separately.",
+      "hf_signature_motion": "Nhật đeo ba lô bước qua mép trang, ngoái chào rồi nhìn về phía trước.",
+      "signature_motion": "Nhật đeo ba lô bước qua mép trang, ngoái chào rồi nhìn về phía trước.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": false,
+      "container_inventory": [],
+      "container_semantics": "none",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "simultaneous_labels_max": 1,
+        "rule": "Short labels only; no paragraphs. Labels in scene06 replace earlier labels."
+      },
+      "visible_text_inventory": [
+        "CHƯƠNG MỚI · HÀ LAN"
+      ],
+      "mobile_legibility_plan": "Main type 40–54px, labels >=28px; review at 360×640. No essential micro-copy.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "status": "planned, not generated",
+        "independent_layers": [
+          "background",
+          "main physical/illustrated setting",
+          "foreground prop layers",
+          "text strips",
+          "original mascot body",
+          "eyes and mouth",
+          "far arm",
+          "near arm",
+          "legs"
+        ],
+        "provenance": "Original SVG illustration; institutional media only from official source, record exact URL/hash before build. No supplied portrait/offer letter exists."
+      },
+      "handoff": "Đường ven kênh tiếp tục ra ngoài khung.",
+      "transition_to_next": "Đường ven kênh tiếp tục ra ngoài khung.",
+      "fact_status": "editorial/illustrative",
+      "publication_hold": false,
+      "start_sample": 1448462,
+      "end_sample": 1522442,
+      "sample_frames": 73980
+    },
+    {
+      "scene_number": 17,
+      "scene_id": "scene_17",
+      "start": 63.43508333333333,
+      "end": 68.2,
+      "raw_text": "tiếp tục phát quy bản lĩnh, khám phá những câu hội mới và chinh phục nhiều cuộc mốc lớn hơn trong tương lai.",
+      "corrected_text": "tiếp tục phát huy bản lĩnh, khám phá những cơ hội mới và chinh phục nhiều cột mốc lớn hơn trong tương lai.",
+      "semantic_type": "future",
+      "visual_center": "Con đường mở tiếp ra ngoài khung hình",
+      "organic_motion_need": "Không cần biểu diễn người thật; hành động là biến đổi giấy/collage có chủ đích.",
+      "exact_graphics_need": "Quan hệ giữa các lớp minh hoạ và nhịp với voice.",
+      "preferred_mode": "HF_ONLY",
+      "routing_confidence": "high for illustrated pilot direction",
+      "routing_reason": "Giấy gấp thành các bậc chưa ghi đích là tương lai mở; plate tốt nghiệp/đi làm sẽ tạo lời hứa không có trong voice.",
+      "flow_contribution": "None; HYBRID evaluated and rejected for this staging.",
+      "hf_contribution": "Con đường mở tiếp ra ngoài khung hình",
+      "fallback_mode": "HF_ONLY",
+      "fallback_condition": "Giữ engine; đổi staging nếu thiếu asset. Không tự dùng Flow.",
+      "duration": 4.764916666666666,
+      "audio_slice": "scratch/audio_slices/scene_17.wav",
+      "audio_sha256": "30ed3ceca54a8c0930f0cc6b6b8b0e32b8bc494cd90255db7491cd3f44613872",
+      "render_mode": "HF_ONLY",
+      "title": "Tương lai còn đang mở",
+      "visual_verb": "Nhật mở tiếp một nếp gấp, đường đi vươn tới các mốc trắng chưa điền kết quả.",
+      "narrative_visual": "Nhật ở đầu đường giấy sáng màu. Nhật mở tiếp một nếp gấp, đường đi vươn tới các mốc trắng chưa điền kết quả.",
+      "opening_state": "Nhật ở đầu đường giấy sáng màu.",
+      "transformation": "Nhật mở tiếp một nếp gấp, đường đi vươn tới các mốc trắng chưa điền kết quả.",
+      "final_state": "Nhật bước tiếp; máy kéo rộng để lại tương lai mở, không đích nghề nghiệp cụ thể.",
+      "protagonist_action": "Nhật tự mở đường và tiến lên.",
+      "timed_beats": [
+        {
+          "range": [
+            0,
+            1.096
+          ],
+          "action": "Nhật ở đầu đường giấy sáng màu."
+        },
+        {
+          "range": [
+            1.096,
+            3.717
+          ],
+          "action": "Nhật mở tiếp một nếp gấp, đường đi vươn tới các mốc trắng chưa điền kết quả."
+        },
+        {
+          "range": [
+            3.717,
+            4.764916666666666
+          ],
+          "action": "Nhật bước tiếp; máy kéo rộng để lại tương lai mở, không đích nghề nghiệp cụ thể."
+        }
+      ],
+      "timing_evidence": "Phase timing proportional estimate; align spoken cues before each unbuilt scene render. Pilot has measured/inspected cues separately.",
+      "hf_signature_motion": "Nhật mở tiếp một nếp gấp, đường đi vươn tới các mốc trắng chưa điền kết quả.",
+      "signature_motion": "Nhật mở tiếp một nếp gấp, đường đi vươn tới các mốc trắng chưa điền kết quả.",
+      "flow_action": "none",
+      "flow_camera": "none",
+      "overlay_zone": "No Flow overlay. Main art y120–1060; subtitle footer y1080–1280 clear.",
+      "container_required": false,
+      "container_inventory": [],
+      "container_semantics": "none",
+      "composition_reason": "Hình chủ đạo chiếm vùng trung tâm đến chân sân khấu; footer 200px dành cho phụ đề workflow, không lấp bằng trang trí.",
+      "visible_text_budget": {
+        "simultaneous_levels_max": 2,
+        "simultaneous_labels_max": 1,
+        "rule": "Short labels only; no paragraphs. Labels in scene06 replace earlier labels."
+      },
+      "visible_text_inventory": [
+        "HÀNH TRÌNH CÒN TIẾP"
+      ],
+      "mobile_legibility_plan": "Main type 40–54px, labels >=28px; review at 360×640. No essential micro-copy.",
+      "dark_mass_strategy": "Nền kem/tím sáng; nét #30313B; khối phụ dùng tint/outline, không nhiều silhouette navy đặc.",
+      "accent_reason": "none",
+      "accent_treatment": "none",
+      "style_candidates": [
+        {
+          "id": "kurzgesagt",
+          "assessment": "Vector nhiều lớp rõ nghĩa; khả thi nhưng độ khối và hình minh hoạ đồng nhất ít gần gu cartoon + ảnh giấy của reference."
+        },
+        {
+          "id": "hf_existing:warm-doodle-collage",
+          "assessment": "Giữ nét mảnh, nhân vật nhỏ gọn, ảnh cắt và headline strip; hợp gu đã chọn và hành động vật liệu giấy."
+        }
+      ],
+      "style_id": "hf_existing:warm-doodle-collage",
+      "style_reference": [
+        "skills/warm-doodle-video/references/reference-audit.md",
+        "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4"
+      ],
+      "style_reason": "Chọn treatment collage vì trực tiếp phù hợp gu reference người dùng đang thử; không mặc định Kurzgesagt chỉ vì chủ đề du học. Isometric không cần cho cấu trúc không gian; Bauhaus giảm phần kể tình huống.",
+      "asset_contract": {
+        "status": "planned, not generated",
+        "independent_layers": [
+          "background",
+          "main physical/illustrated setting",
+          "foreground prop layers",
+          "text strips",
+          "original mascot body",
+          "eyes and mouth",
+          "far arm",
+          "near arm",
+          "legs"
+        ],
+        "provenance": "Original SVG illustration; institutional media only from official source, record exact URL/hash before build. No supplied portrait/offer letter exists."
+      },
+      "handoff": "Giữ kết 0.6s; không thêm CTA ngoài lời thoại.",
+      "transition_to_next": "Giữ kết 0.6s; không thêm CTA ngoài lời thoại.",
+      "fact_status": "editorial/illustrative",
+      "publication_hold": false,
+      "start_sample": 1522442,
+      "end_sample": 1636800,
+      "sample_frames": 114358
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>Thế mạnh Macquarie — scene 11</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:SceneSans;src:url('assets/scene-sans-bold.ttf') format('truetype');font-weight:700;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;background:#fff}#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:SceneSans,sans-serif;color:#0F172A}
+.clip{position:absolute;inset:0}
+.art{display:block;width:100%;height:100%}
+.top-title{position:absolute;top:220px;left:0;width:100%;text-align:center;pointer-events:none}
+.h-main{margin:0;font-size:42px;line-height:1.2;font-weight:700;letter-spacing:-.6px;color:#0F172A}
+.h-sub{margin:8px 0 0 0;font-size:22px;font-weight:700;letter-spacing:1px;color:#FF6B2B;text-transform:uppercase}
+.active-label{position:absolute;top:740px;left:0;width:100%;text-align:center;margin:0;font-size:36px;font-weight:700;color:#0F172A}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-s11-root" id="root" data-composition-id="scene11" data-width="720" data-height="1280" data-duration="4.42" data-start="0">
+ <div data-hf-id="hf-s11-bg" id="scene11-bg" class="clip" data-start="0" data-duration="4.42" data-track-index="0" style="background:#FFFFFF"></div>
+
+ <div data-hf-id="hf-s11-header" id="header" class="top-title">
+  <div data-hf-id="hf-s11-sub" id="h-sub" class="h-sub">MACQUARIE UNIVERSITY</div>
+  <h1 data-hf-id="hf-s11-main" id="h-main" class="h-main">Nhóm ngành hàng đầu</h1>
+ </div>
+
+ <h2 data-hf-id="hf-s11-lbl-biz" id="lbl-biz" class="active-label">Kinh doanh & Tài chính</h2>
+ <h2 data-hf-id="hf-s11-lbl-it" id="lbl-it" class="active-label">Công nghệ thông tin</h2>
+ <h2 data-hf-id="hf-s11-lbl-sci" id="lbl-sci" class="active-label">Truyền thông & Khoa học</h2>
+
+ <svg data-hf-id="hf-s11-art" id="scene11-art" class="art clip" data-start="0" data-duration="4.42" data-track-index="1" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+   <radialGradient id="halo-s11"><stop stop-color="#CCECE9" stop-opacity=".75"/><stop offset="1" stop-color="#CCECE9" stop-opacity="0"/></radialGradient>
+  </defs>
+
+  <ellipse cx="360" cy="540" rx="260" ry="220" fill="url(#halo-s11)"/>
+
+  <!-- Center Stage Pedestal (Y500 - 700) -->
+  <g id="stage-pedestal">
+   <ellipse cx="360" cy="690" rx="180" ry="22" fill="#D3E5EA"/>
+   <ellipse cx="360" cy="682" rx="150" ry="16" fill="#EFF5F7"/>
+  </g>
+
+  <!-- Discipline Objects Relay -->
+  <!-- 1. Kinh doanh & Tài chính: Gold Bullion Coin & Growth chart cylinder -->
+  <g id="obj-finance">
+   <ellipse cx="360" cy="620" rx="90" ry="16" fill="#C5DCE2" opacity=".5"/>
+   <!-- Stack of financial coins -->
+   <ellipse cx="320" cy="560" rx="55" ry="20" fill="#E28935"/>
+   <path d="M265 560 V575 Q320 595 375 575 V560 Z" fill="#B36518"/>
+   <ellipse cx="320" cy="540" rx="55" ry="20" fill="#FFB054"/>
+   <path d="M265 540 V555 Q320 575 375 555 V540 Z" fill="#E28935"/>
+   <ellipse cx="320" cy="520" rx="55" ry="20" fill="#FFC97A"/>
+   <!-- Ascending financial pillar -->
+   <rect x="385" y="440" width="48" height="130" rx="6" fill="#3D7B80"/>
+   <polygon points="385,440 409,422 433,440" fill="#589B9E"/>
+   <line x1="300" y1="510" x2="410" y2="430" stroke="#FF6B2B" stroke-width="6" stroke-linecap="round"/>
+   <circle cx="410" cy="430" r="7" fill="#FF6B2B"/>
+  </g>
+
+  <!-- 2. Công nghệ thông tin: Modern Microchip & Data Bus -->
+  <g id="obj-it">
+   <ellipse cx="360" cy="620" rx="90" ry="16" fill="#C5DCE2" opacity=".5"/>
+   <!-- Processor socket / board -->
+   <rect x="290" y="450" width="140" height="140" rx="14" fill="#243A50" stroke="#3D7B80" stroke-width="4"/>
+   <!-- Silicon die center -->
+   <rect x="320" y="480" width="80" height="80" rx="8" fill="#4B8D88"/>
+   <circle cx="360" cy="520" r="24" fill="#FF6B2B"/>
+   <circle cx="360" cy="520" r="14" fill="#FFE2D1"/>
+   <!-- Gold contact pins -->
+   <g stroke="#FFB054" stroke-width="4" stroke-linecap="round">
+    <line x1="275" y1="480" x2="290" y2="480"/>
+    <line x1="275" y1="510" x2="290" y2="510"/>
+    <line x1="275" y1="540" x2="290" y2="540"/>
+    <line x1="275" y1="570" x2="290" y2="570"/>
+    <line x1="430" y1="480" x2="445" y2="480"/>
+    <line x1="430" y1="510" x2="445" y2="510"/>
+    <line x1="430" y1="540" x2="445" y2="540"/>
+    <line x1="430" y1="570" x2="445" y2="570"/>
+   </g>
+  </g>
+
+  <!-- 3. Truyền thông & Khoa học: Erlenmeyer Flask & Broadcast Wave -->
+  <g id="obj-science">
+   <ellipse cx="360" cy="620" rx="90" ry="16" fill="#C5DCE2" opacity=".5"/>
+   <!-- Glass laboratory flask -->
+   <path d="M346 450 H374 V485 L415 565 Q422 578 410 580 H310 Q298 578 305 565 L346 485 Z" fill="#E4F5F4" stroke="#488F88" stroke-width="4"/>
+   <!-- Liquid with bubbles -->
+   <path d="M312 568 Q360 550 408 568 Q415 578 405 578 H315 Q305 578 312 568 Z" fill="#FF6B2B"/>
+   <circle cx="340" cy="540" r="5" fill="#589B9E"/>
+   <circle cx="375" cy="525" r="7" fill="#589B9E"/>
+   <circle cx="355" cy="505" r="4" fill="#589B9E"/>
+   <!-- Science / Media pulse rings radiating out -->
+   <path d="M430 480 C445 495 445 520 430 535" fill="none" stroke="#FF6B2B" stroke-width="4.5" stroke-linecap="round"/>
+   <path d="M445 465 C468 495 468 535 445 565" fill="none" stroke="#FF6B2B" stroke-width="4.5" stroke-linecap="round"/>
+  </g>
+ </svg>
+
+ <audio data-hf-id="hf-s11-voice" id="scene11-voice" src="assets/audio.wav" data-start="0" data-duration="4.42" data-track-index="2" data-volume="1"></audio>
+</div>
+
+<script>
+const tl = gsap.timeline({paused:true});
+
+const objects = ['#obj-finance', '#obj-it', '#obj-science'];
+const labels = ['#lbl-biz', '#lbl-it', '#lbl-sci'];
+
+gsap.set(objects, {opacity: 0, scale: 0.7, y: 30, transformOrigin: '50% 100%'});
+gsap.set(labels, {opacity: 0, y: 10});
+gsap.set('#header', {opacity: 0, y: -15});
+
+// Choreography (4.42s)
+// 0.0s - 1.5s: Title & Phase 1: Kinh doanh & Tài chính
+tl.to('#header', {opacity: 1, y: 0, duration: 0.5, ease: 'power2.out'}, 0.2)
+  .to('#obj-finance', {opacity: 1, scale: 1, y: 0, duration: 0.5, ease: 'back.out(1.2)'}, 0.3)
+  .to('#lbl-biz', {opacity: 1, y: 0, duration: 0.3}, 0.4)
+
+// 1.5s - 2.9s: Morph to Phase 2: Công nghệ thông tin
+  .to('#obj-finance', {opacity: 0, scale: 0.8, y: -20, duration: 0.25}, 1.5)
+  .to('#lbl-biz', {opacity: 0, duration: 0.2}, 1.55)
+  .to('#obj-it', {opacity: 1, scale: 1, y: 0, duration: 0.4, ease: 'back.out(1.2)'}, 1.7)
+  .to('#lbl-it', {opacity: 1, y: 0, duration: 0.3}, 1.8)
+
+// 2.9s - 4.42s: Morph to Phase 3: Truyền thông & Khoa học
+  .to('#obj-it', {opacity: 0, scale: 0.8, y: -20, duration: 0.25}, 2.9)
+  .to('#lbl-it', {opacity: 0, duration: 0.2}, 2.95)
+  .to('#obj-science', {opacity: 1, scale: 1, y: 0, duration: 0.45, ease: 'back.out(1.2)'}, 3.1)
+  .to('#lbl-sci', {opacity: 1, y: 0, duration: 0.3}, 3.2);
+
+window.__timelines = window.__timelines || {};
+window.__timelines['scene11'] = tl;
+</script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+[
+  {
+    "start": 0.0,
+    "end": 3.8,
+    "text": " Như quyền đã xây dựng một bộ hồ sơ tây hiện đúng năng lực, cá tính và một tiêu học tập,",
+    "words": [
+      {
+        "word": " Như",
+        "start": 0.0,
+        "end": 0.18
+      },
+      {
+        "word": " quyền",
+        "start": 0.18,
+        "end": 0.42
+      },
+      {
+        "word": " đã",
+        "start": 0.42,
+        "end": 0.54
+      },
+      {
+        "word": " xây",
+        "start": 0.54,
+        "end": 0.66
+      },
+      {
+        "word": " dựng",
+        "start": 0.66,
+        "end": 0.86
+      },
+      {
+        "word": " một",
+        "start": 0.86,
+        "end": 0.94
+      },
+      {
+        "word": " bộ",
+        "start": 0.94,
+        "end": 1.08
+      },
+      {
+        "word": " hồ",
+        "start": 1.08,
+        "end": 1.2
+      },
+      {
+        "word": " sơ",
+        "start": 1.2,
+        "end": 1.42
+      },
+      {
+        "word": " tây",
+        "start": 1.42,
+        "end": 1.58
+      },
+      {
+        "word": " hiện",
+        "start": 1.58,
+        "end": 1.7
+      },
+      {
+        "word": " đúng",
+        "start": 1.7,
+        "end": 1.92
+      },
+      {
+        "word": " năng",
+        "start": 1.92,
+        "end": 2.18
+      },
+      {
+        "word": " lực,",
+        "start": 2.18,
+        "end": 2.36
+      },
+      {
+        "word": " cá",
+        "start": 2.72,
+        "end": 2.76
+      },
+      {
+        "word": " tính",
+        "start": 2.76,
+        "end": 3.0
+      },
+      {
+        "word": " và",
+        "start": 3.0,
+        "end": 3.16
+      },
+      {
+        "word": " một",
+        "start": 3.16,
+        "end": 3.26
+      },
+      {
+        "word": " tiêu",
+        "start": 3.26,
+        "end": 3.42
+      },
+      {
+        "word": " học",
+        "start": 3.42,
+        "end": 3.54
+      },
+      {
+        "word": " tập,",
+        "start": 3.54,
+        "end": 3.8
+      }
+    ]
+  },
+  {
+    "start": 4.18,
+    "end": 6.24,
+    "text": " từ đó mở dòng câu hội chúng tuyển tại nhiều quốc gia.",
+    "words": [
+      {
+        "word": " từ",
+        "start": 4.18,
+        "end": 4.24
+      },
+      {
+        "word": " đó",
+        "start": 4.24,
+        "end": 4.4
+      },
+      {
+        "word": " mở",
+        "start": 4.4,
+        "end": 4.64
+      },
+      {
+        "word": " dòng",
+        "start": 4.64,
+        "end": 4.82
+      },
+      {
+        "word": " câu",
+        "start": 4.82,
+        "end": 4.96
+      },
+      {
+        "word": " hội",
+        "start": 4.96,
+        "end": 5.08
+      },
+      {
+        "word": " chúng",
+        "start": 5.08,
+        "end": 5.22
+      },
+      {
+        "word": " tuyển",
+        "start": 5.22,
+        "end": 5.46
+      },
+      {
+        "word": " tại",
+        "start": 5.46,
+        "end": 5.6
+      },
+      {
+        "word": " nhiều",
+        "start": 5.6,
+        "end": 5.82
+      },
+      {
+        "word": " quốc",
+        "start": 5.82,
+        "end": 6.08
+      },
+      {
+        "word": " gia.",
+        "start": 6.08,
+        "end": 6.24
+      }
+    ]
+  }
+]

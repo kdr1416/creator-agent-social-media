@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 19 - Hai Cánh Cổng Quyết Định</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #0b0f19;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+      #root {
+        position: relative;
+        width: 720px;
+        height: 1280px;
+        background-color: #ffffff;
+        overflow: hidden;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        color: #0f172a;
+      }
+
+      /* Subtle Academic Grid Canvas */
+      .canvas-bg {
+        position: absolute;
+        inset: 0;
+        background-image:
+          radial-gradient(#e2e8f0 1.2px, transparent 1.2px),
+          linear-gradient(to right, rgba(241, 245, 249, 0.6) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(241, 245, 249, 0.6) 1px, transparent 1px);
+        background-size: 36px 36px, 72px 72px, 72px 72px;
+        background-position: 0 0, 0 0, 0 0;
+        opacity: 0.85;
+      }
+
+      /* Ambient Atmospheric Glows */
+      .bg-glow-left {
+        position: absolute;
+        top: 250px;
+        left: -100px;
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(56, 189, 248, 0.12) 0%, transparent 70%);
+        pointer-events: none;
+      }
+      .bg-glow-right {
+        position: absolute;
+        top: 280px;
+        right: -100px;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(245, 158, 11, 0.14) 0%, transparent 70%);
+        pointer-events: none;
+      }
+
+      /* Top Brand Badge */
+      .brand-badge-wrapper {
+        position: absolute;
+        top: 36px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 50;
+      }
+      .brand-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 18px;
+        background: #0f172a;
+        color: #ffffff;
+        border-radius: 9999px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        box-shadow: 0 4px 14px rgba(15, 23, 42, 0.15);
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      .brand-badge-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #ff5722;
+      }
+
+      /* Headline Header */
+      .headline-wrapper {
+        position: absolute;
+        top: 86px;
+        left: 36px;
+        right: 36px;
+        text-align: center;
+        z-index: 50;
+      }
+      .kicker {
+        font-size: 14px;
+        font-weight: 800;
+        color: #ff5722;
+        letter-spacing: 2.2px;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+      .headline {
+        font-family: "Montserrat", sans-serif;
+        font-size: 34px;
+        font-weight: 900;
+        line-height: 1.15;
+        letter-spacing: -0.5px;
+        color: #0f172a;
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      .headline span {
+        color: #ff5722;
+      }
+      .headline-accent {
+        width: 90px;
+        height: 4px;
+        background: linear-gradient(90deg, #ff5722, #f59e0b);
+        border-radius: 2px;
+        margin: 8px auto 0;
+        transform: scaleX(0);
+        transform-origin: center;
+      }
+
+      /* Main Architectural Stage */
+      .stage-wrap {
+        position: absolute;
+        top: 220px;
+        left: 0;
+        width: 720px;
+        height: 740px;
+        z-index: 20;
+      }
+
+      /* Connecting Paved Pathway */
+      .pathway-svg {
+        position: absolute;
+        inset: 0;
+        z-index: 10;
+        pointer-events: none;
+      }
+
+      /* Gate 1 & 2 Columns */
+      .gate-col {
+        position: absolute;
+        top: 40px;
+        width: 280px;
+        height: 520px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .gate-col-left {
+        left: 40px;
+      }
+      .gate-col-right {
+        right: 40px;
+      }
+
+      /* Percentage Ratio Tags */
+      .gate-percent-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 16px;
+        border-radius: 9999px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: 0.8px;
+        margin-bottom: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        z-index: 30;
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      .badge-left {
+        background: #f0f9ff;
+        color: #0284c7;
+        border: 2px solid #38bdf8;
+      }
+      .badge-right {
+        background: #fefce8;
+        color: #b45309;
+        border: 2px solid #f59e0b;
+      }
+
+      /* Archway Containers */
+      .archway-wrap {
+        position: relative;
+        width: 270px;
+        height: 420px;
+      }
+
+      /* 3D Realistic Double Gate Doors in Gate 2 */
+      .gate2-portal-3d {
+        position: absolute;
+        left: 70px;
+        top: 170px;
+        width: 130px;
+        height: 230px;
+        perspective: 650px;
+        perspective-origin: 50% 50%;
+        overflow: visible;
+        z-index: 25;
+      }
+
+      /* Portal Background Light (Radiates when doors open) */
+      .portal-light-bg {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 50% 60%, #fffbeb 0%, #fef3c7 70%, #fde68a 100%);
+        box-shadow: inset 0 0 20px rgba(245, 158, 11, 0.3);
+        opacity: 0.5;
+        transition: opacity 0.5s ease;
+      }
+      .portal-glow-burst {
+        position: absolute;
+        inset: -20px;
+        background: radial-gradient(circle at 50% 50%, rgba(251, 191, 36, 0.5) 0%, transparent 75%);
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      /* Left Gate Leaf (3D Hinge on Left) */
+      .gate-leaf-left {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 65px;
+        height: 230px;
+        transform-origin: left center;
+        transform-style: preserve-3d;
+        background: linear-gradient(135deg, rgba(254, 243, 199, 0.95) 0%, rgba(253, 230, 138, 0.85) 100%);
+        border: 2.5px solid #b45309;
+        border-right: 1.5px solid #78350f;
+        box-shadow: 2px 4px 12px rgba(180, 83, 9, 0.25);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 8px 4px;
+        z-index: 5;
+      }
+
+      /* Right Gate Leaf (3D Hinge on Right) */
+      .gate-leaf-right {
+        position: absolute;
+        left: 65px;
+        top: 0;
+        width: 65px;
+        height: 230px;
+        transform-origin: right center;
+        transform-style: preserve-3d;
+        background: linear-gradient(225deg, rgba(254, 243, 199, 0.95) 0%, rgba(253, 230, 138, 0.85) 100%);
+        border: 2.5px solid #b45309;
+        border-left: 1.5px solid #78350f;
+        box-shadow: -2px 4px 12px rgba(180, 83, 9, 0.25);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 8px 4px;
+        z-index: 5;
+      }
+
+      /* Wrought Iron Gate Bars & Cross Grille */
+      .gate-grille {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .gate-bar {
+        width: 2.5px;
+        height: 100%;
+        background: #b45309;
+        border-radius: 1px;
+      }
+      .gate-cross-bar {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 2.5px;
+        background: #b45309;
+      }
+      .gate-cross-bar.bar-top { top: 30%; }
+      .gate-cross-bar.bar-bottom { top: 70%; }
+
+      /* Master Center Golden Padlock */
+      .gate-padlock-wrap {
+        position: absolute;
+        left: 50%;
+        top: 48%;
+        transform: translate(-50%, -50%);
+        z-index: 20;
+        filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.3));
+      }
+
+      /* Student Actor */
+      .student-actor {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 110px;
+        height: 180px;
+        z-index: 45;
+        opacity: 0;
+        transform-origin: center bottom;
+      }
+
+      /* Master VISA GRANTED Stamp Overlay */
+      .visa-stamp-wrap {
+        position: absolute;
+        top: 210px;
+        left: 110px;
+        width: 350px;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 60;
+        pointer-events: none;
+        opacity: 0;
+        transform: scale(1.6) rotate(-6deg);
+      }
+      .stamp-inner {
+        width: 340px;
+        height: 165px;
+        border: 5.5px solid #dc2626;
+        border-radius: 18px;
+        background: rgba(254, 242, 242, 0.96);
+        box-shadow: 0 16px 36px rgba(220, 38, 38, 0.25), inset 0 0 0 2.5px #dc2626;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 16px;
+        position: relative;
+        overflow: hidden;
+      }
+      .stamp-inner::before {
+        content: "";
+        position: absolute;
+        inset: 4px;
+        border: 1.5px dashed #ef4444;
+        border-radius: 12px;
+        pointer-events: none;
+      }
+      .stamp-title-small {
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 1.8px;
+        color: #991b1b;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+      }
+      .stamp-title-main {
+        font-family: "Montserrat", sans-serif;
+        font-size: 32px;
+        font-weight: 900;
+        letter-spacing: 2.5px;
+        color: #dc2626;
+        text-transform: uppercase;
+        line-height: 1.1;
+      }
+      .stamp-meta {
+        margin-top: 4px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.8px;
+        color: #16a34a;
+        background: #dcfce7;
+        padding: 3px 10px;
+        border-radius: 6px;
+        border: 1px solid #86efac;
+      }
+      .stamp-shockwave {
+        position: absolute;
+        width: 400px;
+        height: 210px;
+        border-radius: 24px;
+        border: 4px solid #ef4444;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      /* Bottom Synthesis Proof Pill */
+      .bottom-seal {
+        position: absolute;
+        bottom: 230px;
+        left: 40px;
+        right: 40px;
+        background: #0f172a;
+        border-radius: 14px;
+        padding: 14px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.15);
+        opacity: 0;
+        transform: translateY(20px);
+        z-index: 50;
+      }
+      .seal-text {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14.5px;
+        font-weight: 900;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        color: #f8fafc;
+        text-align: center;
+      }
+      .seal-accent {
+        color: #fbbf24;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="clip" data-composition-id="scene-19" data-width="720" data-height="1280" data-duration="8.28">
+      <audio id="voice-track" class="clip" src="./assets/audio.wav" data-start="0" data-duration="8.28" preload="auto"></audio>
+
+      <!-- Canvas Background -->
+      <div class="canvas-bg"></div>
+      <div class="bg-glow-left"></div>
+      <div class="bg-glow-right"></div>
+
+      <!-- Top Branding -->
+      <div class="brand-badge-wrapper">
+        <div class="brand-badge" id="brand-badge">
+          <span class="brand-badge-dot"></span>
+          <span>ESORA • DU HỌC AUSTRALIA</span>
+        </div>
+      </div>
+
+      <!-- Headline -->
+      <div class="headline-wrapper">
+        <div class="kicker">2 CỬA ẢI BẮT BUỘC</div>
+        <h1 class="headline" id="main-headline">BẢO CHỨNG <span>DU HỌC</span></h1>
+        <div class="headline-accent" id="headline-accent"></div>
+      </div>
+
+      <!-- Main Stage -->
+      <div class="stage-wrap">
+        <!-- Connecting Stone Pathway SVG -->
+        <svg class="pathway-svg" width="720" height="740" viewBox="0 0 720 740">
+          <defs>
+            <linearGradient id="pathGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
+              <stop offset="50%" stop-color="#94a3b8" stop-opacity="0.3" />
+              <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.35" />
+            </linearGradient>
+          </defs>
+
+          <!-- Cobblestone Walkway Surface -->
+          <path d="M 175 480 C 280 495, 430 495, 545 480 L 565 525 C 440 540, 270 540, 155 525 Z"
+                fill="url(#pathGrad)" stroke="#cbd5e1" stroke-width="2" />
+
+          <!-- Pathway Center Guidance Flow Line -->
+          <path id="pathFlow" d="M 175 500 C 300 515, 420 515, 545 500"
+                fill="none" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"
+                stroke-dasharray="10 8" opacity="0.6" />
+
+          <!-- Stone paver divisions -->
+          <line x1="240" y1="488" x2="235" y2="528" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+          <line x1="310" y1="492" x2="307" y2="532" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+          <line x1="380" y1="494" x2="380" y2="534" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+          <line x1="450" y1="492" x2="453" y2="532" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+          <line x1="510" y1="488" x2="515" y2="528" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+        </svg>
+
+        <!-- GATE 1: ĐỖ ĐẠI HỌC (Left Col) -->
+        <div class="gate-col gate-col-left" id="gateCol1">
+          <div class="gate-percent-badge badge-left" id="badge1">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <span>50% BƯỚC ĐẦU</span>
+          </div>
+
+          <div class="archway-wrap" id="arch1">
+            <svg width="270" height="420" viewBox="0 0 270 420">
+              <defs>
+                <linearGradient id="colGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#f8fafc" />
+                  <stop offset="50%" stop-color="#e2e8f0" />
+                  <stop offset="100%" stop-color="#cbd5e1" />
+                </linearGradient>
+                <linearGradient id="pedGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#0284c7" />
+                  <stop offset="100%" stop-color="#0369a1" />
+                </linearGradient>
+              </defs>
+
+              <!-- Pediment Triangular / Classical Roof -->
+              <polygon points="135,20 20,70 250,70" fill="url(#pedGrad1)" stroke="#0284c7" stroke-width="3" />
+              <!-- Crest Badge in Pediment -->
+              <circle cx="135" cy="52" r="15" fill="#ffffff" stroke="#0284c7" stroke-width="2" />
+              <!-- Graduation Cap inside crest -->
+              <polygon points="135,45 125,49 135,53 145,49" fill="#0284c7" />
+              <rect x="130" y="52" width="10" height="6" fill="#0284c7" />
+
+              <!-- Entablature / Archway Name Plate -->
+              <rect x="15" y="70" width="240" height="34" rx="4" fill="#0f172a" stroke="#0284c7" stroke-width="2" />
+              <text x="135" y="93" font-family="Montserrat" font-size="13" font-weight="900" fill="#f8fafc" text-anchor="middle" letter-spacing="1">CỔNG 1: ĐỖ TRƯỜNG</text>
+
+              <!-- Left Classical Column -->
+              <rect x="30" y="104" width="40" height="290" fill="url(#colGrad1)" stroke="#94a3b8" stroke-width="2" rx="3" />
+              <line x1="42" y1="110" x2="42" y2="385" stroke="#94a3b8" stroke-width="1.5" />
+              <line x1="50" y1="110" x2="50" y2="385" stroke="#94a3b8" stroke-width="1.5" />
+              <line x1="58" y1="110" x2="58" y2="385" stroke="#94a3b8" stroke-width="1.5" />
+              <rect x="25" y="104" width="50" height="12" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2" />
+              <rect x="25" y="385" width="50" height="15" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2" />
+
+              <!-- Right Classical Column -->
+              <rect x="200" y="104" width="40" height="290" fill="url(#colGrad1)" stroke="#94a3b8" stroke-width="2" rx="3" />
+              <line x1="212" y1="110" x2="212" y2="385" stroke="#94a3b8" stroke-width="1.5" />
+              <line x1="220" y1="110" x2="220" y2="385" stroke="#94a3b8" stroke-width="1.5" />
+              <line x1="228" y1="110" x2="228" y2="385" stroke="#94a3b8" stroke-width="1.5" />
+              <rect x="195" y="104" width="50" height="12" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2" />
+              <rect x="195" y="385" width="50" height="15" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2" />
+
+              <!-- Arch Curve -->
+              <path d="M 70 170 Q 135 120 200 170 L 200 104 L 70 104 Z" fill="#e0f2fe" opacity="0.6" />
+              <path d="M 70 170 Q 135 120 200 170" fill="none" stroke="#0284c7" stroke-width="4" />
+
+              <!-- Plinth / Base Stone Steps -->
+              <rect x="15" y="400" width="240" height="16" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2" rx="2" />
+
+              <!-- University Offer Letter floating inside arch -->
+              <g id="offerLetterDoc" transform="translate(110, 200)">
+                <rect x="0" y="0" width="50" height="68" rx="4" fill="#ffffff" stroke="#0284c7" stroke-width="2" filter="drop-shadow(0 4px 8px rgba(2,132,199,0.2))" />
+                <rect x="8" y="10" width="34" height="4" rx="1" fill="#0284c7" />
+                <line x1="8" y1="22" x2="42" y2="22" stroke="#94a3b8" stroke-width="2" />
+                <line x1="8" y1="30" x2="38" y2="30" stroke="#94a3b8" stroke-width="2" />
+                <line x1="8" y1="38" x2="42" y2="38" stroke="#94a3b8" stroke-width="2" />
+                <circle cx="25" cy="52" r="8" fill="#10b981" />
+                <path d="M 21 52 L 24 55 L 29 49" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- GATE 2: BỘ DI TRÚ ÚC - VISA (Right Col) -->
+        <div class="gate-col gate-col-right" id="gateCol2">
+          <div class="gate-percent-badge badge-right" id="badge2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span>50% QUYẾT ĐỊNH</span>
+          </div>
+
+          <div class="archway-wrap" id="arch2">
+            <!-- Archway Architecture Background SVG -->
+            <svg width="270" height="420" viewBox="0 0 270 420" style="position: absolute; inset: 0;">
+              <defs>
+                <linearGradient id="goldCol" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#fef08a" />
+                  <stop offset="35%" stop-color="#f59e0b" />
+                  <stop offset="70%" stop-color="#d97706" />
+                  <stop offset="100%" stop-color="#b45309" />
+                </linearGradient>
+                <linearGradient id="goldPlate" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#f59e0b" />
+                  <stop offset="100%" stop-color="#b45309" />
+                </linearGradient>
+              </defs>
+
+              <!-- Majestic Australian Star Arch Pediment -->
+              <polygon points="135,10 15,64 255,64" fill="url(#goldPlate)" stroke="#f59e0b" stroke-width="3" />
+              <!-- Commonwealth 7-pointed Star Emblem -->
+              <circle cx="135" cy="46" r="16" fill="#fef08a" stroke="#b45309" stroke-width="2" />
+              <polygon points="135,35 138,42 145,43 140,48 142,55 135,51 128,55 130,48 125,43 132,42" fill="#b45309" />
+
+              <!-- Entablature / Archway Name Plate -->
+              <rect x="12" y="64" width="246" height="36" rx="4" fill="#0f172a" stroke="#f59e0b" stroke-width="2.5" />
+              <text x="135" y="88" font-family="Montserrat" font-size="13" font-weight="900" fill="#fbbf24" text-anchor="middle" letter-spacing="1">CỔNG 2: BỘ DI TRÚ ÚC</text>
+
+              <!-- Left Golden Fluted Column -->
+              <rect x="25" y="100" width="45" height="294" fill="url(#goldCol)" stroke="#b45309" stroke-width="2.5" rx="4" />
+              <line x1="37" y1="106" x2="37" y2="390" stroke="#fef08a" stroke-width="2" opacity="0.8" />
+              <line x1="47" y1="106" x2="47" y2="390" stroke="#78350f" stroke-width="2" opacity="0.6" />
+              <line x1="57" y1="106" x2="57" y2="390" stroke="#fef08a" stroke-width="2" opacity="0.8" />
+              <rect x="20" y="100" width="55" height="14" fill="#f59e0b" stroke="#78350f" stroke-width="2" />
+              <rect x="20" y="388" width="55" height="16" fill="#f59e0b" stroke="#78350f" stroke-width="2" />
+
+              <!-- Right Golden Fluted Column -->
+              <rect x="200" y="100" width="45" height="294" fill="url(#goldCol)" stroke="#b45309" stroke-width="2.5" rx="4" />
+              <line x1="212" y1="106" x2="212" y2="390" stroke="#fef08a" stroke-width="2" opacity="0.8" />
+              <line x1="222" y1="106" x2="222" y2="390" stroke="#78350f" stroke-width="2" opacity="0.6" />
+              <line x1="232" y1="106" x2="232" y2="390" stroke="#fef08a" stroke-width="2" opacity="0.8" />
+              <rect x="195" y="100" width="55" height="14" fill="#f59e0b" stroke="#78350f" stroke-width="2" />
+              <rect x="195" y="388" width="55" height="16" fill="#f59e0b" stroke="#78350f" stroke-width="2" />
+
+              <!-- Archway Portal Curve -->
+              <path d="M 70 170 Q 135 110 200 170 L 200 100 L 70 100 Z" fill="#fffbeb" />
+              <path d="M 70 170 Q 135 110 200 170" fill="none" stroke="#f59e0b" stroke-width="5" />
+
+              <!-- Plinth Steps -->
+              <rect x="10" y="400" width="250" height="18" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" rx="3" />
+            </svg>
+
+            <!-- 3D Golden Gates System (Doors swing in 3D perspective!) -->
+            <div class="gate2-portal-3d">
+              <!-- Radiant Inner Portal Glow -->
+              <div class="portal-light-bg" id="portalLightBg"></div>
+              <div class="portal-glow-burst" id="portalGlowBurst"></div>
+
+              <!-- Left Gate Leaf (Hinged on Left Pillar) -->
+              <div class="gate-leaf-left" id="gateLeafLeft">
+                <div class="gate-grille">
+                  <div class="gate-bar"></div>
+                  <div class="gate-bar"></div>
+                  <div class="gate-bar"></div>
+                  <div class="gate-cross-bar bar-top"></div>
+                  <div class="gate-cross-bar bar-bottom"></div>
+                </div>
+              </div>
+
+              <!-- Right Gate Leaf (Hinged on Right Pillar) -->
+              <div class="gate-leaf-right" id="gateLeafRight">
+                <div class="gate-grille">
+                  <div class="gate-bar"></div>
+                  <div class="gate-bar"></div>
+                  <div class="gate-bar"></div>
+                  <div class="gate-cross-bar bar-top"></div>
+                  <div class="gate-cross-bar bar-bottom"></div>
+                </div>
+              </div>
+
+              <!-- Master Padlock in center -->
+              <div class="gate-padlock-wrap" id="masterPadlock">
+                <svg width="44" height="48" viewBox="0 0 44 48">
+                  <!-- Shackle -->
+                  <path id="padlockShackle" d="M 12 18 L 12 8 A 10 10 0 0 1 32 8 L 32 18"
+                        fill="none" stroke="#78350f" stroke-width="4.5" stroke-linecap="round" />
+                  <!-- Lock Body -->
+                  <rect x="4" y="16" width="36" height="30" rx="6" fill="#f59e0b" stroke="#78350f" stroke-width="2.5" />
+                  <!-- Keyhole -->
+                  <circle cx="22" cy="28" r="3.5" fill="#78350f" />
+                  <polygon points="20,29 24,29 23,37 21,37" fill="#78350f" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Student Character (Walking from Gate 1 to Gate 2) -->
+        <div class="student-actor" id="studentActor">
+          <svg width="110" height="180" viewBox="0 0 110 180">
+            <!-- Backpack straps behind -->
+            <rect x="36" y="65" width="38" height="42" rx="10" fill="#0284c7" />
+
+            <!-- Legs & Shoes -->
+            <rect x="42" y="125" width="10" height="36" rx="5" fill="#0f172a" />
+            <rect x="58" y="125" width="10" height="36" rx="5" fill="#0f172a" />
+            <ellipse cx="45" cy="164" rx="10" ry="6" fill="#0284c7" />
+            <ellipse cx="65" cy="164" rx="10" ry="6" fill="#0284c7" />
+
+            <!-- Torso (Navy Blue Blazer) -->
+            <path d="M 36 68 Q 55 64 74 68 L 78 126 L 32 126 Z" fill="#1e293b" />
+
+            <!-- Shirt Collar & Tie -->
+            <polygon points="55,68 47,82 63,82" fill="#ffffff" />
+            <polygon points="55,80 52,106 55,114 58,106" fill="#ff5722" />
+
+            <!-- Head & Face -->
+            <circle cx="55" cy="40" r="22" fill="#fed7aa" />
+            <!-- Hair -->
+            <path d="M 33 40 Q 55 12 77 40 Q 72 26 55 24 Q 38 26 33 40 Z" fill="#0f172a" />
+            <!-- Glasses -->
+            <rect x="41" y="36" width="11" height="9" rx="2" fill="none" stroke="#0f172a" stroke-width="2" />
+            <rect x="58" y="36" width="11" height="9" rx="2" fill="none" stroke="#0f172a" stroke-width="2" />
+            <line x1="52" y1="40" x2="58" y2="40" stroke="#0f172a" stroke-width="2" />
+            <!-- Smile -->
+            <path d="M 49 52 Q 55 58 61 52" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" />
+
+            <!-- Left Arm holding Offer Letter -->
+            <g id="studentArmOffer">
+              <path d="M 34 72 Q 18 85 24 100" fill="none" stroke="#1e293b" stroke-width="8" stroke-linecap="round" />
+              <circle cx="24" cy="100" r="5" fill="#fed7aa" />
+              <!-- Handheld Document -->
+              <g transform="translate(10, 85) rotate(-10)">
+                <rect x="0" y="0" width="22" height="30" rx="2" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" />
+                <rect x="4" y="5" width="14" height="2" fill="#0284c7" />
+                <line x1="4" y1="10" x2="18" y2="10" stroke="#94a3b8" stroke-width="1" />
+                <line x1="4" y1="14" x2="16" y2="14" stroke="#94a3b8" stroke-width="1" />
+                <circle cx="11" cy="22" r="4" fill="#10b981" />
+              </g>
+            </g>
+
+            <!-- Character Arm (Viewer Right): Rest / Walking Pose -->
+            <g id="armCheerRest">
+              <path d="M 76 72 Q 90 88 86 104" fill="none" stroke="#1e293b" stroke-width="8" stroke-linecap="round" />
+              <circle cx="86" cy="104" r="5" fill="#fed7aa" />
+            </g>
+
+            <!-- Character Arm (Viewer Right): Raised Celebrating Pose (Permanently anchored at shoulder 76, 72) -->
+            <g id="armCheerRaised" style="opacity: 0;">
+              <path d="M 76 72 Q 92 50 98 36" fill="none" stroke="#1e293b" stroke-width="8" stroke-linecap="round" />
+              <circle cx="98" cy="36" r="5" fill="#fed7aa" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- Master VISA GRANTED Stamp Overlay -->
+        <div class="visa-stamp-wrap" id="visaStamp">
+          <div class="stamp-shockwave" id="stampShockwave"></div>
+          <div class="stamp-inner">
+            <div class="stamp-title-small">BỘ DI TRÚ AUSTRALIA</div>
+            <div class="stamp-title-main">VISA GRANTED</div>
+            <div class="stamp-meta">SUBCLASS 500 • THỊ THỰC THÀNH CÔNG</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Synthesis Proof Pill -->
+      <div class="bottom-seal" id="bottomSeal">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2.5">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+        <span class="seal-text">
+          ĐỖ TRƯỜNG LÀ <span class="seal-accent">ĐIỀU KIỆN CẦN</span> • CẤP VISA MỚI LÀ <span class="seal-accent">ĐIỀU KIỆN ĐỦ</span>
+        </span>
+      </div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines = window.__timelines || {};
+      window.__timelines["scene-19"] = tl;
+
+      // Initial positions
+      gsap.set("#studentActor", { x: 135, y: 360, opacity: 0 });
+      gsap.set("#badge1", { scale: 0.8, opacity: 0 });
+      gsap.set("#badge2", { scale: 0.8, opacity: 0 });
+      gsap.set("#arch1", { opacity: 0, y: 30 });
+      gsap.set("#arch2", { opacity: 0, y: 30 });
+      gsap.set("#offerLetterDoc", { scale: 0, opacity: 0, transformOrigin: "center center" });
+      gsap.set("#gateLeafLeft", { rotateY: 0 });
+      gsap.set("#gateLeafRight", { rotateY: 0 });
+      gsap.set("#masterPadlock", { y: 0, opacity: 1 });
+      gsap.set("#portalGlowBurst", { opacity: 0, scale: 0.8 });
+      gsap.set("#armCheerRest", { opacity: 1 });
+      gsap.set("#armCheerRaised", { opacity: 0 });
+      gsap.set("#visaStamp", { opacity: 0, scale: 1.8, rotate: -10 });
+      gsap.set("#bottomSeal", { y: 20, opacity: 0 });
+
+      // 0.1s - 0.5s: Top branding & headline reveal
+      tl.to("#brand-badge", { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 0.1)
+        .to("#main-headline", { opacity: 1, y: 0, duration: 0.45, ease: "back.out(1.2)" }, 0.25)
+        .to("#headline-accent", { scaleX: 1, duration: 0.35 }, 0.45);
+
+      // 0.6s: Both architectural gates arise onto the stage
+      tl.to("#arch1", { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0.6)
+        .to("#arch2", { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0.7)
+        .to("#badge1", { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 0.9)
+        .to("#badge2", { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 1.0);
+
+      // 1.2s - 2.8s: "Du học Australia không chỉ là được trường nhận..."
+      // Student character appears at Gate 1 holding the glowing Offer Letter!
+      tl.to("#offerLetterDoc", { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.8)" }, 1.2)
+        .to("#studentActor", { opacity: 1, duration: 0.4 }, 1.3)
+        .to("#arch1", { filter: "drop-shadow(0 10px 24px rgba(2, 132, 199, 0.2))", duration: 0.5 }, 1.4);
+
+      // 3.2s - 5.4s: "Quan trọng là phải xây dựng được một hồ sơ đủ thuyết phục để đi tiếp..."
+      // Student walks along the glowing pathway from Gate 1 (X: 135) to Gate 2 (X: 470)
+      tl.to("#studentActor", {
+        x: 470,
+        duration: 2.2,
+        ease: "power1.inOut"
+      }, 3.2)
+      // Natural walking step bobbing
+      .to("#studentActor", {
+        y: 350,
+        duration: 0.27,
+        repeat: 7,
+        yoyo: true,
+        ease: "sine.inOut"
+      }, 3.2);
+
+      // 4.6s: Padlock pops open! (Shackle springs up with lock click)
+      tl.to("#padlockShackle", {
+        y: -14,
+        duration: 0.18,
+        ease: "back.out(3)"
+      }, 4.6)
+      .to("#masterPadlock", {
+        y: 25,
+        opacity: 0,
+        duration: 0.35,
+        ease: "power2.in"
+      }, 4.8);
+
+      // 5.0s: 3D Golden Gates swing open outward like real grand mansion gates!
+      tl.to("#gateLeafLeft", {
+        rotateY: -86,
+        duration: 0.9,
+        ease: "power2.inOut"
+      }, 5.0)
+      .to("#gateLeafRight", {
+        rotateY: 86,
+        duration: 0.9,
+        ease: "power2.inOut"
+      }, 5.0)
+      .to("#portalLightBg", {
+        opacity: 1,
+        duration: 0.6
+      }, 5.1)
+      .to("#portalGlowBurst", {
+        opacity: 1,
+        scale: 1.2,
+        duration: 0.6,
+        ease: "power2.out"
+      }, 5.1)
+      .to("#arch2", { filter: "drop-shadow(0 12px 32px rgba(245, 158, 11, 0.45))", duration: 0.6 }, 5.2);
+
+      // 5.8s - 6.8s: "...đến bước visa."
+      // Student character raises arm in triumph and does a celebratory jump!
+      tl.to("#armCheerRest", { opacity: 0, duration: 0.25 }, 5.8)
+        .to("#armCheerRaised", { opacity: 1, duration: 0.25 }, 5.8)
+        .to("#studentActor", {
+          y: 338,
+          duration: 0.2,
+          yoyo: true,
+          repeat: 3,
+          ease: "power1.out"
+        }, 5.85);
+
+      // 6.2s: Master VISA GRANTED stamp slams down with shockwave impact!
+      tl.to("#visaStamp", {
+        opacity: 1,
+        scale: 1.0,
+        rotate: -3,
+        duration: 0.35,
+        ease: "back.out(1.5)"
+      }, 6.2)
+      .fromTo("#stampShockwave",
+        { scale: 0.9, opacity: 0.8 },
+        { scale: 1.4, opacity: 0, duration: 0.6, ease: "power2.out" },
+        6.25
+      );
+
+      // 6.8s: Bottom synthesis pill appears
+      tl.to("#bottomSeal", {
+        opacity: 1,
+        y: 0,
+        duration: 0.45,
+        ease: "back.out(1.5)"
+      }, 6.8);
+
+      // Hold until end of narration (8.28s)
+      tl.to({}, { duration: 1.0 }, 7.28);
+    </script>
+  </body>
+</html>

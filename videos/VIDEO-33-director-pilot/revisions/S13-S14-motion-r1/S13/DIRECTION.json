@@ -1,0 +1,63 @@
+{
+  "scene": "S13",
+  "duration": 4.553208333333333,
+  "sample_frames": 109277,
+  "sample_rate": 24000,
+  "source_start_sample": 1530028,
+  "source_end_sample": 1639305,
+  "source_segments": [
+    15
+  ],
+  "source_audio": [
+    "inputs/audio/seg_15.wav"
+  ],
+  "source_audio_hashes": {
+    "inputs/audio/seg_15.wav": "af2f4845dbace74ad01664da0c420f9a6e1da190801d1a6251c1dbb6f8fb9d36"
+  },
+  "raw_text": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới.",
+  "corrected_text": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới.",
+  "original_voice_sha256": "af2f4845dbace74ad01664da0c420f9a6e1da190801d1a6251c1dbb6f8fb9d36",
+  "approved_frame_reference": "../../S13-S14-design-r1/APPROVAL.json",
+  "approval": "motion_pending_user_review",
+  "cues": {
+    "campus_approach": [
+      0.55,
+      1.67
+    ],
+    "cut_to_assets": 2.32,
+    "shared_camera_widen": [
+      3.0,
+      4.03
+    ],
+    "possibility_label": [
+      3.15,
+      3.37
+    ],
+    "malta_label": [
+      3.65,
+      3.85
+    ]
+  },
+  "proof_times": [
+    0.1,
+    0.9,
+    1.65,
+    2.4,
+    2.98,
+    3.3,
+    3.7,
+    4.12,
+    4.42
+  ],
+  "contact_ranges": [
+    [
+      0.65,
+      1.7
+    ],
+    [
+      3.0,
+      4.1
+    ]
+  ],
+  "timing_basis": "Original sample bounds and PCM preserved; internal cue timing based on existing ASR and directorial staging."
+}

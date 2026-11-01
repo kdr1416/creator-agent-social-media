@@ -1,0 +1,272 @@
+{
+  "scene_number": 10,
+  "scene_id": "S10",
+  "start": 47.251,
+  "end": 53.407875,
+  "start_sample": 1134024,
+  "end_sample": 1281789,
+  "source_segments": [
+    11
+  ],
+  "raw_text": "Chị giới khoảng 3,8 tỷ đồng, chương trình Thế San Manta mang đến cơ hội định cư cho 4 thế hệ.",
+  "corrected_text": "Chỉ với khoảng 3,8 tỷ đồng, chương trình Thẻ Xanh Malta mang đến cơ hội định cư cho 4 thế hệ.",
+  "semantic_type": "family album / genealogy",
+  "visual_center": "Gia đình nhiều thế hệ — có điều kiện",
+  "organic_motion_need": "Không cần diễn viên/plate hữu cơ; puppet vector có hành động chủ đích.",
+  "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+  "preferred_mode": "HF_ONLY",
+  "routing_confidence": "high",
+  "routing_reason": "Gia đình nhiều thế hệ — có điều kiện: hành động chủ đạo là mở quan hệ các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ family album / genealogy, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+  "flow_contribution": "none",
+  "hf_contribution": "Các nhánh gia đình mở lần lượt tới con, cha mẹ, ông bà. Tới cụm “4 thế hệ” mới đủ bốn cấp; ghi ngắn “Theo điều kiện MPRP”, không đóng dấu thông qua.",
+  "fallback_mode": null,
+  "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+  "character": "yes",
+  "title": "Gia đình nhiều thế hệ — có điều kiện",
+  "takeaway": "MPRP có thể bao gồm tới bốn thế hệ đủ điều kiện; con số khoảng 3,8 tỷ trong voice đã được chủ nội dung xác minh.",
+  "audio_source": [
+    "inputs/audio/seg_11.wav"
+  ],
+  "duration": 6.156874999999999,
+  "sample_frames": 147765,
+  "raw_segments": [
+    {
+      "seg_id": 11,
+      "segment_id": "seg_11",
+      "audio_slice": "audio_slices/seg_11.wav",
+      "start_sample": 1134024,
+      "end_sample": 1281789,
+      "sample_frames": 147765,
+      "start": 47.251,
+      "end": 53.408,
+      "duration": 6.157,
+      "sha256": "896700b281fa56ebba34c28bd695bc49ce565471536bbb46c572b1b4790f28c5",
+      "raw_text": "Chị giới khoảng 3,8 tỷ đồng, chương trình Thế San Manta mang đến cơ hội định cư cho 4 thế hệ.",
+      "corrected_text": "Chỉ với khoảng 3,8 tỷ đồng, chương trình Thẻ Xanh Malta mang đến cơ hội định cư cho 4 thế hệ.",
+      "uncertainties": [
+        "Chị giới -> Chỉ với: ASR nhận nhầm thanh âm.",
+        "Thế San Manta -> Thẻ Xanh Malta: ASR nhận sai tên chương trình 'Thẻ Xanh Malta' (chính sách Thường trú nhân Malta - MPRP)."
+      ]
+    }
+  ],
+  "render_mode": "HF_ONLY",
+  "style_candidates": [
+    {
+      "id": "hf_existing:warm-doodle-mixed-media",
+      "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+    },
+    {
+      "id": "kurzgesagt",
+      "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+    },
+    {
+      "id": "izometrik",
+      "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+    },
+    {
+      "id": "bauhaus",
+      "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+    }
+  ],
+  "style_id": "hf_existing:warm-doodle-mixed-media",
+  "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+  "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+  "visual_verb": "mở quan hệ",
+  "composition": "Một trang album gia đình thực sự, mở chéo trên nền cream, bốn thế hệ đặt theo quan hệ gia phả chứ không bốn trẻ kế tiếp; mascot đỡ góc album.",
+  "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+  "opening_state": "Album hé với nhóm đương đơn và vợ/chồng; không hiện con số tiền.",
+  "transformation": "Các nhánh gia đình mở lần lượt tới con, cha mẹ, ông bà. Tới cụm “4 thế hệ” mới đủ bốn cấp; ghi ngắn “Theo điều kiện MPRP”, không đóng dấu thông qua.",
+  "final_state": "Bốn cấp quan hệ nối đúng, tất cả nằm trong một hồ sơ có điều kiện, không hộ chiếu quốc tịch.",
+  "protagonist_action": "Mascot giữ album và hướng ánh nhìn theo nhánh, không trao thẻ cư trú.",
+  "mascot_role": "Mascot giữ album và hướng ánh nhìn theo nhánh, không trao thẻ cư trú.",
+  "visual_family": "family album / genealogy",
+  "timed_beats": [
+    {
+      "local_seconds": 0,
+      "spoken_cue": "đầu lát nguồn",
+      "action": "Album hé với nhóm đương đơn và vợ/chồng; không hiện con số tiền.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 1.539,
+      "spoken_cue": "cụm ý đầu — đối chiếu WAV",
+      "action": "Các nhánh gia đình mở lần lượt tới con, cha mẹ, ông bà. Tới cụm “4 thế hệ” mới đủ bốn cấp",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 3.694,
+      "spoken_cue": "cụm ý sau — đối chiếu WAV",
+      "action": "Các nhánh gia đình mở lần lượt tới con, cha mẹ, ông bà. Tới cụm “4 thế hệ” mới đủ bốn cấp; ghi ngắn “Theo điều kiện MPRP”, không đóng dấu thông qua.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 5.11,
+      "spoken_cue": "đuôi câu / nghỉ",
+      "action": "Bốn cấp quan hệ nối đúng, tất cả nằm trong một hồ sơ có điều kiện, không hộ chiếu quốc tịch.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    }
+  ],
+  "motion_emphasis_sequence": [
+    "Album hé với nhóm đương đơn và vợ/chồng; không hiện con số tiền.",
+    "Các nhánh gia đình mở lần lượt tới con, cha mẹ, ông bà. Tới cụm “4 thế hệ” mới đủ bốn cấp",
+    "Các nhánh gia đình mở lần lượt tới con, cha mẹ, ông bà. Tới cụm “4 thế hệ” mới đủ bốn cấp; ghi ngắn “Theo điều kiện MPRP”, không đóng dấu thông qua.",
+    "Bốn cấp quan hệ nối đúng, tất cả nằm trong một hồ sơ có điều kiện, không hộ chiếu quốc tịch."
+  ],
+  "hf_signature_motion": "Các nhánh gia đình mở lần lượt tới con, cha mẹ, ông bà. Tới cụm “4 thế hệ” mới đủ bốn cấp; ghi ngắn “Theo điều kiện MPRP”, không đóng dấu thông qua.",
+  "flow_action": null,
+  "flow_camera": null,
+  "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+  "asset_contract": [
+    {
+      "layer": "album-spread",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "applicant-couple",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "children",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "parents",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "grandparents",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "kinship-connectors",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-rig",
+      "source": "approved mascot derivative",
+      "status": "planned",
+      "required_separate_layer": true
+    }
+  ],
+  "container_required": true,
+  "container_inventory": [
+    {
+      "object_type": "family album",
+      "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+      "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+      "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+    }
+  ],
+  "container_semantics": [
+    {
+      "object_type": "family album",
+      "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+      "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+      "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+    }
+  ],
+  "visible_text_budget": {
+    "max_simultaneous_words": 8,
+    "max_levels": 2,
+    "paragraphs": 0
+  },
+  "visible_text_inventory": [
+    {
+      "text": "TỚI 4 THẾ HỆ",
+      "size_px": 54,
+      "role": "anchor",
+      "simultaneous": true
+    },
+    {
+      "text": "Theo điều kiện MPRP",
+      "size_px": 32,
+      "role": "condition",
+      "simultaneous": true
+    }
+  ],
+  "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Chữ trần trên nền sáng; không sweep.",
+  "accent_reason": "none",
+  "accent_treatment": "none",
+  "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+  "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+  "handoff": "Lật sang mặt sau album như vật liệu giấy để cắt sang chuẩn bị cho con.",
+  "continuity_risk": "OWNER_CONFIRMED: Chủ nội dung đã xác minh text “3.8 tỷ”. Giữ cách diễn đạt “khoảng 3,8 tỷ” trong voice. Không tự mở rộng thành giá mua nhà hoặc tổng phí trọn gói; bản thiết kế hiện tại vẫn tập trung gia phả và điều kiện MPRP.",
+  "pilot": false,
+  "status": "designed_not_produced",
+  "must_keep": [
+    "MPRP có thể bao gồm tới bốn thế hệ đủ điều kiện; con số khoảng 3,8 tỷ trong voice đã được chủ nội dung xác minh.",
+    "Các nhánh gia đình mở lần lượt tới con, cha mẹ, ông bà. Tới cụm “4 thế hệ” mới đủ bốn cấp; ghi ngắn “Theo điều kiện MPRP”, không đóng dấu thông qua.",
+    "voice/sample bounds",
+    "mascot identity, warm light palette, footer 200px",
+    "zero added CTA or documentary claims"
+  ],
+  "flexible": [
+    "Toạ độ/kích thước trong safe area",
+    "easing/pose/chi tiết nét",
+    "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+  ],
+  "reference_alignment": {
+    "colour_relationships": {
+      "reference_evidence": "Brief: cream/peach/lilac + accents",
+      "candidate_evidence": "S10: warm ground and vivid orange/blue/purple",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "typography_treatment": {
+      "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+      "candidate_evidence": "S10: local shipped font, sparse native text",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "asset_mix": {
+      "reference_evidence": "Reference 04/06: real campus plus drawing",
+      "candidate_evidence": "S10: Valletta photo where geographic evidence is needed; vector/physical paper elsewhere",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "composition": {
+      "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+      "candidate_evidence": "S10: Một trang album gia đình thực sự, mở chéo trên nền cream, bốn thế hệ đặt theo quan hệ gia phả chứ không bốn trẻ kế tiếp; mascot đỡ góc album.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "mascot_language": {
+      "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+      "candidate_evidence": "S10: Mascot giữ album và hướng ánh nhìn theo nhánh, không trao thẻ cư trú.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "motion_rhythm": {
+      "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+      "candidate_evidence": "S10: Các nhánh gia đình mở lần lượt tới con, cha mẹ, ông bà. Tới cụm “4 thế hệ” mới đủ bốn cấp; ghi ngắn “Theo điều kiện MPRP”, không đóng dấu thông qua.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    }
+  },
+  "price_confirmation": {
+    "claim_id": "S10_price_3_8_billion_VND",
+    "user_message_verbatim": "mình xác minh text \"3.8 tỷ\"",
+    "confirmed_by": "project owner in this chat",
+    "confirmation_status": "owner_confirmed",
+    "canonical_text": "khoảng 3,8 tỷ đồng",
+    "scope": "Price text in original narration; no new all-inclusive or property-purchase-price claim.",
+    "independently_verified_by_codex": false,
+    "supporting_cost_breakdown_supplied": false,
+    "director_price_hold": "resolved_by_owner_confirmation",
+    "storyboard_pilot_approval": "pending",
+    "full_film_production_authorized": false,
+    "audio_or_pilot_render_changes": false
+  }
+}

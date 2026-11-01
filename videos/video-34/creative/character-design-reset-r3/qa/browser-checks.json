@@ -1,0 +1,721 @@
+{
+  "browser": "Chrome/150.0.7871.115",
+  "results": [
+    {
+      "name": "option-A",
+      "width": 1800,
+      "height": 1600,
+      "errors": [],
+      "failed_requests": [],
+      "font_ready": true,
+      "text": [
+        {
+          "text": "VIDEO-34 / CHARACTER RESET / A",
+          "x": 65,
+          "y": 56,
+          "width": 302.43597412109375,
+          "height": 20
+        },
+        {
+          "text": "PREMIUM STYLIZED VECTOR",
+          "x": 66,
+          "y": 98,
+          "width": 520.9375,
+          "height": 43
+        },
+        {
+          "text": "Soft sculpted shapes / warm, observant / everyday ease",
+          "x": 68,
+          "y": 157,
+          "width": 538.875,
+          "height": 22
+        },
+        {
+          "text": "01   CAST / THREE-QUARTER FULL BODY",
+          "x": 68,
+          "y": 230,
+          "width": 289.37939453125,
+          "height": 18
+        },
+        {
+          "text": "PARENT",
+          "x": 117,
+          "y": 757,
+          "width": 57.53118896484375,
+          "height": 16
+        },
+        {
+          "text": "CHILD / 7–9",
+          "x": 341,
+          "y": 757,
+          "width": 82.6875,
+          "height": 16
+        },
+        {
+          "text": "SECOND ADULT",
+          "x": 548,
+          "y": 757,
+          "width": 108.77642822265625,
+          "height": 16
+        },
+        {
+          "text": "RESIDENT",
+          "x": 765,
+          "y": 757,
+          "width": 71.48272705078125,
+          "height": 16
+        },
+        {
+          "text": "02   FACE / EXPRESSION",
+          "x": 1012,
+          "y": 231,
+          "width": 172.109375,
+          "height": 18
+        },
+        {
+          "text": "WARM / PRESENT",
+          "x": 1012,
+          "y": 527,
+          "width": 119.6650390625,
+          "height": 15
+        },
+        {
+          "text": "LISTEN / CONSIDER",
+          "x": 1273,
+          "y": 527,
+          "width": 129.78125,
+          "height": 15
+        },
+        {
+          "text": "JOY / RECOGNITION",
+          "x": 1515,
+          "y": 527,
+          "width": 129.875,
+          "height": 15
+        },
+        {
+          "text": "AGE + IDENTITY",
+          "x": 1189,
+          "y": 626,
+          "width": 124.69287109375,
+          "height": 18
+        },
+        {
+          "text": "Child cheeks, hair, gaze and wardrobe",
+          "x": 1190,
+          "y": 664,
+          "width": 268.328125,
+          "height": 17
+        },
+        {
+          "text": "are designed separately from the adult.",
+          "x": 1190,
+          "y": 692,
+          "width": 278.3125,
+          "height": 17
+        },
+        {
+          "text": "03   POSE / WEIGHT / CONTACT",
+          "x": 68,
+          "y": 842,
+          "width": 221.14715576171875,
+          "height": 18
+        },
+        {
+          "text": "SEATED / DESK SUPPORT",
+          "x": 74,
+          "y": 894,
+          "width": 211.872314453125,
+          "height": 19
+        },
+        {
+          "text": "WALK / WEIGHT SHIFT",
+          "x": 519,
+          "y": 894,
+          "width": 186.5926513671875,
+          "height": 19
+        },
+        {
+          "text": "TURN / ATTENTION",
+          "x": 919,
+          "y": 894,
+          "width": 157.53125,
+          "height": 19
+        },
+        {
+          "text": "CONTACT / SHARED TARGET",
+          "x": 1355,
+          "y": 894,
+          "width": 232.5020751953125,
+          "height": 19
+        },
+        {
+          "text": "Pelvis rests on seat; knees bend forward.",
+          "x": 73,
+          "y": 1494,
+          "width": 256.4375,
+          "height": 14
+        },
+        {
+          "text": "Opposing limbs; feet have different jobs.",
+          "x": 520,
+          "y": 1494,
+          "width": 249.03125,
+          "height": 14
+        },
+        {
+          "text": "Head and body turn toward a person.",
+          "x": 920,
+          "y": 1494,
+          "width": 229.28125,
+          "height": 14
+        },
+        {
+          "text": "Bent elbows; adult and child hands overlap.",
+          "x": 1355,
+          "y": 1494,
+          "width": 269.625,
+          "height": 14
+        },
+        {
+          "text": "ORIGINAL EDITABLE VECTOR / STATIC DESIGN STUDY / AWAITING CHARACTER DESIGN REVIEW",
+          "x": 68,
+          "y": 1557,
+          "width": 662.6865234375,
+          "height": 16
+        }
+      ],
+      "duplicate_ids": [],
+      "repeat_identical": true
+    },
+    {
+      "name": "option-B",
+      "width": 1800,
+      "height": 1600,
+      "errors": [],
+      "failed_requests": [],
+      "font_ready": true,
+      "text": [
+        {
+          "text": "VIDEO-34 / CHARACTER RESET / B",
+          "x": 65,
+          "y": 56,
+          "width": 301.75,
+          "height": 20
+        },
+        {
+          "text": "MODERN EDITORIAL",
+          "x": 66,
+          "y": 98,
+          "width": 370.46875,
+          "height": 43
+        },
+        {
+          "text": "Longer proportions / tailored silhouette / quiet confidence",
+          "x": 68,
+          "y": 157,
+          "width": 558.484375,
+          "height": 22
+        },
+        {
+          "text": "01   CAST / THREE-QUARTER FULL BODY",
+          "x": 68,
+          "y": 230,
+          "width": 289.37939453125,
+          "height": 18
+        },
+        {
+          "text": "PARENT",
+          "x": 117,
+          "y": 757,
+          "width": 57.53118896484375,
+          "height": 16
+        },
+        {
+          "text": "CHILD / 7–9",
+          "x": 341,
+          "y": 757,
+          "width": 82.6875,
+          "height": 16
+        },
+        {
+          "text": "SECOND ADULT",
+          "x": 548,
+          "y": 757,
+          "width": 108.77642822265625,
+          "height": 16
+        },
+        {
+          "text": "RESIDENT",
+          "x": 765,
+          "y": 757,
+          "width": 71.48272705078125,
+          "height": 16
+        },
+        {
+          "text": "02   FACE / EXPRESSION",
+          "x": 1012,
+          "y": 231,
+          "width": 172.109375,
+          "height": 18
+        },
+        {
+          "text": "WARM / PRESENT",
+          "x": 1012,
+          "y": 527,
+          "width": 119.6650390625,
+          "height": 15
+        },
+        {
+          "text": "LISTEN / CONSIDER",
+          "x": 1273,
+          "y": 527,
+          "width": 129.78125,
+          "height": 15
+        },
+        {
+          "text": "JOY / RECOGNITION",
+          "x": 1515,
+          "y": 527,
+          "width": 129.875,
+          "height": 15
+        },
+        {
+          "text": "AGE + IDENTITY",
+          "x": 1189,
+          "y": 626,
+          "width": 124.69287109375,
+          "height": 18
+        },
+        {
+          "text": "Child cheeks, hair, gaze and wardrobe",
+          "x": 1190,
+          "y": 664,
+          "width": 268.328125,
+          "height": 17
+        },
+        {
+          "text": "are designed separately from the adult.",
+          "x": 1190,
+          "y": 692,
+          "width": 278.3125,
+          "height": 17
+        },
+        {
+          "text": "03   POSE / WEIGHT / CONTACT",
+          "x": 68,
+          "y": 842,
+          "width": 221.14715576171875,
+          "height": 18
+        },
+        {
+          "text": "SEATED / DESK SUPPORT",
+          "x": 74,
+          "y": 894,
+          "width": 211.872314453125,
+          "height": 19
+        },
+        {
+          "text": "WALK / WEIGHT SHIFT",
+          "x": 519,
+          "y": 894,
+          "width": 186.5926513671875,
+          "height": 19
+        },
+        {
+          "text": "TURN / ATTENTION",
+          "x": 919,
+          "y": 894,
+          "width": 157.53125,
+          "height": 19
+        },
+        {
+          "text": "CONTACT / SHARED TARGET",
+          "x": 1355,
+          "y": 894,
+          "width": 232.5020751953125,
+          "height": 19
+        },
+        {
+          "text": "Pelvis rests on seat; knees bend forward.",
+          "x": 73,
+          "y": 1494,
+          "width": 256.4375,
+          "height": 14
+        },
+        {
+          "text": "Opposing limbs; feet have different jobs.",
+          "x": 520,
+          "y": 1494,
+          "width": 249.03125,
+          "height": 14
+        },
+        {
+          "text": "Head and body turn toward a person.",
+          "x": 920,
+          "y": 1494,
+          "width": 229.28125,
+          "height": 14
+        },
+        {
+          "text": "Bent elbows; adult and child hands overlap.",
+          "x": 1355,
+          "y": 1494,
+          "width": 269.625,
+          "height": 14
+        },
+        {
+          "text": "ORIGINAL EDITABLE VECTOR / STATIC DESIGN STUDY / AWAITING CHARACTER DESIGN REVIEW",
+          "x": 68,
+          "y": 1557,
+          "width": 662.6865234375,
+          "height": 16
+        }
+      ],
+      "duplicate_ids": [],
+      "repeat_identical": true
+    },
+    {
+      "name": "option-C",
+      "width": 1800,
+      "height": 1600,
+      "errors": [],
+      "failed_requests": [],
+      "font_ready": true,
+      "text": [
+        {
+          "text": "VIDEO-34 / CHARACTER RESET / C",
+          "x": 65,
+          "y": 56,
+          "width": 301.3125,
+          "height": 20
+        },
+        {
+          "text": "EXPRESSIVE GEOMETRIC",
+          "x": 66,
+          "y": 98,
+          "width": 460.953125,
+          "height": 43
+        },
+        {
+          "text": "Angular counterforms / graphic charm / elastic personality",
+          "x": 68,
+          "y": 157,
+          "width": 569.0758666992188,
+          "height": 22
+        },
+        {
+          "text": "01   CAST / THREE-QUARTER FULL BODY",
+          "x": 68,
+          "y": 230,
+          "width": 289.37939453125,
+          "height": 18
+        },
+        {
+          "text": "PARENT",
+          "x": 117,
+          "y": 757,
+          "width": 57.53118896484375,
+          "height": 16
+        },
+        {
+          "text": "CHILD / 7–9",
+          "x": 341,
+          "y": 757,
+          "width": 82.6875,
+          "height": 16
+        },
+        {
+          "text": "SECOND ADULT",
+          "x": 548,
+          "y": 757,
+          "width": 108.77642822265625,
+          "height": 16
+        },
+        {
+          "text": "RESIDENT",
+          "x": 765,
+          "y": 757,
+          "width": 71.48272705078125,
+          "height": 16
+        },
+        {
+          "text": "02   FACE / EXPRESSION",
+          "x": 1012,
+          "y": 231,
+          "width": 172.109375,
+          "height": 18
+        },
+        {
+          "text": "WARM / PRESENT",
+          "x": 1012,
+          "y": 527,
+          "width": 119.6650390625,
+          "height": 15
+        },
+        {
+          "text": "LISTEN / CONSIDER",
+          "x": 1273,
+          "y": 527,
+          "width": 129.78125,
+          "height": 15
+        },
+        {
+          "text": "JOY / RECOGNITION",
+          "x": 1515,
+          "y": 527,
+          "width": 129.875,
+          "height": 15
+        },
+        {
+          "text": "AGE + IDENTITY",
+          "x": 1189,
+          "y": 626,
+          "width": 124.69287109375,
+          "height": 18
+        },
+        {
+          "text": "Child cheeks, hair, gaze and wardrobe",
+          "x": 1190,
+          "y": 664,
+          "width": 268.328125,
+          "height": 17
+        },
+        {
+          "text": "are designed separately from the adult.",
+          "x": 1190,
+          "y": 692,
+          "width": 278.3125,
+          "height": 17
+        },
+        {
+          "text": "03   POSE / WEIGHT / CONTACT",
+          "x": 68,
+          "y": 842,
+          "width": 221.14715576171875,
+          "height": 18
+        },
+        {
+          "text": "SEATED / DESK SUPPORT",
+          "x": 74,
+          "y": 894,
+          "width": 211.872314453125,
+          "height": 19
+        },
+        {
+          "text": "WALK / WEIGHT SHIFT",
+          "x": 519,
+          "y": 894,
+          "width": 186.5926513671875,
+          "height": 19
+        },
+        {
+          "text": "TURN / ATTENTION",
+          "x": 919,
+          "y": 894,
+          "width": 157.53125,
+          "height": 19
+        },
+        {
+          "text": "CONTACT / SHARED TARGET",
+          "x": 1355,
+          "y": 894,
+          "width": 232.5020751953125,
+          "height": 19
+        },
+        {
+          "text": "Pelvis rests on seat; knees bend forward.",
+          "x": 73,
+          "y": 1494,
+          "width": 256.4375,
+          "height": 14
+        },
+        {
+          "text": "Opposing limbs; feet have different jobs.",
+          "x": 520,
+          "y": 1494,
+          "width": 249.03125,
+          "height": 14
+        },
+        {
+          "text": "Head and body turn toward a person.",
+          "x": 920,
+          "y": 1494,
+          "width": 229.28125,
+          "height": 14
+        },
+        {
+          "text": "Bent elbows; adult and child hands overlap.",
+          "x": 1355,
+          "y": 1494,
+          "width": 269.625,
+          "height": 14
+        },
+        {
+          "text": "ORIGINAL EDITABLE VECTOR / STATIC DESIGN STUDY / AWAITING CHARACTER DESIGN REVIEW",
+          "x": 68,
+          "y": 1557,
+          "width": 662.6865234375,
+          "height": 16
+        }
+      ],
+      "duplicate_ids": [],
+      "repeat_identical": true
+    },
+    {
+      "name": "scene-scale-A",
+      "width": 1080,
+      "height": 1920,
+      "errors": [],
+      "failed_requests": [],
+      "font_ready": true,
+      "text": [
+        {
+          "text": "OPTION A / SCENE-SIZE CHARACTER PROOF",
+          "x": 65,
+          "y": 96,
+          "width": 572.864013671875,
+          "height": 30
+        },
+        {
+          "text": "1080 × 1920 / static silhouette, face and clothing check",
+          "x": 65,
+          "y": 158,
+          "width": 518.2571411132812,
+          "height": 22
+        }
+      ],
+      "duplicate_ids": [],
+      "repeat_identical": true
+    },
+    {
+      "name": "scene-scale-B",
+      "width": 1080,
+      "height": 1920,
+      "errors": [],
+      "failed_requests": [],
+      "font_ready": true,
+      "text": [
+        {
+          "text": "OPTION B / SCENE-SIZE CHARACTER PROOF",
+          "x": 65,
+          "y": 96,
+          "width": 572.673583984375,
+          "height": 30
+        },
+        {
+          "text": "1080 × 1920 / static silhouette, face and clothing check",
+          "x": 65,
+          "y": 158,
+          "width": 518.2571411132812,
+          "height": 22
+        }
+      ],
+      "duplicate_ids": [],
+      "repeat_identical": true
+    },
+    {
+      "name": "scene-scale-C",
+      "width": 1080,
+      "height": 1920,
+      "errors": [],
+      "failed_requests": [],
+      "font_ready": true,
+      "text": [
+        {
+          "text": "OPTION C / SCENE-SIZE CHARACTER PROOF",
+          "x": 65,
+          "y": 96,
+          "width": 572.029052734375,
+          "height": 30
+        },
+        {
+          "text": "1080 × 1920 / static silhouette, face and clothing check",
+          "x": 65,
+          "y": 158,
+          "width": 518.2571411132812,
+          "height": 22
+        }
+      ],
+      "duplicate_ids": [],
+      "repeat_identical": true
+    },
+    {
+      "name": "R2-vs-options",
+      "width": 1800,
+      "height": 940,
+      "errors": [],
+      "failed_requests": [],
+      "font_ready": true,
+      "text": [
+        {
+          "text": "VIDEO-34 / CHARACTER RESET / ACTUAL VECTOR COMPARISON",
+          "x": 49,
+          "y": 50,
+          "width": 608.125,
+          "height": 22
+        },
+        {
+          "text": "Rejected R2 and three new directions",
+          "x": 50,
+          "y": 92,
+          "width": 642.875,
+          "height": 41
+        },
+        {
+          "text": "R2 / REJECTED",
+          "x": 45,
+          "y": 185,
+          "width": 157.09375,
+          "height": 24
+        },
+        {
+          "text": "OPTION A",
+          "x": 500,
+          "y": 185,
+          "width": 100.45538330078125,
+          "height": 24
+        },
+        {
+          "text": "OPTION B",
+          "x": 950,
+          "y": 185,
+          "width": 100.171875,
+          "height": 24
+        },
+        {
+          "text": "OPTION C",
+          "x": 1400,
+          "y": 185,
+          "width": 99.65625,
+          "height": 24
+        },
+        {
+          "text": "Seated contact comparison. Adult drawings normalized to roughly 400px high for review; no physical size comparison.",
+          "x": 50,
+          "y": 888,
+          "width": 883.8240966796875,
+          "height": 17
+        }
+      ],
+      "duplicate_ids": [],
+      "repeat_identical": true
+    },
+    {
+      "name": "S08-interaction-A",
+      "width": 1080,
+      "height": 1920,
+      "errors": [],
+      "failed_requests": [],
+      "font_ready": true,
+      "text": [],
+      "duplicate_ids": [],
+      "repeat_identical": true
+    },
+    {
+      "gallery_mobile": {
+        "overflow": false
+      }
+    }
+  ]
+}

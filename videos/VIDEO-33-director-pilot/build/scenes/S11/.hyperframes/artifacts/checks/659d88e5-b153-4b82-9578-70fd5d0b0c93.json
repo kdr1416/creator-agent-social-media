@@ -1,0 +1,126 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 5.677,
+        "selector": "#p11-mascot",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 186.12,
+          "top": -8.99,
+          "right": 402.44,
+          "bottom": 222.27,
+          "width": 216.32,
+          "height": 231.26
+        },
+        "containerSelector": "svg.svg-scene",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 720,
+          "bottom": 1280,
+          "width": 720,
+          "height": 1280
+        },
+        "overflow": {
+          "top": 8.99
+        },
+        "dataAttributes": {
+          "data-svg-origin": "-47 -9.363636016845703"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 186.12,
+          "y": -8.99,
+          "width": 216.32,
+          "height": 231.26
+        },
+        "firstSeen": 5.677,
+        "lastSeen": 5.677,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5.677
+        ]
+      }
+    ],
+    "duration": 6.8118,
+    "samples": [
+      0.378,
+      1.135,
+      1.892,
+      2.649,
+      3.406,
+      4.163,
+      4.92,
+      5.677,
+      6.433
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 1,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.378,
+      1.892,
+      3.406,
+      4.92,
+      6.433
+    ],
+    "checked": 5,
+    "passed": 5
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

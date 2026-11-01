@@ -1,0 +1,84 @@
+{
+  "schema_version": 2,
+  "phase": "pilot_awaiting_human_review",
+  "approval": {
+    "status": "pending",
+    "reviewer": null,
+    "approved_at": null,
+    "evidence": null,
+    "fingerprint": null
+  },
+  "scenes": {
+    "S03": {
+      "status": "pilot_rendered_awaiting_human_review",
+      "engine": "hyperframes",
+      "source": "scenes/S03/index.html",
+      "output": "scenes/S03/S03-pilot.mp4",
+      "source_sha256": "c43d6f9d37f079543d60909ee8a1eed052c1be9ab83ac7083e017c9edfda44f0",
+      "output_sha256": "8f62173cfc615d69c6217503577e28fd90908c6c064cbe3b7c825092237b09e9",
+      "technical_qa": "passed_with_documented_warnings",
+      "visual_qa": "R1_MP4_highlights_and_mobile_frames_inspected_human_review_pending",
+      "frames": 268,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "audio_samples": 214542,
+      "evidence": "build/pilot-evidence/",
+      "known_limits": [
+        "Stylized gait; simplified gaze/hand anatomy; dark typography wash requires human creative review"
+      ],
+      "creative_revision": "R1",
+      "revision_notes": "creative/revision-r1.md"
+    },
+    "S08": {
+      "status": "pilot_rendered_awaiting_human_review",
+      "engine": "hyperframes",
+      "source": "scenes/S08/index.html",
+      "output": "scenes/S08/S08-pilot.mp4",
+      "source_sha256": "0f722e0c9454db2174eb7a81619899ae770e986e9063f623d9ede4007ee62d50",
+      "output_sha256": "672b01ca5e4a75535420a97373cf773d35137cbf1e3bb4f48c5783c66e16063a",
+      "technical_qa": "passed_with_documented_warnings",
+      "visual_qa": "R1_MP4_highlights_and_mobile_frames_inspected_human_review_pending",
+      "frames": 168,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "audio_samples": 134643,
+      "evidence": "build/pilot-evidence/",
+      "known_limits": [
+        "Stylized gait; simplified gaze/hand anatomy; dark typography wash requires human creative review"
+      ],
+      "creative_revision": "R1",
+      "revision_notes": "creative/revision-r1.md"
+    }
+  },
+  "final": {
+    "status": "pending"
+  },
+  "next_actions": [
+    "Human review of revised S03/S08 MP4s and before/after comparison in REVIEW.html",
+    "Revise requested scene only; refresh assets/output hashes and targeted QA",
+    "Do not mark approved or produce other scenes without explicit human decision",
+    "S13 remains factual review required; master and 17 input intervals unchanged"
+  ],
+  "storyboard": {
+    "status": "draft_complete_for_review",
+    "document": "creative/storyboard.md",
+    "style_bible": "creative/style-bible.md",
+    "assets_plan": "creative/assets-components-plan.md",
+    "pilot_candidates": [
+      "S03",
+      "S08"
+    ],
+    "pilot_built": true,
+    "factual_review_required": [
+      "S13"
+    ],
+    "timing_review_required": [
+      "ASR word 334 crosses S14/S15 boundary; master and manifest unchanged"
+    ]
+  },
+  "pilot_status": "AWAITING HUMAN REVIEW",
+  "creative_revision": "R1",
+  "prior_pilot_feedback": "NOT APPROVED — CREATIVE REVISION REQUIRED"
+}

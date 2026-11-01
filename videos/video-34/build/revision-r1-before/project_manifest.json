@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "project_id": "video-34",
+  "production_agent": "codex",
+  "audio_analysis_agent": "antigravity",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "fps": 30,
+  "audio": {
+    "path": "inputs/Generated Audio November 01, 2026 - 5_35PM.wav",
+    "sha256": "6b92d56bb90f3c4e702903d53d098d7c1765daf716879e8de60826a3110425c1",
+    "sample_rate": 24000,
+    "total_samples": 2232960
+  },
+  "pilot_scene_ids": [
+    "S03",
+    "S08"
+  ],
+  "renderers": {
+    "hyperframes": [],
+    "remotion": []
+  },
+  "configuration_status": "pilot_working_only_not_approved_for_full_film",
+  "pilot_working_configuration": "build/pilot-working-config.json"
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=720,height=1280">
+<title>Minh Nhật · Phong thư mở ra điểm đến</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:PilotSans;src:url('assets/arial.ttf')}@font-face{font-family:PilotSans;src:url('assets/arialbd.ttf');font-weight:700}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}#nhat-pilot{position:relative;width:100%;height:100%;overflow:hidden;background:#FFF3E8;color:#30313B;font-family:PilotSans,Arial,sans-serif}
+#world{position:absolute;inset:0;transform-origin:360px 650px}.strip{position:absolute;background:#087BC1;color:white;padding:14px 25px;font-size:43px;font-weight:700;line-height:1.1;white-space:nowrap;box-shadow:5px 7px 0 #30313b12}
+#congrats{left:158px;top:145px;transform-origin:center}#student-name{position:absolute;left:0;top:242px;width:720px;text-align:center;font-size:52px;font-weight:700}
+#place{left:118px;top:365px;font-size:40px;z-index:7}#scene-art{position:absolute;left:0;top:0;width:720px;height:1080px}
+#photo-window{position:absolute;left:50px;top:350px;width:620px;height:605px;overflow:hidden;z-index:3}#campus{position:absolute;left:36px;top:95px;width:548px;height:330px;background:#FFFEFA;padding:13px;box-shadow:6px 10px 0 #30313b1a;transform-origin:50% 75%}
+#campus img{width:522px;height:257px;display:block;object-fit:cover;object-position:47% 50%}#photo-caption{font-size:25px;margin:9px 0 0 7px;letter-spacing:.5px;color:#30313B}
+.tape{position:absolute;width:110px;height:31px;background:#ECD6A6C9;top:-12px;left:215px;transform:rotate(-5deg);clip-path:polygon(0 10%,96% 0,100% 88%,4% 100%)}
+#envelope-back,#envelope-front,#envelope-flap{position:absolute;left:0;top:0;width:720px;height:1080px}#envelope-back{z-index:1}#envelope-flap{z-index:2}#envelope-front{z-index:4}#mascot{position:absolute;left:0;top:0;width:720px;height:1080px;z-index:6}
+#offer-note{position:absolute;left:139px;top:832px;width:350px;font-size:29px;letter-spacing:1px;font-weight:700;z-index:5;transform:rotate(-3deg)}
+#sparkles{position:absolute;inset:0;z-index:8;pointer-events:none}
+</style></head><body>
+<div data-hf-id="hf-oahv" id="nhat-pilot" data-composition-id="nhat-pilot" data-width="720" data-height="1280" data-start="0" data-duration="6.0">
+<div data-hf-id="hf-j427" id="world">
+<svg data-hf-id="hf-lg1d" id="scene-art" viewBox="0 0 720 1080" aria-label="Illustrated paper stage">
+ <path data-hf-id="hf-3l38" d="M44 435Q45 342 115 355M614 958q47 9 47-43" fill="none" stroke="#D9CBDC" stroke-width="3" stroke-linecap="round"/>
+ <path data-hf-id="hf-48yz" d="M72 990Q357 1014 651 986" fill="none" stroke="#DCC8B7" stroke-width="3" stroke-linecap="round"/>
+ <ellipse data-hf-id="hf-ex32" cx="363" cy="985" rx="260" ry="19" fill="#E8D6C7" opacity=".55"/>
+</svg>
+<div data-hf-id="hf-slyx" id="congrats" class="strip">CHÚC MỪNG</div><div data-hf-id="hf-w0g7" id="student-name">MINH NHẬT!</div>
+<svg data-hf-id="hf-4uzn" id="envelope-back" viewBox="0 0 720 1080" aria-label="Illustrative envelope back">
+ <path data-hf-id="hf-ash0" d="M86 651L634 651Q645 651 645 667V934Q645 950 628 950H92Q75 950 75 934V667Q75 651 86 651Z" fill="#DFB69B" stroke="#30313B" stroke-width="3.3"/>
+</svg>
+<svg data-hf-id="hf-m6jz" id="envelope-flap" viewBox="0 0 720 1080" aria-label="Envelope flap"><g data-hf-id="hf-nl61" id="flap-motion"><path data-hf-id="hf-0y30" d="M82 655H638L371 862Q360 871 349 862Z" fill="#F7D6BC" stroke="#30313B" stroke-width="3.3" stroke-linejoin="round"/></g></svg>
+<div data-hf-id="hf-p8s0" id="photo-window"><div data-hf-id="hf-rbhq" id="campus"><div data-hf-id="hf-nb8w" class="tape"></div><img data-hf-id="hf-pta1" src="assets/vu-campus.jpg" alt="VU Main Building, from VU Amsterdam official website"></div></div>
+<svg data-hf-id="hf-ptej" id="envelope-front" viewBox="0 0 720 1080" aria-label="Illustrative envelope front">
+ <path data-hf-id="hf-gxoz" d="M77 663L360 859L643 663V934Q643 949 628 949H92Q77 949 77 934Z" fill="#F4C7A8" stroke="#30313B" stroke-width="3.3" stroke-linejoin="round"/>
+ <path data-hf-id="hf-2g8e" d="M81 943L299 785M639 943L421 785" fill="none" stroke="#BA8B71" stroke-width="2.5"/>
+ <path data-hf-id="hf-wuxf" d="M81 946L348 767Q360 757 372 767L639 946" fill="#FFDFC3" stroke="#30313B" stroke-width="3.3" stroke-linejoin="round"/>
+ <path data-hf-id="hf-rjbn" d="M102 927L334 779" fill="none" stroke="#FFEFDE" stroke-width="4"/>
+</svg>
+<div data-hf-id="hf-9wnm" id="offer-note">THƯ MỜI NHẬP HỌC</div>
+<div data-hf-id="hf-phx4" id="place" class="strip">VU AMSTERDAM</div>
+<svg data-hf-id="hf-6tob" id="mascot" viewBox="0 0 720 1080" aria-label="Original student mascot opening envelope and celebrating">
+<g data-hf-id="hf-lytb" transform="translate(497 815)"><g data-hf-id="hf-g4zb" id="student-motion">
+ <ellipse data-hf-id="hf-zc2y" id="student-shadow" cx="63" cy="203" rx="65" ry="10" fill="#D7BDA8" opacity=".5"/>
+ <path data-hf-id="hf-ea0s" d="M48 143L41 190L18 194M90 143L98 190L120 194" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+ <rect data-hf-id="hf-p5s6" x="103" y="50" width="39" height="91" rx="16" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+ <path data-hf-id="hf-00n1" d="M113 69L134 78" fill="none" stroke="#A2D8ED" stroke-width="3"/>
+ <g data-hf-id="hf-ep3j" transform="translate(25 72)"><g data-hf-id="hf-9v5v" id="arm-far" ><path data-hf-id="hf-cr9p" d="M0 0Q-27-8-43-31" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/><circle data-hf-id="hf-z108" cx="-43" cy="-31" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/></g></g>
+ <path data-hf-id="hf-tz4p" d="M21 31Q24 9 50 12L95 14Q123 16 122 46L115 121Q114 148 86 152L49 149Q20 148 17 123L13 58Q12 42 21 31Z" fill="#FFAA28" stroke="#30313B" stroke-width="3.3"/>
+ <path data-hf-id="hf-3xje" d="M25 41Q30 25 49 26" fill="none" stroke="#FFD77B" stroke-width="5" stroke-linecap="round"/>
+ <path data-hf-id="hf-hwgw" d="M28 28Q17-8 61-9Q108-13 116 27Z" fill="#A990D5" stroke="#30313B" stroke-width="3"/><path data-hf-id="hf-3o8f" d="M17 29Q54 14 111 29L131 34Q138 40 127 42L35 39" fill="#8B73C0" stroke="#30313B" stroke-width="3"/>
+ <g data-hf-id="hf-nweh" id="eyes"><ellipse data-hf-id="hf-5t5b" cx="52" cy="68" rx="4.6" ry="7" fill="#30313B"/><ellipse data-hf-id="hf-mscv" cx="86" cy="67" rx="4.6" ry="7" fill="#30313B"/></g>
+ <path data-hf-id="hf-a6qu" id="mouth" d="M57 91Q70 105 82 88" fill="none" stroke="#30313B" stroke-width="3.3" stroke-linecap="round"/>
+ <ellipse data-hf-id="hf-xgy0" cx="39" cy="87" rx="10" ry="5" fill="#EE7C47" opacity=".65"/><ellipse data-hf-id="hf-5cdz" cx="99" cy="86" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+ <path data-hf-id="hf-sd8a" d="M111 48L96 129" fill="none" stroke="#05669D" stroke-width="7" stroke-linecap="round"/>
+ <g data-hf-id="hf-11ac" transform="translate(109 83)"><g data-hf-id="hf-9hbq" id="arm-near"><path data-hf-id="hf-6bxz" d="M0 0Q20 24 38 7" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/><circle data-hf-id="hf-z3hp" cx="38" cy="7" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/></g></g>
+</g></g></svg>
+<svg data-hf-id="hf-qswv" id="sparkles" viewBox="0 0 720 1280" aria-hidden="true"><g data-hf-id="hf-6iwj" id="joy-marks" fill="none" stroke="#DC6E38" stroke-width="4" stroke-linecap="round"><path data-hf-id="hf-dhly" d="M62 511L41 497M63 552L34 558M650 474L672 457M659 508L686 505"/><path data-hf-id="hf-q4r4" d="M562 323v27M549 336h27" stroke="#087BC1"/><path data-hf-id="hf-pyz6" d="M150 325v20M140 335h20" stroke="#AD8AC9"/></g></svg>
+</div>
+</div>
+<script>
+(()=>{
+ const tl=gsap.timeline({paused:true});
+ tl.fromTo('#world',{scale:1.07,y:10},{scale:1,y:0,duration:2.4,ease:'power2.out'},0);
+ tl.fromTo('#congrats',{scale:.75,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.42,ease:'back.out(1.7)'},.05);
+ tl.fromTo('#student-name',{y:20,opacity:0},{y:0,opacity:1,duration:.3,ease:'power2.out'},.4);
+ tl.fromTo('#campus',{y:320,rotation:3,opacity:0},{y:320,rotation:3,opacity:0,duration:.01},0);
+ tl.fromTo('#place',{y:24,rotation:-2,scale:.9,opacity:0},{y:0,rotation:1.5,scale:1,opacity:1,duration:.38,ease:'back.out(1.4)',immediateRender:false},4.15);
+ tl.set('#place',{opacity:0},0);
+ tl.set('#joy-marks',{opacity:0,scale:.75,transformOrigin:'360px 480px'},0);
+ tl.to('#arm-far',{rotation:-13,svgOrigin:'0 0',duration:.25,ease:'power2.inOut'},.95);
+ tl.to('#student-motion',{rotation:-4,transformOrigin:'63px 190px',duration:.28,ease:'power2.inOut'},1.1);
+ tl.to('#flap-motion',{scaleY:-.85,svgOrigin:'360 655',duration:.52,ease:'power2.inOut'},1.4);
+ tl.to('#offer-note',{opacity:0,duration:.2},1.75);
+ tl.to('#arm-far',{rotation:63,svgOrigin:'0 0',duration:.5,ease:'power2.inOut'},1.4);
+ tl.to('#campus',{opacity:1,y:0,rotation:-4,duration:1.1,ease:'power3.out'},2.05);
+ tl.to('#student-motion',{rotation:0,duration:.32,ease:'back.out(1.5)'},2.28);
+ tl.to('#eyes',{y:-5,duration:.3,ease:'power2.out'},2.3);
+ tl.to('#arm-far',{rotation:5,duration:.3,ease:'power2.inOut'},2.65);
+ tl.to('#campus',{rotation:-2.2,y:-8,duration:.65,ease:'sine.inOut'},3.45);
+ tl.to('#arm-far',{rotation:38,duration:.25,ease:'back.out(1.3)'},4.4);
+ tl.to('#arm-near',{rotation:-110,svgOrigin:'0 0',duration:.3,ease:'back.out(1.4)'},4.4);
+ tl.to('#student-motion',{y:-25,rotation:-5,duration:.2,ease:'power2.out'},4.45).to('#student-motion',{y:0,rotation:0,duration:.25,ease:'power2.in'},4.65);
+ tl.to('#joy-marks',{opacity:1,scale:1,duration:.28,ease:'back.out(1.5)'},4.45);
+ tl.to('#eyes',{y:0,duration:.3},4.9);
+ tl.to('#arm-far',{rotation:20,duration:.3},5.2);
+ tl.to('#arm-near',{rotation:-83,duration:.3},5.2);
+ tl.to({hold:0},{hold:1,duration:6.0,ease:'none'},0);
+ window.__timelines=window.__timelines||{};window.__timelines['nhat-pilot']=tl;
+})();
+</script></body></html>

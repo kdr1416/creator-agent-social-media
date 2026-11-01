@@ -1,0 +1,15 @@
+{
+  "project_slug": "tran-minh-nhat",
+  "branch": "style-lab-06-12",
+  "stage": "two_scenes_rendered_pending_feedback",
+  "rendered": [
+    "scene_06",
+    "scene_12"
+  ],
+  "source_integrity": {
+    "files_checked": 780,
+    "changed": [],
+    "all_unchanged": true
+  },
+  "main_workflow_updated": false
+}

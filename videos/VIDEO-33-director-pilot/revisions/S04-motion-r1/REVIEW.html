@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S04 Revision Review · S04-motion-r1</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-gold: #facc15;
+      --success: #22c55e;
+      --danger: #f87171;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      padding: 24px;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+    h1 { font-size: 24px; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 10px; }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .badge-success { background: rgba(34, 197, 94, 0.2); color: #4ade80; border: 1px solid #22c55e; }
+    .badge-danger { background: rgba(248, 113, 113, 0.2); color: #f87171; border: 1px solid #ef4444; }
+
+    .compare-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    @media (max-width: 800px) {
+      .compare-container { grid-template-columns: 1fr; }
+    }
+
+    .video-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .video-card.new { border-color: #0284c7; box-shadow: 0 0 20px rgba(2, 132, 199, 0.2); }
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #000;
+      aspect-ratio: 9 / 16;
+    }
+    video { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+    .metrics-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      font-size: 13px;
+    }
+    .metrics-table th, .metrics-table td {
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    .metrics-table th { background: #1e293b; color: var(--text-muted); }
+    .mono { font-family: var(--font-mono); font-size: 12px; }
+
+    .points-list {
+      margin-left: 20px;
+      font-size: 13px;
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>S04 Review Board · Bản Sửa Mới <span class="badge badge-success">S04-motion-r1</span></h1>
+    <p style="color: var(--text-muted); font-size: 14px; margin-top: 6px;">
+      Voice: <i>"Liệu toàn bộ tài sản của gia đình có nên chỉ tập trung ở Việt Nam?"</i> (4.030s, 121 frames @ 30fps)
+    </p>
+  </header>
+
+  <div class="compare-container">
+    <!-- OLD VERSION -->
+    <div class="video-card">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <h3 style="color: var(--danger);">BẢN CŨ (Mất cân đối)</h3>
+        <span class="badge badge-danger">CHÌM ĐÁY · TRỐNG 500PX</span>
+      </div>
+      <div class="video-wrapper">
+        <video controls preload="metadata" loop>
+          <source src="../../build/scenes/S04/renders/pilot.mp4" type="video/mp4">
+        </video>
+      </div>
+      <ul class="points-list">
+        <li><b>Lệch đáy nghiêm trọng:</b> Khay cân và điểm tựa nằm bẹp dí ở đáy ($y=875–890$), dải giữa ($y=320–640$) trống 100%.</li>
+        <li><b>Mất đối trọng ngang:</b> Cụm đồ bên phải quá dày đặc, bên trái chỉ có dấu hỏi lơ lửng chơ vơ ngoài đĩa cân.</li>
+        <li><b>Thiếu Mascot:</b> Không có nhân vật, mất tính liên kết với mascot từ S01 và S03.</li>
+        <li><b>Tiêu đề cộc lốc:</b> Hộp xanh thô ghi `"MỘT NƠI?"` không đủ sức nặng của câu hỏi chiến lược.</li>
+      </ul>
+    </div>
+
+    <!-- NEW REVISION -->
+    <div class="video-card new">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <h3 style="color: var(--accent);">BẢN SỬA MỚI (S04-motion-r1)</h3>
+        <span class="badge badge-success">NÂNG CÁN CÂN · CÂN ĐỐI ĐỐI TRỌNG</span>
+      </div>
+      <div class="video-wrapper">
+        <video controls autoplay loop preload="metadata">
+          <source src="renders/pilot.mp4" type="video/mp4">
+        </video>
+      </div>
+      <ul class="points-list">
+        <li><b>Nâng độ cao trung tâm ($y=660$):</b> Cán cân đưa lên ngang tầm mắt, giải quyết triệt để lỗi chìm đáy, cân đối toàn khung.</li>
+        <li><b>Đối trọng hai bên hài hòa:</b><br>
+          • <i>Bên phải (nặng):</i> Cụm tài sản ấm cúng (ngôi nhà, sổ đỏ có dấu niêm phong, cọc vàng) kèm tag đỏ trang trọng <code>100% TẠI VIỆT NAM</code>.<br>
+          • <i>Bên trái (vổng lên):</i> Dấu hỏi 3D gradient xanh/tím nổi bật với quầng sáng và tag <code>QUỐC TẾ?</code>, tạo khoảng mở dẫn mắt sẵn sàng nối sang S05 Malta.
+        </li>
+        <li><b>Có Mascot suy ngẫm:</b> Mascot đứng ở góc trái, tay chống cằm băn khoăn, mắt dõi theo độ nghiêng của cán cân, tạo sự đồng cảm sâu sắc.</li>
+        <li><b>Typography thanh lịch:</b> Kicker <code>PHÂN BỔ TÀI SẢN</code> + Tiêu đề <code>TẬP TRUNG MỘT NƠI?</code>, không còn box thô cứng.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 20px;">
+    <h3 style="color: #fff; margin-bottom: 12px;">So Sánh Thông Số Phân Bổ Pixel Thực Tế (Vertical Occupancy Gate)</h3>
+    <table class="metrics-table">
+      <thead>
+        <tr>
+          <th>Dải Không Gian Dọc</th>
+          <th>Bản Cũ (build/scenes/S04)</th>
+          <th>Bản Sửa Mới (S04-motion-r1)</th>
+          <th>Đánh Giá Thay Đổi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Dải trên [0 – 320px]</b></td>
+          <td class="mono">34.0% (Box xanh thô)</td>
+          <td class="mono">11.2% (Tiêu đề native)</td>
+          <td>Thoáng đãng, thanh lịch, đúng tinh thần editorial</td>
+        </tr>
+        <tr>
+          <td><b>Dải giữa [320 – 640px]</b></td>
+          <td class="mono" style="color:var(--danger); font-weight:bold;">0.0% (TRỐNG HOANG HOẢI)</td>
+          <td class="mono" style="color:var(--success); font-weight:bold;">12.6% (Đĩa cân nâng cao & Dấu hỏi 3D)</td>
+          <td>Xóa bỏ khoảng trống chết, cán cân đặt đúng tầm mắt</td>
+        </tr>
+        <tr>
+          <td><b>Dải dưới [640 – 960px]</b></td>
+          <td class="mono">49.0%</td>
+          <td class="mono">55.4% (Trụ cân, cụm tài sản & Mascot)</td>
+          <td>Cân đối, có mascot đồng hành, đối trọng vững chắc</td>
+        </tr>
+        <tr>
+          <td><b>Dải chân [960 – 1280px]</b></td>
+          <td class="mono">17.0%</td>
+          <td class="mono">20.8%</td>
+          <td>Giữ thông thoáng 180–200px cho vùng phụ đề an toàn</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

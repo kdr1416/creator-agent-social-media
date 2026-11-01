@@ -1,0 +1,178 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "gsap_timeline_set_initial_hide",
+        "severity": "warning",
+        "message": "Initial hidden state for \"#scene17\" is set via tl.set(...) at position 0 inside the paused timeline. A zero-duration set at 0 does not render while the playhead sits exactly at 0, so frame 0 shows the un-hidden state.",
+        "selector": "#scene17",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Năm 3\\flowkit-main\\videos\\tran-minh-nhat-ending-v2\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use gsap.set(...) (immediate, outside the timeline) for initial states, or author the hidden state directly in CSS/attributes."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "rotation_pivot_drift",
+        "severity": "warning",
+        "time": 3.059,
+        "selector": "#arm-left",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 258,
+          "y": 641.37,
+          "width": 39.2,
+          "height": 63.84
+        },
+        "rect": {
+          "left": 258,
+          "top": 641.37,
+          "right": 297.20000000000005,
+          "bottom": 705.2099999999999,
+          "width": 39.2,
+          "height": 63.84
+        },
+        "message": "Rotating element's bounding-box center drifts 72px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).",
+        "fixHint": "The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.",
+        "firstSeen": 3.059,
+        "lastSeen": 3.059,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          3.059
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 6.556,
+        "selector": "#folio-camera",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 39,
+          "top": -14784.09,
+          "right": 679,
+          "bottom": 1035,
+          "width": 640,
+          "height": 15819.09
+        },
+        "containerSelector": "#scene17 > svg:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 720,
+          "bottom": 1280,
+          "width": 720,
+          "height": 1280
+        },
+        "overflow": {
+          "top": 14784.09
+        },
+        "dataAttributes": {
+          "data-svg-origin": "360 800"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 39,
+          "y": -14784.09,
+          "width": 640,
+          "height": 15819.09
+        },
+        "firstSeen": 3.933,
+        "lastSeen": 7.43,
+        "occurrences": 5,
+        "heldMs": 3497,
+        "times": [
+          3.933,
+          4.807,
+          5.681,
+          6.556,
+          7.43
+        ]
+      }
+    ],
+    "duration": 7.866666667,
+    "samples": [
+      0.437,
+      1.311,
+      2.185,
+      3.059,
+      3.933,
+      4.807,
+      5.681,
+      6.556,
+      7.43
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 2,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.437,
+      2.185,
+      3.933,
+      5.681,
+      7.43
+    ],
+    "checked": 2,
+    "passed": 2
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "scene_number": 9,
+  "scene_id": "S09",
+  "start": 39.80008333333333,
+  "end": 47.251,
+  "start_sample": 955202,
+  "end_sample": 1134024,
+  "source_segments": [
+    9,
+    10
+  ],
+  "raw_text": "Đồng thời, diệt sở hữu tài sản ở nhiều thị trường cũng giúp đa dạng hóa dành một đầu tư thay vì phụ thuộc hoàn toàn do một quốc gia.",
+  "corrected_text": "Đồng thời, việc sở hữu tài sản ở nhiều thị trường cũng giúp đa dạng hóa danh mục đầu tư thay vì phụ thuộc hoàn toàn vào một quốc gia.",
+  "semantic_type": "open allocation mechanism",
+  "visual_center": "Phân bổ, không dồn một chỗ",
+  "organic_motion_need": "Không cần; vật thể/quan hệ là chủ thể.",
+  "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+  "preferred_mode": "HF_ONLY",
+  "routing_confidence": "high",
+  "routing_reason": "Phân bổ, không dồn một chỗ: hành động chủ đạo là chia / phân bổ các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ open allocation mechanism, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+  "flow_contribution": "none",
+  "hf_contribution": "Các đồng trượt theo rãnh cong tới các bệ khác; camera giữ toàn cơ chế. Mỗi bệ vẫn có một dấu dao động ngắn riêng, không xuất hiện khiên/chốt bảo hiểm.",
+  "fallback_mode": null,
+  "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+  "character": "no",
+  "title": "Phân bổ, không dồn một chỗ",
+  "takeaway": "Đa dạng hóa là phân bổ mức tiếp xúc, không phải bảo đảm lợi nhuận hoặc xóa rủi ro.",
+  "audio_source": [
+    "inputs/audio/seg_09.wav",
+    "inputs/audio/seg_10.wav"
+  ],
+  "duration": 7.450916666666664,
+  "sample_frames": 178822,
+  "raw_segments": [
+    {
+      "seg_id": 9,
+      "segment_id": "seg_09",
+      "audio_slice": "audio_slices/seg_09.wav",
+      "start_sample": 955202,
+      "end_sample": 1072972,
+      "sample_frames": 117770,
+      "start": 39.8,
+      "end": 44.707,
+      "duration": 4.907,
+      "sha256": "c1957bc000a67d0dc6b16f039234bcf9d4bf474a3185aba60ca3ff80e78116f5",
+      "raw_text": "Đồng thời, diệt sở hữu tài sản ở nhiều thị trường cũng giúp đa dạng hóa dành một đầu tư",
+      "corrected_text": "Đồng thời, việc sở hữu tài sản ở nhiều thị trường cũng giúp đa dạng hóa danh mục đầu tư",
+      "uncertainties": [
+        "diệt -> việc: ASR nhận sai âm đầu.",
+        "dành một -> danh mục: ASR nhận sai thuật ngữ tài chính 'danh mục đầu tư'."
+      ]
+    },
+    {
+      "seg_id": 10,
+      "segment_id": "seg_10",
+      "audio_slice": "audio_slices/seg_10.wav",
+      "start_sample": 1072972,
+      "end_sample": 1134024,
+      "sample_frames": 61052,
+      "start": 44.707,
+      "end": 47.251,
+      "duration": 2.544,
+      "sha256": "9a02f7c1654541731b2eb9336fdaa6c2986524ee9c95bc6ed127194fe5e44077",
+      "raw_text": "thay vì phụ thuộc hoàn toàn do một quốc gia.",
+      "corrected_text": "thay vì phụ thuộc hoàn toàn vào một quốc gia.",
+      "uncertainties": [
+        "do -> vào: Giọng nói lướt âm, chuẩn hoá giới từ ngữ pháp tiếng Việt thành 'vào một quốc gia'."
+      ]
+    }
+  ],
+  "render_mode": "HF_ONLY",
+  "style_candidates": [
+    {
+      "id": "hf_existing:warm-doodle-mixed-media",
+      "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+    },
+    {
+      "id": "kurzgesagt",
+      "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+    },
+    {
+      "id": "izometrik",
+      "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+    },
+    {
+      "id": "bauhaus",
+      "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+    }
+  ],
+  "style_id": "hf_existing:warm-doodle-mixed-media",
+  "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+  "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+  "visual_verb": "chia / phân bổ",
+  "composition": "Bàn cơ khí mở trên nền lilac: một cụm tài sản chung tách ra ba vùng thị trường không đóng khung; ba bệ tròn vật lý lệch cao, liên hệ qua nhánh cong. Không dùng bản đồ giả.",
+  "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+  "opening_state": "Ba đồng tài sản xếp chung tại một bệ, hai bệ còn trống.",
+  "transformation": "Các đồng trượt theo rãnh cong tới các bệ khác; camera giữ toàn cơ chế. Mỗi bệ vẫn có một dấu dao động ngắn riêng, không xuất hiện khiên/chốt bảo hiểm.",
+  "final_state": "Ba phần tài sản ở ba vùng, nét dao động vẫn còn. Nhãn một nơi biến mất trước nhãn nhiều thị trường xuất hiện.",
+  "protagonist_action": "Không mascot: chủ thể là quan hệ phân bổ; tránh bàn tay thần kỳ bảo vệ mọi bệ.",
+  "mascot_role": "Không mascot: chủ thể là quan hệ phân bổ; tránh bàn tay thần kỳ bảo vệ mọi bệ.",
+  "visual_family": "open allocation mechanism",
+  "timed_beats": [
+    {
+      "local_seconds": 0,
+      "spoken_cue": "Đồng thời, việc sở hữu",
+      "action": "Ba đồng cùng một nơi",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 1.25,
+      "spoken_cue": "ở nhiều thị trường",
+      "action": "Mở hai rãnh phân bổ",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 2.55,
+      "spoken_cue": "đa dạng hóa danh mục",
+      "action": "Hai đồng theo rãnh tới vùng khác",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 4.907,
+      "spoken_cue": "thay vì phụ thuộc",
+      "action": "Bệ trung tâm còn một đồng; các vùng vẫn dao động",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 6.35,
+      "spoken_cue": "một quốc gia",
+      "action": "Nhãn nhiều thị trường; giữ phân bổ",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    }
+  ],
+  "motion_emphasis_sequence": [
+    "Ba đồng cùng một nơi",
+    "Mở hai rãnh phân bổ",
+    "Hai đồng theo rãnh tới vùng khác",
+    "Bệ trung tâm còn một đồng; các vùng vẫn dao động",
+    "Nhãn nhiều thị trường; giữ phân bổ"
+  ],
+  "hf_signature_motion": "Các đồng trượt theo rãnh cong tới các bệ khác; camera giữ toàn cơ chế. Mỗi bệ vẫn có một dấu dao động ngắn riêng, không xuất hiện khiên/chốt bảo hiểm.",
+  "flow_action": null,
+  "flow_camera": null,
+  "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+  "asset_contract": [
+    {
+      "layer": "allocation-track",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "market-a-platform",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "market-b-platform",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "market-c-platform",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "token-a",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "token-b",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "token-c",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "local-fluctuation-marks",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "caption-a",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "caption-b",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    }
+  ],
+  "container_required": false,
+  "container_inventory": [],
+  "container_semantics": [],
+  "visible_text_budget": {
+    "max_simultaneous_words": 3,
+    "max_levels": 2,
+    "paragraphs": 0
+  },
+  "visible_text_inventory": [
+    {
+      "text": "MỘT NƠI",
+      "size_px": 54,
+      "role": "anchor",
+      "simultaneous": false
+    },
+    {
+      "text": "NHIỀU THỊ TRƯỜNG",
+      "size_px": 54,
+      "role": "anchor",
+      "simultaneous": false
+    }
+  ],
+  "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Chữ trần trên nền sáng; không sweep.",
+  "accent_reason": "none",
+  "accent_treatment": "none",
+  "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+  "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+  "handoff": "Cắt từ ba phân bổ sang nhóm gia đình ở cảnh 10. Không biến ba thị trường thành bốn thế hệ.",
+  "continuity_risk": "Không hiện %/đồ thị hiệu suất; cả ba vẫn có rủi ro. Phân bổ là ẩn dụ, không danh mục được khuyến nghị.",
+  "pilot": true,
+  "status": "pilot_rendered_awaiting_user_review",
+  "must_keep": [
+    "Đa dạng hóa là phân bổ mức tiếp xúc, không phải bảo đảm lợi nhuận hoặc xóa rủi ro.",
+    "Các đồng trượt theo rãnh cong tới các bệ khác; camera giữ toàn cơ chế. Mỗi bệ vẫn có một dấu dao động ngắn riêng, không xuất hiện khiên/chốt bảo hiểm.",
+    "voice/sample bounds",
+    "mascot identity, warm light palette, footer 200px",
+    "zero added CTA or documentary claims"
+  ],
+  "flexible": [
+    "Toạ độ/kích thước trong safe area",
+    "easing/pose/chi tiết nét",
+    "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+  ],
+  "reference_alignment": {
+    "colour_relationships": {
+      "reference_evidence": "Brief: cream/peach/lilac + accents",
+      "candidate_evidence": "qa/S09/mobile-7.20.png; in-progress 4.3s; pilots/S09/index.html",
+      "assessment": "match",
+      "revision_needed": "User acceptance pending. S09 deliberately omits mascot/photo for abstract allocation; does not prove full-film motion continuity."
+    },
+    "typography_treatment": {
+      "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+      "candidate_evidence": "qa/S09/mobile-7.20.png; in-progress 4.3s; pilots/S09/index.html",
+      "assessment": "match",
+      "revision_needed": "User acceptance pending. S09 deliberately omits mascot/photo for abstract allocation; does not prove full-film motion continuity."
+    },
+    "asset_mix": {
+      "reference_evidence": "Reference 04/06: real campus plus drawing",
+      "candidate_evidence": "qa/S09/mobile-7.20.png; in-progress 4.3s; pilots/S09/index.html",
+      "assessment": "partial",
+      "revision_needed": "User acceptance pending. S09 deliberately omits mascot/photo for abstract allocation; does not prove full-film motion continuity."
+    },
+    "composition": {
+      "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+      "candidate_evidence": "qa/S09/mobile-7.20.png; in-progress 4.3s; pilots/S09/index.html",
+      "assessment": "match",
+      "revision_needed": "User acceptance pending. S09 deliberately omits mascot/photo for abstract allocation; does not prove full-film motion continuity."
+    },
+    "mascot_language": {
+      "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+      "candidate_evidence": "qa/S09/mobile-7.20.png; in-progress 4.3s; pilots/S09/index.html",
+      "assessment": "match",
+      "revision_needed": "User acceptance pending. S09 deliberately omits mascot/photo for abstract allocation; does not prove full-film motion continuity."
+    },
+    "motion_rhythm": {
+      "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+      "candidate_evidence": "qa/S09/mobile-7.20.png; in-progress 4.3s; pilots/S09/index.html",
+      "assessment": "partial",
+      "revision_needed": "User acceptance pending. S09 deliberately omits mascot/photo for abstract allocation; does not prove full-film motion continuity."
+    }
+  },
+  "asset_contract_evidence": "pilots/S09/index.html; pilots/S09/assets/layered-art.svg",
+  "approved_final_frame": {
+    "scene_id": "S09",
+    "version": "final-frame-v2",
+    "approval_status": "approved",
+    "approval_scope": "static final frame / allocation-table visual and composition only",
+    "user_message_verbatim": "duyệt s09 v2",
+    "frame_path": "revisions/final-frames-v2/S09/frames/frame-00-at-0.5s.png",
+    "frame_sha256": "962a09a5e787f14258c5d46ba9a2c5013b00be2d31579188e9a2f6425b499625",
+    "editable_source": "revisions/final-frames-v2/S09/index.html",
+    "motion_approved": false,
+    "full_film_production_authorized": false
+  },
+  "latest_design_revision": "S09 v2: bàn gỗ phân bổ, chốt chia, rãnh cong và nhóm tài sản nhiều lớp; frame tĩnh đã duyệt, chuyển động chưa được dựng/duyệt.",
+  "latest_motion_revision": {
+    "scene_id": "S09",
+    "revision": "approved-frames-motion-r1",
+    "based_on_approved_frame": "S09-v2",
+    "duration": 7.450916666666667,
+    "source_start_sample": 955202,
+    "source_end_sample": 1134024,
+    "proof_times": [
+      0.15,
+      2.55,
+      3.65,
+      4.85,
+      7.1
+    ],
+    "motion_approval": "pending_user_review",
+    "final_frame_approval": "previously_approved",
+    "timing_evidence": "Original whisper_raw word times used as approximate cue evidence, not independent perceptual listening. S05 bất động sản at 22.50s global ~=4.349s local. S09 nhiều thị trường at 42.24s global ~=2.440s local.",
+    "signature": "Mechanical selector rotates; six differentiated asset tokens travel authored curved channels from tray to three markets; buildings develop at arrival; no profit or guarantee symbols.",
+    "video_path": "revisions\\pilots-approved-frames-r1\\S09\\renders\\pilot.mp4",
+    "video_sha256": "a6cbf6ec62a12bf74f4cdcc076f27c1ac839f4e984c35aeba1bf2dc9b44cd90e",
+    "video_frames": 224,
+    "video_duration": 7.466667,
+    "audio_duration": 7.466667,
+    "original_pcm_bit_exact": true,
+    "aac_correlation": 0.9999078024413619,
+    "decoded_rms": 0.14664183208101447,
+    "hyperframes_check_ok": true,
+    "layout_warnings": [
+      {
+        "code": "rotation_pivot_drift",
+        "severity": "warning",
+        "time": 7.1,
+        "selector": "#r09-selector",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 198,
+          "y": 478,
+          "width": 55,
+          "height": 70
+        },
+        "rect": {
+          "left": 198,
+          "top": 478,
+          "right": 253,
+          "bottom": 548,
+          "width": 55,
+          "height": 70
+        },
+        "message": "Rotating element's bounding-box center drifts 19px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).",
+        "fixHint": "The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.",
+        "firstSeen": 7.1,
+        "lastSeen": 7.1,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          7.1
+        ]
+      }
+    ],
+    "warning_interpretation": "S09 rotation_pivot_drift is intentional: selector rotates about the visible pin at (211,528), not its bounding-box center. Keep the physical hinge.",
+    "final_frame_approved_reference": "revisions/final-frames-v2/S09/frames/frame-00-at-0.5s.png",
+    "final_frame_mean_absolute_pixel_error": 1.9727029079861111,
+    "final_frame_pixel_match_fraction": 0.2678266059027778,
+    "frame_proofs": [
+      "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-0.15.png",
+      "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-2.55.png",
+      "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-3.65.png",
+      "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-4.85.png",
+      "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-7.10.png"
+    ],
+    "motion_status": "rendered_pending_user_review"
+  }
+}

@@ -1,0 +1,638 @@
+[
+  {
+    "scene_id": "S01",
+    "word_ids": [
+      2,
+      3
+    ],
+    "raw_text": "mau ta",
+    "master_start": 0.48,
+    "master_end": 0.9,
+    "local_start": 0.48,
+    "local_end": 0.9
+  },
+  {
+    "scene_id": "S01",
+    "word_ids": [
+      5,
+      6
+    ],
+    "raw_text": "người Việt",
+    "master_start": 1.1,
+    "master_end": 1.5,
+    "local_start": 1.1,
+    "local_end": 1.5
+  },
+  {
+    "scene_id": "S01",
+    "word_ids": [
+      11,
+      12
+    ],
+    "raw_text": "giống nhau,",
+    "master_start": 2.28,
+    "master_end": 2.76,
+    "local_start": 2.28,
+    "local_end": 2.76
+  },
+  {
+    "scene_id": "S01",
+    "word_ids": [
+      18,
+      19
+    ],
+    "raw_text": "ngoài trời.",
+    "master_start": 4.06,
+    "master_end": 4.54,
+    "local_start": 4.06,
+    "local_end": 4.54
+  },
+  {
+    "scene_id": "S02",
+    "word_ids": [
+      24,
+      27
+    ],
+    "raw_text": "gắn liền với biển",
+    "master_start": 5.7,
+    "master_end": 6.5,
+    "local_start": 1.009875,
+    "local_end": 1.809875
+  },
+  {
+    "scene_id": "S02",
+    "word_ids": [
+      29,
+      32
+    ],
+    "raw_text": "khi hậu nhiều nắng,",
+    "master_start": 6.66,
+    "master_end": 7.42,
+    "local_start": 1.969875,
+    "local_end": 2.729875
+  },
+  {
+    "scene_id": "S02",
+    "word_ids": [
+      38,
+      43
+    ],
+    "raw_text": "lối sống khá giống người Việt.",
+    "master_start": 8.66,
+    "master_end": 9.84,
+    "local_start": 3.969875,
+    "local_end": 5.149875
+  },
+  {
+    "scene_id": "S03",
+    "word_ids": [
+      46,
+      53
+    ],
+    "raw_text": "đi bộ vào buổi sáng hoặc chiều muộn,",
+    "master_start": 10.5,
+    "master_end": 12.18,
+    "local_start": 0.3339166666666671,
+    "local_end": 2.013916666666667
+  },
+  {
+    "scene_id": "S03",
+    "word_ids": [
+      54,
+      58
+    ],
+    "raw_text": "chạy bộ dọc bơ biển,",
+    "master_start": 12.4,
+    "master_end": 13.26,
+    "local_start": 2.2339166666666674,
+    "local_end": 3.093916666666667
+  },
+  {
+    "scene_id": "S03",
+    "word_ids": [
+      59,
+      63
+    ],
+    "raw_text": "ngồi cà phê ngoài trời,",
+    "master_start": 13.58,
+    "master_end": 14.52,
+    "local_start": 3.413916666666667,
+    "local_end": 4.353916666666667
+  },
+  {
+    "scene_id": "S03",
+    "word_ids": [
+      64,
+      71
+    ],
+    "raw_text": "gặp gỡ bạn bè tại các quản trường,",
+    "master_start": 14.84,
+    "master_end": 16.34,
+    "local_start": 4.673916666666667,
+    "local_end": 6.173916666666667
+  },
+  {
+    "scene_id": "S03",
+    "word_ids": [
+      74,
+      81
+    ],
+    "raw_text": "cuối tuần cùng gia đình bên bãi biển.",
+    "master_start": 16.88,
+    "master_end": 18.58,
+    "local_start": 6.713916666666666,
+    "local_end": 8.413916666666665
+  },
+  {
+    "scene_id": "S04",
+    "word_ids": [
+      86,
+      88
+    ],
+    "raw_text": "hình ảnh rất",
+    "master_start": 20.34,
+    "master_end": 20.92,
+    "local_start": 1.2346666666666657,
+    "local_end": 1.8146666666666675
+  },
+  {
+    "scene_id": "S04",
+    "word_ids": [
+      89,
+      93
+    ],
+    "raw_text": "quen thuộc ở Việt Nam.",
+    "master_start": 20.92,
+    "master_end": 21.82,
+    "local_start": 1.8146666666666675,
+    "local_end": 2.714666666666666
+  },
+  {
+    "scene_id": "S05",
+    "word_ids": [
+      97,
+      103
+    ],
+    "raw_text": "dạo công viên, đi bộ ven xong,",
+    "master_start": 23.16,
+    "master_end": 24.78,
+    "local_start": 0.949625000000001,
+    "local_end": 2.569625000000002
+  },
+  {
+    "scene_id": "S05",
+    "word_ids": [
+      104,
+      109
+    ],
+    "raw_text": "ngồi quán cà phê trò chuyện,",
+    "master_start": 25.1,
+    "master_end": 26.24,
+    "local_start": 2.8896250000000023,
+    "local_end": 4.029624999999999
+  },
+  {
+    "scene_id": "S05",
+    "word_ids": [
+      111,
+      118
+    ],
+    "raw_text": "đưa con đi biển vào dịp cuối tuần.",
+    "master_start": 26.54,
+    "master_end": 28.02,
+    "local_start": 4.329625,
+    "local_end": 5.8096250000000005
+  },
+  {
+    "scene_id": "S06",
+    "word_ids": [
+      121,
+      125
+    ],
+    "raw_text": "tương đồng trong nhiệm sống",
+    "master_start": 29.64,
+    "master_end": 30.58,
+    "local_start": 1.2146250000000016,
+    "local_end": 2.1546249999999993
+  },
+  {
+    "scene_id": "S06",
+    "word_ids": [
+      129,
+      135
+    ],
+    "raw_text": "gia đình Việt cảm thấy mau ta",
+    "master_start": 31.44,
+    "master_end": 32.68,
+    "local_start": 3.0146250000000023,
+    "local_end": 4.254625000000001
+  },
+  {
+    "scene_id": "S06",
+    "word_ids": [
+      136,
+      144
+    ],
+    "raw_text": "không quá xa lạ khi chuyển đến sân sống.",
+    "master_start": 32.68,
+    "master_end": 34.8,
+    "local_start": 4.254625000000001,
+    "local_end": 6.374624999999998
+  },
+  {
+    "scene_id": "S07",
+    "word_ids": [
+      151,
+      156
+    ],
+    "raw_text": "chất lượng sống của mau ta",
+    "master_start": 36.96,
+    "master_end": 38.06,
+    "local_start": 1.2834166666666675,
+    "local_end": 2.383416666666669
+  },
+  {
+    "scene_id": "S07",
+    "word_ids": [
+      157,
+      166
+    ],
+    "raw_text": "không chỉ là hệ thống giáo dục hay y tế,",
+    "master_start": 38.06,
+    "master_end": 40.2,
+    "local_start": 2.383416666666669,
+    "local_end": 4.5234166666666695
+  },
+  {
+    "scene_id": "S08",
+    "word_ids": [
+      167,
+      173
+    ],
+    "raw_text": "mà còn là văn hóa sống chậm,",
+    "master_start": 40.42,
+    "master_end": 41.82,
+    "local_start": 0.14999999999999858,
+    "local_end": 1.5499999999999972
+  },
+  {
+    "scene_id": "S08",
+    "word_ids": [
+      174,
+      175
+    ],
+    "raw_text": "cân bằng",
+    "master_start": 42.14,
+    "master_end": 42.48,
+    "local_start": 1.8699999999999974,
+    "local_end": 2.2099999999999937
+  },
+  {
+    "scene_id": "S08",
+    "word_ids": [
+      177,
+      178
+    ],
+    "raw_text": "công việc",
+    "master_start": 42.68,
+    "master_end": 42.98,
+    "local_start": 2.4099999999999966,
+    "local_end": 2.7099999999999937
+  },
+  {
+    "scene_id": "S08",
+    "word_ids": [
+      180,
+      185
+    ],
+    "raw_text": "thời gian dành cho bản thân.",
+    "master_start": 43.3,
+    "master_end": 44.48,
+    "local_start": 3.029999999999994,
+    "local_end": 4.209999999999994
+  },
+  {
+    "scene_id": "S08",
+    "word_ids": [
+      186,
+      187
+    ],
+    "raw_text": "Giá đình,",
+    "master_start": 45.0,
+    "master_end": 45.38,
+    "local_start": 4.729999999999997,
+    "local_end": 5.109999999999999
+  },
+  {
+    "scene_id": "S09",
+    "word_ids": [
+      188,
+      200
+    ],
+    "raw_text": "trẻ em có nhiều cơ hội tham gia các hoạt động ngoài trời,",
+    "master_start": 46.06,
+    "master_end": 48.28,
+    "local_start": 0.17987500000000267,
+    "local_end": 2.3998750000000015
+  },
+  {
+    "scene_id": "S09",
+    "word_ids": [
+      201,
+      202
+    ],
+    "raw_text": "vận động",
+    "master_start": 48.66,
+    "master_end": 48.96,
+    "local_start": 2.779874999999997,
+    "local_end": 3.0798750000000013
+  },
+  {
+    "scene_id": "S09",
+    "word_ids": [
+      204,
+      207
+    ],
+    "raw_text": "khám phá thiền nhiên.",
+    "master_start": 49.18,
+    "master_end": 49.92,
+    "local_start": 3.299875,
+    "local_end": 4.039875000000002
+  },
+  {
+    "scene_id": "S10",
+    "word_ids": [
+      208,
+      217
+    ],
+    "raw_text": "Người lớn có thể tận hưởng không gian công cộng",
+    "master_start": 50.5,
+    "master_end": 52.64,
+    "local_start": 0.049916666666668164,
+    "local_end": 2.1899166666666687
+  },
+  {
+    "scene_id": "S10",
+    "word_ids": [
+      218,
+      221
+    ],
+    "raw_text": "an toàn, sạch đẹp",
+    "master_start": 52.64,
+    "master_end": 53.8,
+    "local_start": 2.1899166666666687,
+    "local_end": 3.3499166666666653
+  },
+  {
+    "scene_id": "S10",
+    "word_ids": [
+      223,
+      226
+    ],
+    "raw_text": "gần gũi với biển.",
+    "master_start": 54.02,
+    "master_end": 54.7,
+    "local_start": 3.5699166666666713,
+    "local_end": 4.249916666666671
+  },
+  {
+    "scene_id": "S11",
+    "word_ids": [
+      230,
+      235
+    ],
+    "raw_text": "bực phủ huyên, điều đáng giá",
+    "master_start": 56.15,
+    "master_end": 57.61,
+    "local_start": 0.7527083333333309,
+    "local_end": 2.2127083333333317
+  },
+  {
+    "scene_id": "S11",
+    "word_ids": [
+      236,
+      246
+    ],
+    "raw_text": "không chỉ là con được học ở một ngôi trường tốt,",
+    "master_start": 57.61,
+    "master_end": 59.67,
+    "local_start": 2.2127083333333317,
+    "local_end": 4.272708333333334
+  },
+  {
+    "scene_id": "S12",
+    "word_ids": [
+      251,
+      258
+    ],
+    "raw_text": "lớn lên trong một ngôi trường khuyến khích,",
+    "master_start": 60.53,
+    "master_end": 62.25,
+    "local_start": 0.8373333333333335,
+    "local_end": 2.5573333333333323
+  },
+  {
+    "scene_id": "S12",
+    "word_ids": [
+      259,
+      260
+    ],
+    "raw_text": "vận động,",
+    "master_start": 62.49,
+    "master_end": 62.83,
+    "local_start": 2.7973333333333343,
+    "local_end": 3.1373333333333306
+  },
+  {
+    "scene_id": "S12",
+    "word_ids": [
+      261,
+      262
+    ],
+    "raw_text": "giao tiếp",
+    "master_start": 63.23,
+    "master_end": 63.51,
+    "local_start": 3.537333333333329,
+    "local_end": 3.8173333333333304
+  },
+  {
+    "scene_id": "S12",
+    "word_ids": [
+      264,
+      274
+    ],
+    "raw_text": "phát triển toàn diện cả về thể chất lẫn tinh thần.",
+    "master_start": 63.89,
+    "master_end": 66.21,
+    "local_start": 4.197333333333333,
+    "local_end": 6.517333333333326
+  },
+  {
+    "scene_id": "S13",
+    "word_ids": [
+      278,
+      281
+    ],
+    "raw_text": "3 ,8 tỷ đồng,",
+    "master_start": 68.18,
+    "master_end": 69.1,
+    "local_start": 0.8949166666666741,
+    "local_end": 1.8149166666666616
+  },
+  {
+    "scene_id": "S13",
+    "word_ids": [
+      282,
+      293
+    ],
+    "raw_text": "chương trình thể sân mau ta mang đến cơ hội định cư",
+    "master_start": 69.46,
+    "master_end": 71.76,
+    "local_start": 2.174916666666661,
+    "local_end": 4.474916666666672
+  },
+  {
+    "scene_id": "S13",
+    "word_ids": [
+      295,
+      297
+    ],
+    "raw_text": "4 thế hệ,",
+    "master_start": 72.02,
+    "master_end": 72.64,
+    "local_start": 4.734916666666663,
+    "local_end": 5.354916666666668
+  },
+  {
+    "scene_id": "S14",
+    "word_ids": [
+      300,
+      306
+    ],
+    "raw_text": "mở ra cánh cưa đến châu Âu,",
+    "master_start": 73.52,
+    "master_end": 75.02,
+    "local_start": 0.4448333333333352,
+    "local_end": 1.9448333333333352
+  },
+  {
+    "scene_id": "S14",
+    "word_ids": [
+      313,
+      322
+    ],
+    "raw_text": "cả gia đình tận hữu một lối sống lạnh mạnh",
+    "master_start": 76.28,
+    "master_end": 78.38,
+    "local_start": 3.2048333333333403,
+    "local_end": 5.304833333333335
+  },
+  {
+    "scene_id": "S14",
+    "word_ids": [
+      323,
+      333
+    ],
+    "raw_text": "gần của vi thi nhiên dạc cân bằng hơn mỗi ngày.",
+    "master_start": 78.38,
+    "master_end": 80.88,
+    "local_start": 5.304833333333335,
+    "local_end": 7.804833333333335
+  },
+  {
+    "scene_id": "S15",
+    "word_ids": [
+      335,
+      336
+    ],
+    "raw_text": "đôi khi,",
+    "master_start": 81.56,
+    "master_end": 81.88,
+    "local_start": 0.21000000000000796,
+    "local_end": 0.5300000000000011
+  },
+  {
+    "scene_id": "S15",
+    "word_ids": [
+      337,
+      338
+    ],
+    "raw_text": "hạnh phúc",
+    "master_start": 82.24,
+    "master_end": 82.6,
+    "local_start": 0.8900000000000006,
+    "local_end": 1.25
+  },
+  {
+    "scene_id": "S15",
+    "word_ids": [
+      343,
+      345
+    ],
+    "raw_text": "sống nhanh hơn,",
+    "master_start": 83.48,
+    "master_end": 84.28,
+    "local_start": 2.1300000000000097,
+    "local_end": 2.930000000000007
+  },
+  {
+    "scene_id": "S16",
+    "word_ids": [
+      350,
+      354
+    ],
+    "raw_text": "có nhiều thời gian hơn",
+    "master_start": 85.46,
+    "master_end": 86.74,
+    "local_start": 0.9947083333333211,
+    "local_end": 2.2747083333333222
+  },
+  {
+    "scene_id": "S16",
+    "word_ids": [
+      356,
+      359
+    ],
+    "raw_text": "đi dạo cùng con,",
+    "master_start": 87.22,
+    "master_end": 88.18,
+    "local_start": 2.754708333333326,
+    "local_end": 3.714708333333334
+  },
+  {
+    "scene_id": "S17",
+    "word_ids": [
+      360,
+      365
+    ],
+    "raw_text": "rồi cà phê với người thân",
+    "master_start": 88.68,
+    "master_end": 89.98,
+    "local_start": 0.09500000000001307,
+    "local_end": 1.3950000000000102
+  },
+  {
+    "scene_id": "S17",
+    "word_ids": [
+      367,
+      372
+    ],
+    "raw_text": "tận hưởng những điều dạn dị",
+    "master_start": 90.5,
+    "master_end": 92.02,
+    "local_start": 1.9150000000000063,
+    "local_end": 3.4350000000000023
+  },
+  {
+    "scene_id": "S17",
+    "word_ids": [
+      373,
+      375
+    ],
+    "raw_text": "cuộc cuộc sống.",
+    "master_start": 92.02,
+    "master_end": 92.72,
+    "local_start": 3.4350000000000023,
+    "local_end": 4.135000000000005
+  }
+]

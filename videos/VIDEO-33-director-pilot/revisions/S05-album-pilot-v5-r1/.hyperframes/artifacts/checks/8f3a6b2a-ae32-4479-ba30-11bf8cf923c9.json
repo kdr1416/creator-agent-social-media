@@ -1,0 +1,238 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 4,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "gsap_group_selector_keyframes",
+        "severity": "warning",
+        "message": "GSAP tween targets 2 elements with shared keyframes (\"#s05v5-far-path,#foreground-s05v5-far-path\"). Editing one element's keyframes in Studio will affect all 2 elements. Split into individual tweens for per-element keyframe control.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S05-album-pilot-v5-r1\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Replace the group selector with individual tl.to() calls per element, each with their own keyframes object."
+      },
+      {
+        "code": "gsap_group_selector_keyframes",
+        "severity": "warning",
+        "message": "GSAP tween targets 2 elements with shared keyframes (\"#s05v5-far-hand,#foreground-s05v5-far-hand\"). Editing one element's keyframes in Studio will affect all 2 elements. Split into individual tweens for per-element keyframe control.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S05-album-pilot-v5-r1\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Replace the group selector with individual tl.to() calls per element, each with their own keyframes object."
+      },
+      {
+        "code": "gsap_group_selector_keyframes",
+        "severity": "warning",
+        "message": "GSAP tween targets 2 elements with shared keyframes (\"#s05v5-near-path,#foreground-s05v5-near-path\"). Editing one element's keyframes in Studio will affect all 2 elements. Split into individual tweens for per-element keyframe control.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S05-album-pilot-v5-r1\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Replace the group selector with individual tl.to() calls per element, each with their own keyframes object."
+      },
+      {
+        "code": "gsap_group_selector_keyframes",
+        "severity": "warning",
+        "message": "GSAP tween targets 2 elements with shared keyframes (\"#s05v5-near-hand,#foreground-s05v5-near-hand\"). Editing one element's keyframes in Studio will affect all 2 elements. Split into individual tweens for per-element keyframe control.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S05-album-pilot-v5-r1\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Replace the group selector with individual tl.to() calls per element, each with their own keyframes object."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 0.15,
+        "selector": "#leaf-open-viewing-album",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 129.34,
+          "top": 538.51,
+          "right": 514.22,
+          "bottom": 1021.13,
+          "width": 384.88,
+          "height": 482.62
+        },
+        "containerSelector": "#right-album-leaf > svg:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 350,
+          "top": 570,
+          "right": 515.65,
+          "bottom": 990,
+          "width": 165.65,
+          "height": 420
+        },
+        "overflow": {
+          "left": 220.66,
+          "top": 31.49,
+          "bottom": 31.13
+        },
+        "dataAttributes": {
+          "data-hf-svg-reference-aliases": "[{\"name\":\"filter\",\"localName\":\"filter\",\"namespaceURI\":null,\"before\":\"url(#leaf-paper-shadow)\",\"after\":\"url(#leaf-paper-shadow)\"}]"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 129.34,
+          "y": 538.51,
+          "width": 384.88,
+          "height": 482.62
+        },
+        "firstSeen": 0.15,
+        "lastSeen": 5.35,
+        "occurrences": 6,
+        "heldMs": 3149.9999999999995,
+        "times": [
+          0.15,
+          2.2,
+          3.15,
+          3.75,
+          4.5,
+          5.35
+        ]
+      },
+      {
+        "code": "off_pivot_rotation",
+        "severity": "warning",
+        "time": 5.35,
+        "selector": "#leaf-open-viewing-album > path:nth-of-type(5)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 75,
+          "y": 952.4,
+          "width": 559,
+          "height": 8
+        },
+        "rect": {
+          "left": 75,
+          "top": 952.4,
+          "right": 634,
+          "bottom": 960.4,
+          "width": 559,
+          "height": 8
+        },
+        "message": "Gauge/dial pointer rotates about a point 79347766px from the dial hub — its center-of-rotation is off the hub, so it points wrong or overshoots the track (check the rotating group's pivot: translate to the hub before rotate, or set svgOrigin/transform-origin to the hub).",
+        "fixHint": "The pointer's center-of-rotation must coincide with the dial hub. Rotate the group about the hub (e.g. transform-origin/svgOrigin set to the hub center, or translate the group so its rotation pivot lands on the hub) rather than about the element's own bbox center.",
+        "firstSeen": 5.35,
+        "lastSeen": 5.35,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5.35
+        ]
+      }
+    ],
+    "duration": 5.706333333333,
+    "samples": [
+      0.15,
+      2.2,
+      3.15,
+      3.75,
+      4.5,
+      5.35
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 2,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.15,
+      2.2,
+      3.15,
+      3.75,
+      5.35
+    ],
+    "checked": 1,
+    "passed": 1
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": true,
+    "files": [
+      ".hyperframes\\artifacts\\snapshots\\e91a2784-af9e-4e04-97ab-0a514617d58c\\frame-00-at-0.1s.png",
+      ".hyperframes\\artifacts\\snapshots\\e91a2784-af9e-4e04-97ab-0a514617d58c\\frame-01-at-2.2s.png",
+      ".hyperframes\\artifacts\\snapshots\\e91a2784-af9e-4e04-97ab-0a514617d58c\\frame-02-at-3.1s.png",
+      ".hyperframes\\artifacts\\snapshots\\e91a2784-af9e-4e04-97ab-0a514617d58c\\frame-03-at-3.8s.png",
+      ".hyperframes\\artifacts\\snapshots\\e91a2784-af9e-4e04-97ab-0a514617d58c\\frame-04-at-5.3s.png"
+    ],
+    "times": [
+      0.15,
+      2.2,
+      3.15,
+      3.75,
+      5.35
+    ],
+    "findingFiles": []
+  }
+}

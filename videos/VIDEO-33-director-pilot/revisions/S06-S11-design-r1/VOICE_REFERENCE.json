@@ -1,0 +1,32 @@
+[
+  {
+    "scene_id": "S06",
+    "source_segments": [
+      6
+    ],
+    "audio_source": [
+      "inputs/audio/seg_06.wav"
+    ],
+    "start_sample": 572581,
+    "end_sample": 711699,
+    "duration": 5.796583333333334,
+    "raw_text": "Không chỉ là sở hữu một tài sản ở Châu Âu, đây còn là cách xây dựng một nền tảng lâu dài cho cả gia đình.",
+    "corrected_text": "Không chỉ là sở hữu một tài sản ở Châu Âu, đây còn là cách xây dựng một nền tảng lâu dài cho cả gia đình."
+  },
+  {
+    "scene_id": "S11",
+    "source_segments": [
+      12,
+      13
+    ],
+    "audio_source": [
+      "inputs/audio/seg_12.wav",
+      "inputs/audio/seg_13.wav"
+    ],
+    "start_sample": 1281789,
+    "end_sample": 1445273,
+    "duration": 6.81183333333334,
+    "raw_text": "Đây không chỉ là quyết định đầu tư vào một bước động sáng, mà còn là quyết định đầu tư vào sự chuẩn bị cho tương lai của con gái",
+    "corrected_text": "Đây không chỉ là quyết định đầu tư vào một bất động sản, mà còn là quyết định đầu tư vào sự chuẩn bị cho tương lai của con cái"
+  }
+]

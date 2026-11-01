@@ -1,0 +1,63 @@
+{
+  "phase": "assembled_pending_user_full_master_review",
+  "approved_pilots": 14,
+  "base_scenes_retained": [],
+  "revised_scenes_in_r2": [
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "master_assembly_authorized": true,
+  "full_master_approved": false,
+  "output_root": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\master-approved-r2",
+  "antigravity_executed": true,
+  "master_video": {
+    "filename": "VIDEO-33-master-approved-r2.mp4",
+    "absolute_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\master-approved-r2\\VIDEO-33-master-approved-r2.mp4",
+    "sha256": "c079c05e36ccf96dfb84e741248e5534eeacc82c4f56a5662352b6e158e94c7b",
+    "frames": 2255,
+    "fps": 30,
+    "duration_seconds": 75.166667
+  },
+  "clean_video": {
+    "filename": "VIDEO-33-clean-approved-r2.mp4",
+    "absolute_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\master-approved-r2\\VIDEO-33-clean-approved-r2.mp4",
+    "sha256": "0b32b41bb897a776e094958a980018e595201a41686994b562ef6757f91120cc",
+    "frames": 2255,
+    "fps": 30,
+    "duration_seconds": 75.166667
+  },
+  "voice_audio": {
+    "source_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\inputs\\source_audio.wav",
+    "sha256": "cbd5a88b99c252d09ea86493377951aed1267186a5cb9ff11afe00947133e941",
+    "samples": 1803840,
+    "sample_rate": 24000,
+    "duration_seconds": 75.160000,
+    "cross_correlation": 0.999958,
+    "offset_seconds": 0.0,
+    "hold_tail_seconds": 0.006667
+  },
+  "preserved_old_masters": [
+    {
+      "label": "baseline_master",
+      "path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\renders\\VIDEO-33-master.mp4",
+      "sha256": "6f51c8368997f7e2d3721888c3a3d471c2407e8718248fc9d3bea6e4b2b87c50",
+      "verified_untouched": true
+    },
+    {
+      "label": "baseline_clean",
+      "path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\renders\\VIDEO-33-clean.mp4",
+      "sha256": "7050ecb46b98b8b6f50fdce327bcd25c2e8879c282e3c1ef9b417839f05a22b4",
+      "verified_untouched": true
+    },
+    {
+      "label": "master_approved_r1",
+      "path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\master-approved-r1\\VIDEO-33-master-approved-r1.mp4",
+      "sha256": "abdc318b50b0f05eb7e1ae681f41e62150ff1c1f12eb807f137a32f9cd30da7a",
+      "verified_untouched": true
+    }
+  ],
+  "seams_count": 13,
+  "seams_qa_status": "13_of_13_pass",
+  "publication_authorized": false
+}

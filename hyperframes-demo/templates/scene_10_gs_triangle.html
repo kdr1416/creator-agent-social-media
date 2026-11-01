@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=720, height=1280, initial-scale=1.0" />
+    <title>Scene 10 - Tam Giác Chiến Lược GS</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GSAP 3.12.5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #f1f5f9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        overflow: hidden;
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+      #root {
+        width: 720px;
+        height: 1280px;
+        position: relative;
+        background: #ffffff;
+        overflow: hidden;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+
+      /* Academic Grid Canvas */
+      .canvas-bg {
+        position: absolute;
+        inset: 0;
+        background-color: #ffffff;
+        background-image: 
+          linear-gradient(to right, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+        background-size: 36px 36px;
+        z-index: 1;
+      }
+      .bg-ambient-glow {
+        position: absolute;
+        top: -120px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 680px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(255, 87, 34, 0.09) 0%, rgba(251, 191, 36, 0.04) 45%, transparent 70%);
+        pointer-events: none;
+        z-index: 2;
+      }
+
+      /* Top Branding */
+      .brand-badge-wrapper {
+        position: absolute;
+        top: 48px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 20;
+      }
+      .brand-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 18px;
+        background: rgba(255, 255, 255, 0.95);
+        border: 1.5px solid #e2e8f0;
+        border-radius: 9999px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13.5px;
+        font-weight: 800;
+        letter-spacing: 1.2px;
+        color: #0f172a;
+        box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+        opacity: 0;
+        transform: translateY(-16px);
+      }
+      .brand-badge-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #ff5722;
+        box-shadow: 0 0 8px #ff5722;
+      }
+
+      /* Header */
+      .header-wrap {
+        position: absolute;
+        top: 104px;
+        left: 44px;
+        right: 44px;
+        text-align: center;
+        z-index: 20;
+      }
+      .header-sub {
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        color: #ff5722;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      .header-title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 27px;
+        font-weight: 900;
+        line-height: 1.25;
+        color: #0f172a;
+        letter-spacing: -0.4px;
+        opacity: 0;
+        transform: translateY(16px);
+      }
+      .header-title span {
+        color: #ff5722;
+      }
+
+      /* Triangle SVG Stage */
+      .triangle-svg-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 720px;
+        height: 1280px;
+        pointer-events: none;
+        z-index: 10;
+      }
+
+      /* Pedestal Milestone Labels */
+      .pedestal-label {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        z-index: 35;
+        opacity: 0;
+        transform: scale(0.85);
+        pointer-events: none;
+      }
+      .ped-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 5px 14px;
+        border-radius: 9999px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        margin-bottom: 4px;
+      }
+      .ped-desc {
+        font-size: 12px;
+        font-weight: 800;
+        color: #64748b;
+      }
+
+      /* Positions of 3 Pedestal Labels */
+      .lbl-1 { top: 350px; left: 45px; width: 230px; }
+      .lbl-1 .ped-tag { background: #fff7ed; color: #ea580c; border: 1.5px solid #ff5722; }
+
+      .lbl-2 { top: 350px; right: 45px; width: 230px; }
+      .lbl-2 .ped-tag { background: #f0f9ff; color: #0284c7; border: 1.5px solid #38bdf8; }
+
+      .lbl-3 { top: 855px; left: 50%; transform: translateX(-50%) scale(0.85); width: 260px; }
+      .lbl-3 .ped-tag { background: #fefce8; color: #ca8a04; border: 1.5px solid #eab308; }
+
+      /* Hero Student Character (Center Stage) */
+      .hero-student {
+        position: absolute;
+        left: 50%;
+        top: 470px;
+        transform: translateX(-50%);
+        width: 140px;
+        height: 220px;
+        z-index: 30;
+        opacity: 0;
+      }
+
+      /* Hero Aura Glow behind student */
+      .hero-aura {
+        position: absolute;
+        left: 50%;
+        top: 550px;
+        transform: translate(-50%, -50%);
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(255, 87, 34, 0.12) 0%, rgba(251, 191, 36, 0.05) 50%, transparent 70%);
+        opacity: 0;
+        z-index: 28;
+      }
+
+      /* Bottom Synthesis Proof (Safely at Y: 980px - 1045px) */
+      .bottom-seal {
+        position: absolute;
+        bottom: 224px;
+        left: 48px;
+        right: 48px;
+        background: #0f172a;
+        border-radius: 14px;
+        padding: 14px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.15);
+        opacity: 0;
+        transform: translateY(20px);
+        z-index: 45;
+      }
+      .seal-text {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        color: #f8fafc;
+        text-align: center;
+      }
+      .seal-highlight {
+        color: #fbbf24;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="clip" data-composition-id="scene-10" data-width="720" data-height="1280" data-duration="6.83">
+      <audio id="voice-track" class="clip" src="./assets/audio.wav" data-start="0" data-duration="6.83" preload="auto"></audio>
+
+      <!-- Canvas Background -->
+      <div class="canvas-bg"></div>
+      <div class="bg-ambient-glow"></div>
+
+      <!-- Top Branding -->
+      <div class="brand-badge-wrapper">
+        <div class="brand-badge" id="brand-badge">
+          <span class="brand-badge-dot"></span>
+          <span>ESORA • BỘ TIÊU CHÍ GS</span>
+        </div>
+      </div>
+
+      <!-- Header -->
+      <div class="header-wrap">
+        <div class="header-sub" id="headerSub">YÊU CẦU CỐT LÕI TỪ BỘ DI TRÚ ÚC</div>
+        <div class="header-title" id="headerTitle">3 CÂU HỎI <span>QUYẾT ĐỊNH VISA</span></div>
+      </div>
+
+      <!-- SVG Triangle & 3D Isometric Pedestals -->
+      <svg class="triangle-svg-wrap" viewBox="0 0 720 1280">
+        <defs>
+          <filter id="shadowPed" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.12" />
+          </filter>
+          <filter id="glowLaser" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="5" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+          </filter>
+
+          <!-- Laser Gradients (objectBoundingBox for guaranteed rendering) -->
+          <linearGradient id="laserGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#ff5722" />
+            <stop offset="100%" stop-color="#0284c7" />
+          </linearGradient>
+          <linearGradient id="laserGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#0284c7" />
+            <stop offset="100%" stop-color="#ca8a04" />
+          </linearGradient>
+          <linearGradient id="laserGrad3" x1="0%" y1="100%" x2="0%" y2="0%">
+            <stop offset="0%" stop-color="#ca8a04" />
+            <stop offset="100%" stop-color="#ff5722" />
+          </linearGradient>
+        </defs>
+
+        <!-- Dynamic Laser Connecting Beams (Surrounding Center Stage) -->
+        <!-- Beam 1: Apex 1 (160, 290) -> Apex 2 (560, 290) length = 400 -->
+        <line id="beam1" x1="160" y1="290" x2="560" y2="290" stroke="url(#laserGrad1)" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="400" stroke-dashoffset="400" filter="url(#glowLaser)" />
+
+        <!-- Beam 2: Apex 2 (560, 290) -> Apex 3 (360, 790) length = 539 -->
+        <line id="beam2" x1="560" y1="290" x2="360" y2="790" stroke="url(#laserGrad2)" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="539" stroke-dashoffset="539" filter="url(#glowLaser)" />
+
+        <!-- Beam 3: Apex 3 (360, 790) -> Apex 1 (160, 290) length = 539 -->
+        <line id="beam3" x1="360" y1="790" x2="160" y2="290" stroke="url(#laserGrad3)" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="539" stroke-dashoffset="539" filter="url(#glowLaser)" />
+
+        <!-- Subtle Faint Triangle Interior Mesh -->
+        <polygon id="triangleMesh" points="160,290 560,290 360,790" fill="rgba(255, 87, 34, 0.04)" stroke="rgba(255, 87, 34, 0.3)" stroke-width="2" stroke-dasharray="6,6" opacity="0" />
+
+        <!-- Center Triangle Seal Anchor (X: 360, Y: 290) -->
+        <g id="centerTriangleSeal" transform="translate(360, 290)" opacity="0">
+          <circle cx="0" cy="0" r="28" fill="#ffffff" stroke="#ff5722" stroke-width="2.5" />
+          <circle cx="0" cy="0" r="22" fill="#fff7ed" />
+          <polygon points="0,-10 3,-3 10,-3 4,2 6,9 0,5 -6,9 -4,2 -10,-3 -3,-3" fill="#ff5722" />
+        </g>
+
+        <!-- ==================== APEX 1: VÌ SAO CHỌN NGÀNH? (160, 290) ==================== -->
+        <g id="apex1Group" transform="translate(160, 290)" filter="url(#shadowPed)" opacity="0">
+          <!-- 3D Pedestal Base -->
+          <ellipse cx="0" cy="14" rx="68" ry="22" fill="#e2e8f0" />
+          <path d="M -68 0 C -68 14, 68 14, 68 0 L 68 10 C 68 24, -68 24, -68 10 Z" fill="#ffedd5" />
+          <ellipse cx="0" cy="0" rx="66" ry="20" fill="#ffffff" stroke="#ff5722" stroke-width="3" />
+          <ellipse cx="0" cy="0" rx="52" ry="15" fill="#fff7ed" />
+
+          <!-- Rich Course Syllabus / Science Blueprint & Cap SVG Visual -->
+          <g transform="translate(0, -42)">
+            <!-- Open Blueprints / Book -->
+            <path d="M -26 12 C -14 6, -2 8, 0 14 C 2 8, 14 6, 26 12 L 26 26 C 14 20, 2 22, 0 28 C -2 22, -14 20, -26 26 Z" fill="#ffffff" stroke="#ff5722" stroke-width="2.5" />
+            <path d="M 0 14 L 0 28" stroke="#ff5722" stroke-width="2" />
+            <!-- Floating Microscope / Cap Symbol -->
+            <polygon points="0,-10 20,-3 0,4 -20,-3" fill="#ea580c" />
+            <polygon points="0,4 0,10 6,8 6,2" fill="#c2410c" />
+            <circle cx="18" cy="-1" r="2.5" fill="#f97316" />
+          </g>
+        </g>
+
+        <!-- ==================== APEX 2: CHỌN AUSTRALIA? (560, 290) ==================== -->
+        <g id="apex2Group" transform="translate(560, 290)" filter="url(#shadowPed)" opacity="0">
+          <!-- 3D Pedestal Base -->
+          <ellipse cx="0" cy="14" rx="68" ry="22" fill="#e2e8f0" />
+          <path d="M -68 0 C -68 14, 68 14, 68 0 L 68 10 C 68 24, -68 24, -68 10 Z" fill="#e0f2fe" />
+          <ellipse cx="0" cy="0" rx="66" ry="20" fill="#ffffff" stroke="#0284c7" stroke-width="3" />
+          <ellipse cx="0" cy="0" rx="52" ry="15" fill="#f0f9ff" />
+
+          <!-- Rich Sydney Opera House Arches & Southern Cross Stars SVG Visual -->
+          <g transform="translate(-18, -46)">
+            <!-- Opera House Sails -->
+            <path d="M 4 28 C 8 12, 20 12, 24 28 Z" fill="#0284c7" />
+            <path d="M 16 28 C 20 6, 32 6, 36 28 Z" fill="#38bdf8" />
+            <line x1="0" y1="28" x2="40" y2="28" stroke="#0369a1" stroke-width="3" stroke-linecap="round" />
+            <!-- Southern Cross Star -->
+            <polygon points="34,-4 36,0 40,2 36,4 34,8 32,4 28,2 32,0" fill="#fbbf24" />
+          </g>
+        </g>
+
+        <!-- ==================== APEX 3: KẾ HOẠCH SAU TỐT NGHIỆP? (360, 790) ==================== -->
+        <g id="apex3Group" transform="translate(360, 790)" filter="url(#shadowPed)" opacity="0">
+          <!-- 3D Pedestal Base -->
+          <ellipse cx="0" cy="14" rx="68" ry="22" fill="#e2e8f0" />
+          <path d="M -68 0 C -68 14, 68 14, 68 0 L 68 10 C 68 24, -68 24, -68 10 Z" fill="#fef9c3" />
+          <ellipse cx="0" cy="0" rx="66" ry="20" fill="#ffffff" stroke="#f59e0b" stroke-width="3" />
+          <ellipse cx="0" cy="0" rx="52" ry="15" fill="#fefce8" />
+
+          <!-- Rich 3-Step Career Ladder & Ascending Growth Arrow SVG Visual -->
+          <g transform="translate(-16, -46)">
+            <rect x="2" y="18" width="8" height="12" rx="1.5" fill="#f59e0b" />
+            <rect x="13" y="11" width="8" height="19" rx="1.5" fill="#f59e0b" />
+            <rect x="24" y="4" width="8" height="26" rx="1.5" fill="#d97706" />
+            <!-- Dynamic Growth Arrow -->
+            <polyline points="4,12 16,5 28,-1" fill="none" stroke="#b45309" stroke-width="2.5" stroke-linecap="round" />
+            <polygon points="28,-4 33,-1 27,2" fill="#b45309" />
+          </g>
+        </g>
+      </svg>
+
+      <!-- Pedestal Milestone Labels -->
+      <div class="pedestal-label lbl-1" id="lbl1">
+        <div class="ped-tag">01. CHỌN NGÀNH HỌC?</div>
+        <div class="ped-desc">Đam mê & tính thực tiễn</div>
+      </div>
+
+      <div class="pedestal-label lbl-2" id="lbl2">
+        <div class="ped-tag">02. CHỌN AUSTRALIA?</div>
+        <div class="ped-desc">Tiêu chuẩn học thuật quốc tế</div>
+      </div>
+
+      <div class="pedestal-label lbl-3" id="lbl3">
+        <div class="ped-tag">03. KẾ HOẠCH HẬU TỐT NGHIỆP?</div>
+        <div class="ped-desc">Lộ trình nghề nghiệp & mục tiêu rõ ràng</div>
+      </div>
+
+      <!-- Hero Aura Glow behind student -->
+      <div class="hero-aura" id="heroAura"></div>
+
+      <!-- Hero Student Character Actor (Center Stage) -->
+      <div class="hero-student" id="heroStudent">
+        <svg width="140" height="220" viewBox="0 0 140 220">
+          <!-- Backpack behind -->
+          <rect x="44" y="65" width="52" height="58" rx="12" fill="#0284c7" />
+
+          <!-- Legs & Shoes -->
+          <rect x="52" y="148" width="14" height="48" rx="6" fill="#0f172a" />
+          <rect x="74" y="148" width="14" height="48" rx="6" fill="#0f172a" />
+          <ellipse cx="56" cy="198" rx="13" ry="7" fill="#0284c7" />
+          <ellipse cx="84" cy="198" rx="13" ry="7" fill="#0284c7" />
+
+          <!-- Torso: Professional Navy Blazer -->
+          <path d="M 44 74 Q 70 68 96 74 L 100 150 L 40 150 Z" fill="#1e293b" />
+
+          <!-- Collar & Tie -->
+          <polygon points="70,72 60,90 80,90" fill="#ffffff" />
+          <polygon points="70,88 66,122 70,132 74,122" fill="#ff5722" />
+
+          <!-- Head & Face -->
+          <circle cx="70" cy="40" r="26" fill="#fed7aa" />
+          <!-- Hair -->
+          <path d="M 44 40 Q 70 8 96 40 Q 90 22 70 20 Q 50 22 44 40 Z" fill="#0f172a" />
+          <!-- Glasses -->
+          <rect x="54" y="34" width="13" height="10" rx="3" fill="none" stroke="#0f172a" stroke-width="2.5" />
+          <rect x="73" y="34" width="13" height="10" rx="3" fill="none" stroke="#0f172a" stroke-width="2.5" />
+          <line x1="67" y1="39" x2="73" y2="39" stroke="#0f172a" stroke-width="2.5" />
+          <!-- Confident Smile -->
+          <path d="M 62 53 Q 70 61 78 53" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" />
+
+          <!-- Left Arm Variants (Anchored at X: 42, Y: 78) -->
+          <!-- State 0: Resting -->
+          <g id="armLeftRest">
+            <path d="M 42 78 Q 28 98 32 118" fill="none" stroke="#1e293b" stroke-width="10" stroke-linecap="round" />
+            <circle cx="32" cy="118" r="6" fill="#fed7aa" />
+          </g>
+          <!-- State 1: Pointing Left Upwards to Apex 1 -->
+          <g id="armLeftPoint" style="opacity: 0;">
+            <path d="M 42 78 Q 20 60 10 32" fill="none" stroke="#1e293b" stroke-width="10" stroke-linecap="round" />
+            <circle cx="10" cy="32" r="6" fill="#fed7aa" />
+            <polygon points="10,22 13,32 10,29 7,32" fill="#ff5722" />
+          </g>
+
+          <!-- Right Arm Variants (Anchored at X: 98, Y: 78) -->
+          <!-- State 0: Resting -->
+          <g id="armRightRest">
+            <path d="M 98 78 Q 112 98 108 118" fill="none" stroke="#1e293b" stroke-width="10" stroke-linecap="round" />
+            <circle cx="108" cy="118" r="6" fill="#fed7aa" />
+          </g>
+          <!-- State 1: Pointing Right Upwards to Apex 2 -->
+          <g id="armRightPoint" style="opacity: 0;">
+            <path d="M 98 78 Q 120 60 130 32" fill="none" stroke="#1e293b" stroke-width="10" stroke-linecap="round" />
+            <circle cx="130" cy="32" r="6" fill="#fed7aa" />
+            <polygon points="130,22 133,32 130,29 127,32" fill="#0284c7" />
+          </g>
+          <!-- State 2: Holding Certified GS Dossier in Triumph -->
+          <g id="armRightCelebrate" style="opacity: 0;">
+            <path d="M 98 78 Q 115 55 124 38" fill="none" stroke="#1e293b" stroke-width="10" stroke-linecap="round" />
+            <circle cx="124" cy="38" r="6" fill="#fed7aa" />
+            <!-- Certified GS Dossier -->
+            <rect x="115" y="15" width="22" height="26" rx="3" fill="#10b981" stroke="#047857" stroke-width="1.5" />
+            <path d="M 120 28 L 124 32 L 132 23" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+          </g>
+        </svg>
+      </div>
+
+      <!-- Bottom Synthesis Proof Pill (Y: 980px - 1045px -> Safe above 1060px) -->
+      <div class="bottom-seal" id="bottomSeal">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2.5">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <span class="seal-text">
+          TRẢ LỜI RÕ RÀNG 3 CÂU HỎI • <span class="seal-highlight">TỶ LỆ ĐẬU VISA TỐI ĐA</span>
+        </span>
+      </div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines = window.__timelines || {};
+      window.__timelines["scene-10"] = tl;
+
+      // Initial States
+      gsap.set("#heroStudent", { opacity: 0, scale: 0.9, y: 30 });
+      gsap.set("#heroAura", { opacity: 0, scale: 0.5 });
+      gsap.set("#armLeftRest", { opacity: 1 });
+      gsap.set("#armLeftPoint", { opacity: 0 });
+      gsap.set("#armRightRest", { opacity: 1 });
+      gsap.set("#armRightPoint", { opacity: 0 });
+      gsap.set("#armRightCelebrate", { opacity: 0 });
+
+      gsap.set("#apex1Group", { opacity: 0, scale: 0.8 });
+      gsap.set("#lbl1", { opacity: 0, scale: 0.8, y: 10 });
+
+      gsap.set("#apex2Group", { opacity: 0, scale: 0.8 });
+      gsap.set("#lbl2", { opacity: 0, scale: 0.8, y: 10 });
+
+      gsap.set("#apex3Group", { opacity: 0, scale: 0.8 });
+      gsap.set("#lbl3", { opacity: 0, scale: 0.8, y: 10 });
+
+      gsap.set("#beam1", { strokeDashoffset: 400 });
+      gsap.set("#beam2", { strokeDashoffset: 539 });
+      gsap.set("#beam3", { strokeDashoffset: 539 });
+      gsap.set("#triangleMesh", { opacity: 0 });
+      gsap.set("#bottomSeal", { opacity: 0, y: 20 });
+
+      // 0.05s: Brand & Header entrance
+      tl.to("#brand-badge", { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 0.05);
+      tl.to("#headerSub", { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 0.2);
+      tl.to("#headerTitle", { opacity: 1, y: 0, duration: 0.4, ease: "back.out(1.4)" }, 0.35);
+
+      // 0.45s: Hero Student Character enters center stage
+      tl.to("#heroStudent", { opacity: 1, scale: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.45);
+
+      // BEAT 1: "Vì sao bạn chọn ngành này" (0.8s - 2.3s)
+      // Student gestures to Apex 1 (Upper Left)
+      tl.to("#armLeftRest", { opacity: 0, duration: 0.1 }, 0.8);
+      tl.to("#armLeftPoint", { opacity: 1, duration: 0.15 }, 0.8);
+      tl.to("#apex1Group", { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.5)" }, 0.85);
+      tl.to("#lbl1", { opacity: 1, scale: 1, y: 0, duration: 0.4, ease: "power2.out" }, 0.95);
+
+      // BEAT 2: "chọn Australia" (2.4s - 4.1s)
+      // Student returns left arm and gestures right arm to Apex 2 (Upper Right)
+      tl.to("#armLeftPoint", { opacity: 0, duration: 0.15 }, 2.3);
+      tl.to("#armLeftRest", { opacity: 1, duration: 0.15 }, 2.3);
+
+      tl.to("#armRightRest", { opacity: 0, duration: 0.1 }, 2.4);
+      tl.to("#armRightPoint", { opacity: 1, duration: 0.15 }, 2.4);
+      tl.to("#apex2Group", { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.5)" }, 2.45);
+      tl.to("#lbl2", { opacity: 1, scale: 1, y: 0, duration: 0.4, ease: "power2.out" }, 2.55);
+
+      // Laser Beam 1 draws from Apex 1 -> Apex 2
+      tl.to("#beam1", { strokeDashoffset: 0, attr: { "stroke-dashoffset": 0 }, duration: 0.6, ease: "power1.inOut" }, 2.6);
+
+      // BEAT 3: "và kế hoạch của bạn sau khi học xong là gì?" (4.2s - 5.7s)
+      // Student resets right arm, gestures towards Apex 3 (Bottom Center)
+      tl.to("#armRightPoint", { opacity: 0, duration: 0.15 }, 4.1);
+      tl.to("#armRightRest", { opacity: 1, duration: 0.15 }, 4.1);
+
+      tl.to("#apex3Group", { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.5)" }, 4.2);
+      tl.to("#lbl3", { opacity: 1, scale: 1, y: 0, duration: 0.4, ease: "power2.out" }, 4.3);
+
+      // Laser Beam 2 draws (Apex 2 -> Apex 3) & Laser Beam 3 draws (Apex 3 -> Apex 1)
+      tl.to("#beam2", { strokeDashoffset: 0, attr: { "stroke-dashoffset": 0 }, duration: 0.5, ease: "power1.inOut" }, 4.35);
+      tl.to("#beam3", { strokeDashoffset: 0, attr: { "stroke-dashoffset": 0 }, duration: 0.5, ease: "power1.inOut" }, 4.75);
+
+      // FINAL BEAT: The Strategic Triangle Closes & Seals (5.4s - 6.83s)
+      tl.to("#triangleMesh", { opacity: 1, duration: 0.4 }, 5.2);
+      tl.to("#centerTriangleSeal", { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.5)" }, 5.3);
+      tl.to("#heroAura", { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" }, 5.4);
+
+      // Student triumphantly holds up approved GS dossier
+      tl.to("#armRightRest", { opacity: 0, duration: 0.1 }, 5.45);
+      tl.to("#armRightCelebrate", { opacity: 1, duration: 0.2 }, 5.45);
+
+      // Bottom synthesis proof appears
+      tl.to("#bottomSeal", { opacity: 1, y: 0, duration: 0.4, ease: "back.out(1.4)" }, 5.6);
+    </script>
+  </body>
+</html>

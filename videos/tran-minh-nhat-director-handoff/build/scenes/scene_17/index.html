@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>17 · Hành trình còn tiếp</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'PilotDisplay';
+  src: url('assets/segoe-ui-black.ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arial.ttf');
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arialbd.ttf');
+  font-weight: 700;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; }
+
+#scene-17 {
+  position: relative;
+  width: 720px;
+  height: 1280px;
+  overflow: hidden;
+  background: #FDF1E6;
+  color: #30313B;
+  font-family: PilotSans, Arial, sans-serif;
+}
+
+#world {
+  position: absolute;
+  inset: 0;
+  transform-origin: 360px 750px;
+}
+
+/* Strip Headline: HÀNH TRÌNH CÒN TIẾP */
+.strip {
+  position: absolute;
+  left: 125px;
+  top: 155px;
+  background: #087BC1;
+  color: #FFFFFF;
+  padding: 14px 28px;
+  font-family: PilotDisplay, PilotSans, sans-serif;
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1.1;
+  white-space: nowrap;
+  box-shadow: 5px 7px 0 #30313b12;
+  border-radius: 4px;
+  z-index: 25;
+  opacity: 0;
+  transform: translateY(-16px) scale(0.95);
+}
+
+svg.art {
+  position: absolute;
+  inset: 0;
+  width: 720px;
+  height: 1280px;
+  overflow: visible;
+}
+</style>
+</head>
+<body>
+<div id="scene-17" data-composition-id="scene-17" data-width="720" data-height="1280" data-start="0" data-duration="4.766666666666667">
+  <div id="world">
+    
+    <!-- Headline -->
+    <div id="scene-title" class="strip">HÀNH TRÌNH CÒN TIẾP</div>
+
+    <!-- Illustrated Dutch Canal Environment with Parallax -->
+    <svg class="art" viewBox="0 0 720 1280" aria-label="Continuing journey in Amsterdam along the canal">
+      <defs>
+        <linearGradient id="sky17-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FCF1E6"/>
+          <stop offset="55%" stop-color="#F5E4DE"/>
+          <stop offset="100%" stop-color="#E8DCEE"/>
+        </linearGradient>
+        <linearGradient id="water17-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#8DB2C4"/>
+          <stop offset="100%" stop-color="#5E8396"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Sky -->
+      <rect x="0" y="0" width="720" height="850" fill="url(#sky17-grad)"/>
+
+      <!-- Sun Warm Glow -->
+      <circle cx="480" cy="460" r="160" fill="#FFF9F0" opacity="0.65"/>
+
+      <!-- ==============================================
+           BACKGROUND CANAL HOUSES (Exact continuity from Scene 16)
+           ============================================== -->
+      <g id="canal-skyline" transform="translate(0, 0)">
+        <!-- Layer of classic Dutch facades matching Scene 16 -->
+        <rect x="80" y="440" width="90" height="240" fill="#E4D0DE"/>
+        <polygon points="80,440 125,385 170,440" fill="#D3BBCB"/>
+        
+        <rect x="180" y="410" width="105" height="270" fill="#DECAD4"/>
+        <polygon points="180,410 210,410 210,360 250,360 250,410 285,410" fill="#CCA8BC"/>
+        
+        <rect x="295" y="430" width="95" height="250" fill="#E8D5CE"/>
+        <polygon points="295,430 342,370 390,430" fill="#D9BAAE"/>
+
+        <rect x="400" y="390" width="115" height="290" fill="#D8CBDD"/>
+        <polygon points="400,390 425,390 425,340 490,340 490,390 515,390" fill="#BFADC4"/>
+
+        <rect x="525" y="420" width="110" height="260" fill="#E2CEC2"/>
+        <polygon points="525,420 580,360 635,420" fill="#CFAEA0"/>
+
+        <!-- Extra right facade for parallax panning -->
+        <rect x="645" y="410" width="105" height="270" fill="#DECAD4"/>
+        <polygon points="645,410 675,410 675,360 715,360 715,410 750,410" fill="#CCA8BC"/>
+
+        <!-- Window grid rows -->
+        <g fill="#FFFDF2" opacity="0.85">
+          <rect x="100" y="460" width="18" height="24" rx="2"/>
+          <rect x="135" y="460" width="18" height="24" rx="2"/>
+          <rect x="100" y="505" width="18" height="24" rx="2"/>
+          <rect x="135" y="505" width="18" height="24" rx="2"/>
+
+          <rect x="205" y="440" width="22" height="28" rx="2"/>
+          <rect x="245" y="440" width="22" height="28" rx="2"/>
+          <rect x="205" y="490" width="22" height="28" rx="2"/>
+          <rect x="245" y="490" width="22" height="28" rx="2"/>
+
+          <rect x="425" y="420" width="22" height="28" rx="2"/>
+          <rect x="465" y="420" width="22" height="28" rx="2"/>
+          <rect x="425" y="470" width="22" height="28" rx="2"/>
+          <rect x="465" y="470" width="22" height="28" rx="2"/>
+
+          <rect x="550" y="450" width="22" height="26" rx="2"/>
+          <rect x="590" y="450" width="22" height="26" rx="2"/>
+
+          <rect x="670" y="440" width="22" height="28" rx="2"/>
+          <rect x="710" y="440" width="22" height="28" rx="2"/>
+        </g>
+      </g>
+
+      <!-- Water Surface with ripples (matching Scene 16) -->
+      <rect x="0" y="830" width="720" height="250" fill="url(#water17-grad)"/>
+      <line x1="0" y1="830" x2="720" y2="830" stroke="#30313B" stroke-width="4"/>
+      
+      <g stroke="#C6E3F0" stroke-width="2.5" stroke-linecap="round" opacity="0.6">
+        <path d="M60 860Q120 865 180 860"/>
+        <path d="M240 880Q320 885 400 880"/>
+        <path d="M460 865Q560 870 660 865"/>
+        <path d="M120 915Q220 920 320 915"/>
+        <path d="M380 925Q480 930 580 925"/>
+        <path d="M80 970Q180 975 280 970"/>
+        <path d="M420 980Q520 985 620 980"/>
+      </g>
+
+      <!-- ==============================================
+           THE LOW BRICK CANAL BRIDGE (Exact continuity from Scene 16)
+           ============================================== -->
+      <g id="canal-bridge">
+        <!-- Bridge Under-Arch Shadow -->
+        <path d="M210 830Q360 760 510 830Z" fill="#3A4D57"/>
+        
+        <!-- Bridge Structure (warm terracotta brick #D37D58) -->
+        <path d="M60 790Q360 720 660 790L660 830Q360 760 60 830Z" fill="#C96B48" stroke="#30313B" stroke-width="3.5"/>
+        <!-- Bridge Walkway Surface -->
+        <path d="M60 790Q360 720 660 790" fill="none" stroke="#FAF1E6" stroke-width="7"/>
+        
+        <!-- Classic Bridge Cast-Iron Railing -->
+        <g stroke="#30313B" stroke-width="3" stroke-linecap="round">
+          <path d="M70 755Q360 685 650 755" fill="none" stroke-width="4"/>
+          <!-- Vertical balusters -->
+          <line x1="120" y1="780" x2="120" y2="745"/>
+          <line x1="180" y1="768" x2="180" y2="733"/>
+          <line x1="240" y1="758" x2="240" y2="723"/>
+          <line x1="300" y1="751" x2="300" y2="716"/>
+          <line x1="360" y1="748" x2="360" y2="713"/>
+          <line x1="420" y1="751" x2="420" y2="716"/>
+          <line x1="480" y1="758" x2="480" y2="723"/>
+          <line x1="540" y1="768" x2="540" y2="733"/>
+          <line x1="600" y1="780" x2="600" y2="745"/>
+        </g>
+
+        <!-- Right Quay Sidewalk landing (x650–720, y790) -->
+        <polygon points="650,790 720,790 720,830 650,830" fill="#C96B48" stroke="#30313B" stroke-width="2.5"/>
+        <line x1="650" y1="790" x2="720" y2="790" stroke="#FAF1E6" stroke-width="7"/>
+        <line x1="645" y1="755" x2="720" y2="755" stroke="#30313B" stroke-width="4"/>
+        <line x1="685" y1="790" x2="685" y2="755" stroke="#30313B" stroke-width="3"/>
+      </g>
+
+      <!-- ==============================================
+           MASCOT NHẬT CONTINUING FORWARD DOWN BRIDGE
+           Anchored at (365, 642) - Exact match to Scene 16 end
+           ============================================== -->
+      <g id="student-walk-anchor" transform="translate(365, 642)">
+        <g id="student-rig">
+          <!-- Walking shadow -->
+          <ellipse cx="65" cy="180" rx="42" ry="8" fill="#30313B" opacity="0.2"/>
+          
+          <!-- Alternating Legs -->
+          <g id="legs-group">
+            <path id="leg-left" d="M48 120L38 165L20 168" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+            <path id="leg-right" d="M82 120L95 165L115 168" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+          </g>
+
+          <!-- Blue Backpack -->
+          <rect x="15" y="45" width="34" height="85" rx="14" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+          <path d="M22 65L38 75" fill="none" stroke="#A2D8ED" stroke-width="2.5"/>
+
+          <!-- Torso -->
+          <path d="M35 30Q38 10 65 12L98 14Q120 16 118 42L112 110Q110 132 85 135L52 132Q28 131 25 108Z" fill="#FFAA28" stroke="#30313B" stroke-width="3.3"/>
+          <path d="M42 38Q48 24 65 25" fill="none" stroke="#FFD77B" stroke-width="4.5" stroke-linecap="round"/>
+
+          <!-- Purple Cap -->
+          <path d="M42 26Q32 -6 70 -8Q110 -10 116 25Z" fill="#A990D5" stroke="#30313B" stroke-width="3"/>
+          <path d="M30 27Q68 12 112 27L130 32Q136 38 126 40L38 38" fill="#8B73C0" stroke="#30313B" stroke-width="3"/>
+
+          <!-- Face -->
+          <g id="student-face">
+            <ellipse cx="65" cy="52" rx="4.5" ry="6.2" fill="#30313B"/>
+            <ellipse cx="92" cy="52" rx="4.5" ry="6.2" fill="#30313B"/>
+            <circle cx="66.5" cy="51" r="1.5" fill="#FFFDF8"/>
+            <circle cx="93.5" cy="51" r="1.5" fill="#FFFDF8"/>
+            <ellipse cx="54" cy="65" rx="8" ry="4" fill="#EE7C47" opacity="0.65"/>
+            <ellipse cx="104" cy="65" rx="8" ry="4" fill="#EE7C47" opacity="0.65"/>
+            <!-- Confident determined smile -->
+            <path d="M72 70Q82 78 92 70" stroke="#30313B" stroke-width="3" stroke-linecap="round" fill="none"/>
+          </g>
+
+          <!-- Free Left Arm -->
+          <g id="arm-left" transform-origin="38 45">
+            <path d="M38 45Q22 75 14 95" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="14" cy="95" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+          </g>
+
+          <!-- Right Arm & The Blue Notebook (with Orange Bookmark) -->
+          <g id="arm-right" transform-origin="95 45">
+            <path id="right-arm-path" d="M95 45Q115 75 110 95" fill="none" stroke="#30313B" stroke-width="5.5" stroke-linecap="round"/>
+            <circle cx="110" cy="95" r="7.5" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+            
+            <!-- Blue Notebook with Orange Bookmark -->
+            <g id="active-notebook" transform="translate(90, 70) rotate(10)">
+              <rect x="0" y="0" width="35" height="48" rx="3" fill="#087BC1" stroke="#30313B" stroke-width="2.2"/>
+              <line x1="6" y1="0" x2="6" y2="48" stroke="#055B90" stroke-width="2.5"/>
+              <!-- Orange Bookmark Tab (Callback to Scene 01) -->
+              <polygon points="22,0 30,0 30,-8 22,-8" fill="#FF7A30" stroke="#30313B" stroke-width="1.5"/>
+              <!-- White clean page edges -->
+              <line x1="33" y1="4" x2="33" y2="44" stroke="#FFFDF8" stroke-width="1.8"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<script>
+(function() {
+  const tl = gsap.timeline({ paused: false });
+
+  // 0.00–1.200s: "tiếp tục phát huy bản lĩnh"
+  // Nhật begins at exact end position of Scene 16 (x: 365, y: 642) on the bridge
+  tl.set('#student-walk-anchor', { x: 365, y: 642 }, 0);
+
+  // Nhật inspects the blue notebook and adjusts the orange bookmark tab (callback to Scene 01)
+  tl.to('#active-notebook', {
+    scale: 1.18,
+    rotation: -5,
+    y: -8,
+    duration: 0.45,
+    ease: 'power2.out'
+  }, 0.2);
+
+  tl.to('#active-notebook', {
+    scale: 1,
+    rotation: 10,
+    y: 0,
+    duration: 0.45,
+    ease: 'power2.inOut'
+  }, 0.85);
+
+  // 1.20–3.000s: "khám phá những cơ hội mới"
+  // Nhật walks smoothly DOWN the right slope of the arched bridge
+  tl.to('#student-walk-anchor', {
+    x: 455,
+    y: 650,
+    duration: 0.9,
+    ease: 'power1.inOut'
+  }, 1.2);
+
+  tl.to('#student-walk-anchor', {
+    x: 555,
+    y: 672,
+    duration: 0.9,
+    ease: 'power1.inOut'
+  }, 2.1);
+
+  // 3.00–4.150s: "chinh phục nhiều cột mốc lớn hơn"
+  // Steps off the bridge landing onto the quay and strides forward toward the open horizon
+  tl.to('#student-walk-anchor', {
+    x: 650,
+    y: 700,
+    duration: 1.15,
+    ease: 'power1.out'
+  }, 3.0);
+
+  // Legs walk cycle active during walk (1.2s to 4.15s)
+  tl.to('#leg-left', {
+    attr: { d: 'M48 120L60 165L80 168' },
+    repeat: 11,
+    yoyo: true,
+    duration: 0.25,
+    ease: 'sine.inOut'
+  }, 1.2);
+
+  tl.to('#leg-right', {
+    attr: { d: 'M82 120L70 165L50 168' },
+    repeat: 11,
+    yoyo: true,
+    duration: 0.25,
+    ease: 'sine.inOut'
+  }, 1.2);
+
+  // Free arm swing
+  tl.to('#arm-left', {
+    rotation: 22,
+    repeat: 11,
+    yoyo: true,
+    duration: 0.25,
+    ease: 'sine.inOut'
+  }, 1.2);
+
+  // Gentle stride bounce
+  tl.to('#student-rig', {
+    y: -5,
+    repeat: 11,
+    yoyo: true,
+    duration: 0.25,
+    ease: 'sine.inOut'
+  }, 1.2);
+
+  // Subtle parallax background drift of Amsterdam skyline
+  tl.to('#canal-skyline', {
+    x: -30,
+    duration: 3.2,
+    ease: 'none'
+  }, 1.2);
+
+  // 3.80–4.767s: "trong tương lai"
+  // Headline drops in gently in the sky
+  tl.to('#scene-title', {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    duration: 0.45,
+    ease: 'back.out(1.3)'
+  }, 3.8);
+
+  // Calm hold 0.6s at the end matching voice conclusion
+  tl.to({ hold: 0 }, { hold: 1, duration: 4.766666666666667, ease: 'none' }, 0);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines['scene-17'] = tl;
+})();
+</script>
+</body>
+</html>

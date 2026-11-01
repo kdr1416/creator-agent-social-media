@@ -1,0 +1,245 @@
+{
+  "scene_number": 7,
+  "scene_id": "S07",
+  "start": 29.654125,
+  "end": 34.32295833333333,
+  "start_sample": 711699,
+  "end_sample": 823751,
+  "source_segments": [
+    7
+  ],
+  "raw_text": "Khi có một tài sản tại Manta, gia đình có thêm một điểm kết nối với Châu Âu,",
+  "corrected_text": "Khi có một tài sản tại Malta, gia đình có thêm một điểm kết nối với Châu Âu,",
+  "semantic_type": "device interaction",
+  "visual_center": "Giữ một điểm kết nối",
+  "organic_motion_need": "Không cần diễn viên/plate hữu cơ; puppet vector có hành động chủ đích.",
+  "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+  "preferred_mode": "HF_ONLY",
+  "routing_confidence": "high",
+  "routing_reason": "Giữ một điểm kết nối: hành động chủ đạo là cắm / kết nối các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ device interaction, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+  "flow_contribution": "none",
+  "hf_contribution": "Cắm đầu dây → màn hình sáng với người thân giơ tay chào; mascot nhìn vào mắt người trong màn hình, một nét nối sáng ngắn xuất hiện theo tiếp xúc.",
+  "fallback_mode": null,
+  "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+  "character": "yes",
+  "title": "Giữ một điểm kết nối",
+  "takeaway": "Gia đình có thể hoạch định kết nối với nơi con đang học.",
+  "audio_source": [
+    "inputs/audio/seg_07.wav"
+  ],
+  "duration": 4.668833333333332,
+  "sample_frames": 112052,
+  "raw_segments": [
+    {
+      "seg_id": 7,
+      "segment_id": "seg_07",
+      "audio_slice": "audio_slices/seg_07.wav",
+      "start_sample": 711699,
+      "end_sample": 823751,
+      "sample_frames": 112052,
+      "start": 29.654,
+      "end": 34.323,
+      "duration": 4.669,
+      "sha256": "676938e717191454e113106f70c7d97d8073f31482da8ea8f0c2577f2de71dc0",
+      "raw_text": "Khi có một tài sản tại Manta, gia đình có thêm một điểm kết nối với Châu Âu,",
+      "corrected_text": "Khi có một tài sản tại Malta, gia đình có thêm một điểm kết nối với Châu Âu,",
+      "uncertainties": [
+        "Manta -> Malta: ASR nhận nhầm tên riêng quốc gia Malta."
+      ]
+    }
+  ],
+  "render_mode": "HF_ONLY",
+  "style_candidates": [
+    {
+      "id": "hf_existing:warm-doodle-mixed-media",
+      "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+    },
+    {
+      "id": "kurzgesagt",
+      "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+    },
+    {
+      "id": "izometrik",
+      "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+    },
+    {
+      "id": "bauhaus",
+      "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+    }
+  ],
+  "style_id": "hf_existing:warm-doodle-mixed-media",
+  "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+  "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+  "visual_verb": "cắm / kết nối",
+  "composition": "Bàn làm việc lilac, laptop thật về hình học ở x=150–560/y=440–790; dây nối uốn nhẹ xuống mascot tại y=920.",
+  "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+  "opening_state": "Mascot cầm đầu dây, màn hình có khung ảnh gia đình chưa nối.",
+  "transformation": "Cắm đầu dây → màn hình sáng với người thân giơ tay chào; mascot nhìn vào mắt người trong màn hình, một nét nối sáng ngắn xuất hiện theo tiếp xúc.",
+  "final_state": "Hai phía cuộc gọi nhìn nhau. Không hiện giao diện thương hiệu, giấy phép hoặc “thẻ xanh EU”.",
+  "protagonist_action": "Cắm dây, chào lại và theo dõi người thân trên màn hình.",
+  "mascot_role": "Cắm dây, chào lại và theo dõi người thân trên màn hình.",
+  "visual_family": "device interaction",
+  "timed_beats": [
+    {
+      "local_seconds": 0,
+      "spoken_cue": "đầu lát nguồn",
+      "action": "Mascot cầm đầu dây, màn hình có khung ảnh gia đình chưa nối.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 1.167,
+      "spoken_cue": "cụm ý đầu — đối chiếu WAV",
+      "action": "Cắm đầu dây → màn hình sáng với người thân giơ tay chào",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 2.801,
+      "spoken_cue": "cụm ý sau — đối chiếu WAV",
+      "action": "Cắm đầu dây → màn hình sáng với người thân giơ tay chào; mascot nhìn vào mắt người trong màn hình, một nét nối sáng ngắn xuất hiện theo tiếp xúc.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 3.875,
+      "spoken_cue": "đuôi câu / nghỉ",
+      "action": "Hai phía cuộc gọi nhìn nhau. Không hiện giao diện thương hiệu, giấy phép hoặc “thẻ xanh EU”.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    }
+  ],
+  "motion_emphasis_sequence": [
+    "Mascot cầm đầu dây, màn hình có khung ảnh gia đình chưa nối.",
+    "Cắm đầu dây → màn hình sáng với người thân giơ tay chào",
+    "Cắm đầu dây → màn hình sáng với người thân giơ tay chào; mascot nhìn vào mắt người trong màn hình, một nét nối sáng ngắn xuất hiện theo tiếp xúc.",
+    "Hai phía cuộc gọi nhìn nhau. Không hiện giao diện thương hiệu, giấy phép hoặc “thẻ xanh EU”."
+  ],
+  "hf_signature_motion": "Cắm đầu dây → màn hình sáng với người thân giơ tay chào; mascot nhìn vào mắt người trong màn hình, một nét nối sáng ngắn xuất hiện theo tiếp xúc.",
+  "flow_action": null,
+  "flow_camera": null,
+  "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+  "asset_contract": [
+    {
+      "layer": "laptop-shell",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "screen-family",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "cable",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "plug",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "desk",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-rig",
+      "source": "approved mascot derivative",
+      "status": "planned",
+      "required_separate_layer": true
+    }
+  ],
+  "container_required": true,
+  "container_inventory": [
+    {
+      "object_type": "laptop",
+      "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+      "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+      "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+    }
+  ],
+  "container_semantics": [
+    {
+      "object_type": "laptop",
+      "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+      "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+      "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+    }
+  ],
+  "visible_text_budget": {
+    "max_simultaneous_words": 2,
+    "max_levels": 2,
+    "paragraphs": 0
+  },
+  "visible_text_inventory": [
+    {
+      "text": "KẾT NỐI",
+      "size_px": 54,
+      "role": "anchor",
+      "simultaneous": false
+    }
+  ],
+  "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Một strip xanh ngắn có nghĩa nhấn ý.",
+  "accent_reason": "Nhấn sự chuyển trọng tâm của câu; không tô cả cảnh.",
+  "accent_treatment": "blue short feature strip",
+  "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+  "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+  "handoff": "Lời chào dẫn bằng cắt cảnh sang cuộc gặp ngoài đời, không match cùng cánh tay.",
+  "continuity_risk": "MPRP không tự cấp quyền cư trú/làm việc toàn EU; không mã hóa quyền đó trong UI.",
+  "pilot": false,
+  "status": "designed_not_produced",
+  "must_keep": [
+    "Gia đình có thể hoạch định kết nối với nơi con đang học.",
+    "Cắm đầu dây → màn hình sáng với người thân giơ tay chào; mascot nhìn vào mắt người trong màn hình, một nét nối sáng ngắn xuất hiện theo tiếp xúc.",
+    "voice/sample bounds",
+    "mascot identity, warm light palette, footer 200px",
+    "zero added CTA or documentary claims"
+  ],
+  "flexible": [
+    "Toạ độ/kích thước trong safe area",
+    "easing/pose/chi tiết nét",
+    "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+  ],
+  "reference_alignment": {
+    "colour_relationships": {
+      "reference_evidence": "Brief: cream/peach/lilac + accents",
+      "candidate_evidence": "S07: warm ground and vivid orange/blue/purple",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "typography_treatment": {
+      "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+      "candidate_evidence": "S07: local shipped font, sparse native text",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "asset_mix": {
+      "reference_evidence": "Reference 04/06: real campus plus drawing",
+      "candidate_evidence": "S07: Valletta photo where geographic evidence is needed; vector/physical paper elsewhere",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "composition": {
+      "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+      "candidate_evidence": "S07: Bàn làm việc lilac, laptop thật về hình học ở x=150–560/y=440–790; dây nối uốn nhẹ xuống mascot tại y=920.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "mascot_language": {
+      "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+      "candidate_evidence": "S07: Cắm dây, chào lại và theo dõi người thân trên màn hình.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "motion_rhythm": {
+      "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+      "candidate_evidence": "S07: Cắm đầu dây → màn hình sáng với người thân giơ tay chào; mascot nhìn vào mắt người trong màn hình, một nét nối sáng ngắn xuất hiện theo tiếp xúc.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    }
+  }
+}

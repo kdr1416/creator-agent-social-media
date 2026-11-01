@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>Mở cánh cửa đào tạo — scene 01</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:SceneSans;src:url('assets/scene-sans-bold.ttf') format('truetype');font-weight:700;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;background:#fff}#root{position:relative;width:100%;height:100%;overflow:hidden;color:#0F172A;font-family:SceneSans,sans-serif}
+.clip{position:absolute;inset:0}.ground{background:#fff}.art{width:100%;height:100%;display:block}
+.label{position:absolute;margin:0;font-weight:700;line-height:1.15;letter-spacing:-.6px;white-space:nowrap}
+#label-title{left:60px;top:180px;font-size:46px;color:#0F172A}
+#label-sub{left:60px;top:242px;font-size:32px;color:#FF6B2B}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-s01-root" id="root" data-composition-id="scene01" data-width="720" data-height="1280" data-duration="1.8" data-start="0">
+ <div data-hf-id="hf-s01-ground" id="scene01-ground" class="clip ground" data-start="0" data-duration="1.8" data-track-index="0"></div>
+ <svg data-hf-id="hf-s01-art" id="scene01-art" class="art clip" data-start="0" data-duration="1.8" data-track-index="1" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+   <radialGradient id="portal-glow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FF6B2B" stop-opacity="0.25"/>
+    <stop offset="100%" stop-color="#FF6B2B" stop-opacity="0"/>
+   </radialGradient>
+   <linearGradient id="door-pillar" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#0F172A"/>
+    <stop offset="100%" stop-color="#28384D"/>
+   </linearGradient>
+   <linearGradient id="accent-orange" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FF844B"/>
+    <stop offset="100%" stop-color="#E55319"/>
+   </linearGradient>
+  </defs>
+
+  <!-- Geometric backdrop -->
+  <circle id="bg-circle" cx="360" cy="680" r="260" fill="url(#portal-glow)"/>
+  
+  <!-- Circuit lines radiating outward -->
+  <g id="circuits" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round" fill="none">
+   <path id="circuit-l" d="M140 850 L220 850 L270 790 L270 700"/>
+   <path id="circuit-r" d="M580 850 L500 850 L450 790 L450 700"/>
+   <path id="circuit-main" d="M360 1020 L360 820" stroke="#FF6B2B" stroke-width="4"/>
+  </g>
+  <circle id="pulse-dot" cx="360" cy="820" r="8" fill="#FF6B2B"/>
+
+  <!-- Book covers morphing into architectural portal (Bauhaus styling) -->
+  <g id="portal-structure">
+   <!-- Left Column / Book left cover -->
+   <rect id="left-pillar" x="220" y="480" width="45" height="360" rx="8" fill="url(#door-pillar)"/>
+   <!-- Right Column / Book right cover -->
+   <rect id="right-pillar" x="455" y="480" width="45" height="360" rx="8" fill="url(#door-pillar)"/>
+   <!-- Archway Lintelle -->
+   <rect id="arch-top" x="190" y="435" width="340" height="48" rx="6" fill="#0F172A"/>
+   <!-- Bauhaus Orange geometric block on top -->
+   <rect id="top-block" x="320" y="380" width="80" height="55" rx="4" fill="url(#accent-orange)"/>
+   
+   <!-- Center Opening Portal Rays -->
+   <g id="portal-inner" fill="none" stroke="#FF6B2B" stroke-width="3">
+    <line x1="285" y1="485" x2="285" y2="840" stroke="#E2E8F0" stroke-width="2"/>
+    <line x1="435" y1="485" x2="435" y2="840" stroke="#E2E8F0" stroke-width="2"/>
+    <path id="door-arch" d="M265 840 L265 580 Q360 490 455 580 L455 840" stroke="#FF6B2B" stroke-width="5"/>
+   </g>
+  </g>
+ </svg>
+
+ <h1 class="label" id="label-title">ĐÀO TẠO MỚI</h1>
+ <p class="label" id="label-sub">AI & Công nghệ Thông minh</p>
+ <audio data-hf-id="hf-s01-voice" id="scene01-voice" src="assets/audio.wav" data-start="0" data-duration="1.8" data-track-index="2" data-volume="1"></audio>
+</div>
+
+<script>
+const tl = gsap.timeline({paused:true});
+
+// Initial states: book folding state
+gsap.set('#portal-structure', {scaleY: 0.2, scaleX: 0.6, transformOrigin: '50% 80%', y: 120, opacity: 0});
+gsap.set('#bg-circle', {scale: 0.3, transformOrigin: '50% 50%', opacity: 0});
+gsap.set(['#circuit-l', '#circuit-r', '#circuit-main'], {strokeDasharray: 300, strokeDashoffset: 300});
+gsap.set('#pulse-dot', {scale: 0, opacity: 0});
+gsap.set(['#label-title', '#label-sub'], {opacity: 0, x: -20});
+
+// Choreography: 0 -> 1.8s
+tl.to('#portal-structure', {opacity: 1, scaleY: 1, scaleX: 1, y: 0, duration: 0.75, ease: 'back.out(1.4)'}, 0.1)
+  .to('#bg-circle', {opacity: 1, scale: 1, duration: 0.9, ease: 'power2.out'}, 0.2)
+  .to(['#label-title', '#label-sub'], {opacity: 1, x: 0, duration: 0.5, stagger: 0.15, ease: 'power2.out'}, 0.25)
+  .to(['#circuit-l', '#circuit-r', '#circuit-main'], {strokeDashoffset: 0, duration: 0.8, ease: 'power1.inOut'}, 0.45)
+  .to('#pulse-dot', {scale: 1, opacity: 1, duration: 0.3, ease: 'back.out(2)'}, 0.85)
+  .to('#door-arch', {strokeWidth: 8, stroke: '#FF844B', duration: 0.45, yoyo: true, repeat: 1}, 1.0)
+  .to('#pulse-dot', {y: -180, duration: 0.65, ease: 'power2.inOut'}, 1.1);
+
+window.__timelines = window.__timelines || {};
+window.__timelines['scene01'] = tl;
+</script>
+</body>
+</html>

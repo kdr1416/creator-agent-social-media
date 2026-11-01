@@ -1,0 +1,259 @@
+[
+  {
+    "scene_id": "scene_01",
+    "seg_id": 1,
+    "start": 0.0,
+    "end": 5.355,
+    "duration": 5.355,
+    "frames": 128520,
+    "start_sample": 0,
+    "end_sample": 128520,
+    "text": "Nữ sinh Trường Quốc tế Á Châu xuất sắc nhận offer từ các đại học danh tiếng tại Hà Lan và Úc!",
+    "raw_text": "Nữ sinh trưởng quốc tế á châu xuất sắc nhận offer từ các đại học danh tiếng tại Hà Lan và Úc.",
+    "audio_slice": "scene_01.wav",
+    "uncertainties": [
+      "trưởng -> Trường (theo fullscript và thực tế là Trường Quốc tế Á Châu)"
+    ]
+  },
+  {
+    "scene_id": "scene_02",
+    "seg_id": 2,
+    "start": 5.355,
+    "end": 10.581,
+    "duration": 5.226,
+    "frames": 125424,
+    "start_sample": 128520,
+    "end_sample": 253944,
+    "text": "Xin chúc mừng Lê Phạm Như Quỳnh đã chính thức nhận thư mời nhập học từ 3 trường đại học uy tín tại Hà Lan và Úc,",
+    "raw_text": "Xin chúc mừng lê phạm như quình đã chính thức nhận từ mờ nhập học từ 3 trường đại học y tín tại Hà Lan và Úc,",
+    "audio_slice": "scene_02.wav",
+    "uncertainties": [
+      "lê phạm như quình -> Lê Phạm Như Quỳnh (tên riêng học sinh)",
+      "từ mờ nhập học -> thư mời nhập học",
+      "y tín -> uy tín"
+    ]
+  },
+  {
+    "scene_id": "scene_03",
+    "seg_id": 3,
+    "start": 10.581,
+    "end": 14.143,
+    "duration": 3.562,
+    "frames": 85488,
+    "start_sample": 253944,
+    "end_sample": 339432,
+    "text": "đánh dấu một cột mốc quan trọng trên hành trình chinh phục môi trường giáo dục quốc tế.",
+    "raw_text": "đánh dấu một cột mốc quan trọng trên hành trình trinh phục môi trường giáo dục quốc tế.",
+    "audio_slice": "scene_03.wav",
+    "uncertainties": [
+      "trinh phục -> chinh phục"
+    ]
+  },
+  {
+    "scene_id": "scene_04",
+    "seg_id": 4,
+    "start": 14.143,
+    "end": 17.436,
+    "duration": 3.293,
+    "frames": 79032,
+    "start_sample": 339432,
+    "end_sample": 418464,
+    "text": "HAN University of Applied Sciences (Hà Lan)",
+    "raw_text": "Han University of Applied Sciences, Hà Lan",
+    "audio_slice": "scene_04.wav",
+    "uncertainties": [
+      "Han -> HAN (viết hoa chuẩn tên trường HAN University of Applied Sciences)"
+    ]
+  },
+  {
+    "scene_id": "scene_05",
+    "seg_id": 5,
+    "start": 17.436,
+    "end": 23.7,
+    "duration": 6.264,
+    "frames": 150336,
+    "start_sample": 418464,
+    "end_sample": 568800,
+    "text": "Một trong những trường Đại học Ứng dụng lớn nhất Hà Lan, nổi tiếng với thế mạnh về Kỹ thuật, Kinh doanh, CNTT và Truyền thông,",
+    "raw_text": "Một trong những trường đại học ứng dụng lớn nhất Hà Lan, nổi tiếng với thế mạnh về kỹ thuật, kinh doanh, CNIT và truyền thông,",
+    "audio_slice": "scene_05.wav",
+    "uncertainties": [
+      "CNIT -> CNTT (viết tắt Công nghệ thông tin)"
+    ]
+  },
+  {
+    "scene_id": "scene_06",
+    "seg_id": 6,
+    "start": 23.7,
+    "end": 26.31,
+    "duration": 2.61,
+    "frames": 62640,
+    "start_sample": 568800,
+    "end_sample": 631440,
+    "text": "chú trọng đào tạo thực hành và kết nối doanh nghiệp.",
+    "raw_text": "chú trọng đào tạo thực hành và kết nối doanh nghiệp.",
+    "audio_slice": "scene_06.wav",
+    "uncertainties": []
+  },
+  {
+    "scene_id": "scene_07",
+    "seg_id": 7,
+    "start": 26.31,
+    "end": 29.512,
+    "duration": 3.202,
+    "frames": 76848,
+    "start_sample": 631440,
+    "end_sample": 708288,
+    "text": "Rotterdam University of Applied Sciences (Hà Lan)",
+    "raw_text": "Rotterdam University of Applied Sciences, Hà Lan",
+    "audio_slice": "scene_07.wav",
+    "uncertainties": []
+  },
+  {
+    "scene_id": "scene_08",
+    "seg_id": 8,
+    "start": 29.512,
+    "end": 33.23,
+    "duration": 3.718,
+    "frames": 89232,
+    "start_sample": 708288,
+    "end_sample": 797520,
+    "text": "Tọa lạc tại Rotterdam – trung tâm kinh tế và cảng biển lớn nhất châu Âu,",
+    "raw_text": "Tọa lạc tại Rotterdam, trung tâm kinh tế và cảng biển lớn nhất châu Âu,",
+    "audio_slice": "scene_08.wav",
+    "uncertainties": []
+  },
+  {
+    "scene_id": "scene_09",
+    "seg_id": 9,
+    "start": 33.23,
+    "end": 39.699,
+    "duration": 6.469,
+    "frames": 155256,
+    "start_sample": 797520,
+    "end_sample": 952776,
+    "text": "trường nổi bật với các chương trình đào tạo về Kinh doanh, Logistics, Kỹ thuật và Truyền thông trong môi trường học tập quốc tế năng động.",
+    "raw_text": "trường nổi bật với các trường trình đào tạo về kinh doanh, logistic, kỹ thuật và truyền thông trong mô trường học tập quốc tế năng động.",
+    "audio_slice": "scene_09.wav",
+    "uncertainties": [
+      "trường trình -> chương trình",
+      "logistic -> Logistics",
+      "mô trường -> môi trường"
+    ]
+  },
+  {
+    "scene_id": "scene_10",
+    "seg_id": 10,
+    "start": 39.699,
+    "end": 44.18,
+    "duration": 4.481,
+    "frames": 107544,
+    "start_sample": 952776,
+    "end_sample": 1060320,
+    "text": "Macquarie University (Úc) – thuộc nhóm các trường đại học hàng đầu nước Úc,",
+    "raw_text": "Macquarie University, Úc thuộc nhóm các trường đại học hàng đầu nước Úc,",
+    "audio_slice": "scene_10.wav",
+    "uncertainties": []
+  },
+  {
+    "scene_id": "scene_11",
+    "seg_id": 11,
+    "start": 44.18,
+    "end": 48.6,
+    "duration": 4.42,
+    "frames": 106080,
+    "start_sample": 1060320,
+    "end_sample": 1166400,
+    "text": "Macquarie nổi tiếng về Kinh doanh, Tài chính, Công nghệ thông tin, Truyền thông và Khoa học.",
+    "raw_text": "Macquarie nổi tiếng về kinh doanh, tài chính, công nghệ thông tin, truyền thông và khoa học,",
+    "audio_slice": "scene_11.wav",
+    "uncertainties": []
+  },
+  {
+    "scene_id": "scene_12",
+    "seg_id": 12,
+    "start": 48.6,
+    "end": 53.387,
+    "duration": 4.787,
+    "frames": 114888,
+    "start_sample": 1166400,
+    "end_sample": 1281288,
+    "text": "Trường có thế mạnh nghiên cứu, cơ sở vật chất hiện đại và mối liên kết chặt chẽ với các doanh nghiệp toàn cầu.",
+    "raw_text": "trường có thế mạnh nhìn cứu, cơ sở vật chất hiện đại và mối liên kết chặt chẽ với các doanh nghiệp toàn cầu.",
+    "audio_slice": "scene_12.wav",
+    "uncertainties": [
+      "nhìn cứu -> nghiên cứu"
+    ]
+  },
+  {
+    "scene_id": "scene_13",
+    "seg_id": 13,
+    "start": 53.387,
+    "end": 57.701,
+    "duration": 4.314,
+    "frames": 103536,
+    "start_sample": 1281288,
+    "end_sample": 1384824,
+    "text": "Đằng sau ba thư mời nhập học là quá trình chuẩn bị nghiêm túc và định hướng rõ ràng.",
+    "raw_text": "Đang sau, ba thương mời nhập học là quá trình chuẩn bị nghiêm túc và định hướng rõ ràng.",
+    "audio_slice": "scene_13.wav",
+    "uncertainties": [
+      "Đang sau -> Đằng sau",
+      "ba thương mời -> ba thư mời"
+    ]
+  },
+  {
+    "scene_id": "scene_14",
+    "seg_id": 14,
+    "start": 57.701,
+    "end": 61.354,
+    "duration": 3.653,
+    "frames": 87672,
+    "start_sample": 1384824,
+    "end_sample": 1472496,
+    "text": "Với sự đồng hành của đội ngũ Mentor Esora hơn 14 năm kinh nghiệm,",
+    "raw_text": "Với sự đồng hành của đội ngũ mentor Ezora hơn 14 năm kinh nghiệm,",
+    "audio_slice": "scene_14.wav",
+    "uncertainties": [
+      "Ezora -> Esora (tên trung tâm tư vấn du học)"
+    ]
+  },
+  {
+    "scene_id": "scene_15",
+    "seg_id": 15,
+    "start": 61.354,
+    "end": 67.898,
+    "duration": 6.544,
+    "frames": 157056,
+    "start_sample": 1472496,
+    "end_sample": 1629552,
+    "text": "Như Quỳnh đã xây dựng một bộ hồ sơ thể hiện đúng năng lực, cá tính và mục tiêu học tập, từ đó mở rộng cơ hội trúng tuyển tại nhiều quốc gia.",
+    "raw_text": "Nhiều Quỳnh đã dây dựng một bộ hồ sơ thể hiện đúng năng lực, cá tính và mục tiêu học tập, từ đó mở rộng cơ hội chúng tuyển tại nhiều quốc gia.",
+    "audio_slice": "scene_15.wav",
+    "uncertainties": [
+      "Nhiều Quỳnh -> Như Quỳnh",
+      "dây dựng -> xây dựng",
+      "chúng tuyển -> trúng tuyển"
+    ]
+  },
+  {
+    "scene_id": "scene_16",
+    "seg_id": 16,
+    "start": 67.898,
+    "end": 73.92,
+    "duration": 6.022,
+    "frames": 144528,
+    "start_sample": 1629552,
+    "end_sample": 1774080,
+    "text": "Esora trân trọng cảm ơn Như Quỳnh và gia đình đã tin tưởng lựa chọn chúng tôi trên hành trình hiện thực hóa ước mơ du học.",
+    "raw_text": "Ezora chân trọng cảm ơn Nhiều Quỳnh và gia đình đã tin tưởng lựa chọn chúng tôi trên thành chính hiện thực hóa ước mơ dù học.",
+    "audio_slice": "scene_16.wav",
+    "uncertainties": [
+      "Ezora -> Esora",
+      "chân trọng -> trân trọng",
+      "Nhiều Quỳnh -> Như Quỳnh",
+      "thành chính -> hành trình",
+      "dù học -> du học"
+    ]
+  }
+]

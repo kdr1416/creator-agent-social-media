@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=720, height=1280" />
+    <title>Scene 8 - Visual Storytelling: Multi-Year Budget Planning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        color: #0f172a;
+        font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+        overflow: hidden;
+      }
+      #root {
+        position: relative;
+        width: 720px;
+        height: 1280px;
+        overflow: hidden;
+        background: #ffffff;
+      }
+
+      /* ── SUBTLE OPEN-CANVAS AMBIENT BACKGROUND ── */
+      .bg-canvas {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .bg-glow {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          circle at 50% 48%,
+          rgba(248, 250, 252, 0.95) 0%,
+          rgba(255, 255, 255, 1) 75%
+        );
+      }
+      .bg-grid {
+        position: absolute;
+        inset: 0;
+        background-image: 
+          linear-gradient(to right, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+        background-size: 40px 40px;
+        opacity: 0.65;
+      }
+
+      /* ── SINGLE HERO HEADLINE (Open-Canvas, Unboxed, Y: 130px to 230px) ── */
+      .headline-container {
+        position: absolute;
+        top: 135px;
+        left: 40px;
+        right: 40px;
+        text-align: center;
+        z-index: 40;
+      }
+      .headline-main {
+        font-family: "Montserrat", sans-serif;
+        font-size: 52px;
+        font-weight: 900;
+        line-height: 1.15;
+        letter-spacing: -1.8px;
+        color: #0f172a;
+        margin: 0;
+        position: relative;
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(-15px);
+      }
+      .headline-text-inner {
+        position: relative;
+        z-index: 2;
+      }
+      .highlight-sweep {
+        position: absolute;
+        left: -4px;
+        bottom: 4px;
+        width: 104%;
+        height: 18px;
+        background: #fde047;
+        z-index: 1;
+        border-radius: 4px;
+        transform-origin: left center;
+        transform: scaleX(0);
+      }
+
+      /* ── MAIN WORKSPACE STAGE (Y: 260px to 1080px, exactly 200px clear footer) ── */
+      .workspace-stage {
+        position: absolute;
+        left: 30px;
+        width: 660px;
+        top: 260px;
+        height: 820px;
+        z-index: 20;
+      }
+
+      /* ── DESK SURFACE (Grounded at bottom of stage => Y: 1040px on canvas) ── */
+      .desk-group {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100px;
+        z-index: 10;
+      }
+      .desk-top {
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        top: 0;
+        height: 22px;
+        background: #ffffff;
+        border: 4px solid #0f172a;
+        border-radius: 999px;
+        box-shadow: 0px 8px 0px #0f172a;
+      }
+      .desk-leg-left {
+        position: absolute;
+        left: 45px;
+        top: 26px;
+        width: 14px;
+        height: 74px;
+        background: #0f172a;
+        border-radius: 6px;
+      }
+      .desk-leg-right {
+        position: absolute;
+        right: 45px;
+        top: 26px;
+        width: 14px;
+        height: 74px;
+        background: #0f172a;
+        border-radius: 6px;
+      }
+
+      /* ── CHARACTER RIG (Planner at Desk, scaled & refined) ── */
+      .character-rig {
+        position: absolute;
+        left: 10px;
+        bottom: 26px;
+        width: 270px;
+        height: 520px;
+        z-index: 25;
+        opacity: 0;
+      }
+      #char-arm-left {
+        transform-origin: 155px 285px;
+      }
+      #char-arm-right {
+        transform-origin: 195px 295px;
+      }
+      #char-head {
+        transform-origin: 135px 160px;
+      }
+
+      /* ── PHYSICAL DESK CALENDAR PROP (Center Desk) ── */
+      .calendar-station {
+        position: absolute;
+        left: 245px;
+        bottom: 26px;
+        width: 175px;
+        height: 270px;
+        z-index: 20;
+        perspective: 900px;
+        opacity: 0;
+      }
+      .calendar-stand {
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        right: 10px;
+        height: 36px;
+        background: #0f172a;
+        border-radius: 8px 8px 4px 4px;
+        box-shadow: 0px 5px 0px rgba(15, 23, 42, 0.2);
+      }
+      .calendar-spiral {
+        position: absolute;
+        top: 6px;
+        left: 18px;
+        right: 18px;
+        height: 18px;
+        display: flex;
+        justify-content: space-around;
+        z-index: 35;
+      }
+      .spiral-coil {
+        width: 9px;
+        height: 20px;
+        background: #0f172a;
+        border-radius: 4px;
+      }
+
+      /* Calendar Pages */
+      .cal-page {
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        top: 18px;
+        height: 216px;
+        background: #ffffff;
+        border: 4px solid #0f172a;
+        border-radius: 16px;
+        box-shadow: 0px 6px 0px rgba(15, 23, 42, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform-origin: top center;
+        backface-visibility: hidden;
+      }
+      .cal-page-tag {
+        position: absolute;
+        top: 14px;
+        background: #0f172a;
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        padding: 4px 14px;
+        border-radius: 999px;
+      }
+      .cal-num {
+        font-family: "Montserrat", sans-serif;
+        font-size: 74px;
+        font-weight: 900;
+        line-height: 1;
+        color: #0f172a;
+        margin-top: 18px;
+      }
+      #page-2 {
+        visibility: hidden;
+      }
+      #page-3 {
+        visibility: hidden;
+      }
+
+      /* ── 3 PHYSICAL BUDGET PROPS (Placed on Desk) ── */
+      .props-group {
+        position: absolute;
+        right: 15px;
+        bottom: 26px;
+        width: 215px;
+        height: 410px;
+        z-index: 18;
+      }
+
+      /* Prop 1 (01): Physical Sealed Financial Envelope */
+      .prop-envelope {
+        position: absolute;
+        left: 15px;
+        bottom: 0px;
+        width: 185px;
+        height: 115px;
+        z-index: 1;
+        opacity: 0;
+      }
+
+      /* Prop 2 (02): Physical 3D Stack of Gold CAD Coins */
+      .prop-coins {
+        position: absolute;
+        left: 25px;
+        bottom: 125px;
+        width: 165px;
+        height: 120px;
+        z-index: 2;
+        opacity: 0;
+      }
+
+      /* Prop 3 (03): Physical Leather-bound Financial Dossier Folder */
+      .prop-dossier {
+        position: absolute;
+        left: 10px;
+        bottom: 255px;
+        width: 195px;
+        height: 125px;
+        z-index: 3;
+        opacity: 0;
+      }
+
+      /* Cumulative Complete Indicator Bar */
+      .assembly-spine {
+        position: absolute;
+        right: -8px;
+        top: 30px;
+        bottom: 10px;
+        width: 8px;
+        border-right: 4px solid #ff6b2b;
+        border-top: 4px solid #ff6b2b;
+        border-bottom: 4px solid #ff6b2b;
+        border-radius: 0 4px 4px 0;
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: center bottom;
+      }
+
+      audio {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-width="720"
+      data-height="1280"
+      data-duration="6.2"
+    >
+      <!-- Background Ambient Canvas -->
+      <div class="bg-canvas">
+        <div class="bg-glow"></div>
+        <div class="bg-grid"></div>
+      </div>
+
+      <!-- Single Hero Headline (Open-Canvas, Unboxed) -->
+      <div class="headline-container">
+        <h1 class="headline-main" id="hl-text">
+          <span class="headline-text-inner">DỰ TRÙ CHO TOÀN KHÓA</span>
+          <div class="highlight-sweep" id="hl-sweep"></div>
+        </h1>
+      </div>
+
+      <!-- Main Workspace Stage (Y: 260px to 1080px) -->
+      <div class="workspace-stage">
+        <!-- Desk Surface with Legs -->
+        <div class="desk-group" id="desk-furniture">
+          <div class="desk-top"></div>
+          <div class="desk-leg-left"></div>
+          <div class="desk-leg-right"></div>
+        </div>
+
+        <!-- Character Rig (Planner at Desk) -->
+        <div class="character-rig" id="char-rig" data-layout-allow-overflow>
+          <svg viewBox="0 0 270 520" fill="none" style="width: 100%; height: 100%;" data-layout-allow-overflow>
+            <!-- Chair Backrest -->
+            <rect x="25" y="160" width="24" height="280" rx="10" fill="#0F172A"/>
+            <!-- Torso / Tailored Charcoal Suit -->
+            <path d="M50 490 C50 340 90 270 145 270 C200 270 235 340 235 490 Z" fill="#0F172A"/>
+            <!-- White Collar & Crisp Shirt -->
+            <path d="M128 270 L145 320 L162 270 Z" fill="#FFFFFF"/>
+            <!-- Brand Orange Tie -->
+            <path d="M138 310 L150 310 L156 385 L145 408 L134 385 Z" fill="#FF6B2B"/>
+            
+            <!-- Character Head & Facial Expression Rig -->
+            <g id="char-head">
+              <!-- Neck -->
+              <rect x="133" y="225" width="26" height="48" rx="4" fill="#FED7AA" stroke="#0F172A" stroke-width="3"/>
+              <!-- Face Shape -->
+              <circle cx="146" cy="175" r="48" fill="#FED7AA" stroke="#0F172A" stroke-width="4"/>
+              <!-- Clean Modern Hair -->
+              <path d="M98 170 C98 120 125 98 158 98 C190 98 204 120 204 152 C204 162 196 168 188 162 C178 140 158 132 132 140 C116 146 106 160 98 170 Z" fill="#0F172A"/>
+              <!-- Glasses Frame & Eyes -->
+              <rect x="130" y="164" width="24" height="18" rx="4" fill="none" stroke="#0F172A" stroke-width="3.5"/>
+              <rect x="160" y="164" width="24" height="18" rx="4" fill="none" stroke="#0F172A" stroke-width="3.5"/>
+              <line x1="154" y1="172" x2="160" y2="172" stroke="#0F172A" stroke-width="3"/>
+              <!-- Eyes focused on desk planning -->
+              <circle cx="142" cy="173" r="3.5" fill="#0F172A"/>
+              <circle cx="172" cy="173" r="3.5" fill="#0F172A"/>
+              <!-- Confident Smile Mouth -->
+              <path id="char-mouth" d="M142 200 Q155 210 168 200" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+            </g>
+
+            <!-- Left Arm: Reaching out to Calendar to Page-Turn -->
+            <g id="char-arm-left">
+              <path d="M110 320 Q180 370 240 415" stroke="#0F172A" stroke-width="28" stroke-linecap="round" fill="none"/>
+              <circle cx="245" cy="420" r="16" fill="#FED7AA" stroke="#0F172A" stroke-width="3"/>
+            </g>
+
+            <!-- Right Arm: Placing Budget Props onto Desk -->
+            <g id="char-arm-right">
+              <path d="M185 330 Q245 390 260 475" stroke="#0F172A" stroke-width="28" stroke-linecap="round" fill="none"/>
+              <circle cx="260" cy="475" r="16" fill="#FED7AA" stroke="#0F172A" stroke-width="3"/>
+            </g>
+          </svg>
+        </div>
+
+        <!-- Physical Desk Calendar Prop (Center Desk) -->
+        <div class="calendar-station" id="cal-station" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="calendar-stand"></div>
+          <div class="calendar-spiral">
+            <div class="spiral-coil"></div>
+            <div class="spiral-coil"></div>
+            <div class="spiral-coil"></div>
+            <div class="spiral-coil"></div>
+          </div>
+
+          <!-- Page 3 (03) -->
+          <div class="cal-page" id="page-3" data-layout-allow-overlap data-layout-allow-occlusion>
+            <div class="cal-page-tag" data-layout-allow-overlap data-layout-allow-occlusion>NĂM 3+</div>
+            <div class="cal-num" data-layout-allow-overlap data-layout-allow-occlusion>03</div>
+          </div>
+
+          <!-- Page 2 (02) -->
+          <div class="cal-page" id="page-2" data-layout-allow-overlap data-layout-allow-occlusion>
+            <div class="cal-page-tag" data-layout-allow-overlap data-layout-allow-occlusion>NĂM 2</div>
+            <div class="cal-num" data-layout-allow-overlap data-layout-allow-occlusion>02</div>
+          </div>
+
+          <!-- Page 1 (01) -->
+          <div class="cal-page" id="page-1" data-layout-allow-overlap data-layout-allow-occlusion>
+            <div class="cal-page-tag" data-layout-allow-overlap data-layout-allow-occlusion>NĂM 1</div>
+            <div class="cal-num" data-layout-allow-overlap data-layout-allow-occlusion>01</div>
+          </div>
+        </div>
+
+        <!-- 3 Physical Budget Props on Desk -->
+        <div class="props-group">
+          <!-- Prop 1: Sealed Financial Envelope (01) -->
+          <div class="prop-envelope" id="prop-1">
+            <svg viewBox="0 0 185 115" fill="none" style="width: 100%; height: 100%;">
+              <rect x="4" y="4" width="177" height="107" rx="8" fill="#F8FAFC" stroke="#0F172A" stroke-width="4"/>
+              <path d="M4 4 L92 66 L181 4" stroke="#0F172A" stroke-width="3.5" fill="none"/>
+              <path d="M4 111 L68 56" stroke="#CBD5E1" stroke-width="2.5"/>
+              <path d="M181 111 L117 56" stroke="#CBD5E1" stroke-width="2.5"/>
+              <circle cx="92" cy="65" r="21" fill="#FF6B2B" stroke="#0F172A" stroke-width="3"/>
+              <text x="92" y="73" text-anchor="middle" font-family="Montserrat" font-size="18" font-weight="900" fill="#0F172A">01</text>
+            </svg>
+          </div>
+
+          <!-- Prop 2: 3D Stack of Gold CAD Coins (02) -->
+          <div class="prop-coins" id="prop-2" data-layout-allow-overflow>
+            <svg viewBox="0 0 165 120" fill="none" style="width: 100%; height: 100%;" data-layout-allow-overflow>
+              <!-- Coin 1 (Bottom) -->
+              <path d="M22 92 C22 81 60 76 88 76 C116 76 154 81 154 92 L154 106 C154 117 116 122 88 122 C60 122 22 117 22 106 Z" fill="#FDE047" stroke="#0F172A" stroke-width="3.5"/>
+              <ellipse cx="88" cy="92" rx="66" ry="15" fill="#FEF08A" stroke="#0F172A" stroke-width="3.5"/>
+              
+              <!-- Coin 2 (Middle) -->
+              <path d="M22 62 C22 51 60 46 88 46 C116 46 154 51 154 62 L154 76 C154 87 116 92 88 92 C60 92 22 87 22 76 Z" fill="#FDE047" stroke="#0F172A" stroke-width="3.5"/>
+              <ellipse cx="88" cy="62" rx="66" ry="15" fill="#FEF08A" stroke="#0F172A" stroke-width="3.5"/>
+
+              <!-- Coin 3 (Top) -->
+              <path d="M22 32 C22 21 60 16 88 16 C116 16 154 21 154 32 L154 46 C154 57 116 62 88 62 C60 62 22 57 22 46 Z" fill="#FDE047" stroke="#0F172A" stroke-width="3.5"/>
+              <ellipse cx="88" cy="32" rx="66" ry="15" fill="#FEF08A" stroke="#0F172A" stroke-width="3.5"/>
+
+              <!-- Coin Badge 02 in Center -->
+              <circle cx="88" cy="32" r="18" fill="#0F172A"/>
+              <text x="88" y="39" text-anchor="middle" font-family="Montserrat" font-size="16" font-weight="900" fill="#FFFFFF">02</text>
+            </svg>
+          </div>
+
+          <!-- Prop 3: Leather Financial Dossier / Folder (03) -->
+          <div class="prop-dossier" id="prop-3">
+            <svg viewBox="0 0 195 125" fill="none" style="width: 100%; height: 100%;">
+              <rect x="4" y="4" width="187" height="117" rx="10" fill="#0F172A" stroke="#0F172A" stroke-width="3"/>
+              <line x1="24" y1="4" x2="24" y2="121" stroke="#334155" stroke-width="3"/>
+              <line x1="30" y1="12" x2="30" y2="113" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4 4"/>
+              <circle cx="110" cy="62" r="28" fill="#FDE047" stroke="#FFFFFF" stroke-width="2"/>
+              <text x="110" y="71" text-anchor="middle" font-family="Montserrat" font-size="22" font-weight="900" fill="#0F172A">03</text>
+              <path d="M4 26 L26 4" stroke="#FDE047" stroke-width="4"/>
+              <path d="M169 4 L191 26" stroke="#FDE047" stroke-width="4"/>
+            </svg>
+          </div>
+
+          <!-- Assembly Spine Bracket -->
+          <div class="assembly-spine" id="assembly-bracket" data-layout-allow-overflow></div>
+        </div>
+      </div>
+
+      <!-- Synchronized Voice Audio (6.20s) -->
+      <audio
+        id="voice-audio"
+        class="clip"
+        src="assets/audio.wav"
+        data-start="0"
+        data-duration="6.2"
+        data-volume="1"
+      ></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+
+      // ── BEAT 1: HEADLINE & WORKSPACE INITIAL ENTRANCE (0.1s - 0.7s) ──
+      // Speech: "Đặc biệt..."
+      tl.fromTo(
+        "#hl-text",
+        { opacity: 0, y: -20 },
+        { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" },
+        0.1
+      );
+
+      // Character & Desk settle onto the stage
+      tl.fromTo(
+        "#char-rig",
+        { opacity: 0, x: -30 },
+        { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" },
+        0.2
+      );
+
+      tl.fromTo(
+        "#cal-station",
+        { opacity: 0, y: 15 },
+        { opacity: 1, y: 0, duration: 0.4, ease: "back.out(1.4)" },
+        0.25
+      );
+
+      // ── BEAT 2: YEAR 1 PLACEMENT (0.7s - 1.4s) ──
+      // Speech: "...nếu chương trình học..."
+      // Right hand places Prop 1 (Sealed Financial Envelope 01)
+      tl.fromTo(
+        "#char-arm-right",
+        { rotation: -15 },
+        { rotation: 0, duration: 0.4, ease: "power2.out" },
+        0.65
+      );
+
+      tl.fromTo(
+        "#prop-1",
+        { opacity: 0, y: -30, scale: 0.85 },
+        { opacity: 1, y: 0, scale: 1.0, duration: 0.45, ease: "back.out(1.5)" },
+        0.75
+      );
+
+      // ── BEAT 3: SIGNATURE MOTION 1 — INTERACTIVE PAGE-TURN 1 & PROP 2 (1.5s - 2.6s) ──
+      // Speech: "...kéo dài hơn 1 năm..."
+      // Character Left Hand reaches out to flip calendar page
+      tl.fromTo(
+        "#char-arm-left",
+        { rotation: 0 },
+        { rotation: 12, duration: 0.35, ease: "power1.inOut" },
+        1.4
+      );
+
+      tl.set("#page-2", { visibility: "visible" }, 1.45);
+
+      // 3D Page Turn: Page 1 flips over
+      tl.fromTo(
+        "#page-1",
+        { rotateX: 0, opacity: 1 },
+        { rotateX: -140, opacity: 0, duration: 0.65, ease: "power2.inOut" },
+        1.5
+      );
+
+      tl.set("#page-1", { visibility: "hidden" }, 2.15);
+
+      // Left hand returns slightly
+      tl.to(
+        "#char-arm-left",
+        { rotation: 0, duration: 0.3, ease: "power1.out" },
+        1.9
+      );
+
+      // Right hand places Prop 2 (Stack of Gold CAD Coins 02)
+      tl.fromTo(
+        "#char-arm-right",
+        { rotation: -12 },
+        { rotation: 0, duration: 0.35, ease: "power2.out", immediateRender: false },
+        1.95
+      );
+
+      tl.fromTo(
+        "#prop-2",
+        { opacity: 0, y: -35, scale: 0.88 },
+        { opacity: 1, y: 0, scale: 1.0, duration: 0.45, ease: "back.out(1.5)" },
+        2.05
+      );
+
+      // ── BEAT 4: SIGNATURE MOTION 2 — INTERACTIVE PAGE-TURN 2 & PROP 3 (2.7s - 4.0s) ──
+      // Speech: "...gia đình còn cần dự tính phương án tài chính..."
+      // Character Left Hand flips to Year 3+
+      tl.to(
+        "#char-arm-left",
+        { rotation: 14, duration: 0.35, ease: "power1.inOut" },
+        2.65
+      );
+
+      tl.set("#page-3", { visibility: "visible" }, 2.72);
+
+      // 3D Page Turn: Page 2 flips over
+      tl.fromTo(
+        "#page-2",
+        { rotateX: 0, opacity: 1 },
+        { rotateX: -140, opacity: 0, duration: 0.65, ease: "power2.inOut" },
+        2.75
+      );
+
+      tl.set("#page-2", { visibility: "hidden" }, 3.42);
+
+      tl.to(
+        "#char-arm-left",
+        { rotation: 0, duration: 0.3, ease: "power1.out" },
+        3.15
+      );
+
+      // Right hand deposits Prop 3 (Leather Financial Dossier 03)
+      tl.fromTo(
+        "#char-arm-right",
+        { rotation: -15 },
+        { rotation: 0, duration: 0.35, ease: "power2.out", immediateRender: false },
+        3.25
+      );
+
+      tl.fromTo(
+        "#prop-3",
+        { opacity: 0, y: -40, scale: 0.9 },
+        { opacity: 1, y: 0, scale: 1.0, duration: 0.5, ease: "back.out(1.5)" },
+        3.35
+      );
+
+      // Character facial expression smiles confidently & nods
+      tl.to(
+        "#char-head",
+        { rotation: 3, y: -3, duration: 0.35, ease: "power1.out" },
+        3.7
+      );
+
+      // ── BEAT 5: FULL RESOLVE & HIGHLIGHT SWEEP (4.0s - 4.8s) ──
+      // Speech: "...cho những năm học tiếp theo."
+      // Assembly spine locks in the 3 props together
+      tl.fromTo(
+        "#assembly-bracket",
+        { opacity: 0, scaleY: 0 },
+        { opacity: 1, scaleY: 1.0, duration: 0.45, ease: "power2.out" },
+        4.0
+      );
+
+      // Warm Yellow Highlight Sweep sweeps under "DỰ TRÙ CHO TOÀN KHÓA"
+      tl.fromTo(
+        "#hl-sweep",
+        { scaleX: 0 },
+        { scaleX: 1.0, duration: 0.55, ease: "power3.out" },
+        4.1
+      );
+
+      // Subtle pulse on the dossier gold badge
+      tl.fromTo(
+        "#prop-3",
+        { scale: 1.0 },
+        { scale: 1.03, duration: 0.22, yoyo: true, repeat: 1, ease: "power1.inOut", immediateRender: false },
+        4.35
+      );
+
+      // ── BEAT 6: FINAL READING HOLD & RESOLVE (4.8s - 6.2s) ──
+      tl.to({}, { duration: 1.4 }, 4.8);
+    </script>
+  </body>
+</html>

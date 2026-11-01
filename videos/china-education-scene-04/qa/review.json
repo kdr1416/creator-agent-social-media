@@ -1,0 +1,41 @@
+{
+  "scene_id": "scene_04",
+  "mode": "HF_ONLY",
+  "style": "kurzgesagt",
+  "project": "videos/china-education-scene-04",
+  "output": "output/china-military-education-ai-2026/scene_04_v2.mp4",
+  "preview": "http://localhost:3014/#project/china-education-scene-04",
+  "expected_duration": 5.026,
+  "actual_duration": 5.033333,
+  "fps": 30,
+  "video": "H.264 720x1280",
+  "audio": "AAC 48kHz, original WAV copied unchanged before encoding",
+  "audio_peak_db": -1.4,
+  "check_report": ".hyperframes/artifacts/checks/945eded2-d5cc-4afe-8505-9cc17ae81215.json",
+  "lint_errors": 0,
+  "lint_warnings": 0,
+  "runtime_errors": 0,
+  "layout_findings": 0,
+  "contrast_passed": 4,
+  "proof_times": [
+    0.35,
+    1.7,
+    2.8,
+    4.85
+  ],
+  "visual_review": [
+    "four composition snapshots inspected for occlusion",
+    "rendered MP4 contact sheet inspected at 3fps"
+  ],
+  "limitations": [
+    "Whisper timing is approximate and contains ASR mistakes; source transcript remains authoritative.",
+    "Pilot uses frozen local Segoe UI Bold to cover Vietnamese; channel font decision unchanged.",
+    "No BGM/SFX or burned subtitles. Footer reserved.",
+    "Full real-time playback remains available for user review in Studio; no claim of automated semantic video scoring."
+  ],
+  "render_engine": "HyperFrames 0.8.164; screenshot capture, hardware GPU; 151 frames",
+  "revision": "v2",
+  "change": "Rear arm SVG layer moved before student body; torso occludes far arm; near arm remains foreground. Original pose geometry/timing/audio unchanged.",
+  "source_sha256": "2edf005d7a9ae70769a0b1aa275d6d5cccb4e680aa05658f1c963fee49a70b86",
+  "user_review": "pending v2 review; previous feedback accepted general style but requested rear arm correction"
+}

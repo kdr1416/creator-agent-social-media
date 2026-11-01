@@ -1,0 +1,24 @@
+{
+  "phase": "rendered_pending_user_motion_review",
+  "video": {
+    "video": "renders/pilot.mp4",
+    "sha256": "d4dd9e8e46b788c0eff89f333fc8a0b54c259fce1a09afdff4eb3e7a9fde63f3",
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "frames": 116,
+    "video_duration": 3.866667,
+    "source_duration": 3.8555,
+    "source_samples": 92532,
+    "source_pcm_bit_exact": true,
+    "decoded_aac_correlation": 0.9999190371548289,
+    "decoded_rms": 0.14287659525871277,
+    "qa_check_ok": true,
+    "reference_frame_unchanged": true,
+    "previous_approved_pilots_unchanged": true,
+    "previous_master_and_clean_unchanged": true,
+    "browser_playback": "Observed final MP4 ended at3.87s in IAB",
+    "motion_approved": false
+  },
+  "review_entry": "REVIEW.html"
+}

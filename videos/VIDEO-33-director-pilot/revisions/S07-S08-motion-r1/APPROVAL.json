@@ -1,0 +1,32 @@
+{
+  "approved_pilots": [
+    {
+      "scene_id": "S07",
+      "version": "S07-S08-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "approval_date_local": "2026-10-27",
+      "timezone": "Asia/Saigon",
+      "user_message_verbatim": "duyệt 2 pilot",
+      "video_path": "revisions/S07-S08-motion-r1/S07/renders/pilot.mp4",
+      "video_sha256": "f5a1eb22209608ae0edbdc8763523feb886d50caec3088601f8e186c87d89475",
+      "master_replacement_authorized": false,
+      "full_film_production_authorized": false
+    },
+    {
+      "scene_id": "S08",
+      "version": "S07-S08-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "approval_date_local": "2026-10-27",
+      "timezone": "Asia/Saigon",
+      "user_message_verbatim": "duyệt 2 pilot",
+      "video_path": "revisions/S07-S08-motion-r1/S08/renders/pilot.mp4",
+      "video_sha256": "be0a9cd957a3b7f92510a8b3d976473cb0a20ce25be56ef1cf2613b0f12b5bc5",
+      "master_replacement_authorized": false,
+      "full_film_production_authorized": false
+    }
+  ],
+  "scope": "S07/S08 motion R1 only",
+  "master_replaced": false
+}

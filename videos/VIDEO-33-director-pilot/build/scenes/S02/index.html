@@ -1,0 +1,156 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>S02 · Chi phí có trọng lượng</title><script src="assets/gsap.min.js"></script><style>
+@font-face{font-family:PilotDisplay;src:url('assets/segoe-ui-black.ttf');font-weight:900;font-display:block}
+@font-face{font-family:PilotSans;src:url('assets/arial.ttf');font-display:block}
+*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden}
+.composition{position:relative;width:100%;height:100%;overflow:hidden;color:#30313B;font-family:PilotDisplay,sans-serif}
+.ground{position:absolute;inset:0}.art{position:absolute;inset:0;width:720px;height:1280px;overflow:hidden}
+.feature{position:absolute;z-index:5;white-space:nowrap;font-weight:900;line-height:1.24;text-align:center;top:172px;left:100px;width:520px;padding:17px 20px;background:#087BC1;color:#FFFDF4;font-size:52px;box-shadow:5px 7px 0 #30313b12}
+</style></head><body>
+<div id="v33-s02" class="composition" data-composition-id="v33-s02" data-width="720" data-height="1280" data-start="0" data-duration="3.8555" data-fps="30">
+<div class="ground" style="background:#FFF0E5"></div>
+<svg id="p02-art" class="art" xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280" data-layout-allow-overflow>
+  <defs>
+    <filter id="p02-shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#796572" flood-opacity=".14"/>
+    </filter>
+  </defs>
+  <!-- Background ground shadow -->
+  <ellipse cx="360" cy="1015" rx="280" ry="28" fill="#E8D4C0" opacity=".65"/>
+
+  <!-- Ledger notebook (Cuốn sổ chi phí mở) -->
+  <g id="p02-ledger" filter="url(#p02-shadow)">
+    <!-- Ledger cover/spine -->
+    <path d="M75 805L350 765L645 805L630 945L352 985L70 945Z" fill="#C88E7D" stroke="#30313B" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M85 812L348 775L635 812L622 935L350 972L82 935Z" fill="#EBD8C3" stroke="#30313B" stroke-width="2.6"/>
+    <!-- Page edges stack -->
+    <path d="M86 824L348 789L628 824M87 838L348 803L626 838M88 852L349 817L624 852M89 866L349 831L622 866M90 880L350 845L620 880" fill="none" stroke="#D1BEAA" stroke-width="1.8"/>
+    <!-- Left page -->
+    <g id="p02-page-left">
+      <path d="M92 805L350 768L350 932L92 940Z" fill="#FFFDF5" stroke="#30313B" stroke-width="2.8" stroke-linejoin="round"/>
+      <!-- Lines on left page -->
+      <path d="M120 820L320 790M120 842L280 818M120 864L320 834M120 886L260 865M120 908L300 881" stroke="#E2D4BE" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <!-- Right page (slightly flexes under coin weight) -->
+    <g id="p02-page-right">
+      <path id="p02-page-surface" d="M350 768L628 805L620 938L350 932Z" fill="#FFFDF5" stroke="#30313B" stroke-width="2.8" stroke-linejoin="round"/>
+      <!-- Lines on right page -->
+      <path d="M375 790L590 820M375 812L540 835M375 834L585 864M375 856L510 875M375 878L560 904" stroke="#E2D4BE" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <!-- Center spine seam -->
+    <path d="M350 768L350 934" stroke="#B39E85" stroke-width="4.5"/>
+  </g>
+
+  <!-- Rolling coins group (coins rolling in) -->
+  <g id="p02-rolling-coins">
+    <g id="p02-coin-r1" transform="translate(180, 770)">
+      <ellipse cx="0" cy="0" rx="36" ry="22" fill="#E1B767" stroke="#30313B" stroke-width="2.8"/>
+      <ellipse cx="0" cy="-6" rx="36" ry="22" fill="#FFDA8A" stroke="#30313B" stroke-width="2.8"/>
+      <ellipse cx="0" cy="-6" rx="26" ry="15" fill="#FFCD74" stroke="#DCAE5B" stroke-width="2"/>
+    </g>
+    <g id="p02-coin-r2" transform="translate(240, 760)">
+      <ellipse cx="0" cy="0" rx="36" ry="22" fill="#E1B767" stroke="#30313B" stroke-width="2.8"/>
+      <ellipse cx="0" cy="-6" rx="36" ry="22" fill="#FFDA8A" stroke="#30313B" stroke-width="2.8"/>
+      <ellipse cx="0" cy="-6" rx="26" ry="15" fill="#FFCD74" stroke="#DCAE5B" stroke-width="2"/>
+    </g>
+    <g id="p02-coin-r3" transform="translate(300, 755)">
+      <ellipse cx="0" cy="0" rx="36" ry="22" fill="#E1B767" stroke="#30313B" stroke-width="2.8"/>
+      <ellipse cx="0" cy="-6" rx="36" ry="22" fill="#FFDA8A" stroke="#30313B" stroke-width="2.8"/>
+      <ellipse cx="0" cy="-6" rx="26" ry="15" fill="#FFCD74" stroke="#DCAE5B" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Main Coin Stack on right page (Chồng xu lớn có trọng lượng) -->
+  <g id="p02-coin-stack" filter="url(#p02-shadow)" transform="translate(485, 780)">
+    <!-- Base coin 1 -->
+    <g id="p02-c1">
+      <ellipse cx="0" cy="30" rx="72" ry="34" fill="#C99E52" stroke="#30313B" stroke-width="3"/>
+      <ellipse cx="0" cy="20" rx="72" ry="34" fill="#FFDA8A" stroke="#30313B" stroke-width="3"/>
+      <ellipse cx="0" cy="20" rx="55" ry="25" fill="#FFCD74" stroke="#E5B255" stroke-width="2.2"/>
+    </g>
+    <!-- Coin 2 -->
+    <g id="p02-c2">
+      <ellipse cx="0" cy="2" rx="72" ry="34" fill="#C99E52" stroke="#30313B" stroke-width="3"/>
+      <ellipse cx="0" cy="-8" rx="72" ry="34" fill="#FFDA8A" stroke="#30313B" stroke-width="3"/>
+      <ellipse cx="0" cy="-8" rx="55" ry="25" fill="#FFCD74" stroke="#E5B255" stroke-width="2.2"/>
+    </g>
+    <!-- Coin 3 -->
+    <g id="p02-c3">
+      <ellipse cx="0" cy="-26" rx="72" ry="34" fill="#C99E52" stroke="#30313B" stroke-width="3"/>
+      <ellipse cx="0" cy="-36" rx="72" ry="34" fill="#FFDA8A" stroke="#30313B" stroke-width="3"/>
+      <ellipse cx="0" cy="-36" rx="55" ry="25" fill="#FFCD74" stroke="#E5B255" stroke-width="2.2"/>
+    </g>
+    <!-- Coin 4 -->
+    <g id="p02-c4">
+      <ellipse cx="0" cy="-54" rx="72" ry="34" fill="#C99E52" stroke="#30313B" stroke-width="3"/>
+      <ellipse cx="0" cy="-64" rx="72" ry="34" fill="#FFDA8A" stroke="#30313B" stroke-width="3"/>
+      <ellipse cx="0" cy="-64" rx="55" ry="25" fill="#FFCD74" stroke="#E5B255" stroke-width="2.2"/>
+    </g>
+    <!-- Coin 5 -->
+    <g id="p02-c5">
+      <ellipse cx="0" cy="-82" rx="72" ry="34" fill="#C99E52" stroke="#30313B" stroke-width="3"/>
+      <ellipse cx="0" cy="-92" rx="72" ry="34" fill="#FFDA8A" stroke="#30313B" stroke-width="3"/>
+      <ellipse cx="0" cy="-92" rx="55" ry="25" fill="#FFCD74" stroke="#E5B255" stroke-width="2.2"/>
+    </g>
+    <!-- Coin 6 (top coin) -->
+    <g id="p02-c6">
+      <ellipse cx="0" cy="-110" rx="72" ry="34" fill="#C99E52" stroke="#30313B" stroke-width="3"/>
+      <ellipse cx="0" cy="-120" rx="72" ry="34" fill="#FFDA8A" stroke="#30313B" stroke-width="3"/>
+      <ellipse cx="0" cy="-120" rx="55" ry="25" fill="#FFCD74" stroke="#E5B255" stroke-width="2.2"/>
+      <path d="M-15-120L0-132L15-120L0-108Z" fill="#FFFBE6" stroke="#30313B" stroke-width="2.5" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- Wooden measuring ruler (Thước đo chiều cao chi phí) -->
+  <g id="p02-ruler" filter="url(#p02-shadow)" transform="translate(595, 610)">
+    <rect x="-18" y="0" width="36" height="270" rx="6" fill="#DEB887" stroke="#30313B" stroke-width="3"/>
+    <!-- Tick marks -->
+    <path d="M-18 20H-4M-18 45H-8M-18 70H-4M-18 95H-8M-18 120H-4M-18 145H-8M-18 170H-4M-18 195H-8M-18 220H-4M-18 245H-8" stroke="#8B5A2B" stroke-width="2.2"/>
+    <ellipse cx="0" cy="255" rx="5" ry="5" fill="#FFFDF5" stroke="#30313B" stroke-width="2"/>
+  </g>
+
+  <!-- Subtle weight indicator lines on page -->
+  <g id="p02-sag-lines" opacity="0">
+    <path d="M430 840Q485 860 540 840" fill="none" stroke="#D1BEAA" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M445 850Q485 865 525 850" fill="none" stroke="#D1BEAA" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>
+<div id="p02-title" class="feature">CHI PHÍ DU HỌC</div>
+<audio id="v33-s02-voice" class="clip" src="assets/voice.wav" data-start="0" data-duration="3.8555" data-track-index="2"></audio>
+</div>
+<script>
+(()=>{
+  const tl = gsap.timeline({paused:true});
+
+  // 1. Initial title entry
+  tl.fromTo('#p02-title', {rotation:-2, y:12, opacity:0}, {rotation:-1, y:0, opacity:1, duration:0.32, ease:'back.out(1.2)'}, 0.12);
+
+  // 2. Base coin stack appears (coins 1, 2, 3)
+  tl.fromTo('#p02-c1', {scaleY:0.2, opacity:0, svgOrigin:'485 810'}, {scaleY:1, opacity:1, duration:0.35, ease:'power2.out'}, 0.2);
+  tl.fromTo('#p02-c2', {y:-30, opacity:0}, {y:0, opacity:1, duration:0.3, ease:'bounce.out'}, 0.45);
+  tl.fromTo('#p02-c3', {y:-35, opacity:0}, {y:0, opacity:1, duration:0.3, ease:'bounce.out'}, 0.75);
+
+  // 3. Rolling coins roll across ledger from left to right (0.96s -> 1.8s)
+  tl.fromTo('#p02-coin-r1', {x:-80, y:20, rotation:-120, opacity:0}, {x:120, y:0, rotation:0, opacity:1, duration:0.75, ease:'power1.inOut'}, 0.95);
+  tl.fromTo('#p02-coin-r2', {x:-90, y:10, rotation:-150, opacity:0}, {x:90, y:0, rotation:0, opacity:1, duration:0.72, ease:'power1.inOut'}, 1.15);
+  tl.fromTo('#p02-coin-r3', {x:-100, y:0, rotation:-180, opacity:0}, {x:60, y:0, rotation:0, opacity:1, duration:0.7, ease:'power1.inOut'}, 1.35);
+
+  // 4. Stacking up higher (coins 4, 5, 6) under "hàng tỷ đồng" (1.8s -> 2.5s)
+  tl.to('#p02-rolling-coins', {opacity:0, scale:0.8, duration:0.25}, 1.95);
+  tl.fromTo('#p02-c4', {y:-40, opacity:0}, {y:0, opacity:1, duration:0.3, ease:'bounce.out'}, 1.9);
+  tl.fromTo('#p02-c5', {y:-45, opacity:0}, {y:0, opacity:1, duration:0.3, ease:'bounce.out'}, 2.15);
+  tl.fromTo('#p02-c6', {y:-50, opacity:0}, {y:0, opacity:1, duration:0.35, ease:'bounce.out'}, 2.4);
+
+  // Page flex / sag under coin stack weight
+  tl.to('#p02-page-surface', {scaleY:1.02, y:4, duration:0.4, ease:'power2.out'}, 2.2);
+  tl.to('#p02-sag-lines', {opacity:0.8, duration:0.35}, 2.3);
+
+  // 5. Wooden measuring ruler slides down to measure stack height (2.3s -> 3.1s)
+  tl.fromTo('#p02-ruler', {y:-90, opacity:0, rotation:6}, {y:0, opacity:1, rotation:0, duration:0.65, ease:'back.out(1.1)'}, 2.35);
+
+  // Hold cleanly till end
+  tl.to({hold:0}, {hold:1, duration:3.8555, ease:'none'}, 0);
+
+  window.__timelines['v33-s02'] = tl;
+})();
+</script>
+</body></html>

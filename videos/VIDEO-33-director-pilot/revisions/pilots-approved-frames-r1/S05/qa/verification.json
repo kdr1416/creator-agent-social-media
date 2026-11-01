@@ -1,0 +1,41 @@
+{
+  "scene_id": "S05",
+  "revision": "approved-frames-motion-r1",
+  "based_on_approved_frame": "S05-v3",
+  "duration": 5.706333333333333,
+  "source_start_sample": 435629,
+  "source_end_sample": 572581,
+  "proof_times": [
+    0.15,
+    2.0,
+    3.72,
+    4.62,
+    5.35
+  ],
+  "motion_approval": "pending_user_review",
+  "final_frame_approval": "previously_approved",
+  "timing_evidence": "Original whisper_raw word times used as approximate cue evidence, not independent perceptual listening. S05 bất động sản at 22.50s global ~=4.349s local. S09 nhiều thị trường at 42.24s global ~=2.440s local.",
+  "signature": "Photo opens, hand contacts tab, joined facade hinges up; enclosed green balcony opens on bất động sản.",
+  "video_path": "revisions\\pilots-approved-frames-r1\\S05\\renders\\pilot.mp4",
+  "video_sha256": "ce66c3625f9865d4ef9030d2e55703f8778a3f4f1ef8625bf630c836ec7a94d2",
+  "video_frames": 172,
+  "video_duration": 5.733333,
+  "audio_duration": 5.733333,
+  "original_pcm_bit_exact": true,
+  "aac_correlation": 0.9987810262133117,
+  "decoded_rms": 0.11010452668166854,
+  "hyperframes_check_ok": true,
+  "layout_warnings": [],
+  "warning_interpretation": null,
+  "final_frame_approved_reference": "revisions/S05-final-frame-v3/frames/frame-00-at-0.5s.png",
+  "final_frame_mean_absolute_pixel_error": 1.191588179976852,
+  "final_frame_pixel_match_fraction": 0.8475694444444445,
+  "frame_proofs": [
+    "revisions\\pilots-approved-frames-r1\\S05\\qa\\frame-0.15.png",
+    "revisions\\pilots-approved-frames-r1\\S05\\qa\\frame-2.00.png",
+    "revisions\\pilots-approved-frames-r1\\S05\\qa\\frame-3.72.png",
+    "revisions\\pilots-approved-frames-r1\\S05\\qa\\frame-4.62.png",
+    "revisions\\pilots-approved-frames-r1\\S05\\qa\\frame-5.35.png"
+  ],
+  "motion_status": "rendered_pending_user_review"
+}

@@ -1,0 +1,9 @@
+{
+  "inputs\\source_audio.wav": "cbd5a88b99c252d09ea86493377951aed1267186a5cb9ff11afe00947133e941",
+  "research\\visual-approvals.json": "a0727ed9c95d754373de03865eeabf673401a720af991049c7ca9a08434f147f",
+  "pilots\\S01\\renders\\pilot.mp4": "4e111b0e89a34b5bbb56eb5c513b947db7e904f0676c3c51cb17a100f6ac83f5",
+  "pilots\\S05\\renders\\pilot.mp4": "e24876dd818221cc7c541aa31311e5a30640b12762d15510d463d845ba352e50",
+  "pilots\\S09\\renders\\pilot.mp4": "18027acb1c27293a61b6a3f996c88d9606f480a86fdbe2bae5fc4b80ecb74e63",
+  "revisions\\S05-final-frame-v3\\frames\\frame-00-at-0.5s.png": "10ceeb5299f167a1b8bb8d1577802cb0c3590dd94c74449ab74cc21d10128449",
+  "revisions\\final-frames-v2\\S09\\frames\\frame-00-at-0.5s.png": "962a09a5e787f14258c5d46ba9a2c5013b00be2d31579188e9a2f6425b499625"
+}

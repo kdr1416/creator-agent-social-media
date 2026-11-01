@@ -1,0 +1,97 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 5.192666666667,
+    "samples": [
+      0.288,
+      0.865,
+      1.442,
+      2.019,
+      2.596,
+      3.173,
+      3.75,
+      4.327,
+      4.904
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.288,
+      1.442,
+      2.596,
+      3.75,
+      4.904
+    ],
+    "checked": 14,
+    "passed": 14
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": true,
+    "files": [
+      ".hyperframes\\artifacts\\snapshots\\39d5b3e3-9eec-4fc1-85f4-8861702fe4be\\frame-00-at-0.3s.png",
+      ".hyperframes\\artifacts\\snapshots\\39d5b3e3-9eec-4fc1-85f4-8861702fe4be\\frame-01-at-1.4s.png",
+      ".hyperframes\\artifacts\\snapshots\\39d5b3e3-9eec-4fc1-85f4-8861702fe4be\\frame-02-at-2.6s.png",
+      ".hyperframes\\artifacts\\snapshots\\39d5b3e3-9eec-4fc1-85f4-8861702fe4be\\frame-03-at-3.8s.png",
+      ".hyperframes\\artifacts\\snapshots\\39d5b3e3-9eec-4fc1-85f4-8861702fe4be\\frame-04-at-4.9s.png"
+    ],
+    "times": [
+      0.288,
+      1.442,
+      2.596,
+      3.75,
+      4.904
+    ],
+    "findingFiles": []
+  },
+  "_meta": {
+    "version": "0.8.170",
+    "latestVersion": "0.8.170",
+    "updateAvailable": false
+  }
+}

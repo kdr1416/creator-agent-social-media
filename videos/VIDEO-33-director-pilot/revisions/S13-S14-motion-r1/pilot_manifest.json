@@ -1,0 +1,143 @@
+[
+  {
+    "scene": "S13",
+    "duration": 4.553208333333333,
+    "sample_frames": 109277,
+    "sample_rate": 24000,
+    "source_start_sample": 1530028,
+    "source_end_sample": 1639305,
+    "source_segments": [
+      15
+    ],
+    "source_audio": [
+      "inputs/audio/seg_15.wav"
+    ],
+    "source_audio_hashes": {
+      "inputs/audio/seg_15.wav": "af2f4845dbace74ad01664da0c420f9a6e1da190801d1a6251c1dbb6f8fb9d36"
+    },
+    "raw_text": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới.",
+    "corrected_text": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới.",
+    "original_voice_sha256": "af2f4845dbace74ad01664da0c420f9a6e1da190801d1a6251c1dbb6f8fb9d36",
+    "approved_frame_reference": "../../S13-S14-design-r1/APPROVAL.json",
+    "approval": "motion_pending_user_review",
+    "cues": {
+      "campus_approach": [
+        0.55,
+        1.67
+      ],
+      "cut_to_assets": 2.32,
+      "shared_camera_widen": [
+        3.0,
+        4.03
+      ],
+      "possibility_label": [
+        3.15,
+        3.37
+      ],
+      "malta_label": [
+        3.65,
+        3.85
+      ]
+    },
+    "proof_times": [
+      0.1,
+      0.9,
+      1.65,
+      2.4,
+      2.98,
+      3.3,
+      3.7,
+      4.12,
+      4.42
+    ],
+    "contact_ranges": [
+      [
+        0.65,
+        1.7
+      ],
+      [
+        3.0,
+        4.1
+      ]
+    ],
+    "timing_basis": "Original sample bounds and PCM preserved; internal cue timing based on existing ASR and directorial staging."
+  },
+  {
+    "scene": "S14",
+    "duration": 6.855625,
+    "sample_frames": 164535,
+    "sample_rate": 24000,
+    "source_start_sample": 1639305,
+    "source_end_sample": 1803840,
+    "source_segments": [
+      16,
+      17
+    ],
+    "source_audio": [
+      "inputs/audio/seg_16.wav",
+      "inputs/audio/seg_17.wav"
+    ],
+    "source_audio_hashes": {
+      "inputs/audio/seg_16.wav": "801c60b360f0cc9391380c18b76c16745faabedbd6732402c9868ea671a6936a",
+      "inputs/audio/seg_17.wav": "f4fa660a578c9b4d4dfeead21376a19df06803341976996ec44b5a6c5d842cd1"
+    },
+    "raw_text": "Bởi đôi khi, điều giá chỉ nhất không phải là sở hữu thêm một căn nhà, mà là sở hữu thêm một lựa chọn cho tương lai.",
+    "corrected_text": "Bởi đôi khi, điều giá trị nhất không phải là sở hữu thêm một căn nhà, mà là sở hữu thêm một lựa chọn cho tương lai.",
+    "original_voice_sha256": "6d153524da7af7db8b2fc8d9fc80d39e6dcd89d92cd7d4f07516b78bfbeb2ef6",
+    "approved_frame_reference": "../../S13-S14-design-r1/APPROVAL.json",
+    "approval": "motion_pending_user_review",
+    "cues": {
+      "key_present": [
+        0.6,
+        1.25
+      ],
+      "key_return": [
+        2.9,
+        3.4
+      ],
+      "cut_to_choice_paths": 3.8,
+      "rigid_gate_open": [
+        4.32,
+        5.82
+      ],
+      "final_both_paths_open": [
+        5.82,
+        6.855625
+      ],
+      "hinge_scene": [
+        [
+          570,
+          700
+        ],
+        [
+          570,
+          900
+        ]
+      ],
+      "projection": "x=570-d*cos(theta); y=y0+k*d*sin(theta), k=24/(130*sin120deg); vertical lengths invariant",
+      "gate_angle_deg": [
+        0,
+        120
+      ]
+    },
+    "proof_times": [
+      0.1,
+      1.5,
+      3.35,
+      3.9,
+      4.35,
+      4.65,
+      5.05,
+      5.4,
+      5.82,
+      6.65
+    ],
+    "contact_ranges": [
+      [
+        4.32,
+        5.85
+      ]
+    ],
+    "timing_basis": "Original sample bounds and PCM preserved; internal cue timing based on existing ASR and directorial staging."
+  }
+]

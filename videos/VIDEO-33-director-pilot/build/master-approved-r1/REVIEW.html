@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIDEO-33 Master Approved R1 Review Board</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-gold: #facc15;
+      --success: #22c55e;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      padding: 24px;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    h1 { font-size: 24px; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 10px; }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .badge-success { background: rgba(34, 197, 94, 0.2); color: #4ade80; border: 1px solid #22c55e; }
+    .badge-info { background: rgba(56, 189, 248, 0.2); color: #38bdf8; border: 1px solid #0284c7; }
+    .badge-warn { background: rgba(250, 204, 21, 0.2); color: #facc15; border: 1px solid #ca8a04; }
+    
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+    }
+    .stat-label { font-size: 11px; text-transform: uppercase; color: var(--text-muted); font-weight: 600; }
+    .stat-value { font-size: 18px; font-weight: 700; color: var(--accent); margin-top: 4px; font-family: var(--font-mono); }
+
+    .main-grid {
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    @media (max-width: 960px) {
+      .main-grid { grid-template-columns: 1fr; }
+    }
+
+    .player-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #000;
+      aspect-ratio: 9 / 16;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    .player-controls {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      background: #334155;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #475569; }
+    .btn.active { background: #0284c7; color: #fff; }
+
+    .tabs {
+      display: flex;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 16px;
+      gap: 8px;
+    }
+    .tab-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+    }
+    .tab-btn.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    /* Seams list */
+    .seam-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 14px;
+      display: grid;
+      grid-template-columns: 160px 1fr 200px;
+      gap: 16px;
+      align-items: center;
+    }
+    @media (max-width: 800px) {
+      .seam-item { grid-template-columns: 1fr; }
+    }
+    .seam-video {
+      aspect-ratio: 9 / 16;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #000;
+      max-height: 220px;
+    }
+    .seam-info h4 { font-size: 15px; margin-bottom: 4px; color: var(--accent-gold); }
+    .seam-info p { font-size: 13px; color: var(--text-muted); margin-bottom: 4px; }
+    .seam-cue { font-style: italic; color: #e2e8f0; font-size: 13px; }
+    .seam-frames {
+      display: flex;
+      gap: 8px;
+    }
+    .seam-frame-thumb {
+      flex: 1;
+      text-align: center;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    .seam-frame-thumb img {
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      aspect-ratio: 9 / 16;
+      object-fit: cover;
+    }
+
+    /* Scene table */
+    .table-container {
+      overflow-x: auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      text-align: left;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      background: #1e293b;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-size: 11px;
+    }
+    tr:last-child td { border-bottom: none; }
+    .mono { font-family: var(--font-mono); font-size: 12px; }
+
+    /* Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 12px;
+    }
+    .gallery-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      font-size: 11px;
+    }
+    .gallery-card img {
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      object-fit: cover;
+      display: block;
+    }
+    .gallery-label {
+      padding: 6px 8px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    /* Checksum box */
+    .hash-box {
+      background: #020617;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: #94a3b8;
+      word-break: break-all;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>VIDEO-33 — Master Approved R1 <span class="badge badge-success">Conformed & Verified</span></h1>
+      <p style="color: var(--text-muted); font-size: 14px; margin-top: 4px;">
+        Đạo diễn duyệt 11 pilots mới + 3 cảnh nền S02–S04. Voice gốc 24kHz nguyên bản không xử lý.
+      </p>
+    </div>
+    <div>
+      <span class="badge badge-info">Status: assembled_pending_user_full_master_review</span>
+    </div>
+  </header>
+
+  <!-- Metrics Bar -->
+  <div class="stats-bar">
+    <div class="stat-card">
+      <div class="stat-label">Total Duration</div>
+      <div class="stat-value">75.167s (Voice: 75.160s)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Total Frames</div>
+      <div class="stat-value">2,255 frames @ 30fps</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Audio Stream</div>
+      <div class="stat-value">1,803,840 smp / 24kHz</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Audio Correlation</div>
+      <div class="stat-value">0.999958 (Fidelity)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">13 Seams Status</div>
+      <div class="stat-value" style="color: #4ade80;">13/13 PASS</div>
+    </div>
+  </div>
+
+  <div class="main-grid">
+    <!-- Player Column -->
+    <div class="player-card">
+      <h3 style="font-size: 16px; color: #fff;">Full Film Player</h3>
+      <div class="video-wrapper">
+        <video id="mainVideo" controls preload="metadata">
+          <source id="videoSource" src="VIDEO-33-master-approved-r1.mp4" type="video/mp4">
+          Trình duyệt của bạn không hỗ trợ thẻ video.
+        </video>
+      </div>
+      <div class="player-controls">
+        <button class="btn active" onclick="switchVideo('VIDEO-33-master-approved-r1.mp4', this)">Master (Voice Gốc)</button>
+        <button class="btn" onclick="switchVideo('VIDEO-33-clean-approved-r1.mp4', this)">Clean (Không tiếng)</button>
+        <button class="btn" onclick="switchVideo('VIDEO-33-mobile-360x640-preview.mp4', this)">Mobile 360x640</button>
+      </div>
+      <div style="font-size: 12px; color: var(--text-muted); margin-top: 8px;">
+        💡 <b>Mẹo:</b> Master video đã tích hợp voice gốc 24kHz từ mốc 0.0s. Không chỉnh tốc độ, pitch, gain hoặc nén.
+      </div>
+    </div>
+
+    <!-- Details Column -->
+    <div>
+      <div class="tabs">
+        <button class="tab-btn active" onclick="showTab('tab-seams', this)">13 Seams Review (Cận chuyển cảnh)</button>
+        <button class="tab-btn" onclick="showTab('tab-scenes', this)">14 Cảnh & Manifest Khóa</button>
+        <button class="tab-btn" onclick="showTab('tab-proofs', this)">Visual Proofs Gallery (Mở/Giữa/Cuối)</button>
+        <button class="tab-btn" onclick="showTab('tab-tech', this)">Báo Cáo Kỹ Thuật & SHA256</button>
+      </div>
+
+      <!-- Tab 1: 13 Seams -->
+      <div id="tab-seams" class="tab-content active">
+        <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">
+          Mỗi clip kiểm tra hiển thị 1 giây trước và 1 giây sau điểm nối có kèm voice, để đánh giá độ giật hình, lệch tiếng và nhịp nối cảnh:
+        </p>
+
+        <!-- Seam 01 -->
+        <div class="seam-item">
+          <div class="seam-video">
+            <video controls preload="metadata" style="width:100%; height:100%;">
+              <source src="seams/seam_01_S01_S02.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="seam-info">
+            <h4>Seam 01: S01 → S02 <span class="badge badge-success">PASS</span></h4>
+            <p>Mốc nối: <b class="mono">Frame 181 (6.033s)</b> | Dải: [151, 211]</p>
+            <p class="seam-cue">Voice S01 kết thúc: "...điểm tựa lâu dài." → S02: "Trước nhiều phụ huynh sẵn sàng..."</p>
+            <p style="font-size: 12px; color: #94a3b8;">Đánh giá: Cắt sạch giữa chuyển đổi sách thành điểm tựa sang bài toán học phí. Mascot và nền chuyển đổi dứt khoát.</p>
+          </div>
+          <div class="seam-frames">
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_01_S01_f180.png" alt="S01 f180">
+              <div>S01 f180</div>
+            </div>
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_01_S02_f181.png" alt="S02 f181">
+              <div>S02 f181</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seam 02 -->
+        <div class="seam-item">
+          <div class="seam-video">
+            <video controls preload="metadata" style="width:100%; height:100%;">
+              <source src="seams/seam_02_S02_S03.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="seam-info">
+            <h4>Seam 02: S02 → S03 <span class="badge badge-success">PASS</span></h4>
+            <p>Mốc nối: <b class="mono">Frame 296 (9.867s)</b> | Dải: [266, 326]</p>
+            <p class="seam-cue">Voice S02: "...hành trình du học của con," → S03: "nhưng nếu con có kế hoạch..."</p>
+            <p style="font-size: 12px; color: #94a3b8;">Đánh giá: Nhịp liên từ "nhưng nếu" tiếp nối tự nhiên từ số tiền học phí sang lộ trình sự nghiệp dài hạn.</p>
+          </div>
+          <div class="seam-frames">
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_02_S02_f295.png" alt="S02 f295">
+              <div>S02 f295</div>
+            </div>
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_02_S03_f296.png" alt="S03 f296">
+              <div>S03 f296</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seam 03 -->
+        <div class="seam-item">
+          <div class="seam-video">
+            <video controls preload="metadata" style="width:100%; height:100%;">
+              <source src="seams/seam_03_S03_S04.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="seam-info">
+            <h4>Seam 03: S03 → S04 <span class="badge badge-success">PASS</span></h4>
+            <p>Mốc nối: <b class="mono">Frame 424 (14.133s)</b> | Dải: [394, 454]</p>
+            <p class="seam-cue">Voice S03: "...tại Châu Âu trong nhiều năm," → S04: "Liệu toàn bộ tài sản của gia đình..."</p>
+            <p style="font-size: 12px; color: #94a3b8;">Đánh giá: Khoảng nghỉ thở tự nhiên mở ra câu hỏi lớn về phân bổ tài sản. Mascot và câu hỏi xuất hiện đúng phách.</p>
+          </div>
+          <div class="seam-frames">
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_03_S03_f423.png" alt="S03 f423">
+              <div>S03 f423</div>
+            </div>
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_03_S04_f424.png" alt="S04 f424">
+              <div>S04 f424</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seam 04 -->
+        <div class="seam-item">
+          <div class="seam-video">
+            <video controls preload="metadata" style="width:100%; height:100%;">
+              <source src="seams/seam_04_S04_S05.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="seam-info">
+            <h4>Seam 04: S04 → S05 <span class="badge badge-success">PASS</span></h4>
+            <p>Mốc nối: <b class="mono">Frame 545 (18.167s)</b> | Dải: [515, 575]</p>
+            <p class="seam-cue">Voice S04: "...chỉ tập trung ở Việt Nam?" → S05: "Đó là lý do ngày càng nhiều gia đình..."</p>
+            <p style="font-size: 12px; color: #94a3b8;">Đánh giá: Chuyển mượt từ câu hỏi sang zoom bản đồ Malta 0.8s, đặt ghim chuẩn xác, đúng nhãn MALTA.</p>
+          </div>
+          <div class="seam-frames">
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_04_S04_f544.png" alt="S04 f544">
+              <div>S04 f544</div>
+            </div>
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_04_S05_f545.png" alt="S05 f545">
+              <div>S05 f545</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seam 05 -->
+        <div class="seam-item">
+          <div class="seam-video">
+            <video controls preload="metadata" style="width:100%; height:100%;">
+              <source src="seams/seam_05_S05_S06.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="seam-info">
+            <h4>Seam 05: S05 → S06 <span class="badge badge-success">PASS</span></h4>
+            <p>Mốc nối: <b class="mono">Frame 716 (23.867s)</b> | Dải: [686, 746]</p>
+            <p class="seam-cue">Voice S05: "...bất động sản tại Malta." → S06: "Không chỉ là sở hữu một tài sản..."</p>
+            <p style="font-size: 12px; color: #94a3b8;">Đánh giá: Từ thẻ ảnh bất động sản Malta chuyển sang không gian bàn gia đình ấm cúng, liền mạch.</p>
+          </div>
+          <div class="seam-frames">
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_05_S05_f715.png" alt="S05 f715">
+              <div>S05 f715</div>
+            </div>
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_05_S06_f716.png" alt="S06 f716">
+              <div>S06 f716</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seam 06 -->
+        <div class="seam-item">
+          <div class="seam-video">
+            <video controls preload="metadata" style="width:100%; height:100%;">
+              <source src="seams/seam_06_S06_S07.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="seam-info">
+            <h4>Seam 06: S06 → S07 <span class="badge badge-success">PASS</span></h4>
+            <p>Mốc nối: <b class="mono">Frame 890 (29.667s)</b> | Dải: [860, 920]</p>
+            <p class="seam-cue">Voice S06: "...cho cả gia đình." → S07: "Khi có một tài sản tại Malta, gia đình có thêm..."</p>
+            <p style="font-size: 12px; color: #94a3b8;">Đánh giá: S07 sửa tay nhân vật cầm thẻ nối Châu Âu, anatomy chuẩn xác, không bị lìa tay.</p>
+          </div>
+          <div class="seam-frames">
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_06_S06_f889.png" alt="S06 f889">
+              <div>S06 f889</div>
+            </div>
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_06_S07_f890.png" alt="S07 f890">
+              <div>S07 f890</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seam 07 -->
+        <div class="seam-item">
+          <div class="seam-video">
+            <video controls preload="metadata" style="width:100%; height:100%;">
+              <source src="seams/seam_07_S07_S08.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="seam-info">
+            <h4>Seam 07: S07 → S08 <span class="badge badge-success">PASS</span></h4>
+            <p>Mốc nối: <b class="mono">Frame 1030 (34.333s)</b> | Dải: [1000, 1060]</p>
+            <p class="seam-cue">Voice S07: "...điểm kết nối với Châu Âu," → S08: "thuận tiện hơn cho những chuyến thăm con..."</p>
+            <p style="font-size: 12px; color: #94a3b8;">Đánh giá: Nhân vật phụ kéo vali tỉ lệ cân đối, icon chuyến bay nổi bật, mascot giữ nguyên độ cao hợp lý.</p>
+          </div>
+          <div class="seam-frames">
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_07_S07_f1029.png" alt="S07 f1029">
+              <div>S07 f1029</div>
+            </div>
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_08_S08_f1030.png" alt="S08 f1030">
+              <div>S08 f1030</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seam 08 -->
+        <div class="seam-item">
+          <div class="seam-video">
+            <video controls preload="metadata" style="width:100%; height:100%;">
+              <source src="seams/seam_08_S08_S09.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="seam-info">
+            <h4>Seam 08: S08 → S09 <span class="badge badge-success">PASS</span></h4>
+            <p>Mốc nối: <b class="mono">Frame 1194 (39.800s)</b> | Dải: [1164, 1224]</p>
+            <p class="seam-cue">Voice S08: "...trong tương lai." → S09: "Đồng thời, việc sở hữu tài sản ở nhiều thị trường..."</p>
+            <p style="font-size: 12px; color: #94a3b8;">Đánh giá: Bản S09 motion-r1 thể hiện cơ chế phân bổ thị trường rõ ràng, không người, chuyển động nhịp nhàng.</p>
+          </div>
+          <div class="seam-frames">
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_08_S08_f1193.png" alt="S08 f1193">
+              <div>S08 f1193</div>
+            </div>
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_09_S09_f1194.png" alt="S09 f1194">
+              <div>S09 f1194</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seam 09 -->
+        <div class="seam-item">
+          <div class="seam-video">
+            <video controls preload="metadata" style="width:100%; height:100%;">
+              <source src="seams/seam_09_S09_S10.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="seam-info">
+            <h4>Seam 09: S09 → S10 <span class="badge badge-success">PASS</span></h4>
+            <p>Mốc nối: <b class="mono">Frame 1418 (47.267s)</b> | Dải: [1388, 1448]</p>
+            <p class="seam-cue">Voice S09: "...hoàn toàn vào một quốc gia." → S10: "Chỉ với khoảng 3,8 tỷ đồng..."</p>
+            <p style="font-size: 12px; color: #94a3b8;">Đánh giá: Số liệu 3,8 tỷ và cấu trúc định cư 4 thế hệ hiển thị sống động, thay thế bố cục tĩnh cũ.</p>
+          </div>
+          <div class="seam-frames">
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_09_S09_f1417.png" alt="S09 f1417">
+              <div>S09 f1417</div>
+            </div>
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_10_S10_f1418.png" alt="S10 f1418">
+              <div>S10 f1418</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seam 10 -->
+        <div class="seam-item">
+          <div class="seam-video">
+            <video controls preload="metadata" style="width:100%; height:100%;">
+              <source src="seams/seam_10_S10_S11.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="seam-info">
+            <h4>Seam 10: S10 → S11 <span class="badge badge-success">PASS</span></h4>
+            <p>Mốc nối: <b class="mono">Frame 1602 (53.400s)</b> | Dải: [1572, 1632]</p>
+            <p class="seam-cue">Voice S10: "...cho 4 thế hệ." → S11: "Đây không chỉ là quyết định đầu tư..."</p>
+            <p style="font-size: 12px; color: #94a3b8;">Đánh giá: S11 đã loại bỏ lỗi lộn xộn/rác hình, truyền tải trọn vẹn thông điệp đầu tư vào tương lai của con.</p>
+          </div>
+          <div class="seam-frames">
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_10_S10_f1601.png" alt="S10 f1601">
+              <div>S10 f1601</div>
+            </div>
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_11_S11_f1602.png" alt="S11 f1602">
+              <div>S11 f1602</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seam 11 -->
+        <div class="seam-item">
+          <div class="seam-video">
+            <video controls preload="metadata" style="width:100%; height:100%;">
+              <source src="seams/seam_11_S11_S12.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="seam-info">
+            <h4>Seam 11: S11 → S12 <span class="badge badge-success">PASS</span></h4>
+            <p>Mốc nối: <b class="mono">Frame 1807 (60.233s)</b> | Dải: [1777, 1837]</p>
+            <p class="seam-cue">Voice S11: "...cho tương lai của con cái" → S12: "và những cơ hội mà các thế hệ sau..."</p>
+            <p style="font-size: 12px; color: #94a3b8;">Đánh giá: S12 tái cấu trúc rõ ràng hành động mở ra cơ hội Châu Âu thay vì mập mờ như bản cũ.</p>
+          </div>
+          <div class="seam-frames">
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_11_S11_f1806.png" alt="S11 f1806">
+              <div>S11 f1806</div>
+            </div>
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_12_S12_f1807.png" alt="S12 f1807">
+              <div>S12 f1807</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seam 12 -->
+        <div class="seam-item">
+          <div class="seam-video">
+            <video controls preload="metadata" style="width:100%; height:100%;">
+              <source src="seams/seam_12_S12_S13.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="seam-info">
+            <h4>Seam 12: S12 → S13 <span class="badge badge-success">PASS</span></h4>
+            <p>Mốc nối: <b class="mono">Frame 1913 (63.767s)</b> | Dải: [1883, 1943]</p>
+            <p class="seam-cue">Voice S12: "...nắm bắt tại Châu Âu." → S13: "Khi con đã bước ra thế giới..."</p>
+            <p style="font-size: 12px; color: #94a3b8;">Đánh giá: Camera mở khung đẹp mắt, con bước đi song hành cùng tài sản gia đình vươn ra quốc tế.</p>
+          </div>
+          <div class="seam-frames">
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_12_S12_f1912.png" alt="S12 f1912">
+              <div>S12 f1912</div>
+            </div>
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_13_S13_f1913.png" alt="S13 f1913">
+              <div>S13 f1913</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seam 13 -->
+        <div class="seam-item">
+          <div class="seam-video">
+            <video controls preload="metadata" style="width:100%; height:100%;">
+              <source src="seams/seam_13_S13_S14.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="seam-info">
+            <h4>Seam 13: S13 → S14 <span class="badge badge-success">PASS</span></h4>
+            <p>Mốc nối: <b class="mono">Frame 2049 (68.300s)</b> | Dải: [2019, 2079]</p>
+            <p class="seam-cue">Voice S13: "...bước ra thế giới." → S14: "Bởi đôi khi, điều giá trị nhất không phải là..."</p>
+            <p style="font-size: 12px; color: #94a3b8;">Đánh giá: Chuyển sang kết phim cảm xúc với hình tượng mở cánh cổng cơ hội cho tương lai.</p>
+          </div>
+          <div class="seam-frames">
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_13_S13_f2048.png" alt="S13 f2048">
+              <div>S13 f2048</div>
+            </div>
+            <div class="seam-frame-thumb">
+              <img src="proofs/seams/seam_14_S14_f2049.png" alt="S14 f2049">
+              <div>S14 f2049</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tab 2: 14 Scenes Table -->
+      <div id="tab-scenes" class="tab-content">
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Scene</th>
+                <th>Version Locked</th>
+                <th>Frame Range [Start, End)</th>
+                <th>Frames</th>
+                <th>Duration</th>
+                <th>Voice Narration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>S01</b></td>
+                <td>original_pilot</td>
+                <td class="mono">[0, 181]</td>
+                <td class="mono">181</td>
+                <td>6.033s</td>
+                <td>Khi con du học Châu Âu, nhiều gia đình không chỉ đầu tư cho việc học, mà còn đầu tư cho một điểm tựa lâu dài.</td>
+              </tr>
+              <tr>
+                <td><b>S02</b></td>
+                <td>Antigravity existing base</td>
+                <td class="mono">[181, 296]</td>
+                <td class="mono">115</td>
+                <td>3.833s</td>
+                <td>Trước nhiều phụ huynh sẵn sàng chi hàng tỷ đồng cho hành trình du học của con,</td>
+              </tr>
+              <tr>
+                <td><b>S03</b></td>
+                <td>Antigravity existing base</td>
+                <td class="mono">[296, 424]</td>
+                <td class="mono">128</td>
+                <td>4.267s</td>
+                <td>nhưng nếu con có kế hoạch học tập và phát triển sự nghiệp tại Châu Âu trong nhiều năm,</td>
+              </tr>
+              <tr>
+                <td><b>S04</b></td>
+                <td>Antigravity existing base</td>
+                <td class="mono">[424, 545]</td>
+                <td class="mono">121</td>
+                <td>4.033s</td>
+                <td>Liệu toàn bộ tài sản của gia đình có nên chỉ tập trung ở Việt Nam?</td>
+              </tr>
+              <tr>
+                <td><b>S05</b></td>
+                <td>S05-zoom-motion-r1</td>
+                <td class="mono">[545, 716]</td>
+                <td class="mono">171</td>
+                <td>5.700s</td>
+                <td>Đó là lý do ngày càng nhiều gia đình lựa chọn đa dạng hóa tài sản bằng bất động sản tại Malta.</td>
+              </tr>
+              <tr>
+                <td><b>S06</b></td>
+                <td>S06-S11-motion-r1</td>
+                <td class="mono">[716, 890]</td>
+                <td class="mono">174</td>
+                <td>5.800s</td>
+                <td>Không chỉ là sở hữu một tài sản ở Châu Âu, đây còn là cách xây dựng một nền tảng lâu dài cho cả gia đình.</td>
+              </tr>
+              <tr>
+                <td><b>S07</b></td>
+                <td>S07-S08-motion-r1</td>
+                <td class="mono">[890, 1030]</td>
+                <td class="mono">140</td>
+                <td>4.667s</td>
+                <td>Khi có một tài sản tại Malta, gia đình có thêm một điểm kết nối với Châu Âu,</td>
+              </tr>
+              <tr>
+                <td><b>S08</b></td>
+                <td>S07-S08-motion-r1</td>
+                <td class="mono">[1030, 1194]</td>
+                <td class="mono">164</td>
+                <td>5.467s</td>
+                <td>thuận tiện hơn cho những chuyến thăm con, cho các kế hoạch học tập, sinh sống, hoặc làm việc trong tương lai.</td>
+              </tr>
+              <tr>
+                <td><b>S09</b></td>
+                <td>motion-r1 (pilots-approved-frames-r1)</td>
+                <td class="mono">[1194, 1418]</td>
+                <td class="mono">224</td>
+                <td>7.467s</td>
+                <td>Đồng thời, việc sở hữu tài sản ở nhiều thị trường cũng giúp đa dạng hóa danh mục đầu tư thay vì phụ thuộc hoàn toàn vào một quốc gia.</td>
+              </tr>
+              <tr>
+                <td><b>S10</b></td>
+                <td>S10-S12-motion-r1</td>
+                <td class="mono">[1418, 1602]</td>
+                <td class="mono">184</td>
+                <td>6.133s</td>
+                <td>Chỉ với khoảng 3,8 tỷ đồng, chương trình Thẻ Xanh Malta mang đến cơ hội định cư cho 4 thế hệ.</td>
+              </tr>
+              <tr>
+                <td><b>S11</b></td>
+                <td>S06-S11-motion-r1</td>
+                <td class="mono">[1602, 1807]</td>
+                <td class="mono">205</td>
+                <td>6.833s</td>
+                <td>Đây không chỉ là quyết định đầu tư vào một bất động sản, mà còn là quyết định đầu tư vào sự chuẩn bị cho tương lai của con cái</td>
+              </tr>
+              <tr>
+                <td><b>S12</b></td>
+                <td>S10-S12-motion-r1</td>
+                <td class="mono">[1807, 1913]</td>
+                <td class="mono">106</td>
+                <td>3.533s</td>
+                <td>và những cơ hội mà các thế hệ sau có thể nắm bắt tại Châu Âu.</td>
+              </tr>
+              <tr>
+                <td><b>S13</b></td>
+                <td>S13-S14-motion-r1</td>
+                <td class="mono">[1913, 2049]</td>
+                <td class="mono">136</td>
+                <td>4.533s</td>
+                <td>Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới.</td>
+              </tr>
+              <tr>
+                <td><b>S14</b></td>
+                <td>S13-S14-motion-r1</td>
+                <td class="mono">[2049, 2255]</td>
+                <td class="mono">206</td>
+                <td>6.867s</td>
+                <td>Bởi đôi khi, điều giá trị nhất không phải là sở hữu thêm một căn nhà, mà là sở hữu thêm một lựa chọn cho tương lai.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 3: Proofs Gallery -->
+      <div id="tab-proofs" class="tab-content">
+        <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px;">
+          Mỗi cảnh được kiểm chứng qua 3 mốc: Mở (Start), Giữa (Mid), và Cuối (End) ở cả định dạng Màu và Grayscale (để kiểm tra độ tương phản / dark mass).
+        </p>
+        <div class="gallery-grid" id="galleryContainer">
+          <!-- Sample highlights: S05, S06, S07, S08, S09, S10, S11, S12, S13, S14 -->
+          <div class="gallery-card">
+            <img src="proofs/S05_open_f545.png" alt="S05 Open">
+            <div class="gallery-label">S05 Open (f545)</div>
+          </div>
+          <div class="gallery-card">
+            <img src="proofs/S05_mid_f630.png" alt="S05 Mid">
+            <div class="gallery-label">S05 Mid Pin (f630)</div>
+          </div>
+          <div class="gallery-card">
+            <img src="proofs/S05_end_f715.png" alt="S05 End">
+            <div class="gallery-label">S05 End House (f715)</div>
+          </div>
+          <div class="gallery-card">
+            <img src="proofs/S06_mid_f803.png" alt="S06 Mid">
+            <div class="gallery-label">S06 Mid Family (f803)</div>
+          </div>
+          <div class="gallery-card">
+            <img src="proofs/S07_mid_f960.png" alt="S07 Mid">
+            <div class="gallery-label">S07 Mid Hand (f960)</div>
+          </div>
+          <div class="gallery-card">
+            <img src="proofs/S08_mid_f1112.png" alt="S08 Mid">
+            <div class="gallery-label">S08 Mid Travel (f1112)</div>
+          </div>
+          <div class="gallery-card">
+            <img src="proofs/S09_mid_f1306.png" alt="S09 Mid">
+            <div class="gallery-label">S09 Mid Alloc (f1306)</div>
+          </div>
+          <div class="gallery-card">
+            <img src="proofs/S10_mid_f1510.png" alt="S10 Mid">
+            <div class="gallery-label">S10 Mid 3.8 Tỷ (f1510)</div>
+          </div>
+          <div class="gallery-card">
+            <img src="proofs/S11_mid_f1704.png" alt="S11 Mid">
+            <div class="gallery-label">S11 Mid Future (f1704)</div>
+          </div>
+          <div class="gallery-card">
+            <img src="proofs/S12_mid_f1860.png" alt="S12 Mid">
+            <div class="gallery-label">S12 Mid Horizon (f1860)</div>
+          </div>
+          <div class="gallery-card">
+            <img src="proofs/S13_mid_f1981.png" alt="S13 Mid">
+            <div class="gallery-label">S13 Mid World (f1981)</div>
+          </div>
+          <div class="gallery-card">
+            <img src="proofs/S14_mid_f2152.png" alt="S14 Mid">
+            <div class="gallery-label">S14 Mid Gate (f2152)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 4: Technical & SHA256 -->
+      <div id="tab-tech" class="tab-content">
+        <div style="font-size: 14px; line-height: 1.6;">
+          <h4 style="color: var(--accent); margin-bottom: 8px;">Kiểm tra kỹ thuật hoàn tất:</h4>
+          <ul style="margin-left: 20px; color: #cbd5e1; font-size: 13px;">
+            <li><b>Canvas & Framerate:</b> 720×1280 @ 30.00 fps, đúng 2,255 frames.</li>
+            <li><b>Picture Grid:</b> Khớp chính xác từng frame giữa bản Clean và Master.</li>
+            <li><b>Voice Muxing:</b> Source WAV nguyên bản (1,803,840 samples, 24,000 Hz mono). Hệ số tương quan chéo đạt 0.999958, không nén hay thay đổi âm lượng.</li>
+            <li><b>Subtitle Reserve:</b> Vùng chân 180–200px (y=1080–1280) để trống phục vụ phụ đề.</li>
+            <li><b>Bảo toàn master cũ:</b> Cả 2 file master cũ trong <code>build/renders/</code> giữ nguyên hash 100%.</li>
+          </ul>
+
+          <div class="hash-box">
+            <b>OUTPUT SHA-256 CHECKSUMS:</b><br><br>
+            • VIDEO-33-master-approved-r1.mp4: <br>abdc318b50b0f05eb7e1ae681f41e62150ff1c1f12eb807f137a32f9cd30da7a<br><br>
+            • VIDEO-33-clean-approved-r1.mp4: <br>c3b2c50d8e6b87cdd9d789c54ba65992a38ed5b1b608a544a4f45362520ad949<br><br>
+            • Source Audio (inputs/source_audio.wav): <br>cbd5a88b99c252d09ea86493377951aed1267186a5cb9ff11afe00947133e941<br><br>
+            • Old Master (build/renders/VIDEO-33-master.mp4 - PRESERVED): <br>6f51c8368997f7e2d3721888c3a3d471c2407e8718248fc9d3bea6e4b2b87c50
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function switchVideo(src, btn) {
+      const vid = document.getElementById('mainVideo');
+      const curTime = vid.currentTime;
+      const isPaused = vid.paused;
+      vid.src = src;
+      vid.currentTime = curTime;
+      if (!isPaused) vid.play();
+      document.querySelectorAll('.player-controls .btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    function showTab(tabId, btn) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>

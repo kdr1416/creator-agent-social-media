@@ -1,0 +1,295 @@
+{
+  "scene_number": 1,
+  "scene_id": "S01",
+  "start": 0.0,
+  "end": 6.019416666666666,
+  "start_sample": 0,
+  "end_sample": 144466,
+  "source_segments": [
+    1
+  ],
+  "raw_text": "Khi con du học Châu Âu, nhiều gia đình không chỉ đầu tư cho việc học, mà còn đầu tư cho một điểm tự lâu dài.",
+  "corrected_text": "Khi con du học Châu Âu, nhiều gia đình không chỉ đầu tư cho việc học, mà còn đầu tư cho một điểm tựa lâu dài.",
+  "semantic_type": "physical transformation",
+  "visual_center": "Cuốn sách thành điểm tựa",
+  "organic_motion_need": "Không cần diễn viên/plate hữu cơ; puppet vector có hành động chủ đích.",
+  "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+  "preferred_mode": "HF_ONLY",
+  "routing_confidence": "high",
+  "routing_reason": "Cuốn sách thành điểm tựa: hành động chủ đạo là mở / nâng đỡ các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ physical transformation, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+  "flow_contribution": "none",
+  "hf_contribution": "Bìa mở và các trang gấp bung thành mặt đỡ; mái nhà giấy và nhóm gia đình hiện lên trên mặt đỡ sau cụm “mà còn”. Tay nắm mép sách trước khi trang đổi hình.",
+  "fallback_mode": null,
+  "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+  "character": "yes",
+  "title": "Cuốn sách thành điểm tựa",
+  "takeaway": "Việc học mở ra một kế hoạch dài hạn của gia đình, không chỉ một kỳ học.",
+  "audio_source": [
+    "inputs/audio/seg_01.wav"
+  ],
+  "duration": 6.019416666666666,
+  "sample_frames": 144466,
+  "raw_segments": [
+    {
+      "seg_id": 1,
+      "segment_id": "seg_01",
+      "audio_slice": "audio_slices/seg_01.wav",
+      "start_sample": 0,
+      "end_sample": 144466,
+      "sample_frames": 144466,
+      "start": 0.0,
+      "end": 6.019,
+      "duration": 6.019,
+      "sha256": "e89fa33915af9a42e51895845e837902d15198ac2677650ef25469e3aa42053a",
+      "raw_text": "Khi con du học Châu Âu, nhiều gia đình không chỉ đầu tư cho việc học, mà còn đầu tư cho một điểm tự lâu dài.",
+      "corrected_text": "Khi con du học Châu Âu, nhiều gia đình không chỉ đầu tư cho việc học, mà còn đầu tư cho một điểm tựa lâu dài.",
+      "uncertainties": [
+        "điểm tự -> điểm tựa: Giọng nói ngắt âm/lướt âm cuối; chuẩn văn phạm và ngữ nghĩa đầu tư là 'điểm tựa lâu dài'."
+      ]
+    }
+  ],
+  "render_mode": "HF_ONLY",
+  "style_candidates": [
+    {
+      "id": "hf_existing:warm-doodle-mixed-media",
+      "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+    },
+    {
+      "id": "kurzgesagt",
+      "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+    },
+    {
+      "id": "izometrik",
+      "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+    },
+    {
+      "id": "bauhaus",
+      "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+    }
+  ],
+  "style_id": "hf_existing:warm-doodle-mixed-media",
+  "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+  "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+  "visual_verb": "mở / nâng đỡ",
+  "composition": "Cuốn sách xanh chiếm x=90–560, y=550–890; mascot ở phải, chân tại y=1020. Một mái nhà giấy nhỏ ở lớp trên, không phải tài sản đã được cấp quyền.",
+  "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+  "opening_state": "Cận cuốn sách đang hé; mascot đưa tay tới mép bìa, mắt theo trang sách.",
+  "transformation": "Bìa mở và các trang gấp bung thành mặt đỡ; mái nhà giấy và nhóm gia đình hiện lên trên mặt đỡ sau cụm “mà còn”. Tay nắm mép sách trước khi trang đổi hình.",
+  "final_state": "Một cuốn sách vẫn nhận ra được làm nền cho nhà và gia đình; mascot ngước nhìn, không có dấu duyệt hay biểu tượng visa.",
+  "protagonist_action": "Mở bìa → giữ mép trang → ngước nhìn mái nhà. Giữ mũ tím, túi xanh và thân cam bo góc.",
+  "mascot_role": "Mở bìa → giữ mép trang → ngước nhìn mái nhà. Giữ mũ tím, túi xanh và thân cam bo góc.",
+  "visual_family": "physical transformation",
+  "timed_beats": [
+    {
+      "local_seconds": 0,
+      "spoken_cue": "Khi con du học Châu Âu",
+      "action": "Mở cận sách, tay bắt đầu với",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 1.55,
+      "spoken_cue": "đầu tư cho việc học",
+      "action": "Bìa mở, chữ HỌC TẬP",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 3.05,
+      "spoken_cue": "mà còn đầu tư",
+      "action": "Trang gấp nâng mặt đỡ",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 4.25,
+      "spoken_cue": "điểm tựa lâu dài",
+      "action": "Nhà giấy rõ hình, đổi text và ngước nhìn",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 5.25,
+      "spoken_cue": "đuôi câu",
+      "action": "Giữ kết quả",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    }
+  ],
+  "motion_emphasis_sequence": [
+    "Mở cận sách, tay bắt đầu với",
+    "Bìa mở, chữ HỌC TẬP",
+    "Trang gấp nâng mặt đỡ",
+    "Nhà giấy rõ hình, đổi text và ngước nhìn",
+    "Giữ kết quả"
+  ],
+  "hf_signature_motion": "Bìa mở và các trang gấp bung thành mặt đỡ; mái nhà giấy và nhóm gia đình hiện lên trên mặt đỡ sau cụm “mà còn”. Tay nắm mép sách trước khi trang đổi hình.",
+  "flow_action": null,
+  "flow_camera": null,
+  "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+  "asset_contract": [
+    {
+      "layer": "book-back",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "book-pages",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "book-cover",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "folded-support",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "paper-house",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "family-silhouettes",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-body",
+      "source": "approved mascot derivative",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-far-arm",
+      "source": "approved mascot derivative",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-near-arm",
+      "source": "approved mascot derivative",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-eyes",
+      "source": "approved mascot derivative",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-cap",
+      "source": "approved mascot derivative",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-bag",
+      "source": "approved mascot derivative",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    }
+  ],
+  "container_required": true,
+  "container_inventory": [
+    {
+      "object_type": "book",
+      "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+      "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+      "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+    }
+  ],
+  "container_semantics": [
+    {
+      "object_type": "book",
+      "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+      "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+      "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+    }
+  ],
+  "visible_text_budget": {
+    "max_simultaneous_words": 4,
+    "max_levels": 2,
+    "paragraphs": 0
+  },
+  "visible_text_inventory": [
+    {
+      "text": "HỌC TẬP",
+      "size_px": 54,
+      "role": "anchor",
+      "simultaneous": false
+    },
+    {
+      "text": "ĐIỂM TỰA DÀI LÂU",
+      "size_px": 54,
+      "role": "anchor",
+      "simultaneous": false
+    }
+  ],
+  "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Một strip xanh ngắn có nghĩa nhấn ý.",
+  "accent_reason": "Nhấn sự chuyển trọng tâm của câu; không tô cả cảnh.",
+  "accent_treatment": "blue short feature strip",
+  "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+  "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+  "handoff": "Cắt theo ý sang cận vật liệu học phí; không kéo cùng căn nhà qua cảnh 02.",
+  "continuity_risk": "Không biến sách thành chứng nhận cư trú; mái nhà là ẩn dụ điểm tựa.",
+  "pilot": true,
+  "status": "pilot_rendered_awaiting_user_review",
+  "must_keep": [
+    "Việc học mở ra một kế hoạch dài hạn của gia đình, không chỉ một kỳ học.",
+    "Bìa mở và các trang gấp bung thành mặt đỡ; mái nhà giấy và nhóm gia đình hiện lên trên mặt đỡ sau cụm “mà còn”. Tay nắm mép sách trước khi trang đổi hình.",
+    "voice/sample bounds",
+    "mascot identity, warm light palette, footer 200px",
+    "zero added CTA or documentary claims"
+  ],
+  "flexible": [
+    "Toạ độ/kích thước trong safe area",
+    "easing/pose/chi tiết nét",
+    "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+  ],
+  "reference_alignment": {
+    "colour_relationships": {
+      "reference_evidence": "Brief: cream/peach/lilac + accents",
+      "candidate_evidence": "qa/S01/mobile-5.80.png; in-progress 3.3s; pilots/S01/index.html",
+      "assessment": "match",
+      "revision_needed": "No mismatch seen in inspected frames; style and motion remain subject to user review."
+    },
+    "typography_treatment": {
+      "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+      "candidate_evidence": "qa/S01/mobile-5.80.png; in-progress 3.3s; pilots/S01/index.html",
+      "assessment": "match",
+      "revision_needed": "No mismatch seen in inspected frames; style and motion remain subject to user review."
+    },
+    "asset_mix": {
+      "reference_evidence": "Reference 04/06: real campus plus drawing",
+      "candidate_evidence": "qa/S01/mobile-5.80.png; in-progress 3.3s; pilots/S01/index.html",
+      "assessment": "match",
+      "revision_needed": "No mismatch seen in inspected frames; style and motion remain subject to user review."
+    },
+    "composition": {
+      "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+      "candidate_evidence": "qa/S01/mobile-5.80.png; in-progress 3.3s; pilots/S01/index.html",
+      "assessment": "match",
+      "revision_needed": "No mismatch seen in inspected frames; style and motion remain subject to user review."
+    },
+    "mascot_language": {
+      "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+      "candidate_evidence": "qa/S01/mobile-5.80.png; in-progress 3.3s; pilots/S01/index.html",
+      "assessment": "match",
+      "revision_needed": "No mismatch seen in inspected frames; style and motion remain subject to user review."
+    },
+    "motion_rhythm": {
+      "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+      "candidate_evidence": "qa/S01/mobile-5.80.png; in-progress 3.3s; pilots/S01/index.html",
+      "assessment": "match",
+      "revision_needed": "No mismatch seen in inspected frames; style and motion remain subject to user review."
+    }
+  },
+  "asset_contract_evidence": "pilots/S01/index.html; pilots/S01/assets/layered-art.svg"
+}

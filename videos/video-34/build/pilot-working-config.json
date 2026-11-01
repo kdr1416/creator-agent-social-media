@@ -1,0 +1,45 @@
+{
+  "status": "PILOT WORKING CONFIGURATION — NOT FULL FILM APPROVAL",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "scene_manifest_unchanged": true,
+  "scenes": {
+    "S03": {
+      "source": "scenes/S03/index.html",
+      "start_sample": 243986,
+      "end_sample": 458528,
+      "master_start": 10.166083333333333,
+      "master_end": 19.105333333333334,
+      "audio_samples": 214542,
+      "audio_duration": 8.93925,
+      "cumulative_start_frame": 305,
+      "cumulative_end_frame": 573,
+      "frames": 268,
+      "picture_duration": 8.933333333333334,
+      "picture_minus_audio_seconds": -0.005916666666665904,
+      "audio_sha256": "02b86d1c1a5bee565c1e0ee31657ba05750bbcaf6659f0e958715e3b042bcaf7",
+      "canonical_art": "assets/illustration/S03-coast.svg",
+      "picture_output": "scenes/S03/picture.mp4",
+      "review_output": "scenes/S03/S03-pilot.mp4"
+    },
+    "S08": {
+      "source": "scenes/S08/index.html",
+      "start_sample": 966480,
+      "end_sample": 1101123,
+      "master_start": 40.27,
+      "master_end": 45.880125,
+      "audio_samples": 134643,
+      "audio_duration": 5.610125,
+      "cumulative_start_frame": 1208,
+      "cumulative_end_frame": 1376,
+      "frames": 168,
+      "picture_duration": 5.6,
+      "picture_minus_audio_seconds": -0.010125000000000384,
+      "audio_sha256": "fd918c8876b0f4a3d30103cd98f31e0e6111581c62eb410fc801a3123689e6b7",
+      "canonical_art": "assets/illustration/S08-home.svg",
+      "picture_output": "scenes/S08/picture.mp4",
+      "review_output": "scenes/S08/S08-pilot.mp4"
+    }
+  }
+}

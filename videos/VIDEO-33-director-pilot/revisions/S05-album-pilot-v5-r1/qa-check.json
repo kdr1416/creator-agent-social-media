@@ -1,0 +1,100 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 5.706333333333,
+    "samples": [
+      0.15,
+      2.2,
+      3.15,
+      3.75,
+      4.5,
+      5.35
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.15,
+      2.2,
+      3.15,
+      3.75,
+      5.35
+    ],
+    "checked": 1,
+    "passed": 1
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": true,
+    "files": [
+      ".hyperframes\\artifacts\\snapshots\\555bd622-c62d-473c-8a32-53db1b0e8cf8\\frame-00-at-0.1s.png",
+      ".hyperframes\\artifacts\\snapshots\\555bd622-c62d-473c-8a32-53db1b0e8cf8\\frame-01-at-2.2s.png",
+      ".hyperframes\\artifacts\\snapshots\\555bd622-c62d-473c-8a32-53db1b0e8cf8\\frame-02-at-3.1s.png",
+      ".hyperframes\\artifacts\\snapshots\\555bd622-c62d-473c-8a32-53db1b0e8cf8\\frame-03-at-3.8s.png",
+      ".hyperframes\\artifacts\\snapshots\\555bd622-c62d-473c-8a32-53db1b0e8cf8\\frame-04-at-5.3s.png"
+    ],
+    "times": [
+      0.15,
+      2.2,
+      3.15,
+      3.75,
+      5.35
+    ],
+    "findingFiles": []
+  },
+  "saved": {
+    "id": "e22ce75f-435e-443a-ab00-0562de336aa3",
+    "revision": "ca0540d6-ff35-4d62-bcb4-e6549de67077",
+    "report": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S05-album-pilot-v5-r1\\.hyperframes\\artifacts\\checks\\e22ce75f-435e-443a-ab00-0562de336aa3.json",
+    "attribution": "recorded-revision"
+  },
+  "_meta": {
+    "version": "0.8.170",
+    "latestVersion": "0.8.170",
+    "updateAvailable": false
+  }
+}

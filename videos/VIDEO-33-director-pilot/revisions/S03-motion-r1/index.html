@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>S03 · Một hành trình nhiều năm tại Châu Âu</title>
+  <script src="assets/gsap.min.js"></script>
+  <style>
+    @font-face {
+      font-family: PilotDisplay;
+      src: url('assets/segoe-ui-black.ttf');
+      font-weight: 900;
+      font-display: block;
+    }
+    @font-face {
+      font-family: PilotSans;
+      src: url('assets/arialbd.ttf');
+      font-weight: 700;
+      font-display: block;
+    }
+    @font-face {
+      font-family: PilotBody;
+      src: url('assets/arial.ttf');
+      font-display: block;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #FFF9ED; }
+    .composition {
+      position: relative;
+      width: 720px;
+      height: 1280px;
+      overflow: hidden;
+      color: #1E293B;
+      font-family: PilotSans, sans-serif;
+    }
+    .ground { position: absolute; inset: 0; background: #FFF8EB; }
+    .art { position: absolute; inset: 0; width: 720px; height: 1280px; overflow: hidden; }
+
+    /* Header Typography */
+    .title-group {
+      position: absolute;
+      top: 135px;
+      left: 0;
+      width: 720px;
+      text-align: center;
+      z-index: 10;
+      pointer-events: none;
+    }
+    .kicker {
+      display: inline-block;
+      font-family: PilotSans, sans-serif;
+      font-weight: 700;
+      font-size: 21px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #0284C7;
+      margin-bottom: 6px;
+    }
+    .headline {
+      font-family: PilotDisplay, sans-serif;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 1.15;
+      color: #1E293B;
+      letter-spacing: -0.5px;
+    }
+  </style>
+</head>
+<body>
+<div id="v33-s03" class="composition" data-composition-id="v33-s03" data-width="720" data-height="1280" data-start="0" data-duration="4.2458" data-fps="30">
+  <div class="ground"></div>
+
+  <!-- Header Section -->
+  <div class="title-group" id="p03-header">
+    <div class="kicker" id="p03-kicker">KẾ HOẠCH DÀI HẠN</div><br>
+    <div class="headline" id="p03-headline">LỘ TRÌNH TẠI CHÂU ÂU</div>
+  </div>
+
+  <svg id="p03-art" class="art" xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280">
+    <defs>
+      <filter id="p03-shadow" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#5A4738" flood-opacity=".12"/>
+      </filter>
+      <filter id="p03-glow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#0284C7" flood-opacity=".25"/>
+      </filter>
+    </defs>
+
+    <!-- Base Ground Shadow -->
+    <ellipse cx="360" cy="1015" rx="300" ry="26" fill="#E8D7C4" opacity=".55"/>
+
+    <!-- ======================================================== -->
+    <!-- ROADMAP RIBBON: S-CURVE HIGHWAY (y: 380 to 950)          -->
+    <!-- ======================================================== -->
+    <g id="p03-road-group" filter="url(#p03-shadow)">
+      <!-- Main S-Curve Road Surface -->
+      <path id="p03-road-body"
+        d="M 120 950 
+           C 110 790, 260 740, 340 680 
+           C 430 610, 570 570, 520 410 
+           L 590 395 
+           C 650 580, 500 660, 400 720 
+           C 310 780, 200 840, 205 960 Z"
+        fill="#FFFDF6" stroke="#2D231F" stroke-width="3.5" stroke-linejoin="round"/>
+      
+      <!-- Road Thickness Rim -->
+      <path d="M 120 950 L 120 962 C 110 802, 260 752, 340 692 C 430 622, 570 582, 520 422 L 520 410 Z" fill="#E4D3BD" opacity=".8"/>
+
+      <!-- Center Pathway Dash Line -->
+      <path id="p03-road-dash"
+        d="M 162 955 
+           C 155 805, 300 760, 370 700 
+           C 465 635, 610 595, 555 402"
+        fill="none" stroke="#0284C7" stroke-width="3.5" stroke-dasharray="14 10" stroke-linecap="round"/>
+
+      <!-- Milestones on the road -->
+      <g id="p03-milestone-1" transform="translate(240, 815)">
+        <ellipse cx="0" cy="0" rx="16" ry="9" fill="#FDE047" stroke="#2D231F" stroke-width="2.5"/>
+        <circle cx="0" cy="-6" r="6" fill="#0284C7"/>
+      </g>
+      <g id="p03-milestone-2" transform="translate(370, 700)">
+        <ellipse cx="0" cy="0" rx="16" ry="9" fill="#FDE047" stroke="#2D231F" stroke-width="2.5"/>
+        <circle cx="0" cy="-6" r="6" fill="#0284C7"/>
+      </g>
+      <g id="p03-milestone-3" transform="translate(500, 530)">
+        <ellipse cx="0" cy="0" rx="16" ry="9" fill="#FDE047" stroke="#2D231F" stroke-width="2.5"/>
+        <circle cx="0" cy="-6" r="6" fill="#F59E0B"/>
+      </g>
+    </g>
+
+    <!-- Future Extension Dashed Path (Heading to Long-Term Horizon) -->
+    <g id="p03-future-path" opacity="0">
+      <path d="M 555 402 C 530 330, 420 320, 370 290" fill="none" stroke="#F59E0B" stroke-width="4" stroke-dasharray="8 8" stroke-linecap="round"/>
+      <circle cx="370" cy="290" r="16" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2.8"/>
+      <!-- Compass Star in Goal Node -->
+      <polygon points="370,279 373,287 381,290 373,293 370,301 367,293 359,290 367,287" fill="#D97706"/>
+      <text x="370" y="260" text-anchor="middle" font-family="PilotSans, sans-serif" font-weight="700" font-size="14" fill="#B45309" letter-spacing="1">TƯƠNG LAI MỞ RỘNG</text>
+    </g>
+
+    <!-- ======================================================== -->
+    <!-- STATION 1: HỌC TẬP (EDUCATION MILESTONE, LOWER PATH)     -->
+    <!-- x: 120 - 330, y: 700 - 870                               -->
+    <!-- ======================================================== -->
+    <g id="p03-station-edu" filter="url(#p03-shadow)" transform="translate(130, 700)">
+      <!-- Desk Board / Platform -->
+      <polygon points="10,65 140,25 240,55 95,95" fill="#F4E3CB" stroke="#2D231F" stroke-width="3" stroke-linejoin="round"/>
+      <polygon points="10,65 95,95 95,120 10,90" fill="#DFC09F" stroke="#2D231F" stroke-width="3" stroke-linejoin="round"/>
+      <polygon points="95,95 240,55 240,80 95,120" fill="#CA9F76" stroke="#2D231F" stroke-width="3" stroke-linejoin="round"/>
+
+      <!-- Stack of European Textbooks -->
+      <g id="p03-book-stack" transform="translate(30, 45)">
+        <polygon points="0,15 70,0 105,10 35,25" fill="#0284C7" stroke="#2D231F" stroke-width="2"/>
+        <polygon points="0,15 35,25 35,33 0,23" fill="#0369A1" stroke="#2D231F" stroke-width="2"/>
+        <!-- Top Book (Gold) -->
+        <polygon points="5,5 75,-10 110,0 40,15" fill="#FDE047" stroke="#2D231F" stroke-width="2"/>
+        <polygon points="5,5 40,15 40,22 5,12" fill="#EAB308" stroke="#2D231F" stroke-width="2"/>
+      </g>
+
+      <!-- Graduation Cap (Mũ Cử Nhân) with Tassel -->
+      <g id="p03-grad-cap" transform="translate(145, 10)">
+        <polygon points="35,35 75,18 115,35 75,52" fill="#7E65A8" stroke="#2D231F" stroke-width="2.6" stroke-linejoin="round"/>
+        <polygon points="48,42 75,54 102,42 102,56 75,68 48,56" fill="#5F4A87" stroke="#2D231F" stroke-width="2.4" stroke-linejoin="round"/>
+        <!-- Golden Tassel -->
+        <path d="M 75 35 L 105 45 L 105 65" fill="none" stroke="#FBBF24" stroke-width="3.5" stroke-linecap="round"/>
+        <circle cx="105" cy="67" r="4.5" fill="#F59E0B"/>
+      </g>
+
+      <!-- Station 1 Badge -->
+      <g id="p03-badge-edu" transform="translate(45, 130)">
+        <rect x="0" y="0" width="150" height="34" rx="17" fill="#E0F2FE" stroke="#0284C7" stroke-width="2.2"/>
+        <circle cx="17" cy="17" r="8" fill="#0284C7"/>
+        <path d="M13 17L16 20L21 14" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+        <text x="85" y="23" text-anchor="middle" font-family="PilotSans, sans-serif" font-weight="700" font-size="14" fill="#0369A1">1. HỌC TẬP</text>
+      </g>
+    </g>
+
+    <!-- ======================================================== -->
+    <!-- STATION 2: SỰ NGHIỆP CHÂU ÂU (CAREER MILESTONE, UPPER)  -->
+    <!-- x: 380 - 640, y: 410 - 620                               -->
+    <!-- ======================================================== -->
+    <g id="p03-station-career" filter="url(#p03-shadow)" transform="translate(390, 420)">
+      <!-- Office Work Desk Platform -->
+      <polygon points="15,60 145,20 245,50 100,90" fill="#EAE0D2" stroke="#2D231F" stroke-width="3" stroke-linejoin="round"/>
+      <polygon points="15,60 100,90 100,115 15,85" fill="#CEBAA2" stroke="#2D231F" stroke-width="3" stroke-linejoin="round"/>
+      <polygon points="100,90 245,50 245,75 100,115" fill="#BCA68C" stroke="#2D231F" stroke-width="3" stroke-linejoin="round"/>
+
+      <!-- Modern Laptop with Career Graph -->
+      <g id="p03-laptop" transform="translate(45, 18)">
+        <!-- Base Keyboard -->
+        <polygon points="0,32 75,20 105,30 25,42" fill="#94A3B8" stroke="#2D231F" stroke-width="2.2"/>
+        <!-- Screen Opening -->
+        <polygon points="0,32 75,20 75,-30 0,-18" fill="#0F172A" stroke="#2D231F" stroke-width="2.2"/>
+        <!-- Screen Content (Blue Graph) -->
+        <polygon points="6,27 69,17 69,-24 6,-14" fill="#1E293B"/>
+        <!-- Mini Bar Graph on screen -->
+        <rect x="14" y="-3" width="8" height="18" fill="#38BDF8"/>
+        <rect x="28" y="-9" width="8" height="24" fill="#38BDF8"/>
+        <rect x="42" y="-15" width="8" height="30" fill="#FBBF24"/>
+      </g>
+
+      <!-- European Union Badge / Work Permit Contract -->
+      <g id="p03-eu-doc" transform="translate(145, 20) rotate(12)">
+        <rect x="-24" y="-35" width="48" height="68" rx="4" fill="#FFFDF8" stroke="#2D231F" stroke-width="2.2"/>
+        <line x1="-16" y1="-20" x2="16" y2="-20" stroke="#CBD5E1" stroke-width="2"/>
+        <line x1="-16" y1="-10" x2="10" y2="-10" stroke="#CBD5E1" stroke-width="2"/>
+        <line x1="-16" y1="0" x2="16" y2="0" stroke="#CBD5E1" stroke-width="2"/>
+        <!-- Blue EU Badge with Gold Stars -->
+        <circle cx="0" cy="18" r="9" fill="#0284C7" stroke="#2D231F" stroke-width="1.8"/>
+        <circle cx="0" cy="18" r="5" fill="none" stroke="#FDE047" stroke-width="1.5" stroke-dasharray="2 1.5"/>
+      </g>
+
+      <!-- Station 2 Badge -->
+      <g id="p03-badge-career" transform="translate(45, 125)">
+        <rect x="0" y="0" width="165" height="34" rx="17" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2.2"/>
+        <circle cx="17" cy="17" r="8" fill="#F59E0B"/>
+        <polygon points="17,11 19,15 23,16 20,19 21,23 17,21 13,23 14,19 11,16 15,15" fill="#FFF"/>
+        <text x="92" y="23" text-anchor="middle" font-family="PilotSans, sans-serif" font-weight="700" font-size="14" fill="#B45309">2. SỰ NGHIỆP EU</text>
+      </g>
+    </g>
+
+    <!-- ======================================================== -->
+    <!-- APPROVED MASCOT (STUDENT/GRADUATE PROTAGONIST)           -->
+    <!-- Continuous, lovable design from S01 & S08                -->
+    <!-- ======================================================== -->
+    <g id="p03-mascot-rig" filter="url(#p03-shadow)" transform="translate(60, 750) scale(1.15)">
+      <!-- Ground Shadow for Mascot -->
+      <ellipse id="p03-mascot-shadow" cx="63" cy="203" rx="65" ry="10" fill="#D7BDA8" opacity=".5"/>
+      <!-- Legs Standing and Stepping -->
+      <path id="p03-legs" d="M48 143L41 190L18 194M90 143L98 190L120 194" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+      <!-- Blue Backpack -->
+      <rect x="5" y="55" width="36" height="88" rx="15" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+      <path d="M12 75L30 84" fill="none" stroke="#A2D8ED" stroke-width="3"/>
+
+      <!-- Far Arm (pointing forward along the S-path) -->
+      <g transform="translate(25 72)">
+        <g id="p03-mascot-arm-far">
+          <path id="p03-far-path" d="M0 0Q30-10 60-20" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+          <circle id="p03-far-hand" cx="60" cy="-20" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+        </g>
+      </g>
+
+      <!-- Warm Orange Torso -->
+      <path d="M21 31Q24 9 50 12L95 14Q123 16 122 46L115 121Q114 148 86 152L49 149Q20 148 17 123L13 58Q12 42 21 31Z" fill="#FFAA28" stroke="#30313B" stroke-width="3.3"/>
+      <path d="M25 41Q30 25 49 26" fill="none" stroke="#FFD77B" stroke-width="5" stroke-linecap="round"/>
+
+      <!-- Purple Cap -->
+      <path d="M28 28Q17-8 61-9Q108-13 116 27Z" fill="#A990D5" stroke="#30313B" stroke-width="3"/>
+      <path d="M17 29Q54 14 111 29L131 34Q138 40 127 42L35 39" fill="#8B73C0" stroke="#30313B" stroke-width="3"/>
+
+      <!-- Eyes (gazing ahead along the S-path) -->
+      <g id="p03-mascot-eyes">
+        <ellipse cx="56" cy="68" rx="4.6" ry="7" fill="#30313B"/>
+        <ellipse cx="90" cy="67" rx="4.6" ry="7" fill="#30313B"/>
+      </g>
+      <!-- Confident Smile -->
+      <path id="p03-mascot-mouth" d="M60 91Q72 103 84 90" fill="none" stroke="#30313B" stroke-width="3.3" stroke-linecap="round"/>
+      <ellipse cx="43" cy="87" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+      <ellipse cx="102" cy="86" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+      <!-- Backpack Strap -->
+      <path d="M26 50L18 125" fill="none" stroke="#05669D" stroke-width="6" stroke-linecap="round"/>
+
+      <!-- Near Arm (Holding Rolled Roadmap/Degree) -->
+      <g id="p03-mascot-arm-near" transform="translate(105, 85)">
+        <path id="p03-near-path" d="M0 0Q18 20 32 8" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+        <circle id="p03-near-hand" cx="32" cy="8" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+        <!-- Rolled Paper Plan in Hand -->
+        <rect x="22" y="-12" width="12" height="34" rx="4" transform="rotate(-25 28 5)" fill="#FFFBEA" stroke="#30313B" stroke-width="2.2"/>
+      </g>
+    </g>
+  </svg>
+
+  <audio id="v33-s03-voice" class="clip" src="assets/voice.wav" data-start="0" data-duration="4.2458" data-track-index="2"></audio>
+</div>
+
+<script>
+(()=>{
+  const tl = gsap.timeline({paused:true});
+
+  // 1. Header Entry (0.0s - 0.35s)
+  tl.fromTo('#p03-header', {y: -15, opacity: 0}, {y: 0, opacity: 1, duration: 0.35, ease: 'power2.out'}, 0.08);
+
+  // 2. Road Unrolls from Bottom to Top (0.15s - 1.1s)
+  tl.fromTo('#p03-road-body', {scaleY: 0.2, opacity: 0, svgOrigin: '160 950'}, {scaleY: 1, opacity: 1, duration: 0.85, ease: 'power2.out'}, 0.15);
+  tl.fromTo('#p03-road-dash', {opacity: 0}, {opacity: 1, duration: 0.5}, 0.5);
+
+  // 3. Station 1 (Học Tập) Pops Up (0.45s - 1.0s) at cue "kế hoạch học tập..."
+  tl.fromTo('#p03-station-edu', {scale: 0.7, opacity: 0, svgOrigin: '230 780'}, {scale: 1, opacity: 1, duration: 0.6, ease: 'back.out(1.15)'}, 0.45);
+  tl.fromTo('#p03-milestone-1', {scale: 0, opacity: 0, svgOrigin: '240 815'}, {scale: 1, opacity: 1, duration: 0.35, ease: 'back.out(1.4)'}, 0.8);
+
+  // 4. Mascot Initial Entry & Focus on Station 1 (0.25s - 0.8s)
+  tl.fromTo('#p03-mascot-rig', {x: 20, opacity: 0}, {x: 60, opacity: 1, duration: 0.55, ease: 'power2.out'}, 0.25);
+
+  // 5. Station 2 (Sự Nghiệp Châu Âu) Opens Up (1.6s - 2.5s) at cue "...và phát triển sự nghiệp tại Châu Âu"
+  tl.fromTo('#p03-station-career', {scale: 0.7, opacity: 0, svgOrigin: '480 500'}, {scale: 1, opacity: 1, duration: 0.7, ease: 'back.out(1.15)'}, 1.65);
+  tl.fromTo('#p03-milestone-2', {scale: 0, opacity: 0, svgOrigin: '370 700'}, {scale: 1, opacity: 1, duration: 0.35, ease: 'back.out(1.4)'}, 1.95);
+  tl.fromTo('#p03-milestone-3', {scale: 0, opacity: 0, svgOrigin: '500 530'}, {scale: 1, opacity: 1, duration: 0.35, ease: 'back.out(1.4)'}, 2.35);
+
+  // 6. Mascot Steps Forward & Points Along the Pathway towards Career (1.8s - 2.8s)
+  tl.to('#p03-mascot-rig', {x: 85, duration: 0.85, ease: 'power1.inOut'}, 1.85);
+  tl.to('#p03-far-path', {attr: {d: 'M0 0Q40-35 85-55'}, duration: 0.75, ease: 'power2.inOut'}, 1.9);
+  tl.to('#p03-far-hand', {attr: {cx: 85, cy: -55}, duration: 0.75, ease: 'power2.inOut'}, 1.9);
+  tl.to('#p03-mascot-eyes', {x: 5, y: -5, duration: 0.6, ease: 'power1.inOut'}, 2.0);
+
+  // 7. Future Horizon Expands Out (2.6s - 3.4s) at cue "...trong nhiều năm"
+  tl.fromTo('#p03-future-path', {scaleY: 0.2, opacity: 0, svgOrigin: '555 402'}, {scaleY: 1, opacity: 1, duration: 0.85, ease: 'power2.out'}, 2.65);
+
+  // Hold cleanly till end of voice (4.2458s)
+  tl.to({hold: 0}, {hold: 1, duration: 4.2458, ease: 'none'}, 0);
+
+  window.__timelines['v33-s03'] = tl;
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "S03-A",
+    "scene": "S03",
+    "state": "A",
+    "global_voice": 10.5,
+    "global_frame": 315,
+    "local_frame": 10,
+    "word_numbers_1based": [
+      46,
+      47
+    ],
+    "label": "Coastal lifestyle · environment & character",
+    "type_state": "none"
+  },
+  {
+    "id": "S03-B",
+    "scene": "S03",
+    "state": "B",
+    "global_voice": 13.68,
+    "global_frame": 411,
+    "local_frame": 106,
+    "word_numbers_1based": [
+      60,
+      63
+    ],
+    "label": "Café · typography on the awning",
+    "type_state": "settled_layout_test"
+  },
+  {
+    "id": "S08-A",
+    "scene": "S08",
+    "state": "A",
+    "global_voice": 42.14,
+    "global_frame": 1265,
+    "local_frame": 57,
+    "word_numbers_1based": [
+      174,
+      175
+    ],
+    "label": "Workspace · parent & child",
+    "type_state": "none"
+  },
+  {
+    "id": "S08-B",
+    "scene": "S08",
+    "state": "B",
+    "global_voice": 45.0,
+    "global_frame": 1350,
+    "local_frame": 142,
+    "word_numbers_1based": [
+      186,
+      187
+    ],
+    "label": "Family · connection & typography",
+    "type_state": "settled_layout_test"
+  }
+]

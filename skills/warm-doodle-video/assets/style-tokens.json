@@ -1,0 +1,118 @@
+{
+  "name": "playful-cartoon-collage",
+  "skill_id": "warm-doodle-video",
+  "maturity": "research_candidate_not_yet_forward_validated",
+  "palette_provenance": "Proposed starting values; not exact sampled colours from compressed reference.",
+  "canvas": {
+    "width": 720,
+    "height": 1280,
+    "fps": 30
+  },
+  "palette": {
+    "grounds": {
+      "cream": "#FFF3E8",
+      "peach": "#FFE7D5",
+      "lilac": "#EEE9F3",
+      "night": "#222B53"
+    },
+    "ink": "#30313B",
+    "orange": "#FF9C16",
+    "yellow": "#FFD75B",
+    "feature_blue": "#087BC1",
+    "problem_red": "#D83B3B",
+    "result_green": "#24864A",
+    "light_text": "#FFFFFF"
+  },
+  "colour_strategy": "Soft grounds with vivid focal accents; no uniform sepia or all-muted palette. Verify contrast per actual use.",
+  "safe_area": {
+    "left": 56,
+    "right": 56,
+    "top": 120,
+    "bottom": 200
+  },
+  "type": {
+    "ordinary_weight": [
+      400,
+      600
+    ],
+    "emphasis_weight": [
+      600,
+      700
+    ],
+    "essential_min_px": 28,
+    "headline_candidate_px": [
+      32,
+      48
+    ],
+    "emphasis_treatment": "Short white phrase on slightly tilted saturated strip when semantically useful.",
+    "strip_rotation_candidate_degrees": [
+      -3,
+      3
+    ],
+    "font_status": "Exact reference font unidentified; select by form and Vietnamese coverage.",
+    "reject_as_automatic_default": [
+      "Segoe UI Bold / DoodleSans",
+      "Latin-only Caveat for Vietnamese"
+    ]
+  },
+  "assets": {
+    "preferred_mix": [
+      "simple cartoon environments",
+      "compact expressive mascot",
+      "physical props",
+      "supplied document or screenshot cutouts",
+      "hand-drawn annotations",
+      "selective tape and stickers"
+    ],
+    "stroke_candidate_px": [
+      2,
+      3.5
+    ],
+    "paper_texture": "optional_subtle",
+    "legacy_visual_fixtures": [
+      "doodle-kit.js",
+      "style.css",
+      "paper.png",
+      "scene-sans-bold.ttf"
+    ],
+    "legacy_fixtures_are_approved_defaults": false
+  },
+  "motion": {
+    "timing_values_are": "candidate_defaults_not_reference_measurements",
+    "anticipation_seconds": [
+      0.08,
+      0.18
+    ],
+    "emphasis_arrival_seconds": [
+      0.18,
+      0.35
+    ],
+    "main_transform_seconds": [
+      0.6,
+      1.4
+    ],
+    "vocabulary": [
+      "selective_pop_and_settle",
+      "phrase_reveal",
+      "context_reframe",
+      "annotation_draw_on",
+      "object_travel",
+      "timed_mascot_reaction",
+      "occasional_directional_wipe"
+    ],
+    "scene_level_emphasis_required": true,
+    "idle_loop_as_primary": false,
+    "effects_on_every_beat": false
+  },
+  "style_review_axes": [
+    "colour_relationships",
+    "typography_treatment",
+    "asset_mix",
+    "composition",
+    "mascot_language",
+    "motion_rhythm"
+  ],
+  "preserve_source_audio": true,
+  "reference_audio_assessed": false,
+  "default_music": "follow_explicit_brief_and_actual_audio_review"
+}

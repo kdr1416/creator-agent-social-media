@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pilot review</title><link rel="icon" href="data:,">
+<style>
+  body { overflow-wrap: anywhere; }
+  #status { white-space: pre-wrap; overflow-wrap: anywhere; }
+  video { display: block; max-width: 100%; height: auto; }
+</style><body><h1>Pilot review</h1>
+<p>Review playback, frame design and motion against creative/storyboard.md and style-tokens.json.
+This page does not grant approval. Record the human decision and evidence in production_status.json.</p>
+<div id="pilots"></div><pre id="status"></pre>
+<script type="module">
+try {
+  const [config, timeline, state] = await Promise.all([
+    'project_manifest.json', 'inputs/scene-manifest.json', 'production_status.json'
+  ].map(async p => { const r = await fetch(p); if (!r.ok) throw Error(p); return r.json(); }));
+  document.getElementById('status').textContent = JSON.stringify(state.approval, null, 2);
+  for (const id of config.pilot_scene_ids) {
+    const scene = timeline.scenes.find(s => s.scene_id === id);
+    const title = document.createElement('h2'); title.textContent = id;
+    const video = document.createElement('video'); video.controls = true; video.style.maxWidth = '100%';
+    const url = new URL(scene.output, location.href);
+    if (url.origin !== location.origin) throw Error('Review media must be project-local');
+    video.src = url.href;
+    document.getElementById('pilots').append(title, video);
+  }
+} catch (error) { document.getElementById('status').textContent = 'Serve project over local HTTP: ' + error; }
+</script></body></html>

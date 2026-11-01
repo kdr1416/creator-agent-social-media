@@ -1,0 +1,83 @@
+{
+  "project_slug": "le-pham-nhu-quynh",
+  "scene_id": "scene_15",
+  "status": "passed_technical_and_visual_qa_awaiting_user_feedback",
+  "scope": "Only pilot scene; not full-film approval",
+  "engine": "HF_ONLY",
+  "style": "kurzgesagt",
+  "input_validation": {
+    "source_transcript_and_all_16_slices_hashes": "passed",
+    "pcm_reconstruction": "bit-perfect",
+    "source_files_unchanged": true,
+    "pilot_audio_copy_sha256": "c8561731374c10d98d2eccba52de7900fd5f8211b11d918d584d857637223d95"
+  },
+  "render": {
+    "path": "renders/scene_15.mp4",
+    "sha256": "5d6e72c7e9c7883e69815b762680da1dc0a91dfe54f0267bb31f885f7f29836c",
+    "codec": "H.264",
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "frames": 197,
+    "audio_codec": "AAC",
+    "audio_sample_rate": 48000,
+    "source_wav_duration": 6.544,
+    "container_duration": 6.566667,
+    "duration_delta": 0.022667,
+    "audio_peak_db": -2.3
+  },
+  "automated_check": {
+    "ok": true,
+    "version": "0.8.169",
+    "samples": [
+      0.55,
+      2.15,
+      2.85,
+      3.85,
+      5.95
+    ],
+    "lint": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "runtime": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "layout": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "contrast": {
+      "checked": 3,
+      "passed": 3
+    },
+    "automated_motion_assertions_enabled": false,
+    "recording_note": "CLI stdout captured on final check; Studio held history lock, so CLI did not persist its internal history report."
+  },
+  "visual_review": {
+    "opening_signature_final": "inspected source snapshots and rendered 3fps contact sheet",
+    "mobile_360x640": "passed",
+    "thumbnail_grayscale": "passed",
+    "arm_occlusion": "far arm behind torso; near arm foreground; connected elbows/hands",
+    "footer": "main content above y=1080; 200px footer clear",
+    "containers": "one real binder with spine/rings/turning paper; no generic information cards",
+    "redundancy": "page icons yield to hero icons; labels replace each other",
+    "playback": "Studio Play advanced from t=0 to t=6.544 and returned to Play state"
+  },
+  "proof_files": [
+    "qa/rendered-motion-sheet.jpg",
+    "qa/hero-frame.png",
+    "qa/mobile-360x640.png",
+    "qa/grayscale-thumbnail.png",
+    "qa/check-summary.json"
+  ],
+  "limitations": [
+    "Generic illustrated student, not a verified portrait of Như Quỳnh.",
+    "No BGM/SFX added; original voice is the only audio.",
+    "Word timing from local ASR is approximate; original transcript and timing remain authoritative.",
+    "User has not approved the pilot.",
+    "Scene 14 has a publication hold for the spoken experience claim."
+  ],
+  "source_index_sha256": "35007a6711c8fc1a886890c953c3edb3b640bf56b5ac1ae0d70def4e13e5b68f"
+}

@@ -1,0 +1,243 @@
+{
+  "scene_number": 6,
+  "scene_id": "S06",
+  "start": 23.857541666666666,
+  "end": 29.654125,
+  "start_sample": 572581,
+  "end_sample": 711699,
+  "source_segments": [
+    6
+  ],
+  "raw_text": "Không chỉ là sở hữu một tài sản ở Châu Âu, đây còn là cách xây dựng một nền tảng lâu dài cho cả gia đình.",
+  "corrected_text": "Không chỉ là sở hữu một tài sản ở Châu Âu, đây còn là cách xây dựng một nền tảng lâu dài cho cả gia đình.",
+  "semantic_type": "family situation",
+  "visual_center": "Chỗ cho cả gia đình",
+  "organic_motion_need": "Không cần diễn viên/plate hữu cơ; puppet vector có hành động chủ đích.",
+  "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+  "preferred_mode": "HF_ONLY",
+  "routing_confidence": "high",
+  "routing_reason": "Chỗ cho cả gia đình: hành động chủ đạo là mở rộng / cùng bàn các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ family situation, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+  "flow_contribution": "none",
+  "hf_contribution": "Mascot kéo lá bàn mở rộng; một chỗ ngồi mới vừa đủ hiện ra, mọi người xích lại chia sẻ bản kế hoạch không chữ.",
+  "fallback_mode": null,
+  "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+  "character": "yes",
+  "title": "Chỗ cho cả gia đình",
+  "takeaway": "Một kế hoạch dài hạn được cân nhắc ở cấp gia đình.",
+  "audio_source": [
+    "inputs/audio/seg_06.wav"
+  ],
+  "duration": 5.796583333333334,
+  "sample_frames": 139118,
+  "raw_segments": [
+    {
+      "seg_id": 6,
+      "segment_id": "seg_06",
+      "audio_slice": "audio_slices/seg_06.wav",
+      "start_sample": 572581,
+      "end_sample": 711699,
+      "sample_frames": 139118,
+      "start": 23.858,
+      "end": 29.654,
+      "duration": 5.797,
+      "sha256": "0ca1043e6c3b853c0cb09565dcd62f365143c09125b6ba26a574f990da6c4b74",
+      "raw_text": "Không chỉ là sở hữu một tài sản ở Châu Âu, đây còn là cách xây dựng một nền tảng lâu dài cho cả gia đình.",
+      "corrected_text": "Không chỉ là sở hữu một tài sản ở Châu Âu, đây còn là cách xây dựng một nền tảng lâu dài cho cả gia đình.",
+      "uncertainties": []
+    }
+  ],
+  "render_mode": "HF_ONLY",
+  "style_candidates": [
+    {
+      "id": "hf_existing:warm-doodle-mixed-media",
+      "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+    },
+    {
+      "id": "kurzgesagt",
+      "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+    },
+    {
+      "id": "izometrik",
+      "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+    },
+    {
+      "id": "bauhaus",
+      "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+    }
+  ],
+  "style_id": "hf_existing:warm-doodle-mixed-media",
+  "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+  "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+  "visual_verb": "mở rộng / cùng bàn",
+  "composition": "Bàn ăn hình oval lớn, nhìn nghiêng nhẹ trên nền peach; mascot và hai thành viên ở các phía. Mặt bàn sáng, chân bàn không đen nặng.",
+  "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+  "opening_state": "Bàn có một phần lá gấp, các thành viên nhìn về chỗ còn thiếu.",
+  "transformation": "Mascot kéo lá bàn mở rộng; một chỗ ngồi mới vừa đủ hiện ra, mọi người xích lại chia sẻ bản kế hoạch không chữ.",
+  "final_state": "Một bàn chung với các chỗ ngồi, cảm giác cùng chuẩn bị thay vì tài sản tự tăng giá.",
+  "protagonist_action": "Kéo bàn và kéo ghế cho người thân, không chỉ đứng cạnh nhà.",
+  "mascot_role": "Kéo bàn và kéo ghế cho người thân, không chỉ đứng cạnh nhà.",
+  "visual_family": "family situation",
+  "timed_beats": [
+    {
+      "local_seconds": 0,
+      "spoken_cue": "đầu lát nguồn",
+      "action": "Bàn có một phần lá gấp, các thành viên nhìn về chỗ còn thiếu.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 1.449,
+      "spoken_cue": "cụm ý đầu — đối chiếu WAV",
+      "action": "Mascot kéo lá bàn mở rộng",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 3.478,
+      "spoken_cue": "cụm ý sau — đối chiếu WAV",
+      "action": "Mascot kéo lá bàn mở rộng; một chỗ ngồi mới vừa đủ hiện ra, mọi người xích lại chia sẻ bản kế hoạch không chữ.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 4.811,
+      "spoken_cue": "đuôi câu / nghỉ",
+      "action": "Một bàn chung với các chỗ ngồi, cảm giác cùng chuẩn bị thay vì tài sản tự tăng giá.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    }
+  ],
+  "motion_emphasis_sequence": [
+    "Bàn có một phần lá gấp, các thành viên nhìn về chỗ còn thiếu.",
+    "Mascot kéo lá bàn mở rộng",
+    "Mascot kéo lá bàn mở rộng; một chỗ ngồi mới vừa đủ hiện ra, mọi người xích lại chia sẻ bản kế hoạch không chữ.",
+    "Một bàn chung với các chỗ ngồi, cảm giác cùng chuẩn bị thay vì tài sản tự tăng giá."
+  ],
+  "hf_signature_motion": "Mascot kéo lá bàn mở rộng; một chỗ ngồi mới vừa đủ hiện ra, mọi người xích lại chia sẻ bản kế hoạch không chữ.",
+  "flow_action": null,
+  "flow_camera": null,
+  "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+  "asset_contract": [
+    {
+      "layer": "table-top",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "table-leaf",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "chairs",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "family-puppets",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "blank-plan",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-rig",
+      "source": "approved mascot derivative",
+      "status": "planned",
+      "required_separate_layer": true
+    }
+  ],
+  "container_required": true,
+  "container_inventory": [
+    {
+      "object_type": "dining table",
+      "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+      "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+      "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+    }
+  ],
+  "container_semantics": [
+    {
+      "object_type": "dining table",
+      "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+      "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+      "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+    }
+  ],
+  "visible_text_budget": {
+    "max_simultaneous_words": 3,
+    "max_levels": 2,
+    "paragraphs": 0
+  },
+  "visible_text_inventory": [
+    {
+      "text": "CẢ GIA ĐÌNH",
+      "size_px": 54,
+      "role": "anchor",
+      "simultaneous": false
+    }
+  ],
+  "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Chữ trần trên nền sáng; không sweep.",
+  "accent_reason": "none",
+  "accent_treatment": "none",
+  "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+  "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+  "handoff": "Cắt cận mối kết nối ở cảnh 07, không dùng thêm thao tác mở đồ vật ngay đầu cảnh.",
+  "continuity_risk": "Gia đình tượng trưng, không mô tả quyền lợi pháp lý tự phát sinh từ mua nhà.",
+  "pilot": false,
+  "status": "designed_not_produced",
+  "must_keep": [
+    "Một kế hoạch dài hạn được cân nhắc ở cấp gia đình.",
+    "Mascot kéo lá bàn mở rộng; một chỗ ngồi mới vừa đủ hiện ra, mọi người xích lại chia sẻ bản kế hoạch không chữ.",
+    "voice/sample bounds",
+    "mascot identity, warm light palette, footer 200px",
+    "zero added CTA or documentary claims"
+  ],
+  "flexible": [
+    "Toạ độ/kích thước trong safe area",
+    "easing/pose/chi tiết nét",
+    "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+  ],
+  "reference_alignment": {
+    "colour_relationships": {
+      "reference_evidence": "Brief: cream/peach/lilac + accents",
+      "candidate_evidence": "S06: warm ground and vivid orange/blue/purple",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "typography_treatment": {
+      "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+      "candidate_evidence": "S06: local shipped font, sparse native text",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "asset_mix": {
+      "reference_evidence": "Reference 04/06: real campus plus drawing",
+      "candidate_evidence": "S06: Valletta photo where geographic evidence is needed; vector/physical paper elsewhere",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "composition": {
+      "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+      "candidate_evidence": "S06: Bàn ăn hình oval lớn, nhìn nghiêng nhẹ trên nền peach; mascot và hai thành viên ở các phía. Mặt bàn sáng, chân bàn không đen nặng.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "mascot_language": {
+      "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+      "candidate_evidence": "S06: Kéo bàn và kéo ghế cho người thân, không chỉ đứng cạnh nhà.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "motion_rhythm": {
+      "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+      "candidate_evidence": "S06: Mascot kéo lá bàn mở rộng; một chỗ ngồi mới vừa đủ hiện ra, mọi người xích lại chia sẻ bản kế hoạch không chữ.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    }
+  }
+}

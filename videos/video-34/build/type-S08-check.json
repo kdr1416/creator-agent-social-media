@@ -1,0 +1,176 @@
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (NVIDIA)" renderer="ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11)")
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "audio_file_without_element",
+        "severity": "warning",
+        "message": "Found audio file(s) in project (voice-excerpt.wav) but no <audio> element in any composition. The rendered video will be silent.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add an <audio id=\"my-audio\" src=\"voice-excerpt.wav\" data-start=\"0\" data-duration=\"__DURATION__\" data-track-index=\"0\" data-volume=\"1\"></audio> element inside the composition root. Replace __DURATION__ with the audio length in seconds."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "rotation_pivot_drift",
+        "severity": "warning",
+        "time": 5.289,
+        "selector": "#parent-head",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 362.195,
+          "y": 881.53,
+          "width": 191.33,
+          "height": 207.46
+        },
+        "rect": {
+          "left": 362.195,
+          "top": 881.53,
+          "right": 553.525,
+          "bottom": 1088.99,
+          "width": 191.33,
+          "height": 207.46
+        },
+        "message": "Rotating element's bounding-box center drifts 29px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).",
+        "fixHint": "The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.",
+        "firstSeen": 5.289,
+        "lastSeen": 5.289,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5.289
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 4.667,
+        "selector": "#ty-time-b",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 600,
+          "top": 647.33,
+          "right": 848.6,
+          "bottom": 798.83,
+          "width": 248.6,
+          "height": 151.5
+        },
+        "containerSelector": "#ty-caption",
+        "text": "GIAN",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {
+          "data-svg-origin": "400 436"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 600,
+          "y": 647.33,
+          "width": 248.6,
+          "height": 151.5
+        },
+        "firstSeen": 4.667,
+        "lastSeen": 4.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          4.667
+        ]
+      }
+    ],
+    "duration": 5.6,
+    "samples": [
+      0.311,
+      0.933,
+      1.556,
+      2.178,
+      2.8,
+      3.422,
+      4.044,
+      4.667,
+      5.289
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 2,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.311,
+      1.556,
+      2.8,
+      4.044,
+      5.289
+    ],
+    "checked": 7,
+    "passed": 7
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "saved": {
+    "id": "326d2286-4a3a-493c-9934-c7bf3508736a",
+    "revision": "dbcec94f-29ce-4620-a391-9b1370101aa2",
+    "report": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S08\\.hyperframes\\artifacts\\checks\\326d2286-4a3a-493c-9934-c7bf3508736a.json",
+    "attribution": "recorded-revision"
+  },
+  "_meta": {
+    "version": "0.8.170",
+    "latestVersion": "0.8.226",
+    "updateAvailable": true
+  }
+}

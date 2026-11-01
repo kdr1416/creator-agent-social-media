@@ -1,0 +1,203 @@
+⚠  Check report was not recorded: This project's history is open in another process (pid 28788).
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (NVIDIA)" renderer="ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11)")
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 5,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"hl-walk\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#hl-walk",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"hl-walk\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"hl-run\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#hl-run",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"hl-run\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"hl-cafe\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#hl-cafe",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"hl-cafe\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"hl-family\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#hl-family",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"hl-family\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "audio_file_without_element",
+        "severity": "warning",
+        "message": "Found audio file(s) in project (voice-excerpt.wav) but no <audio> element in any composition. The rendered video will be silent.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add an <audio id=\"my-audio\" src=\"voice-excerpt.wav\" data-start=\"0\" data-duration=\"__DURATION__\" data-track-index=\"0\" data-volume=\"1\"></audio> element inside the composition root. Replace __DURATION__ with the audio length in seconds."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 0.496,
+        "selector": "#hl-walk > div:nth-of-type(1) > span:nth-of-type(2)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 187.73,
+          "top": 251.19,
+          "right": 287.25,
+          "bottom": 347.19,
+          "width": 99.52,
+          "height": 96
+        },
+        "containerSelector": "div.top-shade",
+        "text": "bộ",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.67,
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 187.73,
+          "y": 251.19,
+          "width": 99.52,
+          "height": 96
+        },
+        "firstSeen": 0.496,
+        "lastSeen": 0.496,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          0.496
+        ]
+      }
+    ],
+    "duration": 8.933333333333,
+    "samples": [
+      0.496,
+      1.489,
+      2.481,
+      3.474,
+      4.467,
+      5.459,
+      6.452,
+      7.444,
+      8.437
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 1,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.496,
+      2.481,
+      4.467,
+      6.452,
+      8.437
+    ],
+    "checked": 8,
+    "passed": 8
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "_meta": {
+    "version": "0.8.170",
+    "latestVersion": "0.8.226",
+    "updateAvailable": true
+  }
+}

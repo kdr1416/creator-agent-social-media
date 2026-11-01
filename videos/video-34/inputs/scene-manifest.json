@@ -1,0 +1,138 @@
+{
+  "schema_version": 2,
+  "analysis_provenance": {
+    "analysis_agent": "antigravity",
+    "analyzed_at": "2026-11-01T10:45:54.932718+00:00",
+    "source_audio": "inputs/Generated Audio November 01, 2026 - 5_35PM.wav",
+    "reference_script": "inputs/transcript_raw.txt",
+    "sha256": "6b92d56bb90f3c4e702903d53d098d7c1765daf716879e8de60826a3110425c1",
+    "sample_rate": 24000,
+    "channels": 1,
+    "bit_depth": 16,
+    "total_samples": 2232960,
+    "duration_seconds": 93.04,
+    "asr_tool": "faster-whisper (model: small, compute_type: int8, vad: true)",
+    "split_strategy": "Zero-crossing at minimum RMS within acoustic pauses; contiguous bounds [start_sample, end_sample)"
+  },
+  "scenes": [
+    {
+      "scene_id": "S01",
+      "start_sample": 0,
+      "end_sample": 112563,
+      "raw_text": "Người mau ta và người Việt có một điểm rất giống nhau, đều yêu thích cuộc sống ngoài trời.",
+      "corrected_text": "Người Malta và người Việt có một điểm rất giống nhau: Đều yêu thích cuộc sống ngoài trời"
+    },
+    {
+      "scene_id": "S02",
+      "start_sample": 112563,
+      "end_sample": 243986,
+      "raw_text": "Có lẽ việc cùng gắn liền với biển và khi hậu nhiều nắng, người mau ta cũng có lối sống khá giống người Việt.",
+      "corrected_text": "Có lẽ vì cùng gắn liền với biển và khí hậu nhiều nắng, người Malta cũng có lối sống khá giống người Việt."
+    },
+    {
+      "scene_id": "S03",
+      "start_sample": 243986,
+      "end_sample": 458528,
+      "raw_text": "Họ thích đi bộ vào buổi sáng hoặc chiều muộn, chạy bộ dọc bơ biển, ngồi cà phê ngoài trời, gặp gỡ bạn bè tại các quản trường, hay dành cuối tuần cùng gia đình bên bãi biển.",
+      "corrected_text": "Họ thích đi bộ vào buổi sáng hoặc chiều muộn, chạy bộ dọc bờ biển, ngồi cà phê ngoài trời, gặp gỡ bạn bè tại các quảng trường hay dành cuối tuần cùng gia đình bên bãi biển."
+    },
+    {
+      "scene_id": "S04",
+      "start_sample": 458528,
+      "end_sample": 533049,
+      "raw_text": "Đó cũng là những hình ảnh rất quen thuộc ở Việt Nam.",
+      "corrected_text": "Đó cũng là những hình ảnh rất quen thuộc ở Việt Nam."
+    },
+    {
+      "scene_id": "S05",
+      "start_sample": 533049,
+      "end_sample": 682209,
+      "raw_text": "Người Việt thích dạo công viên, đi bộ ven xong, ngồi quán cà phê trò chuyện, hay đưa con đi biển vào dịp cuối tuần.",
+      "corrected_text": "Người Việt thích dạo công viên, đi bộ ven sông, ngồi quán cà phê trò chuyện hay đưa con đi biển vào dịp cuối tuần."
+    },
+    {
+      "scene_id": "S06",
+      "start_sample": 682209,
+      "end_sample": 856238,
+      "raw_text": "Chính sự tương đồng trong nhiệm sống này giúp nhiều gia đình Việt cảm thấy mau ta không quá xa lạ khi chuyển đến sân sống.",
+      "corrected_text": "Chính sự tương đồng trong nhịp sống này giúp nhiều gia đình Việt cảm thấy Malta không quá xa lạ khi chuyển đến sinh sống."
+    },
+    {
+      "scene_id": "S07",
+      "start_sample": 856238,
+      "end_sample": 966480,
+      "raw_text": "Một trong những điều làm nên chất lượng sống của mau ta không chỉ là hệ thống giáo dục hay y tế,",
+      "corrected_text": "Một trong những điều làm nên chất lượng sống của Malta không chỉ là hệ thống giáo dục hay y tế,"
+    },
+    {
+      "scene_id": "S08",
+      "start_sample": 966480,
+      "end_sample": 1101123,
+      "raw_text": "mà còn là văn hóa sống chậm, cân bằng giữa công việc và thời gian dành cho bản thân, gia đình.",
+      "corrected_text": "mà còn là văn hóa sống chậm, cân bằng giữa công việc và thời gian dành cho bản thân, gia đình."
+    },
+    {
+      "scene_id": "S09",
+      "start_sample": 1101123,
+      "end_sample": 1210802,
+      "raw_text": "trẻ em có nhiều cơ hội tham gia các hoạt động ngoài trời, vận động và khám phá thiền nhiên.",
+      "corrected_text": "Trẻ em có nhiều cơ hội tham gia các hoạt động ngoài trời, vận động và khám phá thiên nhiên."
+    },
+    {
+      "scene_id": "S10",
+      "start_sample": 1210802,
+      "end_sample": 1329535,
+      "raw_text": "Người lớn có thể tận hưởng không gian công cộng an toàn, sạch đẹp và gần gũi với biển.",
+      "corrected_text": "Người lớn có thể tận hưởng không gian công cộng an toàn, sạch đẹp và gần gũi với biển."
+    },
+    {
+      "scene_id": "S11",
+      "start_sample": 1329535,
+      "end_sample": 1432624,
+      "raw_text": "Đối với nhiều bực phủ huyên, điều đáng giá không chỉ là con được học ở một ngôi trường tốt,",
+      "corrected_text": "Đối với nhiều bậc phụ huynh, điều đáng giá không chỉ là con được học ở một ngôi trường tốt,"
+    },
+    {
+      "scene_id": "S12",
+      "start_sample": 1432624,
+      "end_sample": 1614842,
+      "raw_text": "mà còn là được lớn lên trong một ngôi trường khuyến khích, vận động, giao tiếp và phát triển toàn diện cả về thể chất lẫn tinh thần.",
+      "corrected_text": "mà còn là được lớn lên trong một môi trường khuyến khích vận động, giao tiếp và phát triển toàn diện cả về thể chất lẫn tinh thần."
+    },
+    {
+      "scene_id": "S13",
+      "start_sample": 1614842,
+      "end_sample": 1753804,
+      "raw_text": "Chỉ với khoảng 3,8 tỷ đồng, chương trình thể sân mau ta mang đến cơ hội định cư cho 4 thế hệ,",
+      "corrected_text": "Chỉ với khoảng 3,8 tỷ đồng, chương trình Thẻ xanh Malta mang đến cơ hội định cư cho 4 thế hệ."
+    },
+    {
+      "scene_id": "S14",
+      "start_sample": 1753804,
+      "end_sample": 1952400,
+      "raw_text": "không chỉ mở ra cánh cưa đến châu Âu, đây còn là cơ hội để cả gia đình tận hữu một lối sống lạnh mạnh gần của vi thi nhiên dạc cân bằng hơn mỗi ngày.",
+      "corrected_text": "Không chỉ mở ra cánh cửa đến Châu Âu, đây còn là cơ hội để cả gia đình tận hưởng một lối sống lành mạnh, gần gũi với thiên nhiên và cân bằng hơn mỗi ngày."
+    },
+    {
+      "scene_id": "S15",
+      "start_sample": 1952400,
+      "end_sample": 2027167,
+      "raw_text": "Bởi đôi khi, hạnh phúc không đến từ việc sống nhanh hơn,",
+      "corrected_text": "Bởi đôi khi, hạnh phúc không đến từ việc sống nhanh hơn,"
+    },
+    {
+      "scene_id": "S16",
+      "start_sample": 2027167,
+      "end_sample": 2126040,
+      "raw_text": "mà đến từ việc có nhiều thời gian hơn để đi dạo cùng con,",
+      "corrected_text": "mà đến từ việc có nhiều thời gian hơn để đi dạo cùng con,"
+    },
+    {
+      "scene_id": "S17",
+      "start_sample": 2126040,
+      "end_sample": 2232960,
+      "raw_text": "rồi cà phê với người thân và tận hưởng những điều dạn dị cuộc cuộc sống.",
+      "corrected_text": "ngồi cà phê với người thân và tận hưởng những điều giản dị của cuộc sống."
+    }
+  ]
+}

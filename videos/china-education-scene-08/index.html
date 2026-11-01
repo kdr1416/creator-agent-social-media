@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>4 Ngành Kỹ thuật Trọng điểm — scene 08</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:SceneSans;src:url('assets/scene-sans-bold.ttf') format('truetype');font-weight:700;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;background:#fff}#root{position:relative;width:100%;height:100%;overflow:hidden;color:#0F172A;font-family:SceneSans,sans-serif}
+.clip{position:absolute;inset:0}.ground{background:#fff}.art{width:100%;height:100%;display:block}
+.label{position:absolute;margin:0;font-size:32px;font-weight:700;line-height:1.15;letter-spacing:-.6px;white-space:nowrap}
+#label-title{left:60px;top:140px;font-size:42px;color:#0F172A}
+#label-sub{left:60px;top:198px;font-size:28px;color:#FF6B2B}
+
+.discipline-tag{position:absolute;font-size:24px;font-weight:700;color:#0F172A;background:#fff;padding:8px 18px;border-radius:24px;border:2px solid #CBD5E1;box-shadow:0 4px 12px rgba(15,23,42,0.06)}
+#tag-1{left:60px;top:430px}
+#tag-2{right:60px;top:570px}
+#tag-3{left:60px;top:710px}
+#tag-4{right:60px;top:850px}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-s08-root" id="root" data-composition-id="scene08" data-width="720" data-height="1280" data-duration="8.408" data-start="0">
+ <div data-hf-id="hf-s08-ground" id="scene08-ground" class="clip ground" data-start="0" data-duration="8.408" data-track-index="0"></div>
+ <svg data-hf-id="hf-s08-art" id="scene08-art" class="art clip" data-start="0" data-duration="8.408" data-track-index="1" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+   <radialGradient id="node-glow"><stop stop-color="#FF6B2B" stop-opacity=".7"/><stop offset="1" stop-color="#FF6B2B" stop-opacity="0"/></radialGradient>
+   <radialGradient id="teal-glow"><stop stop-color="#38BDF8" stop-opacity=".6"/><stop offset="1" stop-color="#38BDF8" stop-opacity="0"/></radialGradient>
+   <linearGradient id="bus-cable" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FF773B"/><stop offset="1" stop-color="#0284C7"/></linearGradient>
+  </defs>
+
+  <!-- Central connecting spine path -->
+  <path id="energy-spine" d="M180,480 C360,510 360,590 540,620 C360,650 360,730 180,760 C360,790 360,870 540,900" fill="none" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round"/>
+  <path id="energy-pulse-path" d="M180,480 C360,510 360,590 540,620 C360,650 360,730 180,760 C360,790 360,870 540,900" fill="none" stroke="url(#bus-cable)" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Energy Pulse Dot -->
+  <g id="pulse-orb"><circle r="22" fill="url(#node-glow)"/><circle r="9" fill="#FF6B2B"/><circle r="3.5" fill="#fff"/></g>
+
+  <!-- Node 1: Năng lượng quân sự (180, 480) -->
+  <g id="node-1" transform="translate(180, 480)">
+   <circle r="46" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="3"/>
+   <circle id="n1-glow" r="56" fill="url(#node-glow)" opacity="0"/>
+   <!-- Battery / Energy Core Icon -->
+   <rect x="-14" y="-22" width="28" height="44" rx="6" fill="#0F172A"/>
+   <rect x="-7" y="-27" width="14" height="6" rx="2" fill="#64748B"/>
+   <path d="M-5,-10 L4,-1 L-3,2 L3,12" stroke="#FF6B2B" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Node 2: Kỹ thuật quốc phòng & thông minh hóa (540, 620) -->
+  <g id="node-2" transform="translate(540, 620)">
+   <circle r="46" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="3"/>
+   <circle id="n2-glow" r="56" fill="url(#teal-glow)" opacity="0"/>
+   <!-- Shield & AI Radar Icon -->
+   <path d="M0,-24 L22,-14 V5 Q22,22 0,30 Q-22,22 -22,5 V-14 Z" fill="#0F172A"/>
+   <circle cx="0" cy="3" r="8" fill="#38BDF8"/>
+   <path d="M-12,-4 Q0,-14 12,-4" fill="none" stroke="#38BDF8" stroke-width="2.5"/>
+  </g>
+
+  <!-- Node 3: Thiết bị không người lái (180, 760) -->
+  <g id="node-3" transform="translate(180, 760)">
+   <circle r="46" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="3"/>
+   <circle id="n3-glow" r="56" fill="url(#node-glow)" opacity="0"/>
+   <!-- Drone Icon with Rotors -->
+   <path d="M-18,-8 L18,8 M-18,8 L18,-8" stroke="#64748B" stroke-width="4" stroke-linecap="round"/>
+   <circle cx="0" cy="0" r="10" fill="#0F172A"/>
+   <circle cx="0" cy="0" r="4" fill="#FF6B2B"/>
+   <ellipse id="r3-a" cx="-18" cy="-8" rx="10" ry="4" fill="#38BDF8"/>
+   <ellipse id="r3-b" cx="18" cy="8" rx="10" ry="4" fill="#38BDF8"/>
+  </g>
+
+  <!-- Node 4: Giao thông thông minh (540, 900) -->
+  <g id="node-4" transform="translate(540, 900)">
+   <circle r="46" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="3"/>
+   <circle id="n4-glow" r="56" fill="url(#teal-glow)" opacity="0"/>
+   <!-- Smart Vehicle / Transport Hub Icon -->
+   <rect x="-20" y="-12" width="40" height="24" rx="6" fill="#0F172A"/>
+   <circle cx="-10" cy="14" r="5" fill="#64748B"/><circle cx="10" cy="14" r="5" fill="#64748B"/>
+   <rect x="-14" y="-7" width="28" height="9" rx="3" fill="#38BDF8"/>
+  </g>
+ </svg>
+
+ <div class="label" id="label-title">CÁC NGÀNH MŨI NHỌN</div>
+ <div class="label" id="label-sub">Đào tạo Công nghệ Thế hệ mới</div>
+
+ <div class="discipline-tag" id="tag-1">1. NĂNG LƯỢNG QUÂN SỰ</div>
+ <div class="discipline-tag" id="tag-2">2. QUỐC PHÒNG & THÔNG MINH HÓA</div>
+ <div class="discipline-tag" id="tag-3">3. THIẾT BỊ KHÔNG NGƯỜI LÁI</div>
+ <div class="discipline-tag" id="tag-4">4. GIAO THÔNG THÔNG MINH</div>
+
+ <audio data-hf-id="hf-s08-voice" id="scene08-voice" src="assets/audio.wav" data-start="0" data-duration="8.408" data-track-index="2" data-volume="1"></audio>
+</div>
+
+<script>
+const tl = gsap.timeline({paused:true});
+const spine = document.getElementById('energy-pulse-path'), len = spine.getTotalLength();
+const pulseProgress = {u: 0};
+
+gsap.set(['#label-title', '#label-sub'], {opacity: 0, x: -20});
+gsap.set(['#tag-1', '#tag-2', '#tag-3', '#tag-4'], {opacity: 0, scale: 0.85});
+gsap.set(['#node-1', '#node-2', '#node-3', '#node-4'], {opacity: 0, scale: 0.7});
+gsap.set('#energy-pulse-path', {strokeDasharray: len, strokeDashoffset: len});
+gsap.set('#pulse-orb', {opacity: 0});
+
+// Initial placement
+const p0 = spine.getPointAtLength(0);
+gsap.set('#pulse-orb', {x: p0.x, y: p0.y});
+
+// Animation: 0 -> 8.408s
+tl.to(['#label-title', '#label-sub'], {opacity: 1, x: 0, duration: 0.6, stagger: 0.15, ease: 'power2.out'}, 0.2)
+  // Step 1: Energy (0 -> 2.0s)
+  .to('#node-1', {opacity: 1, scale: 1, duration: 0.6, ease: 'back.out(1.5)'}, 0.5)
+  .to('#tag-1', {opacity: 1, scale: 1, duration: 0.5, ease: 'back.out(1.4)'}, 0.7)
+  .to('#n1-glow', {opacity: 0.8, duration: 0.4, yoyo: true, repeat: 1}, 0.8)
+  
+  // Step 2: Defense AI (2.0 -> 4.0s)
+  .to('#pulse-orb', {opacity: 1, duration: 0.2}, 1.8)
+  .to(pulseProgress, {u: 0.33, duration: 1.2, ease: 'power1.inOut', onUpdate: () => {
+    const pt = spine.getPointAtLength(pulseProgress.u * len);
+    gsap.set('#pulse-orb', {x: pt.x, y: pt.y});
+    gsap.set('#energy-pulse-path', {strokeDashoffset: len * (1 - pulseProgress.u)});
+  }}, 1.8)
+  .to('#node-2', {opacity: 1, scale: 1, duration: 0.6, ease: 'back.out(1.5)'}, 2.8)
+  .to('#tag-2', {opacity: 1, scale: 1, duration: 0.5, ease: 'back.out(1.4)'}, 3.0)
+  .to('#n2-glow', {opacity: 0.8, duration: 0.4, yoyo: true, repeat: 1}, 3.1)
+
+  // Step 3: Drones (4.0 -> 6.0s)
+  .to(pulseProgress, {u: 0.66, duration: 1.2, ease: 'power1.inOut', onUpdate: () => {
+    const pt = spine.getPointAtLength(pulseProgress.u * len);
+    gsap.set('#pulse-orb', {x: pt.x, y: pt.y});
+    gsap.set('#energy-pulse-path', {strokeDashoffset: len * (1 - pulseProgress.u)});
+  }}, 3.8)
+  .to('#node-3', {opacity: 1, scale: 1, duration: 0.6, ease: 'back.out(1.5)'}, 4.8)
+  .to('#tag-3', {opacity: 1, scale: 1, duration: 0.5, ease: 'back.out(1.4)'}, 5.0)
+  .to('#n3-glow', {opacity: 0.8, duration: 0.4, yoyo: true, repeat: 1}, 5.1)
+  .to(['#r3-a', '#r3-b'], {rotation: 720, transformOrigin: '50% 50%', duration: 1.2, ease: 'power1.in'}, 5.1)
+
+  // Step 4: Intelligent Transport (6.0 -> 8.4s)
+  .to(pulseProgress, {u: 1.0, duration: 1.2, ease: 'power1.inOut', onUpdate: () => {
+    const pt = spine.getPointAtLength(pulseProgress.u * len);
+    gsap.set('#pulse-orb', {x: pt.x, y: pt.y});
+    gsap.set('#energy-pulse-path', {strokeDashoffset: len * (1 - pulseProgress.u)});
+  }}, 5.8)
+  .to('#node-4', {opacity: 1, scale: 1, duration: 0.6, ease: 'back.out(1.5)'}, 6.8)
+  .to('#tag-4', {opacity: 1, scale: 1, duration: 0.5, ease: 'back.out(1.4)'}, 7.0)
+  .to('#n4-glow', {opacity: 0.8, duration: 0.4, yoyo: true, repeat: 1}, 7.1);
+
+window.__timelines = window.__timelines || {};
+window.__timelines['scene08'] = tl;
+</script>
+</body>
+</html>

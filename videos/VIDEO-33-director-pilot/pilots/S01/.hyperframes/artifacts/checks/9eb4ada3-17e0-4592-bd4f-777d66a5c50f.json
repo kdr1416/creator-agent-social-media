@@ -1,0 +1,84 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 6.019416666667,
+    "samples": [
+      0,
+      1.5,
+      3.3,
+      5.8
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0,
+      1.5,
+      3.3,
+      5.8
+    ],
+    "checked": 3,
+    "passed": 3
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": true,
+    "files": [
+      ".hyperframes\\artifacts\\snapshots\\b88fa1e9-16f6-4230-a9e9-7e832c0fc1b1\\frame-00-at-0.0s.png",
+      ".hyperframes\\artifacts\\snapshots\\b88fa1e9-16f6-4230-a9e9-7e832c0fc1b1\\frame-01-at-1.5s.png",
+      ".hyperframes\\artifacts\\snapshots\\b88fa1e9-16f6-4230-a9e9-7e832c0fc1b1\\frame-02-at-3.3s.png",
+      ".hyperframes\\artifacts\\snapshots\\b88fa1e9-16f6-4230-a9e9-7e832c0fc1b1\\frame-03-at-5.8s.png"
+    ],
+    "times": [
+      0,
+      1.5,
+      3.3,
+      5.8
+    ],
+    "findingFiles": []
+  }
+}

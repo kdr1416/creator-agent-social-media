@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "reference": "creative/style-bible.md",
+  "style_id": "modern-premium-mediterranean-r1",
+  "palette": {
+    "navy": "#092740",
+    "azure": "#098EE6",
+    "turquoise": "#18D4D6",
+    "white": "#F6FCFF",
+    "coral": "#FF7156",
+    "sunlight": "#FFCE40"
+  },
+  "fonts": {
+    "display": {
+      "family": "Bahnschrift",
+      "path": "assets/fonts/display.ttf"
+    },
+    "editorial": {
+      "family": "Constantia Italic",
+      "path": "assets/fonts/editorial-italic.ttf"
+    },
+    "official_brand_font": false
+  },
+  "spacing": {},
+  "subtitles": {
+    "enabled": false,
+    "treatment": null
+  },
+  "characters": {
+    "enabled": false,
+    "assets": [],
+    "proposed": true,
+    "note": "Family casting/illustration pending review; no character assets created"
+  },
+  "motion": {
+    "shared_constraints": [],
+    "scene_overrides": {},
+    "proposed_principles": [
+      "causal action and contact",
+      "attention hierarchy",
+      "spatial and motion continuity"
+    ],
+    "note": "No common easing/preset approved; choreography in storyboard.md"
+  },
+  "approved_constraints": [],
+  "status": "typography_v2_pilot_awaiting_review",
+  "proposal_notes": {
+    "palette": "Creative estimates; not official brand colors",
+    "canvas": "9:16 confirmed; 1080x1920 proposed only",
+    "fps": "30 proposed only; project manifest unchanged",
+    "logo": "Original JPEG ratio 2046/2048; contain without recolor or crop"
+  },
+  "text_highlights": {
+    "enabled": true,
+    "source": "components/pilot-highlights.json",
+    "is_subtitles": false
+  }
+}

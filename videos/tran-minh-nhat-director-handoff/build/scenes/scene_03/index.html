@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>03 · Điểm đến Hà Lan</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'PilotDisplay';
+  src: url('assets/segoe-ui-black.ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arial.ttf');
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arialbd.ttf');
+  font-weight: 700;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; }
+
+#scene-03 {
+  position: relative;
+  width: 720px;
+  height: 1280px;
+  overflow: hidden;
+  background: #FFF3E8;
+  color: #30313B;
+  font-family: PilotSans, Arial, sans-serif;
+}
+
+#world {
+  position: absolute;
+  inset: 0;
+  transform-origin: 360px 650px;
+}
+
+/* Desk Surface background */
+#desk-base {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Paper Map Container */
+#map-container {
+  position: absolute;
+  left: 110px;
+  top: 290px;
+  width: 500px;
+  height: 520px;
+  background: #FFFEF9;
+  border: 3px solid #30313B;
+  border-radius: 6px;
+  box-shadow: 6px 10px 0 #30313b14;
+  overflow: hidden;
+  transform-origin: center center;
+  z-index: 10;
+}
+
+/* Map Paper Folds overlay */
+.map-fold-line {
+  stroke: #DCD3C7;
+  stroke-width: 2;
+  stroke-dasharray: 6 4;
+}
+
+/* Labels */
+.strip-banner {
+  position: absolute;
+  background: #087BC1;
+  color: #FFFFFF;
+  font-family: PilotDisplay, PilotSans, sans-serif;
+  font-weight: 900;
+  line-height: 1.1;
+  border-radius: 4px;
+  box-shadow: 4px 6px 0 #30313b14;
+  white-space: nowrap;
+}
+
+#country-label {
+  left: 145px;
+  top: 245px;
+  padding: 10px 24px;
+  font-size: 38px;
+  letter-spacing: 1.5px;
+  z-index: 25;
+}
+
+#city-pin {
+  position: absolute;
+  left: 285px;
+  top: 485px;
+  z-index: 22;
+}
+
+#city-label {
+  position: absolute;
+  left: 35px;
+  top: -16px;
+  background: #FFFCF7;
+  color: #30313B;
+  border: 2.2px solid #30313B;
+  font-family: PilotDisplay, PilotSans, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  padding: 4px 12px;
+  border-radius: 4px;
+  box-shadow: 3px 4px 0 #30313b12;
+  white-space: nowrap;
+}
+
+/* Hands of Student (overhead view) */
+#hands-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 30;
+}
+
+/* Envelope Container (aligns to exact Scene 04 coordinates at close) */
+#envelope-target {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 720px;
+  height: 1080px;
+  z-index: 20;
+}
+
+#offer-note {
+  position: absolute;
+  left: 139px;
+  top: 832px;
+  width: 350px;
+  font-size: 29px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  z-index: 25;
+  transform: rotate(-3deg);
+  color: #30313B;
+}
+
+/* Student mascot in bottom right (aligns to Scene 04 at close) */
+#student-match {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 720px;
+  height: 1080px;
+  z-index: 26;
+  pointer-events: none;
+}
+</style>
+</head>
+<body>
+<div id="scene-03" data-composition-id="scene-03" data-width="720" data-height="1280" data-start="0" data-duration="4.833333333333333">
+  <div id="world">
+    <!-- Desk surface background art matching Scene 04 -->
+    <svg id="desk-base" viewBox="0 0 720 1280">
+      <path d="M44 435Q45 342 115 355M614 958q47 9 47-43" fill="none" stroke="#D9CBDC" stroke-width="3" stroke-linecap="round"/>
+      <path d="M72 990Q357 1014 651 986" fill="none" stroke="#DCC8B7" stroke-width="3" stroke-linecap="round"/>
+      <ellipse cx="363" cy="985" rx="260" ry="19" fill="#E8D6C7" opacity=".55"/>
+    </svg>
+
+    <!-- Country Headline Label: HÀ LAN -->
+    <div id="country-label" class="strip-banner">HÀ LAN</div>
+
+    <!-- The Folded Paper Map of the Netherlands -->
+    <div id="map-container">
+      <svg id="map-svg" viewBox="0 0 500 520" width="100%" height="100%">
+        <!-- Subtle paper grid / compass rose -->
+        <rect width="500" height="520" fill="#FFFEFA"/>
+        <line x1="250" y1="0" x2="250" y2="520" class="map-fold-line"/>
+        <line x1="0" y1="260" x2="500" y2="260" class="map-fold-line"/>
+        
+        <!-- North Sea water texture on top/left -->
+        <path d="M30 40Q80 30 120 45M20 120Q70 100 110 115M30 200Q60 190 90 205" fill="none" stroke="#A8CADC" stroke-width="2" stroke-linecap="round"/>
+        <text x="60" y="90" font-family="PilotSans, sans-serif" font-size="16" font-weight="700" fill="#4B7085" letter-spacing="2">BIỂN BẮC</text>
+
+        <!-- Wadden Islands (Frisian Islands arc) -->
+        <path d="M140 75Q180 62 230 65M245 68Q280 75 320 85M335 92Q370 105 405 125" fill="none" stroke="#30313B" stroke-width="3.5" stroke-linecap="round"/>
+
+        <!-- Netherlands Geographic Landmass -->
+        <!-- Starts from southwest Zeeland delta, up through South Holland, North Holland peninsula,
+             around IJsselmeer, up to Groningen, down east border with Germany, and Limburg tail -->
+        <g id="netherlands-land">
+          <!-- Main territory polygon -->
+          <path d="
+            M 110 440
+            Q 105 400 130 380
+            Q 145 365 140 330
+            Q 135 295 155 240
+            Q 165 200 175 140
+            Q 190 120 220 125
+            Q 235 150 230 185
+            Q 245 205 270 200
+            Q 300 160 310 120
+            Q 350 115 390 130
+            Q 425 150 410 190
+            Q 430 220 400 260
+            Q 410 300 380 340
+            Q 370 380 330 410
+            Q 320 460 310 495
+            Q 295 505 280 470
+            Q 270 435 240 430
+            Q 210 420 180 445
+            Z"
+            fill="#E2EEDC" stroke="#30313B" stroke-width="3.2" stroke-linejoin="round"/>
+          
+          <!-- IJsselmeer / Markermeer inland water bay -->
+          <path d="
+            M 220 125
+            Q 250 130 280 150
+            Q 295 180 270 200
+            Q 240 205 230 185
+            Z"
+            fill="#C8E2F2" stroke="#30313B" stroke-width="2.5" stroke-linejoin="round"/>
+
+          <!-- Amsterdam location marker pin area -->
+          <!-- Amsterdam coordinates inside SVG: around x: 215, y: 220 -->
+          <g id="map-pin-group">
+            <circle cx="215" cy="220" r="18" fill="#FFAA28" opacity="0.35"/>
+            <circle cx="215" cy="220" r="9" fill="#FF7A30" stroke="#30313B" stroke-width="2.5"/>
+            <!-- Small architectural gable pop-up icon right above Amsterdam -->
+            <g id="campus-pop" transform="translate(198, 172)">
+              <polygon points="17,0 34,14 34,36 0,36 0,14" fill="#FFFDF8" stroke="#30313B" stroke-width="2.2" stroke-linejoin="round"/>
+              <rect x="11" y="16" width="12" height="20" rx="2" fill="#087BC1" stroke="#30313B" stroke-width="1.5"/>
+              <line x1="6" y1="12" x2="10" y2="12" stroke="#30313B" stroke-width="1.8"/>
+              <line x1="24" y1="12" x2="28" y2="12" stroke="#30313B" stroke-width="1.8"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+
+      <!-- Pin Label: Amsterdam -->
+      <div id="city-pin">
+        <svg width="45" height="35" viewBox="0 0 45 35" style="position: absolute; left: 0; top: 0; overflow: visible;">
+          <line x1="6" y1="18" x2="38" y2="0" stroke="#30313B" stroke-width="2.5"/>
+          <circle cx="6" cy="18" r="4" fill="#30313B"/>
+        </svg>
+        <div id="city-label">Amsterdam</div>
+      </div>
+    </div>
+
+    <!-- Student Hands overhead view -->
+    <svg id="hands-layer" viewBox="0 0 720 1280">
+      <!-- Left Hand -->
+      <g id="hand-left" transform="translate(120, 720)">
+        <!-- Sleeve arm -->
+        <path d="M0 120L35 30Q45 10 65 15L90 25Q105 35 100 60L75 140" fill="#FFAA28" stroke="#30313B" stroke-width="3.5"/>
+        <!-- Sleeve cuff -->
+        <path d="M35 30L100 60" stroke="#087BC1" stroke-width="6" stroke-linecap="round"/>
+        <!-- Hand / fingers pressing paper -->
+        <path d="M50 25Q60 -5 78 5Q95 15 90 35" fill="#FFAC3C" stroke="#30313B" stroke-width="3"/>
+        <circle cx="70" cy="12" r="7" fill="#FFAC3C"/>
+      </g>
+      <!-- Right Hand -->
+      <g id="hand-right" transform="translate(510, 720)">
+        <!-- Sleeve arm -->
+        <path d="M80 120L45 30Q35 10 15 15L-10 25Q-25 35 -20 60L5 140" fill="#FFAA28" stroke="#30313B" stroke-width="3.5"/>
+        <!-- Sleeve cuff -->
+        <path d="M45 30L-20 60" stroke="#087BC1" stroke-width="6" stroke-linecap="round"/>
+        <!-- Hand / fingers pressing paper -->
+        <path d="M30 25Q20 -5 2 5Q-15 15 -10 35" fill="#FFAC3C" stroke="#30313B" stroke-width="3"/>
+        <circle cx="10" cy="12" r="7" fill="#FFAC3C"/>
+      </g>
+    </svg>
+
+    <!-- The Envelope Target (Exact pilot04 dimensions & coordinates) -->
+    <div id="envelope-target">
+      <!-- Back -->
+      <svg id="envelope-back" viewBox="0 0 720 1080" style="position: absolute; inset: 0;">
+        <path d="M86 651L634 651Q645 651 645 667V934Q645 950 628 950H92Q75 950 75 934V667Q75 651 86 651Z" fill="#DFB69B" stroke="#30313B" stroke-width="3.3"/>
+      </svg>
+      <!-- Flap (Closed!) -->
+      <svg id="envelope-flap" viewBox="0 0 720 1080" style="position: absolute; inset: 0;">
+        <path d="M82 655H638L371 862Q360 871 349 862Z" fill="#F7D6BC" stroke="#30313B" stroke-width="3.3" stroke-linejoin="round"/>
+      </svg>
+      <!-- Front -->
+      <svg id="envelope-front" viewBox="0 0 720 1080" style="position: absolute; inset: 0;">
+        <path d="M77 663L360 859L643 663V934Q643 949 628 949H92Q77 949 77 934Z" fill="#F4C7A8" stroke="#30313B" stroke-width="3.3" stroke-linejoin="round"/>
+        <path d="M81 943L299 785M639 943L421 785" fill="none" stroke="#BA8B71" stroke-width="2.5"/>
+        <path d="M81 946L348 767Q360 757 372 767L639 946" fill="#FFDFC3" stroke="#30313B" stroke-width="3.3" stroke-linejoin="round"/>
+        <path d="M102 927L334 779" fill="none" stroke="#FFEFDE" stroke-width="4"/>
+      </svg>
+      <!-- Offer Note -->
+      <div id="offer-note">THƯ MỜI NHẬP HỌC</div>
+    </div>
+
+    <!-- Student Mascot (Positions matching Scene 04 frame 0!) -->
+    <div id="student-match">
+      <svg viewBox="0 0 720 1080" style="position: absolute; inset: 0;">
+        <g id="pilot04-student-group" transform="translate(497, 815)">
+          <ellipse cx="63" cy="203" rx="65" ry="10" fill="#D7BDA8" opacity=".5"/>
+          <path d="M48 143L41 190L18 194M90 143L98 190L120 194" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+          <rect x="103" y="50" width="39" height="91" rx="16" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+          <path d="M113 69L134 78" fill="none" stroke="#A2D8ED" stroke-width="3"/>
+          <g transform="translate(25 72)">
+            <g id="p4-arm-far">
+              <path d="M0 0Q-27-8-43-31" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="-43" cy="-31" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+            </g>
+          </g>
+          <path d="M21 31Q24 9 50 12L95 14Q123 16 122 46L115 121Q114 148 86 152L49 149Q20 148 17 123L13 58Q12 42 21 31Z" fill="#FFAA28" stroke="#30313B" stroke-width="3.3"/>
+          <path d="M25 41Q30 25 49 26" fill="none" stroke="#FFD77B" stroke-width="5" stroke-linecap="round"/>
+          <path d="M28 28Q17-8 61-9Q108-13 116 27Z" fill="#A990D5" stroke="#30313B" stroke-width="3"/>
+          <path d="M17 29Q54 14 111 29L131 34Q138 40 127 42L35 39" fill="#8B73C0" stroke="#30313B" stroke-width="3"/>
+          <g id="p4-eyes">
+            <ellipse cx="52" cy="68" rx="4.6" ry="7" fill="#30313B"/>
+            <ellipse cx="86" cy="67" rx="4.6" ry="7" fill="#30313B"/>
+          </g>
+          <path d="M57 91Q70 105 82 88" fill="none" stroke="#30313B" stroke-width="3.3" stroke-linecap="round"/>
+          <ellipse cx="39" cy="87" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+          <ellipse cx="99" cy="86" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+          <path d="M111 48L96 129" fill="none" stroke="#05669D" stroke-width="7" stroke-linecap="round"/>
+          <g transform="translate(109 83)">
+            <g id="p4-arm-near">
+              <path d="M0 0Q20 24 38 7" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="38" cy="7" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <audio id="c3-voice" src="assets/scene_03.wav" data-start="0" data-duration="4.833333333333333" data-track-index="2"></audio>
+</div>
+
+<script>
+(()=>{
+  const tl = gsap.timeline({ paused: true });
+
+  // Camera subtle push
+  tl.fromTo('#world', 
+    { scale: 1.04, y: 10 }, 
+    { scale: 1.0, y: 0, duration: 2.2, ease: 'power2.out' }, 
+    0
+  );
+
+  // Initial states
+  tl.set('#country-label', { opacity: 0, y: -25, scale: 0.88 }, 0);
+  tl.set('#campus-pop', { scale: 0, transformOrigin: '17px 36px' }, 0);
+  tl.set('#city-pin', { opacity: 0, scale: 0.7, transformOrigin: '0 18px' }, 0);
+  tl.set('#envelope-target', { opacity: 0, y: 80 }, 0);
+  tl.set('#student-match', { opacity: 0, x: 50 }, 0);
+
+  // 0.00 - 1.10s: "vừa chính thức chinh phục thành công"
+  // Map unfolds out from folded accordion
+  tl.fromTo('#map-container',
+    { scaleX: 0.25, opacity: 0.7, rotation: -4 },
+    { scaleX: 1.0, opacity: 1.0, rotation: 0, duration: 0.85, ease: 'back.out(1.2)' },
+    0
+  );
+
+  // Hands guide the map unfolding
+  tl.fromTo('#hand-left',
+    { x: 200, opacity: 0.7 },
+    { x: 120, opacity: 1.0, duration: 0.8, ease: 'power2.out' },
+    0
+  );
+  tl.fromTo('#hand-right',
+    { x: 420, opacity: 0.7 },
+    { x: 510, opacity: 1.0, duration: 0.8, ease: 'power2.out' },
+    0
+  );
+
+  // 1.10 - 2.80s: "một trong những trường đại học nghiên cứu"
+  // Amsterdam dot and campus pop-up rise
+  tl.to('#campus-pop', {
+    scale: 1,
+    duration: 0.45,
+    ease: 'back.out(2.0)'
+  }, 1.15);
+
+  tl.to('#city-pin', {
+    opacity: 1,
+    scale: 1,
+    duration: 0.4,
+    ease: 'back.out(1.5)'
+  }, 1.3);
+
+  // 2.0s: Country label "HÀ LAN" drops in
+  tl.to('#country-label', {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    duration: 0.45,
+    ease: 'back.out(1.6)'
+  }, 2.0);
+
+  // 2.80 - 4.10s: "danh tiếng nhất Hà Lan"
+  // Hands fold down the map as the cream envelope takes stage!
+  tl.to('#hands-layer', {
+    opacity: 0,
+    y: 60,
+    duration: 0.4,
+    ease: 'power2.in'
+  }, 2.75);
+
+  tl.to('#map-container', {
+    scaleY: 0.15,
+    opacity: 0,
+    y: -40,
+    duration: 0.55,
+    ease: 'power2.in'
+  }, 2.85);
+
+  tl.to('#country-label', {
+    opacity: 0,
+    y: -20,
+    duration: 0.35
+  }, 3.0);
+
+  // Envelope and Student Mascot glide into EXACT Scene 04 positions!
+  tl.to('#envelope-target', {
+    opacity: 1,
+    y: 0,
+    duration: 0.65,
+    ease: 'power2.out'
+  }, 3.1);
+
+  tl.to('#student-match', {
+    opacity: 1,
+    x: 0,
+    duration: 0.65,
+    ease: 'power2.out'
+  }, 3.25);
+
+  // 4.10 - 4.833s: Hold steady at exact opening frame of Scene 04!
+  tl.to({ hold: 0 }, { hold: 1, duration: 4.833333333333333, ease: 'none' }, 0);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines['scene-03'] = tl;
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "historyId": "68b3c3fd-3536-42c0-851a-b6d5712e1b2c",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "assets/font.ttf": {
+      "hash": "be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\68b3c3fd-3536-42c0-851a-b6d5712e1b2c\\blobs\\be\\be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\68b3c3fd-3536-42c0-851a-b6d5712e1b2c\\blobs\\c1\\c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "index.html": {
+      "hash": "0e851e6bc6069a5e8f42205c4615d2bf1b3e105d2420c67774ae65434cb2db05",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\68b3c3fd-3536-42c0-851a-b6d5712e1b2c\\blobs\\0e\\0e851e6bc6069a5e8f42205c4615d2bf1b3e105d2420c67774ae65434cb2db05"
+    },
+    "layered-art.svg": {
+      "hash": "b07000b2925e0afa76dd3cf27df60ce5807cd3eba216585dc3ace44534fef561",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\68b3c3fd-3536-42c0-851a-b6d5712e1b2c\\blobs\\b0\\b07000b2925e0afa76dd3cf27df60ce5807cd3eba216585dc3ace44534fef561"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "5123d528-a915-4f54-8dec-23f74bdaed17-0"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "5123d528-a915-4f54-8dec-23f74bdaed17-0",
+        "image": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S07-S08-design-r1\\S07\\01-ready\\frames\\frame-00-at-0.5s.png",
+        "time": 0.5,
+        "metadata": {
+          "width": 720,
+          "height": 1280,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793033274807,
+        "contentHash": "fda00b4413fbdda30b866dbca32fd0c33c0093ffc58487e8a32d36450d95b3b1",
+        "revision": null,
+        "inputFingerprint": "dced442e98fba18121f1d705966acdd30529d877db5bfeb7c6e4b90c1fc10975",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      }
+    ]
+  }
+}

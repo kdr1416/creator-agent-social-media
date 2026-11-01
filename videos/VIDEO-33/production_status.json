@@ -1,0 +1,33 @@
+{
+  "project_slug": "VIDEO-33",
+  "stage": "audio_ready_for_direction",
+  "status": "audio_ready_for_direction",
+  "created_at": "2026-10-26T18:35:00+07:00",
+  "roles": {
+    "audio_analysis_and_transcription": "Antigravity",
+    "director_review_routing_storyboard": "Codex / Director"
+  },
+  "artifacts": {
+    "audio_handoff": "audio_handoff.json",
+    "transcript_json": "transcript.json",
+    "transcript_md": "transcript.md",
+    "handoff_to_codex": "HANDOFF_TO_CODEX.md",
+    "source_audio": "inputs/source_audio.wav",
+    "audio_slices_dir": "audio_slices/"
+  },
+  "metrics": {
+    "sample_rate": 24000,
+    "channels": 1,
+    "bit_depth": 16,
+    "total_sample_frames": 1803840,
+    "total_duration": 75.16,
+    "total_segments": 17
+  },
+  "verification_status": {
+    "audio_integrity": "PASSED (Original PCM byte-identical match)",
+    "contiguity": "PASSED (Seamless contiguous sample alignment)",
+    "gap_or_overlap": false,
+    "reconstructed_pcm_sha256_match": true
+  },
+  "next_action": "Bàn giao folder videos/VIDEO-33 cho Đạo diễn/Codex để thẩm định 17 đoạn ý, xác minh 2 thông số trọng yếu (3,8 tỷ đồng & định cư 4 thế hệ), sau đó tiến hành phân cảnh (scene routing & storyboarding)."
+}

@@ -1,0 +1,6 @@
+{
+ "name":"youpass-first15-rebuild",
+ "private":true,
+ "type":"module",
+ "scripts":{"check":"npx --yes hyperframes@0.8.170 check","dev":"npx --yes hyperframes@0.8.170 preview","render":"npx --yes hyperframes@0.8.170 render --fps 30 --quality delivery --workers 2 --output renders/youpass-first15-silent.mp4"}
+}

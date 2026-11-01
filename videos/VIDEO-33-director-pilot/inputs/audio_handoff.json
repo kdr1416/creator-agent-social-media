@@ -1,0 +1,312 @@
+{
+  "project_slug": "VIDEO-33",
+  "created_by": "Antigravity (Phase A: Audio & Transcription)",
+  "status": "audio_ready_for_direction",
+  "source_audio": "inputs/source_audio.wav",
+  "source_audio_original_path": "input_voice/Generated Audio October 26, 2026 - 6_06PM.wav",
+  "source_audio_sha256": "cbd5a88b99c252d09ea86493377951aed1267186a5cb9ff11afe00947133e941",
+  "source_pcm_sha256": "80e095d3d1f20219de642dec538560a51aadf97fec1493f59524da228b5e0e00",
+  "reference_script_path": "scratch/video 33.txt",
+  "reference_script_note": "File scratch/video 33.txt has 0 bytes (empty). Full transcript reconstructed directly from audio phonetics and domain verification.",
+  "sample_rate": 24000,
+  "channels": 1,
+  "bit_depth": 16,
+  "total_sample_frames": 1803840,
+  "total_duration": 75.16,
+  "total_segments": 17,
+  "verification": {
+    "contiguity_check": "PASSED (start_sample[i] == end_sample[i-1] for all i >= 1)",
+    "sample_coverage": "0 to 1803840 (100% full coverage without gap or overlap)",
+    "total_frames_match": true,
+    "pcm_bit_for_bit_match": true,
+    "source_pcm_sha256": "80e095d3d1f20219de642dec538560a51aadf97fec1493f59524da228b5e0e00",
+    "reconstructed_pcm_sha256": "80e095d3d1f20219de642dec538560a51aadf97fec1493f59524da228b5e0e00"
+  },
+  "segments": [
+    {
+      "seg_id": 1,
+      "segment_id": "seg_01",
+      "audio_slice": "audio_slices/seg_01.wav",
+      "start_sample": 0,
+      "end_sample": 144466,
+      "sample_frames": 144466,
+      "start": 0.0,
+      "end": 6.019,
+      "duration": 6.019,
+      "sha256": "e89fa33915af9a42e51895845e837902d15198ac2677650ef25469e3aa42053a",
+      "raw_text": "Khi con du học Châu Âu, nhiều gia đình không chỉ đầu tư cho việc học, mà còn đầu tư cho một điểm tự lâu dài.",
+      "corrected_text": "Khi con du học Châu Âu, nhiều gia đình không chỉ đầu tư cho việc học, mà còn đầu tư cho một điểm tựa lâu dài.",
+      "uncertainties": [
+        "điểm tự -> điểm tựa: Giọng nói ngắt âm/lướt âm cuối; chuẩn văn phạm và ngữ nghĩa đầu tư là 'điểm tựa lâu dài'."
+      ]
+    },
+    {
+      "seg_id": 2,
+      "segment_id": "seg_02",
+      "audio_slice": "audio_slices/seg_02.wav",
+      "start_sample": 144466,
+      "end_sample": 236998,
+      "sample_frames": 92532,
+      "start": 6.019,
+      "end": 9.875,
+      "duration": 3.856,
+      "sha256": "c5382970c93a6838fa9cc45e2e1919639822d0b4bb8da1307830289eeb05c3cc",
+      "raw_text": "Trước nhiều phụ hình sẵn sàng chi hàng tỷ đồng cho hành trình du học của con,",
+      "corrected_text": "Trước nhiều phụ huynh sẵn sàng chi hàng tỷ đồng cho hành trình du học của con,",
+      "uncertainties": [
+        "phụ hình -> phụ huynh: ASR nhận nhầm thanh âm; giọng đọc phát âm 'phụ huynh'.",
+        "Trước nhiều phụ huynh: Giọng phát âm rõ âm 'Trước'. Có thể câu gốc dự kiến là 'Trước việc nhiều phụ huynh...' hoặc 'Rất nhiều phụ huynh...'. Do file scratch/video 33.txt có dung lượng 0 bytes, giữ nguyên chữ 'Trước' theo đúng âm thanh audio gốc và đánh dấu để Đạo diễn thẩm định."
+      ]
+    },
+    {
+      "seg_id": 3,
+      "segment_id": "seg_03",
+      "audio_slice": "audio_slices/seg_03.wav",
+      "start_sample": 236998,
+      "end_sample": 338898,
+      "sample_frames": 101900,
+      "start": 9.875,
+      "end": 14.121,
+      "duration": 4.246,
+      "sha256": "85c4f18fc8fe04a6cf4b967881d7eb3a9ae05dff10374598660140b1fec9470b",
+      "raw_text": "nhưng nếu con có kế hoạch học tập và phát triển sự nghiệp tại Châu Âu trong nhiều năm.",
+      "corrected_text": "nhưng nếu con có kế hoạch học tập và phát triển sự nghiệp tại Châu Âu trong nhiều năm,",
+      "uncertainties": [
+        "Dấu câu: Thay dấu chấm bằng dấu phẩy nối vế điều kiện với câu hỏi ở đoạn kế tiếp."
+      ]
+    },
+    {
+      "seg_id": 4,
+      "segment_id": "seg_04",
+      "audio_slice": "audio_slices/seg_04.wav",
+      "start_sample": 338898,
+      "end_sample": 435629,
+      "sample_frames": 96731,
+      "start": 14.121,
+      "end": 18.151,
+      "duration": 4.03,
+      "sha256": "3a77bee8bd6c8f1504ef92cdcbdb3b66e85e3334a3ed70512b978a6c4b1643c3",
+      "raw_text": "Liệu toàn bộ tài sản của gia đình có nên chỉ tập trung ở Việt Nam.",
+      "corrected_text": "Liệu toàn bộ tài sản của gia đình có nên chỉ tập trung ở Việt Nam?",
+      "uncertainties": [
+        "Dấu câu: ASR nhận dạng dấu chấm; đây là câu hỏi tu từ đặt vấn đề, chuẩn hoá thành dấu chấm hỏi '?'."
+      ]
+    },
+    {
+      "seg_id": 5,
+      "segment_id": "seg_05",
+      "audio_slice": "audio_slices/seg_05.wav",
+      "start_sample": 435629,
+      "end_sample": 572581,
+      "sample_frames": 136952,
+      "start": 18.151,
+      "end": 23.858,
+      "duration": 5.706,
+      "sha256": "662198c94d17a7fdb75a120490c24b3399744eb4b9c70361524153488c3e65bf",
+      "raw_text": "Đó là lý do ngày càng nhiều gia đình lựa chọn đa dạng hóa tài sản bằng bất đồng sản tại Manta.",
+      "corrected_text": "Đó là lý do ngày càng nhiều gia đình lựa chọn đa dạng hóa tài sản bằng bất động sản tại Malta.",
+      "uncertainties": [
+        "bất đồng sản -> bất động sản: Lỗi nhận dạng âm vị của ASR.",
+        "Manta -> Malta: ASR nhận dạng nhầm tên quốc đảo Nam Âu 'Malta' thành 'Manta'."
+      ]
+    },
+    {
+      "seg_id": 6,
+      "segment_id": "seg_06",
+      "audio_slice": "audio_slices/seg_06.wav",
+      "start_sample": 572581,
+      "end_sample": 711699,
+      "sample_frames": 139118,
+      "start": 23.858,
+      "end": 29.654,
+      "duration": 5.797,
+      "sha256": "0ca1043e6c3b853c0cb09565dcd62f365143c09125b6ba26a574f990da6c4b74",
+      "raw_text": "Không chỉ là sở hữu một tài sản ở Châu Âu, đây còn là cách xây dựng một nền tảng lâu dài cho cả gia đình.",
+      "corrected_text": "Không chỉ là sở hữu một tài sản ở Châu Âu, đây còn là cách xây dựng một nền tảng lâu dài cho cả gia đình.",
+      "uncertainties": []
+    },
+    {
+      "seg_id": 7,
+      "segment_id": "seg_07",
+      "audio_slice": "audio_slices/seg_07.wav",
+      "start_sample": 711699,
+      "end_sample": 823751,
+      "sample_frames": 112052,
+      "start": 29.654,
+      "end": 34.323,
+      "duration": 4.669,
+      "sha256": "676938e717191454e113106f70c7d97d8073f31482da8ea8f0c2577f2de71dc0",
+      "raw_text": "Khi có một tài sản tại Manta, gia đình có thêm một điểm kết nối với Châu Âu,",
+      "corrected_text": "Khi có một tài sản tại Malta, gia đình có thêm một điểm kết nối với Châu Âu,",
+      "uncertainties": [
+        "Manta -> Malta: ASR nhận nhầm tên riêng quốc gia Malta."
+      ]
+    },
+    {
+      "seg_id": 8,
+      "segment_id": "seg_08",
+      "audio_slice": "audio_slices/seg_08.wav",
+      "start_sample": 823751,
+      "end_sample": 955202,
+      "sample_frames": 131451,
+      "start": 34.323,
+      "end": 39.8,
+      "duration": 5.477,
+      "sha256": "52dffb05939d5d14871f523c3b722068dd226a1f63922505641e355a0eb7a62a",
+      "raw_text": "thuận tiện hơn cho những chuyến thăm con cho các kế hoạch học tập, sinh sống hoặc làm việc trong tương lai.",
+      "corrected_text": "thuận tiện hơn cho những chuyến thăm con, cho các kế hoạch học tập, sinh sống, hoặc làm việc trong tương lai.",
+      "uncertainties": [
+        "Dấu câu: Thêm dấu phẩy phân tách các cụm liệt kê để tăng tính mạch lạc cho phụ đề/storyboard."
+      ]
+    },
+    {
+      "seg_id": 9,
+      "segment_id": "seg_09",
+      "audio_slice": "audio_slices/seg_09.wav",
+      "start_sample": 955202,
+      "end_sample": 1072972,
+      "sample_frames": 117770,
+      "start": 39.8,
+      "end": 44.707,
+      "duration": 4.907,
+      "sha256": "c1957bc000a67d0dc6b16f039234bcf9d4bf474a3185aba60ca3ff80e78116f5",
+      "raw_text": "Đồng thời, diệt sở hữu tài sản ở nhiều thị trường cũng giúp đa dạng hóa dành một đầu tư",
+      "corrected_text": "Đồng thời, việc sở hữu tài sản ở nhiều thị trường cũng giúp đa dạng hóa danh mục đầu tư",
+      "uncertainties": [
+        "diệt -> việc: ASR nhận sai âm đầu.",
+        "dành một -> danh mục: ASR nhận sai thuật ngữ tài chính 'danh mục đầu tư'."
+      ]
+    },
+    {
+      "seg_id": 10,
+      "segment_id": "seg_10",
+      "audio_slice": "audio_slices/seg_10.wav",
+      "start_sample": 1072972,
+      "end_sample": 1134024,
+      "sample_frames": 61052,
+      "start": 44.707,
+      "end": 47.251,
+      "duration": 2.544,
+      "sha256": "9a02f7c1654541731b2eb9336fdaa6c2986524ee9c95bc6ed127194fe5e44077",
+      "raw_text": "thay vì phụ thuộc hoàn toàn do một quốc gia.",
+      "corrected_text": "thay vì phụ thuộc hoàn toàn vào một quốc gia.",
+      "uncertainties": [
+        "do -> vào: Giọng nói lướt âm, chuẩn hoá giới từ ngữ pháp tiếng Việt thành 'vào một quốc gia'."
+      ]
+    },
+    {
+      "seg_id": 11,
+      "segment_id": "seg_11",
+      "audio_slice": "audio_slices/seg_11.wav",
+      "start_sample": 1134024,
+      "end_sample": 1281789,
+      "sample_frames": 147765,
+      "start": 47.251,
+      "end": 53.408,
+      "duration": 6.157,
+      "sha256": "896700b281fa56ebba34c28bd695bc49ce565471536bbb46c572b1b4790f28c5",
+      "raw_text": "Chị giới khoảng 3,8 tỷ đồng, chương trình Thế San Manta mang đến cơ hội định cư cho 4 thế hệ.",
+      "corrected_text": "Chỉ với khoảng 3,8 tỷ đồng, chương trình Thẻ Xanh Malta mang đến cơ hội định cư cho 4 thế hệ.",
+      "uncertainties": [
+        "Chị giới -> Chỉ với: ASR nhận nhầm thanh âm.",
+        "Thế San Manta -> Thẻ Xanh Malta: ASR nhận sai tên chương trình 'Thẻ Xanh Malta' (chính sách Thường trú nhân Malta - MPRP)."
+      ]
+    },
+    {
+      "seg_id": 12,
+      "segment_id": "seg_12",
+      "audio_slice": "audio_slices/seg_12.wav",
+      "start_sample": 1281789,
+      "end_sample": 1358457,
+      "sample_frames": 76668,
+      "start": 53.408,
+      "end": 56.602,
+      "duration": 3.195,
+      "sha256": "c691de1563122b4b3ab83057799fde2c7b11426b712854add874ea0b2528e73b",
+      "raw_text": "Đây không chỉ là quyết định đầu tư vào một bước động sáng,",
+      "corrected_text": "Đây không chỉ là quyết định đầu tư vào một bất động sản,",
+      "uncertainties": [
+        "bước động sáng -> bất động sản: ASR nhận sai âm vị."
+      ]
+    },
+    {
+      "seg_id": 13,
+      "segment_id": "seg_13",
+      "audio_slice": "audio_slices/seg_13.wav",
+      "start_sample": 1358457,
+      "end_sample": 1445273,
+      "sample_frames": 86816,
+      "start": 56.602,
+      "end": 60.22,
+      "duration": 3.617,
+      "sha256": "765fbab61eca559ba64c10e1f702e2158a247bad613e01c3f2ad1a1c4f25057c",
+      "raw_text": "mà còn là quyết định đầu tư vào sự chuẩn bị cho tương lai của con gái",
+      "corrected_text": "mà còn là quyết định đầu tư vào sự chuẩn bị cho tương lai của con cái",
+      "uncertainties": [
+        "con gái -> con cái: Giọng đọc phát âm âm đuôi hơi giống 'con gái'. Tuy nhiên trong ngữ cảnh phân tích gia đình và con du học nói chung, từ chuẩn là 'con cái'. Nếu kịch bản gốc là câu chuyện riêng về con gái, Đạo diễn có thể giữ 'con gái'. Tạm ghi chú để Đạo diễn thẩm duyệt."
+      ]
+    },
+    {
+      "seg_id": 14,
+      "segment_id": "seg_14",
+      "audio_slice": "audio_slices/seg_14.wav",
+      "start_sample": 1445273,
+      "end_sample": 1530028,
+      "sample_frames": 84755,
+      "start": 60.22,
+      "end": 63.751,
+      "duration": 3.531,
+      "sha256": "dd4a08a93c400c6b52ac0ec599b0340f51429fad3d1ff14ad4540ee44981f16f",
+      "raw_text": "và những cơ hội mà các thế hệ sau có thể nắm bắt tại Châu Âu.",
+      "corrected_text": "và những cơ hội mà các thế hệ sau có thể nắm bắt tại Châu Âu.",
+      "uncertainties": []
+    },
+    {
+      "seg_id": 15,
+      "segment_id": "seg_15",
+      "audio_slice": "audio_slices/seg_15.wav",
+      "start_sample": 1530028,
+      "end_sample": 1639305,
+      "sample_frames": 109277,
+      "start": 63.751,
+      "end": 68.304,
+      "duration": 4.553,
+      "sha256": "af2f4845dbace74ad01664da0c420f9a6e1da190801d1a6251c1dbb6f8fb9d36",
+      "raw_text": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới.",
+      "corrected_text": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới.",
+      "uncertainties": []
+    },
+    {
+      "seg_id": 16,
+      "segment_id": "seg_16",
+      "audio_slice": "audio_slices/seg_16.wav",
+      "start_sample": 1639305,
+      "end_sample": 1736406,
+      "sample_frames": 97101,
+      "start": 68.304,
+      "end": 72.35,
+      "duration": 4.046,
+      "sha256": "801c60b360f0cc9391380c18b76c16745faabedbd6732402c9868ea671a6936a",
+      "raw_text": "Bởi đôi khi, điều giá chỉ nhất không phải là sở hữu thêm một căn nhà,",
+      "corrected_text": "Bởi đôi khi, điều giá trị nhất không phải là sở hữu thêm một căn nhà,",
+      "uncertainties": [
+        "giá chỉ -> giá trị: ASR nhận sai phụ âm cuối; giọng đọc chuẩn 'giá trị'."
+      ]
+    },
+    {
+      "seg_id": 17,
+      "segment_id": "seg_17",
+      "audio_slice": "audio_slices/seg_17.wav",
+      "start_sample": 1736406,
+      "end_sample": 1803840,
+      "sample_frames": 67434,
+      "start": 72.35,
+      "end": 75.16,
+      "duration": 2.81,
+      "sha256": "f4fa660a578c9b4d4dfeead21376a19df06803341976996ec44b5a6c5d842cd1",
+      "raw_text": "mà là sở hữu thêm một lựa chọn cho tương lai.",
+      "corrected_text": "mà là sở hữu thêm một lựa chọn cho tương lai.",
+      "uncertainties": []
+    }
+  ]
+}

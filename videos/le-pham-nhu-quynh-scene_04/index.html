@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>Định vị HAN — scene 04</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:SceneSans;src:url('assets/scene-sans-bold.ttf') format('truetype');font-weight:700;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;background:#fff}#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:SceneSans,sans-serif;color:#0F172A}
+.clip{position:absolute;inset:0}
+.art{display:block;width:100%;height:100%}
+.title-group{position:absolute;top:230px;left:0;width:100%;text-align:center;pointer-events:none}
+.uni-name{margin:0;font-size:46px;line-height:1.15;font-weight:700;letter-spacing:-0.5px;color:#0F172A}
+.uni-sub{margin:8px 0 0 0;font-size:26px;font-weight:700;letter-spacing:1px;color:#FF6B2B;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-s04-root" id="root" data-composition-id="scene04" data-width="720" data-height="1280" data-duration="3.293" data-start="0">
+ <div data-hf-id="hf-s04-bg" id="scene04-bg" class="clip" data-start="0" data-duration="3.293" data-track-index="0" style="background:#FFFFFF"></div>
+
+ <div data-hf-id="hf-s04-titles" id="titles" class="title-group">
+  <h1 data-hf-id="hf-s04-name" id="uni-name" class="uni-name">HAN University</h1>
+  <div data-hf-id="hf-s04-country" id="uni-sub" class="uni-sub">Hà Lan</div>
+ </div>
+
+ <svg data-hf-id="hf-s04-art" id="scene04-art" class="art clip" data-start="0" data-duration="3.293" data-track-index="1" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+   <radialGradient id="halo-s4"><stop stop-color="#CCECE9" stop-opacity=".75"/><stop offset="1" stop-color="#CCECE9" stop-opacity="0"/></radialGradient>
+   <linearGradient id="roof-grad" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#3C7081"/><stop offset="1" stop-color="#2B5765"/></linearGradient>
+   <linearGradient id="facade-grad" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EFF5F7"/></linearGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <ellipse cx="360" cy="680" rx="260" ry="220" fill="url(#halo-s4)"/>
+
+  <!-- Geographic ground rings -->
+  <g id="geo-rings">
+   <ellipse cx="360" cy="850" rx="280" ry="45" fill="none" stroke="#D7E8EC" stroke-width="2"/>
+   <ellipse cx="360" cy="850" rx="190" ry="30" fill="none" stroke="#B8D8DC" stroke-width="2.5" stroke-dasharray="6 6"/>
+   <ellipse cx="360" cy="850" rx="240" ry="38" fill="#EDF5F7" opacity=".6"/>
+  </g>
+
+  <!-- Incoming route spline curve from lower left -->
+  <path id="route-line" d="M100 1100 C150 960 260 880 360 840" fill="none" stroke="#FF6B2B" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="8 6"/>
+
+  <!-- Multi-layered Campus Model (Y520 - 850) -->
+  <g id="campus-model">
+   <!-- Base terrace / steps -->
+   <path d="M190 840 L530 840 L500 860 L220 860 Z" fill="#99BDC4"/>
+   <path d="M210 825 L510 825 L490 840 L230 840 Z" fill="#BDD6DC"/>
+   
+   <!-- Main central campus pavilion -->
+   <g id="central-block">
+    <!-- Main facade -->
+    <rect x="250" y="600" width="220" height="225" rx="4" fill="url(#facade-grad)" stroke="#B6D0D6" stroke-width="2"/>
+    <!-- Classical/Modern columns -->
+    <rect x="275" y="630" width="16" height="195" fill="#C5DFE4"/>
+    <rect x="315" y="630" width="16" height="195" fill="#C5DFE4"/>
+    <rect x="352" y="630" width="16" height="195" fill="#C5DFE4"/>
+    <rect x="389" y="630" width="16" height="195" fill="#C5DFE4"/>
+    <rect x="429" y="630" width="16" height="195" fill="#C5DFE4"/>
+    <!-- Grand glass entrance arch -->
+    <path d="M330 825 V710 Q360 690 390 710 V825 Z" fill="#3D7B80"/>
+    <path d="M336 825 V718 Q360 702 384 718 V825 Z" fill="#589B9E"/>
+    <!-- Pediment / Roof -->
+    <path d="M235 600 L360 510 L485 600 Z" fill="url(#roof-grad)"/>
+    <circle cx="360" cy="565" r="16" fill="#F48A54"/>
+    <path d="M352 565 H368 M360 557 V573" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+   </g>
+
+   <!-- Left wing -->
+   <g id="wing-left">
+    <rect x="170" y="660" width="80" height="165" fill="#D3E6EA" stroke="#A8C9D0" stroke-width="2"/>
+    <path d="M165 660 L210 625 L250 660 Z" fill="#4B828A"/>
+    <!-- Window grid -->
+    <rect x="185" y="685" width="20" height="30" fill="#3D7B80" rx="2"/>
+    <rect x="218" y="685" width="20" height="30" fill="#3D7B80" rx="2"/>
+    <rect x="185" y="735" width="20" height="30" fill="#3D7B80" rx="2"/>
+    <rect x="218" y="735" width="20" height="30" fill="#3D7B80" rx="2"/>
+    <rect x="185" y="785" width="20" height="30" fill="#3D7B80" rx="2"/>
+    <rect x="218" y="785" width="20" height="30" fill="#3D7B80" rx="2"/>
+   </g>
+
+   <!-- Right wing -->
+   <g id="wing-right">
+    <rect x="470" y="660" width="80" height="165" fill="#D3E6EA" stroke="#A8C9D0" stroke-width="2"/>
+    <path d="M470 660 L510 625 L555 660 Z" fill="#4B828A"/>
+    <!-- Window grid -->
+    <rect x="485" y="685" width="20" height="30" fill="#3D7B80" rx="2"/>
+    <rect x="518" y="685" width="20" height="30" fill="#3D7B80" rx="2"/>
+    <rect x="485" y="735" width="20" height="30" fill="#3D7B80" rx="2"/>
+    <rect x="518" y="735" width="20" height="30" fill="#3D7B80" rx="2"/>
+    <rect x="485" y="785" width="20" height="30" fill="#3D7B80" rx="2"/>
+    <rect x="518" y="785" width="20" height="30" fill="#3D7B80" rx="2"/>
+   </g>
+
+   <!-- Foreground trees -->
+   <ellipse cx="160" cy="830" rx="18" ry="32" fill="#5A9E82"/>
+   <ellipse cx="560" cy="830" rx="18" ry="32" fill="#5A9E82"/>
+  </g>
+
+  <!-- Geolocation Pin Drop (lands precisely on campus apex at 360, 500) -->
+  <g id="geo-pin">
+   <ellipse id="pin-shadow" cx="360" cy="515" rx="22" ry="7" fill="#204045" opacity=".4"/>
+   <g id="pin-body">
+    <path d="M360 510 C340 470 330 450 330 425 A30 30 0 1 1 390 425 C390 450 380 470 360 510 Z" fill="#FF6B2B" stroke="#FFFFFF" stroke-width="3.5"/>
+    <circle cx="360" cy="425" r="10" fill="#FFFFFF"/>
+   </g>
+  </g>
+ </svg>
+
+ <audio data-hf-id="hf-s04-voice" id="scene04-voice" src="assets/audio.wav" data-start="0" data-duration="3.293" data-track-index="2" data-volume="1"></audio>
+</div>
+
+<script>
+const tl = gsap.timeline({paused:true});
+
+// Initial setups
+gsap.set(['#titles', '#central-block', '#wing-left', '#wing-right'], {opacity:0});
+gsap.set('#central-block', {scaleY:0.7, transformOrigin:'50% 100%'});
+gsap.set(['#wing-left', '#wing-right'], {scaleX:0.7, transformOrigin:'50% 100%'});
+gsap.set('#geo-pin', {opacity:0, y:-120});
+gsap.set('#titles', {y:-15});
+
+const rLine = document.getElementById('route-line');
+const rLen = rLine.getTotalLength();
+rLine.style.strokeDasharray = rLen;
+rLine.style.strokeDashoffset = rLen;
+
+// Choreography (0.0s - 3.293s)
+// 0.0s - 0.7s: Route arrives from lower left
+tl.to(rLine, {strokeDashoffset:0, duration:0.7, ease:'power2.out'}, 0)
+
+// 0.5s - 1.8s: Campus wings & central block erect upward cleanly
+  .to('#central-block', {opacity:1, scaleY:1, duration:0.65, ease:'back.out(1.2)'}, 0.5)
+  .to(['#wing-left', '#wing-right'], {opacity:1, scaleX:1, duration:0.55, ease:'power2.out'}, 0.7)
+
+// 0.9s - 2.2s: Title group reveals at top
+  .to('#titles', {opacity:1, y:0, duration:0.5, ease:'power2.out'}, 0.9)
+
+// 1.5s - 2.5s: Geolocation pin drops onto the apex
+  .to('#geo-pin', {opacity:1, y:0, duration:0.6, ease:'bounce.out'}, 1.5)
+  .to('#pin-shadow', {scaleX:1.2, duration:0.3, yoyo:true, repeat:1}, 1.8)
+
+// 2.5s - 3.293s: Hold steady and crisp
+  .to('#geo-pin', {y:-5, duration:0.7, yoyo:true, repeat:1, ease:'sine.inOut'}, 2.1);
+
+window.__timelines = window.__timelines || {};
+window.__timelines['scene04'] = tl;
+</script>
+</body>
+</html>

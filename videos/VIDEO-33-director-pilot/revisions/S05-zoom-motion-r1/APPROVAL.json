@@ -1,0 +1,10 @@
+{
+  "scene": "S05",
+  "version": "S05-zoom-motion-r1",
+  "motion_approved": true,
+  "user_message_verbatim": "oke giờ bàn giao cho antigravity ghép các bản đã duyệt vào master mới và xem lại mạch phim, chuyển cảnh, đồng bộ voice một lượt di",
+  "approval_basis": "User requests assembly of approved versions immediately after viewing this pilot.",
+  "video_path": "revisions/S05-zoom-motion-r1/renders/pilot.mp4",
+  "sha256": "c53f14fdaff26500bac4bcd529fc6aee614a4126c3c87c8b35e72a12365f6a7b",
+  "approval_date_local": "2026-10-27"
+}

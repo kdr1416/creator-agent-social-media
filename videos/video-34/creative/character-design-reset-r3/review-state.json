@@ -1,0 +1,22 @@
+{
+  "status": "AWAITING CHARACTER DESIGN REVIEW",
+  "previous_revision": "R2",
+  "previous_character_decision": "REJECTED — NOT APPROVED; explicit user feedback in current chat",
+  "candidate_approval": "pending",
+  "reviewer": null,
+  "approved_at": null,
+  "approval_evidence": null,
+  "scope": "Three character directions and one static interaction test only; no scene development or animation",
+  "candidate_fingerprint": "e6552b9aed0e1fdda617552a96dd2f36879c6afcd1bff742e233dde8de74f8ff",
+  "provisional_context_candidate": "A — agent recommendation only; human decision pending",
+  "artifacts": [
+    "option-A.png",
+    "option-B.png",
+    "option-C.png",
+    "R2-vs-options.png",
+    "S08-interaction-A.png",
+    "scene-scale-A.png",
+    "scene-scale-B.png",
+    "scene-scale-C.png"
+  ]
+}

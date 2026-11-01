@@ -1,0 +1,1 @@
+{"scene":"yp-street","duration_s":4.233,"rules":["viewport-change","svg-path-draw"],"exit":{"vector":"background traffic x +12.5 or -12.5 px/s, hero beyond right edge","still_moving":true},"entry":{"vector":"camera scale -2.55 per second during rapid pullback","from_rest":false}}

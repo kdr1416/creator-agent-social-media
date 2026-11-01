@@ -1,0 +1,36 @@
+{
+  "assets": [
+    {
+      "path": "assets/doodle-kit.js",
+      "source": "Original hand-authored SVG rig created for this trial."
+    },
+    {
+      "path": "assets/paper.png",
+      "source": "Original deterministic procedural paper texture, seed20261020."
+    },
+    {
+      "path": "assets/scene-sans-bold.ttf",
+      "source": "Copied from existing user project; font identity retained, no new external font claim."
+    },
+    {
+      "path": "assets/gsap.min.js",
+      "source": "Copied from existing user project."
+    },
+    {
+      "path": "assets/fonts/Caveat-700-latin.woff2",
+      "source": "HyperFrames hw-arrow registry dependency; optional Latin-only accent."
+    },
+    {
+      "path": "compositions/components/hw-arrow.html",
+      "source": "HyperFrames registry; evaluated, not wired. Its standalone dark preview and overlay geometry did not implement the required contact/causal actions. Scene-specific vector paths used instead."
+    },
+    {
+      "path": "assets/scene_04.wav,scene_09.wav,scene_13.wav",
+      "source": "Byte-identical copies of user narration slices."
+    },
+    {
+      "path": "assets/narration.wav",
+      "source": "PCM concatenation of copied slices in sampled playback order; no resample, stretch or gain change."
+    }
+  ]
+}

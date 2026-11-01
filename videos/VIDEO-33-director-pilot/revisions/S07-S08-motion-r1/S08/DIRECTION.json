@@ -1,0 +1,51 @@
+{
+  "scene": "S08",
+  "duration": 5.477125,
+  "source_start_sample": 823751,
+  "source_end_sample": 955202,
+  "sample_rate": 24000,
+  "raw_text": "thuận tiện hơn cho những chuyến thăm con cho các kế hoạch học tập, sinh sống hoặc làm việc trong tương lai.",
+  "corrected_text": "thuận tiện hơn cho những chuyến thăm con, cho các kế hoạch học tập, sinh sống, hoặc làm việc trong tương lai.",
+  "original_voice_sha256": "52dffb05939d5d14871f523c3b722068dd226a1f63922505641e355a0eb7a62a",
+  "approved_frame_reference": "../../S07-S08-design-r1",
+  "timing_basis": "original sample boundaries; existing ASR word cues for internal beats, not independent phonetic alignment",
+  "cues": {
+    "arrival_walk": [
+      0.12,
+      1.4
+    ],
+    "greeting": [
+      1.45,
+      2.61
+    ],
+    "study_cut": 2.957041666666669,
+    "living_cut": 3.6370416666666685,
+    "work_cut": 4.41704166666667
+  },
+  "proof_times": [
+    0.15,
+    0.75,
+    1.35,
+    1.85,
+    2.5,
+    3.307041666666669,
+    3.8870416666666685,
+    4.287041666666669,
+    4.81704166666667,
+    5.32
+  ],
+  "approval": "motion_approved_by_user",
+  "user_approval": {
+    "scene_id": "S08",
+    "version": "S07-S08-motion-r1",
+    "approval_status": "approved",
+    "approval_scope": "pilot motion with original voice",
+    "approval_date_local": "2026-10-27",
+    "timezone": "Asia/Saigon",
+    "user_message_verbatim": "duyệt 2 pilot",
+    "video_path": "revisions/S07-S08-motion-r1/S08/renders/pilot.mp4",
+    "video_sha256": "be0a9cd957a3b7f92510a8b3d976473cb0a20ce25be56ef1cf2613b0f12b5bc5",
+    "master_replacement_authorized": false,
+    "full_film_production_authorized": false
+  }
+}

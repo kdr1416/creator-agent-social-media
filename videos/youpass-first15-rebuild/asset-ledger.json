@@ -1,0 +1,47 @@
+{
+  "source": "input_voice/FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4",
+  "derived_assets": [
+    {
+      "path": "assets/laptop-ui.png",
+      "source_time": 10.5,
+      "crop_xywh": [
+        29,
+        188,
+        304,
+        195
+      ]
+    },
+    {
+      "path": "assets/study-ui.png",
+      "source_time": 12,
+      "crop_xywh": [
+        25,
+        197,
+        312,
+        136
+      ]
+    },
+    {
+      "path": "assets/progress-ui.png",
+      "source_time": 14.5,
+      "crop_xywh": [
+        197,
+        298,
+        140,
+        122
+      ]
+    }
+  ],
+  "rebuilt_assets": [
+    "traffic and hero scooter",
+    "lavender city and school",
+    "orange compact mascot",
+    "house/night sky and window",
+    "study room and laptop props",
+    "headline strips and annotations",
+    "week route, ticks and metric"
+  ],
+  "fonts": "Local Arial regular/bold used as source-font approximation.",
+  "audio": "No audio assets, nodes or requested output stream.",
+  "registry_review": "paper-collage-reveal, hw-pipeline, hw-box-label and hw-arrow examined in reference/catalog.json. Their standalone collage/scatter/flowchart treatments do not reproduce the source scene actions; custom vector staging and draw-on curves used."
+}

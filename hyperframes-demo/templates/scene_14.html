@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=720, height=1280, initial-scale=1.0" />
+    <title>Scene 14 - 5 Trụ Cột Chiến Lược Toàn Diện</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        width: 720px;
+        height: 1280px;
+        background: #f8fafc;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        color: #0f172a;
+        overflow: hidden;
+      }
+
+      #root {
+        position: relative;
+        width: 720px;
+        height: 1280px;
+        background: #f8fafc;
+        overflow: hidden;
+      }
+
+      /* ── STUDIO CANVAS BACKGROUND ── */
+      .canvas-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background:
+          radial-gradient(circle at 50% 20%, rgba(255, 87, 34, 0.05) 0%, transparent 60%),
+          radial-gradient(circle at 50% 70%, rgba(15, 23, 42, 0.03) 0%, transparent 60%),
+          linear-gradient(to right, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+          #f8fafc;
+        background-size: 100% 100%, 100% 100%, 36px 36px, 36px 36px, 100% 100%;
+        z-index: 1;
+      }
+
+      /* ── BRAND PILL (Y: 42px) ── */
+      .brand-badge-wrapper {
+        position: absolute;
+        top: 42px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 20;
+      }
+      .brand-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #0f172a;
+        color: #ffffff;
+        padding: 7px 18px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        box-shadow: 0 4px 14px rgba(15, 23, 42, 0.1);
+        opacity: 0;
+        transform: translateY(-8px);
+      }
+      .brand-badge-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #ff5722;
+      }
+
+      /* ── HEADLINE (Y: 88px) ── */
+      .headline-wrapper {
+        position: absolute;
+        top: 88px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 20;
+        padding: 0 32px;
+      }
+      .headline {
+        font-size: 34px;
+        font-weight: 900;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        color: #0f172a;
+        text-transform: uppercase;
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      .headline-accent {
+        width: 64px;
+        height: 5px;
+        background: #ff5722;
+        border-radius: 999px;
+        margin: 10px auto 0;
+        opacity: 0;
+        transform: scaleX(0);
+      }
+
+      /* ── VERTICAL STRATEGIC ROADMAP STAGE (Y: 180px - 1000px) ── */
+      .roadmap-stage {
+        position: absolute;
+        top: 180px;
+        left: 0;
+        width: 720px;
+        height: 840px;
+        z-index: 25;
+      }
+
+      /* The Winding Connecting Vector Spine */
+      .roadmap-spine-svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 720px;
+        height: 720px;
+        pointer-events: none;
+        z-index: 10;
+      }
+
+      /* Individual Milestone Token Nodes (Open-Canvas, NO CARDS!) */
+      .milestone-node {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        z-index: 25;
+        opacity: 0;
+        transform: scale(0.6);
+      }
+
+      /* Alternating left and right orientation */
+      .node-1 { top: 20px; left: 100px; }
+      .node-2 { top: 150px; left: 340px; flex-direction: row-reverse; }
+      .node-3 { top: 290px; left: 100px; }
+      .node-4 { top: 430px; left: 340px; flex-direction: row-reverse; }
+      .node-5 { top: 570px; left: 190px; flex-direction: column; gap: 10px; }
+
+      /* Circular Token Graphic */
+      .token-disc {
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        background: #ffffff;
+        border: 3px solid #0f172a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+      }
+
+      .token-disc.active {
+        border-color: #ff5722;
+        box-shadow: 0 10px 28px rgba(255, 87, 34, 0.25);
+      }
+
+      .token-disc.gold {
+        border-color: #0f172a;
+        box-shadow: 0 10px 28px rgba(15, 23, 42, 0.2);
+      }
+
+      /* Number Tag on Token (White on Navy #0F172A = 15:1 contrast) */
+      .token-number {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: #0f172a;
+        color: #ffffff;
+        font-size: 11px;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #ff5722;
+      }
+
+      /* Typographic Label beside Token */
+      .token-info {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .token-title {
+        font-size: 19px;
+        font-weight: 900;
+        color: #0f172a;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+      }
+
+      .token-sub {
+        font-size: 12px;
+        font-weight: 800;
+        color: #334155;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .node-2 .token-info, .node-4 .token-info {
+        text-align: right;
+      }
+
+      .node-5 .token-info {
+        text-align: center;
+      }
+
+      /* Bottom Synthesis Badge (Y: 720px in stage, Y: 900px on canvas) */
+      .synthesis-badge-wrap {
+        position: absolute;
+        top: 730px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 30;
+      }
+
+      .synthesis-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: #0f172a;
+        color: #ffffff;
+        border: 2px solid #ff5722;
+        padding: 10px 26px;
+        border-radius: 999px;
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        box-shadow: 0 12px 32px rgba(15, 23, 42, 0.18);
+        opacity: 0;
+        transform: translateY(20px) scale(0.9);
+      }
+
+      .synthesis-star {
+        color: #fde047;
+        font-size: 16px;
+      }
+
+      /* Clean Subtitle Footer Guide (Y >= 1060px) */
+      .footer-safe-guide {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 720px;
+        height: 220px;
+        pointer-events: none;
+        z-index: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="clip" data-composition-id="main" data-width="720" data-height="1280" data-duration="7">
+      <audio id="voice-track" src="./assets/audio.wav" data-start="0" data-duration="7" preload="auto"></audio>
+
+      <!-- Background Canvas -->
+      <div class="canvas-bg"></div>
+
+      <!-- Top Branding -->
+      <div class="brand-badge-wrapper" data-layout-allow-overlap data-layout-allow-occlusion>
+        <div class="brand-badge" id="brand-badge">
+          <span class="brand-badge-dot"></span>
+          <span>ESORA • DU HỌC CANADA</span>
+        </div>
+      </div>
+
+      <!-- Headline -->
+      <div class="headline-wrapper" data-layout-allow-overlap data-layout-allow-occlusion>
+        <h1 class="headline" id="main-headline">5 TRỤ CỘT CHIẾN LƯỢC</h1>
+        <div class="headline-accent" id="headline-accent"></div>
+      </div>
+
+      <!-- Vertical Roadmap Stage (Open-Canvas, populating Y: 180px - 980px) -->
+      <div class="roadmap-stage" data-layout-allow-overlap data-layout-allow-occlusion>
+        <!-- Continuous SVG Roadmap Conduit Spine -->
+        <svg class="roadmap-spine-svg" viewBox="0 0 720 720" fill="none">
+          <!-- Background Conduit Guide Path -->
+          <path
+            id="guide-path"
+            d="M 137 57 C 220 57, 440 100, 477 187 C 500 240, 200 280, 137 327 C 90 365, 420 400, 477 467 C 520 520, 420 580, 360 607"
+            stroke="#CBD5E1"
+            stroke-width="4"
+            stroke-dasharray="6 6"
+          />
+          <!-- Active Flow Pulse Line -->
+          <path
+            id="active-path"
+            d="M 137 57 C 220 57, 440 100, 477 187 C 500 240, 200 280, 137 327 C 90 365, 420 400, 477 467 C 520 520, 420 580, 360 607"
+            stroke="#FF5722"
+            stroke-width="5"
+            stroke-linecap="round"
+            stroke-dasharray="1400"
+            stroke-dashoffset="1400"
+          />
+        </svg>
+
+        <!-- Node 1: TRƯỜNG HỌC -->
+        <div class="milestone-node node-1" id="node-1">
+          <div class="token-disc active" id="disc-1">
+            <span class="token-number">01</span>
+            <!-- Campus Building SVG -->
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
+              <path d="M6 6h10"/>
+              <path d="M6 10h10"/>
+              <path d="M6 14h6"/>
+            </svg>
+          </div>
+          <div class="token-info">
+            <span class="token-title">TRƯỜNG HỌC</span>
+            <span class="token-sub">CHỌN LỌC PHÙ HỢP</span>
+          </div>
+        </div>
+
+        <!-- Node 2: NGÀNH HỌC -->
+        <div class="milestone-node node-2" id="node-2">
+          <div class="token-disc active" id="disc-2">
+            <span class="token-number">02</span>
+            <!-- Target Focus SVG -->
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <circle cx="12" cy="12" r="6"/>
+              <circle cx="12" cy="12" r="2" fill="#FF5722"/>
+            </svg>
+          </div>
+          <div class="token-info">
+            <span class="token-title">NGÀNH HỌC</span>
+            <span class="token-sub">TIỀM NĂNG PHÁT TRIỂN</span>
+          </div>
+        </div>
+
+        <!-- Node 3: NGÂN SÁCH -->
+        <div class="milestone-node node-3" id="node-3">
+          <div class="token-disc gold" id="disc-3">
+            <span class="token-number">03</span>
+            <!-- Budget Vault & Coins SVG -->
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="6" width="20" height="12" rx="2"/>
+              <circle cx="12" cy="12" r="2"/>
+              <path d="M6 12h.01M18 12h.01"/>
+            </svg>
+          </div>
+          <div class="token-info">
+            <span class="token-title">NGÂN SÁCH</span>
+            <span class="token-sub">DỰ TRÙ THỰC TẾ</span>
+          </div>
+        </div>
+
+        <!-- Node 4: HỌC BỔNG -->
+        <div class="milestone-node node-4" id="node-4">
+          <div class="token-disc active" id="disc-4">
+            <span class="token-number">04</span>
+            <!-- Graduation Cap SVG -->
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+          </div>
+          <div class="token-info">
+            <span class="token-title">HỌC BỔNG</span>
+            <span class="token-sub">TỐI ƯU CHI PHÍ</span>
+          </div>
+        </div>
+
+        <!-- Node 5: TÀI CHÍNH TOÀN TRÌNH -->
+        <div class="milestone-node node-5" id="node-5">
+          <div class="token-disc active" id="disc-5">
+            <span class="token-number">05</span>
+            <!-- Shield & Growth SVG -->
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="m9 12 2 2 4-4" stroke="#FF5722"/>
+            </svg>
+          </div>
+          <div class="token-info">
+            <span class="token-title">TÀI CHÍNH TOÀN TRÌNH</span>
+            <span class="token-sub">KẾ HOẠCH DÀI HẠN VỮNG VÀNG</span>
+          </div>
+        </div>
+
+        <!-- Bottom Synthesis Badge -->
+        <div class="synthesis-badge-wrap" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="synthesis-badge" id="synthesis-badge">
+            <span class="synthesis-star">✦</span>
+            <span>KẾ HOẠCH DÀI HẠN</span>
+            <span class="synthesis-star">✦</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 220px Subtitle Footer Clearance -->
+      <div class="footer-safe-guide"></div>
+    </div>
+
+    <!-- GSAP Master Timeline (7.00s Duration) -->
+    <script>
+      const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+
+      // Initial States: scale 0 with full opacity preserves 100% contrast
+      gsap.set(["#brand-badge", "#main-headline", "#headline-accent"], { opacity: 0, y: -10 });
+      gsap.set("#headline-accent", { scaleX: 0 });
+      gsap.set(["#node-1", "#node-2", "#node-3", "#node-4", "#node-5"], { scale: 0, opacity: 1 });
+      gsap.set("#synthesis-badge", { scale: 0, opacity: 1, y: 0 });
+      gsap.set("#active-path", { strokeDashoffset: 1400 });
+
+      // ── BEAT 1 (0.0s – 1.8s): ENTRANCE ──
+      tl.to("#brand-badge", { opacity: 1, y: 0, duration: 0.45 }, 0.1);
+      tl.to("#main-headline", { opacity: 1, y: 0, duration: 0.55, ease: "back.out(1.2)" }, 0.25);
+      tl.to("#headline-accent", { opacity: 1, scaleX: 1, duration: 0.45 }, 0.5);
+
+      // Conduit path appears
+      tl.to("#guide-path", { opacity: 0.9, duration: 0.6 }, 0.8);
+
+      // ── BEAT 2 (1.8s – 5.0s): SEQUENTIAL ACTIVATION OF 5 PILLARS ──
+      // Scale-only transitions guarantee crisp 100% opaque text at all sampling timestamps
+      tl.to("#node-1", { scale: 1, duration: 0.35, ease: "back.out(1.5)" }, 1.8);
+      tl.to("#active-path", { strokeDashoffset: 1100, duration: 0.45, ease: "power1.inOut" }, 1.9);
+
+      tl.to("#node-2", { scale: 1, duration: 0.35, ease: "back.out(1.5)" }, 2.4);
+      tl.to("#active-path", { strokeDashoffset: 780, duration: 0.45, ease: "power1.inOut" }, 2.5);
+
+      tl.to("#node-3", { scale: 1, duration: 0.35, ease: "back.out(1.5)" }, 3.0);
+      tl.to("#active-path", { strokeDashoffset: 450, duration: 0.45, ease: "power1.inOut" }, 3.1);
+
+      tl.to("#node-4", { scale: 1, duration: 0.35, ease: "back.out(1.5)" }, 3.6);
+      tl.to("#active-path", { strokeDashoffset: 150, duration: 0.45, ease: "power1.inOut" }, 3.7);
+
+      tl.to("#node-5", { scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 4.2);
+      tl.to("#active-path", { strokeDashoffset: 0, duration: 0.5, ease: "power1.out" }, 4.3);
+
+      // ── BEAT 3 (5.0s – 7.0s): SYNTHESIS LOCK & STABLE HOLD ──
+      tl.to("#synthesis-badge", {
+        scale: 1,
+        duration: 0.35,
+        ease: "back.out(1.5)"
+      }, 5.0);
+
+      tl.to("#disc-5", {
+        boxShadow: "0 12px 36px rgba(255, 87, 34, 0.4)",
+        duration: 0.4
+      }, 5.2);
+
+      // Hold stable through 7.00s
+      tl.to({}, { duration: 1.4 }, 5.6);
+    </script>
+  </body>
+</html>

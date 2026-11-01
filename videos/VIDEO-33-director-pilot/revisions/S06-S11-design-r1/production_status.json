@@ -1,0 +1,90 @@
+{
+  "phase": "frames_approved_motion_authorized",
+  "user_approved": true,
+  "frames": [
+    {
+      "file": "S06\\01-ready\\frames\\frame-00-at-0.5s.png",
+      "sha256": "dafb6b401333d90352da3808d2d2432050c42ae75914d1e045482d2205e1e24d"
+    },
+    {
+      "file": "S06\\02-pull\\frames\\frame-00-at-0.5s.png",
+      "sha256": "befdf631e9ed3db9a68b1ffa53c1452ed3d77d06ea4a5305728ef970301b7a79"
+    },
+    {
+      "file": "S06\\03-together\\frames\\frame-00-at-0.5s.png",
+      "sha256": "8ddcbbecebbb56f5a901c6bc16cdb115acba7076b743b57fef732458ba45827e"
+    },
+    {
+      "file": "S11\\01-offer\\frames\\frame-00-at-0.5s.png",
+      "sha256": "67561062b541b0ea0fd0c95546668f0c12cda6dd2b148ad5549c484c32f45e98"
+    },
+    {
+      "file": "S11\\02-receive\\frames\\frame-00-at-0.5s.png",
+      "sha256": "d97200194780bb9ab8c8028ad098c502caaf6fb4b92b74484ae28590607a5a8c"
+    },
+    {
+      "file": "S11\\03-packed\\frames\\frame-00-at-0.5s.png",
+      "sha256": "6df389f0c6e538d0743fb3e953169674bc1aec2e462f5141e2481d09d4f42630"
+    }
+  ],
+  "new_motion_rendered": false,
+  "master_modified": false,
+  "voice_modified": false,
+  "representative_checks": {
+    "S06\\02-pull": {
+      "ok": true,
+      "lint": [],
+      "runtime": [],
+      "layout": [],
+      "contrast": []
+    },
+    "S11\\02-receive": {
+      "ok": true,
+      "lint": [],
+      "runtime": [],
+      "layout": [],
+      "contrast": []
+    }
+  },
+  "QA_scope": "Six static frames captured; mobile/grayscale generated. Pose continuity and moving grip/seat transitions still need motion validation after frame approval.",
+  "approval": {
+    "version": "S06-S11-design-r1",
+    "scene_ids": [
+      "S06",
+      "S11"
+    ],
+    "approval_status": "approved",
+    "approval_scope": "six static frames and action direction; proceed to separate motion pilots for review",
+    "user_message_verbatim": "oke tiếp theo",
+    "interpretation": "Approval of the displayed frame round and instruction to proceed to the next motion step.",
+    "approval_date_local": "2026-10-27",
+    "motion_approved": false,
+    "full_film_authorized": false,
+    "frames": [
+      {
+        "file": "S06\\01-ready\\frames\\frame-00-at-0.5s.png",
+        "sha256": "dafb6b401333d90352da3808d2d2432050c42ae75914d1e045482d2205e1e24d"
+      },
+      {
+        "file": "S06\\02-pull\\frames\\frame-00-at-0.5s.png",
+        "sha256": "befdf631e9ed3db9a68b1ffa53c1452ed3d77d06ea4a5305728ef970301b7a79"
+      },
+      {
+        "file": "S06\\03-together\\frames\\frame-00-at-0.5s.png",
+        "sha256": "8ddcbbecebbb56f5a901c6bc16cdb115acba7076b743b57fef732458ba45827e"
+      },
+      {
+        "file": "S11\\01-offer\\frames\\frame-00-at-0.5s.png",
+        "sha256": "67561062b541b0ea0fd0c95546668f0c12cda6dd2b148ad5549c484c32f45e98"
+      },
+      {
+        "file": "S11\\02-receive\\frames\\frame-00-at-0.5s.png",
+        "sha256": "d97200194780bb9ab8c8028ad098c502caaf6fb4b92b74484ae28590607a5a8c"
+      },
+      {
+        "file": "S11\\03-packed\\frames\\frame-00-at-0.5s.png",
+        "sha256": "6df389f0c6e538d0743fb3e953169674bc1aec2e462f5141e2481d09d4f42630"
+      }
+    ]
+  }
+}

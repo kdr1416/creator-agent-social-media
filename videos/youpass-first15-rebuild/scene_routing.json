@@ -1,0 +1,28 @@
+{
+  "scope": "new silent reference reconstruction, not original production rewrite",
+  "all_modes": "HF_ONLY",
+  "reason": "The supplied clip is predominantly layered2D cartoon/typography/collage; the rebuild reproduces vector state changes and exact UI timing, not organic liveaction.",
+  "audit": "All5 HF scenes retained after reconsideration: visual families differ (street environment, night establishing shot, room acting, device hero, collage/progress). No Flow wallpaper.",
+  "scenes": [
+    {
+      "id": "yp-street",
+      "render_mode": "HF_ONLY"
+    },
+    {
+      "id": "yp-night",
+      "render_mode": "HF_ONLY"
+    },
+    {
+      "id": "yp-room",
+      "render_mode": "HF_ONLY"
+    },
+    {
+      "id": "yp-laptop",
+      "render_mode": "HF_ONLY"
+    },
+    {
+      "id": "yp-study",
+      "render_mode": "HF_ONLY"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "fps": 30,
+  "rounding": "Nearest frame, integer half-up; boundary from original sample indices",
+  "total_frames": 2046,
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "start_sample": 0,
+      "end_sample": 77087,
+      "start_frame": 0,
+      "end_frame_exclusive": 96,
+      "target_picture_frames": 96,
+      "target_picture_duration": 3.2,
+      "voice_duration": 3.2119583333333335
+    },
+    {
+      "scene_id": "scene_02",
+      "start_sample": 77087,
+      "end_sample": 182085,
+      "start_frame": 96,
+      "end_frame_exclusive": 228,
+      "target_picture_frames": 132,
+      "target_picture_duration": 4.4,
+      "voice_duration": 4.374916666666667
+    },
+    {
+      "scene_id": "scene_03",
+      "start_sample": 182085,
+      "end_sample": 298236,
+      "start_frame": 228,
+      "end_frame_exclusive": 373,
+      "target_picture_frames": 145,
+      "target_picture_duration": 4.833333333333333,
+      "voice_duration": 4.839625
+    },
+    {
+      "scene_id": "scene_04",
+      "start_sample": 298236,
+      "end_sample": 442731,
+      "start_frame": 373,
+      "end_frame_exclusive": 553,
+      "target_picture_frames": 180,
+      "target_picture_duration": 6.0,
+      "voice_duration": 6.020625
+    },
+    {
+      "scene_id": "scene_05",
+      "start_sample": 442731,
+      "end_sample": 520028,
+      "start_frame": 553,
+      "end_frame_exclusive": 650,
+      "target_picture_frames": 97,
+      "target_picture_duration": 3.2333333333333334,
+      "voice_duration": 3.2207083333333335
+    },
+    {
+      "scene_id": "scene_06",
+      "start_sample": 520028,
+      "end_sample": 644652,
+      "start_frame": 650,
+      "end_frame_exclusive": 806,
+      "target_picture_frames": 156,
+      "target_picture_duration": 5.2,
+      "voice_duration": 5.192666666666667
+    },
+    {
+      "scene_id": "scene_07",
+      "start_sample": 644652,
+      "end_sample": 747452,
+      "start_frame": 806,
+      "end_frame_exclusive": 934,
+      "target_picture_frames": 128,
+      "target_picture_duration": 4.266666666666667,
+      "voice_duration": 4.283333333333333
+    },
+    {
+      "scene_id": "scene_08",
+      "start_sample": 747452,
+      "end_sample": 822164,
+      "start_frame": 934,
+      "end_frame_exclusive": 1028,
+      "target_picture_frames": 94,
+      "target_picture_duration": 3.1333333333333333,
+      "voice_duration": 3.113
+    },
+    {
+      "scene_id": "scene_09",
+      "start_sample": 822164,
+      "end_sample": 903862,
+      "start_frame": 1028,
+      "end_frame_exclusive": 1130,
+      "target_picture_frames": 102,
+      "target_picture_duration": 3.4,
+      "voice_duration": 3.4040833333333333
+    },
+    {
+      "scene_id": "scene_10",
+      "start_sample": 903862,
+      "end_sample": 987529,
+      "start_frame": 1130,
+      "end_frame_exclusive": 1234,
+      "target_picture_frames": 104,
+      "target_picture_duration": 3.466666666666667,
+      "voice_duration": 3.486125
+    },
+    {
+      "scene_id": "scene_11",
+      "start_sample": 987529,
+      "end_sample": 1073073,
+      "start_frame": 1234,
+      "end_frame_exclusive": 1341,
+      "target_picture_frames": 107,
+      "target_picture_duration": 3.566666666666667,
+      "voice_duration": 3.5643333333333334
+    },
+    {
+      "scene_id": "scene_12",
+      "start_sample": 1073073,
+      "end_sample": 1179135,
+      "start_frame": 1341,
+      "end_frame_exclusive": 1474,
+      "target_picture_frames": 133,
+      "target_picture_duration": 4.433333333333334,
+      "voice_duration": 4.41925
+    },
+    {
+      "scene_id": "scene_13",
+      "start_sample": 1179135,
+      "end_sample": 1229581,
+      "start_frame": 1474,
+      "end_frame_exclusive": 1537,
+      "target_picture_frames": 63,
+      "target_picture_duration": 2.1,
+      "voice_duration": 2.101916666666667
+    },
+    {
+      "scene_id": "scene_14",
+      "start_sample": 1229581,
+      "end_sample": 1342447,
+      "start_frame": 1537,
+      "end_frame_exclusive": 1678,
+      "target_picture_frames": 141,
+      "target_picture_duration": 4.7,
+      "voice_duration": 4.70275
+    },
+    {
+      "scene_id": "scene_15",
+      "start_sample": 1342447,
+      "end_sample": 1448462,
+      "start_frame": 1678,
+      "end_frame_exclusive": 1811,
+      "target_picture_frames": 133,
+      "target_picture_duration": 4.433333333333334,
+      "voice_duration": 4.417291666666666
+    },
+    {
+      "scene_id": "scene_16",
+      "start_sample": 1448462,
+      "end_sample": 1522442,
+      "start_frame": 1811,
+      "end_frame_exclusive": 1903,
+      "target_picture_frames": 92,
+      "target_picture_duration": 3.066666666666667,
+      "voice_duration": 3.0825
+    },
+    {
+      "scene_id": "scene_17",
+      "start_sample": 1522442,
+      "end_sample": 1636800,
+      "start_frame": 1903,
+      "end_frame_exclusive": 2046,
+      "target_picture_frames": 143,
+      "target_picture_duration": 4.766666666666667,
+      "voice_duration": 4.764916666666666
+    }
+  ]
+}

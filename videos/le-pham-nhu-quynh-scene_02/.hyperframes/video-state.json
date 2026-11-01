@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "historyId": "a541e2b1-bd13-4851-bb94-c44d1fcd6781",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "assets/audio.wav": {
+      "hash": "960cace01e5d24a06675fb65d25b187730a69ba4fc55ff742a1cb4b0081d694d",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\a541e2b1-bd13-4851-bb94-c44d1fcd6781\\blobs\\96\\960cace01e5d24a06675fb65d25b187730a69ba4fc55ff742a1cb4b0081d694d"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\a541e2b1-bd13-4851-bb94-c44d1fcd6781\\blobs\\c1\\c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "assets/scene-sans-bold.ttf": {
+      "hash": "aeb9e4a6ec5cc59f4d72df8189032d7dbb28f45161cf1552174818b5465dac4e",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\a541e2b1-bd13-4851-bb94-c44d1fcd6781\\blobs\\ae\\aeb9e4a6ec5cc59f4d72df8189032d7dbb28f45161cf1552174818b5465dac4e"
+    },
+    "index.html": {
+      "hash": "3166df7cb21aeefc415712984f32eaf4a3c524895dc2749d38beb32ca4ce1815",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\a541e2b1-bd13-4851-bb94-c44d1fcd6781\\blobs\\31\\3166df7cb21aeefc415712984f32eaf4a3c524895dc2749d38beb32ca4ce1815"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "4539e37b-1496-4bba-839a-0213837a7b71",
+      "completedAt": 1792309637867,
+      "output": "D:\\Năm 3\\flowkit-main\\output\\le-pham-nhu-quynh\\scene_02.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

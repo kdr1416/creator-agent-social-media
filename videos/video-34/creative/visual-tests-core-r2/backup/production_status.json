@@ -1,0 +1,85 @@
+{
+  "schema_version": 2,
+  "phase": "pilot_awaiting_human_review",
+  "approval": {
+    "status": "pending",
+    "reviewer": null,
+    "approved_at": null,
+    "evidence": null,
+    "fingerprint": null
+  },
+  "scenes": {
+    "S03": {
+      "status": "pilot_rendered_awaiting_human_review",
+      "engine": "hyperframes",
+      "source": "scenes/S03/index.html",
+      "output": "scenes/S03/S03-pilot.mp4",
+      "source_sha256": "e32dda9023e2f691a3e3f710ceaacd87d00d4cb8c2b41fad2ae1f1ffb4c4904d",
+      "output_sha256": "7da370afc9b258624ca7f7f037652ca35a90a45ad3670ce87518d1c604dcb44f",
+      "technical_qa": "passed_with_documented_warnings",
+      "visual_qa": "Actual MP4 typography frames inspected at 360x640; human review pending",
+      "frames": 268,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "audio_samples": 214542,
+      "evidence": "build/pilot-evidence/",
+      "known_limits": [
+        "Stylized gait and simplified character acting; human creative review pending"
+      ],
+      "creative_revision": "Typography V2",
+      "revision_notes": "build/type-pilot-delivery.json",
+      "delivery_output": "scenes/S03/S03-pilot-typography-v2.mp4"
+    },
+    "S08": {
+      "status": "pilot_rendered_awaiting_human_review",
+      "engine": "hyperframes",
+      "source": "scenes/S08/index.html",
+      "output": "scenes/S08/S08-pilot.mp4",
+      "source_sha256": "be6c07b9b903f813d06f847cfd33ff1d8a5c7d09cad6818aefcc7cdadd607b27",
+      "output_sha256": "d71ee2c8e4309990d437121bc86b3437e0afa0d9ecabf7339cd97dcf086f6878",
+      "technical_qa": "passed_with_documented_warnings",
+      "visual_qa": "Actual MP4 typography frames inspected at 360x640; human review pending",
+      "frames": 168,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "audio_samples": 134643,
+      "evidence": "build/pilot-evidence/",
+      "known_limits": [
+        "Stylized gait and simplified character acting; human creative review pending"
+      ],
+      "creative_revision": "Typography V2",
+      "revision_notes": "build/type-pilot-delivery.json",
+      "delivery_output": "scenes/S08/S08-pilot-typography-v2.mp4"
+    }
+  },
+  "final": {
+    "status": "pending"
+  },
+  "next_actions": [
+    "User view S03/S08 typography V2 pilot videos in REVIEW.html",
+    "Revise requested scene only; keep approval pending",
+    "No other scene/full production until explicit instruction; master and S13 unchanged"
+  ],
+  "storyboard": {
+    "status": "draft_complete_for_review",
+    "document": "creative/storyboard.md",
+    "style_bible": "creative/style-bible.md",
+    "assets_plan": "creative/assets-components-plan.md",
+    "pilot_candidates": [
+      "S03",
+      "S08"
+    ],
+    "pilot_built": true,
+    "factual_review_required": [
+      "S13"
+    ],
+    "timing_review_required": [
+      "ASR word 334 crosses S14/S15 boundary; master and manifest unchanged"
+    ]
+  },
+  "pilot_status": "AWAITING HUMAN REVIEW",
+  "creative_revision": "Typography V2 from reviewed keyframes",
+  "prior_pilot_feedback": "NOT APPROVED — CREATIVE REVISION REQUIRED"
+}

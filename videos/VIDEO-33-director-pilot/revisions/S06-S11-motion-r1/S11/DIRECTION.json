@@ -1,0 +1,86 @@
+{
+  "scene": "S11",
+  "duration": 6.811833333333333,
+  "source_start_sample": 1281789,
+  "source_end_sample": 1445273,
+  "sample_frames": 163484,
+  "sample_rate": 24000,
+  "source_segments": [
+    12,
+    13
+  ],
+  "raw_text": "Đây không chỉ là quyết định đầu tư vào một bước động sáng, mà còn là quyết định đầu tư vào sự chuẩn bị cho tương lai của con gái",
+  "corrected_text": "Đây không chỉ là quyết định đầu tư vào một bất động sản, mà còn là quyết định đầu tư vào sự chuẩn bị cho tương lai của con cái",
+  "source_audio": [
+    "inputs/audio/seg_12.wav",
+    "inputs/audio/seg_13.wav"
+  ],
+  "source_audio_hashes": {
+    "inputs/audio/seg_12.wav": "c691de1563122b4b3ab83057799fde2c7b11426b712854add874ea0b2528e73b",
+    "inputs/audio/seg_13.wav": "765fbab61eca559ba64c10e1f702e2158a247bad613e01c3f2ad1a1c4f25057c"
+  },
+  "original_voice_sha256": "6967a2107ad003026179ac784d08216cd40ce0155f4a8e2bc5aa89155705a6b0",
+  "approved_frame_reference": "../../S06-S11-design-r1",
+  "cues": {
+    "reach_to_notebook": [
+      2.3,
+      2.95
+    ],
+    "shared_grip": [
+      2.95,
+      3.23
+    ],
+    "parent_release": [
+      3.23,
+      3.73
+    ],
+    "insert_with_held_book": [
+      3.84,
+      4.96
+    ],
+    "student_release": [
+      5.12,
+      5.64
+    ],
+    "ready_hold": [
+      5.64,
+      6.811833333333
+    ]
+  },
+  "proof_times": [
+    0.1,
+    2.6,
+    2.98,
+    3.5,
+    3.8,
+    4.2,
+    4.65,
+    5.15,
+    5.6,
+    6.6
+  ],
+  "contact_ranges": [
+    [
+      2.55,
+      3.75
+    ],
+    [
+      3.85,
+      5.5
+    ]
+  ],
+  "approval": "motion_approved_by_user",
+  "timing_basis": "Scene sample bounds immutable; internal motion cues are directorial and require playback review.",
+  "user_approval": {
+    "scene_id": "S11",
+    "version": "S06-S11-motion-r1",
+    "approval_status": "approved",
+    "approval_scope": "pilot motion with original voice",
+    "user_message_verbatim": "mình duyệt s06 và s11. tiếp tục làm frame s10 và s12 đi",
+    "approval_date_local": "2026-10-27",
+    "video_path": "revisions/S06-S11-motion-r1/S11/renders/pilot.mp4",
+    "video_sha256": "8c2a703c3d78fedf4e696036933f5b6a60b6693c6f36043392fe10ac35766398",
+    "master_replacement_authorized": false,
+    "full_film_production_authorized": false
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "phase": "motion_pilots_approved",
+  "approved_frames": "../S07-S08-design-r1/APPROVAL.json",
+  "motion_approved": true,
+  "master_modified": false,
+  "original_voice_modified": false,
+  "pilots": [
+    {
+      "scene": "S07",
+      "path": "S07\\renders\\pilot.mp4",
+      "sha256": "f5a1eb22209608ae0edbdc8763523feb886d50caec3088601f8e186c87d89475",
+      "source_duration": 4.668833333333334,
+      "video_duration": 4.7,
+      "audio_duration": 4.7,
+      "video_frames": 141,
+      "audio_codec": "aac",
+      "audio_sample_rate": "48000",
+      "audio_channels": 2,
+      "source_voice_sha256": "676938e717191454e113106f70c7d97d8073f31482da8ea8f0c2577f2de71dc0",
+      "voice_copy_bit_exact": true,
+      "decoded_aac_correlation": 0.999830596969683,
+      "decoded_rms": 0.21140719950199127,
+      "hyperframes_check_ok": true,
+      "lint_warning_count": 0,
+      "proof_times": [
+        0.15,
+        1.55,
+        1.77,
+        2.14,
+        2.75,
+        3.2,
+        4.42
+      ],
+      "contact_sampling_fps": 12,
+      "motion_approved": true
+    },
+    {
+      "scene": "S08",
+      "path": "S08\\renders\\pilot.mp4",
+      "sha256": "be0a9cd957a3b7f92510a8b3d976473cb0a20ce25be56ef1cf2613b0f12b5bc5",
+      "source_duration": 5.477125,
+      "video_duration": 5.5,
+      "audio_duration": 5.5,
+      "video_frames": 165,
+      "audio_codec": "aac",
+      "audio_sample_rate": "48000",
+      "audio_channels": 2,
+      "source_voice_sha256": "52dffb05939d5d14871f523c3b722068dd226a1f63922505641e355a0eb7a62a",
+      "voice_copy_bit_exact": true,
+      "decoded_aac_correlation": 0.9999248616262066,
+      "decoded_rms": 0.19117334485054016,
+      "hyperframes_check_ok": true,
+      "lint_warning_count": 0,
+      "proof_times": [
+        0.15,
+        0.75,
+        1.35,
+        1.85,
+        2.5,
+        3.307041666666669,
+        3.8870416666666685,
+        4.287041666666669,
+        4.81704166666667,
+        5.32
+      ],
+      "contact_sampling_fps": 12,
+      "motion_approved": true
+    }
+  ],
+  "review_entry": "REVIEW.html",
+  "full_film_replaced": false,
+  "approved_frames_unchanged": true,
+  "qa_report": "QA_REPORT.md",
+  "user_approval": [
+    {
+      "scene_id": "S07",
+      "version": "S07-S08-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "approval_date_local": "2026-10-27",
+      "timezone": "Asia/Saigon",
+      "user_message_verbatim": "duyệt 2 pilot",
+      "video_path": "revisions/S07-S08-motion-r1/S07/renders/pilot.mp4",
+      "video_sha256": "f5a1eb22209608ae0edbdc8763523feb886d50caec3088601f8e186c87d89475",
+      "master_replacement_authorized": false,
+      "full_film_production_authorized": false
+    },
+    {
+      "scene_id": "S08",
+      "version": "S07-S08-motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "approval_date_local": "2026-10-27",
+      "timezone": "Asia/Saigon",
+      "user_message_verbatim": "duyệt 2 pilot",
+      "video_path": "revisions/S07-S08-motion-r1/S08/renders/pilot.mp4",
+      "video_sha256": "be0a9cd957a3b7f92510a8b3d976473cb0a20ce25be56ef1cf2613b0f12b5bc5",
+      "master_replacement_authorized": false,
+      "full_film_production_authorized": false
+    }
+  ],
+  "next_action": "Use these exact S07/S08 motion R1 files as approved references. Master replacement and other scene production require separate instruction."
+}

@@ -1,0 +1,317 @@
+{
+  "project_slug": "tran-minh-nhat",
+  "created_by": "Antigravity (Phase A: Audio & Transcription)",
+  "source_audio": "input_voice/Generated Audio October 21, 2026 - 8_21AM.wav",
+  "source_audio_sha256": "81ee44a9359794a5fe1bd0f51a1f5997f8502e08d8270cb730cc127286d0ac92",
+  "transcript_json": "scratch/voice_transcript.json",
+  "transcript_json_sha256": "21b57ee96be724070e4849daec38ade25ca385fd81af0edc67b169940d6d1554",
+  "transcript_md": "scratch/voice_transcript.md",
+  "transcript_md_sha256": "b1a6cea11738e1010f19c6b97e1bb9503e235ee302e1a39fd0a5da36c5455350",
+  "fullscript_reference": "scratch/tran-minh-nhat-raw.txt",
+  "sample_rate": 24000,
+  "channels": 1,
+  "bit_depth": 16,
+  "total_sample_frames": 1636800,
+  "total_duration": 68.2,
+  "total_scenes": 17,
+  "verification": {
+    "contiguity_check": "PASSED (start_sample[i+1] == end_sample[i] for all i)",
+    "sample_coverage": "0 to 1636800 (100% full coverage)",
+    "total_frames_match": true,
+    "reconstructed_pcm_sha256_match": true,
+    "source_pcm_sha256": "a5921c466be5396ee161e1f2750fbe5e4a61896ad5dd25f0569da7c39a056e37",
+    "reconstructed_pcm_sha256": "a5921c466be5396ee161e1f2750fbe5e4a61896ad5dd25f0569da7c39a056e37"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "seg_id": 1,
+      "audio_slice": "scratch/audio_slices/scene_01.wav",
+      "start_sample": 0,
+      "end_sample": 77087,
+      "sample_frames": 77087,
+      "duration": 3.212,
+      "start": 0.0,
+      "end": 3.212,
+      "sha256": "eda1eb638cf8afca0aefcba5826f8ad3b5fbcf278ebbb080dc1561c44c0140d6",
+      "raw_text": "Tôi có thể học ở bất kỳ đâu, vì tôi dám khác biệt.",
+      "fact_checked_text": "Tôi có thể học ở bất kỳ đâu, vì tôi dám khác biệt.",
+      "uncertainties": []
+    },
+    {
+      "scene_id": "scene_02",
+      "seg_id": 2,
+      "audio_slice": "scratch/audio_slices/scene_02.wav",
+      "start_sample": 77087,
+      "end_sample": 182085,
+      "sample_frames": 104998,
+      "duration": 4.375,
+      "start": 3.212,
+      "end": 7.587,
+      "sha256": "d70cf00e2adf2041ac1e71506a8a8d3f6744fa9fd306e24cd5f34a555b05d223",
+      "raw_text": "Đó cũng là tin thần của Trần Minh Nhật, chàng trai đến từ IMIT Việt Nam,",
+      "fact_checked_text": "Đó cũng là tinh thần của Trần Minh Nhật – chàng trai đến từ RMIT Việt Nam,",
+      "uncertainties": [
+        "tin thần -> tinh thần (chuẩn chính tả tiếng Việt)",
+        "IMIT Việt Nam -> RMIT Việt Nam (ASR nhận âm RMIT thành IMIT; theo fullscript và thực tế là Đại học RMIT Việt Nam)"
+      ]
+    },
+    {
+      "scene_id": "scene_03",
+      "seg_id": 3,
+      "audio_slice": "scratch/audio_slices/scene_03.wav",
+      "start_sample": 182085,
+      "end_sample": 298236,
+      "sample_frames": 116151,
+      "duration": 4.84,
+      "start": 7.587,
+      "end": 12.427,
+      "sha256": "d22bc4d3a231f225a5ea64b1b5429644572e2aa44ffe9d6a31adcbbef2f768e4",
+      "raw_text": "vừa chính thức chính phục thành công một trong những trường đại học nghiên cứu dành tiếng nhất Hà Lan.",
+      "fact_checked_text": "vừa chính thức chinh phục thành công một trong những trường đại học nghiên cứu danh tiếng nhất Hà Lan.",
+      "uncertainties": [
+        "chính phục -> chinh phục (chuẩn chính tả tiếng Việt)",
+        "dành tiếng -> danh tiếng (chuẩn chính tả tiếng Việt)"
+      ]
+    },
+    {
+      "scene_id": "scene_04",
+      "seg_id": 4,
+      "audio_slice": "scratch/audio_slices/scene_04.wav",
+      "start_sample": 298236,
+      "end_sample": 442731,
+      "sample_frames": 144495,
+      "duration": 6.021,
+      "start": 12.427,
+      "end": 18.447,
+      "sha256": "55a4529187c2060f4201a2f1141a6f7517c2255dec5d4b102d3599d1d44c8b24",
+      "raw_text": "Xin chúc mừng Minh Nhật đã nhận thứ mở nhập học từ V-University Amsterdam, VU Amsterdam.",
+      "fact_checked_text": "Xin chúc mừng Minh Nhật đã nhận thư mời nhập học từ: Vrije Universiteit Amsterdam (VU Amsterdam).",
+      "uncertainties": [
+        "thứ mở nhập học -> thư mời nhập học (ASR nhận nhầm dấu/âm)",
+        "V-University Amsterdam, VU Amsterdam -> Vrije Universiteit Amsterdam (VU Amsterdam) (ASR nhận phiên âm đọc tiếng Hà Lan của Vrije Universiteit Amsterdam)"
+      ]
+    },
+    {
+      "scene_id": "scene_05",
+      "seg_id": 5,
+      "audio_slice": "scratch/audio_slices/scene_05.wav",
+      "start_sample": 442731,
+      "end_sample": 520028,
+      "sample_frames": 77297,
+      "duration": 3.221,
+      "start": 18.447,
+      "end": 21.668,
+      "sha256": "1c6864d8790820decbc676d294dc09690f92158299e1f9105a50b9304f66b1a6",
+      "raw_text": "Một trong những trường đại học nghiên cứu hàng đầu Hà Lan và Châu Âu,",
+      "fact_checked_text": "Một trong những trường đại học nghiên cứu hàng đầu Hà Lan và châu Âu,",
+      "uncertainties": []
+    },
+    {
+      "scene_id": "scene_06",
+      "seg_id": 6,
+      "audio_slice": "scratch/audio_slices/scene_06.wav",
+      "start_sample": 520028,
+      "end_sample": 644652,
+      "sample_frames": 124624,
+      "duration": 5.193,
+      "start": 21.668,
+      "end": 26.86,
+      "sha256": "deb5086155956deaa12be2efee46c7d7a4d42f03d2b2feac0c9c9d5e74acf0ab",
+      "raw_text": "nổi tiếng với các lĩnh vực kinh doanh, khoa học giữ liệu, trí tuệ nhân tạo, luật và khoa học sức khỏe.",
+      "fact_checked_text": "nổi tiếng với các lĩnh vực Kinh doanh, Khoa học Dữ liệu, Trí tuệ nhân tạo, Luật và Khoa học Sức khỏe.",
+      "uncertainties": [
+        "khoa học giữ liệu -> Khoa học Dữ liệu (chuẩn thuật ngữ Data Science)"
+      ]
+    },
+    {
+      "scene_id": "scene_07",
+      "seg_id": 7,
+      "audio_slice": "scratch/audio_slices/scene_07.wav",
+      "start_sample": 644652,
+      "end_sample": 747452,
+      "sample_frames": 102800,
+      "duration": 4.283,
+      "start": 26.86,
+      "end": 31.144,
+      "sha256": "6c283804c6904a47273a6ae0e5d04e661ccd7ccb58d73642941f08bcc257b4b3",
+      "raw_text": "Tấm bằng từ VU Amsterdam, được các doanh nghiệp và tổ chức quốc tế đánh giá cao,",
+      "fact_checked_text": "Tấm bằng từ VU Amsterdam được các doanh nghiệp và tổ chức quốc tế đánh giá cao,",
+      "uncertainties": []
+    },
+    {
+      "scene_id": "scene_08",
+      "seg_id": 8,
+      "audio_slice": "scratch/audio_slices/scene_08.wav",
+      "start_sample": 747452,
+      "end_sample": 822164,
+      "sample_frames": 74712,
+      "duration": 3.113,
+      "start": 31.144,
+      "end": 34.257,
+      "sha256": "220bb11ee70b626ca989cb1b0785c8909b02350665bdc6413a659da637743d7d",
+      "raw_text": "mở ra nhiều cơ hội học tập và nghề nghiệp trên toàn cầu.",
+      "fact_checked_text": "mở ra nhiều cơ hội học tập và nghề nghiệp trên toàn cầu.",
+      "uncertainties": []
+    },
+    {
+      "scene_id": "scene_09",
+      "seg_id": 9,
+      "audio_slice": "scratch/audio_slices/scene_09.wav",
+      "start_sample": 822164,
+      "end_sample": 903862,
+      "sample_frames": 81698,
+      "duration": 3.404,
+      "start": 34.257,
+      "end": 37.661,
+      "sha256": "82456af6f2b7d993292bca0b847fa2df1fb8ffb2f0f6d758606baa9768ef37f6",
+      "raw_text": "Đằng sau thành quả ấy là cả một quá trình chuẩn bị nghiêm túc.",
+      "fact_checked_text": "Đằng sau thành quả ấy là cả một quá trình chuẩn bị nghiêm túc.",
+      "uncertainties": []
+    },
+    {
+      "scene_id": "scene_10",
+      "seg_id": 10,
+      "audio_slice": "scratch/audio_slices/scene_10.wav",
+      "start_sample": 903862,
+      "end_sample": 987529,
+      "sample_frames": 83667,
+      "duration": 3.486,
+      "start": 37.661,
+      "end": 41.147,
+      "sha256": "f00769831a9390a7bf5e0ca3587b1bd6953da9bc597d65b8a318a1ed0b74de16",
+      "raw_text": "Với sự đồng hành của đội ngủ Menthe Esora hơn 14 năm kinh nghiệm,",
+      "fact_checked_text": "Với sự đồng hành của đội ngũ Mentor Esora hơn 14 năm kinh nghiệm,",
+      "uncertainties": [
+        "đội ngủ -> đội ngũ (chuẩn chính tả tiếng Việt)",
+        "Menthe Esora -> Mentor Esora (ASR nhận âm Mentor thành Menthe)"
+      ]
+    },
+    {
+      "scene_id": "scene_11",
+      "seg_id": 11,
+      "audio_slice": "scratch/audio_slices/scene_11.wav",
+      "start_sample": 987529,
+      "end_sample": 1073073,
+      "sample_frames": 85544,
+      "duration": 3.564,
+      "start": 41.147,
+      "end": 44.711,
+      "sha256": "1830222046517674e5d5eb59943e244e5290c3fd6a7297762f89d3404c5b8115",
+      "raw_text": "Minh Nhật đã xây dẫn một bộ hồ sơ không chỉ thể hiện thành tích học tập,",
+      "fact_checked_text": "Minh Nhật đã xây dựng một bộ hồ sơ không chỉ thể hiện thành tích học tập,",
+      "uncertainties": [
+        "xây dẫn -> xây dựng (chuẩn chính tả tiếng Việt)"
+      ]
+    },
+    {
+      "scene_id": "scene_12",
+      "seg_id": 12,
+      "audio_slice": "scratch/audio_slices/scene_12.wav",
+      "start_sample": 1073073,
+      "end_sample": 1179135,
+      "sample_frames": 106062,
+      "duration": 4.419,
+      "start": 44.711,
+      "end": 49.131,
+      "sha256": "fdeb4c276a2ba33d9b081f44808f5c7d0d8ed1bb28adae597dfe54a4c11f6b0d",
+      "raw_text": "mà còn phản ánh rõ tư duy, cá tính và định hướng phát triển của bản thân.",
+      "fact_checked_text": "mà còn phản ánh rõ tư duy, cá tính và định hướng phát triển của bản thân.",
+      "uncertainties": [
+        "tư duy (ASR và audio đọc rõ là 'tư duy'; fullscript ghi 'tư Phong', đây là lỗi gõ trong script gốc, giữ đúng âm thanh voice là 'tư duy')"
+      ]
+    },
+    {
+      "scene_id": "scene_13",
+      "seg_id": 13,
+      "audio_slice": "scratch/audio_slices/scene_13.wav",
+      "start_sample": 1179135,
+      "end_sample": 1229581,
+      "sample_frames": 50446,
+      "duration": 2.102,
+      "start": 49.131,
+      "end": 51.233,
+      "sha256": "7b1ef75e605e5e81e0aa3cbfe04d7ab52dac4e2f14ead96f970a29e954c21b56",
+      "raw_text": "Bộ ứng diên đều có một câu chuyện riêng.",
+      "fact_checked_text": "Mỗi ứng viên đều có một câu chuyện riêng.",
+      "uncertainties": [
+        "Bộ ứng diên -> Mỗi ứng viên (ASR nhận nhầm âm)"
+      ]
+    },
+    {
+      "scene_id": "scene_14",
+      "seg_id": 14,
+      "audio_slice": "scratch/audio_slices/scene_14.wav",
+      "start_sample": 1229581,
+      "end_sample": 1342447,
+      "sample_frames": 112866,
+      "duration": 4.703,
+      "start": 51.233,
+      "end": 55.935,
+      "sha256": "1498e7d7fd86e1f60599aa45048c460048f73fecd1a1126c6a56f523be4d299b",
+      "raw_text": "Điều quan trọng là biết cách kể câu chuyện đó đúng cách để tạo dâu ấn với hội đồng tuyển sinh.",
+      "fact_checked_text": "Điều quan trọng là biết cách kể câu chuyện đó đúng cách để tạo dấu ấn với hội đồng tuyển sinh.",
+      "uncertainties": [
+        "dâu ấn -> dấu ấn (chuẩn chính tả tiếng Việt)"
+      ]
+    },
+    {
+      "scene_id": "scene_15",
+      "seg_id": 15,
+      "audio_slice": "scratch/audio_slices/scene_15.wav",
+      "start_sample": 1342447,
+      "end_sample": 1448462,
+      "sample_frames": 106015,
+      "duration": 4.417,
+      "start": 55.935,
+      "end": 60.353,
+      "sha256": "393c454a0822206e2a0c708d15bb44acbee533be4f5df9d3be2569e9bb06f26c",
+      "raw_text": "Đó cũng chính là điều Esora đã đồng hành cùng Minh Nhật trong suốt hành trình ứng tuyển.",
+      "fact_checked_text": "Đó cũng chính là điều Esora đã đồng hành cùng Minh Nhật trong suốt hành trình ứng tuyển.",
+      "uncertainties": []
+    },
+    {
+      "scene_id": "scene_16",
+      "seg_id": 16,
+      "audio_slice": "scratch/audio_slices/scene_16.wav",
+      "start_sample": 1448462,
+      "end_sample": 1522442,
+      "sample_frames": 73980,
+      "duration": 3.083,
+      "start": 60.353,
+      "end": 63.435,
+      "sha256": "0a984ea33a9e14fd276140463bb4e1a96552157b35870e6ca7c65e2e503b747a",
+      "raw_text": "Trúc Minh Nhật sẽ có một hành trình thật được trở tại Hà Lan,",
+      "fact_checked_text": "Chúc Minh Nhật sẽ có một hành trình thật rực rỡ tại Hà Lan,",
+      "uncertainties": [
+        "Trúc -> Chúc (chuẩn chính tả tiếng Việt)",
+        "được trở -> rực rỡ (ASR nghe nhầm 'rực rỡ' thành 'được trở')"
+      ]
+    },
+    {
+      "scene_id": "scene_17",
+      "seg_id": 17,
+      "audio_slice": "scratch/audio_slices/scene_17.wav",
+      "start_sample": 1522442,
+      "end_sample": 1636800,
+      "sample_frames": 114358,
+      "duration": 4.765,
+      "start": 63.435,
+      "end": 68.2,
+      "sha256": "30ed3ceca54a8c0930f0cc6b6b8b0e32b8bc494cd90255db7491cd3f44613872",
+      "raw_text": "tiếp tục phát quy bản lĩnh, khám phá những câu hội mới và chinh phục nhiều cuộc mốc lớn hơn trong tương lai.",
+      "fact_checked_text": "tiếp tục phát huy bản lĩnh, khám phá những cơ hội mới và chinh phục nhiều cột mốc lớn hơn trong tương lai.",
+      "uncertainties": [
+        "phát quy -> phát huy (chuẩn chính tả tiếng Việt)",
+        "câu hội -> cơ hội (chuẩn chính tả tiếng Việt)",
+        "cuộc mốc -> cột mốc (chuẩn chính tả tiếng Việt)"
+      ]
+    }
+  ],
+  "notes_for_codex": [
+    "Phase A completed: audio inspected, accurately transcribed, sliced seamlessly into 17 scenes.",
+    "Zero sample loss: reassembly of all 17 slices matches original PCM bit-for-bit.",
+    "Codex should proceed to Phase B: research VU Amsterdam & RMIT Vietnam, determine engine routing (HF_ONLY/FLOW_ONLY/HYBRID), select styles for HF_ONLY (Kurzgesagt preferred where fitting), create storyboard.md and scene_routing.json/.md, and build pilot scene.",
+    "Remember Critical Rules: Zero text in Flow prompts (AI video typography hallucination), mobile legibility >=24px, 180-200px bottom safe zone clear."
+  ]
+}

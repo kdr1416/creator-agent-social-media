@@ -1,0 +1,251 @@
+--- before/production_status.json
++++ after/production_status.json
+@@ -1,6 +1,6 @@
+ {
+   "schema_version": 2,
+-  "phase": "creative_planning",
++  "phase": "pilot_awaiting_human_review",
+   "approval": {
+     "status": "pending",
+     "reviewer": null,
+@@ -8,17 +8,55 @@
+     "evidence": null,
+     "fingerprint": null
+   },
+-  "scenes": {},
++  "scenes": {
++    "S03": {
++      "status": "pilot_rendered_awaiting_human_review",
++      "engine": "hyperframes",
++      "source": "scenes/S03/index.html",
++      "output": "scenes/S03/S03-pilot.mp4",
++      "source_sha256": "aa600e289290117013a660fcb612bc429833124624c05b4902aa154e52b21488",
++      "output_sha256": "cc5fe2db4000dc098a8b4e3d043857a257aab57fb6871443a94cc3b681daaee2",
++      "technical_qa": "passed_with_documented_warnings",
++      "visual_qa": "keyframes_and_playback_inspected_human_art_review_pending",
++      "frames": 268,
++      "fps": 30,
++      "width": 1080,
++      "height": 1920,
++      "audio_samples": 214542,
++      "evidence": "build/pilot-evidence/",
++      "known_limits": [
++        "Stylized gait and simplified hands/face; human assessment pending"
++      ]
++    },
++    "S08": {
++      "status": "pilot_rendered_awaiting_human_review",
++      "engine": "hyperframes",
++      "source": "scenes/S08/index.html",
++      "output": "scenes/S08/S08-pilot.mp4",
++      "source_sha256": "82b37eb022577f4252692b266e2c305f89644290df1d14e849b64489599bd16c",
++      "output_sha256": "fd419f56e18ba0b0ed1399789a5b565a60474059c4f59cdf2c34beb6ad32016a",
++      "technical_qa": "passed_with_documented_warnings",
++      "visual_qa": "keyframes_and_playback_inspected_human_art_review_pending",
++      "frames": 168,
++      "fps": 30,
++      "width": 1080,
++      "height": 1920,
++      "audio_samples": 134643,
++      "evidence": "build/pilot-evidence/",
++      "known_limits": [
++        "Stylized gait and simplified hands/face; human assessment pending"
++      ]
++    }
++  },
+   "final": {
+     "status": "pending"
+   },
+   "next_actions": [
+-    "User review of complete 17-scene storyboard and proposed style bible; no approval inferred",
+-    "Confirm family casting, production resolution/FPS, typography and branding/text treatment before pilot build",
+-    "S03/S08 remain nonadjacent pilot candidates; await separate instruction to create animation source/render",
+-    "Resolve S13 price scope and eligibility claims with appropriate source/review before final production or publication",
+-    "Listen back around 81.35s before independent S14/S15 rendering; preserve master and manifest",
+-    "Keep human pilot approval pending; no full production"
++    "User review of actual S03/S08 MP4s in REVIEW.html",
++    "Revise only requested scene and intentionally affected shared assets; rerun relevant QA",
++    "Keep human approval pending until explicit approval of actual artifacts/revision",
++    "No source for other 15 scenes or full production without separate authorization",
++    "S13 remains FACTUAL REVIEW REQUIRED; supplied voice/manifest unchanged"
+   ],
+   "storyboard": {
+     "status": "draft_complete_for_review",
+@@ -29,12 +67,13 @@
+       "S03",
+       "S08"
+     ],
+-    "pilot_built": false,
++    "pilot_built": true,
+     "factual_review_required": [
+       "S13"
+     ],
+     "timing_review_required": [
+       "ASR word 334 crosses S14/S15 boundary; master and manifest unchanged"
+     ]
+-  }
++  },
++  "pilot_status": "AWAITING HUMAN REVIEW"
+ }
+--- before/project_manifest.json
++++ after/project_manifest.json
+@@ -4,19 +4,24 @@
+   "production_agent": "codex",
+   "audio_analysis_agent": "antigravity",
+   "canvas": {
+-    "width": null,
+-    "height": null
++    "width": 1080,
++    "height": 1920
+   },
+-  "fps": null,
++  "fps": 30,
+   "audio": {
+     "path": "inputs/Generated Audio November 01, 2026 - 5_35PM.wav",
+     "sha256": "6b92d56bb90f3c4e702903d53d098d7c1765daf716879e8de60826a3110425c1",
+     "sample_rate": 24000,
+     "total_samples": 2232960
+   },
+-  "pilot_scene_ids": [],
++  "pilot_scene_ids": [
++    "S03",
++    "S08"
++  ],
+   "renderers": {
+     "hyperframes": [],
+     "remotion": []
+-  }
++  },
++  "configuration_status": "pilot_working_only_not_approved_for_full_film",
++  "pilot_working_configuration": "build/pilot-working-config.json"
+ }
+--- before/REVIEW.html
++++ after/REVIEW.html
+@@ -1,28 +1,6 @@
+-<!doctype html>
+-<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+-<title>Pilot review</title><link rel="icon" href="data:,">
+-<style>
+-  body { overflow-wrap: anywhere; }
+-  #status { white-space: pre-wrap; overflow-wrap: anywhere; }
+-  video { display: block; max-width: 100%; height: auto; }
+-</style><body><h1>Pilot review</h1>
+-<p>Review playback, frame design and motion against creative/storyboard.md and style-tokens.json.
+-This page does not grant approval. Record the human decision and evidence in production_status.json.</p>
+-<div id="pilots"></div><pre id="status"></pre>
+-<script type="module">
+-try {
+-  const [config, timeline, state] = await Promise.all([
+-    'project_manifest.json', 'inputs/scene-manifest.json', 'production_status.json'
+-  ].map(async p => { const r = await fetch(p); if (!r.ok) throw Error(p); return r.json(); }));
+-  document.getElementById('status').textContent = JSON.stringify(state.approval, null, 2);
+-  for (const id of config.pilot_scene_ids) {
+-    const scene = timeline.scenes.find(s => s.scene_id === id);
+-    const title = document.createElement('h2'); title.textContent = id;
+-    const video = document.createElement('video'); video.controls = true; video.style.maxWidth = '100%';
+-    const url = new URL(scene.output, location.href);
+-    if (url.origin !== location.origin) throw Error('Review media must be project-local');
+-    video.src = url.href;
+-    document.getElementById('pilots').append(title, video);
+-  }
+-} catch (error) { document.getElementById('status').textContent = 'Serve project over local HTTP: ' + error; }
+-</script></body></html>
++<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VIDEO-34 · Creative pilot review</title><link rel="icon" href="data:,"><style>
++:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#172b32;color:#f3e7d0;font-family:system-ui,sans-serif;line-height:1.55}main{max-width:1120px;margin:auto;padding:40px 28px 60px}.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#b5c9c1}h1{font-size:clamp(30px,5vw,52px);line-height:1.14;font-weight:500;margin:14px 0}header>p{max-width:760px;color:#c4cec6}.status{display:inline-block;padding:8px 12px;border:1px solid #8b9e8e;color:#e3d5b5;font-size:12px;letter-spacing:.07em}.grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:36px}article{min-width:0}h2{font-size:22px;font-weight:500;margin:0 0 8px}.meta{color:#b6c9c2;font-size:13px;margin:0 0 18px}video{display:block;width:100%;aspect-ratio:9/16;background:#e8d6b5;object-fit:contain}article p{font-size:14px;color:#c6cec4}a{color:#eed2a3;text-underline-offset:4px;overflow-wrap:anywhere}.links{display:flex;gap:18px;flex-wrap:wrap}footer{border-top:1px solid #496064;margin-top:36px;padding-top:20px;color:#b6c5be;font-size:13px}p,code{overflow-wrap:anywhere}@media(max-width:650px){main{padding:26px 18px}.grid{grid-template-columns:1fr;gap:38px}h1{font-size:34px}}
++</style></head><body><main><header><div class="eyebrow">Esora Immi · VIDEO-34 · Experimental art direction</div><h1>Những nhịp sống<br>đáng dành thời gian.</h1><div class="status">AWAITING HUMAN REVIEW</div><p>Hai sample độc lập để đánh giá Warm Mediterranean Editorial Illustration. Mỗi video giữ đúng đoạn voice tương ứng của master; không phát nối hai đoạn thành narration liên tục.</p><p>1080 × 1920 · 30 FPS · Cấu hình làm việc riêng cho pilot, chưa phải phê duyệt toàn phim. Bật tiếng bằng controls để nghe voice.</p></header><section class="grid">
++<article><h2>S03 / Một bờ biển đang sống</h2><p class="meta">Master 10.166083…–19.105333… s · PCM samples [243986, 458528)<br>Voice 8.939250 s · Picture 268 frames / 8.933333 s</p><video id="video-S03" controls playsinline preload="metadata" poster="build/pilot-evidence/S03-3.80.png" src="scenes/S03/S03-pilot.mp4"></video><p>Một promenade, café và quảng trường liền không gian. Chú ý chuyển theo đi bộ → chạy → café → gặp bạn → gia đình bên biển.</p><div class="links"><a href="scenes/S03/S03-pilot.mp4" download>Tải S03 MP4</a><a href="scenes/S03/index.html">Source scene</a><a href="assets/illustration/S03-coast.svg">SVG artwork</a></div></article>
++<article><h2>S08 / Có mặt bên gia đình</h2><p class="meta">Master 40.270000–45.880125 s · PCM samples [966480, 1101123)<br>Voice 5.610125 s · Picture 168 frames / 5.600000 s</p><video id="video-S08" controls playsinline preload="metadata" poster="build/pilot-evidence/S08-4.90.png" src="scenes/S08/S08-pilot.mp4"></video><p>Từ bàn làm việc đến kết nối với con: dừng thao tác, khép laptop, chuyển ánh mắt và đưa tay. Không dùng text để giải thích hành động.</p><div class="links"><a href="scenes/S08/S08-pilot.mp4" download>Tải S08 MP4</a><a href="scenes/S08/index.html">Source scene</a><a href="assets/illustration/S08-home.svg">SVG artwork</a></div></article>
++</section><footer>Chưa có style/pilot approval. Không music, subtitles, voice bổ sung hay CTA trong video. Không sản xuất 15 scene còn lại. S13 vẫn FACTUAL REVIEW REQUIRED.<br>Để yêu cầu sửa: ghi scene ID, thời điểm local và điều muốn đổi, ví dụ “S08 · 4.7s · giữ ánh mắt lâu hơn”.</footer></main><script>document.querySelectorAll('video').forEach(v=>v.addEventListener('play',()=>document.querySelectorAll('video').forEach(other=>{if(other!==v)other.pause()})));</script></body></html>--- before/assets/ledger.json
++++ after/assets/ledger.json
+@@ -13,6 +13,91 @@
+       "height": 2048,
+       "treatment": "Original JPEG preserved; not redrawn, cropped, upscaled or background-removed",
+       "rights": "User-designated brand asset for this project; no independent rights audit"
++    },
++    {
++      "id": "S03-original-coast",
++      "path": "assets/illustration/S03-coast.svg",
++      "type": "original_editable_svg",
++      "source": "Original artwork authored for VIDEO-34; components/build_pilot_art.py",
++      "rights": "Original project artwork; no external stock illustration",
++      "sha256": "2a48db2d87fbed2ff6cbe0e11970df54cc5982fabea00e96b9f292000e919bfe",
++      "used_by": [
++        "S03"
++      ],
++      "status": "created_for_experimental_pilot_not_approved"
++    },
++    {
++      "id": "S03-voice-excerpt",
++      "path": "scenes/S03/voice-excerpt.wav",
++      "type": "derived_pcm_audio",
++      "source": "Immutable user master; exact scene sample slice, no resampling",
++      "rights": "User-supplied audio; excerpt only",
++      "sha256": "0dc7bf0253b1672b7cb50e21119926eb6006a59a02961e2410f8a18bc1c44dd2",
++      "used_by": [
++        "S03"
++      ],
++      "status": "created_for_experimental_pilot_not_approved"
++    },
++    {
++      "id": "S03-gsap-runtime",
++      "path": "scenes/S03/assets/gsap.min.js",
++      "type": "local_runtime_copy",
++      "source": "Existing C1 installed GSAP distribution; copied without alteration",
++      "rights": "GSAP license notice preserved in file",
++      "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
++      "used_by": [
++        "S03"
++      ],
++      "status": "created_for_experimental_pilot_not_approved"
++    },
++    {
++      "id": "S08-original-home",
++      "path": "assets/illustration/S08-home.svg",
++      "type": "original_editable_svg",
++      "source": "Original artwork authored for VIDEO-34; components/build_pilot_art.py",
++      "rights": "Original project artwork; no external stock illustration",
++      "sha256": "6b2e6c9985c45bc968786bd57fbd1c0078a439df3a5f878dbba3bbe3036a9893",
++      "used_by": [
++        "S08"
++      ],
++      "status": "created_for_experimental_pilot_not_approved"
++    },
++    {
++      "id": "S08-voice-excerpt",
++      "path": "scenes/S08/voice-excerpt.wav",
++      "type": "derived_pcm_audio",
++      "source": "Immutable user master; exact scene sample slice, no resampling",
++      "rights": "User-supplied audio; excerpt only",
++      "sha256": "ad5114136dc8753d054737fc28e69d3755d805635766618bcad97893b8ec0778",
++      "used_by": [
++        "S08"
++      ],
++      "status": "created_for_experimental_pilot_not_approved"
++    },
++    {
++      "id": "S08-gsap-runtime",
++      "path": "scenes/S08/assets/gsap.min.js",
++      "type": "local_runtime_copy",
++      "source": "Existing C1 installed GSAP distribution; copied without alteration",
++      "rights": "GSAP license notice preserved in file",
++      "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
++      "used_by": [
++        "S08"
++      ],
++      "status": "created_for_experimental_pilot_not_approved"
++    },
++    {
++      "id": "gsap-shared-local-runtime",
++      "path": "assets/vendor/gsap.min.js",
++      "type": "local_runtime_copy",
++      "source": "Existing installed GSAP distribution, retained locally for scene regeneration",
++      "rights": "GSAP license notice preserved in file",
++      "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
++      "used_by": [
++        "S03",
++        "S08"
++      ],
++      "status": "existing_runtime_copied_without_installation"
+     }
+   ]
+-}+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "reference": null,
+  "style_id": null,
+  "palette": {},
+  "fonts": {},
+  "spacing": {},
+  "subtitles": {
+    "enabled": false,
+    "treatment": null
+  },
+  "characters": {
+    "enabled": false,
+    "assets": []
+  },
+  "motion": {
+    "shared_constraints": [],
+    "scene_overrides": {}
+  },
+  "approved_constraints": []
+}

@@ -1,0 +1,466 @@
+{
+  "master_video": {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\master-approved-r2\\VIDEO-33-master-approved-r2.mp4",
+    "filename": "VIDEO-33-master-approved-r2.mp4",
+    "sha256": "c079c05e36ccf96dfb84e741248e5534eeacc82c4f56a5662352b6e158e94c7b",
+    "frames": 2255,
+    "fps": 30,
+    "duration": 75.16666666666667
+  },
+  "clean_video": {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\master-approved-r2\\VIDEO-33-clean-approved-r2.mp4",
+    "filename": "VIDEO-33-clean-approved-r2.mp4",
+    "sha256": "0b32b41bb897a776e094958a980018e595201a41686994b562ef6757f91120cc",
+    "frames": 2255,
+    "fps": 30,
+    "duration": 75.16666666666667
+  },
+  "voice": {
+    "source_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\inputs\\source_audio.wav",
+    "sha256": "cbd5a88b99c252d09ea86493377951aed1267186a5cb9ff11afe00947133e941",
+    "samples": 1803840,
+    "sample_rate": 24000,
+    "duration_seconds": 75.16
+  },
+  "seams": [
+    {
+      "name": "seam_01_S01_S02",
+      "boundary_frame": 181,
+      "sc_before": "S01",
+      "sc_after": "S02",
+      "start_frame": 151,
+      "end_frame": 211,
+      "start_time": 5.033333333333333,
+      "duration": 2.0,
+      "file": "seams/seam_01_S01_S02.mp4"
+    },
+    {
+      "name": "seam_02_S02_S03",
+      "boundary_frame": 296,
+      "sc_before": "S02",
+      "sc_after": "S03",
+      "start_frame": 266,
+      "end_frame": 326,
+      "start_time": 8.866666666666667,
+      "duration": 2.0,
+      "file": "seams/seam_02_S02_S03.mp4"
+    },
+    {
+      "name": "seam_03_S03_S04",
+      "boundary_frame": 424,
+      "sc_before": "S03",
+      "sc_after": "S04",
+      "start_frame": 394,
+      "end_frame": 454,
+      "start_time": 13.133333333333333,
+      "duration": 2.0,
+      "file": "seams/seam_03_S03_S04.mp4"
+    },
+    {
+      "name": "seam_04_S04_S05",
+      "boundary_frame": 545,
+      "sc_before": "S04",
+      "sc_after": "S05",
+      "start_frame": 515,
+      "end_frame": 575,
+      "start_time": 17.166666666666668,
+      "duration": 2.0,
+      "file": "seams/seam_04_S04_S05.mp4"
+    },
+    {
+      "name": "seam_05_S05_S06",
+      "boundary_frame": 716,
+      "sc_before": "S05",
+      "sc_after": "S06",
+      "start_frame": 686,
+      "end_frame": 746,
+      "start_time": 22.866666666666667,
+      "duration": 2.0,
+      "file": "seams/seam_05_S05_S06.mp4"
+    },
+    {
+      "name": "seam_06_S06_S07",
+      "boundary_frame": 890,
+      "sc_before": "S06",
+      "sc_after": "S07",
+      "start_frame": 860,
+      "end_frame": 920,
+      "start_time": 28.666666666666668,
+      "duration": 2.0,
+      "file": "seams/seam_06_S06_S07.mp4"
+    },
+    {
+      "name": "seam_07_S07_S08",
+      "boundary_frame": 1030,
+      "sc_before": "S07",
+      "sc_after": "S08",
+      "start_frame": 1000,
+      "end_frame": 1060,
+      "start_time": 33.333333333333336,
+      "duration": 2.0,
+      "file": "seams/seam_07_S07_S08.mp4"
+    },
+    {
+      "name": "seam_08_S08_S09",
+      "boundary_frame": 1194,
+      "sc_before": "S08",
+      "sc_after": "S09",
+      "start_frame": 1164,
+      "end_frame": 1224,
+      "start_time": 38.8,
+      "duration": 2.0,
+      "file": "seams/seam_08_S08_S09.mp4"
+    },
+    {
+      "name": "seam_09_S09_S10",
+      "boundary_frame": 1418,
+      "sc_before": "S09",
+      "sc_after": "S10",
+      "start_frame": 1388,
+      "end_frame": 1448,
+      "start_time": 46.266666666666666,
+      "duration": 2.0,
+      "file": "seams/seam_09_S09_S10.mp4"
+    },
+    {
+      "name": "seam_10_S10_S11",
+      "boundary_frame": 1602,
+      "sc_before": "S10",
+      "sc_after": "S11",
+      "start_frame": 1572,
+      "end_frame": 1632,
+      "start_time": 52.4,
+      "duration": 2.0,
+      "file": "seams/seam_10_S10_S11.mp4"
+    },
+    {
+      "name": "seam_11_S11_S12",
+      "boundary_frame": 1807,
+      "sc_before": "S11",
+      "sc_after": "S12",
+      "start_frame": 1777,
+      "end_frame": 1837,
+      "start_time": 59.233333333333334,
+      "duration": 2.0,
+      "file": "seams/seam_11_S11_S12.mp4"
+    },
+    {
+      "name": "seam_12_S12_S13",
+      "boundary_frame": 1913,
+      "sc_before": "S12",
+      "sc_after": "S13",
+      "start_frame": 1883,
+      "end_frame": 1943,
+      "start_time": 62.766666666666666,
+      "duration": 2.0,
+      "file": "seams/seam_12_S12_S13.mp4"
+    },
+    {
+      "name": "seam_13_S13_S14",
+      "boundary_frame": 2049,
+      "sc_before": "S13",
+      "sc_after": "S14",
+      "start_frame": 2019,
+      "end_frame": 2079,
+      "start_time": 67.3,
+      "duration": 2.0,
+      "file": "seams/seam_13_S13_S14.mp4"
+    }
+  ],
+  "proofs": [
+    {
+      "scene_id": "S01",
+      "label": "open",
+      "frame": 0,
+      "color_path": "proofs/S01_open_f0.png",
+      "gray_path": "proofs/S01_open_f0_gray.png"
+    },
+    {
+      "scene_id": "S01",
+      "label": "mid",
+      "frame": 90,
+      "color_path": "proofs/S01_mid_f90.png",
+      "gray_path": "proofs/S01_mid_f90_gray.png"
+    },
+    {
+      "scene_id": "S01",
+      "label": "end",
+      "frame": 180,
+      "color_path": "proofs/S01_end_f180.png",
+      "gray_path": "proofs/S01_end_f180_gray.png"
+    },
+    {
+      "scene_id": "S02",
+      "label": "open",
+      "frame": 181,
+      "color_path": "proofs/S02_open_f181.png",
+      "gray_path": "proofs/S02_open_f181_gray.png"
+    },
+    {
+      "scene_id": "S02",
+      "label": "mid",
+      "frame": 238,
+      "color_path": "proofs/S02_mid_f238.png",
+      "gray_path": "proofs/S02_mid_f238_gray.png"
+    },
+    {
+      "scene_id": "S02",
+      "label": "end",
+      "frame": 295,
+      "color_path": "proofs/S02_end_f295.png",
+      "gray_path": "proofs/S02_end_f295_gray.png"
+    },
+    {
+      "scene_id": "S03",
+      "label": "open",
+      "frame": 296,
+      "color_path": "proofs/S03_open_f296.png",
+      "gray_path": "proofs/S03_open_f296_gray.png"
+    },
+    {
+      "scene_id": "S03",
+      "label": "mid",
+      "frame": 360,
+      "color_path": "proofs/S03_mid_f360.png",
+      "gray_path": "proofs/S03_mid_f360_gray.png"
+    },
+    {
+      "scene_id": "S03",
+      "label": "end",
+      "frame": 423,
+      "color_path": "proofs/S03_end_f423.png",
+      "gray_path": "proofs/S03_end_f423_gray.png"
+    },
+    {
+      "scene_id": "S04",
+      "label": "open",
+      "frame": 424,
+      "color_path": "proofs/S04_open_f424.png",
+      "gray_path": "proofs/S04_open_f424_gray.png"
+    },
+    {
+      "scene_id": "S04",
+      "label": "mid",
+      "frame": 484,
+      "color_path": "proofs/S04_mid_f484.png",
+      "gray_path": "proofs/S04_mid_f484_gray.png"
+    },
+    {
+      "scene_id": "S04",
+      "label": "end",
+      "frame": 544,
+      "color_path": "proofs/S04_end_f544.png",
+      "gray_path": "proofs/S04_end_f544_gray.png"
+    },
+    {
+      "scene_id": "S05",
+      "label": "open",
+      "frame": 545,
+      "color_path": "proofs/S05_open_f545.png",
+      "gray_path": "proofs/S05_open_f545_gray.png"
+    },
+    {
+      "scene_id": "S05",
+      "label": "mid",
+      "frame": 630,
+      "color_path": "proofs/S05_mid_f630.png",
+      "gray_path": "proofs/S05_mid_f630_gray.png"
+    },
+    {
+      "scene_id": "S05",
+      "label": "end",
+      "frame": 715,
+      "color_path": "proofs/S05_end_f715.png",
+      "gray_path": "proofs/S05_end_f715_gray.png"
+    },
+    {
+      "scene_id": "S06",
+      "label": "open",
+      "frame": 716,
+      "color_path": "proofs/S06_open_f716.png",
+      "gray_path": "proofs/S06_open_f716_gray.png"
+    },
+    {
+      "scene_id": "S06",
+      "label": "mid",
+      "frame": 803,
+      "color_path": "proofs/S06_mid_f803.png",
+      "gray_path": "proofs/S06_mid_f803_gray.png"
+    },
+    {
+      "scene_id": "S06",
+      "label": "end",
+      "frame": 889,
+      "color_path": "proofs/S06_end_f889.png",
+      "gray_path": "proofs/S06_end_f889_gray.png"
+    },
+    {
+      "scene_id": "S07",
+      "label": "open",
+      "frame": 890,
+      "color_path": "proofs/S07_open_f890.png",
+      "gray_path": "proofs/S07_open_f890_gray.png"
+    },
+    {
+      "scene_id": "S07",
+      "label": "mid",
+      "frame": 960,
+      "color_path": "proofs/S07_mid_f960.png",
+      "gray_path": "proofs/S07_mid_f960_gray.png"
+    },
+    {
+      "scene_id": "S07",
+      "label": "end",
+      "frame": 1029,
+      "color_path": "proofs/S07_end_f1029.png",
+      "gray_path": "proofs/S07_end_f1029_gray.png"
+    },
+    {
+      "scene_id": "S08",
+      "label": "open",
+      "frame": 1030,
+      "color_path": "proofs/S08_open_f1030.png",
+      "gray_path": "proofs/S08_open_f1030_gray.png"
+    },
+    {
+      "scene_id": "S08",
+      "label": "mid",
+      "frame": 1112,
+      "color_path": "proofs/S08_mid_f1112.png",
+      "gray_path": "proofs/S08_mid_f1112_gray.png"
+    },
+    {
+      "scene_id": "S08",
+      "label": "end",
+      "frame": 1193,
+      "color_path": "proofs/S08_end_f1193.png",
+      "gray_path": "proofs/S08_end_f1193_gray.png"
+    },
+    {
+      "scene_id": "S09",
+      "label": "open",
+      "frame": 1194,
+      "color_path": "proofs/S09_open_f1194.png",
+      "gray_path": "proofs/S09_open_f1194_gray.png"
+    },
+    {
+      "scene_id": "S09",
+      "label": "mid",
+      "frame": 1306,
+      "color_path": "proofs/S09_mid_f1306.png",
+      "gray_path": "proofs/S09_mid_f1306_gray.png"
+    },
+    {
+      "scene_id": "S09",
+      "label": "end",
+      "frame": 1417,
+      "color_path": "proofs/S09_end_f1417.png",
+      "gray_path": "proofs/S09_end_f1417_gray.png"
+    },
+    {
+      "scene_id": "S10",
+      "label": "open",
+      "frame": 1418,
+      "color_path": "proofs/S10_open_f1418.png",
+      "gray_path": "proofs/S10_open_f1418_gray.png"
+    },
+    {
+      "scene_id": "S10",
+      "label": "mid",
+      "frame": 1510,
+      "color_path": "proofs/S10_mid_f1510.png",
+      "gray_path": "proofs/S10_mid_f1510_gray.png"
+    },
+    {
+      "scene_id": "S10",
+      "label": "end",
+      "frame": 1601,
+      "color_path": "proofs/S10_end_f1601.png",
+      "gray_path": "proofs/S10_end_f1601_gray.png"
+    },
+    {
+      "scene_id": "S11",
+      "label": "open",
+      "frame": 1602,
+      "color_path": "proofs/S11_open_f1602.png",
+      "gray_path": "proofs/S11_open_f1602_gray.png"
+    },
+    {
+      "scene_id": "S11",
+      "label": "mid",
+      "frame": 1704,
+      "color_path": "proofs/S11_mid_f1704.png",
+      "gray_path": "proofs/S11_mid_f1704_gray.png"
+    },
+    {
+      "scene_id": "S11",
+      "label": "end",
+      "frame": 1806,
+      "color_path": "proofs/S11_end_f1806.png",
+      "gray_path": "proofs/S11_end_f1806_gray.png"
+    },
+    {
+      "scene_id": "S12",
+      "label": "open",
+      "frame": 1807,
+      "color_path": "proofs/S12_open_f1807.png",
+      "gray_path": "proofs/S12_open_f1807_gray.png"
+    },
+    {
+      "scene_id": "S12",
+      "label": "mid",
+      "frame": 1860,
+      "color_path": "proofs/S12_mid_f1860.png",
+      "gray_path": "proofs/S12_mid_f1860_gray.png"
+    },
+    {
+      "scene_id": "S12",
+      "label": "end",
+      "frame": 1912,
+      "color_path": "proofs/S12_end_f1912.png",
+      "gray_path": "proofs/S12_end_f1912_gray.png"
+    },
+    {
+      "scene_id": "S13",
+      "label": "open",
+      "frame": 1913,
+      "color_path": "proofs/S13_open_f1913.png",
+      "gray_path": "proofs/S13_open_f1913_gray.png"
+    },
+    {
+      "scene_id": "S13",
+      "label": "mid",
+      "frame": 1981,
+      "color_path": "proofs/S13_mid_f1981.png",
+      "gray_path": "proofs/S13_mid_f1981_gray.png"
+    },
+    {
+      "scene_id": "S13",
+      "label": "end",
+      "frame": 2048,
+      "color_path": "proofs/S13_end_f2048.png",
+      "gray_path": "proofs/S13_end_f2048_gray.png"
+    },
+    {
+      "scene_id": "S14",
+      "label": "open",
+      "frame": 2049,
+      "color_path": "proofs/S14_open_f2049.png",
+      "gray_path": "proofs/S14_open_f2049_gray.png"
+    },
+    {
+      "scene_id": "S14",
+      "label": "mid",
+      "frame": 2152,
+      "color_path": "proofs/S14_mid_f2152.png",
+      "gray_path": "proofs/S14_mid_f2152_gray.png"
+    },
+    {
+      "scene_id": "S14",
+      "label": "end",
+      "frame": 2254,
+      "color_path": "proofs/S14_end_f2254.png",
+      "gray_path": "proofs/S14_end_f2254_gray.png"
+    }
+  ]
+}

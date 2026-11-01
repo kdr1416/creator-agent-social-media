@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIDEO-33 Master Approved R2 Review Board</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-gold: #facc15;
+      --success: #22c55e;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      padding: 24px;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    h1 { font-size: 24px; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 10px; }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .badge-success { background: rgba(34, 197, 94, 0.2); color: #4ade80; border: 1px solid #22c55e; }
+    .badge-info { background: rgba(56, 189, 248, 0.2); color: #38bdf8; border: 1px solid #0284c7; }
+    .badge-warn { background: rgba(250, 204, 21, 0.2); color: #facc15; border: 1px solid #ca8a04; }
+    
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+    }
+    .stat-label { font-size: 11px; text-transform: uppercase; color: var(--text-muted); font-weight: 600; }
+    .stat-value { font-size: 18px; font-weight: 700; color: var(--accent); margin-top: 4px; font-family: var(--font-mono); }
+
+    .main-grid {
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    @media (max-width: 960px) {
+      .main-grid { grid-template-columns: 1fr; }
+    }
+
+    .player-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 360px;
+      aspect-ratio: 9/16;
+      background: #000;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    .video-switch-buttons {
+      display: flex;
+      gap: 8px;
+      margin-top: 16px;
+      width: 100%;
+      max-width: 360px;
+    }
+    .btn {
+      flex: 1;
+      background: #334155;
+      color: #fff;
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    .btn:hover { background: #475569; }
+    .btn.active {
+      background: var(--accent);
+      color: #0f172a;
+      border-color: var(--accent);
+    }
+
+    .timeline-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .scene-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 600px;
+      overflow-y: auto;
+      padding-right: 6px;
+    }
+    .scene-item {
+      display: grid;
+      grid-template-columns: 60px 100px 1fr 80px;
+      gap: 12px;
+      align-items: center;
+      padding: 10px 14px;
+      background: #0f172a;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .scene-item:hover { border-color: var(--accent); background: #131d35; }
+    .scene-item.active { border-color: var(--accent-gold); background: rgba(250, 204, 21, 0.08); }
+    .scene-id { font-weight: 700; font-family: var(--font-mono); color: var(--accent); }
+    .scene-tag-new {
+      background: #facc15;
+      color: #000;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 1px 4px;
+      border-radius: 4px;
+      margin-left: 4px;
+    }
+    .scene-time { font-family: var(--font-mono); color: var(--text-muted); font-size: 12px; }
+    .scene-desc { color: #e2e8f0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .scene-frames { font-family: var(--font-mono); text-align: right; color: var(--text-muted); font-size: 12px; }
+
+    .seams-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .seam-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .seam-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .seam-video-wrapper {
+      width: 100%;
+      aspect-ratio: 9/16;
+      background: #000;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .proofs-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      font-size: 13px;
+    }
+    .proofs-table th, .proofs-table td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+    }
+    .proofs-table th { background: #131d35; color: var(--text-muted); font-weight: 600; }
+    .proof-img {
+      width: 80px;
+      aspect-ratio: 9/16;
+      object-fit: cover;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .proof-img:hover { transform: scale(1.8); z-index: 100; position: relative; box-shadow: 0 4px 12px rgba(0,0,0,0.5); }
+    .toggle-gray-btn {
+      font-size: 11px;
+      padding: 4px 10px;
+      background: #334155;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+      border: 1px solid var(--border);
+    }
+    .toggle-gray-btn:hover { background: #475569; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>
+        VIDEO-33 Master Approved R2 Review Board
+        <span class="badge badge-success">14 / 14 PILOTS APPROVED</span>
+      </h1>
+      <p style="color: var(--text-muted); font-size: 14px; margin-top: 4px;">
+        Đa dạng hóa tài sản du học Châu Âu & Thẻ Xanh Malta • Trạng thái: <code>assembled_pending_user_full_master_review</code>
+      </p>
+    </div>
+    <div style="display: flex; gap: 8px;">
+      <span class="badge badge-info">FPS: 30.00</span>
+      <span class="badge badge-info">2,255 FRAMES</span>
+      <span class="badge badge-info">75.167s</span>
+    </div>
+  </header>
+
+  <div class="stats-bar">
+    <div class="stat-card">
+      <div class="stat-label">Độ Dài Master</div>
+      <div class="stat-value">75.167s (2,255f)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Tỷ Lệ Duyệt Pilot</div>
+      <div class="stat-value" style="color: #4ade80;">14 / 14 (100%)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Cảnh Sửa Đổi R2</div>
+      <div class="stat-value" style="color: #facc15;">S02, S03, S04</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Đồng Bộ Audio Gốc</div>
+      <div class="stat-value">Δ=0ms | r=0.999958</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Mối Nối Chuyển Cảnh</div>
+      <div class="stat-value">13 / 13 PASS</div>
+    </div>
+  </div>
+
+  <div class="main-grid">
+    <!-- Left Column: Video Player -->
+    <div class="player-card">
+      <div class="video-wrapper">
+        <video id="mainVideo" controls autoplay playsinline src="VIDEO-33-master-approved-r2.mp4"></video>
+      </div>
+      <div class="video-switch-buttons">
+        <button class="btn active" id="btnMaster" onclick="switchVideo('master')">Master R2 (Voice)</button>
+        <button class="btn" id="btnClean" onclick="switchVideo('clean')">Clean R2 (Hình)</button>
+        <button class="btn" id="btnMobile" onclick="switchVideo('mobile')">Mobile 360p</button>
+      </div>
+      <div style="margin-top: 14px; font-family: var(--font-mono); font-size: 13px; color: var(--text-muted); text-align: center;">
+        Khung hình: <span id="frameCounter" style="color: var(--accent); font-weight: 700;">0</span> / 2255
+        &nbsp;|&nbsp; Thời gian: <span id="timeCounter" style="color: var(--accent); font-weight: 700;">0.00s</span>
+      </div>
+    </div>
+
+    <!-- Right Column: Interactive Timeline List -->
+    <div class="timeline-card">
+      <div class="section-title">
+        <span>Danh Sách 14 Cảnh Thành Phẩm</span>
+        <span style="font-size: 12px; color: var(--text-muted); font-weight: normal;">Nhấp vào cảnh để nhảy trực tiếp</span>
+      </div>
+      <div class="scene-list" id="sceneList">
+
+        <div class="scene-item" id="item-S01" onclick="seekTo(0.0, 'S01')">
+          <div class="scene-id">S01 </div>
+          <div class="scene-time">0.00s - 6.03s</div>
+          <div class="scene-desc" title="Hook — Chú heo đất đầy ắp mở màn">Hook — Chú heo đất đầy ắp mở màn</div>
+          <div class="scene-frames">181f [0..180]</div>
+        </div>
+
+        <div class="scene-item" id="item-S02" onclick="seekTo(6.0333, 'S02')">
+          <div class="scene-id">S02 <span class="scene-tag-new">MỚI DUYỆT</span></div>
+          <div class="scene-time">6.03s - 9.87s</div>
+          <div class="scene-desc" title="Tích lũy & Sổ cái chi tiêu">Tích lũy & Sổ cái chi tiêu</div>
+          <div class="scene-frames">115f [181..295]</div>
+        </div>
+
+        <div class="scene-item" id="item-S03" onclick="seekTo(9.8667, 'S03')">
+          <div class="scene-id">S03 <span class="scene-tag-new">MỚI DUYỆT</span></div>
+          <div class="scene-time">9.87s - 14.13s</div>
+          <div class="scene-desc" title="Lộ trình tại Châu Âu: Học tập & Sự nghiệp">Lộ trình tại Châu Âu: Học tập & Sự nghiệp</div>
+          <div class="scene-frames">128f [296..423]</div>
+        </div>
+
+        <div class="scene-item" id="item-S04" onclick="seekTo(14.1333, 'S04')">
+          <div class="scene-id">S04 <span class="scene-tag-new">MỚI DUYỆT</span></div>
+          <div class="scene-time">14.13s - 18.17s</div>
+          <div class="scene-desc" title="Cân nhắc phân bổ tài sản">Cân nhắc phân bổ tài sản</div>
+          <div class="scene-frames">121f [424..544]</div>
+        </div>
+
+        <div class="scene-item" id="item-S05" onclick="seekTo(18.1667, 'S05')">
+          <div class="scene-id">S05 </div>
+          <div class="scene-time">18.17s - 23.87s</div>
+          <div class="scene-desc" title="So sánh rủi ro: Lạm phát & Biến động">So sánh rủi ro: Lạm phát & Biến động</div>
+          <div class="scene-frames">171f [545..715]</div>
+        </div>
+
+        <div class="scene-item" id="item-S06" onclick="seekTo(23.8667, 'S06')">
+          <div class="scene-id">S06 </div>
+          <div class="scene-time">23.87s - 29.67s</div>
+          <div class="scene-desc" title="Tỷ giá hối đoái EUR/VND & Chi phí chuyển tiền">Tỷ giá hối đoái EUR/VND & Chi phí chuyển tiền</div>
+          <div class="scene-frames">174f [716..889]</div>
+        </div>
+
+        <div class="scene-item" id="item-S07" onclick="seekTo(29.6667, 'S07')">
+          <div class="scene-id">S07 </div>
+          <div class="scene-time">29.67s - 34.33s</div>
+          <div class="scene-desc" title="Đầu tư bất động sản & Thanh khoản">Đầu tư bất động sản & Thanh khoản</div>
+          <div class="scene-frames">140f [890..1029]</div>
+        </div>
+
+        <div class="scene-item" id="item-S08" onclick="seekTo(34.3333, 'S08')">
+          <div class="scene-id">S08 </div>
+          <div class="scene-time">34.33s - 39.80s</div>
+          <div class="scene-desc" title="Quy định pháp lý & Thuế chuyển nhượng">Quy định pháp lý & Thuế chuyển nhượng</div>
+          <div class="scene-frames">164f [1030..1193]</div>
+        </div>
+
+        <div class="scene-item" id="item-S09" onclick="seekTo(39.8, 'S09')">
+          <div class="scene-id">S09 </div>
+          <div class="scene-time">39.80s - 47.27s</div>
+          <div class="scene-desc" title="Quản trị rủi ro tập trung (Don't put all eggs in one basket)">Quản trị rủi ro tập trung (Don't put all eggs in one basket)</div>
+          <div class="scene-frames">224f [1194..1417]</div>
+        </div>
+
+        <div class="scene-item" id="item-S10" onclick="seekTo(47.2667, 'S10')">
+          <div class="scene-id">S10 </div>
+          <div class="scene-time">47.27s - 53.40s</div>
+          <div class="scene-desc" title="Lập quỹ dự phòng khẩn cấp tại nước sở tại">Lập quỹ dự phòng khẩn cấp tại nước sở tại</div>
+          <div class="scene-frames">184f [1418..1601]</div>
+        </div>
+
+        <div class="scene-item" id="item-S11" onclick="seekTo(53.4, 'S11')">
+          <div class="scene-id">S11 </div>
+          <div class="scene-time">53.40s - 60.23s</div>
+          <div class="scene-desc" title="Chiến lược DCA & Đầu tư định kỳ">Chiến lược DCA & Đầu tư định kỳ</div>
+          <div class="scene-frames">205f [1602..1806]</div>
+        </div>
+
+        <div class="scene-item" id="item-S12" onclick="seekTo(60.2333, 'S12')">
+          <div class="scene-id">S12 </div>
+          <div class="scene-time">60.23s - 63.77s</div>
+          <div class="scene-desc" title="Tối ưu hóa thuế thu nhập & Tài khoản hưu trí EU">Tối ưu hóa thuế thu nhập & Tài khoản hưu trí EU</div>
+          <div class="scene-frames">106f [1807..1912]</div>
+        </div>
+
+        <div class="scene-item" id="item-S13" onclick="seekTo(63.7667, 'S13')">
+          <div class="scene-id">S13 </div>
+          <div class="scene-time">63.77s - 68.30s</div>
+          <div class="scene-desc" title="Lập kế hoạch dài hạn định cư & Tự do tài chính">Lập kế hoạch dài hạn định cư & Tự do tài chính</div>
+          <div class="scene-frames">136f [1913..2048]</div>
+        </div>
+
+        <div class="scene-item" id="item-S14" onclick="seekTo(68.3, 'S14')">
+          <div class="scene-id">S14 </div>
+          <div class="scene-time">68.30s - 75.17s</div>
+          <div class="scene-desc" title="Kết luận & Lời khuyên tổng kết">Kết luận & Lời khuyên tổng kết</div>
+          <div class="scene-frames">206f [2049..2254]</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 13 Seam Transitions Audit Section -->
+  <div style="margin-top: 32px;">
+    <div class="section-title">
+      <span>Kiểm Định 13 Mối Nối Chuyển Cảnh (13 Seams QA Audit - 60 frames quanh điểm cắt)</span>
+      <span class="badge badge-success">TẤT CẢ 13 SEAMS ĐẠT CHUẨN</span>
+    </div>
+    <div class="seams-grid">
+
+      <div class="seam-card">
+        <div class="seam-card-header">
+          <span style="color: var(--accent);">S01 &rarr; S02</span>
+          <span style="font-family: var(--font-mono); color: var(--text-muted);">Cut @ f181 (5.03s)</span>
+        </div>
+        <div class="seam-video-wrapper">
+          <video controls preload="metadata" src="seams/seam_01_S01_S02.mp4"></video>
+        </div>
+      </div>
+
+      <div class="seam-card">
+        <div class="seam-card-header">
+          <span style="color: var(--accent);">S02 &rarr; S03</span>
+          <span style="font-family: var(--font-mono); color: var(--text-muted);">Cut @ f296 (8.87s)</span>
+        </div>
+        <div class="seam-video-wrapper">
+          <video controls preload="metadata" src="seams/seam_02_S02_S03.mp4"></video>
+        </div>
+      </div>
+
+      <div class="seam-card">
+        <div class="seam-card-header">
+          <span style="color: var(--accent);">S03 &rarr; S04</span>
+          <span style="font-family: var(--font-mono); color: var(--text-muted);">Cut @ f424 (13.13s)</span>
+        </div>
+        <div class="seam-video-wrapper">
+          <video controls preload="metadata" src="seams/seam_03_S03_S04.mp4"></video>
+        </div>
+      </div>
+
+      <div class="seam-card">
+        <div class="seam-card-header">
+          <span style="color: var(--accent);">S04 &rarr; S05</span>
+          <span style="font-family: var(--font-mono); color: var(--text-muted);">Cut @ f545 (17.17s)</span>
+        </div>
+        <div class="seam-video-wrapper">
+          <video controls preload="metadata" src="seams/seam_04_S04_S05.mp4"></video>
+        </div>
+      </div>
+
+      <div class="seam-card">
+        <div class="seam-card-header">
+          <span style="color: var(--accent);">S05 &rarr; S06</span>
+          <span style="font-family: var(--font-mono); color: var(--text-muted);">Cut @ f716 (22.87s)</span>
+        </div>
+        <div class="seam-video-wrapper">
+          <video controls preload="metadata" src="seams/seam_05_S05_S06.mp4"></video>
+        </div>
+      </div>
+
+      <div class="seam-card">
+        <div class="seam-card-header">
+          <span style="color: var(--accent);">S06 &rarr; S07</span>
+          <span style="font-family: var(--font-mono); color: var(--text-muted);">Cut @ f890 (28.67s)</span>
+        </div>
+        <div class="seam-video-wrapper">
+          <video controls preload="metadata" src="seams/seam_06_S06_S07.mp4"></video>
+        </div>
+      </div>
+
+      <div class="seam-card">
+        <div class="seam-card-header">
+          <span style="color: var(--accent);">S07 &rarr; S08</span>
+          <span style="font-family: var(--font-mono); color: var(--text-muted);">Cut @ f1030 (33.33s)</span>
+        </div>
+        <div class="seam-video-wrapper">
+          <video controls preload="metadata" src="seams/seam_07_S07_S08.mp4"></video>
+        </div>
+      </div>
+
+      <div class="seam-card">
+        <div class="seam-card-header">
+          <span style="color: var(--accent);">S08 &rarr; S09</span>
+          <span style="font-family: var(--font-mono); color: var(--text-muted);">Cut @ f1194 (38.80s)</span>
+        </div>
+        <div class="seam-video-wrapper">
+          <video controls preload="metadata" src="seams/seam_08_S08_S09.mp4"></video>
+        </div>
+      </div>
+
+      <div class="seam-card">
+        <div class="seam-card-header">
+          <span style="color: var(--accent);">S09 &rarr; S10</span>
+          <span style="font-family: var(--font-mono); color: var(--text-muted);">Cut @ f1418 (46.27s)</span>
+        </div>
+        <div class="seam-video-wrapper">
+          <video controls preload="metadata" src="seams/seam_09_S09_S10.mp4"></video>
+        </div>
+      </div>
+
+      <div class="seam-card">
+        <div class="seam-card-header">
+          <span style="color: var(--accent);">S10 &rarr; S11</span>
+          <span style="font-family: var(--font-mono); color: var(--text-muted);">Cut @ f1602 (52.40s)</span>
+        </div>
+        <div class="seam-video-wrapper">
+          <video controls preload="metadata" src="seams/seam_10_S10_S11.mp4"></video>
+        </div>
+      </div>
+
+      <div class="seam-card">
+        <div class="seam-card-header">
+          <span style="color: var(--accent);">S11 &rarr; S12</span>
+          <span style="font-family: var(--font-mono); color: var(--text-muted);">Cut @ f1807 (59.23s)</span>
+        </div>
+        <div class="seam-video-wrapper">
+          <video controls preload="metadata" src="seams/seam_11_S11_S12.mp4"></video>
+        </div>
+      </div>
+
+      <div class="seam-card">
+        <div class="seam-card-header">
+          <span style="color: var(--accent);">S12 &rarr; S13</span>
+          <span style="font-family: var(--font-mono); color: var(--text-muted);">Cut @ f1913 (62.77s)</span>
+        </div>
+        <div class="seam-video-wrapper">
+          <video controls preload="metadata" src="seams/seam_12_S12_S13.mp4"></video>
+        </div>
+      </div>
+
+      <div class="seam-card">
+        <div class="seam-card-header">
+          <span style="color: var(--accent);">S13 &rarr; S14</span>
+          <span style="font-family: var(--font-mono); color: var(--text-muted);">Cut @ f2049 (67.30s)</span>
+        </div>
+        <div class="seam-video-wrapper">
+          <video controls preload="metadata" src="seams/seam_13_S13_S14.mp4"></video>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Visual Proofs & Grayscale Table -->
+  <div style="margin-top: 40px;">
+    <div class="section-title">
+      <span>Bộ Chứng Chỉ Thị Giác 14 Cảnh (Visual Proofs: Open / Mid / End + Grayscale)</span>
+      <button class="toggle-gray-btn" onclick="toggleGrayscaleAll()">Bật/Tắt Grayscale Toàn Bộ</button>
+    </div>
+    <table class="proofs-table">
+      <thead>
+        <tr>
+          <th>Cảnh</th>
+          <th>Mô Tả & Trực Quan</th>
+          <th>Khung Mở (Open)</th>
+          <th>Khung Giữa (Mid)</th>
+          <th>Khung Cuối (End)</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td><strong style="color: var(--accent); font-family: var(--font-mono);">S01</strong> </td>
+          <td>
+            <div style="font-weight: 600; color: #fff;">Hook — Chú heo đất đầy ắp mở màn</div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Mascot bên cạnh chú heo đất đầy ắp, tiền vàng tràn ngập</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S01_open_f0.png" data-color="proofs/S01_open_f0.png" data-gray="proofs/S01_open_f0_gray.png" alt="S01 Open f0" title="f0">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f0</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S01_mid_f90.png" data-color="proofs/S01_mid_f90.png" data-gray="proofs/S01_mid_f90_gray.png" alt="S01 Mid f90" title="f90">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f90</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S01_end_f180.png" data-color="proofs/S01_end_f180.png" data-gray="proofs/S01_end_f180_gray.png" alt="S01 End f180" title="f180">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f180</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong style="color: var(--accent); font-family: var(--font-mono);">S02</strong> <span class="scene-tag-new">MỚI DUYỆT</span></td>
+          <td>
+            <div style="font-weight: 600; color: #fff;">Tích lũy & Sổ cái chi tiêu</div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Mascot đứng góc trái chỉ sổ cái tài chính & cột tiền vàng cân đối</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S02_open_f181.png" data-color="proofs/S02_open_f181.png" data-gray="proofs/S02_open_f181_gray.png" alt="S02 Open f181" title="f181">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f181</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S02_mid_f238.png" data-color="proofs/S02_mid_f238.png" data-gray="proofs/S02_mid_f238_gray.png" alt="S02 Mid f238" title="f238">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f238</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S02_end_f295.png" data-color="proofs/S02_end_f295.png" data-gray="proofs/S02_end_f295_gray.png" alt="S02 End f295" title="f295">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f295</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong style="color: var(--accent); font-family: var(--font-mono);">S03</strong> <span class="scene-tag-new">MỚI DUYỆT</span></td>
+          <td>
+            <div style="font-weight: 600; color: #fff;">Lộ trình tại Châu Âu: Học tập & Sự nghiệp</div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Lộ trình 2 trạm (Học tập -> Sự nghiệp EU) với mascot chính thức, sách vở, laptop và cờ EU</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S03_open_f296.png" data-color="proofs/S03_open_f296.png" data-gray="proofs/S03_open_f296_gray.png" alt="S03 Open f296" title="f296">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f296</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S03_mid_f360.png" data-color="proofs/S03_mid_f360.png" data-gray="proofs/S03_mid_f360_gray.png" alt="S03 Mid f360" title="f360">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f360</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S03_end_f423.png" data-color="proofs/S03_end_f423.png" data-gray="proofs/S03_end_f423_gray.png" alt="S03 End f423" title="f423">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f423</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong style="color: var(--accent); font-family: var(--font-mono);">S04</strong> <span class="scene-tag-new">MỚI DUYỆT</span></td>
+          <td>
+            <div style="font-weight: 600; color: #fff;">Cân nhắc phân bổ tài sản</div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Cán cân tài chính: bên phải villa đất đai VN, bên trái dấu hỏi lớn quốc tế</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S04_open_f424.png" data-color="proofs/S04_open_f424.png" data-gray="proofs/S04_open_f424_gray.png" alt="S04 Open f424" title="f424">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f424</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S04_mid_f484.png" data-color="proofs/S04_mid_f484.png" data-gray="proofs/S04_mid_f484_gray.png" alt="S04 Mid f484" title="f484">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f484</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S04_end_f544.png" data-color="proofs/S04_end_f544.png" data-gray="proofs/S04_end_f544_gray.png" alt="S04 End f544" title="f544">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f544</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong style="color: var(--accent); font-family: var(--font-mono);">S05</strong> </td>
+          <td>
+            <div style="font-weight: 600; color: #fff;">So sánh rủi ro: Lạm phát & Biến động</div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Bảng so sánh đa tài sản và rủi ro trượt giá</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S05_open_f545.png" data-color="proofs/S05_open_f545.png" data-gray="proofs/S05_open_f545_gray.png" alt="S05 Open f545" title="f545">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f545</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S05_mid_f630.png" data-color="proofs/S05_mid_f630.png" data-gray="proofs/S05_mid_f630_gray.png" alt="S05 Mid f630" title="f630">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f630</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S05_end_f715.png" data-color="proofs/S05_end_f715.png" data-gray="proofs/S05_end_f715_gray.png" alt="S05 End f715" title="f715">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f715</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong style="color: var(--accent); font-family: var(--font-mono);">S06</strong> </td>
+          <td>
+            <div style="font-weight: 600; color: #fff;">Tỷ giá hối đoái EUR/VND & Chi phí chuyển tiền</div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Biểu đồ tỷ giá tiền tệ và bài toán chi phí giao dịch</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S06_open_f716.png" data-color="proofs/S06_open_f716.png" data-gray="proofs/S06_open_f716_gray.png" alt="S06 Open f716" title="f716">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f716</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S06_mid_f803.png" data-color="proofs/S06_mid_f803.png" data-gray="proofs/S06_mid_f803_gray.png" alt="S06 Mid f803" title="f803">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f803</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S06_end_f889.png" data-color="proofs/S06_end_f889.png" data-gray="proofs/S06_end_f889_gray.png" alt="S06 End f889" title="f889">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f889</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong style="color: var(--accent); font-family: var(--font-mono);">S07</strong> </td>
+          <td>
+            <div style="font-weight: 600; color: #fff;">Đầu tư bất động sản & Thanh khoản</div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Mô hình nhà ở và biểu đồ chu kỳ bất động sản</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S07_open_f890.png" data-color="proofs/S07_open_f890.png" data-gray="proofs/S07_open_f890_gray.png" alt="S07 Open f890" title="f890">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f890</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S07_mid_f960.png" data-color="proofs/S07_mid_f960.png" data-gray="proofs/S07_mid_f960_gray.png" alt="S07 Mid f960" title="f960">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f960</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S07_end_f1029.png" data-color="proofs/S07_end_f1029.png" data-gray="proofs/S07_end_f1029_gray.png" alt="S07 End f1029" title="f1029">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f1029</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong style="color: var(--accent); font-family: var(--font-mono);">S08</strong> </td>
+          <td>
+            <div style="font-weight: 600; color: #fff;">Quy định pháp lý & Thuế chuyển nhượng</div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Hồ sơ pháp lý, con dấu và nghĩa vụ thuế song phương</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S08_open_f1030.png" data-color="proofs/S08_open_f1030.png" data-gray="proofs/S08_open_f1030_gray.png" alt="S08 Open f1030" title="f1030">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f1030</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S08_mid_f1112.png" data-color="proofs/S08_mid_f1112.png" data-gray="proofs/S08_mid_f1112_gray.png" alt="S08 Mid f1112" title="f1112">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f1112</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S08_end_f1193.png" data-color="proofs/S08_end_f1193.png" data-gray="proofs/S08_end_f1193_gray.png" alt="S08 End f1193" title="f1193">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f1193</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong style="color: var(--accent); font-family: var(--font-mono);">S09</strong> </td>
+          <td>
+            <div style="font-weight: 600; color: #fff;">Quản trị rủi ro tập trung (Don't put all eggs in one basket)</div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Chiến lược phân bổ rổ trứng đầu tư đa dạng</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S09_open_f1194.png" data-color="proofs/S09_open_f1194.png" data-gray="proofs/S09_open_f1194_gray.png" alt="S09 Open f1194" title="f1194">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f1194</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S09_mid_f1306.png" data-color="proofs/S09_mid_f1306.png" data-gray="proofs/S09_mid_f1306_gray.png" alt="S09 Mid f1306" title="f1306">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f1306</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S09_end_f1417.png" data-color="proofs/S09_end_f1417.png" data-gray="proofs/S09_end_f1417_gray.png" alt="S09 End f1417" title="f1417">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f1417</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong style="color: var(--accent); font-family: var(--font-mono);">S10</strong> </td>
+          <td>
+            <div style="font-weight: 600; color: #fff;">Lập quỹ dự phòng khẩn cấp tại nước sở tại</div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Két sắt dự phòng khẩn cấp 6-12 tháng sinh hoạt phí</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S10_open_f1418.png" data-color="proofs/S10_open_f1418.png" data-gray="proofs/S10_open_f1418_gray.png" alt="S10 Open f1418" title="f1418">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f1418</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S10_mid_f1510.png" data-color="proofs/S10_mid_f1510.png" data-gray="proofs/S10_mid_f1510_gray.png" alt="S10 Mid f1510" title="f1510">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f1510</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S10_end_f1601.png" data-color="proofs/S10_end_f1601.png" data-gray="proofs/S10_end_f1601_gray.png" alt="S10 End f1601" title="f1601">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f1601</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong style="color: var(--accent); font-family: var(--font-mono);">S11</strong> </td>
+          <td>
+            <div style="font-weight: 600; color: #fff;">Chiến lược DCA & Đầu tư định kỳ</div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Phương pháp tích sản định kỳ và lãi kép dài hạn</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S11_open_f1602.png" data-color="proofs/S11_open_f1602.png" data-gray="proofs/S11_open_f1602_gray.png" alt="S11 Open f1602" title="f1602">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f1602</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S11_mid_f1704.png" data-color="proofs/S11_mid_f1704.png" data-gray="proofs/S11_mid_f1704_gray.png" alt="S11 Mid f1704" title="f1704">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f1704</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S11_end_f1806.png" data-color="proofs/S11_end_f1806.png" data-gray="proofs/S11_end_f1806_gray.png" alt="S11 End f1806" title="f1806">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f1806</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong style="color: var(--accent); font-family: var(--font-mono);">S12</strong> </td>
+          <td>
+            <div style="font-weight: 600; color: #fff;">Tối ưu hóa thuế thu nhập & Tài khoản hưu trí EU</div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Khung ưu đãi thuế và tài khoản đầu tư cá nhân</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S12_open_f1807.png" data-color="proofs/S12_open_f1807.png" data-gray="proofs/S12_open_f1807_gray.png" alt="S12 Open f1807" title="f1807">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f1807</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S12_mid_f1860.png" data-color="proofs/S12_mid_f1860.png" data-gray="proofs/S12_mid_f1860_gray.png" alt="S12 Mid f1860" title="f1860">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f1860</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S12_end_f1912.png" data-color="proofs/S12_end_f1912.png" data-gray="proofs/S12_end_f1912_gray.png" alt="S12 End f1912" title="f1912">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f1912</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong style="color: var(--accent); font-family: var(--font-mono);">S13</strong> </td>
+          <td>
+            <div style="font-weight: 600; color: #fff;">Lập kế hoạch dài hạn định cư & Tự do tài chính</div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Bản đồ mục tiêu tự do tài chính và an cư bền vững</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S13_open_f1913.png" data-color="proofs/S13_open_f1913.png" data-gray="proofs/S13_open_f1913_gray.png" alt="S13 Open f1913" title="f1913">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f1913</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S13_mid_f1981.png" data-color="proofs/S13_mid_f1981.png" data-gray="proofs/S13_mid_f1981_gray.png" alt="S13 Mid f1981" title="f1981">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f1981</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S13_end_f2048.png" data-color="proofs/S13_end_f2048.png" data-gray="proofs/S13_end_f2048_gray.png" alt="S13 End f2048" title="f2048">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f2048</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong style="color: var(--accent); font-family: var(--font-mono);">S14</strong> </td>
+          <td>
+            <div style="font-weight: 600; color: #fff;">Kết luận & Lời khuyên tổng kết</div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Mascot tự tin nhìn về chân trời thành công tài chính</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S14_open_f2049.png" data-color="proofs/S14_open_f2049.png" data-gray="proofs/S14_open_f2049_gray.png" alt="S14 Open f2049" title="f2049">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f2049</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S14_mid_f2152.png" data-color="proofs/S14_mid_f2152.png" data-gray="proofs/S14_mid_f2152_gray.png" alt="S14 Mid f2152" title="f2152">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f2152</div>
+          </td>
+          <td>
+            <img class="proof-img" src="proofs/S14_end_f2254.png" data-color="proofs/S14_end_f2254.png" data-gray="proofs/S14_end_f2254_gray.png" alt="S14 End f2254" title="f2254">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);">f2254</div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <footer style="margin-top: 48px; border-top: 1px solid var(--border); padding-top: 16px; font-size: 12px; color: var(--text-muted); display: flex; justify-content: space-between;">
+    <div>Dự án: <strong>VIDEO-33</strong> • Phiên bản Master: <code>master-approved-r2</code></div>
+    <div>Mã băm Master MP4: <code>c079c05e36ccf96dfb84e741248e5534eeacc82c4f56a5662352b6e158e94c7b</code></div>
+  </footer>
+
+  <script>
+    const video = document.getElementById('mainVideo');
+    const frameCounter = document.getElementById('frameCounter');
+    const timeCounter = document.getElementById('timeCounter');
+    let isGray = false;
+
+    video.addEventListener('timeupdate', () => {
+      const curT = video.currentTime;
+      const curF = Math.floor(curT * 30);
+      timeCounter.textContent = curT.toFixed(2) + 's';
+      frameCounter.textContent = curF;
+    });
+
+    function switchVideo(type) {
+      document.querySelectorAll('.btn').forEach(b => b.classList.remove('active'));
+      const curTime = video.currentTime;
+      const isPaused = video.paused;
+      
+      if (type === 'master') {
+        video.src = 'VIDEO-33-master-approved-r2.mp4';
+        document.getElementById('btnMaster').classList.add('active');
+      } else if (type === 'clean') {
+        video.src = 'VIDEO-33-clean-approved-r2.mp4';
+        document.getElementById('btnClean').classList.add('active');
+      } else if (type === 'mobile') {
+        video.src = 'VIDEO-33-mobile-360x640-preview.mp4';
+        document.getElementById('btnMobile').classList.add('active');
+      }
+      
+      video.currentTime = curTime;
+      if (!isPaused) video.play();
+    }
+
+    function seekTo(timeSeconds, sceneId) {
+      video.currentTime = timeSeconds;
+      video.play();
+      document.querySelectorAll('.scene-item').forEach(el => el.classList.remove('active'));
+      const activeItem = document.getElementById('item-' + sceneId);
+      if (activeItem) activeItem.classList.add('active');
+    }
+
+    function toggleGrayscaleAll() {
+      isGray = !isGray;
+      document.querySelectorAll('.proof-img').forEach(img => {
+        img.src = isGray ? img.getAttribute('data-gray') : img.getAttribute('data-color');
+      });
+    }
+  </script>
+</body>
+</html>

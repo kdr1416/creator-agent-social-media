@@ -1,0 +1,153 @@
+{
+  "status": "technical_intake_passed_not_creative_approval",
+  "master_path": "inputs/Generated Audio November 01, 2026 - 5_35PM.wav",
+  "sha256": "6b92d56bb90f3c4e702903d53d098d7c1765daf716879e8de60826a3110425c1",
+  "matches_manifest_hash": true,
+  "sample_rate": 24000,
+  "total_samples": 2232960,
+  "duration_seconds": 93.04,
+  "channels": 1,
+  "bytes_per_sample": 2,
+  "scenes": 17,
+  "raw_asr_segments": 20,
+  "words": 375,
+  "words_below_probability_0_5": 10,
+  "contiguous": true,
+  "full_coverage": true,
+  "cuts": [
+    {
+      "scene_id": "S02",
+      "sample": 112563,
+      "previous_value": -5,
+      "first_value": 0,
+      "rms_40ms_raw": 31.784708718711475,
+      "rms_dbfs": -60.26463398269192
+    },
+    {
+      "scene_id": "S03",
+      "sample": 243986,
+      "previous_value": -4,
+      "first_value": 0,
+      "rms_40ms_raw": 33.72191732884317,
+      "rms_dbfs": -59.75075351201208
+    },
+    {
+      "scene_id": "S04",
+      "sample": 458528,
+      "previous_value": 2,
+      "first_value": 0,
+      "rms_40ms_raw": 9.998489469248176,
+      "rms_dbfs": -70.31031082863797
+    },
+    {
+      "scene_id": "S05",
+      "sample": 533049,
+      "previous_value": -4,
+      "first_value": 0,
+      "rms_40ms_raw": 16.761065996330107,
+      "rms_dbfs": -65.82296597703036
+    },
+    {
+      "scene_id": "S06",
+      "sample": 682209,
+      "previous_value": 2,
+      "first_value": 0,
+      "rms_40ms_raw": 22.385007073187776,
+      "rms_dbfs": -63.309853980247624
+    },
+    {
+      "scene_id": "S07",
+      "sample": 856238,
+      "previous_value": 1,
+      "first_value": 0,
+      "rms_40ms_raw": 8.537905676062094,
+      "rms_dbfs": -71.68197164812116
+    },
+    {
+      "scene_id": "S08",
+      "sample": 966480,
+      "previous_value": -12,
+      "first_value": 0,
+      "rms_40ms_raw": 113.87628063677995,
+      "rms_dbfs": -49.18033321871978
+    },
+    {
+      "scene_id": "S09",
+      "sample": 1101123,
+      "previous_value": -2,
+      "first_value": 0,
+      "rms_40ms_raw": 15.892542800529645,
+      "rms_dbfs": -66.28513090496726
+    },
+    {
+      "scene_id": "S10",
+      "sample": 1210802,
+      "previous_value": 4,
+      "first_value": 0,
+      "rms_40ms_raw": 16.494632965503254,
+      "rms_dbfs": -65.96214557568662
+    },
+    {
+      "scene_id": "S11",
+      "sample": 1329535,
+      "previous_value": 2,
+      "first_value": 0,
+      "rms_40ms_raw": 13.959054707727645,
+      "rms_dbfs": -67.41187851270345
+    },
+    {
+      "scene_id": "S12",
+      "sample": 1432624,
+      "previous_value": 1,
+      "first_value": 0,
+      "rms_40ms_raw": 27.864478582357624,
+      "rms_dbfs": -61.40798028565722
+    },
+    {
+      "scene_id": "S13",
+      "sample": 1614842,
+      "previous_value": 1,
+      "first_value": 0,
+      "rms_40ms_raw": 7.505831066577504,
+      "rms_dbfs": -72.80102298840401
+    },
+    {
+      "scene_id": "S14",
+      "sample": 1753804,
+      "previous_value": 4,
+      "first_value": 0,
+      "rms_40ms_raw": 45.820767216769006,
+      "rms_dbfs": -57.08775156554029
+    },
+    {
+      "scene_id": "S15",
+      "sample": 1952400,
+      "previous_value": -2,
+      "first_value": 0,
+      "rms_40ms_raw": 2.7427935880533676,
+      "rms_dbfs": -81.54513618868197
+    },
+    {
+      "scene_id": "S16",
+      "sample": 2027167,
+      "previous_value": -5,
+      "first_value": 0,
+      "rms_40ms_raw": 30.042521948065545,
+      "rms_dbfs": -60.754270956682525
+    },
+    {
+      "scene_id": "S17",
+      "sample": 2126040,
+      "previous_value": 1,
+      "first_value": 0,
+      "rms_40ms_raw": 6.495431086540754,
+      "rms_dbfs": -74.05683910974135
+    }
+  ],
+  "limitations": [
+    "Not a full listening/ASR accuracy audit",
+    "Zero-valued cuts do not guarantee click-free playback",
+    "No factual approval for S13 price claim",
+    "No style/pilot approval; no assets generated or scene rendered"
+  ]
+}

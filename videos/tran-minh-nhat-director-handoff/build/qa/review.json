@@ -1,0 +1,32 @@
+{
+  "source_files_checked": 0,
+  "source_files_changed": [],
+  "video": {
+    "path": "videos\\tran-minh-nhat-director-handoff\\build\\renders\\tran-minh-nhat-cluster-16-17.mp4",
+    "codec": "h264",
+    "width": 720,
+    "height": 1280,
+    "fps": "30",
+    "duration": 7.833333333333333,
+    "frames": 235
+  },
+  "audio": {
+    "codec": "aac",
+    "duration": 7.847416666666667,
+    "source_duration": 7.847416666666667,
+    "source_sample_rate": 24000,
+    "decoded_correlation_with_source": 0.999965568820985,
+    "original_rms": 0.1679551995351821,
+    "decoded_rms": 0.16767522099923318,
+    "decoded_peak": 0.839874267578125,
+    "clipped_samples": 0
+  },
+  "proof_times": [
+    1.0,
+    2.5,
+    4.0,
+    5.5,
+    7.0
+  ],
+  "user_approval": "pending"
+}

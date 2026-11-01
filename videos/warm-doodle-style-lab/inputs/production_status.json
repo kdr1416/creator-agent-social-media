@@ -1,0 +1,178 @@
+{
+  "project_slug": "le-pham-nhu-quynh",
+  "stage": "production_and_concatenation_complete",
+  "roles": {
+    "audio": "Antigravity",
+    "research_routing_storyboard_pilot": "Codex",
+    "remaining_scenes_qa_concat": "Antigravity"
+  },
+  "audio_handoff": "scratch/audio_handoff.json",
+  "routing_file": "scratch/scene_routing.json",
+  "storyboard_file": "scratch/storyboard.md",
+  "pilot_scene": "scene_15",
+  "scope_authorization": "Full 16 scenes production, user-approved revisions for scene_08 & scene_13, scene_14 clearance, and full film concatenation completed.",
+  "scenes": {
+    "scene_01": {
+      "mode": "HF_ONLY",
+      "style": "kurzgesagt",
+      "status": "completed",
+      "audio_slice": "scratch/audio_slices/scene_01.wav",
+      "output_video": "output/le-pham-nhu-quynh/scene_01.mp4",
+      "duration": 5.367,
+      "publication_hold": false
+    },
+    "scene_02": {
+      "mode": "HF_ONLY",
+      "style": "kurzgesagt",
+      "status": "completed",
+      "fallback_from": "HYBRID",
+      "fallback_reason": "Verified capability failure on Flow Veo 3 CDN polling after 2 full cycles. Degraded to HF_ONLY Kurzgesagt per locked storyboard fallback contract.",
+      "audio_slice": "scratch/audio_slices/scene_02.wav",
+      "output_video": "output/le-pham-nhu-quynh/scene_02.mp4",
+      "duration": 5.233,
+      "publication_hold": false
+    },
+    "scene_03": {
+      "mode": "FLOW_ONLY",
+      "style": "not_applicable",
+      "status": "completed",
+      "audio_slice": "scratch/audio_slices/scene_03.wav",
+      "output_video": "output/le-pham-nhu-quynh/scene_03.mp4",
+      "duration": 3.583,
+      "publication_hold": false
+    },
+    "scene_04": {
+      "mode": "HF_ONLY",
+      "style": "hf_existing:institution-geolocation",
+      "status": "completed",
+      "audio_slice": "scratch/audio_slices/scene_04.wav",
+      "output_video": "output/le-pham-nhu-quynh/scene_04.mp4",
+      "duration": 3.300,
+      "publication_hold": false
+    },
+    "scene_05": {
+      "mode": "HF_ONLY",
+      "style": "kurzgesagt",
+      "status": "completed",
+      "audio_slice": "scratch/audio_slices/scene_05.wav",
+      "output_video": "output/le-pham-nhu-quynh/scene_05.mp4",
+      "duration": 6.267,
+      "publication_hold": false
+    },
+    "scene_06": {
+      "mode": "FLOW_ONLY",
+      "style": "not_applicable",
+      "status": "completed",
+      "audio_slice": "scratch/audio_slices/scene_06.wav",
+      "output_video": "output/le-pham-nhu-quynh/scene_06.mp4",
+      "duration": 2.625,
+      "publication_hold": false
+    },
+    "scene_07": {
+      "mode": "HF_ONLY",
+      "style": "isometric",
+      "status": "completed",
+      "audio_slice": "scratch/audio_slices/scene_07.wav",
+      "output_video": "output/le-pham-nhu-quynh/scene_07.mp4",
+      "duration": 3.233,
+      "publication_hold": false
+    },
+    "scene_08": {
+      "mode": "HF_ONLY",
+      "style": "kurzgesagt",
+      "status": "completed",
+      "revision": "redesigned_kurzgesagt_container_port",
+      "audio_slice": "scratch/audio_slices/scene_08.wav",
+      "output_video": "output/le-pham-nhu-quynh/scene_08.mp4",
+      "duration": 3.733,
+      "publication_hold": false
+    },
+    "scene_09": {
+      "mode": "HF_ONLY",
+      "style": "isometric",
+      "status": "completed",
+      "audio_slice": "scratch/audio_slices/scene_09.wav",
+      "output_video": "output/le-pham-nhu-quynh/scene_09.mp4",
+      "duration": 6.500,
+      "publication_hold": false
+    },
+    "scene_10": {
+      "mode": "HYBRID",
+      "style": "negative_space_plate_with_floating_callout",
+      "status": "completed",
+      "audio_slice": "scratch/audio_slices/scene_10.wav",
+      "output_video": "output/le-pham-nhu-quynh/scene_10.mp4",
+      "duration": 4.500,
+      "publication_hold": false
+    },
+    "scene_11": {
+      "mode": "HF_ONLY",
+      "style": "bauhaus",
+      "status": "completed",
+      "audio_slice": "scratch/audio_slices/scene_11.wav",
+      "output_video": "output/le-pham-nhu-quynh/scene_11.mp4",
+      "duration": 4.433,
+      "publication_hold": false
+    },
+    "scene_12": {
+      "mode": "FLOW_ONLY",
+      "style": "not_applicable",
+      "status": "completed",
+      "audio_slice": "scratch/audio_slices/scene_12.wav",
+      "output_video": "output/le-pham-nhu-quynh/scene_12.mp4",
+      "duration": 4.792,
+      "publication_hold": false
+    },
+    "scene_13": {
+      "mode": "HF_ONLY",
+      "style": "kurzgesagt",
+      "status": "completed",
+      "revision": "removed_text_occlusion",
+      "audio_slice": "scratch/audio_slices/scene_13.wav",
+      "output_video": "output/le-pham-nhu-quynh/scene_13.mp4",
+      "duration": 4.333,
+      "publication_hold": false
+    },
+    "scene_14": {
+      "mode": "FLOW_ONLY",
+      "style": "not_applicable",
+      "status": "completed",
+      "audio_slice": "scratch/audio_slices/scene_14.wav",
+      "output_video": "output/le-pham-nhu-quynh/scene_14.mp4",
+      "duration": 3.667,
+      "publication_hold": false,
+      "hold_reason": "Cleared by user confirmation to keep original voice statement."
+    },
+    "scene_15": {
+      "mode": "HF_ONLY",
+      "style": "kurzgesagt",
+      "status": "completed",
+      "revision": "ending-v2",
+      "audio_slice": "scratch/audio_slices/scene_15.wav",
+      "output_video": "output/le-pham-nhu-quynh/scene_15.mp4",
+      "duration": 6.567,
+      "publication_hold": false
+    },
+    "scene_16": {
+      "mode": "FLOW_ONLY",
+      "style": "not_applicable",
+      "status": "completed",
+      "audio_slice": "scratch/audio_slices/scene_16.wav",
+      "output_video": "output/le-pham-nhu-quynh/scene_16.mp4",
+      "duration": 6.042,
+      "publication_hold": false
+    }
+  },
+  "total_scenes": 16,
+  "completed_scenes": 16,
+  "remaining_scenes_produced": 15,
+  "publication_holds": [],
+  "qa_status": "PASSED",
+  "resolution": "720x1280",
+  "fps": 30,
+  "final_video": "output/le-pham-nhu-quynh/final.mp4",
+  "final_video_duration": 73.92,
+  "final_audio_duration": 73.92,
+  "source_audio_duration": 73.92,
+  "next_action": "Complete and ready for distribution."
+}

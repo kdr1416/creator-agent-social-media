@@ -1,0 +1,100 @@
+{
+  "status": "AWAITING VISUAL STYLE REVIEW",
+  "protected_files_checked": 55,
+  "protected_changed_or_missing": [],
+  "master_matches_manifest": true,
+  "production_approval": "pending",
+  "scene_interval_count": 17,
+  "font_glyph_checks": {
+    "display.ttf": {
+      "missing_glyphs": []
+    },
+    "editorial-italic.ttf": {
+      "missing_glyphs": []
+    }
+  },
+  "frames": [
+    {
+      "id": "S03-A",
+      "png_dimensions": [
+        1080,
+        1920
+      ],
+      "source_sha256": "45a610b87c85566d0d8c3b564edeeb95940c92a8104f82b1e5152b448c9b8425",
+      "png_sha256": "8dcf0712e42cc603258b67f7c1acbe15b166f34bd71d51f408cd4c2e03c76880",
+      "hyperframes_ok": true,
+      "lint_errors": 0,
+      "runtime_errors": 0,
+      "contrast_errors": 0,
+      "layout_warnings": 12,
+      "warning_codes": [
+        "container_overflow"
+      ]
+    },
+    {
+      "id": "S03-B",
+      "png_dimensions": [
+        1080,
+        1920
+      ],
+      "source_sha256": "5b0ec50b47ab6af18bbaf6866d8c972222c2780710cb3f9627088711606c3b7b",
+      "png_sha256": "35b8cebc7bbfa285a877584a07ece4d18aa208102c3d3701743221bfadc20762",
+      "hyperframes_ok": true,
+      "lint_errors": 0,
+      "runtime_errors": 0,
+      "contrast_errors": 0,
+      "layout_warnings": 13,
+      "warning_codes": [
+        "container_overflow",
+        "content_overlap"
+      ]
+    },
+    {
+      "id": "S08-A",
+      "png_dimensions": [
+        1080,
+        1920
+      ],
+      "source_sha256": "7ee5376dd80a75d1516d31d144e7457699be9d04044e335156734d325a6539eb",
+      "png_sha256": "99f8753056db69700cf3bf3aace27295ea53f0bd037b4325335e1d954bf4d27f",
+      "hyperframes_ok": true,
+      "lint_errors": 0,
+      "runtime_errors": 0,
+      "contrast_errors": 0,
+      "layout_warnings": 1,
+      "warning_codes": [
+        "container_overflow"
+      ]
+    },
+    {
+      "id": "S08-B",
+      "png_dimensions": [
+        1080,
+        1920
+      ],
+      "source_sha256": "f03bb023fb85c4f72d49992cf8ce3f5197b9ab88eec8984f4a327fa88c266b54",
+      "png_sha256": "8e96ef45aa42720954976c599ca20271367515598f2ef016f8d87e7df4177f2b",
+      "hyperframes_ok": true,
+      "lint_errors": 0,
+      "runtime_errors": 0,
+      "contrast_errors": 0,
+      "layout_warnings": 1,
+      "warning_codes": [
+        "container_overflow"
+      ]
+    }
+  ],
+  "deterministic_capture_all": true,
+  "visual_inspection": "Four final mobile frames and comparison; full-size S08 contact/type and S03 type inspected. Stylized vector character appeal remains human review. Artwork bleed intentional; rotated type AABBs overlap without glyph collision.",
+  "not_tested": [
+    "animation smoothness",
+    "gait/foot contact over time",
+    "hand contact over time",
+    "laptop hinge motion",
+    "AV sync",
+    "human style approval"
+  ],
+  "hyperframes_usage": "unknown: usage_request_failed; no quota inferred",
+  "engines_or_dependencies_added": false,
+  "pilot_video_rendered": false
+}

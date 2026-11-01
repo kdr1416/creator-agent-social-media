@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "phase": "audio_analyzed",
+  "approval": {
+    "status": "pending",
+    "reviewer": null,
+    "approved_at": null,
+    "evidence": null,
+    "fingerprint": null
+  },
+  "scenes": {},
+  "final": {
+    "status": "pending"
+  },
+  "next_actions": [
+    "Codex: Plan creative direction, storyboard, canvas resolution, and FPS",
+    "Codex: Select pilot scene IDs, assign engine routing and scene render configurations",
+    "Codex: Produce and render pilot scenes for human review; do not proceed to full production without approval"
+  ]
+}

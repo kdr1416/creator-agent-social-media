@@ -1,0 +1,10 @@
+{
+  "phase": "user_approved_static_frame",
+  "frame": "frames/frame-00-at-0.5s.png",
+  "sha256": "9c9a5142dbfa4d50c5ede0788089e82c38ba6ca4a0f5eadbf1a0b091d7714a4f",
+  "mobile_and_grayscale_created": true,
+  "master_assembly_manifest_modified": false,
+  "motion_produced": false,
+  "user_approved": true,
+  "motion_candidate": "../S02-approved-frame-motion-r1/REVIEW.html"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "project_id": null,
+  "production_agent": "codex",
+  "audio_analysis_agent": "antigravity",
+  "canvas": {
+    "width": null,
+    "height": null
+  },
+  "fps": null,
+  "audio": {
+    "path": "inputs/source_audio.wav",
+    "sha256": null,
+    "sample_rate": null,
+    "total_samples": null
+  },
+  "pilot_scene_ids": [],
+  "renderers": {
+    "hyperframes": [],
+    "remotion": []
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "reused": {
+    "fonts": "Arial regular/bold local files copied byte-for-byte from previous pilot",
+    "runtime": "GSAP local script copied byte-for-byte",
+    "student": "Layered student SVG extracted from previous pilot; new IDs prefixed c12; pose/timing new",
+    "campus_photo": {
+      "scene": "06 only",
+      "source_page": "https://vu.nl/en/about-vu/more-about/vu-main-building",
+      "use": "Physical photographic cover of an explicitly illustrative cutaway"
+    }
+  },
+  "scene_06_new": {
+    "file": "scene_06/index.html",
+    "layers": [
+      "#c6-drawing architectural shell, floors, columns, entrance",
+      "#c6-business desk, chair, chart board",
+      "#c6-data workstation with observation table and fitted line",
+      "#c6-ai research network board and signal",
+      "#c6-law reading room shelves, book, lamp",
+      "#c6-health laboratory, microscope, trace",
+      "#c6-label-* replacing field labels"
+    ],
+    "type": "Original multi-layer SVG and DOM, no external icon kit"
+  },
+  "scene_12_new": {
+    "file": "scene_12/index.html",
+    "rig": "scene_12/assets/portrait-v5.js",
+    "layers": [
+      "existing dossier and tangram",
+      "self-dressing paper portrait",
+      "#p12-plan planning paper with empty target slots",
+      "#p12-goal-photo official campus photograph",
+      "#p12-choice-circle single selection mark",
+      "three nearby persistent concept labels"
+    ],
+    "removed": [
+      "all label leader lines",
+      "future-self sketch",
+      "target reticle",
+      "raised route"
+    ],
+    "note": "Campus photo copied from scene06, sourced from official VU Main Building page; use is a study-goal illustration, not an admission document."
+  },
+  "revision_2": {
+    "font": "C:/Windows/Fonts/ariblk.ttf copied locally as assets/arial-black.ttf in each scene; family PilotDisplay weight900",
+    "labels": "Scene12 persistent bare text + thin blue leader lines, attached to tangram/route."
+  },
+  "current_display_font": {
+    "family": "PilotDisplay",
+    "actual_font": "Segoe UI Black",
+    "weight": 900,
+    "source": "C:/Windows/Fonts/seguibl.ttf",
+    "local": "assets/segoe-ui-black.ttf in each scene",
+    "coverage_evidence": "qa/font-coverage-v3.json",
+    "rejected_legacy": "assets/arial-black.ttf is unused; missing required Vietnamese glyphs"
+  },
+  "scene_12_current_revision": 6
+}

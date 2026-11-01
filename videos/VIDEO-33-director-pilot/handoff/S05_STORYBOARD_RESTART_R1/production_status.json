@@ -1,0 +1,43 @@
+{
+  "phase": "storyboard_approved_ready_for_pilot_production",
+  "S05": "storyboard_approved_pilot_not_yet_produced",
+  "S05_album_v5": "rejected_by_latest_user_instruction",
+  "new_frames_created": false,
+  "new_pilots_rendered": false,
+  "approved_pilots": [
+    {
+      "scene_id": "S01",
+      "version": "original_pilot",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "video_path": "pilots/S01/renders/pilot.mp4",
+      "absolute_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\pilots\\S01\\renders\\pilot.mp4",
+      "video_sha256": "4e111b0e89a34b5bbb56eb5c513b947db7e904f0676c3c51cb17a100f6ac83f5",
+      "user_message_verbatim": "S01 bản đầu + S09 motion r1",
+      "full_film_production_authorized": false
+    },
+    {
+      "scene_id": "S09",
+      "version": "motion-r1",
+      "approval_status": "approved",
+      "approval_scope": "pilot motion with original voice",
+      "video_path": "revisions/pilots-approved-frames-r1/S09/renders/pilot.mp4",
+      "absolute_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\pilots-approved-frames-r1\\S09\\renders\\pilot.mp4",
+      "video_sha256": "a6cbf6ec62a12bf74f4cdcc076f27c1ac839f4e984c35aeba1bf2dc9b44cd90e",
+      "user_message_verbatim": "S01 bản đầu + S09 motion r1",
+      "full_film_production_authorized": false
+    }
+  ],
+  "full_film_authorized": false,
+  "storyboard_approval": {
+    "scene_id": "S05",
+    "version": "S05_STORYBOARD_RESTART_R1",
+    "approval_status": "approved",
+    "approval_scope": "storyboard concept and direction only; pilot production may proceed for review",
+    "user_message_verbatim": "oke duyệt",
+    "approved_direction": "Mascot đặt ghim Malta trên bản đồ rồi cắt sang ảnh nhà thật tại bất động sản",
+    "frame_approved": false,
+    "motion_approved": false,
+    "full_film_production_authorized": false
+  }
+}

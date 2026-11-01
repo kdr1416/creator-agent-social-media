@@ -1,0 +1,85 @@
+{
+  "output": "videos\\youpass-first15-rebuild\\renders\\youpass-first15-silent.mp4",
+  "video": {
+    "codec": "h264",
+    "width": 720,
+    "height": 1280,
+    "fps": "30",
+    "duration": 15.0,
+    "frame_count": 450,
+    "audio_streams": 0,
+    "bytes": 3486291
+  },
+  "source_files_unchanged": true,
+  "protected_files_checked": 20,
+  "check": {
+    "ok": true,
+    "lint": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "runtime": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "layout": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "contrast": {
+      "errors": 0,
+      "warnings": 0,
+      "checked": 36,
+      "passed": 36
+    }
+  },
+  "visual_proof_times": [
+    0,
+    0.2,
+    1.3,
+    3.7,
+    4.7,
+    5.8,
+    6.5,
+    8.3,
+    9.3,
+    10.5,
+    11.5,
+    12.2,
+    13.5,
+    14.5,
+    14.9
+  ],
+  "reference_alignment": {
+    "colour_relationships": {
+      "assessment": "match",
+      "evidence": "Peach/lavender traffic, navy exterior, pale lilac room, blue/orange typography strips, orange mascot."
+    },
+    "typography_treatment": {
+      "assessment": "partial",
+      "evidence": "Same source phrases/strips and moderate weight; Arial approximates unidentified source font; line shapes differ."
+    },
+    "asset_mix": {
+      "assessment": "match",
+      "evidence": "New vector surroundings with3 genuine source UI crops, tape, annotation and progress props."
+    },
+    "composition": {
+      "assessment": "partial",
+      "evidence": "All5 source settings and principal positions preserved; small prop scale and school/house geometry approximate."
+    },
+    "mascot_language": {
+      "assessment": "partial",
+      "evidence": "Compact expressive orange bean with thin limbs; authored silhouette, face and gestures differ from original animation."
+    },
+    "motion_rhythm": {
+      "assessment": "partial",
+      "evidence": "Opening pullback, window/desk zoom, timed problem notes, product reveal and progress walking reconstructed; some original transition/keyframe timing differs."
+    }
+  },
+  "limitations": [
+    "Not a pixel-identical remake; exact original fonts, rigs and animation curves unavailable.",
+    "UI crops retain original360p detail.",
+    "Visual evaluation uses sampled rendered frames and comparison sheets; do not claim full continuous playback review."
+  ],
+  "user_approval": "pending"
+}

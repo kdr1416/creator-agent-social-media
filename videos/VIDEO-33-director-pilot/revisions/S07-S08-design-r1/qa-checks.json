@@ -1,0 +1,184 @@
+{
+  "S07/02-contact": {
+    "ok": true,
+    "strict": false,
+    "browserSkipped": false,
+    "lint": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "infoCount": 0,
+      "findings": [],
+      "filesScanned": 1
+    },
+    "runtime": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "infoCount": 0,
+      "findings": []
+    },
+    "layout": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "infoCount": 0,
+      "findings": [],
+      "duration": 1,
+      "samples": [
+        0.056,
+        0.167,
+        0.278,
+        0.389,
+        0.5,
+        0.611,
+        0.722,
+        0.833,
+        0.944
+      ],
+      "transitionSamples": [],
+      "transitionSamplesDropped": 0,
+      "tolerance": 2,
+      "totalIssueCount": 0,
+      "truncated": false
+    },
+    "motion": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "infoCount": 0,
+      "findings": [],
+      "enabled": false,
+      "samples": 0
+    },
+    "contrast": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "infoCount": 0,
+      "findings": [],
+      "enabled": true,
+      "samples": [
+        0.056,
+        0.278,
+        0.5,
+        0.722,
+        0.944
+      ],
+      "checked": 5,
+      "passed": 5
+    },
+    "hdr": {
+      "autoPromotion": null,
+      "inspection": "available"
+    },
+    "snapshots": {
+      "enabled": false,
+      "files": [],
+      "times": [],
+      "findingFiles": []
+    },
+    "saved": {
+      "id": "d7c3f04a-f5b8-4ace-a3f8-d47f6dc7a1fb",
+      "revision": "0b8de327-0b33-4b73-b584-a4f981625af4",
+      "report": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S07-S08-design-r1\\S07\\02-contact\\.hyperframes\\artifacts\\checks\\d7c3f04a-f5b8-4ace-a3f8-d47f6dc7a1fb.json",
+      "attribution": "recorded-revision"
+    },
+    "_meta": {
+      "version": "0.8.170",
+      "latestVersion": "0.8.170",
+      "updateAvailable": false
+    }
+  },
+  "S08/02-greet": {
+    "ok": true,
+    "strict": false,
+    "browserSkipped": false,
+    "lint": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "infoCount": 0,
+      "findings": [],
+      "filesScanned": 1
+    },
+    "runtime": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "infoCount": 0,
+      "findings": []
+    },
+    "layout": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "infoCount": 0,
+      "findings": [],
+      "duration": 1,
+      "samples": [
+        0.056,
+        0.167,
+        0.278,
+        0.389,
+        0.5,
+        0.611,
+        0.722,
+        0.833,
+        0.944
+      ],
+      "transitionSamples": [],
+      "transitionSamplesDropped": 0,
+      "tolerance": 2,
+      "totalIssueCount": 0,
+      "truncated": false
+    },
+    "motion": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "infoCount": 0,
+      "findings": [],
+      "enabled": false,
+      "samples": 0
+    },
+    "contrast": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "infoCount": 0,
+      "findings": [],
+      "enabled": true,
+      "samples": [
+        0.056,
+        0.278,
+        0.5,
+        0.722,
+        0.944
+      ],
+      "checked": 5,
+      "passed": 5
+    },
+    "hdr": {
+      "autoPromotion": null,
+      "inspection": "available"
+    },
+    "snapshots": {
+      "enabled": false,
+      "files": [],
+      "times": [],
+      "findingFiles": []
+    },
+    "saved": {
+      "id": "a654bece-9164-4870-b518-2554e6500cdc",
+      "revision": "bd2579f8-0f92-4c51-a79f-91bd6adfd459",
+      "report": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S07-S08-design-r1\\S08\\02-greet\\.hyperframes\\artifacts\\checks\\a654bece-9164-4870-b518-2554e6500cdc.json",
+      "attribution": "recorded-revision"
+    },
+    "_meta": {
+      "version": "0.8.170",
+      "latestVersion": "0.8.170",
+      "updateAvailable": false
+    }
+  }
+}

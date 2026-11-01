@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "historyId": "981c1641-f34c-4834-a5f8-18b7a680aaa8",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "assets/font.ttf": {
+      "hash": "be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\981c1641-f34c-4834-a5f8-18b7a680aaa8\\blobs\\be\\be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\981c1641-f34c-4834-a5f8-18b7a680aaa8\\blobs\\c1\\c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "index.html": {
+      "hash": "dbf16d16cd6356cf8837c4db19b8e44658307a7a2df3658af10a3edf303e4570",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\981c1641-f34c-4834-a5f8-18b7a680aaa8\\blobs\\db\\dbf16d16cd6356cf8837c4db19b8e44658307a7a2df3658af10a3edf303e4570"
+    },
+    "layered-art.svg": {
+      "hash": "43edaa213861595dc733d0437982fb80aff164c2b1ee761f622ed7f0631e4624",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\981c1641-f34c-4834-a5f8-18b7a680aaa8\\blobs\\43\\43edaa213861595dc733d0437982fb80aff164c2b1ee761f622ed7f0631e4624"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "cbced834-dead-4551-ad5c-2e43ecc91f54-0"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "cbced834-dead-4551-ad5c-2e43ecc91f54-0",
+        "image": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S13-S14-design-r1\\S13\\01-student\\frames\\frame-00-at-0.5s.png",
+        "time": 0.5,
+        "metadata": {
+          "width": 720,
+          "height": 1280,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793081810766,
+        "contentHash": "30871558c3063d3e252bcc1f6522f670a47e4b713c21e732ad15f4b7449745ec",
+        "revision": null,
+        "inputFingerprint": "b349864044b900523862a57b6621401f6049a8b12f426151cc47bb152cc2222a",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      }
+    ]
+  }
+}

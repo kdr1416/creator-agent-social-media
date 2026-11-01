@@ -1,0 +1,14 @@
+{
+  "claim_id": "S10_price_3_8_billion_VND",
+  "user_message_verbatim": "mình xác minh text \"3.8 tỷ\"",
+  "confirmed_by": "project owner in this chat",
+  "confirmation_status": "owner_confirmed",
+  "canonical_text": "khoảng 3,8 tỷ đồng",
+  "scope": "Price text in original narration; no new all-inclusive or property-purchase-price claim.",
+  "independently_verified_by_codex": false,
+  "supporting_cost_breakdown_supplied": false,
+  "director_price_hold": "resolved_by_owner_confirmation",
+  "storyboard_pilot_approval": "pending",
+  "full_film_production_authorized": false,
+  "audio_or_pilot_render_changes": false
+}

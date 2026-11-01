@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280"><style>@font-face{font-family:Board;src:url("../../assets/fonts/segoe-ui-black.ttf")}text{font-family:Board,sans-serif;font-weight:900}</style><rect width="720" height="1280" fill="#FFF0E5"/><g transform="translate(72 548) scale(1)"><g id="b14-h">
+    <path d="M6 105L86 57L176 105V212H6Z" fill="#FFD59B" stroke="#30313B" stroke-width="3.4" stroke-linejoin="round"/>
+    <path d="M-13 107L85 30L195 107L176 122L86 61L5 122Z" fill="#D48DA2" stroke="#30313B" stroke-width="3.4" stroke-linejoin="round"/>
+    <path d="M122 60V25H147V79" fill="#E2B6B1" stroke="#30313B" stroke-width="3"/>
+    <path d="M73 212V149Q93 132 111 149V212" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+    <path d="M25 132H54V169H25ZM133 132H162V169H133Z" fill="#FFFBEA" stroke="#30313B" stroke-width="2.6"/>
+    <path d="M39 133V168M26 150H53M147 133V168M134 150H161" stroke="#C69F8B" stroke-width="2"/>
+    <circle cx="101" cy="174" r="3.2" fill="#FFCD71"/>
+    <path d="M17 202H63M121 202H164" stroke="#E2AE7C" stroke-width="3" stroke-linecap="round"/>
+    </g></g><path d="M336 538L463 487L642 567V967L465 1012L336 928Z" fill="#FFF9DD" stroke="#30313B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M466 1004V757C466 651 372 704 373 607M466 757C468 675 574 710 574 611" fill="none" stroke="#A7C4BC" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><g transform="translate(240 820) scale(1.05)"><g id="b14-actor"><g id="b14-student-motion">
+ <ellipse id="b14-student-shadow" cx="63" cy="203" rx="65" ry="10" fill="#D7BDA8" opacity=".5"/>
+ <path d="M48 143L41 190L18 194M90 143L98 190L120 194" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+ <rect x="103" y="50" width="39" height="91" rx="16" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+ <path d="M113 69L134 78" fill="none" stroke="#A2D8ED" stroke-width="3"/>
+ <g transform="translate(25 72)"><g id="b14-arm-far" ><path id="b14-far-path" d="M0 0Q-27-8-43-31" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/><circle id="b14-far-hand" cx="-43" cy="-31" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/></g></g>
+ <path d="M21 31Q24 9 50 12L95 14Q123 16 122 46L115 121Q114 148 86 152L49 149Q20 148 17 123L13 58Q12 42 21 31Z" fill="#FFAA28" stroke="#30313B" stroke-width="3.3"/>
+ <path d="M25 41Q30 25 49 26" fill="none" stroke="#FFD77B" stroke-width="5" stroke-linecap="round"/>
+ <path d="M28 28Q17-8 61-9Q108-13 116 27Z" fill="#A990D5" stroke="#30313B" stroke-width="3"/><path d="M17 29Q54 14 111 29L131 34Q138 40 127 42L35 39" fill="#8B73C0" stroke="#30313B" stroke-width="3"/>
+ <g id="b14-eyes"><ellipse cx="52" cy="68" rx="4.6" ry="7" fill="#30313B"/><ellipse cx="86" cy="67" rx="4.6" ry="7" fill="#30313B"/></g>
+ <path id="b14-mouth" d="M57 91Q70 105 82 88" fill="none" stroke="#30313B" stroke-width="3.3" stroke-linecap="round"/>
+ <ellipse cx="39" cy="87" rx="10" ry="5" fill="#EE7C47" opacity=".65"/><ellipse cx="99" cy="86" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+ <path d="M111 48L96 129" fill="none" stroke="#05669D" stroke-width="7" stroke-linecap="round"/>
+ <g transform="translate(109 83)"><g id="b14-arm-near"><path id="b14-near-path" d="M0 0Q20 24 38 7" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/><circle id="b14-near-hand" cx="38" cy="7" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/></g></g>
+</g></g></g><path d="M302 822L344 805L365 822L337 842Z" fill="#FFCE75" stroke="#30313B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="360" y="195" text-anchor="middle" fill="#0870AC" font-size="45">THÊM MỘT LỰA CHỌN</text></svg>

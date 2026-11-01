@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>Nhìn lại quá trình chuẩn bị — scene 13</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:SceneSans;src:url('assets/scene-sans-bold.ttf') format('truetype');font-weight:700;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;background:#fff}#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:SceneSans,sans-serif;color:#0F172A}
+.clip{position:absolute;inset:0}
+.art{display:block;width:100%;height:100%}
+.top-title{position:absolute;top:170px;left:0;width:100%;text-align:center;pointer-events:none}
+.h-main{margin:8px 0 0 0;font-size:40px;line-height:1.25;font-weight:700;letter-spacing:-.6px;color:#0F172A}
+.h-sub{margin:0;font-size:22px;font-weight:700;letter-spacing:1.5px;color:#FF6B2B;text-transform:uppercase}
+.stage-label{position:absolute;top:790px;left:0;width:100%;text-align:center;margin:0;font-size:32px;font-weight:700;color:#0F172A}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-s13-root" id="root" data-composition-id="scene13" data-width="720" data-height="1280" data-duration="4.314" data-start="0">
+ <div data-hf-id="hf-s13-bg" id="scene13-bg" class="clip" data-start="0" data-duration="4.314" data-track-index="0" style="background:#FFFFFF"></div>
+
+ <div data-hf-id="hf-s13-header" id="header" class="top-title">
+  <div data-hf-id="hf-s13-sub" id="h-sub" class="h-sub">KẾT QUẢ ĐẾN TỪ</div>
+  <h1 data-hf-id="hf-s13-main" id="h-main" class="h-main">Quá trình chuẩn bị<br>nghiêm túc & rõ ràng</h1>
+ </div>
+
+ <h2 data-hf-id="hf-s13-lbl-offers" id="lbl-offers" class="stage-label">3 Thư mời nhập học</h2>
+ <h2 data-hf-id="hf-s13-lbl-rewind" id="lbl-rewind" class="stage-label">Từng bước hoàn thiện hồ sơ</h2>
+ <h2 data-hf-id="hf-s13-lbl-plan" id="lbl-plan" class="stage-label">Định hướng chiến lược rõ ràng</h2>
+
+ <svg data-hf-id="hf-s13-art" id="scene13-art" class="art clip" data-start="0" data-duration="4.314" data-track-index="1" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+   <radialGradient id="halo-s13"><stop stop-color="#E2F0F2" stop-opacity=".8"/><stop offset="1" stop-color="#E2F0F2" stop-opacity="0"/></radialGradient>
+   <filter id="shadow-s13" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.08"/>
+   </filter>
+  </defs>
+
+  <ellipse cx="360" cy="560" rx="270" ry="240" fill="url(#halo-s13)"/>
+
+  <!-- Center Desk Surface -->
+  <g id="desk-surface">
+   <ellipse cx="360" cy="730" rx="260" ry="40" fill="#E8EEF2"/>
+   <ellipse cx="360" cy="720" rx="230" ry="32" fill="#F4F8FA"/>
+  </g>
+
+  <!-- Physical Portfolio / Binder on Desk (Y530 - 720) -->
+  <g id="portfolio-folder" filter="url(#shadow-s13)">
+   <!-- Folder Base Back -->
+   <path d="M210 540 H510 C525 540 535 550 535 565 V720 C535 728 525 735 510 735 H210 C195 735 185 728 185 720 V565 C185 550 195 540 210 540 Z" fill="#243A50"/>
+   <!-- Spine rings -->
+   <g fill="#A0AEC0">
+    <rect x="235" y="555" width="6" height="16" rx="3"/>
+    <rect x="235" y="625" width="6" height="16" rx="3"/>
+    <rect x="235" y="695" width="6" height="16" rx="3"/>
+   </g>
+
+   <!-- Page 1: Strategic Planning / Calendar (Revealed at end of rewind) -->
+   <g id="page-plan" transform="translate(250, 550)">
+    <rect x="0" y="0" width="265" height="170" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <!-- Calendar Grid / Checklist items -->
+    <rect x="18" y="18" width="70" height="14" rx="3" fill="#FF6B2B"/>
+    <text x="22" y="29" font-family="SceneSans, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">LỘ TRÌNH</text>
+    
+    <circle cx="28" cy="50" r="7" fill="#4B8D88"/>
+    <polyline points="24,50 27,53 33,47" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <rect x="44" y="46" width="120" height="8" rx="2" fill="#94A3B8"/>
+
+    <circle cx="28" cy="74" r="7" fill="#4B8D88"/>
+    <polyline points="24,74 27,77 33,71" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <rect x="44" y="70" width="105" height="8" rx="2" fill="#94A3B8"/>
+
+    <circle cx="28" cy="98" r="7" fill="#4B8D88"/>
+    <polyline points="24,98 27,101 33,95" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <rect x="44" y="94" width="140" height="8" rx="2" fill="#94A3B8"/>
+
+    <circle cx="28" cy="122" r="7" fill="#FF6B2B"/>
+    <polyline points="24,122 27,125 33,119" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <rect x="44" y="118" width="115" height="8" rx="2" fill="#CBD5E1"/>
+
+    <!-- Subtle pencil on page -->
+    <g transform="translate(180, 100) rotate(35)">
+     <rect x="0" y="0" width="8" height="60" rx="2" fill="#FFB054"/>
+     <polygon points="0,60 4,70 8,60" fill="#243A50"/>
+    </g>
+   </g>
+
+   <!-- Page 2: Drafting & Revisions (Flips backwards) -->
+   <g id="page-drafts" transform="translate(250, 550)">
+    <rect x="0" y="0" width="265" height="170" rx="4" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+    <rect x="18" y="20" width="110" height="10" rx="2" fill="#64748B"/>
+    <rect x="18" y="42" width="210" height="6" rx="2" fill="#CBD5E1"/>
+    <rect x="18" y="58" width="180" height="6" rx="2" fill="#CBD5E1"/>
+    <rect x="18" y="74" width="195" height="6" rx="2" fill="#CBD5E1"/>
+    <path d="M150 110 L210 110" stroke="#FF6B2B" stroke-width="3" stroke-linecap="round"/>
+    <text x="145" y="130" font-family="SceneSans, sans-serif" font-size="12" font-weight="700" fill="#FF6B2B">DRAFT V2.0</text>
+   </g>
+  </g>
+
+  <!-- 3 Symbolic Offer Envelopes (Rewinding into the folder) -->
+  <!-- Offer 1: Sydney -->
+  <g id="env-1" filter="url(#shadow-s13)">
+   <rect x="170" y="380" width="110" height="75" rx="6" fill="#FFFFFF" stroke="#3D7B80" stroke-width="2.5"/>
+   <polygon points="170,380 225,415 280,380" fill="#E4F5F4" stroke="#3D7B80" stroke-width="2"/>
+   <circle cx="225" cy="425" r="9" fill="#FF6B2B"/>
+   <text x="225" y="429" font-family="SceneSans, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">USYD</text>
+  </g>
+
+  <!-- Offer 2: Melbourne -->
+  <g id="env-2" filter="url(#shadow-s13)">
+   <rect x="305" y="350" width="110" height="75" rx="6" fill="#FFFFFF" stroke="#243A50" stroke-width="2.5"/>
+   <polygon points="305,350 360,385 415,350" fill="#EEF2F6" stroke="#243A50" stroke-width="2"/>
+   <circle cx="360" cy="395" r="9" fill="#243A50"/>
+   <text x="360" y="399" font-family="SceneSans, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">UoM</text>
+  </g>
+
+  <!-- Offer 3: Macquarie -->
+  <g id="env-3" filter="url(#shadow-s13)">
+   <rect x="440" y="380" width="110" height="75" rx="6" fill="#FFFFFF" stroke="#E28935" stroke-width="2.5"/>
+   <polygon points="440,380 495,415 550,380" fill="#FFF2E5" stroke="#E28935" stroke-width="2"/>
+   <circle cx="495" cy="425" r="9" fill="#E28935"/>
+   <text x="495" y="429" font-family="SceneSans, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">MQ</text>
+  </g>
+
+  <!-- Student Hands touching the binder on desk -->
+  <g id="student-hands">
+   <!-- Left hand resting on edge of binder -->
+   <ellipse cx="230" cy="710" rx="24" ry="14" fill="#FAD1B5" transform="rotate(-15 230 710)"/>
+   <!-- Right hand with fingers poised near timeline/plan -->
+   <ellipse cx="490" cy="700" rx="22" ry="13" fill="#FAD1B5" transform="rotate(10 490 700)"/>
+  </g>
+ </svg>
+
+ <audio data-hf-id="hf-s13-voice" id="scene13-voice" src="assets/audio.wav" data-start="0" data-duration="4.314" data-track-index="2" data-volume="1"></audio>
+</div>
+
+<script>
+const tl = gsap.timeline({paused:true});
+
+gsap.set(['#lbl-offers', '#lbl-rewind', '#lbl-plan'], {opacity: 0, y: 10});
+gsap.set('#header', {opacity: 0, y: -15});
+gsap.set(['#env-1', '#env-2', '#env-3'], {transformOrigin: '50% 50%'});
+gsap.set('#page-drafts', {transformOrigin: '0% 50%'});
+
+// 0.0s - 0.9s: Opening with 3 offer envelopes and clean uncluttered title
+tl.to('#header', {opacity: 1, y: 0, duration: 0.5, ease: 'power2.out'}, 0.2)
+  .to('#lbl-offers', {opacity: 1, y: 0, duration: 0.3}, 0.3)
+
+// 0.9s - 2.2s: Reverse Process - Envelopes fly backwards into the portfolio
+  .to('#lbl-offers', {opacity: 0, duration: 0.25}, 0.9)
+  .to('#lbl-rewind', {opacity: 1, y: 0, duration: 0.35}, 1.1)
+  .to('#env-1', {x: 80, y: 170, scale: 0.65, opacity: 0, duration: 0.8, ease: 'power2.in'}, 1.0)
+  .to('#env-3', {x: -80, y: 170, scale: 0.65, opacity: 0, duration: 0.8, ease: 'power2.in'}, 1.05)
+  .to('#env-2', {y: 200, scale: 0.65, opacity: 0, duration: 0.8, ease: 'power2.in'}, 1.1)
+
+// 2.0s - 3.2s: Portfolio page flips backward from drafts to reveal early roadmap
+  .to('#page-drafts', {rotationY: -110, opacity: 0, duration: 0.8, ease: 'power1.inOut'}, 2.0)
+  .to('#portfolio-folder', {scale: 1.04, transformOrigin: '50% 70%', duration: 0.5, ease: 'power2.out'}, 2.4)
+  .to('#lbl-rewind', {opacity: 0, duration: 0.25}, 2.8)
+
+// 3.0s - 4.314s: Land on Strategic Planning with settled calm posture
+  .to('#lbl-plan', {opacity: 1, y: 0, duration: 0.4}, 3.0)
+  .to('#portfolio-folder', {scale: 1, duration: 0.4, ease: 'power1.inOut'}, 3.4);
+
+window.__timelines = window.__timelines || {};
+window.__timelines['scene13'] = tl;
+</script>
+</body>
+</html>

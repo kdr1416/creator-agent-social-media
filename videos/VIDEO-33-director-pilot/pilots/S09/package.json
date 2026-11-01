@@ -1,0 +1,9 @@
+{
+  "name": "video33-s09",
+  "private": true,
+  "scripts": {
+    "check": "npx hyperframes@0.8.170 check",
+    "preview": "npx hyperframes@0.8.170 preview",
+    "render": "npx hyperframes@0.8.170 render --fps 30 --quality delivery --output renders/pilot.mp4"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "phase": "audio_input",
+  "approval": {
+    "status": "pending",
+    "reviewer": null,
+    "approved_at": null,
+    "evidence": null,
+    "fingerprint": null
+  },
+  "scenes": {},
+  "final": {
+    "status": "pending"
+  },
+  "next_actions": [
+    "Configure project and import immutable master PCM audio",
+    "Receive Antigravity sample-aligned scene analysis",
+    "Plan creative direction and select pilot scenes; do not produce automatically"
+  ]
+}

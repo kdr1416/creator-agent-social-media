@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>Macquarie tại Úc — scene 10</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:SceneSans;src:url('assets/scene-sans-bold.ttf') format('truetype');font-weight:700;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;background:#0F172A}#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:SceneSans,sans-serif;color:#FFFFFF}
+.clip{position:absolute;inset:0}
+.plate-video{width:100%;height:100%;object-fit:cover;display:block}
+.art{display:block;width:100%;height:100%}
+.floating-callout{position:absolute;left:420px;top:480px;width:280px;pointer-events:none}
+.callout-sub{font-size:20px;font-weight:700;letter-spacing:1px;color:#FFB054;text-transform:uppercase;text-shadow:0 2px 8px rgba(0,0,0,0.6)}
+.callout-main{margin:6px 0 0 0;font-size:36px;line-height:1.15;font-weight:700;letter-spacing:-.5px;color:#FFFFFF;text-shadow:0 3px 12px rgba(0,0,0,0.7)}
+.callout-tag{margin:6px 0 0 0;font-size:22px;font-weight:700;color:#E2E8F0;text-shadow:0 2px 8px rgba(0,0,0,0.6)}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-s10-root" id="root" data-composition-id="scene10" data-width="720" data-height="1280" data-duration="4.481" data-start="0">
+ <!-- Video Plate Background -->
+ <video data-hf-id="hf-s10-video" id="scene10-plate" class="clip plate-video" src="assets/plate.mp4" data-start="0" data-duration="4.481" data-track-index="0" muted playsinline></video>
+
+ <!-- Floating Typography Callout in Right 45% Negative Space -->
+ <div data-hf-id="hf-s10-callout" id="callout-group" class="floating-callout">
+  <div data-hf-id="hf-s10-sub" id="c-sub" class="callout-sub">SYDNEY · ÚC</div>
+  <h1 data-hf-id="hf-s10-main" id="c-main" class="callout-main">Macquarie<br>University</h1>
+  <div data-hf-id="hf-s10-tag" id="c-tag" class="callout-tag">Top đại học hàng đầu</div>
+ </div>
+
+ <!-- Hairline Pointer & Pin Dot SVG (Zero Card) -->
+ <svg data-hf-id="hf-s10-art" id="scene10-art" class="art clip" data-start="0" data-duration="4.481" data-track-index="1" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+   <filter id="glow-s10" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.6"/>
+   </filter>
+  </defs>
+
+  <g id="pointer-rig" filter="url(#glow-s10)">
+   <!-- Pin Dot on character/table anchor point -->
+   <circle id="pin-core" cx="370" cy="560" r="6" fill="#FF6B2B"/>
+   <circle id="pin-ring" cx="370" cy="560" r="14" fill="none" stroke="#FF6B2B" stroke-width="2" opacity=".8"/>
+   <!-- Hairline Connector line extending into negative space -->
+   <polyline id="pin-line" points="370,560 415,525 680,525" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+ </svg>
+
+ <audio data-hf-id="hf-s10-voice" id="scene10-voice" src="assets/audio.wav" data-start="0" data-duration="4.481" data-track-index="2" data-volume="1"></audio>
+</div>
+
+<script>
+const tl = gsap.timeline({paused:true});
+
+gsap.set('#pointer-rig', {opacity: 0});
+gsap.set('#callout-group', {opacity: 0, x: 20});
+gsap.set('#pin-ring', {scale: 0.5, transformOrigin: '370px 560px'});
+
+// 0.0s - 0.5s: Plate establishes environment
+// 0.6s - 1.4s: Pin dot pulses and hairline pointer extends into negative space
+tl.to('#pointer-rig', {opacity: 1, duration: 0.3}, 0.6)
+  .fromTo('#pin-line', {strokeDasharray: 350, strokeDashoffset: 350}, {strokeDashoffset: 0, duration: 0.6, ease: 'power2.out'}, 0.6)
+  .to('#pin-ring', {scale: 1.6, opacity: 0, duration: 0.8, repeat: 2, ease: 'power1.out'}, 0.7)
+// 0.9s - 4.481s: Clean floating typography appears
+  .to('#callout-group', {opacity: 1, x: 0, duration: 0.5, ease: 'power2.out'}, 0.8);
+
+window.__timelines = window.__timelines || {};
+window.__timelines['scene10'] = tl;
+</script>
+</body>
+</html>

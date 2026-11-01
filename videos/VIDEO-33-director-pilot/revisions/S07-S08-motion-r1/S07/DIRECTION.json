@@ -1,0 +1,54 @@
+{
+  "scene": "S07",
+  "duration": 4.668833333333334,
+  "source_start_sample": 711699,
+  "source_end_sample": 823751,
+  "sample_rate": 24000,
+  "raw_text": "Khi có một tài sản tại Manta, gia đình có thêm một điểm kết nối với Châu Âu,",
+  "corrected_text": "Khi có một tài sản tại Malta, gia đình có thêm một điểm kết nối với Châu Âu,",
+  "original_voice_sha256": "676938e717191454e113106f70c7d97d8073f31482da8ea8f0c2577f2de71dc0",
+  "approved_frame_reference": "../../S07-S08-design-r1",
+  "timing_basis": "original sample boundaries; existing ASR word cues for internal beats, not independent phonetic alignment",
+  "cues": {
+    "reach": [
+      1.05,
+      1.77
+    ],
+    "contact": 1.77,
+    "connection": [
+      1.92,
+      2.24
+    ],
+    "release_and_raise": [
+      2.3,
+      2.85
+    ],
+    "greeting": [
+      2.9,
+      4.2
+    ]
+  },
+  "proof_times": [
+    0.15,
+    1.55,
+    1.77,
+    2.14,
+    2.75,
+    3.2,
+    4.42
+  ],
+  "approval": "motion_approved_by_user",
+  "user_approval": {
+    "scene_id": "S07",
+    "version": "S07-S08-motion-r1",
+    "approval_status": "approved",
+    "approval_scope": "pilot motion with original voice",
+    "approval_date_local": "2026-10-27",
+    "timezone": "Asia/Saigon",
+    "user_message_verbatim": "duyệt 2 pilot",
+    "video_path": "revisions/S07-S08-motion-r1/S07/renders/pilot.mp4",
+    "video_sha256": "f5a1eb22209608ae0edbdc8763523feb886d50caec3088601f8e186c87d89475",
+    "master_replacement_authorized": false,
+    "full_film_production_authorized": false
+  }
+}

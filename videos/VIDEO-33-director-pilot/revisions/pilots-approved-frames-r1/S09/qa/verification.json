@@ -1,0 +1,73 @@
+{
+  "scene_id": "S09",
+  "revision": "approved-frames-motion-r1",
+  "based_on_approved_frame": "S09-v2",
+  "duration": 7.450916666666667,
+  "source_start_sample": 955202,
+  "source_end_sample": 1134024,
+  "proof_times": [
+    0.15,
+    2.55,
+    3.65,
+    4.85,
+    7.1
+  ],
+  "motion_approval": "pending_user_review",
+  "final_frame_approval": "previously_approved",
+  "timing_evidence": "Original whisper_raw word times used as approximate cue evidence, not independent perceptual listening. S05 bất động sản at 22.50s global ~=4.349s local. S09 nhiều thị trường at 42.24s global ~=2.440s local.",
+  "signature": "Mechanical selector rotates; six differentiated asset tokens travel authored curved channels from tray to three markets; buildings develop at arrival; no profit or guarantee symbols.",
+  "video_path": "revisions\\pilots-approved-frames-r1\\S09\\renders\\pilot.mp4",
+  "video_sha256": "a6cbf6ec62a12bf74f4cdcc076f27c1ac839f4e984c35aeba1bf2dc9b44cd90e",
+  "video_frames": 224,
+  "video_duration": 7.466667,
+  "audio_duration": 7.466667,
+  "original_pcm_bit_exact": true,
+  "aac_correlation": 0.9999078024413619,
+  "decoded_rms": 0.14664183208101447,
+  "hyperframes_check_ok": true,
+  "layout_warnings": [
+    {
+      "code": "rotation_pivot_drift",
+      "severity": "warning",
+      "time": 7.1,
+      "selector": "#r09-selector",
+      "dataAttributes": {},
+      "sourceFile": "index.html",
+      "bbox": {
+        "x": 198,
+        "y": 478,
+        "width": 55,
+        "height": 70
+      },
+      "rect": {
+        "left": 198,
+        "top": 478,
+        "right": 253,
+        "bottom": 548,
+        "width": 55,
+        "height": 70
+      },
+      "message": "Rotating element's bounding-box center drifts 19px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).",
+      "fixHint": "The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.",
+      "firstSeen": 7.1,
+      "lastSeen": 7.1,
+      "occurrences": 1,
+      "heldMs": 0,
+      "times": [
+        7.1
+      ]
+    }
+  ],
+  "warning_interpretation": "S09 rotation_pivot_drift is intentional: selector rotates about the visible pin at (211,528), not its bounding-box center. Keep the physical hinge.",
+  "final_frame_approved_reference": "revisions/final-frames-v2/S09/frames/frame-00-at-0.5s.png",
+  "final_frame_mean_absolute_pixel_error": 1.9727029079861111,
+  "final_frame_pixel_match_fraction": 0.2678266059027778,
+  "frame_proofs": [
+    "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-0.15.png",
+    "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-2.55.png",
+    "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-3.65.png",
+    "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-4.85.png",
+    "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-7.10.png"
+  ],
+  "motion_status": "rendered_pending_user_review"
+}

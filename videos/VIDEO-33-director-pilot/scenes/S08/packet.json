@@ -1,0 +1,237 @@
+{
+  "scene_number": 8,
+  "scene_id": "S08",
+  "start": 34.32295833333333,
+  "end": 39.80008333333333,
+  "start_sample": 823751,
+  "end_sample": 955202,
+  "source_segments": [
+    8
+  ],
+  "raw_text": "thuận tiện hơn cho những chuyến thăm con cho các kế hoạch học tập, sinh sống hoặc làm việc trong tương lai.",
+  "corrected_text": "thuận tiện hơn cho những chuyến thăm con, cho các kế hoạch học tập, sinh sống, hoặc làm việc trong tương lai.",
+  "semantic_type": "arrival / layered future",
+  "visual_center": "Đến gần những kế hoạch",
+  "organic_motion_need": "Không cần diễn viên/plate hữu cơ; puppet vector có hành động chủ đích.",
+  "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+  "preferred_mode": "HF_ONLY",
+  "routing_confidence": "high",
+  "routing_reason": "Đến gần những kế hoạch: hành động chủ đạo là đón / dự định các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ arrival / layered future, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+  "flow_contribution": "none",
+  "hf_contribution": "Vali dừng → hai người chạm tay chào; ánh nhìn chuyển qua các đạo cụ gợi học/sống/việc làm, chỉ một đạo cụ được nhấn ở mỗi nhịp.",
+  "fallback_mode": null,
+  "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+  "character": "yes",
+  "title": "Đến gần những kế hoạch",
+  "takeaway": "Thăm con và các dự định tương lai là những khả năng phải chuẩn bị riêng.",
+  "audio_source": [
+    "inputs/audio/seg_08.wav"
+  ],
+  "duration": 5.477125000000001,
+  "sample_frames": 131451,
+  "raw_segments": [
+    {
+      "seg_id": 8,
+      "segment_id": "seg_08",
+      "audio_slice": "audio_slices/seg_08.wav",
+      "start_sample": 823751,
+      "end_sample": 955202,
+      "sample_frames": 131451,
+      "start": 34.323,
+      "end": 39.8,
+      "duration": 5.477,
+      "sha256": "52dffb05939d5d14871f523c3b722068dd226a1f63922505641e355a0eb7a62a",
+      "raw_text": "thuận tiện hơn cho những chuyến thăm con cho các kế hoạch học tập, sinh sống hoặc làm việc trong tương lai.",
+      "corrected_text": "thuận tiện hơn cho những chuyến thăm con, cho các kế hoạch học tập, sinh sống, hoặc làm việc trong tương lai.",
+      "uncertainties": [
+        "Dấu câu: Thêm dấu phẩy phân tách các cụm liệt kê để tăng tính mạch lạc cho phụ đề/storyboard."
+      ]
+    }
+  ],
+  "render_mode": "HF_ONLY",
+  "style_candidates": [
+    {
+      "id": "hf_existing:warm-doodle-mixed-media",
+      "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+    },
+    {
+      "id": "kurzgesagt",
+      "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+    },
+    {
+      "id": "izometrik",
+      "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+    },
+    {
+      "id": "bauhaus",
+      "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+    }
+  ],
+  "style_id": "hf_existing:warm-doodle-mixed-media",
+  "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+  "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+  "visual_verb": "đón / dự định",
+  "composition": "Ga đến minh họa với vali phía trước, mascot đón phụ huynh ở y=800–1030; phía sau một vở học, chìa khóa và cặp làm việc ở các lớp sâu khác nhau, không ba card.",
+  "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+  "opening_state": "Mascot nhìn sang vali ở mép khung, phụ huynh vừa đến.",
+  "transformation": "Vali dừng → hai người chạm tay chào; ánh nhìn chuyển qua các đạo cụ gợi học/sống/việc làm, chỉ một đạo cụ được nhấn ở mỗi nhịp.",
+  "final_state": "Cuộc gặp là hiện thực trong ẩn dụ; ba kế hoạch còn ở dạng nét phác mở, không dấu duyệt.",
+  "protagonist_action": "Đón người thân và nhận tay kéo vali, tương tác có tiếp xúc.",
+  "mascot_role": "Đón người thân và nhận tay kéo vali, tương tác có tiếp xúc.",
+  "visual_family": "arrival / layered future",
+  "timed_beats": [
+    {
+      "local_seconds": 0,
+      "spoken_cue": "đầu lát nguồn",
+      "action": "Mascot nhìn sang vali ở mép khung, phụ huynh vừa đến.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 1.369,
+      "spoken_cue": "cụm ý đầu — đối chiếu WAV",
+      "action": "Vali dừng → hai người chạm tay chào",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 3.286,
+      "spoken_cue": "cụm ý sau — đối chiếu WAV",
+      "action": "Vali dừng → hai người chạm tay chào; ánh nhìn chuyển qua các đạo cụ gợi học/sống/việc làm, chỉ một đạo cụ được nhấn ở mỗi nhịp.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 4.546,
+      "spoken_cue": "đuôi câu / nghỉ",
+      "action": "Cuộc gặp là hiện thực trong ẩn dụ; ba kế hoạch còn ở dạng nét phác mở, không dấu duyệt.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    }
+  ],
+  "motion_emphasis_sequence": [
+    "Mascot nhìn sang vali ở mép khung, phụ huynh vừa đến.",
+    "Vali dừng → hai người chạm tay chào",
+    "Vali dừng → hai người chạm tay chào; ánh nhìn chuyển qua các đạo cụ gợi học/sống/việc làm, chỉ một đạo cụ được nhấn ở mỗi nhịp.",
+    "Cuộc gặp là hiện thực trong ẩn dụ; ba kế hoạch còn ở dạng nét phác mở, không dấu duyệt."
+  ],
+  "hf_signature_motion": "Vali dừng → hai người chạm tay chào; ánh nhìn chuyển qua các đạo cụ gợi học/sống/việc làm, chỉ một đạo cụ được nhấn ở mỗi nhịp.",
+  "flow_action": null,
+  "flow_camera": null,
+  "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+  "asset_contract": [
+    {
+      "layer": "arrival-floor",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "luggage",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "parent-puppet",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "study-prop",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "living-prop",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "work-prop",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-rig",
+      "source": "approved mascot derivative",
+      "status": "planned",
+      "required_separate_layer": true
+    }
+  ],
+  "container_required": false,
+  "container_inventory": [],
+  "container_semantics": [],
+  "visible_text_budget": {
+    "max_simultaneous_words": 4,
+    "max_levels": 2,
+    "paragraphs": 0
+  },
+  "visible_text_inventory": [
+    {
+      "text": "KẾ HOẠCH TƯƠNG LAI",
+      "size_px": 54,
+      "role": "anchor",
+      "simultaneous": false
+    }
+  ],
+  "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Chữ trần trên nền sáng; không sweep.",
+  "accent_reason": "none",
+  "accent_treatment": "none",
+  "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+  "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+  "handoff": "Cắt sang cơ chế phân bổ tài sản cảnh 09 để đổi chủ thể và nhịp hình.",
+  "continuity_risk": "Hồ sơ học tập, cư trú và lao động có điều kiện riêng; không diễn thành một thẻ mở mọi quyền.",
+  "pilot": false,
+  "status": "designed_not_produced",
+  "must_keep": [
+    "Thăm con và các dự định tương lai là những khả năng phải chuẩn bị riêng.",
+    "Vali dừng → hai người chạm tay chào; ánh nhìn chuyển qua các đạo cụ gợi học/sống/việc làm, chỉ một đạo cụ được nhấn ở mỗi nhịp.",
+    "voice/sample bounds",
+    "mascot identity, warm light palette, footer 200px",
+    "zero added CTA or documentary claims"
+  ],
+  "flexible": [
+    "Toạ độ/kích thước trong safe area",
+    "easing/pose/chi tiết nét",
+    "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+  ],
+  "reference_alignment": {
+    "colour_relationships": {
+      "reference_evidence": "Brief: cream/peach/lilac + accents",
+      "candidate_evidence": "S08: warm ground and vivid orange/blue/purple",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "typography_treatment": {
+      "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+      "candidate_evidence": "S08: local shipped font, sparse native text",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "asset_mix": {
+      "reference_evidence": "Reference 04/06: real campus plus drawing",
+      "candidate_evidence": "S08: Valletta photo where geographic evidence is needed; vector/physical paper elsewhere",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "composition": {
+      "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+      "candidate_evidence": "S08: Ga đến minh họa với vali phía trước, mascot đón phụ huynh ở y=800–1030; phía sau một vở học, chìa khóa và cặp làm việc ở các lớp sâu khác nhau, không ba card.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "mascot_language": {
+      "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+      "candidate_evidence": "S08: Đón người thân và nhận tay kéo vali, tương tác có tiếp xúc.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "motion_rhythm": {
+      "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+      "candidate_evidence": "S08: Vali dừng → hai người chạm tay chào; ánh nhìn chuyển qua các đạo cụ gợi học/sống/việc làm, chỉ một đạo cụ được nhấn ở mỗi nhịp.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    }
+  }
+}

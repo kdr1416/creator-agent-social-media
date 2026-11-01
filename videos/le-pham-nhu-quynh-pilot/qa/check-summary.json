@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "version": "0.8.170",
+  "samples": [
+    0.55,
+    3.85,
+    4.8,
+    5.25,
+    5.8,
+    6.54
+  ],
+  "lint": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "runtime": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "layout": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "contrast": {
+    "checked": 1,
+    "passed": 1
+  },
+  "automated_motion_assertions_enabled": false,
+  "recording_note": "Summarized from final CLI stdout; Studio history lock prevents CLI history persistence."
+}

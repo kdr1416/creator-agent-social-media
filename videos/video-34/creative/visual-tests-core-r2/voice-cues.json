@@ -1,0 +1,62 @@
+[
+  {
+    "scene": "S03",
+    "word_numbers_1based": [
+      46,
+      47
+    ],
+    "raw_phrase": "đi bộ",
+    "global_start": 10.5,
+    "global_end": 10.82
+  },
+  {
+    "scene": "S03",
+    "word_numbers_1based": [
+      60,
+      63
+    ],
+    "raw_phrase": "cà phê ngoài trời,",
+    "global_start": 13.68,
+    "global_end": 14.52
+  },
+  {
+    "scene": "S08",
+    "word_numbers_1based": [
+      174,
+      175
+    ],
+    "raw_phrase": "cân bằng",
+    "global_start": 42.14,
+    "global_end": 42.48
+  },
+  {
+    "scene": "S08",
+    "word_numbers_1based": [
+      177,
+      178
+    ],
+    "raw_phrase": "công việc",
+    "global_start": 42.68,
+    "global_end": 42.98
+  },
+  {
+    "scene": "S08",
+    "word_numbers_1based": [
+      180,
+      181
+    ],
+    "raw_phrase": "thời gian",
+    "global_start": 43.3,
+    "global_end": 43.68
+  },
+  {
+    "scene": "S08",
+    "word_numbers_1based": [
+      186,
+      187
+    ],
+    "raw_phrase": "Giá đình,",
+    "global_start": 45.0,
+    "global_end": 45.38
+  }
+]

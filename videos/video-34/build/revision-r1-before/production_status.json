@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "phase": "pilot_awaiting_human_review",
+  "approval": {
+    "status": "pending",
+    "reviewer": null,
+    "approved_at": null,
+    "evidence": null,
+    "fingerprint": null
+  },
+  "scenes": {
+    "S03": {
+      "status": "pilot_rendered_awaiting_human_review",
+      "engine": "hyperframes",
+      "source": "scenes/S03/index.html",
+      "output": "scenes/S03/S03-pilot.mp4",
+      "source_sha256": "aa600e289290117013a660fcb612bc429833124624c05b4902aa154e52b21488",
+      "output_sha256": "cc5fe2db4000dc098a8b4e3d043857a257aab57fb6871443a94cc3b681daaee2",
+      "technical_qa": "passed_with_documented_warnings",
+      "visual_qa": "keyframes_and_playback_inspected_human_art_review_pending",
+      "frames": 268,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "audio_samples": 214542,
+      "evidence": "build/pilot-evidence/",
+      "known_limits": [
+        "Stylized gait and simplified hands/face; human assessment pending"
+      ]
+    },
+    "S08": {
+      "status": "pilot_rendered_awaiting_human_review",
+      "engine": "hyperframes",
+      "source": "scenes/S08/index.html",
+      "output": "scenes/S08/S08-pilot.mp4",
+      "source_sha256": "82b37eb022577f4252692b266e2c305f89644290df1d14e849b64489599bd16c",
+      "output_sha256": "fd419f56e18ba0b0ed1399789a5b565a60474059c4f59cdf2c34beb6ad32016a",
+      "technical_qa": "passed_with_documented_warnings",
+      "visual_qa": "keyframes_and_playback_inspected_human_art_review_pending",
+      "frames": 168,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "audio_samples": 134643,
+      "evidence": "build/pilot-evidence/",
+      "known_limits": [
+        "Stylized gait and simplified hands/face; human assessment pending"
+      ]
+    }
+  },
+  "final": {
+    "status": "pending"
+  },
+  "next_actions": [
+    "User review of actual S03/S08 MP4s in REVIEW.html",
+    "Revise only requested scene and intentionally affected shared assets; rerun relevant QA",
+    "Keep human approval pending until explicit approval of actual artifacts/revision",
+    "No source for other 15 scenes or full production without separate authorization",
+    "S13 remains FACTUAL REVIEW REQUIRED; supplied voice/manifest unchanged"
+  ],
+  "storyboard": {
+    "status": "draft_complete_for_review",
+    "document": "creative/storyboard.md",
+    "style_bible": "creative/style-bible.md",
+    "assets_plan": "creative/assets-components-plan.md",
+    "pilot_candidates": [
+      "S03",
+      "S08"
+    ],
+    "pilot_built": true,
+    "factual_review_required": [
+      "S13"
+    ],
+    "timing_review_required": [
+      "ASR word 334 crosses S14/S15 boundary; master and manifest unchanged"
+    ]
+  },
+  "pilot_status": "AWAITING HUMAN REVIEW"
+}

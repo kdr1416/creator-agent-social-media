@@ -1,0 +1,36 @@
+<template>
+<style>
+@font-face{font-family:ReferenceSans;src:url('assets/arial.ttf') format('truetype');font-weight:400}
+#yp-night{width:100%;height:100%;position:relative;overflow:hidden}#nt-svg{position:absolute;width:100%;height:100%;inset:0}#nt-svg text{font-family:ReferenceSans,sans-serif}#nt-world{transform-origin:440px 820px}
+</style>
+<div data-hf-id="hf-gr8q" id="yp-night" data-composition-id="yp-night" data-width="720" data-height="1280">
+<svg data-hf-id="hf-iagr" id="nt-svg" class="clip" data-start="0" data-duration="1.1" data-track-index="0" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+<defs data-hf-id="hf-mh0t"><linearGradient data-hf-id="hf-cncb" id="nt-sky" x2="0" y2="1"><stop data-hf-id="hf-8763" stop-color="#1A2142"/><stop data-hf-id="hf-n28g" offset="1" stop-color="#344370"/></linearGradient><radialGradient data-hf-id="hf-p0xx" id="nt-glow"><stop data-hf-id="hf-71a6" stop-color="#FFF0A0" stop-opacity=".42"/><stop data-hf-id="hf-ad2t" offset="1" stop-color="#FFE59B" stop-opacity="0"/></radialGradient><linearGradient data-hf-id="hf-d0n1" id="nt-ground" x2="0" y2="1"><stop data-hf-id="hf-xo0d" stop-color="#395855"/><stop data-hf-id="hf-kx89" offset="1" stop-color="#284848"/></linearGradient></defs>
+<rect data-hf-id="hf-7qm0" width="720" height="1280" fill="url(#nt-sky)"/>
+<g data-hf-id="hf-dpd2" id="nt-stars" fill="#F3F2D9"></g>
+<g data-hf-id="hf-yxj2" id="nt-world">
+<circle data-hf-id="hf-sd95" cx="575" cy="191" r="42" fill="#FFF3B7" stroke="#DDD39D" stroke-width="2"/>
+<path data-hf-id="hf-l5r9" d="M-30 1002Q215 973 389 997Q541 1012 750 974L750 1310-30 1310Z" fill="url(#nt-ground)" stroke="#293D45" stroke-width="3"/>
+<path data-hf-id="hf-1ns7" d="M-20 1040Q360 1031 740 1036" fill="none" stroke="#203E40" stroke-width="2"/>
+<path data-hf-id="hf-6tof" d="M101 786L100 1007" fill="none" stroke="#7E5C43" stroke-width="12"/>
+<path data-hf-id="hf-lch7" d="M26 788Q9 722 60 705Q115 685 154 731Q179 775 151 832Q130 880 82 873Q21 869 26 788Z" fill="#2D6D52" stroke="#263E45" stroke-width="3"/>
+<path data-hf-id="hf-6lqu" d="M175 720L558 720 558 1000 174 1001Z" fill="#E8D7B9" stroke="#353E4B" stroke-width="3"/>
+<path data-hf-id="hf-h88u" d="M489 654L489 575 524 575 522 654Z" fill="#8D5543" stroke="#303B4B" stroke-width="3"/>
+<path data-hf-id="hf-rhu9" d="M147 729L366 539 592 729Z" fill="#B35442" stroke="#303B4B" stroke-width="3"/>
+<path data-hf-id="hf-9yro" d="M203 870L285 870 286 1000 201 1000Z" fill="#91734D" stroke="#303B4B" stroke-width="3"/><circle data-hf-id="hf-r7zk" cx="270" cy="938" r="4" fill="#F9AE39" stroke="#6C532C" stroke-width="1"/>
+<rect data-hf-id="hf-lxmj" x="359" y="768" width="174" height="141" rx="2" fill="#FFE694" stroke="#3D4446" stroke-width="4"/>
+<path data-hf-id="hf-d7vc" d="M447 770L449 908M360 838L532 838" fill="none" stroke="#797255" stroke-width="3"/>
+<ellipse data-hf-id="hf-c6t7" cx="427" cy="869" rx="18" ry="28" fill="#F69B2E" stroke="#D56B31" stroke-width="2" transform="rotate(21 427 869)"/><path data-hf-id="hf-ni4x" d="M421 873L423 860" stroke="#FFC45A" stroke-width="3"/>
+<path data-hf-id="hf-xyqg" d="M464 875L492 850 505 855 476 884Z" fill="#AEB6AE" stroke="#747F78" stroke-width="2"/>
+<ellipse data-hf-id="hf-gfk9" cx="439" cy="1090" rx="225" ry="195" fill="url(#nt-glow)"/>
+<path data-hf-id="hf-0dvf" d="M635 905L635 1003" stroke="#785B43" stroke-width="5"/>
+<rect data-hf-id="hf-h90h" x="588" y="856" width="91" height="50" rx="11" fill="#C45235" stroke="#45505B" stroke-width="3"/><text data-hf-id="hf-najq" x="634" y="888" text-anchor="middle" font-size="17" fill="#FFF8DD">NHÀ ĐÂU</text>
+</g>
+<text data-hf-id="hf-cvsd" id="nt-caption" x="360" y="235" text-anchor="middle" fill="#FFFDF1" font-size="42">Về nhà tự học...</text>
+</svg>
+</div>
+<script>
+{const stars=document.getElementById('nt-stars');for(let i=0;i<110;i++){const x=(i*127.31+29)%720,y=(i*79.39+7)%990;stars.insertAdjacentHTML('beforeend',`<circle cx="${x}" cy="${y}" r="${i%7===0?1.6:.8}" opacity="${.25+(i%5)*.12}"/>`)}[[210,170],[240,178],[408,156],[83,217],[126,250],[42,412],[183,472],[235,541]].forEach(([x,y])=>stars.insertAdjacentHTML('beforeend',`<path d="M${x} ${y-10}L${x+2} ${y-2}L${x+11} ${y}L${x+2} ${y+2}L${x} ${y+11}L${x-2} ${y+2}L${x-10} ${y}L${x-2} ${y-2}Z"/>`));
+const tl=gsap.timeline({paused:true});tl.fromTo('#nt-world',{scale:1,x:0,y:0},{scale:1.12,x:-6,y:-4,duration:.78,ease:'power1.in'});tl.to('#nt-world',{scale:4.1,x:-80,y:-170,duration:.32,ease:'power3.in'},.78);window.__timelines=window.__timelines||{};window.__timelines['yp-night']=tl;}
+</script>
+</template>

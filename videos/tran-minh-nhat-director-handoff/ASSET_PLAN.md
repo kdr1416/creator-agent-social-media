@@ -1,0 +1,33 @@
+# Kế hoạch asset theo nội dung
+
+Có sẵn là nguồn tách lớp có thể khai thác, không có nghĩa mọi cảnh dùng chung bộ đạo cụ. Cần vẽ mới đúng thiết kế từng cảnh; các hình sơ đồ layout không phải asset final.
+
+|Asset|Trạng thái|Cảnh|Thiết kế / nguồn|
+|---|---|---|---|
+|`student`|available_reference_rig|1, 2, 4, 8, 9, 10, 12, 15|Nhật: mascot cam bo góc, mũ tím, ba lô xanh, tay chân mảnh; là biểu tượng, không tự vẽ giống người thật. Thêm pose theo hành động từng cảnh. Nguồn: library/student.js and library/portrait-v5.js; prefix IDs per scene|
+|`student_hands`|to_draw_from_reference|3, 11, 14|Bàn tay/ống tay của Nhật nhìn overhead; ba tư thế: mở/gấp, giữ giấy, đặt mảnh. Chỉ tay thật của nhân vật, không bàn tay người thật lạc style. Nguồn: reference_pilots/scene_12/assets/portrait-v5.js as colour/line reference|
+|`student_walk`|to_extend_reference_rig|16, 17|Cùng mascot, stride2–3 tư thế và quay chào; bước chân có tiếp đất, tay giữ sổ khi đi. Nguồn: library/student.js|
+|`room`|to_draw|1, 9|Một góc phòng học lilac sáng, cửa sổ lớn có rèm kéo, đèn nhỏ và một cây;09 thêm dấu vết bản nháp. Không lấp phòng bằng đồ trang trí ngẫu nhiên. Nguồn: original vector layers; no room photo needed|
+|`notebook`|to_draw|1, 2, 13, 17|Sổ xanh bìa mềm, một dấu cam ở góc và gáy rõ; có bìa đóng/mở, mép trang và clip. Chữ tên chỉ khi scene yêu cầu. Nguồn: design based on selected blue/orange roles; not the old envelope|
+|`rmit_photo`|to_source|2|Một ảnh campus có sẵn ở trang giới thiệu RMIT Việt Nam, crop công trình không người. Đây là bối cảnh định danh tổ chức, không khẳng định Nhật học tại campus cụ thể trong ảnh. Nguồn: https://www.rmit.edu.vn/about-us/who-we-are ; choose official campus image, not student portrait or a web screenshot|
+|`netherlands_map`|to_draw_from_geographic_reference|3|Outline Hà Lan trên giấy gấp, chấm Amsterdam ở vùng tây; không bản đồ hàng xóm hoặc đường bay. Dùng outline địa lý kiểm chứng thay đa giác tuỳ ý. Nguồn: official geographic reference to be resolved before drawing; VU official address confirms Amsterdam|
+|`envelope`|available_source|3, 4|Phong bì giấy kem có nắp/đáy/mặt trước tách lớp.03 chỉ gấp/đặt,04 mở như nguồn. Nguồn: reference_pilots/scene_04/index.html #envelope-back/#envelope-flap/#envelope-front|
+|`vu_photo`|available_frozen|4, 5, 6, 9, 12|Ảnh VU Main Building chính thức. Giữ nguyên nội dung công trình, chỉ crop theo mặt giấy. Không gọi là UvA hoặc dùng ảnh logo trường khác. Nguồn: library/vu-campus.jpg ; https://vu.nl/en/about-vu/more-about/vu-main-building|
+|`campus_shell`|available_source_extend_only|5, 6|Vỏ mô hình campus có sàn/cột từ06.05 chỉ cần bao quanh ảnh để nối sang06; không tự dựng phòng khác trong pilot. Nguồn: reference_pilots/scene_06/index.html #c6-drawing and #c6-photo|
+|`research_props`|to_draw|5|Mép một cuốn sách mở và một phần bàn thí nghiệm làm tiền cảnh môi trường học thuật; không xếp huy chương hoặc icon danh hiệu. Nguồn: consistent line weight with scene06 workspaces|
+|`credential_prop`|to_draw|7|Cuộn giấy học thuật tượng trưng, dải xanh, chỉ tên VU Amsterdam khi bung. Không sao chép mẫu bằng thật, chữ ký, mã số, điểm, dấu công nhận. Nguồn: original illustration; depicts institutional degree concept, not Nhật graduation|
+|`international_workspaces`|to_draw|7|Hai cánh bối cảnh mở: bàn đọc/nghiên cứu và bàn làm việc nhóm. Khối bàn, ghế, đèn và tài liệu cùng không gian; không avatar cards, không logo doanh nghiệp. Nguồn: new illustration, generic contexts not actual employers|
+|`reader_hand`|to_draw|7|Một bàn tay vô danh đưa cuộn giấy/tài liệu về phía đọc, không đóng dấu phê duyệt. Nguồn: same neutral thin outline as other hands|
+|`paper_globe`|to_draw|8|Địa cầu giấy có trục, lục địa đơn giản tương đối đúng; mở hai bối cảnh ngang hàng từ mặt cầu. Nguồn: original vector geometry; no country data or flight paths|
+|`opportunity_settings`|to_draw|8|Một bàn học nhóm và một bàn công việc thật trong hình minh hoạ; mỗi nhóm gồm mặt bàn/ghế/người nhỏ đang làm việc, không icon briefcase/mũ tốt nghiệp đứng rời. Nguồn: generic possible settings, no claim of job/visa outcome|
+|`work_desk`|to_draw|9, 10, 15|Bàn09/10/15 cùng màu gỗ sáng, đèn phía trái, ngăn giấy cạnh phải. Có wide room, chéo qua bàn, close tay dùng chung asset. Nguồn: reuse scene01 desk language without cloning whole composition|
+|`draft_pages`|to_draw|9, 10, 11|Một tờ nháp có dấu cam và hai bản cũ. Các nét dòng là texture giấy, không tạo chữ nhỏ đọc được hay paragraph mô tả; vị trí một đoạn sửa được khoanh bằng bút rồi viết lại. Nguồn: original illustrative writing, no actual application content|
+|`mentor`|to_draw|10, 15|Mentor riêng biệt nhưng cùng tỉ lệ mascot: thân nhỏ xanh lục nhạt #91B59F, kính tròn, tay áo kem; không cap/ba lô của Nhật. Chỉ xem trang, chỉ/góp ý và giữ kẹp; không thêm hành động thắng cúp. Nguồn: original symbolic adviser, not real person likeness|
+|`pen_pair`|to_draw|10|Bút góp ý màu đất đỏ và bút cam của Nhật; đổi tay sau khi mentor góp ý, không để bút dịch mà bàn tay không nắm. Nguồn: one signature correction on real paper, not label pointers|
+|`portfolio`|available_source_extend|11, 12, 15|Bìa xanh/trang đôi/gáy của12.11 lắp chất liệu trang trước rồi lật đúng hướng;15 đóng lại. Cần thêm trạng thái đóng và tờ trang đang lật. Nguồn: reference_pilots/scene_12/index.html #p12-folder|
+|`study_evidence`|to_draw|11|Hai giấy vật liệu học tập: trang ghi chép và bản nháp hoạt động học tập với sơ đồ trung tính. Không GPA/chứng chỉ/giải thưởng/tên dự án bịa. Nguồn: source voice gives only general academic achievements; keep details illustrative|
+|`story_notebooks`|to_draw|13|Hai cuốn sổ phụ có gáy, dấu bút và cách kẹp khác cuốn của Nhật; một pastel lilac, một peach. Không gán người/ngành/nghề/sở thích cụ thể. Nguồn: same paper material as notebook; not two generic profile cards|
+|`essay_page`|to_draw|14|Tờ bài luận minh hoạ với vùng mở đầu/chất liệu/chốt có thể sắp lại; chỉ vài nét in texture. Không paragraph thật, không nội dung bịa vào lời của Nhật. Nguồn: physical essay surface, not a general information panel|
+|`core_cutouts`|available_source_extract|12, 14|Hình ghép, chân dung đã cá nhân hoá và ảnh VU từ12.14 chỉ lấy mảnh nhỏ làm chất liệu cho cùng một trang; không lặp nguyên bố cục12. Nguồn: reference_pilots/scene_12/index.html #p12-puzzle/#p12-goal-photo and assets/portrait-v5.js|
+|`binder_clip`|to_draw|15|Kẹp giấy đủ lớn để thấy hai tay giữ/luồn/nhả, tỉ lệ với hồ sơ. Nguồn: new vector physical prop|
+|`canal_scene`|to_draw|16, 17|Phố Hà Lan minh hoạ, cầu thấp qua kênh, ba mái nhà gable, cửa sổ và nước. Không lấy landmark làm campus VU hoặc diễn tả đã tới địa điểm thực. Nguồn: generic illustrated Dutch canal setting, no specific named landmark|

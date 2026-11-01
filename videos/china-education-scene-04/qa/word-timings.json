@@ -1,0 +1,114 @@
+[
+  {
+    "start": 0.0,
+    "end": 4.32,
+    "text": " Tên gọi đã cho thấy hay hướng được chú trọng là công nghệ không người lãi, giờ trí tuổi nhân tạo.",
+    "words": [
+      {
+        "word": " Tên",
+        "start": 0.0,
+        "end": 0.36
+      },
+      {
+        "word": " gọi",
+        "start": 0.36,
+        "end": 0.52
+      },
+      {
+        "word": " đã",
+        "start": 0.52,
+        "end": 0.64
+      },
+      {
+        "word": " cho",
+        "start": 0.64,
+        "end": 0.74
+      },
+      {
+        "word": " thấy",
+        "start": 0.74,
+        "end": 0.92
+      },
+      {
+        "word": " hay",
+        "start": 0.92,
+        "end": 1.12
+      },
+      {
+        "word": " hướng",
+        "start": 1.12,
+        "end": 1.32
+      },
+      {
+        "word": " được",
+        "start": 1.32,
+        "end": 1.42
+      },
+      {
+        "word": " chú",
+        "start": 1.42,
+        "end": 1.58
+      },
+      {
+        "word": " trọng",
+        "start": 1.58,
+        "end": 1.86
+      },
+      {
+        "word": " là",
+        "start": 1.86,
+        "end": 2.2
+      },
+      {
+        "word": " công",
+        "start": 2.2,
+        "end": 2.36
+      },
+      {
+        "word": " nghệ",
+        "start": 2.36,
+        "end": 2.58
+      },
+      {
+        "word": " không",
+        "start": 2.58,
+        "end": 2.72
+      },
+      {
+        "word": " người",
+        "start": 2.72,
+        "end": 2.88
+      },
+      {
+        "word": " lãi,",
+        "start": 2.88,
+        "end": 3.18
+      },
+      {
+        "word": " giờ",
+        "start": 3.34,
+        "end": 3.44
+      },
+      {
+        "word": " trí",
+        "start": 3.44,
+        "end": 3.74
+      },
+      {
+        "word": " tuổi",
+        "start": 3.74,
+        "end": 3.9
+      },
+      {
+        "word": " nhân",
+        "start": 3.9,
+        "end": 4.02
+      },
+      {
+        "word": " tạo.",
+        "start": 4.02,
+        "end": 4.32
+      }
+    ]
+  }
+]

@@ -1,0 +1,475 @@
+{
+  "project": "VIDEO-33-director-pilot",
+  "phase": "storyboard_and_three_pilots_complete_awaiting_user_review",
+  "user_approved": false,
+  "duration": 75.16,
+  "sample_frames": 1803840,
+  "scenes_designed": 14,
+  "pilot_scenes": [
+    "S01",
+    "S05",
+    "S09"
+  ],
+  "pilot_renders": [
+    {
+      "scene_id": "S01",
+      "video": "pilots\\S01\\renders\\pilot.mp4",
+      "file_sha256": "4e111b0e89a34b5bbb56eb5c513b947db7e904f0676c3c51cb17a100f6ac83f5",
+      "video_codec": "h264",
+      "width": 720,
+      "height": 1280,
+      "fps": "30/1",
+      "video_frames": 181,
+      "video_duration": 6.033333,
+      "audio_codec": "aac",
+      "audio_duration": 6.033333,
+      "source_samples": 144466,
+      "source_duration": 6.019416666666666,
+      "picture_tail_over_voice_ms": 13.916333,
+      "voice_pcm_bit_exact_source_range": true,
+      "decoded_audio_correlation": 0.9999120109909785,
+      "decoded_audio_rms": 0.16568832218003604,
+      "decoded_vs_source_rms_ratio": 0.9988339704872932,
+      "hyperframes_check_ok": true,
+      "runtime_error_count": 0,
+      "layout_error_count": 0,
+      "contrast": {
+        "ok": true,
+        "errorCount": 0,
+        "warningCount": 0,
+        "infoCount": 0,
+        "findings": [],
+        "enabled": true,
+        "samples": [
+          0,
+          1.5,
+          3.3,
+          5.8
+        ],
+        "checked": 3,
+        "passed": 3
+      },
+      "motion_assertions_enabled": false,
+      "proofs": [
+        {
+          "at": 0.1,
+          "frame": "qa\\S01\\frame-0.10.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": 1.5,
+          "frame": "qa\\S01\\frame-1.50.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": 3.3,
+          "frame": "qa\\S01\\frame-3.30.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": 5.8,
+          "frame": "qa\\S01\\frame-5.80.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "note": "AAC is lossy; copied PCM stays bit-exact. One-frame picture rounding is not voice stretching. Automated motion assertions were not authored; motion is reviewed with real frames and playback."
+    },
+    {
+      "scene_id": "S05",
+      "video": "pilots\\S05\\renders\\pilot.mp4",
+      "file_sha256": "e24876dd818221cc7c541aa31311e5a30640b12762d15510d463d845ba352e50",
+      "video_codec": "h264",
+      "width": 720,
+      "height": 1280,
+      "fps": "30/1",
+      "video_frames": 172,
+      "video_duration": 5.733333,
+      "audio_codec": "aac",
+      "audio_duration": 5.733333,
+      "source_samples": 136952,
+      "source_duration": 5.706333333333333,
+      "picture_tail_over_voice_ms": 26.999667,
+      "voice_pcm_bit_exact_source_range": true,
+      "decoded_audio_correlation": 0.9987810262133117,
+      "decoded_audio_rms": 0.11010452668166854,
+      "decoded_vs_source_rms_ratio": 0.7752028623396335,
+      "hyperframes_check_ok": true,
+      "runtime_error_count": 0,
+      "layout_error_count": 0,
+      "contrast": {
+        "ok": true,
+        "errorCount": 0,
+        "warningCount": 0,
+        "infoCount": 0,
+        "findings": [],
+        "enabled": true,
+        "samples": [
+          0,
+          1,
+          2.1,
+          4,
+          5.5
+        ],
+        "checked": 1,
+        "passed": 1
+      },
+      "motion_assertions_enabled": false,
+      "proofs": [
+        {
+          "at": 0.1,
+          "frame": "qa\\S05\\frame-0.10.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": 1.0,
+          "frame": "qa\\S05\\frame-1.00.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": 2.1,
+          "frame": "qa\\S05\\frame-2.10.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": 5.5,
+          "frame": "qa\\S05\\frame-5.50.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "note": "AAC is lossy; copied PCM stays bit-exact. One-frame picture rounding is not voice stretching. Automated motion assertions were not authored; motion is reviewed with real frames and playback."
+    },
+    {
+      "scene_id": "S09",
+      "video": "pilots\\S09\\renders\\pilot.mp4",
+      "file_sha256": "18027acb1c27293a61b6a3f996c88d9606f480a86fdbe2bae5fc4b80ecb74e63",
+      "video_codec": "h264",
+      "width": 720,
+      "height": 1280,
+      "fps": "30/1",
+      "video_frames": 224,
+      "video_duration": 7.466667,
+      "audio_codec": "aac",
+      "audio_duration": 7.466667,
+      "source_samples": 178822,
+      "source_duration": 7.450916666666667,
+      "picture_tail_over_voice_ms": 15.750333,
+      "voice_pcm_bit_exact_source_range": true,
+      "decoded_audio_correlation": 0.9999078024413619,
+      "decoded_audio_rms": 0.14664183208101447,
+      "decoded_vs_source_rms_ratio": 0.9982199447262226,
+      "hyperframes_check_ok": true,
+      "runtime_error_count": 0,
+      "layout_error_count": 0,
+      "contrast": {
+        "ok": true,
+        "errorCount": 0,
+        "warningCount": 0,
+        "infoCount": 0,
+        "findings": [],
+        "enabled": true,
+        "samples": [
+          0,
+          2.6,
+          4.3,
+          7.2
+        ],
+        "checked": 2,
+        "passed": 2
+      },
+      "motion_assertions_enabled": false,
+      "proofs": [
+        {
+          "at": 0.1,
+          "frame": "qa\\S09\\frame-0.10.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": 2.6,
+          "frame": "qa\\S09\\frame-2.60.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": 4.3,
+          "frame": "qa\\S09\\frame-4.30.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": 7.2,
+          "frame": "qa\\S09\\frame-7.20.png",
+          "footer_pixel_range": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "note": "AAC is lossy; copied PCM stays bit-exact. One-frame picture rounding is not voice stretching. Automated motion assertions were not authored; motion is reviewed with real frames and playback."
+    }
+  ],
+  "remaining_scenes": 11,
+  "remaining_scenes_status": "design_only_not_authorized_for_render_in_this_turn",
+  "full_film_rendered": false,
+  "source_integrity": "qa/source-integrity.json",
+  "review_entry": "revisions/S05-album-pilot-v5-r1/REVIEW.html",
+  "publication_hold": [],
+  "auditory_review": "Source WAV made available for playback; independent perceptual listening/phonetic adjudication is not established by tool output. ASR uncertainties remain explicit. No voice edits.",
+  "playback_review": "Three encoded MP4s observed to complete in native browser; qa/playback-review.json. No independent perceptual listening/phonetic verification claimed.",
+  "workflow_capabilities": {
+    "flow_health": "unreachable",
+    "flow_generation_used": false,
+    "hyperframes_version": "0.8.170",
+    "usage": "unknown / usage_request_failed",
+    "skills_update": "attempt failed ENOTFOUND registry.npmjs.org; already-installed workflow read and used, no successful update",
+    "audio_fallback_used": false,
+    "renderer": "actual HyperFrames, screenshot capture, NVIDIA hardware GPU"
+  },
+  "next_action": "User reviews the new album-based S05 pilot; use its final-frame-v5 direction rather than superseded house/street/paper-house proposals.",
+  "storyboard_visual_sheet": "STORYBOARD.html: S01 original pilot frame, current approved S05 album v5 and S09 v2 stills, plus 11 rough staging sketches. Current motion candidates are identified in latest_motion_revisions and review_entry.",
+  "content_confirmations": [
+    {
+      "claim_id": "S10_price_3_8_billion_VND",
+      "user_message_verbatim": "mình xác minh text \"3.8 tỷ\"",
+      "confirmed_by": "project owner in this chat",
+      "confirmation_status": "owner_confirmed",
+      "canonical_text": "khoảng 3,8 tỷ đồng",
+      "scope": "Price text in original narration; no new all-inclusive or property-purchase-price claim.",
+      "independently_verified_by_codex": false,
+      "supporting_cost_breakdown_supplied": false,
+      "director_price_hold": "resolved_by_owner_confirmation",
+      "storyboard_pilot_approval": "pending",
+      "full_film_production_authorized": false,
+      "audio_or_pilot_render_changes": false
+    }
+  ],
+  "approval_scope": "S05 album final frame v5 approved and pilot rendering authorized. Album motion r1 rendered, awaiting user approval. S09 static v2 approved; S09 motion r1 unchanged. No full-film production.",
+  "visual_approvals": [
+    {
+      "scene_id": "S05",
+      "version": "final-frame-v3",
+      "approval_status": "approved",
+      "approval_scope": "static final frame / architecture and composition only",
+      "user_message_verbatim": "oke duyệt",
+      "frame_path": "revisions/S05-final-frame-v3/frames/frame-00-at-0.5s.png",
+      "frame_sha256": "10ceeb5299f167a1b8bb8d1577802cb0c3590dd94c74449ab74cc21d10128449",
+      "editable_source": "revisions/S05-final-frame-v3/index.html",
+      "motion_approved": false,
+      "full_film_production_authorized": false
+    },
+    {
+      "scene_id": "S09",
+      "version": "final-frame-v2",
+      "approval_status": "approved",
+      "approval_scope": "static final frame / allocation-table visual and composition only",
+      "user_message_verbatim": "duyệt s09 v2",
+      "frame_path": "revisions/final-frames-v2/S09/frames/frame-00-at-0.5s.png",
+      "frame_sha256": "962a09a5e787f14258c5d46ba9a2c5013b00be2d31579188e9a2f6425b499625",
+      "editable_source": "revisions/final-frames-v2/S09/index.html",
+      "motion_approved": false,
+      "full_film_production_authorized": false
+    }
+  ],
+  "latest_motion_revision": "revisions/S05-album-pilot-v5-r1",
+  "revised_pilot_renders": [
+    {
+      "scene_id": "S05",
+      "revision": "album-pilot-v5-r1",
+      "based_on": "approved S05 final-frame-v5",
+      "duration": 5.706333333333333,
+      "source_start_sample": 435629,
+      "source_end_sample": 572581,
+      "signature": "Finish opening an already held photographic album from a lifted right half to the approved flat spread. Hands track two page-margin points throughout. The real house never becomes a separate object.",
+      "opening_interval": [
+        2.42,
+        4.77
+      ],
+      "initial_angle": 50,
+      "hinge": [
+        350,
+        780
+      ],
+      "perspective": 1400,
+      "grips": {
+        "far": [
+          [
+            480,
+            590
+          ],
+          [
+            502.5,
+            497.2
+          ]
+        ],
+        "near": [
+          [
+            610,
+            595
+          ],
+          [
+            594.9,
+            509.3
+          ]
+        ]
+      },
+      "proof_times": [
+        0.15,
+        2.2,
+        3.15,
+        3.75,
+        4.5,
+        5.35
+      ],
+      "approval": "motion_pending_user_review",
+      "original_voice_sha256": "662198c94d17a7fdb75a120490c24b3399744eb4b9c70361524153488c3e65bf",
+      "static_reference_sha256": "f1fd553cc3f8df5cbc0677b5d4104def3983760cdc730dca9190ac815b76d55b",
+      "video_path": "revisions\\S05-album-pilot-v5-r1\\renders\\pilot.mp4",
+      "video_sha256": "4c791e18d43440e6f2378fd773420e59f4cc154bc327c5be61f80341154c99fd",
+      "video_duration": 5.733333,
+      "audio_duration": 5.733333,
+      "video_frames": 172,
+      "original_pcm_bit_exact": true,
+      "aac_correlation": 0.9987810262133117,
+      "decoded_rms": 0.11010452668166854,
+      "hyperframes_check_ok": true,
+      "findings": {
+        "lint": [],
+        "runtime": [],
+        "layout": [],
+        "contrast": []
+      },
+      "approved_static_frame": "revisions/S05-final-frame-v5/FINAL_FRAME.png",
+      "lossless_final_frame_mean_pixel_difference": 0.005629340277777777,
+      "S09_sha256_unchanged": "a6cbf6ec62a12bf74f4cdcc076f27c1ac839f4e984c35aeba1bf2dc9b44cd90e",
+      "motion_status": "rendered_pending_user_review",
+      "browser_playback": "pending"
+    },
+    {
+      "scene_id": "S09",
+      "revision": "approved-frames-motion-r1",
+      "based_on_approved_frame": "S09-v2",
+      "duration": 7.450916666666667,
+      "source_start_sample": 955202,
+      "source_end_sample": 1134024,
+      "proof_times": [
+        0.15,
+        2.55,
+        3.65,
+        4.85,
+        7.1
+      ],
+      "motion_approval": "pending_user_review",
+      "final_frame_approval": "previously_approved",
+      "timing_evidence": "Original whisper_raw word times used as approximate cue evidence, not independent perceptual listening. S05 bất động sản at 22.50s global ~=4.349s local. S09 nhiều thị trường at 42.24s global ~=2.440s local.",
+      "signature": "Mechanical selector rotates; six differentiated asset tokens travel authored curved channels from tray to three markets; buildings develop at arrival; no profit or guarantee symbols.",
+      "video_path": "revisions\\pilots-approved-frames-r1\\S09\\renders\\pilot.mp4",
+      "video_sha256": "a6cbf6ec62a12bf74f4cdcc076f27c1ac839f4e984c35aeba1bf2dc9b44cd90e",
+      "video_frames": 224,
+      "video_duration": 7.466667,
+      "audio_duration": 7.466667,
+      "original_pcm_bit_exact": true,
+      "aac_correlation": 0.9999078024413619,
+      "decoded_rms": 0.14664183208101447,
+      "hyperframes_check_ok": true,
+      "layout_warnings": [
+        {
+          "code": "rotation_pivot_drift",
+          "severity": "warning",
+          "time": 7.1,
+          "selector": "#r09-selector",
+          "dataAttributes": {},
+          "sourceFile": "index.html",
+          "bbox": {
+            "x": 198,
+            "y": 478,
+            "width": 55,
+            "height": 70
+          },
+          "rect": {
+            "left": 198,
+            "top": 478,
+            "right": 253,
+            "bottom": 548,
+            "width": 55,
+            "height": 70
+          },
+          "message": "Rotating element's bounding-box center drifts 19px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).",
+          "fixHint": "The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.",
+          "firstSeen": 7.1,
+          "lastSeen": 7.1,
+          "occurrences": 1,
+          "heldMs": 0,
+          "times": [
+            7.1
+          ]
+        }
+      ],
+      "warning_interpretation": "S09 rotation_pivot_drift is intentional: selector rotates about the visible pin at (211,528), not its bounding-box center. Keep the physical hinge.",
+      "final_frame_approved_reference": "revisions/final-frames-v2/S09/frames/frame-00-at-0.5s.png",
+      "final_frame_mean_absolute_pixel_error": 1.9727029079861111,
+      "final_frame_pixel_match_fraction": 0.2678266059027778,
+      "frame_proofs": [
+        "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-0.15.png",
+        "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-2.55.png",
+        "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-3.65.png",
+        "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-4.85.png",
+        "revisions\\pilots-approved-frames-r1\\S09\\qa\\frame-7.10.png"
+      ],
+      "motion_status": "rendered_pending_user_review"
+    }
+  ],
+  "latest_motion_revisions": {
+    "S05": "revisions/S05-album-pilot-v5-r1",
+    "S09": "revisions/pilots-approved-frames-r1/S09"
+  },
+  "rejected_motion_revisions": [
+    {
+      "scene": "S05",
+      "revision": "pilots-approved-frames-r1",
+      "reason": "User: ảo ảo, phi logic. Affine stretch of facade / gallery removed in r2."
+    }
+  ],
+  "proposed_final_frames": {}
+}

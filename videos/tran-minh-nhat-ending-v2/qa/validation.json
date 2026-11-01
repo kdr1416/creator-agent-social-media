@@ -1,0 +1,22 @@
+{
+  "width": 720,
+  "height": 1280,
+  "frames": 236,
+  "fps": "30",
+  "duration": 7.866667,
+  "audio_streams": 1,
+  "audio_rate": 24000,
+  "audio_correlation": 0.999965569976951,
+  "audio_clipped_samples": 0,
+  "original_voice_samples": 188338,
+  "original_sources_unchanged": true,
+  "check_ok": true,
+  "check_errors": {
+    "lint": 0,
+    "runtime": 0,
+    "layout": 0,
+    "motion": 0,
+    "contrast": 0
+  },
+  "warnings": "Shoulder pivot for wave is intentional; close camera intentionally crops outer arms."
+}

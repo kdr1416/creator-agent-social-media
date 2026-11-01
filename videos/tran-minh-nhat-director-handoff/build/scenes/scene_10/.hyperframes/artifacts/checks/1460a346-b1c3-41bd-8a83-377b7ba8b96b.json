@@ -1,0 +1,149 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 332 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Năm 3\\flowkit-main\\videos\\tran-minh-nhat-director-handoff\\build\\scenes\\scene_10\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 0.193,
+        "selector": "#main-sheet-group",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 209,
+          "top": 514,
+          "right": 493,
+          "bottom": 750,
+          "width": 284,
+          "height": 236
+        },
+        "containerSelector": "#shared-draft > svg:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 205,
+          "top": 520,
+          "right": 515,
+          "bottom": 770,
+          "width": 310,
+          "height": 250
+        },
+        "overflow": {
+          "top": 6
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 209,
+          "y": 514,
+          "width": 284,
+          "height": 236
+        },
+        "firstSeen": 0.193,
+        "lastSeen": 3.274,
+        "occurrences": 9,
+        "heldMs": 3081,
+        "times": [
+          0.193,
+          0.578,
+          0.963,
+          1.348,
+          1.733,
+          2.119,
+          2.504,
+          2.889,
+          3.274
+        ]
+      }
+    ],
+    "duration": 3.466666666666667,
+    "samples": [
+      0.193,
+      0.578,
+      0.963,
+      1.348,
+      1.733,
+      2.119,
+      2.504,
+      2.889,
+      3.274
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 1,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.193,
+      0.963,
+      1.733,
+      2.504,
+      3.274
+    ],
+    "checked": 4,
+    "passed": 4
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

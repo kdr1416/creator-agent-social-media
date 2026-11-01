@@ -1,0 +1,16 @@
+{
+  "scene": "S02",
+  "version": "S02-approved-frame-motion-r1",
+  "project_root": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot",
+  "pilot_folder": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S02-approved-frame-motion-r1",
+  "mp4": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S02-approved-frame-motion-r1\\renders\\pilot.mp4",
+  "sha256": "d4dd9e8e46b788c0eff89f333fc8a0b54c259fce1a09afdff4eb3e7a9fde63f3",
+  "editable_source": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S02-approved-frame-motion-r1\\index.html",
+  "assets_fonts_voice": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S02-approved-frame-motion-r1\\assets",
+  "direction": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S02-approved-frame-motion-r1\\DIRECTION.json",
+  "qa": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S02-approved-frame-motion-r1\\QA_REPORT.md",
+  "frame_design_approved": true,
+  "pilot_motion_approval": "not_explicitly_recorded",
+  "master_manifest": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\handoff\\MASTER_APPROVED_ASSEMBLY_R1\\ASSEMBLY_MANIFEST.json",
+  "master_modified": false
+}

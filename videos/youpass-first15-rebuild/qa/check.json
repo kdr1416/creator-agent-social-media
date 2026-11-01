@@ -1,0 +1,517 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Năm 3\\flowkit-main\\videos\\youpass-first15-rebuild\\compositions\\yp-street.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<svg class=\"st-art\" data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Năm 3\\flowkit-main\\videos\\youpass-first15-rebuild\\compositions\\yp-street.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      }
+    ],
+    "filesScanned": 6
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 0.833,
+        "selector": "#st-world",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -800,
+          "top": -1000,
+          "right": 1700,
+          "bottom": 1700,
+          "width": 2500,
+          "height": 2700
+        },
+        "containerSelector": "#yp-host-street > div:nth-of-type(1) > svg:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 720,
+          "bottom": 1280,
+          "width": 720,
+          "height": 1280
+        },
+        "overflow": {
+          "left": 800,
+          "right": 980,
+          "top": 1000,
+          "bottom": 420
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/yp-street.html",
+        "bbox": {
+          "x": -800,
+          "y": -1000,
+          "width": 2500,
+          "height": 2700
+        },
+        "firstSeen": 0.833,
+        "lastSeen": 4.167,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          0.833,
+          2.5,
+          4.167
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 9.167,
+        "selector": "#rm-world",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 0,
+          "top": 366,
+          "right": 722.04,
+          "bottom": 1280,
+          "width": 722.04,
+          "height": 914
+        },
+        "containerSelector": "#rm-svg",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 720,
+          "bottom": 1280,
+          "width": 720,
+          "height": 1280
+        },
+        "overflow": {
+          "right": 2.04
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/yp-room.html",
+        "bbox": {
+          "x": 0,
+          "y": 366,
+          "width": 722.04,
+          "height": 914
+        },
+        "firstSeen": 9.167,
+        "lastSeen": 9.167,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9.167
+        ]
+      }
+    ],
+    "duration": 15,
+    "samples": [
+      0.833,
+      2.5,
+      4.167,
+      5.833,
+      7.5,
+      9.167,
+      10.833,
+      12.5,
+      14.167
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 2,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 12,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.74:1; WCAG AA requires 3:1.",
+        "text": "Trung tâm tự tìm tới!",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(245,121,49)",
+        "ratio": 2.74,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(78,78,78)",
+        "large": true,
+        "selector": "div > div:nth-of-type(3) > div > svg > g:nth-of-type(3) > g > text",
+        "dataAttributes": {},
+        "sourceFile": "compositions/yp-room.html",
+        "bbox": {
+          "x": 176.63772583007812,
+          "y": 282.48089599609375,
+          "width": 366.7245178222656,
+          "height": 63.0382080078125
+        },
+        "time": 7.5,
+        "times": [
+          7.5
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.74:1; WCAG AA requires 3:1.",
+        "text": "với Khoá YouPass Intensive",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(245,121,49)",
+        "ratio": 2.74,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(78,78,78)",
+        "large": true,
+        "selector": "#lp-bannertext",
+        "dataAttributes": {},
+        "sourceFile": "compositions/yp-laptop.html",
+        "bbox": {
+          "x": 91.74775695800781,
+          "y": 274.6799621582031,
+          "width": 536.3649291992188,
+          "height": 66.64251708984375
+        },
+        "time": 10.833,
+        "times": [
+          10.833
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.99:1; WCAG AA requires 4.5:1.",
+        "text": "1/5",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(60,169,91)",
+        "ratio": 2.99,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(46,46,46)",
+        "large": false,
+        "selector": "div > div:nth-of-type(5) > div > svg > g:nth-of-type(1) > g > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/yp-study.html",
+        "bbox": {
+          "x": 166.733642578125,
+          "y": 239.2139892578125,
+          "width": 32.85121154785156,
+          "height": 26.83349609375
+        },
+        "time": 14.167,
+        "times": [
+          14.167
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.99:1; WCAG AA requires 3:1.",
+        "text": "STUDY PLAN",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(7,156,240)",
+        "ratio": 2.99,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(73,73,73)",
+        "large": true,
+        "selector": "div > div:nth-of-type(5) > div > svg > g:nth-of-type(1) > g > text:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/yp-study.html",
+        "bbox": {
+          "x": 244.03311157226562,
+          "y": 215.15969848632812,
+          "width": 301.8312683105469,
+          "height": 60.8492431640625
+        },
+        "time": 14.167,
+        "times": [
+          14.167
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 3.7:1; WCAG AA requires 4.5:1.",
+        "text": "W1",
+        "fg": "rgb(119,124,124)",
+        "bg": "rgb(248,238,228)",
+        "ratio": 3.7,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(106,110,110)",
+        "large": false,
+        "selector": "div > div:nth-of-type(5) > div > svg > g:nth-of-type(6) > g > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/yp-study.html",
+        "bbox": {
+          "x": 85.25,
+          "y": 1165,
+          "width": 26.5,
+          "height": 19
+        },
+        "time": 14.167,
+        "times": [
+          14.167
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 3.7:1; WCAG AA requires 4.5:1.",
+        "text": "W2",
+        "fg": "rgb(119,124,124)",
+        "bg": "rgb(248,238,228)",
+        "ratio": 3.7,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(106,110,110)",
+        "large": false,
+        "selector": "div > div:nth-of-type(5) > div > svg > g:nth-of-type(6) > g > text:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/yp-study.html",
+        "bbox": {
+          "x": 160.25,
+          "y": 1168,
+          "width": 26.5,
+          "height": 19
+        },
+        "time": 14.167,
+        "times": [
+          14.167
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 3.73:1; WCAG AA requires 4.5:1.",
+        "text": "W3",
+        "fg": "rgb(119,124,124)",
+        "bg": "rgb(249,239,229)",
+        "ratio": 3.73,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(106,110,110)",
+        "large": false,
+        "selector": "div > div:nth-of-type(5) > div > svg > g:nth-of-type(6) > g > text:nth-of-type(3)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/yp-study.html",
+        "bbox": {
+          "x": 235.25,
+          "y": 1166,
+          "width": 26.5,
+          "height": 19
+        },
+        "time": 14.167,
+        "times": [
+          14.167
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 3.77:1; WCAG AA requires 4.5:1.",
+        "text": "W4",
+        "fg": "rgb(119,124,124)",
+        "bg": "rgb(250,240,230)",
+        "ratio": 3.77,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(107,111,111)",
+        "large": false,
+        "selector": "div > div:nth-of-type(5) > div > svg > g:nth-of-type(6) > g > text:nth-of-type(4)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/yp-study.html",
+        "bbox": {
+          "x": 310.25,
+          "y": 1160,
+          "width": 26.5,
+          "height": 19
+        },
+        "time": 14.167,
+        "times": [
+          14.167
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 3.76:1; WCAG AA requires 4.5:1.",
+        "text": "W5",
+        "fg": "rgb(119,124,124)",
+        "bg": "rgb(249,240,230)",
+        "ratio": 3.76,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(107,111,111)",
+        "large": false,
+        "selector": "div > div:nth-of-type(5) > div > svg > g:nth-of-type(6) > g > text:nth-of-type(5)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/yp-study.html",
+        "bbox": {
+          "x": 385.25,
+          "y": 1160,
+          "width": 26.5,
+          "height": 19
+        },
+        "time": 14.167,
+        "times": [
+          14.167
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 3.73:1; WCAG AA requires 4.5:1.",
+        "text": "W6",
+        "fg": "rgb(119,124,124)",
+        "bg": "rgb(249,239,229)",
+        "ratio": 3.73,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(106,110,110)",
+        "large": false,
+        "selector": "div > div:nth-of-type(5) > div > svg > g:nth-of-type(6) > g > text:nth-of-type(6)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/yp-study.html",
+        "bbox": {
+          "x": 460.25,
+          "y": 1168,
+          "width": 26.5,
+          "height": 19
+        },
+        "time": 14.167,
+        "times": [
+          14.167
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 3.7:1; WCAG AA requires 4.5:1.",
+        "text": "W7",
+        "fg": "rgb(119,124,124)",
+        "bg": "rgb(248,238,228)",
+        "ratio": 3.7,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(106,110,110)",
+        "large": false,
+        "selector": "div > div:nth-of-type(5) > div > svg > g:nth-of-type(6) > g > text:nth-of-type(7)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/yp-study.html",
+        "bbox": {
+          "x": 535.25,
+          "y": 1171,
+          "width": 26.5,
+          "height": 19
+        },
+        "time": 14.167,
+        "times": [
+          14.167
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 3.7:1; WCAG AA requires 4.5:1.",
+        "text": "W8",
+        "fg": "rgb(119,124,124)",
+        "bg": "rgb(248,238,228)",
+        "ratio": 3.7,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(106,110,110)",
+        "large": false,
+        "selector": "div > div:nth-of-type(5) > div > svg > g:nth-of-type(6) > g > text:nth-of-type(8)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/yp-study.html",
+        "bbox": {
+          "x": 610.25,
+          "y": 1165,
+          "width": 26.5,
+          "height": 19
+        },
+        "time": 14.167,
+        "times": [
+          14.167
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      0.833,
+      4.167,
+      7.5,
+      10.833,
+      14.167
+    ],
+    "checked": 36,
+    "passed": 24
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "saved": {
+    "id": "d7dfe253-545c-4180-876d-9c4d36b766cc",
+    "revision": null,
+    "report": "D:\\Năm 3\\flowkit-main\\videos\\youpass-first15-rebuild\\.hyperframes\\artifacts\\checks\\d7dfe253-545c-4180-876d-9c4d36b766cc.json",
+    "attribution": "unversioned"
+  },
+  "_meta": {
+    "version": "0.8.170",
+    "latestVersion": "0.8.170",
+    "updateAvailable": false
+  }
+}

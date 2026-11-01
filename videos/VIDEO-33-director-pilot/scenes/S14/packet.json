@@ -1,0 +1,268 @@
+{
+  "scene_number": 14,
+  "scene_id": "S14",
+  "start": 68.304375,
+  "end": 75.16,
+  "start_sample": 1639305,
+  "end_sample": 1803840,
+  "source_segments": [
+    16,
+    17
+  ],
+  "raw_text": "Bởi đôi khi, điều giá chỉ nhất không phải là sở hữu thêm một căn nhà, mà là sở hữu thêm một lựa chọn cho tương lai.",
+  "corrected_text": "Bởi đôi khi, điều giá trị nhất không phải là sở hữu thêm một căn nhà, mà là sở hữu thêm một lựa chọn cho tương lai.",
+  "semantic_type": "quiet choice / plan prop",
+  "visual_center": "Có thêm một lựa chọn",
+  "organic_motion_need": "Không cần diễn viên/plate hữu cơ; puppet vector có hành động chủ đích.",
+  "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+  "preferred_mode": "HF_ONLY",
+  "routing_confidence": "high",
+  "routing_reason": "Có thêm một lựa chọn: hành động chủ đạo là đặt / chọn các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ quiet choice / plan prop, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+  "flow_contribution": "none",
+  "hf_contribution": "Mascot xoay lòng bàn tay đặt chìa xuống; tay kia mở một nếp bản kế hoạch để lộ nhánh lựa chọn còn trống. Không bước hẳn vào một cánh cửa.",
+  "fallback_mode": null,
+  "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+  "character": "yes",
+  "title": "Có thêm một lựa chọn",
+  "takeaway": "Giá trị kết luận là khả năng lựa chọn cho tương lai; không thêm lời kêu gọi mua.",
+  "audio_source": [
+    "inputs/audio/seg_16.wav",
+    "inputs/audio/seg_17.wav"
+  ],
+  "duration": 6.855625000000003,
+  "sample_frames": 164535,
+  "raw_segments": [
+    {
+      "seg_id": 16,
+      "segment_id": "seg_16",
+      "audio_slice": "audio_slices/seg_16.wav",
+      "start_sample": 1639305,
+      "end_sample": 1736406,
+      "sample_frames": 97101,
+      "start": 68.304,
+      "end": 72.35,
+      "duration": 4.046,
+      "sha256": "801c60b360f0cc9391380c18b76c16745faabedbd6732402c9868ea671a6936a",
+      "raw_text": "Bởi đôi khi, điều giá chỉ nhất không phải là sở hữu thêm một căn nhà,",
+      "corrected_text": "Bởi đôi khi, điều giá trị nhất không phải là sở hữu thêm một căn nhà,",
+      "uncertainties": [
+        "giá chỉ -> giá trị: ASR nhận sai phụ âm cuối; giọng đọc chuẩn 'giá trị'."
+      ]
+    },
+    {
+      "seg_id": 17,
+      "segment_id": "seg_17",
+      "audio_slice": "audio_slices/seg_17.wav",
+      "start_sample": 1736406,
+      "end_sample": 1803840,
+      "sample_frames": 67434,
+      "start": 72.35,
+      "end": 75.16,
+      "duration": 2.81,
+      "sha256": "f4fa660a578c9b4d4dfeead21376a19df06803341976996ec44b5a6c5d842cd1",
+      "raw_text": "mà là sở hữu thêm một lựa chọn cho tương lai.",
+      "corrected_text": "mà là sở hữu thêm một lựa chọn cho tương lai.",
+      "uncertainties": []
+    }
+  ],
+  "render_mode": "HF_ONLY",
+  "style_candidates": [
+    {
+      "id": "hf_existing:warm-doodle-mixed-media",
+      "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+    },
+    {
+      "id": "kurzgesagt",
+      "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+    },
+    {
+      "id": "izometrik",
+      "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+    },
+    {
+      "id": "bauhaus",
+      "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+    }
+  ],
+  "style_id": "hf_existing:warm-doodle-mixed-media",
+  "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+  "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+  "visual_verb": "đặt / chọn",
+  "composition": "Nhà giấy ở trái, bên phải một bản kế hoạch gấp có hai lối mở. Mascot ở giữa cầm chìa khóa; bố cục rộng thay vì nhà đứng giữa.",
+  "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+  "opening_state": "Mascot nhìn chìa khóa trên lòng bàn tay, căn nhà yên ở cạnh.",
+  "transformation": "Mascot xoay lòng bàn tay đặt chìa xuống; tay kia mở một nếp bản kế hoạch để lộ nhánh lựa chọn còn trống. Không bước hẳn vào một cánh cửa.",
+  "final_state": "Nhà vẫn có, thêm một hướng chưa chốt; text ngắn “THÊM MỘT LỰA CHỌN” giữ đến sample cuối, không CTA/QR/logo mới.",
+  "protagonist_action": "Đặt chìa và tự mở kế hoạch; ánh nhìn dừng ở nhánh mới, phản ứng nhẹ.",
+  "mascot_role": "Đặt chìa và tự mở kế hoạch; ánh nhìn dừng ở nhánh mới, phản ứng nhẹ.",
+  "visual_family": "quiet choice / plan prop",
+  "timed_beats": [
+    {
+      "local_seconds": 0,
+      "spoken_cue": "đầu lát nguồn",
+      "action": "Mascot nhìn chìa khóa trên lòng bàn tay, căn nhà yên ở cạnh.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 1.714,
+      "spoken_cue": "cụm ý đầu — đối chiếu WAV",
+      "action": "Mascot xoay lòng bàn tay đặt chìa xuống",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 4.113,
+      "spoken_cue": "cụm ý sau — đối chiếu WAV",
+      "action": "Mascot xoay lòng bàn tay đặt chìa xuống; tay kia mở một nếp bản kế hoạch để lộ nhánh lựa chọn còn trống. Không bước hẳn vào một cánh cửa.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 5.69,
+      "spoken_cue": "đuôi câu / nghỉ",
+      "action": "Nhà vẫn có, thêm một hướng chưa chốt; text ngắn “THÊM MỘT LỰA CHỌN” giữ đến sample cuối, không CTA/QR/logo mới.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    }
+  ],
+  "motion_emphasis_sequence": [
+    "Mascot nhìn chìa khóa trên lòng bàn tay, căn nhà yên ở cạnh.",
+    "Mascot xoay lòng bàn tay đặt chìa xuống",
+    "Mascot xoay lòng bàn tay đặt chìa xuống; tay kia mở một nếp bản kế hoạch để lộ nhánh lựa chọn còn trống. Không bước hẳn vào một cánh cửa.",
+    "Nhà vẫn có, thêm một hướng chưa chốt; text ngắn “THÊM MỘT LỰA CHỌN” giữ đến sample cuối, không CTA/QR/logo mới."
+  ],
+  "hf_signature_motion": "Mascot xoay lòng bàn tay đặt chìa xuống; tay kia mở một nếp bản kế hoạch để lộ nhánh lựa chọn còn trống. Không bước hẳn vào một cánh cửa.",
+  "flow_action": null,
+  "flow_camera": null,
+  "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+  "asset_contract": [
+    {
+      "layer": "house-side",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "open-hand",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "key",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "folded-choice-plan",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "branch-a",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "branch-b",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-rig",
+      "source": "approved mascot derivative",
+      "status": "planned",
+      "required_separate_layer": true
+    }
+  ],
+  "container_required": true,
+  "container_inventory": [
+    {
+      "object_type": "choice plan",
+      "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+      "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+      "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+    }
+  ],
+  "container_semantics": [
+    {
+      "object_type": "choice plan",
+      "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+      "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+      "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+    }
+  ],
+  "visible_text_budget": {
+    "max_simultaneous_words": 4,
+    "max_levels": 2,
+    "paragraphs": 0
+  },
+  "visible_text_inventory": [
+    {
+      "text": "THÊM MỘT LỰA CHỌN",
+      "size_px": 54,
+      "role": "anchor",
+      "simultaneous": false
+    }
+  ],
+  "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Chữ trần trên nền sáng; không sweep.",
+  "accent_reason": "none",
+  "accent_treatment": "none",
+  "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+  "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+  "handoff": "Giữ kết quả tới 75.16s, không fade đen cắt đuôi voice.",
+  "continuity_risk": "Không chọn thay khán giả, không guarantee tương lai, không tự thêm CTA.",
+  "pilot": false,
+  "status": "designed_not_produced",
+  "must_keep": [
+    "Giá trị kết luận là khả năng lựa chọn cho tương lai; không thêm lời kêu gọi mua.",
+    "Mascot xoay lòng bàn tay đặt chìa xuống; tay kia mở một nếp bản kế hoạch để lộ nhánh lựa chọn còn trống. Không bước hẳn vào một cánh cửa.",
+    "voice/sample bounds",
+    "mascot identity, warm light palette, footer 200px",
+    "zero added CTA or documentary claims"
+  ],
+  "flexible": [
+    "Toạ độ/kích thước trong safe area",
+    "easing/pose/chi tiết nét",
+    "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+  ],
+  "reference_alignment": {
+    "colour_relationships": {
+      "reference_evidence": "Brief: cream/peach/lilac + accents",
+      "candidate_evidence": "S14: warm ground and vivid orange/blue/purple",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "typography_treatment": {
+      "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+      "candidate_evidence": "S14: local shipped font, sparse native text",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "asset_mix": {
+      "reference_evidence": "Reference 04/06: real campus plus drawing",
+      "candidate_evidence": "S14: Valletta photo where geographic evidence is needed; vector/physical paper elsewhere",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "composition": {
+      "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+      "candidate_evidence": "S14: Nhà giấy ở trái, bên phải một bản kế hoạch gấp có hai lối mở. Mascot ở giữa cầm chìa khóa; bố cục rộng thay vì nhà đứng giữa.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "mascot_language": {
+      "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+      "candidate_evidence": "S14: Đặt chìa và tự mở kế hoạch; ánh nhìn dừng ở nhánh mới, phản ứng nhẹ.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "motion_rhythm": {
+      "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+      "candidate_evidence": "S14: Mascot xoay lòng bàn tay đặt chìa xuống; tay kia mở một nếp bản kế hoạch để lộ nhánh lựa chọn còn trống. Không bước hẳn vào một cánh cửa.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    }
+  }
+}

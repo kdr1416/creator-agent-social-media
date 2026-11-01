@@ -1,0 +1,66 @@
+{
+  "S03": [
+    {
+      "text": "đi BỘ",
+      "at": 0.333917,
+      "global": 10.5,
+      "word_ids": [
+        46,
+        47
+      ],
+      "effect": "Serif lead-in; bold BỘ rises on bộ; exit at 1.95s"
+    },
+    {
+      "text": "cà phê / NGOÀI TRỜI",
+      "at": 3.513917,
+      "global": 13.68,
+      "word_ids": [
+        60,
+        63
+      ],
+      "effect": "Type bound to awning; outside phrase enters on ngoài at 14.02s"
+    },
+    {
+      "text": "gia đình",
+      "at": 7.373917,
+      "global": 17.54,
+      "word_ids": [
+        77,
+        78
+      ],
+      "effect": "Italic two-word stagger beside family"
+    }
+  ],
+  "S08": [
+    {
+      "text": "CÔNG VIỆC",
+      "at": 2.41,
+      "global": 42.68,
+      "word_ids": [
+        177,
+        178
+      ],
+      "effect": "Stacked wall text, clears while attention turns"
+    },
+    {
+      "text": "thời GIAN",
+      "at": 3.03,
+      "global": 43.3,
+      "word_ids": [
+        180,
+        181
+      ],
+      "effect": "Words open in terrace view; handoff to small caption"
+    },
+    {
+      "text": "THỜI GIAN / gia đình",
+      "at": 4.73,
+      "global": 45.0,
+      "word_ids": [
+        186,
+        187
+      ],
+      "effect": "Italic words enter on family cue with hand contact"
+    }
+  ]
+}

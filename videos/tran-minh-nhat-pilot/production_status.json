@@ -1,0 +1,31 @@
+{
+  "project_slug": "tran-minh-nhat",
+  "stage": "storyboard_ready_pilot_rendered_awaiting_visual_feedback",
+  "all_film_scenes": 17,
+  "rendered_scenes": [
+    "scene_04"
+  ],
+  "not_rendered": [
+    "scene_01",
+    "scene_02",
+    "scene_03",
+    "scene_05",
+    "scene_06",
+    "scene_07",
+    "scene_08",
+    "scene_09",
+    "scene_10",
+    "scene_11",
+    "scene_12",
+    "scene_13",
+    "scene_14",
+    "scene_15",
+    "scene_16",
+    "scene_17"
+  ],
+  "source_files_unchanged": true,
+  "publication_holds": [
+    "scene_10 mentor >14 years unsupported by current official about page"
+  ],
+  "original_production_status_preserved": true
+}

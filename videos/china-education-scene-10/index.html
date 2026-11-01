@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>Kỹ thuật Nền tảng tới AI — scene 10</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:SceneSans;src:url('assets/scene-sans-bold.ttf') format('truetype');font-weight:700;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;background:#fff}#root{position:relative;width:100%;height:100%;overflow:hidden;color:#0F172A;font-family:SceneSans,sans-serif}
+.clip{position:absolute;inset:0}.ground{background:#fff}.art{width:100%;height:100%;display:block}
+.label{position:absolute;margin:0;font-size:32px;font-weight:700;line-height:1.15;letter-spacing:-.6px;white-space:nowrap}
+#label-title{left:60px;top:140px;font-size:38px;color:#0F172A}
+#label-sub{left:60px;top:195px;font-size:26px;color:#FF6B2B}
+#label-tag{left:60px;top:940px;font-size:20px;color:#0284C7;background:#E0F2FE;padding:6px 20px;border-radius:20px;border:2px solid #BAE6FD}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-s10-root" id="root" data-composition-id="scene10" data-width="720" data-height="1280" data-duration="5.588" data-start="0">
+ <div data-hf-id="hf-s10-ground" id="scene10-ground" class="clip ground" data-start="0" data-duration="5.588" data-track-index="0"></div>
+ <svg data-hf-id="hf-s10-art" id="scene10-art" class="art clip" data-start="0" data-duration="5.588" data-track-index="1" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+   <linearGradient id="gear-grad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#CBD5E1"/><stop offset="1" stop-color="#64748B"/></linearGradient>
+   <linearGradient id="ai-core" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FF844B"/><stop offset="1" stop-color="#ED5323"/></linearGradient>
+   <radialGradient id="soft"><stop stop-color="#CCECE9" stop-opacity=".65"/><stop offset="1" stop-color="#CCECE9" stop-opacity="0"/></radialGradient>
+   <radialGradient id="pulse-glow"><stop stop-color="#38BDF8" stop-opacity=".9"/><stop offset="1" stop-color="#38BDF8" stop-opacity="0"/></radialGradient>
+  </defs>
+
+  <ellipse cx="460" cy="620" r="230" fill="url(#soft)"/>
+  <ellipse cx="200" cy="1040" rx="110" ry="15" fill="#E2E8F0"/>
+  <ellipse cx="460" cy="980" rx="140" ry="18" fill="#E2E8F0"/>
+
+  <!-- Mechanical Stand / Workstation (Mounted firmly below gear) -->
+  <g id="workstation">
+   <rect x="370" y="720" width="180" height="240" rx="12" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="2"/>
+   <rect x="400" y="700" width="120" height="24" rx="6" fill="#94A3B8"/>
+   <line x1="460" y1="724" x2="460" y2="820" stroke="#CBD5E1" stroke-width="3"/>
+   <circle cx="460" cy="820" r="5" fill="#94A3B8"/>
+  </g>
+
+  <!-- Big Mechanical Gear (Centrally drawn at 460, 620) -->
+  <g id="gear-spin">
+   <circle cx="460" cy="620" r="88" fill="url(#gear-grad)"/>
+   <!-- 8 Symmetric Teeth -->
+   <g fill="#fff">
+    <rect x="450" y="518" width="20" height="28" rx="3"/>
+    <rect x="450" y="694" width="20" height="28" rx="3"/>
+    <rect x="358" y="610" width="28" height="20" rx="3"/>
+    <rect x="534" y="610" width="28" height="20" rx="3"/>
+    <rect x="388" y="548" width="20" height="20" rx="3"/>
+    <rect x="512" y="672" width="20" height="20" rx="3"/>
+    <rect x="388" y="672" width="20" height="20" rx="3"/>
+    <rect x="512" y="548" width="20" height="20" rx="3"/>
+   </g>
+   <!-- Inner receiver socket for AI chip -->
+   <circle cx="460" cy="620" r="44" fill="#0F172A"/>
+   <circle cx="460" cy="620" r="42" fill="none" stroke="#38BDF8" stroke-width="2" stroke-dasharray="6 4"/>
+  </g>
+
+  <!-- Robotic Arm Joint attached to center (460, 620) -->
+  <g id="robot-arm-link" transform="translate(460, 620)">
+   <path id="robot-link-path" d="M0,0 L90,-80 L140,-60" fill="none" stroke="#64748B" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+   <circle cx="0" cy="0" r="14" fill="#1E293B" stroke="#64748B" stroke-width="3"/>
+   <circle cx="90" cy="-80" r="10" fill="#1E293B"/>
+   <circle id="robot-head" cx="140" cy="-60" r="12" fill="#0284C7"/>
+  </g>
+
+  <!-- AI Processor Core (Target center at 460, 620) -->
+  <g id="ai-chip">
+   <circle cx="460" cy="620" r="34" fill="url(#ai-core)"/>
+   <circle id="chip-pulse" cx="460" cy="620" r="46" fill="url(#pulse-glow)" opacity="0"/>
+   <rect x="446" y="606" width="28" height="28" rx="6" fill="#fff"/>
+   <circle cx="460" cy="620" r="6" fill="#FF6B2B"/>
+  </g>
+
+  <!-- Student Rig: Rear Arm (BEHIND torso) -->
+  <g id="arm-back">
+   <path id="back-sleeve" fill="none" stroke="#D94B20" stroke-width="37" stroke-linecap="round"/>
+   <path id="back-skin" fill="none" stroke="#E9AA83" stroke-width="26" stroke-linecap="round"/>
+   <ellipse id="back-hand" rx="16" ry="13" fill="#F5BF99"/>
+  </g>
+
+  <!-- Student Torso & Head -->
+  <g id="student">
+   <g id="legs">
+    <path d="M177 816L173 1005H211L228 864 243 1006H281L271 816Z" fill="#829DAF"/>
+    <path d="M174 997L166 1021Q159 1038 181 1039H219V1019L210 998Z" fill="#316A72"/>
+    <path d="M244 997L243 1038H289Q307 1037 296 1023L278 999Z" fill="#316A72"/>
+   </g>
+   <path d="M185 636Q162 645 157 678L163 820Q212 844 276 820L288 682Q280 646 252 636Z" fill="#FF773B"/>
+   <g id="head">
+    <path d="M204 605V652Q220 665 239 649V602" fill="#E5A17D"/>
+    <ellipse cx="218" cy="550" rx="62" ry="75" fill="#172C42"/>
+    <path d="M174 529Q177 497 211 493Q248 489 263 519L266 571Q259 609 228 618Q189 615 177 576Z" fill="#F5BF99"/>
+    <path d="M164 540Q145 486 185 473Q207 453 236 469Q270 476 276 509L259 536 247 510Q213 528 184 514L178 549Z" fill="#172C42"/>
+    <g id="eyes" fill="#172C42"><ellipse cx="227" cy="555" rx="4.7" ry="7"/><ellipse cx="253" cy="556" rx="4" ry="6.5"/></g>
+    <path d="M224 588Q236 598 248 586" fill="none" stroke="#8E4F40" stroke-width="3.5" stroke-linecap="round"/>
+   </g>
+  </g>
+
+  <!-- Student Front Arm (In FRONT of torso) -->
+  <g id="front-arm">
+   <path id="front-sleeve" fill="none" stroke="#FF773B" stroke-width="39" stroke-linecap="round"/>
+   <path id="front-skin" fill="none" stroke="#F5BF99" stroke-width="27" stroke-linecap="round"/>
+   <ellipse id="front-hand" rx="16" ry="13" fill="#F5BF99"/>
+  </g>
+ </svg>
+
+ <div class="label" id="label-title">CHUYỂN GIAO CÔNG NGHỆ</div>
+ <div class="label" id="label-sub">Kỹ thuật Cơ khí tích hợp AI</div>
+ <div class="label" id="label-tag">TÍCH HỢP ĐIỀU KHIỂN THÔNG MINH</div>
+
+ <audio data-hf-id="hf-s10-voice" id="scene10-voice" src="assets/audio.wav" data-start="0" data-duration="5.588" data-track-index="2" data-volume="1"></audio>
+</div>
+
+<script>
+const tl = gsap.timeline({paused:true});
+// Initial hand positions holding AI chip at (285, 620)
+const front = {x: 285, y: 620}, back = {x: 255, y: 635};
+
+function arm(prefix, sx, sy, ex, ey, l1, l2, bend){
+ const dx = ex - sx, dy = ey - sy, d = Math.min(Math.hypot(dx, dy), l1 + l2 - 0.01),
+       a = Math.atan2(dy, dx), b = Math.acos(Math.max(-1, Math.min(1, (l1 * l1 + d * d - l2 * l2) / (2 * l1 * d))));
+ const elbowX = sx + l1 * Math.cos(a + b * bend), elbowY = sy + l1 * Math.sin(a + b * bend);
+ document.getElementById(prefix + '-sleeve').setAttribute('d', `M${sx},${sy}L${elbowX},${elbowY}`);
+ document.getElementById(prefix + '-skin').setAttribute('d', `M${elbowX},${elbowY}L${ex},${ey}`);
+ const hand = document.getElementById(prefix + '-hand');
+ hand.setAttribute('cx', ex); hand.setAttribute('cy', ey);
+}
+
+function pose(){
+ arm('front', 271, 663, front.x, front.y, 105, 116, 1);
+ arm('back', 180, 674, back.x, back.y, 115, 120, 1);
+}
+pose();
+
+gsap.set(['#label-title', '#label-sub', '#label-tag'], {opacity: 0, x: -20});
+gsap.set('#gear-spin', {transformOrigin: '50% 50%'});
+gsap.set('#robot-arm-link', {transformOrigin: '0px 0px'});
+
+// Animation choreography over 5.588s
+tl.to(['#label-title', '#label-sub'], {opacity: 1, x: 0, duration: 0.6, stagger: 0.15, ease: 'power2.out'}, 0.2)
+  
+  // Chip originates from student hand (x = -175 relative to gear center at 460) and slides smoothly into gear socket (x = 0)
+  .from('#ai-chip', {x: -175, duration: 1.4, ease: 'power2.inOut'}, 0.8)
+  .to(front, {x: 440, y: 620, duration: 1.4, ease: 'power2.inOut', onUpdate: pose}, 0.8)
+  .to(back, {x: 410, y: 635, duration: 1.4, ease: 'power2.inOut', onUpdate: pose}, 0.8)
+  
+  // Snap in & power pulse
+  .to('#chip-pulse', {opacity: 1, duration: 0.2}, 2.2)
+  .to('#chip-pulse', {opacity: 0, duration: 0.4}, 2.4)
+  
+  // Hands withdraw smoothly down to natural resting position
+  .to(front, {x: 260, y: 780, duration: 0.8, ease: 'power2.out', onUpdate: pose}, 2.4)
+  .to(back, {x: 210, y: 800, duration: 0.8, ease: 'power2.out', onUpdate: pose}, 2.4)
+  
+  // Mechanical gear activates & rotates in place around its own 50% 50% center
+  .to('#gear-spin', {rotation: 360, duration: 2.8, ease: 'power1.inOut'}, 2.5)
+  
+  // Robotic arm link energizes & actuates
+  .to('#robot-link-path', {stroke: '#0284C7', strokeWidth: 18, duration: 0.6}, 2.6)
+  .to('#robot-arm-link', {rotation: 20, duration: 1.0, ease: 'back.out(1.5)'}, 2.6)
+  .to('#robot-head', {fill: '#38BDF8', duration: 0.3}, 2.8)
+  
+  // Tag reveals
+  .to('#label-tag', {opacity: 1, x: 0, duration: 0.5, ease: 'back.out(1.5)'}, 2.9)
+  .to('#head', {rotation: 3, svgOrigin: '220 610', duration: 0.4, ease: 'power2.inOut'}, 3.2);
+
+window.__timelines = window.__timelines || {};
+window.__timelines['scene10'] = tl;
+</script>
+</body>
+</html>

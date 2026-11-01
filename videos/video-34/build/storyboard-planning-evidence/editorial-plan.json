@@ -1,0 +1,590 @@
+[
+  {
+    "id": "S01",
+    "title": "Hai nơi, một nhịp sống",
+    "objective": "Mở bằng sự gần gũi để người xem Việt có lý do quan tâm đến câu chuyện Malta.",
+    "concept": "Hai không gian ban công Việt Nam/Malta cùng hướng ra ánh sáng; hai cử chỉ nâng cốc ăn khớp làm rõ một thói quen chung.",
+    "environment": "Hai vignette kiến trúc riêng, nối bằng đường chân trời đồ họa; không giả là hai quốc gia kề nhau.",
+    "assets": "ENV-MT-STREET, ENV-VN-CAFE; hai cư dân nền, cốc gốm/phin; ánh nắng.",
+    "composition": "Khung dọc lệch trục: ban công Malta phía trên-trái, sân Việt phía dưới-phải; đường nhìn hội tụ ở bàn tay/cốc, không viền card.",
+    "opening": "Cả hai không gian đã có mặt; người xem thấy một hành động đang bắt đầu, không chờ logo intro.",
+    "action": "Hai người ở hai nơi thực hiện cùng một cử chỉ đời thường.",
+    "beats": [
+      [
+        2,
+        3,
+        "Đưa chi tiết ban công Malta vào vùng nhìn chính."
+      ],
+      [
+        5,
+        6,
+        "Mở tầng cảnh Việt Nam bằng tán cây và phin cà phê."
+      ],
+      [
+        11,
+        12,
+        "Hai cử chỉ nâng cốc khớp nhịp; không biến người này thành người kia."
+      ],
+      [
+        18,
+        19,
+        "Mở bố cục ra khoảng trời chung về mặt đồ họa."
+      ]
+    ],
+    "closing": "Hai cảnh vẫn tách biệt về địa lý, cùng nhịp sinh hoạt.",
+    "transition": "Đường chân trời ở vị trí khớp dẫn sang S02; không dùng bản đồ nối Việt Nam–Malta.",
+    "complexity": "Vừa — hai vignette, hai cử chỉ ngắn.",
+    "reuse": "Mug, phin, balcony modules, gesture library; không bê cả layout sang cảnh khác.",
+    "risk": "So sánh văn hóa là góc kể của script, không thống kê về mọi người Việt/Malta.",
+    "text": "Tùy chọn “Nhịp sống quen thuộc”; không subtitle."
+  },
+  {
+    "id": "S02",
+    "title": "Biển và nắng là bối cảnh sống",
+    "objective": "Đặt chất Địa Trung Hải bằng không gian, không bằng một danh sách biểu tượng.",
+    "concept": "Điểm nhìn qua hiên đá ra mặt biển; bóng lan can và ánh sáng cho thấy nơi chốn có thể sống, không chỉ một bưu thiếp.",
+    "environment": "Coastal street minh họa lấy cảm hứng Malta: đá màu mật ong, ban công gỗ khép, mặt biển xa.",
+    "assets": "ENV-MT-STREET, sea horizon, balcony, awning; không cần nhân vật.",
+    "composition": "Khung cửa tiền cảnh tạo chiều sâu; biển chiếm điểm nghỉ phía trên, bóng nắng dẫn mắt xuống tuyến đi bộ.",
+    "opening": "Chân trời kế thừa S01; tiền cảnh vẫn mở.",
+    "action": "Cảnh quan được lộ dần bằng chuyển điểm nhìn nhẹ qua mép hiên.",
+    "beats": [
+      [
+        24,
+        27,
+        "Lộ đường ven biển dưới hiên."
+      ],
+      [
+        29,
+        32,
+        "Bóng nắng trên đá trở thành nét dẫn mắt, không sun-icon bật ra."
+      ],
+      [
+        38,
+        43,
+        "Đặt đường đi bộ vào khung; chuẩn bị cho người xuất hiện ở S03."
+      ]
+    ],
+    "closing": "Một promenade có thể đi vào, không phải màn hình thông tin.",
+    "transition": "Mép lan can dẫn vị trí người đi bộ ở S03; giữ chiều ánh sáng.",
+    "complexity": "Thấp–vừa — ánh sáng và reframe nhỏ.",
+    "reuse": "MT street kit, balcony, rail, sea plane.",
+    "risk": "Không mô tả nắng quanh năm hay khí hậu Malta giống hệt Việt Nam; không gắn địa danh cụ thể cho cảnh tổng hợp.",
+    "text": "“Malta” nếu cần định vị, xuất hiện một lần."
+  },
+  {
+    "id": "S03",
+    "title": "Một bờ biển đang sống — PILOT CANDIDATE",
+    "objective": "Cho thấy nhiều cách tận hưởng ngoài trời trong một thế giới có spatial continuity.",
+    "concept": "Theo một dải promenade nối quán café, pocket-square và góc nhìn ra vịnh; thay điểm chú ý trong không gian liên tục thay vì thay icon.",
+    "environment": "Coastal composite có logic tiếp giáp: đường đi bộ trước dãy nhà đá, café mở ra quảng trường nhỏ, vịnh xa; không tuyên bố đây là bản đồ Valletta.",
+    "assets": "ENV-MT-COAST-PLAZA, walkers, runner, café friends, beach family; rail, bàn/cốc, ghế, parasol, beach silhouettes.",
+    "composition": "Tuyến nhìn chéo từ giữa lên-phải rồi về thấp-phải; hero thay đổi theo cue, các khu còn lại được thấy trước ở mức phụ.",
+    "opening": "Walkers đã ở promenade; café và vịnh là ngữ cảnh, chưa tranh sự chú ý.",
+    "action": "Camera/layout chuyển trọng tâm trong cùng một môi trường, từng hành động khớp cụm lời đọc.",
+    "beats": [
+      [
+        46,
+        53,
+        "Walkers bước đều trong ánh chiều; không đổi sáng–chiều trong một giây."
+      ],
+      [
+        54,
+        58,
+        "Runner vượt theo cùng tuyến; cận cảnh bàn chân/nhịp tay đủ gợi chạy."
+      ],
+      [
+        59,
+        63,
+        "Trọng tâm chuyển sang café; một người đặt cốc xuống mặt bàn thật."
+      ],
+      [
+        64,
+        71,
+        "Người bạn chào bằng mắt/tay; quảng trường lộ sau bàn, không thêm một sân khấu mới."
+      ],
+      [
+        74,
+        81,
+        "Tầm nhìn mở về gia đình bên vịnh; child/parent gesture trở thành điểm chốt."
+      ]
+    ],
+    "closing": "Gia đình bên bờ biển là trọng tâm; dấu café còn ở tiền cảnh, giữ cảm giác một thế giới.",
+    "transition": "Trong bản phim đầy đủ, cốc/cánh tay ở mép tiền cảnh tạo điểm nối S04; không kéo dài audio hay overlap voice. Pilot phải có entry/resolve tự đủ.",
+    "complexity": "Cao — nhiều hoạt động trong 8.93925 s, kiểm soát camera và mức chú ý.",
+    "reuse": "Coast/plaza/café modules, runner and walk poses, hand/cup contact, path-based attention choreography.",
+    "risk": "Quá tải nhân vật/camera; rút bớt secondary acting trước khi tăng tốc. Vịnh/café/plaza là môi trường tổng hợp, không claim địa lý thật hay bãi cát nằm trong Valletta.",
+    "text": "Không có text mô tả hoạt động."
+  },
+  {
+    "id": "S04",
+    "title": "Cử chỉ ấy rất quen",
+    "objective": "Tạo cú nhận ra Việt Nam bằng chi tiết, không lặp lại panorama.",
+    "concept": "Cận bàn tay/cốc từ S03 khớp sang ly café/phin ở một sân Việt; âm hưởng hoạt động giống nhau, dụng cụ và vật liệu khác nhau.",
+    "environment": "Sân café Việt có bóng lá và ghế thấp; chỉ đủ dấu hiệu bối cảnh, không địa danh hư cấu.",
+    "assets": "PROP-PHIN, cup, hands; ENV-VN-CAFE close crop.",
+    "composition": "Macro tabletop chiếm trung tâm; mặt người không cần xuất hiện; khoảng trời nhỏ phản trong ly.",
+    "opening": "Điểm chạm cốc còn khớp vị trí cuối S03.",
+    "action": "Dùng match composition để chuyển nơi, giữ hành động nâng/đặt cốc.",
+    "beats": [
+      [
+        86,
+        88,
+        "Cho thấy chất liệu bàn, ly và bóng lá thay đổi."
+      ],
+      [
+        89,
+        93,
+        "Phin và nhịp tay xác lập cảm giác quen thuộc ở Việt Nam."
+      ]
+    ],
+    "closing": "Một chi tiết Việt đủ rõ; không cần mở thêm bộ icon quốc gia.",
+    "transition": "Bóng lá trên bàn mở thành tán cây công viên S05.",
+    "complexity": "Thấp — một raccord vật thể, ít nhân vật.",
+    "reuse": "Cup/hand kit; phin silhouette; leaf shadows.",
+    "risk": "Chỉ 3.105 s; không nhồi montage hay dùng biểu tượng văn hóa rập khuôn.",
+    "text": "Tùy chọn “Việt Nam”, không đồng thời thêm tiêu đề khác."
+  },
+  {
+    "id": "S05",
+    "title": "Nhịp Việt ở góc nhìn khác",
+    "objective": "Phản chiếu S03 nhưng có cách dựng riêng, tránh hai cảnh liệt kê cùng layout.",
+    "concept": "Góc nhìn chếch cao của công viên ven sông: cùng một tuyến cây xanh chứa người đi dạo, café mép đường; cuối cảnh đổi sang cận tay đưa con đi.",
+    "environment": "Park/riverside Việt minh họa; biển cuối tuần là một ý nghĩ nối hình, không giả sông và biển nằm cùng địa điểm.",
+    "assets": "ENV-VN-PARK-RIVER, small café cluster, parent/child hands, bag, water plane.",
+    "composition": "Tán cây tạo mảng lớn phía trên; tuyến đi bộ uốn trong nền, ending cận tay phá layout toàn cảnh.",
+    "opening": "Tán cây từ S04 chuyển thành park canopy nhìn từ trên.",
+    "action": "Theo một tuyến sinh hoạt rồi chuyển độ lớn sang tương tác cha/mẹ–con.",
+    "beats": [
+      [
+        97,
+        103,
+        "Đi dạo công viên và ven sông chia sẻ một đường đi, không hai shot lặp."
+      ],
+      [
+        104,
+        109,
+        "Café đã có trong mép cảnh; nhịp trò chuyện được gợi bằng hai cử chỉ."
+      ],
+      [
+        111,
+        118,
+        "Cận tay đưa con, chuyển nền nước thành gợi ý chuyến đi biển cuối tuần."
+      ]
+    ],
+    "closing": "Tay người lớn nắm tay trẻ; không kết bằng một stock beach icon.",
+    "transition": "Bàn tay đưa chiếc túi quen vào S06, nối thói quen sang câu chuyện chuyển nơi sống.",
+    "complexity": "Vừa — overhead world và một scale-change có động cơ.",
+    "reuse": "VN park/café kit, family hands, bag; không reuse S03 camera path.",
+    "risk": "Dễ lặp S03; giữ overhead và intimate ending, chỉ ba trọng tâm. Không dùng bản đồ sai để nối sông với biển.",
+    "text": "Không cần text mới."
+  },
+  {
+    "id": "S06",
+    "title": "Mang điều quen thuộc đến một nơi mới",
+    "objective": "Chuyển từ quan sát hai cộng đồng sang sự gắn bó của một gia đình.",
+    "concept": "Gia đình đặt chiếc túi/cốc quen xuống một căn nhà mới; trẻ nhận ra biển ngoài cửa, người lớn thả lỏng khi mở ban công.",
+    "environment": "ENV-MT-HOME, góc bàn/giá đồ và cửa ban công nhìn ra khu phố.",
+    "assets": "Family A, bag, cup, small plant, balcony door; không hồ sơ visa được đóng dấu.",
+    "composition": "Cận tay/vật dụng dẫn lên gương mặt rồi khoảng cửa; dùng chiều dọc để thể hiện từ đồ vật đến nơi chốn.",
+    "opening": "Bắt đầu ở chiếc túi, tận dụng khoảng thở trước từ đầu tiên mà không kéo audio.",
+    "action": "Đặt vật quen vào nhà mới rồi hướng sự chú ý ra không gian ngoài trời.",
+    "beats": [
+      [
+        121,
+        125,
+        "Cốc/túi được đặt đúng chỗ, nhịp hoạt động quen thuộc."
+      ],
+      [
+        129,
+        135,
+        "Gia đình cùng nhìn hướng cửa Malta; một ánh mắt trao nhau."
+      ],
+      [
+        136,
+        144,
+        "Cửa mở, vai người lớn thư giãn; không màn ăn mừng nhập cư thành công."
+      ]
+    ],
+    "closing": "Cả nhà cùng hướng nhìn ra ngoài; vật quen còn giữ tiền cảnh.",
+    "transition": "Khung cửa nối điểm nhìn ra khu phố S07.",
+    "complexity": "Vừa — hand contact, gaze và body settling.",
+    "reuse": "Home/workspace/terrace kit dùng tiếp S07–08; cup/bag; family poses.",
+    "risk": "Không ngụ ý mọi gia đình đều hòa nhập dễ dàng; cảnh minh họa, không testimonial thật hoặc bảo đảm hồ sơ.",
+    "text": "Không text mới; cảm giác “thuộc về” do acting."
+  },
+  {
+    "id": "S07",
+    "title": "Giá trị không dừng ở các công trình",
+    "objective": "Chuẩn bị câu “không chỉ… mà còn…” mà không kết luận sớm.",
+    "concept": "Từ cửa nhà nhìn ra một khu phố có trường học và cơ sở chăm sóc sức khỏe giản lược; điểm nhìn rời công trình để tiến về một cửa sổ có con người.",
+    "environment": "MT neighbourhood generic; trường/clinic không dùng tên, xếp hạng hoặc logo thật.",
+    "assets": "ENV-MT-STREET + school/clinic façades; window/workspace aperture.",
+    "composition": "Kiến trúc là ngữ cảnh, một cửa sổ sáng có hoạt động là điểm đến; không ba feature cards.",
+    "opening": "Tiếp khung nhìn ngoài cửa từ S06, giữ cùng tông đá/biển.",
+    "action": "Đổi trọng tâm từ hạ tầng sang nhịp sống trong căn nhà.",
+    "beats": [
+      [
+        151,
+        156,
+        "Đặt chất lượng sống trong cả khu phố thay vì badge chứng nhận."
+      ],
+      [
+        157,
+        166,
+        "Đi qua school/clinic cues, dừng sự chú ý ở cửa sổ dẫn sang S08."
+      ]
+    ],
+    "closing": "Cửa sổ làm điểm nối, câu chuyện chưa “đóng” vì lời đọc vẫn nối.",
+    "transition": "Cut qua khung cửa vào cùng không gian làm việc S08; không title bumper.",
+    "complexity": "Vừa — kiến trúc và một push-in có mục đích.",
+    "reuse": "MT street façades, window/door module, home stage.",
+    "risk": "Không gán cấp chất lượng giáo dục/y tế, miễn phí hay quyền hưởng dịch vụ chưa xác minh. S07/S11 khác nhau: nơi chốn so với góc nhìn phụ huynh.",
+    "text": "Không nhãn “giáo dục tốt/y tế tốt”."
+  },
+  {
+    "id": "S08",
+    "title": "Từ công việc đến hiện diện bên gia đình — PILOT CANDIDATE",
+    "objective": "Làm thấy sự chuyển đổi nhịp sống qua hành động và quan hệ, không biểu tượng cân bằng.",
+    "concept": "Một phụ huynh kết thúc thao tác ở bàn, khép laptop và xoay người về phía con trong không gian nhà–terrace liền nhau.",
+    "environment": "ENV-MT-HOME-WORK-TERRACE, cùng căn nhà S06, không đổi setting giữa hai câu.",
+    "assets": "Parent A, child, laptop với màn hình không đọc được nội dung, ghế, bàn, cửa mở, cây, hand-contact poses.",
+    "composition": "Bàn ở thấp-trái/giữa; terrace và con ở sâu-phải; điểm nhìn chuyển theo ánh mắt và tay, không chia đôi bằng khung card.",
+    "opening": "Parent đang làm việc; ánh sáng và terrace đã tồn tại như một khả năng, không xuất hiện phép màu.",
+    "action": "Rời thao tác công việc, đổi hướng cơ thể và dành sự chú ý cho người thân.",
+    "beats": [
+      [
+        167,
+        173,
+        "Nhịp tay chậm lại; vai/hơi thở dịu, không đóng laptop quá sớm."
+      ],
+      [
+        174,
+        175,
+        "Hands settle; chuẩn bị đổi ưu tiên chứ không bật icon cân."
+      ],
+      [
+        177,
+        178,
+        "Khép laptop có hinge/contact rõ ràng."
+      ],
+      [
+        180,
+        185,
+        "Xoay ghế/nhìn về terrace; tay rời bàn, người hướng sang con."
+      ],
+      [
+        186,
+        187,
+        "Tay con và phụ huynh chạm nhau, ánh mắt có reciprocity."
+      ]
+    ],
+    "closing": "Hai người đã có kết nối, bàn làm việc còn trong môi trường nhưng không còn là focal point.",
+    "transition": "Trong phim, hướng nhìn của trẻ dẫn xuống S09; pilot tự resolve, không giả S03→S08 là cùng một đoạn voice.",
+    "complexity": "Cao — 5.610125 s nhưng contact/acting phải tự nhiên, không mannequin.",
+    "reuse": "Home stage, laptop-hinge, half-turn/hand-hold poses, gaze/attention handoff.",
+    "risk": "Không thể hiện MPRP tự cấp quyền làm việc; đây là nhịp sinh hoạt minh họa. Token ASR “Giá đình” được map về lời hiệu đính “gia đình”, giữ nguyên timing.",
+    "text": "Không cần text “work/life balance”."
+  },
+  {
+    "id": "S09",
+    "title": "Thế giới ở tầm mắt trẻ",
+    "objective": "Cho thấy cơ hội khám phá bằng một trải nghiệm nhỏ có thể cảm nhận.",
+    "concept": "Trẻ hạ người nhìn một chồi cây/chi tiết tự nhiên, bước qua dấu nền rồi mời bạn cùng quan sát.",
+    "environment": "Community garden/đường dạo gần khu ở; người lớn trong ngữ cảnh, không trẻ một mình trên mép biển.",
+    "assets": "Child + friend, plant/leaf/stone, safe path, low planting bed; magnifier tùy chọn nếu không quá tải.",
+    "composition": "Low-angle gần tầm mắt trẻ, vật khám phá đủ lớn để đọc; không grid hoạt động.",
+    "opening": "Tiếp hướng nhìn của trẻ từ S08 bằng một chi tiết tự nhiên.",
+    "action": "Cúi xuống khám phá, chuyển từ vận động sang tò mò.",
+    "beats": [
+      [
+        188,
+        200,
+        "Trẻ bước vào nơi có thể chơi và khám phá, không school guarantee."
+      ],
+      [
+        201,
+        202,
+        "Một bước/đổi tư thế có trọng lượng."
+      ],
+      [
+        204,
+        207,
+        "Dừng ở chi tiết thiên nhiên; ánh mắt/gesture mời cùng nhìn."
+      ]
+    ],
+    "closing": "Một khám phá được chia sẻ, chuẩn bị điểm nhìn sang người lớn.",
+    "transition": "Đường nhìn của trẻ ra ngoài frame nối sang S10; không lặp zoom biển.",
+    "complexity": "Vừa — child acting, không cần camera bay.",
+    "reuse": "Family child poses, garden kit, gaze component; dùng lại S12 theo vai trò khác.",
+    "risk": "Không minh họa lợi ích sức khỏe như kết quả bảo đảm; không hoạt động nguy hiểm hoặc chạm động vật được bảo vệ.",
+    "text": "Không text."
+  },
+  {
+    "id": "S10",
+    "title": "Khoảng nghỉ dành cho người lớn",
+    "objective": "Tạo khoảng thở và mở rộng lifestyle ra ngoài trẻ em.",
+    "concept": "Hai người lớn/người lớn tuổi ngồi nhìn biển từ một ghế công cộng; bàn tay đặt trên tay vịn, một cử chỉ trao đổi yên tĩnh.",
+    "environment": "Một public terrace có bóng cây và lan can; biển là nền xa, không mở lại panorama S03.",
+    "assets": "Grandparent/support adult, bench, rail, tree shade, sea strip.",
+    "composition": "Side profile rộng vừa; tay/ghế foreground, khoảng biển thoáng phía sau; camera có thể đứng yên.",
+    "opening": "Một bàn tay/ghế công cộng đón hướng nhìn S09.",
+    "action": "Ngồi xuống và trao nhau sự chú ý trong không gian công cộng.",
+    "beats": [
+      [
+        208,
+        217,
+        "Chuyển focal point sang người lớn và môi trường chung."
+      ],
+      [
+        218,
+        221,
+        "Chỉ biểu đạt nơi chốn được chăm sóc, không shield/checkmark “an toàn tuyệt đối”."
+      ],
+      [
+        223,
+        226,
+        "Để khoảng biển hoàn tất cảm giác gần gũi."
+      ]
+    ],
+    "closing": "Một khoảng nghỉ có con người, không một biểu tượng tiện ích.",
+    "transition": "Bàn tay trên ghế nối bàn tay phụ huynh cầm bản vẽ S11.",
+    "complexity": "Thấp–vừa — subtle acting phải có vai trò, không idle loop.",
+    "reuse": "Bench, sea horizon, adult profiles; phối khác S03.",
+    "risk": "“An toàn/sạch đẹp” là nhận định trong voice, không claim phổ quát hoặc chỉ số được kiểm chứng.",
+    "text": "Không thêm safety labels."
+  },
+  {
+    "id": "S11",
+    "title": "Điều phụ huynh nhìn thấy",
+    "objective": "Làm rõ góc nhìn phụ huynh trước khi mở ý phát triển toàn diện.",
+    "concept": "Một phụ huynh nhìn bức vẽ trẻ mang về; ngôi trường trong hình chỉ là điểm khởi đầu, ánh mắt chuyển sang trẻ bên ngoài khung.",
+    "environment": "Home tabletop intimate, không bản sao cảnh lớp học/campus S07.",
+    "assets": "Parent hands, child drawing, bag, table/cup peripheral.",
+    "composition": "Over-shoulder/cận bàn tay; bức vẽ không phải chứng chỉ hay brochure trường.",
+    "opening": "Bàn tay nhận một vật có ý nghĩa từ S10 về mặt raccord.",
+    "action": "Từ nhìn trường trong hình sang nhìn chính đứa trẻ.",
+    "beats": [
+      [
+        230,
+        235,
+        "Parent nâng bản vẽ, phản ứng ấm áp có tiết chế."
+      ],
+      [
+        236,
+        246,
+        "School drawing được đặt xuống; ánh nhìn chuyển ra trẻ, câu chưa kết luận."
+      ]
+    ],
+    "closing": "Trẻ nằm ngoài hướng mắt, cần S12 hoàn thành ý.",
+    "transition": "Theo eyeline sang sân chơi/community court S12, không dissolve bức vẽ thành “bằng chứng thật”.",
+    "complexity": "Vừa — hand/artwork contact và eye line.",
+    "reuse": "Parent close-up poses, drawing prop, tabletop.",
+    "risk": "Không logo/ranking trường, không gán kết quả học tập hay tạo chứng từ giả.",
+    "text": "Không “Trường hàng đầu”."
+  },
+  {
+    "id": "S12",
+    "title": "Lớn lên trong quan hệ với thế giới",
+    "objective": "Thể hiện vận động, giao tiếp và cảm xúc bằng một chuỗi tương tác liên hệ nhau.",
+    "concept": "Trong sân cộng đồng, trẻ chuyền một quả bóng cho bạn; bạn đáp lại, cả hai cùng theo trò chơi. Một hành động có cả vận động và giao tiếp.",
+    "environment": "Courtyard/garden gắn với môi trường sống, không cam kết dịch vụ giáo dục cụ thể.",
+    "assets": "Child + friend, adult peripheral, ball, paving, low plants; no brain/heart icon set.",
+    "composition": "Wide vừa ở tầm trẻ, nhiều khoảng cho đường bóng và hướng mắt; không infographic cơ thể/tinh thần.",
+    "opening": "Trẻ trong eyeline S11 đã ở sân; thế giới mở hơn bức vẽ.",
+    "action": "Đưa vật cho người khác, nhận đáp lại và tiếp tục chơi.",
+    "beats": [
+      [
+        251,
+        258,
+        "Trẻ bước vào môi trường khuyến khích tham gia; pose đón bạn."
+      ],
+      [
+        259,
+        260,
+        "Chuyền bóng có tiếp xúc/đường đi và trọng lượng."
+      ],
+      [
+        261,
+        262,
+        "Eye contact, nhận bóng, đổi lượt."
+      ],
+      [
+        264,
+        274,
+        "Để niềm vui và sự tự tin hiện qua acting; không cộng các chỉ số phát triển."
+      ]
+    ],
+    "closing": "Quan hệ giữa hai trẻ rõ hơn số lượng hoạt động.",
+    "transition": "Hình tròn quả bóng khớp chi tiết ảnh gia đình trong hồ sơ trung tính S13; tránh dùng vòng tròn làm transition mặc định.",
+    "complexity": "Vừa–cao — hai nhân vật/contact, nhưng cùng một hành động xuyên cảnh.",
+    "reuse": "Child/gaze/hand kit, ball arc component, garden/court pieces.",
+    "risk": "Không medical/educational efficacy claim; không biến bốn ý thành bốn icon.",
+    "text": "Không bullet list."
+  },
+  {
+    "id": "S13",
+    "title": "Cân nhắc bước tiếp theo — FACTUAL REVIEW REQUIRED",
+    "objective": "Dành chỗ cho thông tin chương trình mà không khuếch đại phạm vi giá/điều kiện chưa rõ.",
+    "concept": "Still-life một hồ sơ tư vấn trung tính bên ảnh gia đình và cửa sổ; bàn tay chỉ mở trang, không đóng dấu “được duyệt”.",
+    "environment": "Góc bàn Esora/home consultation, không cơ quan nhà nước.",
+    "assets": "Generic consultation folder, family photo minh họa, hands, small original Esora logo nếu dùng trên bìa; no passport/permit mockup.",
+    "composition": "Một vật thể thật làm focal point, ít chi tiết; giữ nhịp đọc số, không hero-price/giá gạch ngang.",
+    "opening": "Ảnh gia đình nhận raccord từ S12, không thêm lời hứa.",
+    "action": "Mở trang thông tin và nhìn về không gian gia đình.",
+    "beats": [
+      [
+        278,
+        281,
+        "Giữ visual trung tính trong lúc voice đọc giá; không hiện số hoặc “trọn gói”."
+      ],
+      [
+        282,
+        293,
+        "Trang mở cho hành động tìm hiểu, không tiến độ phê duyệt hồ sơ."
+      ],
+      [
+        295,
+        297,
+        "Nhìn về ảnh gia đình, không vẽ sơ đồ bốn thế hệ tự động đủ điều kiện."
+      ]
+    ],
+    "closing": "Thông tin còn ở trạng thái cân nhắc/tư vấn, không kết quả pháp lý.",
+    "transition": "Mép cửa sổ dẫn sang khung kiến trúc thật S14; không visa-stamp wipe.",
+    "complexity": "Thấp về hình; cao về factual sign-off.",
+    "reuse": "Folder/hand/photo props, home surface; original logo optional.",
+    "risk": "FACTUAL REVIEW REQUIRED: phạm vi “3,8 tỷ”, điều kiện người phụ thuộc, cách gọi “Thẻ xanh”. Voice giữ nguyên; chưa chốt public release cảnh này chỉ bằng visual trung tính.",
+    "text": "Không hiện “3,8 tỷ”, “4 thế hệ”, “trọn gói” hay badge quyền lợi trước factual review."
+  },
+  {
+    "id": "S14",
+    "title": "Một cánh cửa mở vào đời sống",
+    "objective": "Đưa cảm xúc trở lại sau đoạn thông tin chương trình.",
+    "concept": "Qua một doorway Malta, cùng gia đình bước ra một khoảng sân/đường đi có thiên nhiên; “cánh cửa” là không gian sống, không cổng pháp lý vào toàn EU.",
+    "environment": "Doorway + courtyard + biển xa, ghép từ home/street kit theo một góc mới.",
+    "assets": "Family A, timber door/stone frame, tree, shared path; không EU passport, flags hay map cấp quyền.",
+    "composition": "Doorframe lệch trục, nhân vật ở độ sâu giữa; bầu trời mở dần rồi hạ trọng tâm về quan hệ trong nhà.",
+    "opening": "Khung cửa kế thừa S13, chưa là logo reveal.",
+    "action": "Đi qua cửa vào một hoạt động đời thường của gia đình.",
+    "beats": [
+      [
+        300,
+        306,
+        "Mở cửa vật lý và lộ không gian Malta."
+      ],
+      [
+        313,
+        322,
+        "Gia đình bước cùng nhau; vai/ánh mắt tạo cảm giác nhẹ nhõm."
+      ],
+      [
+        323,
+        333,
+        "Hạ tốc độ, đặt thiên nhiên trong ngữ cảnh để chuẩn bị kết luận cảm xúc."
+      ]
+    ],
+    "closing": "Giữ nhịp êm ở đoạn cuối; không hard transition lên từ “Bởi” đang băng boundary.",
+    "transition": "Match vị trí bàn tay sang S15; hình chuyển nhẹ, master audio liên tục không bị trim/overlap.",
+    "complexity": "Vừa — door occlusion + family staging.",
+    "reuse": "Door/home/street/family kit, nhưng camera angle không lặp S06.",
+    "risk": "Không ngụ ý quốc tịch/quyền sống-làm việc toàn EU. ASR w334 “Bởi” 80.88–81.56 băng ranh 81.35; giữ timing và đánh dấu nghe lại.",
+    "text": "Không map quyền lợi hoặc thêm “EU citizenship”."
+  },
+  {
+    "id": "S15",
+    "title": "Không cần nhanh hơn",
+    "objective": "Đổi nhịp từ lời hứa lớn về một lựa chọn nhỏ có thể cảm.",
+    "concept": "Cận người lớn hạ tay đang nhìn giờ/định cầm điện thoại, đổi ánh mắt sang con. Không làm thời gian dừng lại bằng phép màu.",
+    "environment": "Close crop trong cùng nhà/sân, bóng sáng êm; không mở thêm locale.",
+    "assets": "Parent hand/profile, simple watch hoặc phone không UI đọc được; child ở ngoài hướng nhìn.",
+    "composition": "Cận lệch trục, một khoảng trống có động cơ theo eyeline; camera đứng yên.",
+    "opening": "Kế thừa vị trí tay S14; không gắn một beat giả vào local 0 cho từ “Bởi”.",
+    "action": "Ngừng một thao tác vội để chú ý đến người thân.",
+    "beats": [
+      [
+        335,
+        336,
+        "Giữ cảnh có thời gian thở ở “đôi khi”."
+      ],
+      [
+        337,
+        338,
+        "Gaze mềm hơn, không hiện chữ hạnh phúc như khẩu hiệu."
+      ],
+      [
+        343,
+        345,
+        "Tay hạ xuống/điện thoại cất đi; không speed-lines hay clock-stop effect."
+      ]
+    ],
+    "closing": "Bàn tay đã sẵn để kết nối, không còn bận kiểm tra.",
+    "transition": "Cắt theo hướng tay sang S16; không một morph nữa.",
+    "complexity": "Thấp–vừa — micro-acting chính xác.",
+    "reuse": "Parent hand/gaze, watch/phone prop; không lặp toàn bộ hành động đóng laptop S08.",
+    "risk": "Phân biệt dừng thao tác với bảo đảm ít áp lực/công việc. Boundary w334 phải review audio; anchor trong cảnh dùng “đôi khi”, không tự dời ASR.",
+    "text": "Không text hoặc đồng hồ đếm ngược."
+  },
+  {
+    "id": "S16",
+    "title": "Theo nhịp bước của con",
+    "objective": "Cụ thể hóa thời gian bên nhau bằng tốc độ và tương tác.",
+    "concept": "Từ ngang tầm tay, người lớn điều chỉnh bước để nắm tay con; hai nhịp bước trở nên cùng nhau.",
+    "environment": "Promenade Malta đã quen nhưng crop thấp, không lặp wide S03.",
+    "assets": "Parent + child hands/feet, paving/rail fragments, soft tree shadow.",
+    "composition": "Bàn tay và bước chân là hero; chỉ một dải background đủ định vị.",
+    "opening": "Tay hạ xuống từ S15 đi vào cùng hướng tay con.",
+    "action": "Bước chậm hơn và đi cùng trẻ.",
+    "beats": [
+      [
+        350,
+        354,
+        "Người lớn đổi nhịp bước về cùng trẻ, không kéo dài thời gian thực."
+      ],
+      [
+        356,
+        359,
+        "Nắm tay và bước cùng nhau đúng trọng âm đi dạo/cùng con."
+      ]
+    ],
+    "closing": "Hai người cùng hướng đến café phía trước, không pose vẫy tay chào camera.",
+    "transition": "Hướng đi dẫn vào bàn café S17; dùng cut theo hành động, không tua nhanh quãng đường.",
+    "complexity": "Vừa — bước/contact ở cự ly gần phải tự nhiên.",
+    "reuse": "Walk/hand-hold poses, coast paving fragments; crop và tempo khác pilot S03.",
+    "risk": "Tránh biến cảnh này thành walk cycle trang trí hoặc lặp hành động gia đình của S08.",
+    "text": "Không text mới."
+  },
+  {
+    "id": "S17",
+    "title": "Một điều giản dị đủ để nhớ",
+    "objective": "Khép cảm xúc và gắn ký ức lifestyle với Esora, không thêm CTA ngoài voice.",
+    "concept": "Một góc bàn café có người thân; hai bàn tay đưa cốc gần nhau, cảnh lắng để logo Esora xuất hiện trong phần resolve.",
+    "environment": "Café/terrace ở Malta trong ánh chiều; không cần mở toàn cảnh thêm lần nữa.",
+    "assets": "Family/adult hands, cups, table, sea hint; original Esora JPEG có nền xanh.",
+    "composition": "Cận bàn/tương tác ở nửa trên; vùng resolve thật trong bố cục cho logo, không footer bị bỏ trống suốt phim.",
+    "opening": "Tay/cốc tiếp tục hướng hành động S16 bằng cut, không nối thời gian giả.",
+    "action": "Chia sẻ một khoảnh khắc bình thường rồi để thương hiệu lưu lại.",
+    "beats": [
+      [
+        360,
+        365,
+        "Cốc và bàn tay định vị người thân, không lặp toàn bộ café montage S03."
+      ],
+      [
+        367,
+        372,
+        "Hạ chuyển động, logo bắt đầu hiện trong resolve ở “giản dị”."
+      ],
+      [
+        373,
+        375,
+        "Giữ logo đủ rõ đến hết master, không thêm end-slate kéo dài."
+      ]
+    ],
+    "closing": "Bàn café, cảm xúc và logo cùng ổn định đến 93.04 s.",
+    "transition": "Kết thúc tại đúng master end; không fade voice sớm hoặc thêm branded outro ngoài thời lượng.",
+    "complexity": "Vừa — resolve/brand readability trong thời lượng ngắn.",
+    "reuse": "Cup/hands/table, terrace cues, original logo lockup (contain).",
+    "risk": "Không thêm hotline/CTA/slogan hoặc biến logo thành huy hiệu chính phủ. Không crop vòng sao, không vẽ lại chữ.",
+    "text": "Chỉ logo Esora hiện có; không tự thêm lời hứa."
+  }
+]

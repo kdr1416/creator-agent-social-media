@@ -1,0 +1,141 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div class=\"ground\" data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "D:\\Năm 3\\flowkit-main\\videos\\tran-minh-nhat-style-lab-06-12\\scene_06\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 0.288,
+        "selector": "div.tape",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 306.58,
+          "top": 372.24,
+          "right": 407.27,
+          "bottom": 406.97,
+          "width": 100.7,
+          "height": 34.73
+        },
+        "containerSelector": "#c6-photo",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 97.66,
+          "top": 380.24,
+          "right": 614.95,
+          "bottom": 962.45,
+          "width": 517.29,
+          "height": 582.21
+        },
+        "overflow": {
+          "top": 8
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 306.58,
+          "y": 372.24,
+          "width": 100.7,
+          "height": 34.73
+        },
+        "firstSeen": 0.288,
+        "lastSeen": 0.288,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          0.288
+        ]
+      }
+    ],
+    "duration": 5.192666666667,
+    "samples": [
+      0.288,
+      0.865,
+      1.442,
+      2.019,
+      2.596,
+      3.173,
+      3.75,
+      4.327,
+      4.904
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 1,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.288,
+      1.442,
+      2.596,
+      3.75,
+      4.904
+    ],
+    "checked": 14,
+    "passed": 14
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

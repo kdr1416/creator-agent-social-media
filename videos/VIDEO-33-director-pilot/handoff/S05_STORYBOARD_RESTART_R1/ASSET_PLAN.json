@@ -1,0 +1,49 @@
+{
+  "scene_id": "S05",
+  "revision": "S05_STORYBOARD_RESTART_R1",
+  "assets": [
+    {
+      "layer": "map-base",
+      "status": "needs_sourcing_and_vector_styling",
+      "source": "Dữ liệu địa lý có nguồn, thí dụ Natural Earth; kiểm coastline/đảo trước khi cách điệu.",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "malta-anchor",
+      "status": "needs_creation",
+      "source": "Điểm neo theo bản đồ, không phải tâm màn hình; tách khỏi hình ghim.",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-rig",
+      "status": "existing_identity_new_pose_required",
+      "source": "assets/approved-student-source.js: giữ nhận diện; tạo pose với vai/khuỷu/cổ tay đúng tầm.",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "pin",
+      "status": "needs_creation",
+      "source": "Ghim đồ họa đơn giản, đầu ghim tách lớp, không phải tượng đài/nhà.",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "residential-photo",
+      "status": "existing_candidate_not_selected",
+      "source": "assets/townhouse.jpg / Wikimedia Townhouse in Zejtun.jpg; kiểm crop và provenance trước khi chọn. Có thể thay bằng ảnh nhà ở Malta có giấy phép phù hợp.",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "MALTA-label",
+      "status": "existing_font_new_text_layer",
+      "source": "assets/fonts/segoe-ui-black.ttf, text native; không bake trong ảnh.",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "warm-ground-and-footer",
+      "status": "needs_creation",
+      "source": "Nền kem, biển xanh rất nhạt, đất đào nhạt; ảnh không tràn footer.",
+      "required_separate_layer": true
+    }
+  ],
+  "production_started": false
+}

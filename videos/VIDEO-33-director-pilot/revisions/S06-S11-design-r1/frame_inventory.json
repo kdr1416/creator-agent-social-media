@@ -1,0 +1,32 @@
+[
+  {
+    "path": "S06/01-ready",
+    "label": "Có một chỗ còn trống",
+    "status": "proposal_pending_user_frame_approval"
+  },
+  {
+    "path": "S06/02-pull",
+    "label": "Mascot kéo ghế",
+    "status": "proposal_pending_user_frame_approval"
+  },
+  {
+    "path": "S06/03-together",
+    "label": "Cùng quanh bàn",
+    "status": "proposal_pending_user_frame_approval"
+  },
+  {
+    "path": "S11/01-offer",
+    "label": "Phụ huynh đưa vở",
+    "status": "proposal_pending_user_frame_approval"
+  },
+  {
+    "path": "S11/02-receive",
+    "label": "Mascot nhận vở",
+    "status": "proposal_pending_user_frame_approval"
+  },
+  {
+    "path": "S11/03-packed",
+    "label": "Vở đã vào ba lô",
+    "status": "proposal_pending_user_frame_approval"
+  }
+]

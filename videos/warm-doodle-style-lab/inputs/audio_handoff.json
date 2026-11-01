@@ -1,0 +1,215 @@
+{
+  "project_slug": "le-pham-nhu-quynh",
+  "created_by": "Antigravity (Phase A: Audio & Transcription)",
+  "source_audio": "input_voice/Generated Audio October 18, 2026 - 10_49AM.wav",
+  "source_audio_sha256": "c55dfaed3ce3070143cabef72b173f2dd924fcedafb01296a11b3f999b87cbfd",
+  "transcript_json": "scratch/voice_transcript.json",
+  "transcript_json_sha256": "31e9baf59d796fcbd33cb5c484cc892031b515d4adf75f6e243c1fc4f8d32a15",
+  "transcript_md": "scratch/voice_transcript.md",
+  "transcript_md_sha256": "29f8db147f421e17da969759a60564b8e9a40537ee20545a00f1e2da8f2013bc",
+  "fullscript_reference": "scratch/le-pham-nhu-quynh-raw.txt",
+  "sample_rate": 24000,
+  "channels": 1,
+  "bit_depth": 16,
+  "total_sample_frames": 1774080,
+  "total_duration": 73.92,
+  "total_scenes": 16,
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "audio_slice": "scratch/audio_slices/scene_01.wav",
+      "start_sample": 0,
+      "end_sample": 128520,
+      "sample_frames": 128520,
+      "duration": 5.355,
+      "sha256": "298d20141e07f2610fec68ff4e0470290b77cf285dfd76e438f243edcafbf53c"
+    },
+    {
+      "scene_id": "scene_02",
+      "audio_slice": "scratch/audio_slices/scene_02.wav",
+      "start_sample": 128520,
+      "end_sample": 253944,
+      "sample_frames": 125424,
+      "duration": 5.226,
+      "sha256": "960cace01e5d24a06675fb65d25b187730a69ba4fc55ff742a1cb4b0081d694d"
+    },
+    {
+      "scene_id": "scene_03",
+      "audio_slice": "scratch/audio_slices/scene_03.wav",
+      "start_sample": 253944,
+      "end_sample": 339432,
+      "sample_frames": 85488,
+      "duration": 3.562,
+      "sha256": "af9906d6f927f3360702be2e6087551cef66c15b420c4b9b64d7f0298dc37288"
+    },
+    {
+      "scene_id": "scene_04",
+      "audio_slice": "scratch/audio_slices/scene_04.wav",
+      "start_sample": 339432,
+      "end_sample": 418464,
+      "sample_frames": 79032,
+      "duration": 3.293,
+      "sha256": "61c5e9b57ab5e15c3940664e5e6435bd3de003591773e5427bc1809c26cfd689"
+    },
+    {
+      "scene_id": "scene_05",
+      "audio_slice": "scratch/audio_slices/scene_05.wav",
+      "start_sample": 418464,
+      "end_sample": 568800,
+      "sample_frames": 150336,
+      "duration": 6.264,
+      "sha256": "33034d8f5a9b6c87accedcb5e900c936358703343911648786fc9a678c066fe9"
+    },
+    {
+      "scene_id": "scene_06",
+      "audio_slice": "scratch/audio_slices/scene_06.wav",
+      "start_sample": 568800,
+      "end_sample": 631440,
+      "sample_frames": 62640,
+      "duration": 2.61,
+      "sha256": "f4553a316f15b835d42b83998e332662e3e2ad0f0d678e2d6c6b406e16e8ddea"
+    },
+    {
+      "scene_id": "scene_07",
+      "audio_slice": "scratch/audio_slices/scene_07.wav",
+      "start_sample": 631440,
+      "end_sample": 708288,
+      "sample_frames": 76848,
+      "duration": 3.202,
+      "sha256": "2fd177796d1b19fae58785fa81f52d289350706e94f46c15cfccf711747f4e86"
+    },
+    {
+      "scene_id": "scene_08",
+      "audio_slice": "scratch/audio_slices/scene_08.wav",
+      "start_sample": 708288,
+      "end_sample": 797520,
+      "sample_frames": 89232,
+      "duration": 3.718,
+      "sha256": "42d8f24df034d2c408df3847d4f0ae27a00367093c923f83d6f4a809151cdd5c"
+    },
+    {
+      "scene_id": "scene_09",
+      "audio_slice": "scratch/audio_slices/scene_09.wav",
+      "start_sample": 797520,
+      "end_sample": 952776,
+      "sample_frames": 155256,
+      "duration": 6.469,
+      "sha256": "50c1b348c593b2cb622f20d1fb273c68eca6bbaf982c4206c22da4f1b7c4eb89"
+    },
+    {
+      "scene_id": "scene_10",
+      "audio_slice": "scratch/audio_slices/scene_10.wav",
+      "start_sample": 952776,
+      "end_sample": 1060320,
+      "sample_frames": 107544,
+      "duration": 4.481,
+      "sha256": "3f4be07be2f0ef82099d7d8d6ee21c22de53b852be2a9bff5e09a7f1724a1409"
+    },
+    {
+      "scene_id": "scene_11",
+      "audio_slice": "scratch/audio_slices/scene_11.wav",
+      "start_sample": 1060320,
+      "end_sample": 1166400,
+      "sample_frames": 106080,
+      "duration": 4.42,
+      "sha256": "3f4a0288b2aced27487c668ffc102e0bf20ba7234726d63ba23d07ba0238c46a"
+    },
+    {
+      "scene_id": "scene_12",
+      "audio_slice": "scratch/audio_slices/scene_12.wav",
+      "start_sample": 1166400,
+      "end_sample": 1281288,
+      "sample_frames": 114888,
+      "duration": 4.787,
+      "sha256": "2c24bc0f29ab9fe108e548495306450d0bf4b73812f1e4d68461aaedc7247144"
+    },
+    {
+      "scene_id": "scene_13",
+      "audio_slice": "scratch/audio_slices/scene_13.wav",
+      "start_sample": 1281288,
+      "end_sample": 1384824,
+      "sample_frames": 103536,
+      "duration": 4.314,
+      "sha256": "43105a9b0a4533e446ea2698910b9c4b12d0e0d8655f6c4a2a14775b396e8292"
+    },
+    {
+      "scene_id": "scene_14",
+      "audio_slice": "scratch/audio_slices/scene_14.wav",
+      "start_sample": 1384824,
+      "end_sample": 1472496,
+      "sample_frames": 87672,
+      "duration": 3.653,
+      "sha256": "d50d3591cdfa58ea098b632555a99a60dfaab6677ea15f41bca1b5aa7b2dc64d"
+    },
+    {
+      "scene_id": "scene_15",
+      "audio_slice": "scratch/audio_slices/scene_15.wav",
+      "start_sample": 1472496,
+      "end_sample": 1629552,
+      "sample_frames": 157056,
+      "duration": 6.544,
+      "sha256": "c8561731374c10d98d2eccba52de7900fd5f8211b11d918d584d857637223d95"
+    },
+    {
+      "scene_id": "scene_16",
+      "audio_slice": "scratch/audio_slices/scene_16.wav",
+      "start_sample": 1629552,
+      "end_sample": 1774080,
+      "sample_frames": 144528,
+      "duration": 6.022,
+      "sha256": "5511f11e9da052da620ef7af1f939306a350cdb83c06567eb5b2faf02fed1e76"
+    }
+  ],
+  "validation": {
+    "contiguity": "passed (100% contiguous, zero overlap, zero gap)",
+    "audio_slices_match_source_pcm": "passed (bit-perfect reconstruction matching source PCM)",
+    "total_sample_frames_verified": 1774080
+  },
+  "uncertainties_summary": {
+    "scene_01": [
+      "trưởng -> Trường (Trường Quốc tế Á Châu)"
+    ],
+    "scene_02": [
+      "lê phạm như quình -> Lê Phạm Như Quỳnh",
+      "từ mờ nhập học -> thư mời nhập học",
+      "y tín -> uy tín"
+    ],
+    "scene_03": [
+      "trinh phục -> chinh phục"
+    ],
+    "scene_04": [
+      "Han -> HAN (HAN University of Applied Sciences)"
+    ],
+    "scene_05": [
+      "CNIT -> CNTT"
+    ],
+    "scene_09": [
+      "trường trình -> chương trình",
+      "logistic -> Logistics",
+      "mô trường -> môi trường"
+    ],
+    "scene_12": [
+      "nhìn cứu -> nghiên cứu"
+    ],
+    "scene_13": [
+      "Đang sau -> Đằng sau",
+      "ba thương mời -> ba thư mời"
+    ],
+    "scene_14": [
+      "Ezora -> Esora"
+    ],
+    "scene_15": [
+      "Nhiều Quỳnh -> Như Quỳnh",
+      "dây dựng -> xây dựng",
+      "chúng tuyển -> trúng tuyển"
+    ],
+    "scene_16": [
+      "Ezora -> Esora",
+      "chân trọng -> trân trọng",
+      "Nhiều Quỳnh -> Như Quỳnh",
+      "thành chính -> hành trình",
+      "dù học -> du học"
+    ]
+  },
+  "handoff_note": "Phase A completed. Audio slices and verified transcript ready for Codex (Phase B: Research, fact-check, corrected_text, scene routing, storyboard, and pilot rig)."
+}

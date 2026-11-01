@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>13 · Mỗi câu chuyện có một cấu trúc riêng</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'PilotDisplay';
+  src: url('assets/segoe-ui-black.ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arial.ttf');
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arialbd.ttf');
+  font-weight: 700;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; }
+
+#scene-13 {
+  position: relative;
+  width: 720px;
+  height: 1280px;
+  overflow: hidden;
+  background: #FFF3E8;
+  color: #30313B;
+  font-family: PilotSans, Arial, sans-serif;
+}
+
+#world {
+  position: absolute;
+  inset: 0;
+  transform-origin: 360px 650px;
+}
+
+/* Strip Headline: CÂU CHUYỆN RIÊNG */
+.strip {
+  position: absolute;
+  left: 145px;
+  top: 155px;
+  background: #087BC1;
+  color: #FFFFFF;
+  padding: 14px 28px;
+  font-family: PilotDisplay, PilotSans, sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.1;
+  white-space: nowrap;
+  box-shadow: 5px 7px 0 #30313b12;
+  border-radius: 4px;
+  z-index: 25;
+  opacity: 0;
+  transform: translateY(-16px) scale(0.95);
+}
+
+svg.art {
+  position: absolute;
+  inset: 0;
+  width: 720px;
+  height: 1280px;
+  overflow: visible;
+}
+</style>
+</head>
+<body>
+<div id="scene-13" data-composition-id="scene-13" data-width="720" data-height="1280" data-start="0" data-duration="2.1">
+  <div id="world">
+    
+    <!-- Headline -->
+    <div id="scene-title" class="strip">CÂU CHUYỆN RIÊNG</div>
+
+    <!-- Desk Surface & Three Physical Notebooks Fanning Open -->
+    <svg class="art" viewBox="0 0 720 1280" aria-label="Three distinct physical applicant notebooks on desk">
+      <!-- Ground shadow -->
+      <ellipse cx="360" cy="980" rx="300" ry="26" fill="#E2CBB9" opacity="0.6"/>
+
+      <!-- ==============================================
+           NOTEBOOK 1 (Back Left: Soft Pastel Lilac #C8BDDE)
+           ============================================== -->
+      <g id="notebook-lilac-anchor" transform="translate(140, 480)">
+        <g id="notebook-lilac" transform="rotate(-14)">
+          <!-- Drop Shadow -->
+          <rect x="6" y="8" width="230" height="320" rx="4" fill="#30313B" opacity="0.12"/>
+          <!-- Back Cover -->
+          <rect x="0" y="0" width="230" height="320" rx="4" fill="#C8BDDE" stroke="#30313B" stroke-width="3"/>
+          <!-- Paper Pages block -->
+          <rect x="12" y="8" width="210" height="304" rx="2" fill="#FAF6F0" stroke="#30313B" stroke-width="2"/>
+          <!-- Semi-open Page Leaf -->
+          <g id="lilac-open-leaf" transform-origin="0 160">
+            <path d="M12 8L205 22L195 308L12 312Z" fill="#FFFDF8" stroke="#30313B" stroke-width="2.2"/>
+            <!-- Lilac study note style: geometric column diagram -->
+            <rect x="35" y="45" width="60" height="70" rx="2" fill="#EAE3F2" stroke="#AC9BBD" stroke-width="1.8"/>
+            <line x1="110" y1="55" x2="180" y2="55" stroke="#BFB0CE" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="110" y1="75" x2="175" y2="75" stroke="#BFB0CE" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="110" y1="95" x2="160" y2="95" stroke="#BFB0CE" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- Subtle mint clip at top margin -->
+            <rect x="140" y="5" width="18" height="26" rx="2" fill="#88C4B0" stroke="#30313B" stroke-width="1.8"/>
+          </g>
+          <!-- Spine detail -->
+          <line x1="14" y1="0" x2="14" y2="320" stroke="#9E91B3" stroke-width="3"/>
+        </g>
+      </g>
+
+      <!-- ==============================================
+           NOTEBOOK 2 (Back Right: Warm Peach #F2C4AC)
+           ============================================== -->
+      <g id="notebook-peach-anchor" transform="translate(380, 470)">
+        <g id="notebook-peach" transform="rotate(12)">
+          <!-- Drop Shadow -->
+          <rect x="6" y="8" width="230" height="330" rx="4" fill="#30313B" opacity="0.12"/>
+          <!-- Back Cover -->
+          <rect x="0" y="0" width="230" height="330" rx="4" fill="#F2C4AC" stroke="#30313B" stroke-width="3"/>
+          <!-- Paper Pages block -->
+          <rect x="10" y="8" width="212" height="314" rx="2" fill="#FDF9F2" stroke="#30313B" stroke-width="2"/>
+          <!-- Semi-open Page Leaf -->
+          <g id="peach-open-leaf" transform-origin="0 165">
+            <path d="M10 8L202 18L192 316L10 322Z" fill="#FFFDF5" stroke="#30313B" stroke-width="2.2"/>
+            <!-- Peach study note style: mind-map / flow circles -->
+            <ellipse cx="65" cy="80" rx="22" ry="22" fill="#FCEADF" stroke="#D19879" stroke-width="2"/>
+            <circle cx="140" cy="65" r="14" fill="#FCEADF" stroke="#D19879" stroke-width="1.8"/>
+            <circle cx="135" cy="115" r="16" fill="#FCEADF" stroke="#D19879" stroke-width="1.8"/>
+            <line x1="87" y1="75" x2="126" y2="68" stroke="#D19879" stroke-width="2" stroke-linecap="round"/>
+            <line x1="85" y1="92" x2="120" y2="108" stroke="#D19879" stroke-width="2" stroke-linecap="round"/>
+            <!-- Bookmark tag (Teal #2C858D) -->
+            <polygon points="170,8 190,8 190,-10 170,-10" fill="#2C858D" stroke="#30313B" stroke-width="1.8"/>
+          </g>
+          <!-- Spine detail -->
+          <line x1="14" y1="0" x2="14" y2="330" stroke="#C4937A" stroke-width="3"/>
+        </g>
+      </g>
+
+      <!-- ==============================================
+           NOTEBOOK 3 (Foreground Center: Nhật's Blue Notebook #087BC1 with Orange Bookmark #FF7A30)
+           ============================================== -->
+      <g id="notebook-nhat-anchor" transform="translate(210, 520)">
+        <g id="notebook-nhat">
+          <!-- Drop Shadow -->
+          <rect x="10" y="14" width="280" height="380" rx="5" fill="#30313B" opacity="0.18"/>
+          <!-- Main Blue Cover -->
+          <rect x="0" y="0" width="280" height="380" rx="5" fill="#087BC1" stroke="#30313B" stroke-width="3.5"/>
+          
+          <!-- Inner Pages stack -->
+          <rect x="16" y="10" width="256" height="360" rx="3" fill="#E8D9CA" stroke="#30313B" stroke-width="2.5"/>
+          <rect x="20" y="8" width="252" height="364" rx="3" fill="#FFFCF1" stroke="#30313B" stroke-width="2.5"/>
+          
+          <!-- Opening Spread -->
+          <g id="nhat-opening-spread">
+            <path id="nhat-spread-paper" d="M20 8L265 18L255 368L20 372Z" fill="#FFFEFA" stroke="#30313B" stroke-width="2.8"/>
+            
+            <!-- Orange Bookmark Tab (Callback to Scene 01 / Nhật identity) -->
+            <polygon points="215,8 245,8 245,-12 215,-12" fill="#FF7A30" stroke="#30313B" stroke-width="2.2"/>
+            
+            <!-- Distinctive Tangram & Story Layout outline inside Nhật's notebook -->
+            <g id="nhat-story-features">
+              <!-- Tangram motif from 12 -->
+              <path d="M45 50L85 30L87 75Z" fill="#8BC8D9" stroke="#30313B" stroke-width="2"/>
+              <path d="M46 54L87 56L88 90L51 92Z" fill="#087BC1" stroke="#30313B" stroke-width="2"/>
+              
+              <!-- Clean structural narrative lines -->
+              <line x1="110" y1="45" x2="235" y2="45" stroke="#505260" stroke-width="3.5" stroke-linecap="round"/>
+              <line x1="110" y1="65" x2="240" y2="65" stroke="#CBB9A7" stroke-width="2" stroke-linecap="round"/>
+              <line x1="110" y1="85" x2="220" y2="85" stroke="#CBB9A7" stroke-width="2" stroke-linecap="round"/>
+              
+              <!-- Orange highlight revision stroke -->
+              <line x1="45" y1="125" x2="235" y2="125" stroke="#FF7A30" stroke-width="3" stroke-linecap="round"/>
+              <line x1="45" y1="150" x2="195" y2="150" stroke="#CBB9A7" stroke-width="2" stroke-linecap="round"/>
+              <line x1="45" y1="175" x2="240" y2="175" stroke="#CBB9A7" stroke-width="2" stroke-linecap="round"/>
+              <line x1="45" y1="200" x2="210" y2="200" stroke="#CBB9A7" stroke-width="2" stroke-linecap="round"/>
+            </g>
+          </g>
+          
+          <!-- Spine -->
+          <line x1="18" y1="0" x2="18" y2="380" stroke="#055B90" stroke-width="4"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<script>
+(function() {
+  const tl = gsap.timeline({ paused: false });
+
+  // 0.00–0.550s: "Mỗi ứng viên"
+  // Headline drops in
+  tl.to('#scene-title', {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    duration: 0.45,
+    ease: 'back.out(1.3)'
+  }, 0.15);
+
+  // The two peer notebooks slide in from sides to form the fanned trio
+  tl.fromTo('#notebook-lilac', {
+    x: -80,
+    y: 40,
+    rotation: -25,
+    opacity: 0
+  }, {
+    x: 0,
+    y: 0,
+    rotation: -14,
+    opacity: 1,
+    duration: 0.55,
+    ease: 'power2.out'
+  }, 0.1);
+
+  tl.fromTo('#notebook-peach', {
+    x: 80,
+    y: 40,
+    rotation: 22,
+    opacity: 0
+  }, {
+    x: 0,
+    y: 0,
+    rotation: 12,
+    opacity: 1,
+    duration: 0.55,
+    ease: 'power2.out'
+  }, 0.15);
+
+  // Nhật's notebook anchors the center foreground
+  tl.fromTo('#notebook-nhat', {
+    y: 60,
+    scale: 0.95,
+    opacity: 0
+  }, {
+    y: 0,
+    scale: 1,
+    opacity: 1,
+    duration: 0.5,
+    ease: 'back.out(1.2)'
+  }, 0.2);
+
+  // 0.55–1.500s: "một câu chuyện riêng"
+  // Each notebook gently fans/opens slightly to reveal its own unique inner pattern
+  tl.to('#lilac-open-leaf', {
+    rotation: -8,
+    duration: 0.6,
+    ease: 'power2.out'
+  }, 0.65);
+
+  tl.to('#peach-open-leaf', {
+    rotation: 8,
+    duration: 0.6,
+    ease: 'power2.out'
+  }, 0.7);
+
+  tl.to('#nhat-opening-spread', {
+    scaleX: 1.03,
+    y: -4,
+    duration: 0.6,
+    ease: 'power2.out'
+  }, 0.75);
+
+  // 1.50–2.102s: "riêng — chốt"
+  // Camera/world gently pushes in on Nhật's notebook, ready for Scene 14 close-up
+  tl.to('#world', {
+    scale: 1.08,
+    y: 15,
+    duration: 0.55,
+    ease: 'power2.inOut'
+  }, 1.45);
+
+  // Hold at end
+  tl.to({ hold: 0 }, { hold: 1, duration: 2.1, ease: 'none' }, 0);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines['scene-13'] = tl;
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+{"scene":"yp-night","duration_s":1.1,"rules":["viewport-change"],"entry":{"vector":"zoom from rest","from_rest":true},"exit":{"vector":"zoom +37.25 scale/s, left 925px/s, up 2075px/s","still_moving":true}}

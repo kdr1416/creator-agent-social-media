@@ -1,0 +1,53 @@
+{
+  "project_slug": "warm-doodle-style-lab",
+  "source_project": "le-pham-nhu-quynh",
+  "user_scope": "New skill plus three random illustrated scenes; existing files immutable.",
+  "selection": "selection.json",
+  "storyboard": "STORYBOARD.md",
+  "storyboard_machine": "STORYBOARD.json",
+  "routing": "scene_routing.json",
+  "source_integrity": "inputs/source-integrity-after.json",
+  "skill_source": "../../skills/warm-doodle-video/SKILL.md",
+  "skill_installation": "Packaged in repository skills/; not installed into global or protected agent directories. Explicit file-path invocation works.",
+  "preview_url": "http://localhost:3002/#project/warm-doodle-style-lab",
+  "combined_output": "renders/warm-doodle-3-scenes.mp4",
+  "scenes": [
+    {
+      "scene_id": "scene_04",
+      "source_duration": 3.293,
+      "video_duration": 3.3,
+      "audio_duration": 3.293,
+      "output": "renders/scene_04.mp4",
+      "status": "rendered_awaiting_feedback",
+      "mode": "HF_ONLY",
+      "source_composition": "compositions/scene04.html"
+    },
+    {
+      "scene_id": "scene_09",
+      "source_duration": 6.469,
+      "video_duration": 6.5,
+      "audio_duration": 6.469,
+      "output": "renders/scene_09.mp4",
+      "status": "rendered_awaiting_feedback",
+      "mode": "HF_ONLY",
+      "source_composition": "compositions/scene09.html"
+    },
+    {
+      "scene_id": "scene_13",
+      "source_duration": 4.314,
+      "video_duration": 4.333333,
+      "audio_duration": 4.314,
+      "output": "renders/scene_13.mp4",
+      "status": "rendered_awaiting_feedback",
+      "mode": "HF_ONLY",
+      "source_composition": "compositions/scene13.html"
+    }
+  ],
+  "qa": "qa/review.json",
+  "approval": "pending",
+  "reproduce": "Use scripts/render-single-voice.ps1 from the skill with ProjectPath set to this isolated project, NarrationPath assets/narration.wav and an installed FFmpeg path; choose a fresh OutputName. See fallback reference.",
+  "open_issues": [
+    "Sampled, not consecutive source scenes; this is a style sampler.",
+    "Direct HF audio mix failed with the available FFmpeg; the exact upstream cause was not diagnosed. Separate picture render and original-voice mux verified."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "all_unchanged": true,
+  "files": {
+    "input_voice\\FDown.vn_Tai_video_Facebook_360p (SD)_ac05.mp4": "fe76f4fa40730f40852f651fe9c8950695fbf05b027fb8f634f76e178d216c85",
+    "scratch\\render_handoff.json": "bf0089f44005ac490d77bca572027d49b8583f6baec2c5db081ea3a11c5e69d2",
+    "scratch\\production_status.json": "8a5f398cb10d017d6b8c1b701601f4c8c4fa0f64ac5b6cd8229902fb239189f4",
+    "docs\\ANTIGRAVITY-VIDEO-WORKFLOW.md": "4835ec7b5ec67d624945651badb3898d0fc6e0054087c21cf228bde271f83b4b",
+    "skills\\warm-doodle-video\\SKILL.md": "0ca46f3a0c2f8c9174f5d40e9a0775cd4653de2b68c56dee46c338e77e9c8874",
+    "skills\\warm-doodle-video\\agents\\openai.yaml": "31332d9bad4cc2ef39c0dca2c01f9ae7fe403827e2570f0557c06e161ee6f0e1",
+    "skills\\warm-doodle-video\\assets\\doodle-kit.js": "b97a6b50f0dfe074fce3bf8760ae3e848597d5957b0d0b10c9ad3568daba81f5",
+    "skills\\warm-doodle-video\\assets\\gsap.min.js": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+    "skills\\warm-doodle-video\\assets\\paper.png": "a9359ad5a026d982ee9c012e10575139d539b8b9dcdf1c218f62725454498c7c",
+    "skills\\warm-doodle-video\\assets\\provenance.json": "643c3376339da9a6c2e402eac457e8b724293802140ffef5e1a5d66c9b63260b",
+    "skills\\warm-doodle-video\\assets\\scene-sans-bold.ttf": "aeb9e4a6ec5cc59f4d72df8189032d7dbb28f45161cf1552174818b5465dac4e",
+    "skills\\warm-doodle-video\\assets\\style-tokens.json": "257c979230e45dafcb1c0f1c462f62b229b6febc514f07753a7007d38cbdb68a",
+    "skills\\warm-doodle-video\\assets\\style.css": "8b2d012ac72a309edb4b32d4f6de6ecb944a4a864e9fc6e3c3e978ffcaec5b4b",
+    "skills\\warm-doodle-video\\references\\reference-audit.md": "fee04e01f4bd116231dc66a71ddaea5a5cc6b691edc3a385f0b161d29d1f15a2",
+    "skills\\warm-doodle-video\\references\\storyboard-fields.json": "26b6b83c4804797ecfc6394c5987999e3963f22d8c931747b3cbf129ecb18049",
+    "skills\\warm-doodle-video\\references\\visual-language.md": "31bbc029cc604c06f6f6a1284236876991f7854a54cb3a605da7a729d1680134",
+    "skills\\warm-doodle-video\\references\\windows-audio-fallback.md": "41ecd33682f85dd0df111e41443c2d4c357400b9360e322ad7781ad50201557f",
+    "skills\\warm-doodle-video\\scripts\\render-single-voice.ps1": "2cc0ed8bf7699e7d92ee698efdf186a66479d76d6e6bd84493453d1dc677abe2",
+    "skills\\warm-doodle-video\\scripts\\verify-single-voice.py": "bdcbf4981b6816f53547031c860f01f42f6771b33a282ed4e06fe1095f1cfb15",
+    "skills\\warm-doodle-video\\assets\\fonts\\Caveat-700-latin.woff2": "891951df5e8b5b0f0bc760d31375405e795c666b5add70437de12d4a6482b33f"
+  }
+}

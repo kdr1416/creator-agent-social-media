@@ -1,0 +1,2326 @@
+{
+  "sha": "09e451d8b64ec85c1ec035fd39e00725c1ed5593",
+  "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/09e451d8b64ec85c1ec035fd39e00725c1ed5593",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76f3d522c55256f87d68d5fbedfed0536173e41f",
+      "size": 52,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/76f3d522c55256f87d68d5fbedfed0536173e41f"
+    },
+    {
+      "path": "BRIEF.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22a24f697692ae57c6000c5afc440f97c86af7f1",
+      "size": 3097,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/22a24f697692ae57c6000c5afc440f97c86af7f1"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a7f29e301081ae8c0e97bb3d07e049ecdb84c9e",
+      "size": 9116,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/5a7f29e301081ae8c0e97bb3d07e049ecdb84c9e"
+    },
+    {
+      "path": "birlestir.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "91d00a84be0e6b4a1c29f914c2ebdcf4c3c8bcf5",
+      "size": 2688,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/91d00a84be0e6b4a1c29f914c2ebdcf4c3c8bcf5"
+    },
+    {
+      "path": "katalog",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7aa2b8050855f72a1c55ddb1e51e9488e03ad4da",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/7aa2b8050855f72a1c55ddb1e51e9488e03ad4da"
+    },
+    {
+      "path": "katalog/katalog.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b4808eb6f183538bdc8962c51b15c14a32269d5",
+      "size": 22671744,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/4b4808eb6f183538bdc8962c51b15c14a32269d5"
+    },
+    {
+      "path": "katalog/son.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "108315877bdd5578b2a94aeb7feb00f09e6715b3",
+      "size": 434296,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/108315877bdd5578b2a94aeb7feb00f09e6715b3"
+    },
+    {
+      "path": "render_ornek.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "191947863d062ad34a6ab181b1bbf5366906add7",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/191947863d062ad34a6ab181b1bbf5366906add7"
+    },
+    {
+      "path": "stiller/bauhaus",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee9767262ec106b37ce4cd831ae94e52835e7907",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/ee9767262ec106b37ce4cd831ae94e52835e7907"
+    },
+    {
+      "path": "stiller/bauhaus/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91a2ae831552e3fafaf716c24295b8072dffebb0",
+      "size": 13626,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/91a2ae831552e3fafaf716c24295b8072dffebb0"
+    },
+    {
+      "path": "stiller/bauhaus/bauhaus.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb345aac1528ac02c33a80330f7baa33f111cfcf",
+      "size": 525481,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/fb345aac1528ac02c33a80330f7baa33f111cfcf"
+    },
+    {
+      "path": "stiller/bauhaus/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "72349daa7488fb4d1524abeef085c34e908f1a9c",
+      "size": 855,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/72349daa7488fb4d1524abeef085c34e908f1a9c"
+    },
+    {
+      "path": "stiller/bauhaus/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fbae1b35bfe4be32a9b97ec1529582d03ca59a50",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/fbae1b35bfe4be32a9b97ec1529582d03ca59a50"
+    },
+    {
+      "path": "stiller/bauhaus/fonts/archivo_v25_k3kQo8UDI_1M0wlSfdfoLmvDIaK18A.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "462b5cfe5f98b8626d2bfbf095043474e8342452",
+      "size": 85856,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/462b5cfe5f98b8626d2bfbf095043474e8342452"
+    },
+    {
+      "path": "stiller/bauhaus/fonts/archivo_v25_k3kQo8UDI_1M0wlSfdnoLmvDIaI.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7af3f7db56708079e71cc2c265b3889d7f4649a6",
+      "size": 90096,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/7af3f7db56708079e71cc2c265b3889d7f4649a6"
+    },
+    {
+      "path": "stiller/bauhaus/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "157daf452c7892dda352e8dadb851c2b03ddab3f",
+      "size": 405567,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/157daf452c7892dda352e8dadb851c2b03ddab3f"
+    },
+    {
+      "path": "stiller/bauhaus/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/bauhaus/sfx.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "344c1ecb98a944ccc225fc7fc8538ea8728db391",
+      "size": 3318,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/344c1ecb98a944ccc225fc7fc8538ea8728db391"
+    },
+    {
+      "path": "stiller/bauhaus/synth.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1aea9845062e2bed0cf63b0e260b4ea33126cf92",
+      "size": 2220,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/1aea9845062e2bed0cf63b0e260b4ea33126cf92"
+    },
+    {
+      "path": "stiller/belgesel-16mm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3bebec1bb853174e65de4e2b502c50ca78dcf1c7",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/3bebec1bb853174e65de4e2b502c50ca78dcf1c7"
+    },
+    {
+      "path": "stiller/belgesel-16mm/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59810e62fe977ed80453e6ff05f5bbea42363f3c",
+      "size": 18143,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/59810e62fe977ed80453e6ff05f5bbea42363f3c"
+    },
+    {
+      "path": "stiller/belgesel-16mm/belgesel-16mm.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e133cd96fd587fb05157ec408fd46dee5e7535bb",
+      "size": 7506198,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/e133cd96fd587fb05157ec408fd46dee5e7535bb"
+    },
+    {
+      "path": "stiller/belgesel-16mm/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c8db45feed83f4ce1b3937fefe75aa41f4ea6a7d",
+      "size": 804,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/c8db45feed83f4ce1b3937fefe75aa41f4ea6a7d"
+    },
+    {
+      "path": "stiller/belgesel-16mm/events.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a9429e731087d901d2a51cefc69cd51df34f998",
+      "size": 107,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/5a9429e731087d901d2a51cefc69cd51df34f998"
+    },
+    {
+      "path": "stiller/belgesel-16mm/events.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8eedb188fe33c2675bf6cec22636cb2a98a9ef53",
+      "size": 1045,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/8eedb188fe33c2675bf6cec22636cb2a98a9ef53"
+    },
+    {
+      "path": "stiller/belgesel-16mm/fonts.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5b32869ba8be823a264ad28cbbe89cbf33104c3",
+      "size": 3106,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/a5b32869ba8be823a264ad28cbbe89cbf33104c3"
+    },
+    {
+      "path": "stiller/belgesel-16mm/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "16dbaf8898d77a2c64b663519e36ff083cd165e4",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/16dbaf8898d77a2c64b663519e36ff083cd165e4"
+    },
+    {
+      "path": "stiller/belgesel-16mm/fonts/CourierPrime-400-latin-ext-pvnRPA.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "769113db86afc46a60aa2638e2267e0697e3d2ba",
+      "size": 7124,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/769113db86afc46a60aa2638e2267e0697e3d2ba"
+    },
+    {
+      "path": "stiller/belgesel-16mm/fonts/CourierPrime-400-latin-s39pvk.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "feae1f758058f94190591b991ad3ed2ab1534794",
+      "size": 11192,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/feae1f758058f94190591b991ad3ed2ab1534794"
+    },
+    {
+      "path": "stiller/belgesel-16mm/fonts/OldStandardTT-400-latin-NwZcQH.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb10a432a8a49f2919577eeddec28cef75cde122",
+      "size": 15036,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/cb10a432a8a49f2919577eeddec28cef75cde122"
+    },
+    {
+      "path": "stiller/belgesel-16mm/fonts/OldStandardTT-400-latin-ZnRSZw.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb3a3d625e5562747a17b43ff512785d204cb519",
+      "size": 13932,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/bb3a3d625e5562747a17b43ff512785d204cb519"
+    },
+    {
+      "path": "stiller/belgesel-16mm/fonts/OldStandardTT-400-latin-ext-RSZ_QG.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8943cff9a5639312c65e84b59a0943bac70b8a2c",
+      "size": 12472,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/8943cff9a5639312c65e84b59a0943bac70b8a2c"
+    },
+    {
+      "path": "stiller/belgesel-16mm/fonts/OldStandardTT-400-latin-ext-cQHrKU.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff0e952ecd1bb0d2f9137ca0b8799ad454bed68d",
+      "size": 13196,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/ff0e952ecd1bb0d2f9137ca0b8799ad454bed68d"
+    },
+    {
+      "path": "stiller/belgesel-16mm/fonts/OldStandardTT-700-latin-Tc4PlA.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49c204abea2229d4c0e93ca132750396e12bd997",
+      "size": 13820,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/49c204abea2229d4c0e93ca132750396e12bd997"
+    },
+    {
+      "path": "stiller/belgesel-16mm/fonts/OldStandardTT-700-latin-ext-4PlJz5.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5e6c4c359c2b7bce6626012eff2537f42fd2948",
+      "size": 12384,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/b5e6c4c359c2b7bce6626012eff2537f42fd2948"
+    },
+    {
+      "path": "stiller/belgesel-16mm/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf735459b6023420093fd382e72639f12d407727",
+      "size": 3791062,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/cf735459b6023420093fd382e72639f12d407727"
+    },
+    {
+      "path": "stiller/belgesel-16mm/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/belgesel-16mm/ses.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f554667419745b990aea1fa94ac6596413c8bfc6",
+      "size": 2477,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/f554667419745b990aea1fa94ac6596413c8bfc6"
+    },
+    {
+      "path": "stiller/beyaz-tahta",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0b3f04987b8e31a1aa78a2e47f8efc99fa7f9aa0",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/0b3f04987b8e31a1aa78a2e47f8efc99fa7f9aa0"
+    },
+    {
+      "path": "stiller/beyaz-tahta/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02097c9ba4b8e7d00be9219604a2a5b36c622f96",
+      "size": 15057,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/02097c9ba4b8e7d00be9219604a2a5b36c622f96"
+    },
+    {
+      "path": "stiller/beyaz-tahta/beyaz-tahta.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58d1ab85413aec00c24da7c714b6a5b600a89191",
+      "size": 436452,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/58d1ab85413aec00c24da7c714b6a5b600a89191"
+    },
+    {
+      "path": "stiller/beyaz-tahta/common.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80dfddaaf0adbd29bd96a9c9e78067e11f836457",
+      "size": 5384,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/80dfddaaf0adbd29bd96a9c9e78067e11f836457"
+    },
+    {
+      "path": "stiller/beyaz-tahta/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5c63ccc5a1131dfa960e166e44cfd5d3fbcef147",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/5c63ccc5a1131dfa960e166e44cfd5d3fbcef147"
+    },
+    {
+      "path": "stiller/beyaz-tahta/fonts/Kalam-400-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "240c420a9931f5ae19c457572f5d0cf6ddad78e9",
+      "size": 6784,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/240c420a9931f5ae19c457572f5d0cf6ddad78e9"
+    },
+    {
+      "path": "stiller/beyaz-tahta/fonts/Kalam-400-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3fec05d0e0f123b3da1b17912e6ee7de68020a4",
+      "size": 14040,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/d3fec05d0e0f123b3da1b17912e6ee7de68020a4"
+    },
+    {
+      "path": "stiller/beyaz-tahta/fonts/Kalam-700-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc7d012bbbb019656ab407e645186ec887da2254",
+      "size": 6236,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/dc7d012bbbb019656ab407e645186ec887da2254"
+    },
+    {
+      "path": "stiller/beyaz-tahta/fonts/Kalam-700-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71e687fbf0b1ce4f8c41588bda32360a583cb43c",
+      "size": 13104,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/71e687fbf0b1ce4f8c41588bda32360a583cb43c"
+    },
+    {
+      "path": "stiller/beyaz-tahta/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04573d563c46a047785531336a744039bfbdd6a5",
+      "size": 1738955,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/04573d563c46a047785531336a744039bfbdd6a5"
+    },
+    {
+      "path": "stiller/beyaz-tahta/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/blueprint",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fd9cba5052a0d8e39f03caec05edcd6e84e79f16",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/fd9cba5052a0d8e39f03caec05edcd6e84e79f16"
+    },
+    {
+      "path": "stiller/blueprint/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b2f243df840e3a3d4e5ad5393217c2c0ae0b08b",
+      "size": 17254,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/5b2f243df840e3a3d4e5ad5393217c2c0ae0b08b"
+    },
+    {
+      "path": "stiller/blueprint/blueprint.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16488d56bae0ca5e6e52821d88f68a12d5a8b8c1",
+      "size": 713572,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/16488d56bae0ca5e6e52821d88f68a12d5a8b8c1"
+    },
+    {
+      "path": "stiller/blueprint/common.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80dfddaaf0adbd29bd96a9c9e78067e11f836457",
+      "size": 5384,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/80dfddaaf0adbd29bd96a9c9e78067e11f836457"
+    },
+    {
+      "path": "stiller/blueprint/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "68e82fff7559524971ed56ae316d7278e075d75b",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/68e82fff7559524971ed56ae316d7278e075d75b"
+    },
+    {
+      "path": "stiller/blueprint/fonts/BarlowCondensed-500-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f07d2e66f4caa26e19aec3180e9458ea575e7bb",
+      "size": 9188,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/4f07d2e66f4caa26e19aec3180e9458ea575e7bb"
+    },
+    {
+      "path": "stiller/blueprint/fonts/BarlowCondensed-500-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c955ea83e642f9e791387dfbf798ddb0028a0873",
+      "size": 14680,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/c955ea83e642f9e791387dfbf798ddb0028a0873"
+    },
+    {
+      "path": "stiller/blueprint/fonts/BarlowCondensed-500i-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "222fb07be5a6c85b0e8cb8a387a83fe0e8d385dd",
+      "size": 10068,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/222fb07be5a6c85b0e8cb8a387a83fe0e8d385dd"
+    },
+    {
+      "path": "stiller/blueprint/fonts/BarlowCondensed-500i-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f29997645c66990a97ec019e7f436c1aad31de5",
+      "size": 16664,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/3f29997645c66990a97ec019e7f436c1aad31de5"
+    },
+    {
+      "path": "stiller/blueprint/fonts/BarlowCondensed-600-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd6caadf8d6070691195004417cce36d807e3a54",
+      "size": 9236,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/dd6caadf8d6070691195004417cce36d807e3a54"
+    },
+    {
+      "path": "stiller/blueprint/fonts/BarlowCondensed-600-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0db16a609c9f67898a344b8e2160ff209f4e8fac",
+      "size": 14844,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/0db16a609c9f67898a344b8e2160ff209f4e8fac"
+    },
+    {
+      "path": "stiller/blueprint/fonts/IBMPlexMono-400-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4f67deb6417efbe86b5eb7a84ae2fb8c547fc29",
+      "size": 8860,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/e4f67deb6417efbe86b5eb7a84ae2fb8c547fc29"
+    },
+    {
+      "path": "stiller/blueprint/fonts/IBMPlexMono-400-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52b6c7595dd5e2106676e7c52fcff18539607879",
+      "size": 10052,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/52b6c7595dd5e2106676e7c52fcff18539607879"
+    },
+    {
+      "path": "stiller/blueprint/fonts/IBMPlexMono-500-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "743dae391633e37bcf16e31a8a6bc42ea8ce2354",
+      "size": 8848,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/743dae391633e37bcf16e31a8a6bc42ea8ce2354"
+    },
+    {
+      "path": "stiller/blueprint/fonts/IBMPlexMono-500-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3308bce2432c298817ed344eeac33007c83cecd0",
+      "size": 10060,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/3308bce2432c298817ed344eeac33007c83cecd0"
+    },
+    {
+      "path": "stiller/blueprint/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e91d96f4e5bbb5f43e12a990dffce8f4a2caf8bd",
+      "size": 2619143,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/e91d96f4e5bbb5f43e12a990dffce8f4a2caf8bd"
+    },
+    {
+      "path": "stiller/blueprint/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/cizgi-roman",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c0e36f2fbd29e1727494311e195710d5548f909c",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/c0e36f2fbd29e1727494311e195710d5548f909c"
+    },
+    {
+      "path": "stiller/cizgi-roman/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee9bd1b738b08ba5f083f0affa468c9b611a831a",
+      "size": 23749,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/ee9bd1b738b08ba5f083f0affa468c9b611a831a"
+    },
+    {
+      "path": "stiller/cizgi-roman/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c8db45feed83f4ce1b3937fefe75aa41f4ea6a7d",
+      "size": 804,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/c8db45feed83f4ce1b3937fefe75aa41f4ea6a7d"
+    },
+    {
+      "path": "stiller/cizgi-roman/cizgi-roman.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc598e02f95ea9597438d186f80944f7194c1bcd",
+      "size": 5867265,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/fc598e02f95ea9597438d186f80944f7194c1bcd"
+    },
+    {
+      "path": "stiller/cizgi-roman/events.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80a20fab740b4e89d379143e4a93baf95841245c",
+      "size": 242,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/80a20fab740b4e89d379143e4a93baf95841245c"
+    },
+    {
+      "path": "stiller/cizgi-roman/events.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8eedb188fe33c2675bf6cec22636cb2a98a9ef53",
+      "size": 1045,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/8eedb188fe33c2675bf6cec22636cb2a98a9ef53"
+    },
+    {
+      "path": "stiller/cizgi-roman/fonts.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0647f2864fdc9ded5d546fdace3b0708ea71fef",
+      "size": 2260,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/b0647f2864fdc9ded5d546fdace3b0708ea71fef"
+    },
+    {
+      "path": "stiller/cizgi-roman/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cb1f4443702fced50b6ba02d56874f6f24ffdce2",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/cb1f4443702fced50b6ba02d56874f6f24ffdce2"
+    },
+    {
+      "path": "stiller/cizgi-roman/fonts/Bangers-400-latin-J5hm24.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb78ce670561dbd311edd0ebde88fa879d4bd720",
+      "size": 17188,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/fb78ce670561dbd311edd0ebde88fa879d4bd720"
+    },
+    {
+      "path": "stiller/cizgi-roman/fonts/Bangers-400-latin-ext-m25mww.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d702c5a3aea0f2ec488e6a1f301d101010eb0335",
+      "size": 12372,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/d702c5a3aea0f2ec488e6a1f301d101010eb0335"
+    },
+    {
+      "path": "stiller/cizgi-roman/fonts/Kalam-700-latin-QqtbGs.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71e687fbf0b1ce4f8c41588bda32360a583cb43c",
+      "size": 13104,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/71e687fbf0b1ce4f8c41588bda32360a583cb43c"
+    },
+    {
+      "path": "stiller/cizgi-roman/fonts/Kalam-700-latin-ext-bGstvY.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc7d012bbbb019656ab407e645186ec887da2254",
+      "size": 6236,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/dc7d012bbbb019656ab407e645186ec887da2254"
+    },
+    {
+      "path": "stiller/cizgi-roman/fonts/PatrickHand-400-latin-ext-g58xGL.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a27d65e33b440d6f7daebf0d996f5336a0f1b53e",
+      "size": 10604,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/a27d65e33b440d6f7daebf0d996f5336a0f1b53e"
+    },
+    {
+      "path": "stiller/cizgi-roman/fonts/PatrickHand-400-latin-ubg58w.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eecd8e5cbed5a2085f5f5996f0ceaf69e6279062",
+      "size": 14224,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/eecd8e5cbed5a2085f5f5996f0ceaf69e6279062"
+    },
+    {
+      "path": "stiller/cizgi-roman/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6096fa210b59d90017e6852cda8494a9e4513de7",
+      "size": 3572600,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/6096fa210b59d90017e6852cda8494a9e4513de7"
+    },
+    {
+      "path": "stiller/cizgi-roman/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/cizgi-roman/ses.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c46282d5745c57cacddae138825e51264269322",
+      "size": 1654,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/5c46282d5745c57cacddae138825e51264269322"
+    },
+    {
+      "path": "stiller/hud",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f59eafbfe599a1c2a847d159d2644a9d377e454a",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/f59eafbfe599a1c2a847d159d2644a9d377e454a"
+    },
+    {
+      "path": "stiller/hud/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90f2d25e43c5b42f39f761c45c8c820ca99c8dab",
+      "size": 22762,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/90f2d25e43c5b42f39f761c45c8c820ca99c8dab"
+    },
+    {
+      "path": "stiller/hud/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c44dce88e139c9ccec03a2051df13f9a08313227",
+      "size": 940,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/c44dce88e139c9ccec03a2051df13f9a08313227"
+    },
+    {
+      "path": "stiller/hud/fonts.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c242f9f77268545905b7db6cd0d647638e65d4a",
+      "size": 3928,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/0c242f9f77268545905b7db6cd0d647638e65d4a"
+    },
+    {
+      "path": "stiller/hud/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "732914daa102c93404f975a8e5a6d867bef606a9",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/732914daa102c93404f975a8e5a6d867bef606a9"
+    },
+    {
+      "path": "stiller/hud/fonts/ChakraPetch-normal-300-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "037befb42903db6c54e7a3d41dc6abb08d45f7d0",
+      "size": 9104,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/037befb42903db6c54e7a3d41dc6abb08d45f7d0"
+    },
+    {
+      "path": "stiller/hud/fonts/ChakraPetch-normal-300-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32420f5bf705c88651947f1734b09c11cb3b83f7",
+      "size": 10020,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/32420f5bf705c88651947f1734b09c11cb3b83f7"
+    },
+    {
+      "path": "stiller/hud/fonts/ChakraPetch-normal-500-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3027c1dc3fce1444b7b1f6a9fa461c36cfcd4b7",
+      "size": 9024,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/c3027c1dc3fce1444b7b1f6a9fa461c36cfcd4b7"
+    },
+    {
+      "path": "stiller/hud/fonts/ChakraPetch-normal-500-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eafce833cf7552b2d6a18473bcbe14d3fd6f09a8",
+      "size": 9944,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/eafce833cf7552b2d6a18473bcbe14d3fd6f09a8"
+    },
+    {
+      "path": "stiller/hud/fonts/ChakraPetch-normal-600-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efa52c5847da5d2f3450834d14ab071c06e381bc",
+      "size": 9100,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/efa52c5847da5d2f3450834d14ab071c06e381bc"
+    },
+    {
+      "path": "stiller/hud/fonts/ChakraPetch-normal-600-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58db7a231fac06119e1116dae959544ac8caa41c",
+      "size": 10040,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/58db7a231fac06119e1116dae959544ac8caa41c"
+    },
+    {
+      "path": "stiller/hud/fonts/MartianMono-normal-300-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6def358cd02421d139f952cdeb7666affb3cffb1",
+      "size": 15884,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/6def358cd02421d139f952cdeb7666affb3cffb1"
+    },
+    {
+      "path": "stiller/hud/fonts/MartianMono-normal-300-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8283d9ef0e48cadd22714f66e3040e9433b68ce",
+      "size": 23544,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/e8283d9ef0e48cadd22714f66e3040e9433b68ce"
+    },
+    {
+      "path": "stiller/hud/fonts/MartianMono-normal-400-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6def358cd02421d139f952cdeb7666affb3cffb1",
+      "size": 15884,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/6def358cd02421d139f952cdeb7666affb3cffb1"
+    },
+    {
+      "path": "stiller/hud/fonts/MartianMono-normal-400-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8283d9ef0e48cadd22714f66e3040e9433b68ce",
+      "size": 23544,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/e8283d9ef0e48cadd22714f66e3040e9433b68ce"
+    },
+    {
+      "path": "stiller/hud/hud.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9224026e9b7144acd9d6d9f3a4cddab58ed02b30",
+      "size": 444308,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/9224026e9b7144acd9d6d9f3a4cddab58ed02b30"
+    },
+    {
+      "path": "stiller/hud/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd10f276ff579504cc092c8d27ced50b4e99a5b4",
+      "size": 422490,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/dd10f276ff579504cc092c8d27ced50b4e99a5b4"
+    },
+    {
+      "path": "stiller/hud/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/hud/sfx.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9ca7ea2f4f42e1d33d4e022a71c9b1bddb6b28c",
+      "size": 513,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/d9ca7ea2f4f42e1d33d4e022a71c9b1bddb6b28c"
+    },
+    {
+      "path": "stiller/hud/sfx.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79e299a3a7a3b0c5b3cb0a80b02be19616f5d309",
+      "size": 1034,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/79e299a3a7a3b0c5b3cb0a80b02be19616f5d309"
+    },
+    {
+      "path": "stiller/hud/sfx.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7147a39bc71a35e5d10609f10242f6997f8a9213",
+      "size": 1693,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/7147a39bc71a35e5d10609f10242f6997f8a9213"
+    },
+    {
+      "path": "stiller/izometrik",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "154c77e0b2471371cb0411b8d1d2ab7fff885ef7",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/154c77e0b2471371cb0411b8d1d2ab7fff885ef7"
+    },
+    {
+      "path": "stiller/izometrik/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49fcce5cc79a096cc28b7c5221995a8da3559c04",
+      "size": 25685,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/49fcce5cc79a096cc28b7c5221995a8da3559c04"
+    },
+    {
+      "path": "stiller/izometrik/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "72349daa7488fb4d1524abeef085c34e908f1a9c",
+      "size": 855,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/72349daa7488fb4d1524abeef085c34e908f1a9c"
+    },
+    {
+      "path": "stiller/izometrik/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9dd3f310958d30d74dde4f95c4cbbf5889aa3728",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/9dd3f310958d30d74dde4f95c4cbbf5889aa3728"
+    },
+    {
+      "path": "stiller/izometrik/fonts/spacegrotesk_v22_V8mDoQDjQSkFtoMM3T6r8E7mPb94C_k3HqUtEw.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3aa61ccdd2ae7bd4b119f4f73285b44fff5c768",
+      "size": 18924,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/e3aa61ccdd2ae7bd4b119f4f73285b44fff5c768"
+    },
+    {
+      "path": "stiller/izometrik/fonts/spacegrotesk_v22_V8mDoQDjQSkFtoMM3T6r8E7mPbF4C_k3HqU.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b0e76a5c9bdfdb5ccc8c9ab44780b5ff788c6db",
+      "size": 22320,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/7b0e76a5c9bdfdb5ccc8c9ab44780b5ff788c6db"
+    },
+    {
+      "path": "stiller/izometrik/izometrik.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c72e5ba4023308cf9ae3b4b6895fae2733555275",
+      "size": 730555,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/c72e5ba4023308cf9ae3b4b6895fae2733555275"
+    },
+    {
+      "path": "stiller/izometrik/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16f65ecebce29a543ca1cf94b28ecb95bff9a7e7",
+      "size": 797566,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/16f65ecebce29a543ca1cf94b28ecb95bff9a7e7"
+    },
+    {
+      "path": "stiller/izometrik/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/izometrik/sfx.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ad8a6adef0857342eb065226b921576ce2d6010",
+      "size": 3065,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/8ad8a6adef0857342eb065226b921576ce2d6010"
+    },
+    {
+      "path": "stiller/izometrik/synth.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1aea9845062e2bed0cf63b0e260b4ea33126cf92",
+      "size": 2220,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/1aea9845062e2bed0cf63b0e260b4ea33126cf92"
+    },
+    {
+      "path": "stiller/kagit-kesik",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a5ab8ae75394457f3bb73e25597f57a02510c987",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/a5ab8ae75394457f3bb73e25597f57a02510c987"
+    },
+    {
+      "path": "stiller/kagit-kesik/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d309742997b0a3420276340973385b8144751059",
+      "size": 27152,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/d309742997b0a3420276340973385b8144751059"
+    },
+    {
+      "path": "stiller/kagit-kesik/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4f0eb12fb452742bf181729b456d590068f6fddc",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/4f0eb12fb452742bf181729b456d590068f6fddc"
+    },
+    {
+      "path": "stiller/kagit-kesik/fonts/6NUu8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7hzFUPJH58njr1Yc1qv8oRcTnaIM.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca74986c0bdac97bbe637b253fe2c3c1ecea6e3b",
+      "size": 29464,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/ca74986c0bdac97bbe637b253fe2c3c1ecea6e3b"
+    },
+    {
+      "path": "stiller/kagit-kesik/fonts/6NUu8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7hzFUPJH58njr1Yc7qv8oRcTn.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f302ca74cb0281b6bda41990fb37c5f5bb3b4205",
+      "size": 33600,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/f302ca74cb0281b6bda41990fb37c5f5bb3b4205"
+    },
+    {
+      "path": "stiller/kagit-kesik/kagit-kesik.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "049581a889eca27852da80c5f0baf1ee6c6c85f9",
+      "size": 644419,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/049581a889eca27852da80c5f0baf1ee6c6c85f9"
+    },
+    {
+      "path": "stiller/kagit-kesik/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fc95deec7a59bf55eacba315ad6c8a6e956f9cb",
+      "size": 611585,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/1fc95deec7a59bf55eacba315ad6c8a6e956f9cb"
+    },
+    {
+      "path": "stiller/kagit-kesik/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/kagit-kesik/sfx.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffe7c14c6271f47d922878e32a644b68a2472f01",
+      "size": 1532,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/ffe7c14c6271f47d922878e32a644b68a2472f01"
+    },
+    {
+      "path": "stiller/kagit-kesik/sfx.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f28c75bcec787d6f03f5d5915a185d8f8470992",
+      "size": 1949,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/2f28c75bcec787d6f03f5d5915a185d8f8470992"
+    },
+    {
+      "path": "stiller/kagit-kesik/yap.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4fd8ab90880ec40c941809bb7cc49056dc6ecfa9",
+      "size": 802,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/4fd8ab90880ec40c941809bb7cc49056dc6ecfa9"
+    },
+    {
+      "path": "stiller/kagit-kesik/yazi-tipleri.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "816ea44ed21822b1642d98ff938ea92b1af4b2aa",
+      "size": 1781,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/816ea44ed21822b1642d98ff938ea92b1af4b2aa"
+    },
+    {
+      "path": "stiller/kara-tahta",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9e9fe5e356c4f3cb6ecdd82565314fde2ec3a148",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/9e9fe5e356c4f3cb6ecdd82565314fde2ec3a148"
+    },
+    {
+      "path": "stiller/kara-tahta/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89648b21a9d9fa3c12609b8ee1b9647a2e57daa5",
+      "size": 14420,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/89648b21a9d9fa3c12609b8ee1b9647a2e57daa5"
+    },
+    {
+      "path": "stiller/kara-tahta/common.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80dfddaaf0adbd29bd96a9c9e78067e11f836457",
+      "size": 5384,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/80dfddaaf0adbd29bd96a9c9e78067e11f836457"
+    },
+    {
+      "path": "stiller/kara-tahta/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fceb0a9b085caa4be3e629c910003e2abb3f8491",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/fceb0a9b085caa4be3e629c910003e2abb3f8491"
+    },
+    {
+      "path": "stiller/kara-tahta/fonts/Caveat-500-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33ce75ee01844eb7278a21d68b8d96b540e1e17f",
+      "size": 29528,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/33ce75ee01844eb7278a21d68b8d96b540e1e17f"
+    },
+    {
+      "path": "stiller/kara-tahta/fonts/Caveat-500-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "836dbda093eb92e5277d39b9b5af6a00222b176a",
+      "size": 74572,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/836dbda093eb92e5277d39b9b5af6a00222b176a"
+    },
+    {
+      "path": "stiller/kara-tahta/fonts/Caveat-700-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33ce75ee01844eb7278a21d68b8d96b540e1e17f",
+      "size": 29528,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/33ce75ee01844eb7278a21d68b8d96b540e1e17f"
+    },
+    {
+      "path": "stiller/kara-tahta/fonts/Caveat-700-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "836dbda093eb92e5277d39b9b5af6a00222b176a",
+      "size": 74572,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/836dbda093eb92e5277d39b9b5af6a00222b176a"
+    },
+    {
+      "path": "stiller/kara-tahta/kara-tahta.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a8ef1c325917d5a334dbf8b9308c49790c85818",
+      "size": 424504,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/2a8ef1c325917d5a334dbf8b9308c49790c85818"
+    },
+    {
+      "path": "stiller/kara-tahta/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c6b209138624222f74474bbd8334f4e5dccb5a6",
+      "size": 1726334,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/5c6b209138624222f74474bbd8334f4e5dccb5a6"
+    },
+    {
+      "path": "stiller/kara-tahta/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/karakalem",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "956aa7223be7e450192cf30957d7fe041a5330db",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/956aa7223be7e450192cf30957d7fe041a5330db"
+    },
+    {
+      "path": "stiller/karakalem/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29b54f868e6d90390d6a06ae7f273e375020ff55",
+      "size": 23000,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/29b54f868e6d90390d6a06ae7f273e375020ff55"
+    },
+    {
+      "path": "stiller/karakalem/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "db238f3c2ad0fbde05c7ec4234589bdec3ac9225",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/db238f3c2ad0fbde05c7ec4234589bdec3ac9225"
+    },
+    {
+      "path": "stiller/karakalem/fonts/Wnz6HAc5bAfYB2Q7ZjYYiAzcPA.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "836dbda093eb92e5277d39b9b5af6a00222b176a",
+      "size": 74572,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/836dbda093eb92e5277d39b9b5af6a00222b176a"
+    },
+    {
+      "path": "stiller/karakalem/fonts/Wnz6HAc5bAfYB2Q7aDYYiAzcPDKo.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33ce75ee01844eb7278a21d68b8d96b540e1e17f",
+      "size": 29528,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/33ce75ee01844eb7278a21d68b8d96b540e1e17f"
+    },
+    {
+      "path": "stiller/karakalem/karakalem.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0ea4e5ddfd2736a8a27e093eccc31726ee1e358",
+      "size": 749960,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/e0ea4e5ddfd2736a8a27e093eccc31726ee1e358"
+    },
+    {
+      "path": "stiller/karakalem/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6386c1315e142b19e4d85f63d3e113603281322",
+      "size": 2033005,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/e6386c1315e142b19e4d85f63d3e113603281322"
+    },
+    {
+      "path": "stiller/karakalem/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/karakalem/yap.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4fd8ab90880ec40c941809bb7cc49056dc6ecfa9",
+      "size": 802,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/4fd8ab90880ec40c941809bb7cc49056dc6ecfa9"
+    },
+    {
+      "path": "stiller/karakalem/yazi-tipleri.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ce29a9a70d0fd36222526b7adbbc28a238f1b43",
+      "size": 1555,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/8ce29a9a70d0fd36222526b7adbbc28a238f1b43"
+    },
+    {
+      "path": "stiller/kil",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1fb7388dab86015fb24edc7c88c38f0b209e95c2",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/1fb7388dab86015fb24edc7c88c38f0b209e95c2"
+    },
+    {
+      "path": "stiller/kil/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "468338e7dc0ddf76fca83cdabbd7a32af55fffb5",
+      "size": 21590,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/468338e7dc0ddf76fca83cdabbd7a32af55fffb5"
+    },
+    {
+      "path": "stiller/kil/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "62ce2c1281e66121019463400c18d81da9afd7bd",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/62ce2c1281e66121019463400c18d81da9afd7bd"
+    },
+    {
+      "path": "stiller/kil/fonts/X7n64b87HvSqjb_WIi2yDCRwoQ_k7367_DWg89XgHPyhRMw.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61e74bef99b7c5c5ef94b8c7bdeb2877ceada233",
+      "size": 4564,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/61e74bef99b7c5c5ef94b8c7bdeb2877ceada233"
+    },
+    {
+      "path": "stiller/kil/fonts/X7n64b87HvSqjb_WIi2yDCRwoQ_k7367_DWu89XgHPyh.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c9c082647b64110ba77e12f463668804173e0bb",
+      "size": 29704,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/9c9c082647b64110ba77e12f463668804173e0bb"
+    },
+    {
+      "path": "stiller/kil/kil.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b01286dd8b6d1aa1510de0beec551b2e40ad6664",
+      "size": 545170,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/b01286dd8b6d1aa1510de0beec551b2e40ad6664"
+    },
+    {
+      "path": "stiller/kil/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edb8f38ea35eb534f0ff86ece442759968ba4eea",
+      "size": 1731706,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/edb8f38ea35eb534f0ff86ece442759968ba4eea"
+    },
+    {
+      "path": "stiller/kil/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/kil/sfx.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7377b253a73722ff27182799c17f46024631d261",
+      "size": 1964,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/7377b253a73722ff27182799c17f46024631d261"
+    },
+    {
+      "path": "stiller/kil/sfx.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f28c75bcec787d6f03f5d5915a185d8f8470992",
+      "size": 1949,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/2f28c75bcec787d6f03f5d5915a185d8f8470992"
+    },
+    {
+      "path": "stiller/kil/yap.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4fd8ab90880ec40c941809bb7cc49056dc6ecfa9",
+      "size": 802,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/4fd8ab90880ec40c941809bb7cc49056dc6ecfa9"
+    },
+    {
+      "path": "stiller/kil/yazi-tipleri.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcaccdb7aacf31280ccf77b71b4441bb9aa9b574",
+      "size": 1721,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/fcaccdb7aacf31280ccf77b71b4441bb9aa9b574"
+    },
+    {
+      "path": "stiller/kinetik-tipografi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7a63367921313103b9ba754c7bedb5486236b3e2",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/7a63367921313103b9ba754c7bedb5486236b3e2"
+    },
+    {
+      "path": "stiller/kinetik-tipografi/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46be872d8bbf31d0a5e6447a759db98d1306d69a",
+      "size": 11824,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/46be872d8bbf31d0a5e6447a759db98d1306d69a"
+    },
+    {
+      "path": "stiller/kinetik-tipografi/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c44dce88e139c9ccec03a2051df13f9a08313227",
+      "size": 940,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/c44dce88e139c9ccec03a2051df13f9a08313227"
+    },
+    {
+      "path": "stiller/kinetik-tipografi/fonts.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e42e35051c6c848c3d4008313e4f5516ee9dfc6",
+      "size": 2424,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/6e42e35051c6c848c3d4008313e4f5516ee9dfc6"
+    },
+    {
+      "path": "stiller/kinetik-tipografi/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "56316a1ba8570af4dce25001497221f5722a940e",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/56316a1ba8570af4dce25001497221f5722a940e"
+    },
+    {
+      "path": "stiller/kinetik-tipografi/fonts/BricolageGrotesque-normal-200-800-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1d35c157733df5316167cb611cfa6a3a49e64a8",
+      "size": 30636,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/f1d35c157733df5316167cb611cfa6a3a49e64a8"
+    },
+    {
+      "path": "stiller/kinetik-tipografi/fonts/BricolageGrotesque-normal-200-800-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b908aff816383eee73ef620808f6f2f8a05d2542",
+      "size": 76868,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/b908aff816383eee73ef620808f6f2f8a05d2542"
+    },
+    {
+      "path": "stiller/kinetik-tipografi/fonts/InstrumentSerif-italic-400-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd21ed1685aaefd7726a4a90c0e787860cfa6a3d",
+      "size": 8444,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/dd21ed1685aaefd7726a4a90c0e787860cfa6a3d"
+    },
+    {
+      "path": "stiller/kinetik-tipografi/fonts/InstrumentSerif-italic-400-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce3c417c8d0e9f012bb697d25a0874d148ea89e6",
+      "size": 15684,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/ce3c417c8d0e9f012bb697d25a0874d148ea89e6"
+    },
+    {
+      "path": "stiller/kinetik-tipografi/fonts/InstrumentSerif-normal-400-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ee1bf99e509367119f90bec172d17953ec35dff",
+      "size": 7828,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/3ee1bf99e509367119f90bec172d17953ec35dff"
+    },
+    {
+      "path": "stiller/kinetik-tipografi/fonts/InstrumentSerif-normal-400-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17653042acca7f87268c8c29dc8c0cc094c0b124",
+      "size": 15040,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/17653042acca7f87268c8c29dc8c0cc094c0b124"
+    },
+    {
+      "path": "stiller/kinetik-tipografi/kinetik-tipografi.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2eebed3fb6964aa5f7b74ee44432f553f1673ccd",
+      "size": 514141,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/2eebed3fb6964aa5f7b74ee44432f553f1673ccd"
+    },
+    {
+      "path": "stiller/kinetik-tipografi/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b604da06cc6cab626f9ca75f99a27c973b3ef9f",
+      "size": 1396244,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/3b604da06cc6cab626f9ca75f99a27c973b3ef9f"
+    },
+    {
+      "path": "stiller/kinetik-tipografi/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/kinetik-tipografi/sfx.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "465a5062ea347dbea6620b2f135be8ea47ec7751",
+      "size": 2629,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/465a5062ea347dbea6620b2f135be8ea47ec7751"
+    },
+    {
+      "path": "stiller/kinetik-tipografi/sfx.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79e299a3a7a3b0c5b3cb0a80b02be19616f5d309",
+      "size": 1034,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/79e299a3a7a3b0c5b3cb0a80b02be19616f5d309"
+    },
+    {
+      "path": "stiller/kinetik-tipografi/sfx.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d0411d2e175cec9d76371ad8ade9b1de1cb7e0e",
+      "size": 1902,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/5d0411d2e175cec9d76371ad8ade9b1de1cb7e0e"
+    },
+    {
+      "path": "stiller/kurzgesagt",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "79eb4430081bd727594ec0ec37ab2ae9d32aea5f",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/79eb4430081bd727594ec0ec37ab2ae9d32aea5f"
+    },
+    {
+      "path": "stiller/kurzgesagt/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "794392b4a66c8367ff1feb8f419aa40f550e99f1",
+      "size": 22717,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/794392b4a66c8367ff1feb8f419aa40f550e99f1"
+    },
+    {
+      "path": "stiller/kurzgesagt/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "72349daa7488fb4d1524abeef085c34e908f1a9c",
+      "size": 855,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/72349daa7488fb4d1524abeef085c34e908f1a9c"
+    },
+    {
+      "path": "stiller/kurzgesagt/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "20181ad0e5c27b301e2d46ca8f10fffbf72d8cc4",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/20181ad0e5c27b301e2d46ca8f10fffbf72d8cc4"
+    },
+    {
+      "path": "stiller/kurzgesagt/fonts/fredoka_v17_X7n64b87HvSqjb_WIi2yDCRwoQ_k7367_DWg89XgHPyhRMw.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61e74bef99b7c5c5ef94b8c7bdeb2877ceada233",
+      "size": 4564,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/61e74bef99b7c5c5ef94b8c7bdeb2877ceada233"
+    },
+    {
+      "path": "stiller/kurzgesagt/fonts/fredoka_v17_X7n64b87HvSqjb_WIi2yDCRwoQ_k7367_DWu89XgHPyh.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c9c082647b64110ba77e12f463668804173e0bb",
+      "size": 29704,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/9c9c082647b64110ba77e12f463668804173e0bb"
+    },
+    {
+      "path": "stiller/kurzgesagt/kurzgesagt.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72a8e077121007bfc1a85c42829ceccf8e817da5",
+      "size": 1090470,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/72a8e077121007bfc1a85c42829ceccf8e817da5"
+    },
+    {
+      "path": "stiller/kurzgesagt/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01643c3c067f94d0903f92fa5bb7f57697f0bfa8",
+      "size": 998955,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/01643c3c067f94d0903f92fa5bb7f57697f0bfa8"
+    },
+    {
+      "path": "stiller/kurzgesagt/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/kurzgesagt/sfx.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5246c1ae594d0a995a222262aec653105ebcc63b",
+      "size": 886,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/5246c1ae594d0a995a222262aec653105ebcc63b"
+    },
+    {
+      "path": "stiller/kurzgesagt/synth.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1aea9845062e2bed0cf63b0e260b4ea33126cf92",
+      "size": 2220,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/1aea9845062e2bed0cf63b0e260b4ea33126cf92"
+    },
+    {
+      "path": "stiller/linocut",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "90ba1c5b0b5209b0290aac3c1632bef962c6be2d",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/90ba1c5b0b5209b0290aac3c1632bef962c6be2d"
+    },
+    {
+      "path": "stiller/linocut/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86e434567adfc460e328f8fa44ac14162c6f190a",
+      "size": 20854,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/86e434567adfc460e328f8fa44ac14162c6f190a"
+    },
+    {
+      "path": "stiller/linocut/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0b8bb0db00c37bed23782669d1cf1a978352bc0b",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/0b8bb0db00c37bed23782669d1cf1a978352bc0b"
+    },
+    {
+      "path": "stiller/linocut/fonts/6NUQ8FmMKwSEKjnm5-4v-4Jh2dJhe_escmA.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43f1af717c0c92bb170494c25029b06b5db32fb9",
+      "size": 11580,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/43f1af717c0c92bb170494c25029b06b5db32fb9"
+    },
+    {
+      "path": "stiller/linocut/fonts/6NUQ8FmMKwSEKjnm5-4v-4Jh2dxhe_escmAm9w.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e26ed0c649ca69dae12ef42db6654b6585e1b689",
+      "size": 12080,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/e26ed0c649ca69dae12ef42db6654b6585e1b689"
+    },
+    {
+      "path": "stiller/linocut/linocut.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff3261dbb17df8f222ff41cda241c81c2e76eebc",
+      "size": 2102171,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/ff3261dbb17df8f222ff41cda241c81c2e76eebc"
+    },
+    {
+      "path": "stiller/linocut/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0424121ba36b4860bff02317e06b439e2678b9f",
+      "size": 1950441,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/d0424121ba36b4860bff02317e06b439e2678b9f"
+    },
+    {
+      "path": "stiller/linocut/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/linocut/sfx.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40eda20e8818852a26f1785b4b2ef6b30f4aa544",
+      "size": 717,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/40eda20e8818852a26f1785b4b2ef6b30f4aa544"
+    },
+    {
+      "path": "stiller/linocut/sfx.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f28c75bcec787d6f03f5d5915a185d8f8470992",
+      "size": 1949,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/2f28c75bcec787d6f03f5d5915a185d8f8470992"
+    },
+    {
+      "path": "stiller/linocut/yap.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4fd8ab90880ec40c941809bb7cc49056dc6ecfa9",
+      "size": 802,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/4fd8ab90880ec40c941809bb7cc49056dc6ecfa9"
+    },
+    {
+      "path": "stiller/linocut/yazi-tipleri.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cef6d5177d702db21842edecf8f390e4bae6f624",
+      "size": 810,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/cef6d5177d702db21842edecf8f390e4bae6f624"
+    },
+    {
+      "path": "stiller/memphis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cd4a9bf59ec8d8f3235953339fe5f1c119bd1216",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/cd4a9bf59ec8d8f3235953339fe5f1c119bd1216"
+    },
+    {
+      "path": "stiller/memphis/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af57b8ce2369a1d1ec591587539cfa83af9fba4c",
+      "size": 21620,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/af57b8ce2369a1d1ec591587539cfa83af9fba4c"
+    },
+    {
+      "path": "stiller/memphis/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "72349daa7488fb4d1524abeef085c34e908f1a9c",
+      "size": 855,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/72349daa7488fb4d1524abeef085c34e908f1a9c"
+    },
+    {
+      "path": "stiller/memphis/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "04afbdee50fc76b32d52a031191e25aceba61278",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/04afbdee50fc76b32d52a031191e25aceba61278"
+    },
+    {
+      "path": "stiller/memphis/fonts/rubik_v31_iJWKBXyIfDnIV7nBrXyw023e.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ba94d14c2241d1fb4fa55af3602de9df0989037",
+      "size": 35324,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/4ba94d14c2241d1fb4fa55af3602de9df0989037"
+    },
+    {
+      "path": "stiller/memphis/fonts/rubik_v31_iJWKBXyIfDnIV7nPrXyw023e1Ik.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fad279ba452a129f24d4e4b4f372cb813b958f7b",
+      "size": 19288,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/fad279ba452a129f24d4e4b4f372cb813b958f7b"
+    },
+    {
+      "path": "stiller/memphis/fonts/shrikhand_v17_a8IbNovtLWfR7T7bMJwrA4KR8TtctQ.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dff9b6f32aefbee1b80828e7e5503a8127be50d5",
+      "size": 15736,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/dff9b6f32aefbee1b80828e7e5503a8127be50d5"
+    },
+    {
+      "path": "stiller/memphis/fonts/shrikhand_v17_a8IbNovtLWfR7T7bMJwrDYKR8Ttcte1q.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c0f19f1460f8ede4de0ad10946eb7893dabfb2c",
+      "size": 7656,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/3c0f19f1460f8ede4de0ad10946eb7893dabfb2c"
+    },
+    {
+      "path": "stiller/memphis/memphis.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b13268e293e7716d80fc3dbe77e24d21cf498883",
+      "size": 1522576,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/b13268e293e7716d80fc3dbe77e24d21cf498883"
+    },
+    {
+      "path": "stiller/memphis/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "817b4a152f3a303137d917b6819d65d52749c4f9",
+      "size": 1052543,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/817b4a152f3a303137d917b6819d65d52749c4f9"
+    },
+    {
+      "path": "stiller/memphis/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/memphis/sfx.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7acd31118f58a563c024e4602ed0f1a05365a416",
+      "size": 4304,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/7acd31118f58a563c024e4602ed0f1a05365a416"
+    },
+    {
+      "path": "stiller/memphis/synth.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1aea9845062e2bed0cf63b0e260b4ea33126cf92",
+      "size": 2220,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/1aea9845062e2bed0cf63b0e260b4ea33126cf92"
+    },
+    {
+      "path": "stiller/piksel",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e2152cfa35758761aa8e9c19fd08343cf9845e39",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/e2152cfa35758761aa8e9c19fd08343cf9845e39"
+    },
+    {
+      "path": "stiller/piksel/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4546fb2be1b5c88732a55b0985a0bdd0284d859",
+      "size": 29294,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/e4546fb2be1b5c88732a55b0985a0bdd0284d859"
+    },
+    {
+      "path": "stiller/piksel/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c8db45feed83f4ce1b3937fefe75aa41f4ea6a7d",
+      "size": 804,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/c8db45feed83f4ce1b3937fefe75aa41f4ea6a7d"
+    },
+    {
+      "path": "stiller/piksel/events.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bb53465006c53da4c673a1a44f253e5488ea2f9",
+      "size": 360,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/0bb53465006c53da4c673a1a44f253e5488ea2f9"
+    },
+    {
+      "path": "stiller/piksel/events.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8eedb188fe33c2675bf6cec22636cb2a98a9ef53",
+      "size": 1045,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/8eedb188fe33c2675bf6cec22636cb2a98a9ef53"
+    },
+    {
+      "path": "stiller/piksel/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "519431ceb3687a248cf1f9a632046cdfea6680ac",
+      "size": 559482,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/519431ceb3687a248cf1f9a632046cdfea6680ac"
+    },
+    {
+      "path": "stiller/piksel/piksel.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4293bbf20e20427933bfaa7ccd8b9eb6656ec931",
+      "size": 418507,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/4293bbf20e20427933bfaa7ccd8b9eb6656ec931"
+    },
+    {
+      "path": "stiller/piksel/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/piksel/ses.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "172819721de01734d8cbbde644a498c814dd9532",
+      "size": 2017,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/172819721de01734d8cbbde644a498c814dd9532"
+    },
+    {
+      "path": "stiller/retro-70ler",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "86471414c0637af45604dbff0dd255f5050db5a4",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/86471414c0637af45604dbff0dd255f5050db5a4"
+    },
+    {
+      "path": "stiller/retro-70ler/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "178c7c2e2c2461304a002037c6acf0b734b9c548",
+      "size": 18590,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/178c7c2e2c2461304a002037c6acf0b734b9c548"
+    },
+    {
+      "path": "stiller/retro-70ler/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c8db45feed83f4ce1b3937fefe75aa41f4ea6a7d",
+      "size": 804,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/c8db45feed83f4ce1b3937fefe75aa41f4ea6a7d"
+    },
+    {
+      "path": "stiller/retro-70ler/events.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14691dd4e2dbacfb68401ec381ac2d624461ea4c",
+      "size": 1686,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/14691dd4e2dbacfb68401ec381ac2d624461ea4c"
+    },
+    {
+      "path": "stiller/retro-70ler/events.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8eedb188fe33c2675bf6cec22636cb2a98a9ef53",
+      "size": 1045,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/8eedb188fe33c2675bf6cec22636cb2a98a9ef53"
+    },
+    {
+      "path": "stiller/retro-70ler/fonts.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "181ba3dc9e4e001181543236918f60a3c0a3a027",
+      "size": 3850,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/181ba3dc9e4e001181543236918f60a3c0a3a027"
+    },
+    {
+      "path": "stiller/retro-70ler/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6a46d71e45940068b6a7347e859c5936fdb871f9",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/6a46d71e45940068b6a7347e859c5936fdb871f9"
+    },
+    {
+      "path": "stiller/retro-70ler/fonts/Fraunces-900-latin-5GNyXk.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7425af735cc764e8bd44a3ee19b4837db94c1bf9",
+      "size": 17632,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/7425af735cc764e8bd44a3ee19b4837db94c1bf9"
+    },
+    {
+      "path": "stiller/retro-70ler/fonts/Fraunces-900-latin-ext-yXkb24.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24c95f29271c1a73a4acdc13d30efdfec03f72ae",
+      "size": 17136,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/24c95f29271c1a73a4acdc13d30efdfec03f72ae"
+    },
+    {
+      "path": "stiller/retro-70ler/fonts/Fredoka-500-latin-XgHPyh.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c9c082647b64110ba77e12f463668804173e0bb",
+      "size": 29704,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/9c9c082647b64110ba77e12f463668804173e0bb"
+    },
+    {
+      "path": "stiller/retro-70ler/fonts/Fredoka-500-latin-ext-PyhRMw.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61e74bef99b7c5c5ef94b8c7bdeb2877ceada233",
+      "size": 4564,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/61e74bef99b7c5c5ef94b8c7bdeb2877ceada233"
+    },
+    {
+      "path": "stiller/retro-70ler/fonts/Fredoka-700-latin-XgHPyh.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c9c082647b64110ba77e12f463668804173e0bb",
+      "size": 29704,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/9c9c082647b64110ba77e12f463668804173e0bb"
+    },
+    {
+      "path": "stiller/retro-70ler/fonts/Fredoka-700-latin-ext-PyhRMw.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61e74bef99b7c5c5ef94b8c7bdeb2877ceada233",
+      "size": 4564,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/61e74bef99b7c5c5ef94b8c7bdeb2877ceada233"
+    },
+    {
+      "path": "stiller/retro-70ler/fonts/Monoton-400-latin-ext-BU5xpg.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "629ff43c1d231220743138f5b9245144a4ab02e1",
+      "size": 7768,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/629ff43c1d231220743138f5b9245144a4ab02e1"
+    },
+    {
+      "path": "stiller/retro-70ler/fonts/Monoton-400-latin-ka4BU4.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb3a1426e3bf9a81cc12d788f1fe237843bc8bd8",
+      "size": 16492,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/eb3a1426e3bf9a81cc12d788f1fe237843bc8bd8"
+    },
+    {
+      "path": "stiller/retro-70ler/fonts/Shrikhand-400-latin-8TtctQ.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dff9b6f32aefbee1b80828e7e5503a8127be50d5",
+      "size": 15736,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/dff9b6f32aefbee1b80828e7e5503a8127be50d5"
+    },
+    {
+      "path": "stiller/retro-70ler/fonts/Shrikhand-400-latin-ext-tcte1q.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c0f19f1460f8ede4de0ad10946eb7893dabfb2c",
+      "size": 7656,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/3c0f19f1460f8ede4de0ad10946eb7893dabfb2c"
+    },
+    {
+      "path": "stiller/retro-70ler/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f435c80c69a841681d853d0c5de83de927b72b21",
+      "size": 2355111,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/f435c80c69a841681d853d0c5de83de927b72b21"
+    },
+    {
+      "path": "stiller/retro-70ler/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/retro-70ler/retro-70ler.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "157e27146a06d43a631ca307954669cece52aaec",
+      "size": 2213512,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/157e27146a06d43a631ca307954669cece52aaec"
+    },
+    {
+      "path": "stiller/retro-70ler/ses.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc9ef6876f15287e8e5a02fb45d5c11d948ae70f",
+      "size": 2386,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/dc9ef6876f15287e8e5a02fb45d5c11d948ae70f"
+    },
+    {
+      "path": "stiller/tek-cizgi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ae353fdc61694aa9c6ee3314c5e17067e45f7875",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/ae353fdc61694aa9c6ee3314c5e17067e45f7875"
+    },
+    {
+      "path": "stiller/tek-cizgi/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c094e29bdbaed19cdf38a2df4ec21c525c440f0c",
+      "size": 8836,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/c094e29bdbaed19cdf38a2df4ec21c525c440f0c"
+    },
+    {
+      "path": "stiller/tek-cizgi/common.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80dfddaaf0adbd29bd96a9c9e78067e11f836457",
+      "size": 5384,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/80dfddaaf0adbd29bd96a9c9e78067e11f836457"
+    },
+    {
+      "path": "stiller/tek-cizgi/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fea0f286f87b54398f9ab45ba59862ca1d37f746",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/fea0f286f87b54398f9ab45ba59862ca1d37f746"
+    },
+    {
+      "path": "stiller/tek-cizgi/fonts/CormorantGaramond-500-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e238a6031a929f9e0c1bba56ec539102d701ddb",
+      "size": 20312,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/0e238a6031a929f9e0c1bba56ec539102d701ddb"
+    },
+    {
+      "path": "stiller/tek-cizgi/fonts/CormorantGaramond-500-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "985d4778c0bac7e95fb11c7ab13078f1d06aa78d",
+      "size": 23900,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/985d4778c0bac7e95fb11c7ab13078f1d06aa78d"
+    },
+    {
+      "path": "stiller/tek-cizgi/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a8934ec90624ca019cda63c06a4c39bfd947477",
+      "size": 287246,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/0a8934ec90624ca019cda63c06a4c39bfd947477"
+    },
+    {
+      "path": "stiller/tek-cizgi/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/tek-cizgi/tek-cizgi.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da64a04c0a515b196fd29070aaa78dc83662ee39",
+      "size": 385910,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/da64a04c0a515b196fd29070aaa78dc83662ee39"
+    },
+    {
+      "path": "stiller/terminal",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2722e6992cc631c7f69e3af69aa999c221b3345f",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/2722e6992cc631c7f69e3af69aa999c221b3345f"
+    },
+    {
+      "path": "stiller/terminal/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b26ce335fbbe79a9b1155d8eb73de8a93326ec8c",
+      "size": 19565,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/b26ce335fbbe79a9b1155d8eb73de8a93326ec8c"
+    },
+    {
+      "path": "stiller/terminal/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c44dce88e139c9ccec03a2051df13f9a08313227",
+      "size": 940,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/c44dce88e139c9ccec03a2051df13f9a08313227"
+    },
+    {
+      "path": "stiller/terminal/fonts.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca2a90e21315b447099d1be74b51196dfaefcc7c",
+      "size": 2328,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/ca2a90e21315b447099d1be74b51196dfaefcc7c"
+    },
+    {
+      "path": "stiller/terminal/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f5c896cf97a291bfeec493a05c3c5d12f7d6cc73",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/f5c896cf97a291bfeec493a05c3c5d12f7d6cc73"
+    },
+    {
+      "path": "stiller/terminal/fonts/JetBrainsMono-normal-300-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1f58042556974cdd0372745de4331ffa737949e",
+      "size": 15204,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/b1f58042556974cdd0372745de4331ffa737949e"
+    },
+    {
+      "path": "stiller/terminal/fonts/JetBrainsMono-normal-300-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3f0666ea8d891e46b1710f50c998eaa9b701fd5",
+      "size": 40480,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/c3f0666ea8d891e46b1710f50c998eaa9b701fd5"
+    },
+    {
+      "path": "stiller/terminal/fonts/JetBrainsMono-normal-400-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1f58042556974cdd0372745de4331ffa737949e",
+      "size": 15204,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/b1f58042556974cdd0372745de4331ffa737949e"
+    },
+    {
+      "path": "stiller/terminal/fonts/JetBrainsMono-normal-400-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3f0666ea8d891e46b1710f50c998eaa9b701fd5",
+      "size": 40480,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/c3f0666ea8d891e46b1710f50c998eaa9b701fd5"
+    },
+    {
+      "path": "stiller/terminal/fonts/JetBrainsMono-normal-700-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1f58042556974cdd0372745de4331ffa737949e",
+      "size": 15204,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/b1f58042556974cdd0372745de4331ffa737949e"
+    },
+    {
+      "path": "stiller/terminal/fonts/JetBrainsMono-normal-700-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3f0666ea8d891e46b1710f50c998eaa9b701fd5",
+      "size": 40480,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/c3f0666ea8d891e46b1710f50c998eaa9b701fd5"
+    },
+    {
+      "path": "stiller/terminal/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfebaf5dced02a529df576ada3de2affc8bd0d37",
+      "size": 1715182,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/cfebaf5dced02a529df576ada3de2affc8bd0d37"
+    },
+    {
+      "path": "stiller/terminal/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/terminal/sfx.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aaa9b512aeda35301cbf32a98e5e1eecf8780a77",
+      "size": 3361,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/aaa9b512aeda35301cbf32a98e5e1eecf8780a77"
+    },
+    {
+      "path": "stiller/terminal/sfx.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79e299a3a7a3b0c5b3cb0a80b02be19616f5d309",
+      "size": 1034,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/79e299a3a7a3b0c5b3cb0a80b02be19616f5d309"
+    },
+    {
+      "path": "stiller/terminal/sfx.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa7a714e12ec683806a5fe04fae1150d0d3e1b91",
+      "size": 2669,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/fa7a714e12ec683806a5fe04fae1150d0d3e1b91"
+    },
+    {
+      "path": "stiller/terminal/terminal.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9479e796cb82dad871eaf75592aa64b79804cf9",
+      "size": 559678,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/b9479e796cb82dad871eaf75592aa64b79804cf9"
+    },
+    {
+      "path": "stiller/veri",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9ce3b7f56a27db173b56fd10b6cd58f2df1740fa",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/9ce3b7f56a27db173b56fd10b6cd58f2df1740fa"
+    },
+    {
+      "path": "stiller/veri/anim.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b53f514a6d1bed1cd2aa12e5495d55bbde08678",
+      "size": 15196,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/0b53f514a6d1bed1cd2aa12e5495d55bbde08678"
+    },
+    {
+      "path": "stiller/veri/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c44dce88e139c9ccec03a2051df13f9a08313227",
+      "size": 940,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/c44dce88e139c9ccec03a2051df13f9a08313227"
+    },
+    {
+      "path": "stiller/veri/fonts.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "077aa1b5b06be650dacfda52666c56990b50804b",
+      "size": 5426,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/077aa1b5b06be650dacfda52666c56990b50804b"
+    },
+    {
+      "path": "stiller/veri/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "caf86f7392d8419521514c0e20214de9eaa5f455",
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/trees/caf86f7392d8419521514c0e20214de9eaa5f455"
+    },
+    {
+      "path": "stiller/veri/fonts/LibreFranklin-normal-400-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea6ddb0d01ccaf1f6a0b6076e4ffb40a12a9453f",
+      "size": 25592,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/ea6ddb0d01ccaf1f6a0b6076e4ffb40a12a9453f"
+    },
+    {
+      "path": "stiller/veri/fonts/LibreFranklin-normal-400-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dcdb6f183e39b0cc9dc1a31973ec5764aff2404",
+      "size": 29336,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/3dcdb6f183e39b0cc9dc1a31973ec5764aff2404"
+    },
+    {
+      "path": "stiller/veri/fonts/LibreFranklin-normal-500-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea6ddb0d01ccaf1f6a0b6076e4ffb40a12a9453f",
+      "size": 25592,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/ea6ddb0d01ccaf1f6a0b6076e4ffb40a12a9453f"
+    },
+    {
+      "path": "stiller/veri/fonts/LibreFranklin-normal-500-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dcdb6f183e39b0cc9dc1a31973ec5764aff2404",
+      "size": 29336,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/3dcdb6f183e39b0cc9dc1a31973ec5764aff2404"
+    },
+    {
+      "path": "stiller/veri/fonts/LibreFranklin-normal-700-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea6ddb0d01ccaf1f6a0b6076e4ffb40a12a9453f",
+      "size": 25592,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/ea6ddb0d01ccaf1f6a0b6076e4ffb40a12a9453f"
+    },
+    {
+      "path": "stiller/veri/fonts/LibreFranklin-normal-700-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dcdb6f183e39b0cc9dc1a31973ec5764aff2404",
+      "size": 29336,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/3dcdb6f183e39b0cc9dc1a31973ec5764aff2404"
+    },
+    {
+      "path": "stiller/veri/fonts/LibreFranklin-normal-800-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea6ddb0d01ccaf1f6a0b6076e4ffb40a12a9453f",
+      "size": 25592,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/ea6ddb0d01ccaf1f6a0b6076e4ffb40a12a9453f"
+    },
+    {
+      "path": "stiller/veri/fonts/LibreFranklin-normal-800-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dcdb6f183e39b0cc9dc1a31973ec5764aff2404",
+      "size": 29336,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/3dcdb6f183e39b0cc9dc1a31973ec5764aff2404"
+    },
+    {
+      "path": "stiller/veri/fonts/SourceSerif4-normal-400-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad10907cfce04a4384d10e9c18a772fe9990b1b1",
+      "size": 100772,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/ad10907cfce04a4384d10e9c18a772fe9990b1b1"
+    },
+    {
+      "path": "stiller/veri/fonts/SourceSerif4-normal-400-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56a26e1b3ec97e71a16e701352b2222f44bc6152",
+      "size": 122168,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/56a26e1b3ec97e71a16e701352b2222f44bc6152"
+    },
+    {
+      "path": "stiller/veri/fonts/SourceSerif4-normal-600-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad10907cfce04a4384d10e9c18a772fe9990b1b1",
+      "size": 100772,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/ad10907cfce04a4384d10e9c18a772fe9990b1b1"
+    },
+    {
+      "path": "stiller/veri/fonts/SourceSerif4-normal-600-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56a26e1b3ec97e71a16e701352b2222f44bc6152",
+      "size": 122168,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/56a26e1b3ec97e71a16e701352b2222f44bc6152"
+    },
+    {
+      "path": "stiller/veri/fonts/SourceSerif4-normal-700-latin-ext.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad10907cfce04a4384d10e9c18a772fe9990b1b1",
+      "size": 100772,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/ad10907cfce04a4384d10e9c18a772fe9990b1b1"
+    },
+    {
+      "path": "stiller/veri/fonts/SourceSerif4-normal-700-latin.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56a26e1b3ec97e71a16e701352b2222f44bc6152",
+      "size": 122168,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/56a26e1b3ec97e71a16e701352b2222f44bc6152"
+    },
+    {
+      "path": "stiller/veri/onizleme.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3c3d216d3b6a1c19826695f9e53c279aed51aef",
+      "size": 910338,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/b3c3d216d3b6a1c19826695f9e53c279aed51aef"
+    },
+    {
+      "path": "stiller/veri/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e99fd663d519b3747621788f85d694bd8df4ee",
+      "size": 2122,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/10e99fd663d519b3747621788f85d694bd8df4ee"
+    },
+    {
+      "path": "stiller/veri/sfx.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc04427d6b96e6a976cd12dda1b085e266da57dd",
+      "size": 623,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/dc04427d6b96e6a976cd12dda1b085e266da57dd"
+    },
+    {
+      "path": "stiller/veri/sfx.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79e299a3a7a3b0c5b3cb0a80b02be19616f5d309",
+      "size": 1034,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/79e299a3a7a3b0c5b3cb0a80b02be19616f5d309"
+    },
+    {
+      "path": "stiller/veri/sfx.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81953f15d38b2513b364d7d7d1382107159a0079",
+      "size": 1586,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/81953f15d38b2513b364d7d7d1382107159a0079"
+    },
+    {
+      "path": "stiller/veri/veri.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e0d8815c105681121162517f4dca1cdd502a154",
+      "size": 292710,
+      "url": "https://api.github.com/repos/yasinozmeen/animasyon-stil-katalogu/git/blobs/3e0d8815c105681121162517f4dca1cdd502a154"
+    }
+  ],
+  "truncated": false
+}

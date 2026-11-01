@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>21 Chuyên ngành — scene 07</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:SceneSans;src:url('assets/scene-sans-bold.ttf') format('truetype');font-weight:700;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;background:#fff}#root{position:relative;width:100%;height:100%;overflow:hidden;color:#0F172A;font-family:SceneSans,sans-serif}
+.clip{position:absolute;inset:0}.ground{background:#fff}.art{width:100%;height:100%;display:block}
+.label{position:absolute;margin:0;font-weight:700;line-height:1.15;letter-spacing:-.6px}
+#label-univ{left:60px;top:140px;font-size:36px;color:#0F172A}
+#label-year{left:60px;top:190px;font-size:22px;color:#0284C7;letter-spacing:1.5px}
+#hero-counter-box{position:absolute;left:260px;top:260px;display:flex;flex-direction:column}
+#metric-num{font-size:110px;font-weight:800;color:#0F172A;line-height:0.95;letter-spacing:-4px}
+#metric-unit{font-size:26px;font-weight:700;color:#FF6B2B;margin-top:4px}
+#metric-badge{display:inline-block;margin-top:6px;font-size:16px;font-weight:700;color:#34837A;background:#EDF8F5;padding:4px 12px;border-radius:12px;border:1.5px solid #A5D9D0;width:fit-content}
+#footer-tag{position:absolute;left:60px;top:920px;font-size:18px;font-weight:700;color:#64748B;letter-spacing:1px}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-s07-root" id="root" data-composition-id="scene07" data-width="720" data-height="1280" data-duration="7.542" data-start="0">
+ <div data-hf-id="hf-s07-ground" id="scene07-ground" class="clip ground" data-start="0" data-duration="7.542" data-track-index="0"></div>
+ <svg data-hf-id="hf-s07-art" id="scene07-art" class="art clip" data-start="0" data-duration="7.542" data-track-index="1" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+   <radialGradient id="mesh-glow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#E0F2FE" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+   </radialGradient>
+   <filter id="focus-glow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#FF6B2B" flood-opacity="0.4"/>
+   </filter>
+  </defs>
+
+  <!-- Ambient background glow for matrix -->
+  <circle cx="360" cy="670" r="340" fill="url(#mesh-glow)"/>
+
+  <!-- Student Character (Standing beside counter, pointing towards metric 21) -->
+  <g id="student-hero" transform="translate(10, 40) scale(0.58)">
+   <!-- Torso & Hoodie -->
+   <path d="M185 636Q162 645 157 678L163 820Q212 844 276 820L288 682Q280 646 252 636Z" fill="#FF773B"/>
+   <!-- Pointing arm towards right (at counter 21) -->
+   <path d="M260 670 Q300 660 360 640" fill="none" stroke="#E55319" stroke-width="22" stroke-linecap="round"/>
+   <circle cx="365" cy="640" r="11" fill="#F5BF99"/>
+   <!-- Left arm resting -->
+   <path d="M170 670 Q160 740 180 770" fill="none" stroke="#E55319" stroke-width="18" stroke-linecap="round"/>
+   <circle cx="180" cy="770" r="9" fill="#F5BF99"/>
+   <!-- Head & Hair -->
+   <ellipse cx="218" cy="550" rx="60" ry="72" fill="#172C42"/>
+   <path d="M174 529Q177 497 211 493Q248 489 263 519L266 571Q259 609 228 618Q189 615 177 576Z" fill="#F5BF99"/>
+   <g fill="#172C42"><ellipse cx="230" cy="555" rx="4.5" ry="7"/><ellipse cx="255" cy="556" rx="4" ry="6.5"/></g>
+  </g>
+
+  <!-- The 21 Curriculum Matrix Chips Group -->
+  <g id="matrix-grid"></g>
+ </svg>
+
+ <div class="label" id="label-univ">ĐẠI HỌC KỸ THUẬT PLA</div>
+ <div class="label" id="label-year">ĐỢT TUYỂN SINH NĂM 2025</div>
+
+ <div id="hero-counter-box">
+  <div id="metric-num">0</div>
+  <div id="metric-unit">Chuyên ngành mới</div>
+  <div id="metric-badge">CHƯƠNG TRÌNH ĐÀO TẠO ĐỘT PHÁ</div>
+ </div>
+
+ <div id="footer-tag">HỆ THỐNG ĐÀO TẠO CÔNG NGHỆ QUÂN SỰ TƯƠNG LAI</div>
+
+ <audio data-hf-id="hf-s07-voice" id="scene07-voice" src="assets/audio.wav" data-start="0" data-duration="7.542" data-track-index="2" data-volume="1"></audio>
+</div>
+
+<script>
+const tl = gsap.timeline({paused:true});
+const grid = document.getElementById('matrix-grid');
+
+// List of 21 authentic engineering disciplines for military AI/tech
+const disciplines = [
+  {name: "AI Quân sự", highlight: true, color: "#FF6B2B"},
+  {name: "Tác chiến Điện tử", highlight: true, color: "#FF6B2B"},
+  {name: "Điều khiển UAV", highlight: true, color: "#0284C7"},
+  {name: "Robot Tác chiến", highlight: true, color: "#0284C7"},
+  {name: "Vũ khí Siêu thanh", highlight: false},
+  {name: "Mạng Lượng tử", highlight: false},
+  {name: "An ninh Mạng", highlight: false},
+  {name: "Dữ liệu Lớn", highlight: false},
+  {name: "Cảm biến Quang", highlight: false},
+  {name: "Radar Tương lai", highlight: false},
+  {name: "Hệ thống Tự hành", highlight: false},
+  {name: "Chỉ huy Số", highlight: false},
+  {name: "Vi cơ điện tử", highlight: false},
+  {name: "Laser Năng lượng", highlight: false},
+  {name: "Vật liệu Tàng hình", highlight: false},
+  {name: "Lưới Tác chiến", highlight: false},
+  {name: "Mô phỏng Ảo", highlight: false},
+  {name: "Không gian Vũ trụ", highlight: false},
+  {name: "Mã hóa Lượng tử", highlight: false},
+  {name: "Dẫn đường Quán tính", highlight: false},
+  {name: "Tự động hóa", highlight: false}
+];
+
+// Layout parameters: 3 columns x 7 rows
+const colX = [60, 260, 460];
+const startY = 480;
+const rowH = 56;
+const chipW = 190;
+const chipH = 44;
+
+const nodeEls = [];
+const highlightEls = [];
+
+disciplines.forEach((d, i) => {
+  const col = i % 3;
+  const row = Math.floor(i / 3);
+  const x = colX[col];
+  const y = startY + row * rowH;
+
+  const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+  g.setAttribute('class', 'matrix-chip');
+  g.setAttribute('transform', `translate(${x}, ${y})`);
+
+  // Background rect
+  const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+  rect.setAttribute('width', chipW);
+  rect.setAttribute('height', chipH);
+  rect.setAttribute('rx', '10');
+
+  if (d.highlight) {
+    rect.setAttribute('fill', d.color === '#FF6B2B' ? '#FFF7ED' : '#F0F9FF');
+    rect.setAttribute('stroke', d.color);
+    rect.setAttribute('stroke-width', '2.5');
+  } else {
+    rect.setAttribute('fill', '#F8FAFC');
+    rect.setAttribute('stroke', '#E2E8F0');
+    rect.setAttribute('stroke-width', '1.5');
+  }
+
+  // Dot pip
+  const dot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+  dot.setAttribute('cx', '18');
+  dot.setAttribute('cy', chipH / 2);
+  dot.setAttribute('r', d.highlight ? '5' : '3.5');
+  dot.setAttribute('fill', d.highlight ? d.color : '#94A3B8');
+
+  // Text label
+  const txt = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+  txt.setAttribute('x', '32');
+  txt.setAttribute('y', (chipH / 2) + 5);
+  txt.setAttribute('font-size', '15');
+  txt.setAttribute('font-family', 'SceneSans, sans-serif');
+  txt.setAttribute('font-weight', '700');
+  txt.setAttribute('fill', d.highlight ? (d.color === '#FF6B2B' ? '#C2410C' : '#0369A1') : '#334155');
+  txt.textContent = d.name;
+
+  g.appendChild(rect);
+  g.appendChild(dot);
+  g.appendChild(txt);
+  grid.appendChild(g);
+
+  nodeEls.push(g);
+  if (d.highlight) highlightEls.push(g);
+});
+
+// Initial GSAP setup
+gsap.set(['#label-univ', '#label-year', '#hero-counter-box', '#footer-tag'], {opacity: 0, y: 15});
+gsap.set('#student-hero', {opacity: 0, x: -20});
+gsap.set(nodeEls, {opacity: 0, scale: 0.8, transformOrigin: 'center center'});
+
+const counter = {val: 0};
+
+// GSAP Animation Sequence
+tl.to(['#label-univ', '#label-year'], {opacity: 1, y: 0, duration: 0.5, stagger: 0.15, ease: 'power2.out'}, 0.2)
+  .to('#student-hero', {opacity: 1, x: 0, duration: 0.6, ease: 'back.out(1.2)'}, 0.3)
+  .to('#hero-counter-box', {opacity: 1, y: 0, duration: 0.5, ease: 'power2.out'}, 0.4)
+  
+  // Count up metric from 0 to 21
+  .to(counter, {
+    val: 21,
+    duration: 1.8,
+    ease: 'power2.out',
+    onUpdate: () => {
+      document.getElementById('metric-num').innerText = Math.round(counter.val);
+    }
+  }, 0.5)
+
+  // Cascade in the 21 curriculum matrix chips
+  .to(nodeEls, {
+    opacity: 1,
+    scale: 1,
+    duration: 0.4,
+    stagger: 0.05,
+    ease: 'back.out(1.4)'
+  }, 0.8)
+
+  .to('#footer-tag', {opacity: 1, y: 0, duration: 0.5}, 2.4)
+
+  // Highlight pulse on the 4 key disciplines
+  .to(highlightEls, {
+    scale: 1.08,
+    duration: 0.4,
+    yoyo: true,
+    repeat: 3,
+    stagger: 0.1,
+    ease: 'power2.inOut'
+  }, 3.0);
+
+window.__timelines = window.__timelines || {};
+window.__timelines['scene07'] = tl;
+</script>
+</body>
+</html>

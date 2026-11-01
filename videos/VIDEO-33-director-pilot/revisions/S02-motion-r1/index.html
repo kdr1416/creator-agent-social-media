@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>S02 · Chi phí du học có trọng lượng</title>
+  <script src="assets/gsap.min.js"></script>
+  <style>
+    @font-face {
+      font-family: PilotDisplay;
+      src: url('assets/segoe-ui-black.ttf');
+      font-weight: 900;
+      font-display: block;
+    }
+    @font-face {
+      font-family: PilotSans;
+      src: url('assets/arialbd.ttf');
+      font-weight: 700;
+      font-display: block;
+    }
+    @font-face {
+      font-family: PilotBody;
+      src: url('assets/arial.ttf');
+      font-display: block;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #FFF8ED; }
+    .composition {
+      position: relative;
+      width: 720px;
+      height: 1280px;
+      overflow: hidden;
+      color: #1E293B;
+      font-family: PilotSans, sans-serif;
+    }
+    .ground { position: absolute; inset: 0; background: #FFF7EB; }
+    .art { position: absolute; inset: 0; width: 720px; height: 1280px; overflow: hidden; }
+
+    /* Native Typography (no generic container cards) */
+    .title-group {
+      position: absolute;
+      top: 135px;
+      left: 0;
+      width: 720px;
+      text-align: center;
+      z-index: 10;
+      pointer-events: none;
+    }
+    .kicker {
+      display: inline-block;
+      font-family: PilotSans, sans-serif;
+      font-weight: 700;
+      font-size: 21px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #0284C7;
+      margin-bottom: 6px;
+    }
+    .headline {
+      font-family: PilotDisplay, sans-serif;
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 1.15;
+      color: #1E293B;
+      letter-spacing: -0.5px;
+    }
+  </style>
+</head>
+<body>
+<div id="v33-s02" class="composition" data-composition-id="v33-s02" data-width="720" data-height="1280" data-start="0" data-duration="3.8555" data-fps="30">
+  <div class="ground"></div>
+
+  <!-- Header Section -->
+  <div class="title-group" id="p02-header">
+    <div class="kicker" id="p02-kicker">HÀNH TRÌNH DU HỌC</div><br>
+    <div class="headline" id="p02-headline">CHI HÀNG TỶ ĐỒNG</div>
+  </div>
+
+  <svg id="p02-art" class="art" xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280">
+    <defs>
+      <filter id="p02-shadow" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#5A4738" flood-opacity=".12"/>
+      </filter>
+      <filter id="p02-glow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#F59E0B" flood-opacity=".3"/>
+      </filter>
+      <linearGradient id="p02-coin-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FDE047"/>
+        <stop offset="100%" stop-color="#EAB308"/>
+      </linearGradient>
+      <linearGradient id="p02-coin-rim" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#CA8A04"/>
+        <stop offset="100%" stop-color="#854D0E"/>
+      </linearGradient>
+    </defs>
+
+    <!-- Ground base shadow -->
+    <ellipse cx="360" cy="995" rx="290" ry="26" fill="#E8D5C2" opacity=".6"/>
+
+    <!-- ========================================== -->
+    <!-- MAIN HERO: OPEN LEDGER (y: 350 to 860)     -->
+    <!-- ========================================== -->
+    <g id="p02-ledger-main" filter="url(#p02-shadow)">
+      <!-- Leather Cover / Book Base -->
+      <path d="M 65 425 L 360 380 L 655 425 L 640 855 L 360 900 L 60 855 Z" fill="#935E4B" stroke="#2D231F" stroke-width="3.5" stroke-linejoin="round"/>
+      <!-- Inner Pages Block Thickness -->
+      <path d="M 75 435 L 360 395 L 645 435 L 632 845 L 360 888 L 72 845 Z" fill="#E4D1BA" stroke="#2D231F" stroke-width="2.5"/>
+
+      <!-- LEFT PAGE: EXPENSE BREAKDOWN (x: 80 - 355) -->
+      <g id="p02-page-left">
+        <path d="M 85 430 L 358 395 L 358 870 L 85 832 Z" fill="#FFFDF8" stroke="#2D231F" stroke-width="2.6" stroke-linejoin="round"/>
+        <!-- Left Page Header -->
+        <g id="p02-left-header" transform="translate(105, 455)">
+          <rect x="0" y="0" width="225" height="32" rx="6" fill="#F1E7DB"/>
+          <text x="112" y="22" text-anchor="middle" font-family="PilotSans, sans-serif" font-weight="700" font-size="15" fill="#5A4738" letter-spacing="1">BẢNG KÊ CHI PHÍ</text>
+        </g>
+
+        <!-- Line Item 1: Học Phí -->
+        <g id="p02-item-1" transform="translate(105, 515)">
+          <circle cx="12" cy="12" r="10" fill="#E0F2FE" stroke="#0284C7" stroke-width="2"/>
+          <path d="M7 12L11 16L17 8" fill="none" stroke="#0284C7" stroke-width="2.2" stroke-linecap="round"/>
+          <text x="32" y="14" font-family="PilotSans, sans-serif" font-weight="700" font-size="16" fill="#1E293B">Học phí & Đào tạo</text>
+          <text x="32" y="32" font-family="PilotBody, sans-serif" font-size="14" fill="#64748B">Hàng năm: ~800Tr - 1,2 Tỷ</text>
+          <line x1="0" y1="44" x2="235" y2="44" stroke="#EAE0D2" stroke-width="1.5" stroke-dasharray="4 3"/>
+        </g>
+
+        <!-- Line Item 2: Sinh Hoạt Phí -->
+        <g id="p02-item-2" transform="translate(105, 585)">
+          <circle cx="12" cy="12" r="10" fill="#E0F2FE" stroke="#0284C7" stroke-width="2"/>
+          <path d="M7 12L11 16L17 8" fill="none" stroke="#0284C7" stroke-width="2.2" stroke-linecap="round"/>
+          <text x="32" y="14" font-family="PilotSans, sans-serif" font-weight="700" font-size="16" fill="#1E293B">Sinh hoạt & Thuê nhà</text>
+          <text x="32" y="32" font-family="PilotBody, sans-serif" font-size="14" fill="#64748B">300Tr - 500Tr / năm</text>
+          <line x1="0" y1="44" x2="235" y2="44" stroke="#EAE0D2" stroke-width="1.5" stroke-dasharray="4 3"/>
+        </g>
+
+        <!-- Line Item 3: Vé Máy Bay & Bảo Hiểm -->
+        <g id="p02-item-3" transform="translate(105, 655)">
+          <circle cx="12" cy="12" r="10" fill="#E0F2FE" stroke="#0284C7" stroke-width="2"/>
+          <path d="M7 12L11 16L17 8" fill="none" stroke="#0284C7" stroke-width="2.2" stroke-linecap="round"/>
+          <text x="32" y="14" font-family="PilotSans, sans-serif" font-weight="700" font-size="16" fill="#1E293B">Bảo hiểm & Đi lại</text>
+          <text x="32" y="32" font-family="PilotBody, sans-serif" font-size="14" fill="#64748B">Thủ tục, visa, vé bay...</text>
+          <line x1="0" y1="44" x2="235" y2="44" stroke="#EAE0D2" stroke-width="1.5" stroke-dasharray="4 3"/>
+        </g>
+
+        <!-- Total Stamp on Left Page -->
+        <g id="p02-stamp" transform="translate(125, 740)" opacity="0">
+          <rect x="0" y="0" width="190" height="42" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="6 3"/>
+          <text x="95" y="27" text-anchor="middle" font-family="PilotDisplay, sans-serif" font-weight="900" font-size="17" fill="#B45309">KHOẢN CHI LỚN</text>
+        </g>
+      </g>
+
+      <!-- RIGHT PAGE: ACCUMULATING COIN STACK (x: 362 - 635) -->
+      <g id="p02-page-right">
+        <path id="p02-right-surface" d="M 362 395 L 635 430 L 635 832 L 362 870 Z" fill="#FFFDF8" stroke="#2D231F" stroke-width="2.6" stroke-linejoin="round"/>
+        <!-- Soft grid lines on right page -->
+        <path d="M385 465L615 490M385 535L615 560M385 605L615 630M385 675L615 700M385 745L615 770" stroke="#F1E7DB" stroke-width="1.8"/>
+
+        <!-- Coin Stack Base Pad -->
+        <ellipse cx="490" cy="780" rx="90" ry="25" fill="#E8D5BF" stroke="#C9B29B" stroke-width="2"/>
+      </g>
+
+      <!-- Center Book Spine -->
+      <path d="M 360 380 L 360 885" stroke="#784838" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <!-- ========================================== -->
+    <!-- VERTICAL WOODEN MEASURING RULER (x: 585)   -->
+    <!-- ========================================== -->
+    <g id="p02-ruler" filter="url(#p02-shadow)" transform="translate(585, 410)">
+      <rect x="-14" y="0" width="28" height="370" rx="6" fill="#F4DFC3" stroke="#2D231F" stroke-width="2.8"/>
+      <!-- Tick Marks -->
+      <path d="M-14 30H-2M-14 60H2M-14 90H-2M-14 120H2M-14 150H-2M-14 180H4M-14 210H-2M-14 240H2M-14 270H-2M-14 300H4M-14 330H-2" stroke="#9A6943" stroke-width="2.2"/>
+      <!-- Scale Labels -->
+      <text x="-24" y="306" text-anchor="end" font-family="PilotSans, sans-serif" font-weight="700" font-size="13" fill="#854D0E">1 TỶ</text>
+      <text x="-24" y="186" text-anchor="end" font-family="PilotSans, sans-serif" font-weight="700" font-size="13" fill="#854D0E">2 TỶ</text>
+      <text x="-24" y="66" text-anchor="end" font-family="PilotSans, sans-serif" font-weight="700" font-size="13" fill="#B45309">3 TỶ+</text>
+    </g>
+
+    <!-- Top Callout Badge: "HÀNG TỶ ĐỒNG" -->
+    <g id="p02-billion-callout" filter="url(#p02-glow)" transform="translate(485, 360)" opacity="0">
+      <rect x="-105" y="-22" width="210" height="44" rx="22" fill="#F59E0B" stroke="#2D231F" stroke-width="3"/>
+      <text x="0" y="8" text-anchor="middle" font-family="PilotDisplay, sans-serif" font-weight="900" font-size="20" fill="#FFFFFF" letter-spacing="0.5">HÀNG TỶ ĐỒNG</text>
+      <!-- Downward triangle pointer -->
+      <polygon points="-8,22 8,22 0,32" fill="#F59E0B" stroke="#2D231F" stroke-width="2"/>
+    </g>
+
+    <!-- ========================================== -->
+    <!-- GOLD COIN STACK ON RIGHT PAGE (x: 485)     -->
+    <!-- Stack starts at y=760 and rises to y=420   -->
+    <!-- ========================================== -->
+    <g id="p02-coin-stack" filter="url(#p02-shadow)" transform="translate(485, 760)">
+      <!-- Tier 1: Coins 1 & 2 -->
+      <g id="p02-c1">
+        <ellipse cx="0" cy="0" rx="72" ry="28" fill="url(#p02-coin-rim)" stroke="#2D231F" stroke-width="2.8"/>
+        <ellipse cx="0" cy="-8" rx="72" ry="28" fill="url(#p02-coin-grad)" stroke="#2D231F" stroke-width="2.8"/>
+        <ellipse cx="0" cy="-8" rx="55" ry="20" fill="#FDE047" stroke="#CA8A04" stroke-width="1.8"/>
+      </g>
+      <g id="p02-c2" transform="translate(0, -32)">
+        <ellipse cx="0" cy="0" rx="72" ry="28" fill="url(#p02-coin-rim)" stroke="#2D231F" stroke-width="2.8"/>
+        <ellipse cx="0" cy="-8" rx="72" ry="28" fill="url(#p02-coin-grad)" stroke="#2D231F" stroke-width="2.8"/>
+        <ellipse cx="0" cy="-8" rx="55" ry="20" fill="#FDE047" stroke="#CA8A04" stroke-width="1.8"/>
+      </g>
+      <!-- Tier 2: Coins 3 & 4 (Passes 1 Tỷ) -->
+      <g id="p02-c3" transform="translate(0, -64)">
+        <ellipse cx="0" cy="0" rx="72" ry="28" fill="url(#p02-coin-rim)" stroke="#2D231F" stroke-width="2.8"/>
+        <ellipse cx="0" cy="-8" rx="72" ry="28" fill="url(#p02-coin-grad)" stroke="#2D231F" stroke-width="2.8"/>
+        <ellipse cx="0" cy="-8" rx="55" ry="20" fill="#FDE047" stroke="#CA8A04" stroke-width="1.8"/>
+      </g>
+      <g id="p02-c4" transform="translate(0, -96)">
+        <ellipse cx="0" cy="0" rx="72" ry="28" fill="url(#p02-coin-rim)" stroke="#2D231F" stroke-width="2.8"/>
+        <ellipse cx="0" cy="-8" rx="72" ry="28" fill="url(#p02-coin-grad)" stroke="#2D231F" stroke-width="2.8"/>
+        <ellipse cx="0" cy="-8" rx="55" ry="20" fill="#FDE047" stroke="#CA8A04" stroke-width="1.8"/>
+      </g>
+      <!-- Tier 3: Coins 5 & 6 (Passes 2 Tỷ) -->
+      <g id="p02-c5" transform="translate(0, -128)">
+        <ellipse cx="0" cy="0" rx="72" ry="28" fill="url(#p02-coin-rim)" stroke="#2D231F" stroke-width="2.8"/>
+        <ellipse cx="0" cy="-8" rx="72" ry="28" fill="url(#p02-coin-grad)" stroke="#2D231F" stroke-width="2.8"/>
+        <ellipse cx="0" cy="-8" rx="55" ry="20" fill="#FDE047" stroke="#CA8A04" stroke-width="1.8"/>
+      </g>
+      <g id="p02-c6" transform="translate(0, -160)">
+        <ellipse cx="0" cy="0" rx="72" ry="28" fill="url(#p02-coin-rim)" stroke="#2D231F" stroke-width="2.8"/>
+        <ellipse cx="0" cy="-8" rx="72" ry="28" fill="url(#p02-coin-grad)" stroke="#2D231F" stroke-width="2.8"/>
+        <ellipse cx="0" cy="-8" rx="55" ry="20" fill="#FDE047" stroke="#CA8A04" stroke-width="1.8"/>
+      </g>
+      <!-- Tier 4: Coins 7 & 8 (Top peak: 3 Tỷ+) -->
+      <g id="p02-c7" transform="translate(0, -192)">
+        <ellipse cx="0" cy="0" rx="72" ry="28" fill="url(#p02-coin-rim)" stroke="#2D231F" stroke-width="2.8"/>
+        <ellipse cx="0" cy="-8" rx="72" ry="28" fill="url(#p02-coin-grad)" stroke="#2D231F" stroke-width="2.8"/>
+        <ellipse cx="0" cy="-8" rx="55" ry="20" fill="#FDE047" stroke="#CA8A04" stroke-width="1.8"/>
+      </g>
+      <g id="p02-c8" transform="translate(0, -224)">
+        <ellipse cx="0" cy="0" rx="72" ry="28" fill="url(#p02-coin-rim)" stroke="#2D231F" stroke-width="2.8"/>
+        <ellipse cx="0" cy="-8" rx="72" ry="28" fill="url(#p02-coin-grad)" stroke="#2D231F" stroke-width="2.8"/>
+        <ellipse cx="0" cy="-8" rx="55" ry="20" fill="#FDE047" stroke="#CA8A04" stroke-width="1.8"/>
+        <!-- Star highlight on top coin -->
+        <polygon points="0,-18 4,-10 12,-10 6,-4 8,4 0,-1 -8,4 -6,-4 -12,-10 -4,-10" fill="#FFFFFF" stroke="#CA8A04" stroke-width="1.5"/>
+      </g>
+    </g>
+
+    <!-- Subtle Page Flex Sag Line under weight -->
+    <path id="p02-sag-curve" d="M362 870 Q485 885 635 832" fill="none" stroke="#D5BEA8" stroke-width="2.5" opacity="0"/>
+
+    <!-- ========================================== -->
+    <!-- MASCOT (STUDENT/FAMILY) AT BOTTOM-LEFT     -->
+    <!-- Continuous styling from approved S01       -->
+    <!-- ========================================== -->
+    <g id="p02-mascot-rig" filter="url(#p02-shadow)" transform="translate(55, 735) scale(1.12)">
+      <!-- Ground Shadow for Mascot -->
+      <ellipse cx="63" cy="203" rx="65" ry="10" fill="#D7BDA8" opacity=".5"/>
+      <!-- Legs standing firmly -->
+      <path d="M48 143L41 190L18 194M90 143L98 190L120 194" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+      <!-- Blue Backpack -->
+      <rect x="5" y="55" width="36" height="88" rx="15" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+      <path d="M12 75L30 84" fill="none" stroke="#A2D8ED" stroke-width="3"/>
+
+      <!-- Far Arm (pointing/resting towards ledger) -->
+      <g transform="translate(25 72)">
+        <g id="p02-mascot-arm-far">
+          <path id="p02-far-path" d="M0 0Q30-10 60-15" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+          <circle id="p02-far-hand" cx="60" cy="-15" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+        </g>
+      </g>
+
+      <!-- Warm Orange Torso -->
+      <path d="M21 31Q24 9 50 12L95 14Q123 16 122 46L115 121Q114 148 86 152L49 149Q20 148 17 123L13 58Q12 42 21 31Z" fill="#FFAA28" stroke="#30313B" stroke-width="3.3"/>
+      <path d="M25 41Q30 25 49 26" fill="none" stroke="#FFD77B" stroke-width="5" stroke-linecap="round"/>
+
+      <!-- Purple Cap -->
+      <path d="M28 28Q17-8 61-9Q108-13 116 27Z" fill="#A990D5" stroke="#30313B" stroke-width="3"/>
+      <path d="M17 29Q54 14 111 29L131 34Q138 40 127 42L35 39" fill="#8B73C0" stroke="#30313B" stroke-width="3"/>
+
+      <!-- Eyes (looking up at the towering coin stack) -->
+      <g id="p02-mascot-eyes">
+        <ellipse cx="56" cy="68" rx="4.6" ry="7" fill="#30313B"/>
+        <ellipse cx="90" cy="67" rx="4.6" ry="7" fill="#30313B"/>
+      </g>
+      <!-- Thoughtful Mouth -->
+      <path id="p02-mascot-mouth" d="M62 92Q73 98 84 91" fill="none" stroke="#30313B" stroke-width="3.3" stroke-linecap="round"/>
+      <ellipse cx="43" cy="87" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+      <ellipse cx="102" cy="86" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+      <!-- Backpack Strap -->
+      <path d="M26 50L18 125" fill="none" stroke="#05669D" stroke-width="6" stroke-linecap="round"/>
+
+      <!-- Near Arm (held thoughtfully in front) -->
+      <g transform="translate(105 85)">
+        <g id="p02-mascot-arm-near">
+          <path id="p02-near-path" d="M0 0Q15 15 28 4" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+          <circle id="p02-near-hand" cx="28" cy="4" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+        </g>
+      </g>
+    </g>
+  </svg>
+
+  <audio id="v33-s02-voice" class="clip" src="assets/voice.wav" data-start="0" data-duration="3.8555" data-track-index="2"></audio>
+</div>
+
+<script>
+(()=>{
+  const tl = gsap.timeline({paused:true});
+
+  // 1. Initial Header Entry (0.0s - 0.35s)
+  tl.fromTo('#p02-header', {y: -15, opacity: 0}, {y: 0, opacity: 1, duration: 0.35, ease: 'power2.out'}, 0.08);
+
+  // 2. Ledger Unfolding & Placement (0.15s - 0.65s)
+  tl.fromTo('#p02-ledger-main', {scale: 0.88, y: 30, opacity: 0, svgOrigin: '360 620'}, {scale: 1, y: 0, opacity: 1, duration: 0.5, ease: 'back.out(1.1)'}, 0.15);
+
+  // 3. Ruler Enters on Right (0.35s - 0.75s)
+  tl.fromTo('#p02-ruler', {y: -40, opacity: 0}, {y: 0, opacity: 1, duration: 0.45, ease: 'power2.out'}, 0.35);
+
+  // 4. Mascot Slides In Attentively (0.25s - 0.7s)
+  tl.fromTo('#p02-mascot-rig', {x: 20, opacity: 0}, {x: 55, opacity: 1, duration: 0.5, ease: 'power2.out'}, 0.25);
+
+  // 5. Left Page Line Items Appear in Stagger (0.55s - 1.2s)
+  tl.fromTo('#p02-item-1', {x: -15, opacity: 0}, {x: 0, opacity: 1, duration: 0.3, ease: 'power2.out'}, 0.55);
+  tl.fromTo('#p02-item-2', {x: -15, opacity: 0}, {x: 0, opacity: 1, duration: 0.3, ease: 'power2.out'}, 0.75);
+  tl.fromTo('#p02-item-3', {x: -15, opacity: 0}, {x: 0, opacity: 1, duration: 0.3, ease: 'power2.out'}, 0.95);
+  tl.fromTo('#p02-stamp', {scale: 0.7, opacity: 0, svgOrigin: '220 760'}, {scale: 1, opacity: 1, duration: 0.35, ease: 'back.out(1.2)'}, 1.15);
+
+  // 6. Right Page Coins Stacking Accurately under "hàng tỷ đồng" (1.0s - 2.5s)
+  // Coins 1-2 (Base tier: ~500Tr)
+  tl.fromTo('#p02-c1', {y: -30, opacity: 0}, {y: 0, opacity: 1, duration: 0.22, ease: 'bounce.out'}, 0.95);
+  tl.fromTo('#p02-c2', {y: -30, opacity: 0}, {y: 0, opacity: 1, duration: 0.22, ease: 'bounce.out'}, 1.12);
+
+  // Coins 3-4 (Tier 2: reaches 1 Tỷ)
+  tl.fromTo('#p02-c3', {y: -30, opacity: 0}, {y: 0, opacity: 1, duration: 0.22, ease: 'bounce.out'}, 1.30);
+  tl.fromTo('#p02-c4', {y: -30, opacity: 0}, {y: 0, opacity: 1, duration: 0.22, ease: 'bounce.out'}, 1.48);
+
+  // Coins 5-6 (Tier 3: reaches 2 Tỷ)
+  tl.fromTo('#p02-c5', {y: -30, opacity: 0}, {y: 0, opacity: 1, duration: 0.22, ease: 'bounce.out'}, 1.68);
+  tl.fromTo('#p02-c6', {y: -30, opacity: 0}, {y: 0, opacity: 1, duration: 0.22, ease: 'bounce.out'}, 1.88);
+
+  // Coins 7-8 (Top Tier: reaches 3 Tỷ+)
+  tl.fromTo('#p02-c7', {y: -30, opacity: 0}, {y: 0, opacity: 1, duration: 0.22, ease: 'bounce.out'}, 2.08);
+  tl.fromTo('#p02-c8', {y: -35, opacity: 0}, {y: 0, opacity: 1, duration: 0.25, ease: 'bounce.out'}, 2.28);
+
+  // Subtle Page Flex Sag & Sound Weight (2.1s - 2.5s)
+  tl.to('#p02-right-surface', {scaleY: 1.015, y: 3, duration: 0.35, ease: 'power2.out'}, 2.15);
+  tl.to('#p02-sag-curve', {opacity: 0.7, duration: 0.3}, 2.2);
+
+  // Top Callout Badge pops up: "HÀNG TỶ ĐỒNG" (2.35s - 2.8s)
+  tl.fromTo('#p02-billion-callout', {scale: 0.2, y: 15, opacity: 0, svgOrigin: '485 360'}, {scale: 1, y: 0, opacity: 1, duration: 0.45, ease: 'back.out(1.3)'}, 2.38);
+
+  // Mascot Eyes & Head Look Up Along the Stack (1.4s - 2.6s)
+  tl.to('#p02-mascot-eyes', {x: 4, y: -6, duration: 0.6, ease: 'power1.inOut'}, 1.5);
+  tl.to('#p02-mascot-mouth', {attr: {d: 'M62 90Q73 95 84 90'}, duration: 0.4}, 2.2);
+  tl.to('#p02-far-path', {attr: {d: 'M0 0Q35-25 75-40'}, duration: 0.65, ease: 'power2.inOut'}, 1.8);
+  tl.to('#p02-far-hand', {attr: {cx: 75, cy: -40}, duration: 0.65, ease: 'power2.inOut'}, 1.8);
+
+  // Hold cleanly till end of scene (3.8555s)
+  tl.to({hold: 0}, {hold: 1, duration: 3.8555, ease: 'none'}, 0);
+
+  window.__timelines['v33-s02'] = tl;
+})();
+</script>
+</body>
+</html>

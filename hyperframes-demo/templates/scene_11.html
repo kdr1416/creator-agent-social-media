@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=720, height=1280" />
+    <title>Scene 11 - 5 Khoản Cần Tính Trước</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        color: #0f172a;
+        font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+        overflow: hidden;
+      }
+      #root {
+        position: relative;
+        width: 720px;
+        height: 1280px;
+        overflow: hidden;
+        background: #ffffff;
+      }
+
+      /* ── AMBIENT OPEN-CANVAS BACKGROUND ── */
+      .bg-canvas {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .bg-glow {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          circle at 50% 45%,
+          rgba(241, 245, 249, 0.95) 0%,
+          rgba(255, 255, 255, 1) 75%
+        );
+      }
+      .bg-grid {
+        position: absolute;
+        inset: 0;
+        background-image: 
+          linear-gradient(to right, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+        background-size: 40px 40px;
+        opacity: 0.65;
+      }
+
+      /* ── OPEN-CANVAS HEADLINE (NO CARD / NO PILL) ── */
+      .headline-container {
+        position: absolute;
+        top: 130px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 40;
+        padding: 0 40px;
+      }
+      .main-title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 38px;
+        line-height: 1.15;
+        color: #0f172a;
+        margin: 0;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+      }
+      .title-accent-bar {
+        width: 220px;
+        height: 8px;
+        background: #fde047;
+        margin: 12px auto 0 auto;
+        border-radius: 4px;
+        transform-origin: center;
+      }
+
+      /* ── MAIN VISUAL STAGE (Y: 220px to 1060px -> 220px CLEAN FOOTER) ── */
+      .visual-stage {
+        position: absolute;
+        top: 220px;
+        left: 0;
+        width: 720px;
+        height: 840px;
+        z-index: 20;
+      }
+      .stage-ground-line {
+        position: absolute;
+        bottom: 0;
+        left: 48px;
+        width: 624px;
+        height: 3px;
+        background: #cbd5e1;
+        border-radius: 2px;
+      }
+
+      /* ── ARCHITECTURAL FOUNDATION BEAM & DOCKING BASE ── */
+      .foundation-beam {
+        position: absolute;
+        top: 450px;
+        left: 40px;
+        width: 640px;
+        height: 18px;
+        background: #0f172a;
+        border-radius: 9px;
+        box-shadow: 0 8px 18px rgba(15, 23, 42, 0.15);
+        z-index: 22;
+      }
+      .beam-notch {
+        position: absolute;
+        top: -6px;
+        width: 16px;
+        height: 8px;
+        background: #ff6b2b;
+        border-radius: 4px;
+      }
+
+      /* ── CONNECTING CIRCUIT ARCH SVG ── */
+      .circuit-svg-wrap {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 720px;
+        height: 440px;
+        z-index: 18;
+        pointer-events: none;
+      }
+
+      /* ── THE 5 BUDGET PILLARS & TOKENS ── */
+      .pillar-col {
+        position: absolute;
+        width: 84px;
+        z-index: 25;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .pillar-track {
+        position: absolute;
+        bottom: 0;
+        width: 4px;
+        background: #e2e8f0;
+        border-radius: 2px;
+        z-index: 19;
+      }
+      .token-box {
+        position: relative;
+        width: 84px;
+        height: 84px;
+        background: #ffffff;
+        border: 3px solid #0f172a;
+        border-radius: 18px;
+        box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08), 0 5px 0 #0f172a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 28;
+      }
+      .token-check {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        width: 24px;
+        height: 24px;
+        background: #0f172a;
+        border: 2px solid #ff6b2b;
+        border-radius: 50%;
+        color: #fde047;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        z-index: 35;
+      }
+      .transient-tag {
+        margin-top: 10px;
+        background: #0f172a;
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 11px;
+        padding: 4px 8px;
+        border-radius: 6px;
+        white-space: nowrap;
+        letter-spacing: 0.04em;
+        opacity: 0;
+        z-index: 30;
+      }
+
+      /* ── LOWER STAGE: SYNTHESIS ANCHOR & ADVISOR RIG ── */
+      .synthesis-anchor {
+        position: absolute;
+        top: 500px;
+        left: 48px;
+        width: 320px;
+        background: #0f172a;
+        color: #ffffff;
+        border: 3px solid #ff6b2b;
+        box-shadow: 0 10px 24px rgba(255, 107, 43, 0.22), 0 6px 0 #ff6b2b;
+        border-radius: 16px;
+        padding: 16px 20px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        z-index: 30;
+        opacity: 0;
+      }
+      .synthesis-icon-box {
+        width: 48px;
+        height: 48px;
+        background: #ff6b2b;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .synthesis-text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #ffffff;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+
+      /* Advisor Character Rig */
+      .advisor-rig {
+        position: absolute;
+        bottom: 0;
+        right: 32px;
+        width: 250px;
+        height: 340px;
+        z-index: 32;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      audio {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-width="720"
+      data-height="1280"
+      data-duration="7.6"
+    >
+      <!-- Background Canvas -->
+      <div class="bg-canvas" data-layout-allow-overflow>
+        <div class="bg-glow"></div>
+        <div class="bg-grid"></div>
+      </div>
+
+      <!-- Audio Track -->
+      <audio
+        id="bg-audio"
+        src="./assets/audio.wav"
+        data-track="voice"
+        data-start="0s"
+        data-duration="7.6s"
+        preload="auto"
+      ></audio>
+
+      <!-- Open-Canvas Headline -->
+      <div class="headline-container" data-layout-allow-overflow>
+        <h1 class="main-title" id="main-title">5 KHOẢN CẦN TÍNH TRƯỚC</h1>
+        <div class="title-accent-bar" id="title-accent"></div>
+      </div>
+
+      <!-- Main Visual Stage (Leaves 220px Subtitle Footer below Y: 1060px) -->
+      <div class="visual-stage" data-layout-allow-overflow data-layout-allow-overlap>
+        <div class="stage-ground-line" id="stage-ground" data-layout-allow-overlap data-layout-allow-occlusion></div>
+
+        <!-- Circuit Arch Wire SVG -->
+        <div class="circuit-svg-wrap" data-layout-allow-overflow>
+          <svg width="720" height="440" viewBox="0 0 720 440" fill="none" data-layout-allow-overflow>
+            <!-- Connecting Glow Arc -->
+            <path
+              id="circuit-arch-path"
+              d="M90 220 C225 90 495 90 630 220"
+              stroke="#CBD5E1"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-dasharray="8 8"
+            />
+            <!-- Energy Pulse Glow (animates on lock) -->
+            <path
+              id="circuit-energy-glow"
+              d="M90 220 C225 90 495 90 630 220"
+              stroke="#FF6B2B"
+              stroke-width="6"
+              stroke-linecap="round"
+              opacity="0"
+            />
+          </svg>
+        </div>
+
+        <!-- Architectural Foundation Beam -->
+        <div class="foundation-beam" id="foundation-beam" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="beam-notch" style="left: 42px;"></div>
+          <div class="beam-notch" style="left: 178px;"></div>
+          <div class="beam-notch" style="left: 312px;"></div>
+          <div class="beam-notch" style="left: 446px;"></div>
+          <div class="beam-notch" style="left: 582px;"></div>
+        </div>
+
+        <!-- ── PILLAR 1: HỌC PHÍ (TUITION) ── -->
+        <div class="pillar-col" id="col-1" style="left: 48px; top: 180px;" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="pillar-track" style="height: 270px;" data-layout-allow-overlap data-layout-allow-occlusion></div>
+          <div class="token-box" id="token-box-1" data-layout-allow-overlap data-layout-allow-occlusion>
+            <div class="token-check" id="check-1" data-layout-allow-overlap data-layout-allow-occlusion>✓</div>
+            <!-- Graduation Mortarboard & Diploma SVG -->
+            <svg width="52" height="52" viewBox="0 0 64 64" fill="none">
+              <path d="M32 10 L8 22 L32 34 L56 22 Z" fill="#0F172A"/>
+              <path d="M18 27 L18 42 C18 46 24 50 32 50 C40 50 46 46 46 42 L46 27" stroke="#0F172A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <line x1="52" y1="24" x2="52" y2="40" stroke="#FF6B2B" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="52" cy="42" r="3" fill="#FF6B2B"/>
+            </svg>
+          </div>
+          <div class="transient-tag" id="tag-1" data-layout-allow-overlap data-layout-allow-occlusion>HỌC PHÍ</div>
+        </div>
+
+        <!-- ── PILLAR 2: SINH HOẠT (LIVING) ── -->
+        <div class="pillar-col" id="col-2" style="left: 184px; top: 120px;" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="pillar-track" style="height: 330px;" data-layout-allow-overlap data-layout-allow-occlusion></div>
+          <div class="token-box" id="token-box-2" data-layout-allow-overlap data-layout-allow-occlusion>
+            <div class="token-check" id="check-2" data-layout-allow-overlap data-layout-allow-occlusion>✓</div>
+            <!-- House Roof & Home Comfort SVG -->
+            <svg width="52" height="52" viewBox="0 0 64 64" fill="none">
+              <path d="M12 28 L32 12 L52 28 L52 50 C52 52 50 54 48 54 L16 54 C14 54 12 52 12 50 Z" fill="#0F172A"/>
+              <path d="M26 54 L26 36 L38 36 L38 54" fill="#F8FAFC"/>
+              <rect x="27" y="22" width="10" height="8" rx="2" fill="#FDE047"/>
+              <line x1="44" y1="16" x2="44" y2="24" stroke="#FF6B2B" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="transient-tag" id="tag-2" data-layout-allow-overlap data-layout-allow-occlusion>SINH HOẠT</div>
+        </div>
+
+        <!-- ── PILLAR 3: ĐI LẠI (TRAVEL) ── -->
+        <div class="pillar-col" id="col-3" style="left: 318px; top: 80px;" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="pillar-track" style="height: 370px;" data-layout-allow-overlap data-layout-allow-occlusion></div>
+          <div class="token-box" id="token-box-3" data-layout-allow-overlap data-layout-allow-occlusion>
+            <div class="token-check" id="check-3" data-layout-allow-overlap data-layout-allow-occlusion>✓</div>
+            <!-- Airplane Flight Route SVG -->
+            <svg width="52" height="52" viewBox="0 0 64 64" fill="none">
+              <path d="M10 36 L24 32 L34 14 L40 16 L34 30 L52 26 L56 32 L40 38 L38 48 L32 46 L34 40 Z" fill="#0F172A"/>
+              <path d="M12 48 C20 44 26 38 30 30" stroke="#FF6B2B" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4"/>
+            </svg>
+          </div>
+          <div class="transient-tag" id="tag-3" data-layout-allow-overlap data-layout-allow-occlusion>ĐI LẠI</div>
+        </div>
+
+        <!-- ── PILLAR 4: ĐI CÙNG (FAMILY) ── -->
+        <div class="pillar-col" id="col-4" style="left: 452px; top: 120px;" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="pillar-track" style="height: 330px;" data-layout-allow-overlap data-layout-allow-occlusion></div>
+          <div class="token-box" id="token-box-4" data-layout-allow-overlap data-layout-allow-occlusion>
+            <div class="token-check" id="check-4" data-layout-allow-overlap data-layout-allow-occlusion>✓</div>
+            <!-- Family Group Silhouettes SVG -->
+            <svg width="52" height="52" viewBox="0 0 64 64" fill="none">
+              <!-- Father -->
+              <circle cx="20" cy="18" r="7" fill="#0F172A"/>
+              <path d="M10 48 L10 36 C10 31 14 28 20 28 C26 28 30 31 30 36 L30 48 Z" fill="#0F172A"/>
+              <!-- Mother -->
+              <circle cx="44" cy="20" r="6" fill="#0F172A"/>
+              <path d="M35 48 L35 38 C35 33 39 30 44 30 C49 30 53 33 53 38 L53 48 Z" fill="#0F172A"/>
+              <!-- Heart accent -->
+              <circle cx="32" cy="26" r="3" fill="#FF6B2B"/>
+            </svg>
+          </div>
+          <div class="transient-tag" id="tag-4" data-layout-allow-overlap data-layout-allow-occlusion>ĐI CÙNG</div>
+        </div>
+
+        <!-- ── PILLAR 5: TOÀN KHÓA (TIMELINE) ── -->
+        <div class="pillar-col" id="col-5" style="left: 588px; top: 180px;" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="pillar-track" style="height: 270px;" data-layout-allow-overlap data-layout-allow-occlusion></div>
+          <div class="token-box" id="token-box-5" data-layout-allow-overlap data-layout-allow-occlusion>
+            <div class="token-check" id="check-5" data-layout-allow-overlap data-layout-allow-occlusion>✓</div>
+            <!-- Calendar & Journey Clock SVG -->
+            <svg width="52" height="52" viewBox="0 0 64 64" fill="none">
+              <rect x="12" y="16" width="40" height="38" rx="8" fill="#0F172A"/>
+              <rect x="18" y="24" width="28" height="24" rx="4" fill="#FFFFFF"/>
+              <!-- Multi-year check marks inside -->
+              <path d="M22 36 L26 40 L34 32" stroke="#FF6B2B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- Spiral binders -->
+              <line x1="22" y1="12" x2="22" y2="18" stroke="#FDE047" stroke-width="4" stroke-linecap="round"/>
+              <line x1="42" y1="12" x2="42" y2="18" stroke="#FDE047" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="transient-tag" id="tag-5" data-layout-allow-overlap data-layout-allow-occlusion>TOÀN KHÓA</div>
+        </div>
+
+        <!-- ── LOWER STAGE: SYNTHESIS ANCHOR ── -->
+        <div class="synthesis-anchor" id="synthesis-anchor" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="synthesis-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" fill="#0F172A"/>
+              <path d="M10 12l2 2 4-4" stroke="#FDE047" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="synthesis-text">KẾ HOẠCH DÀI HẠN</div>
+        </div>
+
+        <!-- ── ADVISOR CHARACTER RIG ── -->
+        <div class="advisor-rig" id="advisor-rig" data-layout-allow-overlap data-layout-allow-occlusion>
+          <svg width="250" height="340" viewBox="0 0 200 280" fill="none" data-layout-allow-overflow>
+            <!-- Body / Suit -->
+            <path d="M50 280 L65 150 C70 130 130 130 135 150 L150 280 Z" fill="#0F172A"/>
+            <!-- Collar & Tie -->
+            <polygon points="100,145 85,165 115,165" fill="#FFFFFF"/>
+            <polygon points="96,165 104,165 107,220 100,230 93,220" fill="#FF6B2B"/>
+            
+            <!-- Head & Expressions -->
+            <g id="advisor-head">
+              <rect x="92" y="125" width="16" height="25" fill="#FED7AA"/>
+              <ellipse cx="100" cy="95" rx="38" ry="42" fill="#FED7AA" stroke="#0F172A" stroke-width="3"/>
+              <!-- Hair -->
+              <path d="M62 85 C62 60 80 50 100 50 C120 50 138 60 138 85 C138 75 125 60 100 60 C75 60 62 75 62 85 Z" fill="#0F172A"/>
+              <!-- Glasses -->
+              <rect x="74" y="85" width="22" height="16" rx="4" fill="none" stroke="#0F172A" stroke-width="3"/>
+              <rect x="104" y="85" width="22" height="16" rx="4" fill="none" stroke="#0F172A" stroke-width="3"/>
+              <line x1="96" y1="93" x2="104" y2="93" stroke="#0F172A" stroke-width="3"/>
+              <!-- Eyes -->
+              <circle cx="85" cy="93" r="3" fill="#0F172A"/>
+              <circle cx="115" cy="93" r="3" fill="#0F172A"/>
+              <!-- Smile -->
+              <path d="M88 115 Q100 125 112 115" stroke="#0F172A" stroke-width="3" stroke-linecap="round" fill="none"/>
+            </g>
+
+            <!-- Arm Gesturing towards Arch -->
+            <g id="advisor-arm">
+              <path d="M65 160 C40 140 25 110 35 85" stroke="#0F172A" stroke-width="18" stroke-linecap="round"/>
+              <circle cx="35" cy="85" r="11" fill="#FED7AA"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- GSAP Master Animation Sync (7.60s Duration) -->
+    <script>
+      const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+
+      // Initial Setup
+      gsap.set(["#main-title", "#title-accent"], { opacity: 0, y: -15 });
+      gsap.set("#title-accent", { scaleX: 0 });
+      gsap.set("#foundation-beam", { opacity: 0, scaleX: 0.6 });
+      gsap.set(".pillar-track", { scaleY: 0, transformOrigin: "bottom center" });
+      gsap.set(".token-box", { opacity: 0, y: -60, scale: 0.6 });
+      gsap.set(".transient-tag", { opacity: 0, y: 10 });
+      gsap.set(".token-check", { opacity: 0, scale: 0.2 });
+      gsap.set("#synthesis-anchor", { opacity: 0, y: 25 });
+      gsap.set("#advisor-rig", { opacity: 0, x: 40 });
+
+      // ── BEAT 1 (0.0s – 1.6s): ENTRANCE & ARCHITECTURAL FOUNDATION ──
+      // Speech: "Gia đình cần tính trước..."
+      tl.to("#main-title", {
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        ease: "back.out(1.2)"
+      }, 0.2);
+
+      tl.to("#title-accent", {
+        opacity: 1,
+        y: 0,
+        scaleX: 1,
+        duration: 0.5
+      }, 0.5);
+
+      tl.to("#foundation-beam", {
+        opacity: 1,
+        scaleX: 1,
+        duration: 0.6,
+        ease: "power3.out"
+      }, 0.7);
+
+      tl.to(".pillar-track", {
+        scaleY: 1,
+        duration: 0.5,
+        stagger: 0.08,
+        ease: "power2.out"
+      }, 0.9);
+
+      tl.to("#advisor-rig", {
+        opacity: 1,
+        x: 0,
+        duration: 0.7,
+        ease: "power2.out"
+      }, 1.1);
+
+      // ── BEAT 2 (1.6s – 5.4s): MODULAR PILLARS DOCKING ──
+      // 1. "học phí" (1.6s – 2.4s)
+      tl.to("#token-box-1", {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.5,
+        ease: "back.out(2)"
+      }, 1.6);
+      tl.to("#tag-1", {
+        opacity: 1,
+        y: 0,
+        duration: 0.3
+      }, 1.85);
+
+      // 2. "chi phí sinh hoạt" (2.4s – 3.2s)
+      tl.to("#token-box-2", {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.5,
+        ease: "back.out(2)"
+      }, 2.4);
+      tl.to("#tag-2", {
+        opacity: 1,
+        y: 0,
+        duration: 0.3
+      }, 2.65);
+
+      // 3. "chi phí đi lại" (3.2s – 4.0s)
+      tl.to("#token-box-3", {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.5,
+        ease: "back.out(2)"
+      }, 3.2);
+      tl.to("#tag-3", {
+        opacity: 1,
+        y: 0,
+        duration: 0.3
+      }, 3.45);
+
+      // 4. "số người đi cùng" (4.0s – 4.8s)
+      tl.to("#token-box-4", {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.5,
+        ease: "back.out(2)"
+      }, 4.0);
+      tl.to("#tag-4", {
+        opacity: 1,
+        y: 0,
+        duration: 0.3
+      }, 4.25);
+
+      // 5. "và kế hoạch tài chính cho toàn bộ thời gian học" (4.8s – 5.6s)
+      tl.to("#token-box-5", {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.5,
+        ease: "back.out(2)"
+      }, 4.8);
+      tl.to("#tag-5", {
+        opacity: 1,
+        y: 0,
+        duration: 0.3
+      }, 5.05);
+
+      // ── BEAT 3 (5.4s – 7.6s): TOTAL SYNTHESIS LOCK & COLLAPSED LABELS ──
+      // Connective arch energy glow
+      tl.to("#circuit-energy-glow", {
+        opacity: 1,
+        duration: 0.45,
+        ease: "power2.in"
+      }, 5.4);
+
+      // Transient tags dissolve cleanly (Zero label accumulation)
+      tl.to(".transient-tag", {
+        opacity: 0,
+        y: -4,
+        duration: 0.35,
+        stagger: 0.04
+      }, 5.45);
+
+      // Verified checkmarks pop onto tokens
+      tl.to(".token-check", {
+        opacity: 1,
+        scale: 1,
+        duration: 0.35,
+        stagger: 0.05,
+        ease: "back.out(3)"
+      }, 5.6);
+
+      // Synthesis Anchor Badge emerges
+      tl.to("#synthesis-anchor", {
+        opacity: 1,
+        y: 0,
+        duration: 0.55,
+        ease: "back.out(1.8)"
+      }, 5.7);
+
+      // Advisor nods in confidence and arm guides upward
+      tl.to("#advisor-head", {
+        y: -5,
+        duration: 0.25,
+        yoyo: true,
+        repeat: 1,
+        ease: "power1.inOut"
+      }, 5.85);
+
+      // Final Hold (6.4s – 7.6s)
+      tl.to({}, { duration: 1.2 }, 6.4);
+    </script>
+  </body>
+</html>

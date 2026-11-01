@@ -1,0 +1,40 @@
+{
+  "version": "S10-S12-design-r1",
+  "scene_ids": [
+    "S10",
+    "S12"
+  ],
+  "approval_status": "approved",
+  "approval_scope": "static visual designs for S10 and S12 as shown in design-r1; does not approve rendered motion or lock internal word cues",
+  "approval_date_local": "2026-10-27",
+  "timezone": "Asia/Saigon",
+  "user_message_verbatim": "mình duyệt 2 frame S10–S12.",
+  "motion_approved": false,
+  "master_replacement_authorized": false,
+  "reference_frame_manifest": [
+    {
+      "file": "S10\\01-cost\\frames\\frame-00-at-0.5s.png",
+      "sha256": "3fea5338090e42472b938bd1d44cb8e105c44f367a3b5059d4eae3c07c245aae"
+    },
+    {
+      "file": "S10\\02-arrive\\frames\\frame-00-at-0.5s.png",
+      "sha256": "43efdc6d7cccd371b16b60fe2525f8295e8e72cf3d714b26f5f9dc2fd106d232"
+    },
+    {
+      "file": "S10\\03-family\\frames\\frame-00-at-0.5s.png",
+      "sha256": "62028759ee3b3c56349aed3d92fc1d8a16d6318745e38bc50386934dd6a0cb5c"
+    },
+    {
+      "file": "S12\\01-ready\\frames\\frame-00-at-0.5s.png",
+      "sha256": "76df08d60326145e55d50523b8fe322789d58b221c2aa17274a464ca7f72e20f"
+    },
+    {
+      "file": "S12\\02-press\\frames\\frame-00-at-0.5s.png",
+      "sha256": "9fedac74dac2b5e510f56089f2cd5bf42c61627d34e0ee13b8d1c2ae349c12a0"
+    },
+    {
+      "file": "S12\\03-result\\frames\\frame-00-at-0.5s.png",
+      "sha256": "d76da80cc849b66c9d99c2b3d92494bcc62657c7898a5d533c275ad2f98f1f70"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>S13 - Cùng mở tầm nhìn</title>
+  <style>
+    @font-face {
+      font-family: 'SegoeUIBlack';
+      src: url('assets/segoe-ui-black.ttf') format('truetype');
+      font-weight: 900;
+    }
+    @font-face {
+      font-family: 'ArialCustom';
+      src: url('assets/arial.ttf') format('truetype');
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 720px;
+      height: 1280px;
+      overflow: hidden;
+      background: #FFF8E9;
+      font-family: 'ArialCustom', sans-serif;
+    }
+    #canvas {
+      position: relative;
+      width: 720px;
+      height: 1280px;
+      background: #FFF8E9;
+    }
+    .title {
+      position: absolute;
+      top: 150px;
+      left: 60px;
+      width: 600px;
+      text-align: center;
+      font-family: 'SegoeUIBlack', sans-serif;
+      font-size: 54px;
+      color: #0870AC;
+      letter-spacing: 2px;
+      line-height: 1.2;
+    }
+    .svg-scene {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 720px;
+      height: 1280px;
+    }
+  </style>
+</head>
+<body>
+  <div id="canvas" class="clip" data-composition-id="root" data-start="0" data-duration="4.5532" data-fps="30" data-width="720" data-height="1280">
+    <audio id="p13-audio" src="assets/voice.wav" class="clip" data-start="0" data-duration="4.5532"></audio>
+    <div class="title" id="p13-title">MỞ TẦM NHÌN</div>
+
+    <svg class="svg-scene" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+      <!-- Globe Assembly -->
+      <g id="p13-globe-group" transform="translate(0, 0)">
+        <!-- Outer Globe Disk -->
+        <circle id="p13-globe-disk" cx="352" cy="688" r="247" fill="#B1D7DB" stroke="#30313B" stroke-width="3.5"/>
+        
+        <!-- Rotating Meridian and Parallel Grids -->
+        <g id="p13-globe-grid">
+          <!-- Inner Meridian Ellipse -->
+          <ellipse id="p13-meridian" cx="352" cy="688" rx="135" ry="247" fill="none" stroke="#689DAA" stroke-width="3"/>
+          <line x1="352" y1="441" x2="352" y2="935" stroke="#689DAA" stroke-width="2.5"/>
+          <!-- Equator line -->
+          <line x1="105" y1="688" x2="599" y2="688" stroke="#689DAA" stroke-width="3"/>
+          <!-- Parallels -->
+          <path d="M150 553Q352 650 554 553" fill="none" stroke="#689DAA" stroke-width="3"/>
+          <path d="M150 823Q352 726 554 823" fill="none" stroke="#689DAA" stroke-width="3"/>
+        </g>
+      </g>
+
+      <!-- Kinetic Study Trajectory (Blue path over Northern Hemisphere) -->
+      <path id="p13-study-path" d="M140 706C220 441 515 456 594 677" fill="none" stroke="#087BC1" stroke-width="6.5" stroke-linecap="round"/>
+      <circle id="p13-study-dot" cx="140" cy="706" r="8" fill="#087BC1" stroke="#FFF8E9" stroke-width="2"/>
+
+      <!-- Kinetic Asset Trajectory (Warm Amber path over Southern Hemisphere) -->
+      <path id="p13-asset-path" d="M144 747C219 994 474 922 563 813" fill="none" stroke="#CE8855" stroke-width="6.5" stroke-linecap="round"/>
+      <circle id="p13-asset-dot" cx="144" cy="747" r="8" fill="#CE8855" stroke="#FFF8E9" stroke-width="2"/>
+
+      <!-- Mascot Rig standing at lower right, observing the globe -->
+      <g id="p13-mascot" transform="translate(470, 840) scale(0.92)">
+        <ellipse cx="63" cy="203" rx="65" ry="10" fill="#D7BDA8" opacity=".5"/>
+        <path d="M48 143L41 190L18 194M90 143L98 190L120 194" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+        <rect x="103" y="50" width="39" height="91" rx="16" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+        <path d="M113 69L134 78" fill="none" stroke="#A2D8ED" stroke-width="3"/>
+        <!-- Far Arm pointing towards globe -->
+        <g id="p13-mascot-point-arm" transform="translate(25, 72)">
+          <path d="M0 0Q-30 -20 -60 -35" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="-60" cy="-35" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+        </g>
+        <path d="M21 31Q24 9 50 12L95 14Q123 16 122 46L115 121Q114 148 86 152L49 149Q20 148 17 123L13 58Q12 42 21 31Z" fill="#FFAA28" stroke="#30313B" stroke-width="3.3"/>
+        <path d="M25 41Q30 25 49 26" fill="none" stroke="#FFD77B" stroke-width="5" stroke-linecap="round"/>
+        <path d="M28 28Q17-8 61-9Q108-13 116 27Z" fill="#A990D5" stroke="#30313B" stroke-width="3"/>
+        <path d="M17 29Q54 14 111 29L131 34Q138 40 127 42L35 39" fill="#8B73C0" stroke="#30313B" stroke-width="3"/>
+        <!-- Eyes looking towards globe (leftwards) -->
+        <g id="p13-eyes">
+          <ellipse cx="48" cy="68" rx="4.6" ry="7" fill="#30313B"/>
+          <ellipse cx="82" cy="67" rx="4.6" ry="7" fill="#30313B"/>
+        </g>
+        <ellipse cx="36" cy="87" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+        <ellipse cx="96" cy="86" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+        <path id="p13-mouth" d="M54 91Q66 104 78 88" fill="none" stroke="#30313B" stroke-width="3.3" stroke-linecap="round"/>
+        <!-- Near Arm -->
+        <g transform="translate(109, 83)">
+          <path d="M0 0Q18 20 32 8" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="32" cy="8" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <script src="assets/gsap.min.js"></script>
+  <script>
+    const tl = gsap.timeline({paused: true});
+    window.__timelines = window.__timelines || {};
+    window.__timelines["root"] = tl;
+
+    // 0.0s: Initial setup
+    gsap.set(['#p13-study-path', '#p13-study-dot'], {opacity: 0});
+    gsap.set(['#p13-asset-path', '#p13-asset-dot'], {opacity: 0});
+
+    // 0.8s -> 2.2s: Subtle rotation of globe meridians
+    tl.to('#p13-meridian', {scaleX: 0.7, transformOrigin: 'center', duration: 1.4, ease: 'sine.inOut'}, 0.8);
+
+    // 1.2s -> 2.2s: Study trajectory draws across the north
+    tl.to(['#p13-study-path', '#p13-study-dot'], {opacity: 1, duration: 0.3}, 1.2)
+      .fromTo('#p13-study-path', {strokeDasharray: 600, strokeDashoffset: 600}, {strokeDashoffset: 0, duration: 1.1, ease: 'power2.out'}, 1.2)
+      .to('#p13-study-dot', {x: 454, y: -29, duration: 1.1, ease: 'power2.out'}, 1.2);
+
+    // 2.7s -> 3.8s: Asset trajectory draws across the south
+    tl.to(['#p13-asset-path', '#p13-asset-dot'], {opacity: 1, duration: 0.3}, 2.7)
+      .fromTo('#p13-asset-path', {strokeDasharray: 600, strokeDashoffset: 600}, {strokeDashoffset: 0, duration: 1.1, ease: 'power2.out'}, 2.7)
+      .to('#p13-asset-dot', {x: 419, y: 66, duration: 1.1, ease: 'power2.out'}, 2.7);
+
+    // 3.8s: Mascot nods enthusiastically as horizons expand
+    tl.to('#p13-mascot', {y: -5, duration: 0.3, yoyo: true, repeat: 2, ease: 'sine.inOut'}, 3.8)
+      .to('#p13-mouth', {scaleX: 1.2, transformOrigin: 'center', duration: 0.4}, 3.8);
+  </script>
+</body>
+</html>

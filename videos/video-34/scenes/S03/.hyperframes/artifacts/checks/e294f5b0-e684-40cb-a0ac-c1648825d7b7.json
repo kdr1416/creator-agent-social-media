@@ -1,0 +1,154 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "audio_file_without_element",
+        "severity": "warning",
+        "message": "Found audio file(s) in project (voice-excerpt.wav) but no <audio> element in any composition. The rendered video will be silent.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add an <audio id=\"my-audio\" src=\"voice-excerpt.wav\" data-start=\"0\" data-duration=\"__DURATION__\" data-track-index=\"0\" data-volume=\"1\"></audio> element inside the composition root. Replace __DURATION__ with the audio length in seconds."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 0.496,
+        "selector": "#world",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -86.1,
+          "top": -141.75,
+          "right": 1134,
+          "bottom": 1958.93,
+          "width": 1220.1,
+          "height": 2100.68
+        },
+        "containerSelector": "#root > svg:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 86.1,
+          "right": 54,
+          "top": 141.75,
+          "bottom": 38.93
+        },
+        "dataAttributes": {
+          "data-svg-origin": "360 850"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -86.1,
+          "y": -141.75,
+          "width": 1220.1,
+          "height": 2100.68
+        },
+        "firstSeen": 0.496,
+        "lastSeen": 8.437,
+        "occurrences": 9,
+        "heldMs": 7940.999999999999,
+        "times": [
+          0.496,
+          1.489,
+          2.481,
+          3.474,
+          4.467,
+          5.459,
+          6.452,
+          7.444,
+          8.437
+        ]
+      }
+    ],
+    "duration": 8.933333333333,
+    "samples": [
+      0.496,
+      1.489,
+      2.481,
+      3.474,
+      4.467,
+      5.459,
+      6.452,
+      7.444,
+      8.437
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 1,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.496,
+      2.481,
+      4.467,
+      6.452,
+      8.437
+    ],
+    "checked": 0,
+    "passed": 0
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

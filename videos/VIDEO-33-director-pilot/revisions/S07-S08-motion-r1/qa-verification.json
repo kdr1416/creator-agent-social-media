@@ -1,0 +1,73 @@
+{
+  "pilots": [
+    {
+      "scene": "S07",
+      "path": "S07\\renders\\pilot.mp4",
+      "sha256": "f5a1eb22209608ae0edbdc8763523feb886d50caec3088601f8e186c87d89475",
+      "source_duration": 4.668833333333334,
+      "video_duration": 4.7,
+      "audio_duration": 4.7,
+      "video_frames": 141,
+      "audio_codec": "aac",
+      "audio_sample_rate": "48000",
+      "audio_channels": 2,
+      "source_voice_sha256": "676938e717191454e113106f70c7d97d8073f31482da8ea8f0c2577f2de71dc0",
+      "voice_copy_bit_exact": true,
+      "decoded_aac_correlation": 0.999830596969683,
+      "decoded_rms": 0.21140719950199127,
+      "hyperframes_check_ok": true,
+      "lint_warning_count": 0,
+      "proof_times": [
+        0.15,
+        1.55,
+        1.77,
+        2.14,
+        2.75,
+        3.2,
+        4.42
+      ],
+      "contact_sampling_fps": 12,
+      "motion_approved": false
+    },
+    {
+      "scene": "S08",
+      "path": "S08\\renders\\pilot.mp4",
+      "sha256": "be0a9cd957a3b7f92510a8b3d976473cb0a20ce25be56ef1cf2613b0f12b5bc5",
+      "source_duration": 5.477125,
+      "video_duration": 5.5,
+      "audio_duration": 5.5,
+      "video_frames": 165,
+      "audio_codec": "aac",
+      "audio_sample_rate": "48000",
+      "audio_channels": 2,
+      "source_voice_sha256": "52dffb05939d5d14871f523c3b722068dd226a1f63922505641e355a0eb7a62a",
+      "voice_copy_bit_exact": true,
+      "decoded_aac_correlation": 0.9999248616262066,
+      "decoded_rms": 0.19117334485054016,
+      "hyperframes_check_ok": true,
+      "lint_warning_count": 0,
+      "proof_times": [
+        0.15,
+        0.75,
+        1.35,
+        1.85,
+        2.5,
+        3.307041666666669,
+        3.8870416666666685,
+        4.287041666666669,
+        4.81704166666667,
+        5.32
+      ],
+      "contact_sampling_fps": 12,
+      "motion_approved": false
+    }
+  ],
+  "approved_eight_frame_hashes_unchanged": true,
+  "previous_master_and_clean_unchanged": true,
+  "browser_playback": {
+    "S07": "ended observed in browser at 4.70s",
+    "S08": "ended observed in browser at 5.50s",
+    "scope": "Full playback completion confirmed via visible page status; contact frames/mobile/grayscale visually reviewed. Original voice identity checked by copied WAV hash and decoded AAC correlation, not independent phonetic transcription."
+  },
+  "full_film_replaced": false
+}

@@ -1,0 +1,9 @@
+{
+  "scope": "new15s visual reconstruction only",
+  "stage": "rendered_awaiting_feedback",
+  "output": "renders/youpass-first15-silent.mp4",
+  "duration": 15,
+  "audio_streams": 0,
+  "qa": "qa/review.json",
+  "original_files_unchanged": true
+}

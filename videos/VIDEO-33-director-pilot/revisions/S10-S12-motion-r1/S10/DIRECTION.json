@@ -1,0 +1,76 @@
+{
+  "scene": "S10",
+  "duration": 6.156875,
+  "sample_frames": 147765,
+  "sample_rate": 24000,
+  "source_start_sample": 1134024,
+  "source_end_sample": 1281789,
+  "source_segments": [
+    11
+  ],
+  "source_audio": [
+    "inputs/audio/seg_11.wav"
+  ],
+  "raw_text": "Chị giới khoảng 3,8 tỷ đồng, chương trình Thế San Manta mang đến cơ hội định cư cho 4 thế hệ.",
+  "corrected_text": "Chỉ với khoảng 3,8 tỷ đồng, chương trình Thẻ Xanh Malta mang đến cơ hội định cư cho 4 thế hệ.",
+  "source_audio_hashes": {
+    "inputs/audio/seg_11.wav": "896700b281fa56ebba34c28bd695bc49ce565471536bbb46c572b1b4790f28c5"
+  },
+  "original_voice_sha256": "896700b281fa56ebba34c28bd695bc49ce565471536bbb46c572b1b4790f28c5",
+  "cues": {
+    "price_read": [
+      0,
+      2.75
+    ],
+    "cut_to_wider_family": 2.75,
+    "short_supported_steps": [
+      2.85,
+      3.96
+    ],
+    "hand_link": [
+      3.95,
+      4.43
+    ],
+    "relationship_labels": [
+      4.48,
+      4.76
+    ],
+    "four_generation_headline": [
+      4.0,
+      4.24
+    ]
+  },
+  "proof_times": [
+    0.1,
+    1.6,
+    2.65,
+    2.8,
+    3.3,
+    3.95,
+    4.43,
+    5.39,
+    6.02
+  ],
+  "contact_ranges": [
+    [
+      2.85,
+      4.48
+    ]
+  ],
+  "approval": "motion_approved_by_user",
+  "approved_frame_reference": "../../S10-S12-design-r1/APPROVAL.json",
+  "timing_basis": "Original sample bounds unchanged. S10 word cues from existing ASR; S12 physical beat timing directed within original slice.",
+  "cue_revision_reason": "Allow a readable family title before the phrase four generations; image forms first and labels resolve after contact. Original voice unchanged.",
+  "user_approval": {
+    "scene_id": "S10",
+    "version": "S10-S12-motion-r1",
+    "approval_status": "approved",
+    "approval_scope": "pilot motion with original voice",
+    "approval_date_local": "2026-10-27",
+    "user_message_verbatim": "oke duyệt. tiếp tục đi",
+    "video_path": "revisions/S10-S12-motion-r1/S10/renders/pilot.mp4",
+    "video_sha256": "826e690c8bb30d88bcee94011f13ddd9743969fea2180ea90f057bd6d7602111",
+    "master_replacement_authorized": false,
+    "full_film_production_authorized": false
+  }
+}

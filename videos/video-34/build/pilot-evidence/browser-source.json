@@ -1,0 +1,154 @@
+{
+  "browser": "Chrome/150.0.7871.115",
+  "scenes": {
+    "S03": {
+      "samples": [
+        {
+          "t": 0,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 1.25,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 2.8,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 3.8,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 4.2,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 5.3,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 7.8,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 8.9,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        }
+      ],
+      "seekPixelHashes": {
+        "forward": "c1478a06ee0ca7113a07c3287d82bc04ad3a941b3d4925b6db9533e96d2c0491",
+        "backward": "c1478a06ee0ca7113a07c3287d82bc04ad3a941b3d4925b6db9533e96d2c0491",
+        "equal": true
+      },
+      "contact": null,
+      "errors": [],
+      "failed": []
+    },
+    "S08": {
+      "samples": [
+        {
+          "t": 0,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 1.4,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 2.6,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 3.8,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 4.9,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        },
+        {
+          "t": 5.56,
+          "overflow": false,
+          "idsUnique": true,
+          "svgLoaded": true,
+          "vietnameseFontLoaded": true,
+          "visibleHighlights": []
+        }
+      ],
+      "seekPixelHashes": {
+        "forward": "6416c5c57fe7ede9c6c3028eab35b20cc6b0ad16a9c123c0b66fd8d63305fa08",
+        "backward": "6416c5c57fe7ede9c6c3028eab35b20cc6b0ad16a9c123c0b66fd8d63305fa08",
+        "equal": true
+      },
+      "contact": {
+        "childHandCenter": {
+          "x": 418,
+          "y": 872
+        },
+        "parentWrist": {
+          "x": 418,
+          "y": 872
+        },
+        "distance": 0,
+        "nearArmD": "M330 750Q358 798 373 817L418 872",
+        "lidTransform": "matrix(1,0,-0.00632,0.045,170,835)"
+      },
+      "errors": [],
+      "failed": []
+    }
+  },
+  "review": {}
+}

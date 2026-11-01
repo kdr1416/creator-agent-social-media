@@ -1,0 +1,327 @@
+{
+  "browser": "Chrome/150.0.7871.115",
+  "capture": "Existing Puppeteer + headless Chrome; SVG/HTML; no video render",
+  "results": [
+    {
+      "id": "S03-A",
+      "fonts": [
+        true,
+        true
+      ],
+      "text": [],
+      "svgIds": [
+        "sky",
+        "sea",
+        "stone",
+        "stoneSide",
+        "ground",
+        "skin",
+        "skinDark",
+        "blueShirt",
+        "coralShirt",
+        "pants",
+        "room",
+        "terrace",
+        "awning",
+        "hair",
+        "desk",
+        "light",
+        "s03-distant-town",
+        "s03-building",
+        "s03-masonry-relief",
+        "s03-balcony-garden",
+        "s03-cafe-cast-shadow",
+        "s03-cafe-roof",
+        "s03-cafe-person-left",
+        "s03-cafe-person-left-head",
+        "s03-cafe-person-right",
+        "s03-cafe-person-right-head",
+        "s03-table",
+        "s03-table-props",
+        "s03-table-vase",
+        "s03-cafe-planter",
+        "s03-runner",
+        "s03-runner-head",
+        "s03-hero-placement",
+        "s03-hero",
+        "s03-hero-leg-far",
+        "s03-hero-leg-near",
+        "s03-hero-arm-far",
+        "s03-hero-arm-near",
+        "s03-hero-head",
+        "s03-foreground-agave",
+        "s03-water-geometry"
+      ],
+      "width": 1080,
+      "height": 1920,
+      "errors": [],
+      "failed": [],
+      "png_sha256": "8dcf0712e42cc603258b67f7c1acbe15b166f34bd71d51f408cd4c2e03c76880",
+      "repeat_identical": true,
+      "fresh_identical": true,
+      "duplicate_ids": []
+    },
+    {
+      "id": "S03-B",
+      "fonts": [
+        true,
+        true
+      ],
+      "text": [
+        {
+          "text": "cà phê",
+          "bbox": {
+            "x": 78,
+            "y": 657,
+            "width": 195.4375,
+            "height": 88
+          },
+          "screen": {
+            "x": 73.56886291503906,
+            "y": 734.122802734375,
+            "width": 253.10557556152344,
+            "height": 159.199951171875
+          },
+          "font": "Editorial"
+        },
+        {
+          "text": "NGOÀI TRỜI",
+          "bbox": {
+            "x": 100,
+            "y": 762,
+            "width": 153.21875,
+            "height": 33
+          },
+          "screen": {
+            "x": 129.66683959960938,
+            "y": 862.2496337890625,
+            "width": 187.9810791015625,
+            "height": 82.90411376953125
+          },
+          "font": "Display"
+        }
+      ],
+      "svgIds": [
+        "sky",
+        "sea",
+        "stone",
+        "stoneSide",
+        "ground",
+        "skin",
+        "skinDark",
+        "blueShirt",
+        "coralShirt",
+        "pants",
+        "room",
+        "terrace",
+        "awning",
+        "hair",
+        "desk",
+        "light",
+        "s03-distant-town",
+        "s03-building",
+        "s03-masonry-relief",
+        "s03-balcony-garden",
+        "s03-cafe-cast-shadow",
+        "s03-cafe-roof",
+        "s03-cafe-type",
+        "s03-type-main",
+        "s03-graphic-disc",
+        "s03-cafe-person-left",
+        "s03-cafe-person-left-head",
+        "s03-cafe-person-left-cup",
+        "s03-cafe-person-right",
+        "s03-cafe-person-right-head",
+        "s03-table",
+        "s03-table-props",
+        "s03-table-vase",
+        "s03-cafe-planter",
+        "s03-runner",
+        "s03-runner-head",
+        "s03-hero-placement",
+        "s03-hero",
+        "s03-hero-leg-far",
+        "s03-hero-leg-near",
+        "s03-hero-arm-far",
+        "s03-hero-arm-near",
+        "s03-hero-head",
+        "s03-foreground-agave",
+        "s03-water-geometry"
+      ],
+      "width": 1080,
+      "height": 1920,
+      "errors": [],
+      "failed": [],
+      "png_sha256": "35b8cebc7bbfa285a877584a07ece4d18aa208102c3d3701743221bfadc20762",
+      "repeat_identical": true,
+      "fresh_identical": true,
+      "duplicate_ids": []
+    },
+    {
+      "id": "S08-A",
+      "fonts": [
+        true,
+        true
+      ],
+      "text": [],
+      "svgIds": [
+        "sky",
+        "sea",
+        "stone",
+        "stoneSide",
+        "ground",
+        "skin",
+        "skinDark",
+        "blueShirt",
+        "coralShirt",
+        "pants",
+        "room",
+        "terrace",
+        "awning",
+        "hair",
+        "desk",
+        "light",
+        "s08-camera",
+        "s08-opening",
+        "s08-wall-shelf",
+        "s08-shelf-plant",
+        "s08-wall-niche",
+        "s08-parent",
+        "s08-chair",
+        "s08-parent-leg-far",
+        "s08-parent-leg-near",
+        "s08-parent-head",
+        "s08-parent-arms",
+        "s08-parent-sleeves",
+        "s08-desk",
+        "s08-laptop-base",
+        "s08-laptop-lid",
+        "s08-notebook",
+        "s08-child",
+        "s08-child-leg-far",
+        "s08-child-leg-near",
+        "s08-child-head",
+        "s08-child-arm-far",
+        "s08-child-arm-near",
+        "s08-terrace-planter",
+        "s08-foreground-plant"
+      ],
+      "width": 1080,
+      "height": 1920,
+      "errors": [],
+      "failed": [],
+      "png_sha256": "99f8753056db69700cf3bf3aace27295ea53f0bd037b4325335e1d954bf4d27f",
+      "repeat_identical": true,
+      "fresh_identical": true,
+      "duplicate_ids": []
+    },
+    {
+      "id": "S08-B",
+      "fonts": [
+        true,
+        true
+      ],
+      "text": [
+        {
+          "text": "gia",
+          "bbox": {
+            "x": 509,
+            "y": 319,
+            "width": 119.75,
+            "height": 111
+          },
+          "screen": {
+            "x": 685.5,
+            "y": 58.5,
+            "width": 179.625,
+            "height": 166.5
+          },
+          "font": "Editorial"
+        },
+        {
+          "text": "đình",
+          "bbox": {
+            "x": 532,
+            "y": 412,
+            "width": 195.546875,
+            "height": 126
+          },
+          "screen": {
+            "x": 720,
+            "y": 198,
+            "width": 293.3203125,
+            "height": 189
+          },
+          "font": "Editorial"
+        }
+      ],
+      "svgIds": [
+        "sky",
+        "sea",
+        "stone",
+        "stoneSide",
+        "ground",
+        "skin",
+        "skinDark",
+        "blueShirt",
+        "coralShirt",
+        "pants",
+        "room",
+        "terrace",
+        "awning",
+        "hair",
+        "desk",
+        "light",
+        "s08-camera",
+        "s08-opening",
+        "s08-wall-shelf",
+        "s08-shelf-plant",
+        "s08-wall-niche",
+        "s08-parent",
+        "s08-chair",
+        "s08-parent-leg-far",
+        "s08-parent-leg-near",
+        "s08-parent-head",
+        "s08-parent-arms",
+        "s08-parent-sleeves",
+        "s08-desk",
+        "s08-laptop-base",
+        "s08-laptop-lid",
+        "s08-notebook",
+        "s08-child",
+        "s08-child-leg-far",
+        "s08-child-leg-near",
+        "s08-child-head",
+        "s08-child-arm-far",
+        "s08-child-arm-near",
+        "s08-terrace-planter",
+        "s08-foreground-plant",
+        "s08-family-type",
+        "s08-type-family-a",
+        "s08-type-family-b"
+      ],
+      "width": 1080,
+      "height": 1920,
+      "errors": [],
+      "failed": [],
+      "png_sha256": "8e96ef45aa42720954976c599ca20271367515598f2ef016f8d87e7df4177f2b",
+      "repeat_identical": true,
+      "fresh_identical": true,
+      "duplicate_ids": []
+    },
+    {
+      "gallery": {
+        "viewport": [
+          1440,
+          1220
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "gallery_mobile": {
+        "overflow": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "font": "Segoe UI Black",
+  "path": "assets/fonts/segoe-ui-black.ttf",
+  "source_sha256": "be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae",
+  "visible_text_all_scenes_covered": true,
+  "vietnamese_precomposed_test_string": "ÀÁẢÃẠĂẰẮẲẴẶÂẦẤẨẪẬÈÉẺẼẸÊỀẾỂỄỆÌÍỈĨỊÒÓỎÕỌÔỒỐỔỖỘƠỜỚỞỠỢÙÚỦŨỤƯỪỨỬỮỰỲÝỶỸỴĐàáảãạăằắẳẵặâầấẩẫậèéẻẽẹêềếểễệìíỉĩịòóỏõọôồốổỗộơờớởỡợùúủũụưừứửữựỳýỷỹỵđ",
+  "missing_glyphs": [],
+  "unicode_normalization": "source text preserved; precomposed Vietnamese cmap checked",
+  "raster_check": "See final mobile proof sheets, including ĐIỂM TỰA and NHIỀU THỊ TRƯỜNG."
+}

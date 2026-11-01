@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>S12 - Cơ hội có thể nắm bắt</title>
+  <style>
+    @font-face {
+      font-family: 'SegoeUIBlack';
+      src: url('assets/segoe-ui-black.ttf') format('truetype');
+      font-weight: 900;
+    }
+    @font-face {
+      font-family: 'ArialCustom';
+      src: url('assets/arial.ttf') format('truetype');
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 720px;
+      height: 1280px;
+      overflow: hidden;
+      background: #F0EAFB;
+      font-family: 'ArialCustom', sans-serif;
+    }
+    #canvas {
+      position: relative;
+      width: 720px;
+      height: 1280px;
+      background: #F0EAFB;
+    }
+    .title {
+      position: absolute;
+      top: 150px;
+      left: 60px;
+      width: 600px;
+      text-align: center;
+      font-family: 'SegoeUIBlack', sans-serif;
+      font-size: 54px;
+      color: #0870AC;
+      letter-spacing: 2px;
+      line-height: 1.2;
+    }
+    .svg-scene {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 720px;
+      height: 1280px;
+    }
+  </style>
+</head>
+<body>
+  <div id="canvas" class="clip" data-composition-id="root" data-start="0" data-duration="3.5315" data-fps="30" data-width="720" data-height="1280">
+    <audio id="p12-audio" src="assets/voice.wav" class="clip" data-start="0" data-duration="3.5315"></audio>
+    <div class="title" id="p12-title">CƠ HỘI</div>
+
+    <svg class="svg-scene" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+      <!-- Tool Hanger Bar on top -->
+      <path d="M120 365L600 365" fill="none" stroke="#B39DAF" stroke-width="7" stroke-linecap="round"/>
+
+      <!-- Hanging Tool 2 (Right tool) -->
+      <g id="p12-tool2" transform="translate(540, 370)">
+        <path d="M10 0V85L35 115L48 97L25 75V0Z" fill="#9DCED8" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+      </g>
+
+      <!-- Hanging Tool 1 (Chosen Tool - Wrench / Caliper) -->
+      <g id="p12-tool1" data-layout-allow-overflow transform="translate(425, 370)">
+        <path d="M15 0V70L-10 100L10 118L40 86V0Z" fill="#A9D2C2" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+      </g>
+
+      <!-- Workshop Workbench Structure on the right -->
+      <g id="p12-table" transform="translate(318, 717) scale(1.6)">
+        <rect x="0" y="0" width="195" height="24" rx="2" fill="#C5DFDA" stroke="#30313B" stroke-width="2.6"/>
+        <line x1="20" y1="24" x2="15" y2="150" stroke="#30313B" stroke-width="3" stroke-linecap="round"/>
+        <line x1="175" y1="24" x2="181" y2="150" stroke="#30313B" stroke-width="3" stroke-linecap="round"/>
+      </g>
+
+      <!-- Workshop practice block on workbench -->
+      <rect id="p12-workpiece" x="342" y="746" width="76" height="114" rx="10" fill="#CBB3D9" stroke="#30313B" stroke-width="3"/>
+
+      <!-- Practice Stool -->
+      <g id="p12-stool" transform="translate(188, 987)">
+        <rect x="0" y="0" width="111" height="23" rx="4" fill="#F3CF9B" stroke="#30313B" stroke-width="3"/>
+        <line x1="15" y1="23" x2="10" y2="76" stroke="#30313B" stroke-width="3" stroke-linecap="round"/>
+        <line x1="96" y1="23" x2="101" y2="76" stroke="#30313B" stroke-width="3" stroke-linecap="round"/>
+      </g>
+
+      <!-- Student Mascot Rig -->
+      <g id="p12-mascot" transform="translate(178, 745) scale(1.12)">
+        <ellipse cx="63" cy="203" rx="65" ry="10" fill="#D7BDA8" opacity=".5"/>
+        <path d="M48 143L41 190L18 194M90 143L98 190L120 194" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+        <!-- Backpack -->
+        <rect x="103" y="50" width="39" height="91" rx="16" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+        <path d="M113 69L134 78" fill="none" stroke="#A2D8ED" stroke-width="3"/>
+        <!-- Reaching Far Arm -->
+        <g id="p12-mascot-reach" transform="translate(25, 72)">
+          <path id="p12-reach-path" d="M0 0Q40 -40 90 -90" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+          <circle id="p12-reach-hand" cx="90" cy="-90" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+        </g>
+        <!-- Torso -->
+        <path d="M21 31Q24 9 50 12L95 14Q123 16 122 46L115 121Q114 148 86 152L49 149Q20 148 17 123L13 58Q12 42 21 31Z" fill="#FFAA28" stroke="#30313B" stroke-width="3.3"/>
+        <path d="M25 41Q30 25 49 26" fill="none" stroke="#FFD77B" stroke-width="5" stroke-linecap="round"/>
+        <!-- Cap -->
+        <path d="M28 28Q17-8 61-9Q108-13 116 27Z" fill="#A990D5" stroke="#30313B" stroke-width="3"/>
+        <path d="M17 29Q54 14 111 29L131 34Q138 40 127 42L35 39" fill="#8B73C0" stroke="#30313B" stroke-width="3"/>
+        <!-- Eyes looking up/rightwards -->
+        <g id="p12-eyes">
+          <ellipse cx="54" cy="66" rx="4.6" ry="7" fill="#30313B"/>
+          <ellipse cx="88" cy="65" rx="4.6" ry="7" fill="#30313B"/>
+        </g>
+        <!-- Cheeks and Smile -->
+        <ellipse cx="40" cy="87" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+        <ellipse cx="100" cy="86" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+        <path d="M57 91Q70 105 82 88" fill="none" stroke="#30313B" stroke-width="3.3" stroke-linecap="round"/>
+        <!-- Near Arm -->
+        <g transform="translate(109, 83)">
+          <path d="M0 0Q18 20 32 8" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="32" cy="8" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <script src="assets/gsap.min.js"></script>
+  <script>
+    const tl = gsap.timeline({paused: true});
+    window.__timelines = window.__timelines || {};
+    window.__timelines["root"] = tl;
+
+    // 0.0s: Initial setup
+    gsap.set('#p12-stool', {x: 188});
+
+    // 0.8s: Mascot pulls stool slightly closer and reaches upward
+    tl.to('#p12-stool', {x: 210, duration: 0.5, ease: 'power1.out'}, 0.8)
+      .to('#p12-mascot', {x: 195, duration: 0.5, ease: 'power1.out'}, 0.8)
+      .to('#p12-mascot-reach', {y: -15, duration: 0.6, ease: 'power2.out'}, 0.9);
+
+    // 1.8s: Hand reaches Tool 1, unhooks it
+    tl.to('#p12-tool1', {y: -10, duration: 0.2, ease: 'power1.out'}, 1.7)
+      .to('#p12-tool1', {y: 260, x: -20, duration: 0.7, ease: 'power2.inOut'}, 1.9)
+      .to('#p12-mascot-reach', {y: 10, duration: 0.7, ease: 'power2.inOut'}, 1.9);
+
+    // 2.7s: Tool brings down onto workpiece on workbench, mascot engages in practical work
+    tl.to('#p12-workpiece', {scale: 1.05, transformOrigin: 'center', duration: 0.2, yoyo: true, repeat: 1}, 2.6)
+      .to('#p12-eyes', {y: 4, duration: 0.3}, 2.6);
+  </script>
+</body>
+</html>

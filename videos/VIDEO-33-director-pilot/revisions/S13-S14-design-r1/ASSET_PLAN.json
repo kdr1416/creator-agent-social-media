@@ -1,0 +1,20 @@
+{
+  "engine": "HF_ONLY",
+  "status": "static_proposal_pending_approval",
+  "existing_identity_assets": [
+    "approved orange mascot rig",
+    "approved mint-clothed mother rig",
+    "local Segoe UI Black font",
+    "local GSAP runtime"
+  ],
+  "new_vector_assets": [
+    "generic campus facade/steps/door",
+    "Vietnam house illustration",
+    "Malta-style house illustration",
+    "house key/house charm",
+    "forked paths and destination environments",
+    "gate posts, hinges, rigid leaf, bars, handle"
+  ],
+  "layer_and_motion_contract": "DIRECTION.md",
+  "no_real_listing_or_institution_claim": true
+}

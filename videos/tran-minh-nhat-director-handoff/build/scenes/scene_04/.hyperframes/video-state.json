@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "historyId": "43c8c773-4db3-47f6-b190-af0303c89502",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "assets/arial.ttf": {
+      "hash": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\43c8c773-4db3-47f6-b190-af0303c89502\\blobs\\b3\\b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a"
+    },
+    "assets/arialbd.ttf": {
+      "hash": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\43c8c773-4db3-47f6-b190-af0303c89502\\blobs\\e8\\e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\43c8c773-4db3-47f6-b190-af0303c89502\\blobs\\c1\\c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "assets/ledger.json": {
+      "hash": "a2953d19dbfcbf5b9f29c655076fcef2e75da8aa9d30bf189388d215234bda6e",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\43c8c773-4db3-47f6-b190-af0303c89502\\blobs\\a2\\a2953d19dbfcbf5b9f29c655076fcef2e75da8aa9d30bf189388d215234bda6e"
+    },
+    "assets/scene_04.wav": {
+      "hash": "55a4529187c2060f4201a2f1141a6f7517c2255dec5d4b102d3599d1d44c8b24",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\43c8c773-4db3-47f6-b190-af0303c89502\\blobs\\55\\55a4529187c2060f4201a2f1141a6f7517c2255dec5d4b102d3599d1d44c8b24"
+    },
+    "assets/vu-campus.jpg": {
+      "hash": "30a437c64186849c83fc7bdb77f2b23349e0afa4b60f60f039ae589e1c1cc054",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\43c8c773-4db3-47f6-b190-af0303c89502\\blobs\\30\\30a437c64186849c83fc7bdb77f2b23349e0afa4b60f60f039ae589e1c1cc054"
+    },
+    "hyperframes.json": {
+      "hash": "104d040dc6c4cb57e22810fad4850a8f0cfe6c8dd2e4e96c71d6d1294a07df7a",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\43c8c773-4db3-47f6-b190-af0303c89502\\blobs\\10\\104d040dc6c4cb57e22810fad4850a8f0cfe6c8dd2e4e96c71d6d1294a07df7a"
+    },
+    "index.html": {
+      "hash": "cb29e024d91f1abab90bfdcdc1843086172826f8942030a105367968855cdcaa",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\43c8c773-4db3-47f6-b190-af0303c89502\\blobs\\cb\\cb29e024d91f1abab90bfdcdc1843086172826f8942030a105367968855cdcaa"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "4ea8cd4e-4c45-4dbe-8281-6378026e7a93"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "4ea8cd4e-4c45-4dbe-8281-6378026e7a93",
+        "scope": "project",
+        "report": "D:\\Năm 3\\flowkit-main\\videos\\tran-minh-nhat-director-handoff\\build\\scenes\\scene_04\\.hyperframes\\artifacts\\checks\\4ea8cd4e-4c45-4dbe-8281-6378026e7a93.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1792557014192,
+        "contentHash": "b24e5c54892c974a74a6bef6ad9f6f659d303d0000fa80bddbcf4eac8b259793",
+        "revision": null,
+        "inputFingerprint": "d47cc58979bfc5603ae798eb37fd53ea2788c96eadee93dc0f5c3d9d8ff53f11",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "98d5da7e-95a6-4a2c-b306-7533192bb117",
+      "completedAt": 1792557049136,
+      "output": "D:\\Năm 3\\flowkit-main\\videos\\tran-minh-nhat-director-handoff\\build\\renders\\scene_04_visual.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

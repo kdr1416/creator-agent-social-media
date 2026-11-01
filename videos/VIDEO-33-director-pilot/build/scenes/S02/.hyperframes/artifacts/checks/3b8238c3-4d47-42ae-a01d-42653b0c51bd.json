@@ -1,0 +1,257 @@
+{
+  "ok": false,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": false,
+    "errorCount": 1,
+    "warningCount": 0,
+    "infoCount": 3,
+    "findings": [
+      {
+        "code": "text_box_overflow",
+        "severity": "error",
+        "time": 1.5,
+        "selector": "#p02-title",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 154.39,
+          "top": 181.93,
+          "right": 593.91,
+          "bottom": 261.57,
+          "width": 439.52,
+          "height": 79.64
+        },
+        "containerSelector": "#p02-title",
+        "text": "CHI PHÍ DU HỌC",
+        "fixHint": "Text is 440px x 80px inside 452px x 109px and overflows by up to 8px; widen the container to at least ~460px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 134.15,
+          "top": 168.08,
+          "right": 585.85,
+          "bottom": 276.87,
+          "width": 451.69,
+          "height": 108.79
+        },
+        "overflow": {
+          "right": 8.06
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 154.39,
+          "y": 181.93,
+          "width": 439.52,
+          "height": 79.64
+        },
+        "firstSeen": 1.5,
+        "lastSeen": 3.5,
+        "occurrences": 3,
+        "heldMs": 2000,
+        "times": [
+          1.5,
+          2.5,
+          3.5
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 0.1,
+        "selector": "#p02-rolling-coins",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -208,
+          "top": -97.3,
+          "right": -72.7,
+          "bottom": -8,
+          "width": 135.3,
+          "height": 89.3
+        },
+        "containerSelector": "#p02-art",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 720,
+          "bottom": 1280,
+          "width": 720,
+          "height": 1280
+        },
+        "overflow": {
+          "left": 208,
+          "top": 97.3
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -208,
+          "y": -97.3,
+          "width": 135.3,
+          "height": 89.3
+        },
+        "firstSeen": 0.1,
+        "lastSeen": 1.5,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          0.1,
+          1.5
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 0.1,
+        "selector": "#p02-coin-stack",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 413,
+          "top": 576,
+          "right": 557,
+          "bottom": 1440.8,
+          "width": 144,
+          "height": 864.8
+        },
+        "containerSelector": "#p02-art",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 720,
+          "bottom": 1280,
+          "width": 720,
+          "height": 1280
+        },
+        "overflow": {
+          "bottom": 160.8
+        },
+        "dataAttributes": {
+          "data-hf-svg-reference-aliases": "[{\"name\":\"filter\",\"localName\":\"filter\",\"namespaceURI\":null,\"before\":\"url(#p02-shadow)\",\"after\":\"url(#p02-shadow)\"}]"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 413,
+          "y": 576,
+          "width": 144,
+          "height": 864.8
+        },
+        "firstSeen": 0.1,
+        "lastSeen": 0.1,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          0.1
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 2.5,
+        "selector": "#p02-ruler",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 568.38,
+          "top": -27.45,
+          "right": 612.98,
+          "bottom": 243.57,
+          "width": 44.6,
+          "height": 271.01
+        },
+        "containerSelector": "#p02-art",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 720,
+          "bottom": 1280,
+          "width": 720,
+          "height": 1280
+        },
+        "overflow": {
+          "top": 27.45
+        },
+        "dataAttributes": {
+          "data-hf-svg-reference-aliases": "[{\"name\":\"filter\",\"localName\":\"filter\",\"namespaceURI\":null,\"before\":\"url(#p02-shadow)\",\"after\":\"url(#p02-shadow)\"}]",
+          "data-svg-origin": "-18 0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 568.38,
+          "y": -27.45,
+          "width": 44.6,
+          "height": 271.01
+        },
+        "firstSeen": 2.5,
+        "lastSeen": 2.5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          2.5
+        ]
+      }
+    ],
+    "duration": 3.8555,
+    "samples": [
+      0.1,
+      1.5,
+      2.5,
+      3.5
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 4,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.1,
+      1.5,
+      2.5,
+      3.5
+    ],
+    "checked": 3,
+    "passed": 3
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

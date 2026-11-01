@@ -1,0 +1,30 @@
+[
+  {
+    "scene_id": "S10",
+    "source_segments": [
+      11
+    ],
+    "audio_source": [
+      "inputs/audio/seg_11.wav"
+    ],
+    "duration": 6.156874999999999,
+    "start_sample": 1134024,
+    "end_sample": 1281789,
+    "raw_text": "Chị giới khoảng 3,8 tỷ đồng, chương trình Thế San Manta mang đến cơ hội định cư cho 4 thế hệ.",
+    "corrected_text": "Chỉ với khoảng 3,8 tỷ đồng, chương trình Thẻ Xanh Malta mang đến cơ hội định cư cho 4 thế hệ."
+  },
+  {
+    "scene_id": "S12",
+    "source_segments": [
+      14
+    ],
+    "audio_source": [
+      "inputs/audio/seg_14.wav"
+    ],
+    "duration": 3.531458333333333,
+    "start_sample": 1445273,
+    "end_sample": 1530028,
+    "raw_text": "và những cơ hội mà các thế hệ sau có thể nắm bắt tại Châu Âu.",
+    "corrected_text": "và những cơ hội mà các thế hệ sau có thể nắm bắt tại Châu Âu."
+  }
+]

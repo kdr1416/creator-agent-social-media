@@ -1,0 +1,179 @@
+[
+  {
+    "id": "S03-01",
+    "errors": [],
+    "fonts": {
+      "display": true,
+      "italic": true
+    },
+    "text": [
+      {
+        "text": "đi",
+        "bounds": {
+          "x": 85,
+          "y": 977,
+          "width": 52.224609375,
+          "height": 81
+        }
+      },
+      {
+        "text": "BỘ",
+        "bounds": {
+          "x": 82,
+          "y": 1053,
+          "width": 149.703125,
+          "height": 190
+        }
+      }
+    ]
+  },
+  {
+    "id": "S03-02",
+    "errors": [],
+    "fonts": {
+      "display": true,
+      "italic": true
+    },
+    "text": [
+      {
+        "text": "cà phê",
+        "bounds": {
+          "x": 103,
+          "y": 482,
+          "width": 222.9013671875,
+          "height": 100
+        }
+      },
+      {
+        "text": "NGOÀI TRỜI",
+        "bounds": {
+          "x": 172,
+          "y": 635,
+          "width": 149.109375,
+          "height": 33
+        }
+      }
+    ]
+  },
+  {
+    "id": "S03-03",
+    "errors": [],
+    "fonts": {
+      "display": false,
+      "italic": true
+    },
+    "text": [
+      {
+        "text": "gia",
+        "bounds": {
+          "x": 48,
+          "y": 549,
+          "width": 139.171875,
+          "height": 129
+        }
+      },
+      {
+        "text": "đình",
+        "bounds": {
+          "x": 64,
+          "y": 647,
+          "width": 225.921875,
+          "height": 145
+        }
+      }
+    ]
+  },
+  {
+    "id": "S08-01",
+    "errors": [],
+    "fonts": {
+      "display": true,
+      "italic": false
+    },
+    "text": [
+      {
+        "text": "CÔNG",
+        "bounds": {
+          "x": 57,
+          "y": 212,
+          "width": 159.6875,
+          "height": 97
+        }
+      },
+      {
+        "text": "VIỆC",
+        "bounds": {
+          "x": 57,
+          "y": 303,
+          "width": 140.88525390625,
+          "height": 109
+        }
+      }
+    ]
+  },
+  {
+    "id": "S08-02",
+    "errors": [],
+    "fonts": {
+      "display": true,
+      "italic": true
+    },
+    "text": [
+      {
+        "text": "thời",
+        "bounds": {
+          "x": 405,
+          "y": 346,
+          "width": 128.921875,
+          "height": 88
+        }
+      },
+      {
+        "text": "GIAN",
+        "bounds": {
+          "x": 400,
+          "y": 436,
+          "width": 165.734375,
+          "height": 101
+        }
+      }
+    ]
+  },
+  {
+    "id": "S08-03",
+    "errors": [],
+    "fonts": {
+      "display": true,
+      "italic": true
+    },
+    "text": [
+      {
+        "text": "THỜI GIAN",
+        "bounds": {
+          "x": 419,
+          "y": 454,
+          "width": 129.515625,
+          "height": 32
+        }
+      },
+      {
+        "text": "gia",
+        "bounds": {
+          "x": 406,
+          "y": 490,
+          "width": 132.703125,
+          "height": 123
+        }
+      },
+      {
+        "text": "đình",
+        "bounds": {
+          "x": 410,
+          "y": 595,
+          "width": 208.828125,
+          "height": 135
+        }
+      }
+    ]
+  }
+]

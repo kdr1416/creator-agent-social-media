@@ -1,0 +1,97 @@
+{
+  "status": "two scenes rendered; user visual acceptance pending",
+  "proof_type": "HyperFrames snapshots and sampled decoded MP4 frames, including opening/motion/final/mobile/grayscale; no claim of full playback listening",
+  "reference_alignment": {
+    "colour": {
+      "status": "partial",
+      "evidence": "Same cream/lilac grounds, vivid blue strips and orange focal material as reference/pilot; hexes approximate."
+    },
+    "typography": {
+      "status": "partial",
+      "evidence": "Tilted compact white-on-blue strips preserved; Arial differs from unidentified reference font."
+    },
+    "asset_mix": {
+      "status": "partial",
+      "evidence": "06 combines official photograph with custom cutaway;12 is a layered vector paper-world with the shared mascot, no unrelated photo forced into scene."
+    },
+    "composition": {
+      "status": "partial",
+      "evidence": "06 architectural cutaway,12 paper spread,04 envelope; distinct dominant silhouettes, same scale hierarchy and footer."
+    },
+    "mascot": {
+      "status": "partial",
+      "evidence": "Shared original mascot appears meaningfully in12; absent intentionally in dense06. Protagonist reacts/guides rather than operates every layer."
+    },
+    "motion": {
+      "status": "partial",
+      "evidence": "06 photo cover then operating workspaces;12 piece fit -> personal stroke -> raised route. More restrained than reference street/punch-in sequences."
+    }
+  },
+  "scene_06": {
+    "technical": "0 errors / 0 warnings in final check",
+    "semantic": "Five domains share one architecture; no arrows imply a production chain. Interior is illustrative, not actual floor plan.",
+    "text": "One replacing domain label + institution title; >=38px main labels.",
+    "grayscale": "Floor surfaces and instruments remain separate; no large dark merged masses.",
+    "mobile": "Essential type readable at360x640; instrument details are secondary, not required copy."
+  },
+  "scene_12": {
+    "technical": "0 errors; one expected rotation_pivot_drift warning on #p12-moving-piece",
+    "warning_review": "Paper piece deliberately translates115px and rotates into a slot. Sampled before/during/after fit; no unintended detached piece or pivot fault.",
+    "semantic": "One dossier develops from problem-solving to personal mark to future direction; no three independent information cards.",
+    "text": "One replacing concept label + short title.",
+    "grayscale": "Blue cover frames light pages; route separated by light paper, thin outline and shadow.",
+    "mobile": "Essential type readable; shape fit and route still visible."
+  },
+  "known_limits": [
+    "Spoken cues are approximate; no word-level forced alignment.",
+    "These nonconsecutive isolated scenes do not prove continuity through the full film.",
+    "Scene06 reduces character acting to prioritise five fields.",
+    "Scene12 has a more illustrative paper treatment than the reference real-UI collage."
+  ],
+  "revision_2": {
+    "font": "Arial Black900 makes both title and semantic labels heavier",
+    "scene_12_labels": "Tư duy beneath tangram; Định hướng above route, persistent with thin connector; reviewed actual decoded mobile frames",
+    "audio": "Both re-exports correlate >0.99995 with original voice slices",
+    "user_approval": "pending for revision2"
+  },
+  "revision_3": {
+    "font": "Segoe UI Black900, embedded local file",
+    "coverage": "All characters in visible Vietnamese text verified in actual TTF cmap; rejected Arial Black missing eleven characters",
+    "rendered_review": "Recheck title DẤU ẤN RIÊNG, Định hướng, Tư duy, Khoa học dữ liệu and Khoa học sức khoẻ at mobile size. No mixed-weight fallback in sampled proofs.",
+    "audio": "Original copied voice preserved; decoded AAC correlation >0.99995"
+  },
+  "revision_4": {
+    "change": "Removed illustration-note DOM text from both scenes",
+    "proofs": "Latest decoded frames in scene_XX/qa/",
+    "audio": "Original source slices remain unchanged"
+  },
+  "revision_5": {
+    "change": "Scene12 rebuilt: puzzle reasoning; self-applied cap/backpack/face personality; future-self sketch selected with reticle for direction",
+    "proof_times": [
+      0.3,
+      1.2,
+      1.75,
+      2.25,
+      3.2,
+      4.1
+    ],
+    "technical": "0 lint/runtime/contrast errors; pre-existing expected tangram-translation pivot warning reviewed",
+    "visual_checks": "Inspect dressing midpose, final three-label hold and mobile/grayscale; previous curved route absent",
+    "audio": "Original slice unchanged; AAC decoded correlation0.9999556",
+    "limitation": "Concept illustration, not a personal portrait or confirmed future outcome; word cues approximate."
+  },
+  "revision_6": {
+    "change": "No annotation leaders; study plan and campus photo selection replace future-self goal",
+    "proofs": [
+      0.3,
+      1.2,
+      1.75,
+      2.25,
+      3.2,
+      4.1
+    ],
+    "technical": "No lint/runtime/contrast errors; existing intentional moving-tangram pivot warning remains",
+    "audio": "Original voice unchanged; decoded AAC correlation>0.99995",
+    "user_approval": "pending"
+  }
+}

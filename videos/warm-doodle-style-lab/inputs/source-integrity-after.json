@@ -1,0 +1,31 @@
+{
+  "all_unchanged": true,
+  "count": 25,
+  "files": {
+    "docs/ANTIGRAVITY-VIDEO-WORKFLOW.md": "4835ec7b5ec67d624945651badb3898d0fc6e0054087c21cf228bde271f83b4b",
+    "scratch/render_handoff.json": "bf0089f44005ac490d77bca572027d49b8583f6baec2c5db081ea3a11c5e69d2",
+    "scratch/production_status.json": "8a5f398cb10d017d6b8c1b701601f4c8c4fa0f64ac5b6cd8229902fb239189f4",
+    "scratch/audio_handoff.json": "b927e8337652b6163a752c2851615ed29997a16cd0166f0cc6445aaa870e994a",
+    "scratch/voice_transcript.json": "31e9baf59d796fcbd33cb5c484cc892031b515d4adf75f6e243c1fc4f8d32a15",
+    "scratch/voice_transcript.md": "29f8db147f421e17da969759a60564b8e9a40537ee20545a00f1e2da8f2013bc",
+    "scratch/storyboard.md": "290f81cdb0d2501b896016251edecb68f99e7852fb4fe4a96615c7a86dd5f820",
+    "scratch/scene_routing.json": "9f0740fdc3bdab7cf12653879d3341d1c7fa3cfc7a1162354d1a4adc8619461e",
+    "scratch/scene_routing.md": "36ba8441f3b9e6503c55f6ca64a85360bbb17e70a753b5853e0dccbfc4ad6bcf",
+    "scratch/audio_slices/scene_01.wav": "298d20141e07f2610fec68ff4e0470290b77cf285dfd76e438f243edcafbf53c",
+    "scratch/audio_slices/scene_02.wav": "960cace01e5d24a06675fb65d25b187730a69ba4fc55ff742a1cb4b0081d694d",
+    "scratch/audio_slices/scene_03.wav": "af9906d6f927f3360702be2e6087551cef66c15b420c4b9b64d7f0298dc37288",
+    "scratch/audio_slices/scene_04.wav": "61c5e9b57ab5e15c3940664e5e6435bd3de003591773e5427bc1809c26cfd689",
+    "scratch/audio_slices/scene_05.wav": "33034d8f5a9b6c87accedcb5e900c936358703343911648786fc9a678c066fe9",
+    "scratch/audio_slices/scene_06.wav": "f4553a316f15b835d42b83998e332662e3e2ad0f0d678e2d6c6b406e16e8ddea",
+    "scratch/audio_slices/scene_07.wav": "2fd177796d1b19fae58785fa81f52d289350706e94f46c15cfccf711747f4e86",
+    "scratch/audio_slices/scene_08.wav": "42d8f24df034d2c408df3847d4f0ae27a00367093c923f83d6f4a809151cdd5c",
+    "scratch/audio_slices/scene_09.wav": "50c1b348c593b2cb622f20d1fb273c68eca6bbaf982c4206c22da4f1b7c4eb89",
+    "scratch/audio_slices/scene_10.wav": "3f4be07be2f0ef82099d7d8d6ee21c22de53b852be2a9bff5e09a7f1724a1409",
+    "scratch/audio_slices/scene_11.wav": "3f4a0288b2aced27487c668ffc102e0bf20ba7234726d63ba23d07ba0238c46a",
+    "scratch/audio_slices/scene_12.wav": "2c24bc0f29ab9fe108e548495306450d0bf4b73812f1e4d68461aaedc7247144",
+    "scratch/audio_slices/scene_13.wav": "43105a9b0a4533e446ea2698910b9c4b12d0e0d8655f6c4a2a14775b396e8292",
+    "scratch/audio_slices/scene_14.wav": "d50d3591cdfa58ea098b632555a99a60dfaab6677ea15f41bca1b5aa7b2dc64d",
+    "scratch/audio_slices/scene_15.wav": "c8561731374c10d98d2eccba52de7900fd5f8211b11d918d584d857637223d95",
+    "scratch/audio_slices/scene_16.wav": "5511f11e9da052da620ef7af1f939306a350cdb83c06567eb5b2faf02fed1e76"
+  }
+}

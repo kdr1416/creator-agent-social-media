@@ -1,0 +1,130 @@
+[
+  {
+    "scene": "S06",
+    "duration": 5.8,
+    "times": [
+      0.12,
+      1.972,
+      3.886,
+      5.6499999999999995
+    ],
+    "frames": [
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S06-0.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S06-1.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S06-2.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S06-3.jpg"
+    ]
+  },
+  {
+    "scene": "S07",
+    "duration": 4.7,
+    "times": [
+      0.12,
+      1.598,
+      3.1490000000000005,
+      4.55
+    ],
+    "frames": [
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S07-0.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S07-1.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S07-2.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S07-3.jpg"
+    ]
+  },
+  {
+    "scene": "S08",
+    "duration": 5.5,
+    "times": [
+      0.12,
+      1.87,
+      3.685,
+      5.35
+    ],
+    "frames": [
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S08-0.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S08-1.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S08-2.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S08-3.jpg"
+    ]
+  },
+  {
+    "scene": "S10",
+    "duration": 6.166667,
+    "times": [
+      0.12,
+      2.09666678,
+      4.131666890000001,
+      6.016667
+    ],
+    "frames": [
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S10-0.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S10-1.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S10-2.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S10-3.jpg"
+    ]
+  },
+  {
+    "scene": "S11",
+    "duration": 6.833333,
+    "times": [
+      0.12,
+      2.32333322,
+      4.57833311,
+      6.683332999999999
+    ],
+    "frames": [
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S11-0.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S11-1.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S11-2.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S11-3.jpg"
+    ]
+  },
+  {
+    "scene": "S12",
+    "duration": 3.533333,
+    "times": [
+      0.12,
+      1.20133322,
+      2.36733311,
+      3.383333
+    ],
+    "frames": [
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S12-0.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S12-1.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S12-2.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S12-3.jpg"
+    ]
+  },
+  {
+    "scene": "S13",
+    "duration": 4.566667,
+    "times": [
+      0.12,
+      1.55266678,
+      3.05966689,
+      4.4166669999999995
+    ],
+    "frames": [
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S13-0.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S13-1.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S13-2.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S13-3.jpg"
+    ]
+  },
+  {
+    "scene": "S14",
+    "duration": 6.866667,
+    "times": [
+      0.12,
+      2.33466678,
+      4.60066689,
+      6.716666999999999
+    ],
+    "frames": [
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S14-0.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S14-1.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S14-2.jpg",
+      "videos\\VIDEO-33-director-pilot\\qa\\antigravity-review-r1\\S14-3.jpg"
+    ]
+  }
+]

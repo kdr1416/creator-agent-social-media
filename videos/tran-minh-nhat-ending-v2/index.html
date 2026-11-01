@@ -1,0 +1,249 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>Nhật · Ending v2</title><script src="assets/gsap.min.js"></script><style>@font-face{font-family:Display;src:url(assets/segoe-ui-black.ttf);font-weight:900}@font-face{font-family:Body;src:url(assets/arial.ttf)}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}#ending{position:relative;width:100%;height:100%;overflow:hidden;background:#FDF1E6;color:#30313B;font-family:Body,sans-serif}.scene{position:absolute;inset:0}#scene17{opacity:0}.art{position:absolute;inset:0;width:720px;height:1280px}.title{position:absolute;z-index:5;font-family:Display;font-weight:900;background:#087BC1;color:#fff;padding:12px 21px;box-shadow:5px 6px 0 #30313b13;white-space:nowrap}.s16title{top:200px;left:190px;font-size:41px}.s17title{top:230px;left:93px;font-size:35px}.paper-bg{position:absolute;inset:0;background:#F5EDF7}.paper-bg:before{content:"";position:absolute;left:70px;top:350px;width:580px;height:580px;border-radius:50%;background:#FFF9F0}</style></head><body><div id="ending" data-composition-id="ending" data-width="720" data-height="1280" data-duration="7.866666666666666"><div class="scene" id="scene16"><svg class="art" viewBox="0 0 720 1280" aria-label="Illustrated Amsterdam canal and bridge scene">
+      <defs>
+        <!-- Soft morning sky gradient -->
+        <linearGradient id="sky-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FCEEE2"/>
+          <stop offset="60%" stop-color="#F6E2DC"/>
+          <stop offset="100%" stop-color="#EADBEE"/>
+        </linearGradient>
+        <!-- Water reflection gradient -->
+        <linearGradient id="water-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#93B8C8"/>
+          <stop offset="100%" stop-color="#648A9C"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Sky Background -->
+      <rect x="0" y="0" width="720" height="850" fill="url(#sky-grad)"/>
+
+      <!-- Sun Glow -->
+      <circle cx="360" cy="500" r="140" fill="#FFF8EE" opacity="0.6"/>
+
+      <!-- ==============================================
+           SKYLINE: AMSTERDAM GABLE HOUSES (x70–650, y360–680)
+           ============================================== -->
+      <g id="skyline-buildings">
+        <!-- Far silhouette buildings -->
+        <rect x="80" y="440" width="90" height="240" fill="#E4D0DE"/>
+        <polygon points="80,440 125,385 170,440" fill="#D3BBCB"/>
+        
+        <rect x="180" y="410" width="105" height="270" fill="#DECAD4"/>
+        <polygon points="180,410 210,410 210,360 250,360 250,410 285,410" fill="#CCA8BC"/>
+        
+        <rect x="295" y="430" width="95" height="250" fill="#E8D5CE"/>
+        <polygon points="295,430 342,370 390,430" fill="#D9BAAE"/>
+
+        <rect x="400" y="390" width="115" height="290" fill="#D8CBDD"/>
+        <polygon points="400,390 425,390 425,340 490,340 490,390 515,390" fill="#BFADC4"/>
+
+        <rect x="525" y="420" width="110" height="260" fill="#E2CEC2"/>
+        <polygon points="525,420 580,360 635,420" fill="#CFAEA0"/>
+
+        <!-- Warm glowing window grid rows -->
+        <g fill="#FFFDF2" opacity="0.85">
+          <rect x="100" y="460" width="18" height="24" rx="2"/>
+          <rect x="135" y="460" width="18" height="24" rx="2"/>
+          <rect x="100" y="505" width="18" height="24" rx="2"/>
+          <rect x="135" y="505" width="18" height="24" rx="2"/>
+
+          <rect x="205" y="440" width="22" height="28" rx="2"/>
+          <rect x="245" y="440" width="22" height="28" rx="2"/>
+          <rect x="205" y="490" width="22" height="28" rx="2"/>
+          <rect x="245" y="490" width="22" height="28" rx="2"/>
+
+          <rect x="425" y="420" width="22" height="28" rx="2"/>
+          <rect x="465" y="420" width="22" height="28" rx="2"/>
+          <rect x="425" y="470" width="22" height="28" rx="2"/>
+          <rect x="465" y="470" width="22" height="28" rx="2"/>
+
+          <rect x="550" y="450" width="22" height="26" rx="2"/>
+          <rect x="590" y="450" width="22" height="26" rx="2"/>
+        </g>
+      </g>
+
+      <!-- Canal Quay Wall & Water Surface -->
+      <rect x="0" y="830" width="720" height="250" fill="url(#water-grad)"/>
+      <line x1="0" y1="830" x2="720" y2="830" stroke="#30313B" stroke-width="4"/>
+      
+      <!-- Water ripple strokes -->
+      <g stroke="#C6E3F0" stroke-width="2.5" stroke-linecap="round" opacity="0.6">
+        <path d="M60 860Q120 865 180 860"/>
+        <path d="M240 880Q320 885 400 880"/>
+        <path d="M460 865Q560 870 660 865"/>
+        <path d="M120 915Q220 920 320 915"/>
+        <path d="M380 925Q480 930 580 925"/>
+        <path d="M80 970Q180 975 280 970"/>
+        <path d="M420 980Q520 985 620 980"/>
+      </g>
+
+      <!-- ==============================================
+           THE LOW BRICK CANAL BRIDGE (x60–660, y700–910)
+           ============================================== -->
+      <g id="canal-bridge">
+        <!-- Bridge Under-Arch Shadow -->
+        <path d="M210 830Q360 760 510 830Z" fill="#3A4D57"/>
+        
+        <!-- Bridge Structure (warm terracotta brick #D37D58) -->
+        <path d="M60 790Q360 720 660 790L660 830Q360 760 60 830Z" fill="#C96B48" stroke="#30313B" stroke-width="3.5"/>
+        <!-- Bridge Walkway Surface -->
+        <path d="M60 790Q360 720 660 790" fill="none" stroke="#FAF1E6" stroke-width="7"/>
+        
+        <!-- Classic Bridge Cast-Iron Railing -->
+        <g stroke="#30313B" stroke-width="3" stroke-linecap="round">
+          <path d="M70 755Q360 685 650 755" fill="none" stroke-width="4"/>
+          <!-- Vertical balusters -->
+          <line x1="120" y1="780" x2="120" y2="745"/>
+          <line x1="180" y1="768" x2="180" y2="733"/>
+          <line x1="240" y1="758" x2="240" y2="723"/>
+          <line x1="300" y1="751" x2="300" y2="716"/>
+          <line x1="360" y1="748" x2="360" y2="713"/>
+          <line x1="420" y1="751" x2="420" y2="716"/>
+          <line x1="480" y1="758" x2="480" y2="723"/>
+          <line x1="540" y1="768" x2="540" y2="733"/>
+          <line x1="600" y1="780" x2="600" y2="745"/>
+        </g>
+      </g>
+
+      <!-- ==============================================
+           MASCOT NHẬT WALKING ACROSS BRIDGE
+           Anchored at (320, 640)
+           ============================================== -->
+      <g id="student-walk-anchor" transform="translate(0,0)">
+        <g id="student-rig">
+          <!-- Footstep shadow on bridge walkway -->
+          <ellipse cx="65" cy="180" rx="42" ry="8" fill="#30313B" opacity="0.2"/>
+          
+          <!-- Alternating Legs in walk cycle -->
+          <g id="legs-group">
+            <path id="leg-left" d="M48 120L38 165L20 168" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+            <path id="leg-right" d="M82 120L95 165L115 168" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+          </g>
+
+          <!-- Blue Backpack (Carrying to Netherlands) -->
+          <rect x="15" y="45" width="34" height="85" rx="14" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+          <path d="M22 65L38 75" fill="none" stroke="#A2D8ED" stroke-width="2.5"/>
+
+          <!-- Torso -->
+          <path d="M35 30Q38 10 65 12L98 14Q120 16 118 42L112 110Q110 132 85 135L52 132Q28 131 25 108Z" fill="#FFAA28" stroke="#30313B" stroke-width="3.3"/>
+          <path d="M42 38Q48 24 65 25" fill="none" stroke="#FFD77B" stroke-width="4.5" stroke-linecap="round"/>
+
+          <!-- Purple Cap -->
+          <path d="M42 26Q32 -6 70 -8Q110 -10 116 25Z" fill="#A990D5" stroke="#30313B" stroke-width="3"/>
+          <path d="M30 27Q68 12 112 27L130 32Q136 38 126 40L38 38" fill="#8B73C0" stroke="#30313B" stroke-width="3"/>
+
+          <!-- Head / Face (Can rotate to smile at viewer) -->
+          <g id="student-head-feature" transform-origin="75 45">
+            <!-- Eyes -->
+            <ellipse id="eye-l" cx="62" cy="52" rx="4.5" ry="6.2" fill="#30313B"/>
+            <ellipse id="eye-r" cx="88" cy="52" rx="4.5" ry="6.2" fill="#30313B"/>
+            <circle cx="63.5" cy="51" r="1.5" fill="#FFFDF8"/>
+            <circle cx="89.5" cy="51" r="1.5" fill="#FFFDF8"/>
+            <!-- Cheeks -->
+            <ellipse cx="50" cy="65" rx="8" ry="4" fill="#EE7C47" opacity="0.65"/>
+            <ellipse cx="100" cy="65" rx="8" ry="4" fill="#EE7C47" opacity="0.65"/>
+            <!-- Happy Adventurous Smile -->
+            <path id="student-mouth" d="M68 70Q78 80 88 70" stroke="#30313B" stroke-width="3" stroke-linecap="round" fill="none"/>
+          </g>
+
+          <!-- Free Left Arm (Swings in walk) -->
+          <g id="arm-left">
+            <path d="M38 45Q18 75 10 95" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="10" cy="95" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+          </g>
+
+          <!-- Right Arm (Carries Blue Notebook / Waves cheerily) -->
+          <g id="arm-right">
+            <!-- Arm bone -->
+            <path id="right-arm-path" d="M95 45Q120 75 125 95" fill="none" stroke="#30313B" stroke-width="5.5" stroke-linecap="round"/>
+            <!-- Hand -->
+            <circle id="right-hand-circle" cx="125" cy="95" r="7.5" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+            <!-- Small Blue Notebook under arm -->
+            <g id="carried-notebook" transform="translate(108, 70) rotate(15)">
+              <rect x="0" y="0" width="28" height="40" rx="2" fill="#087BC1" stroke="#30313B" stroke-width="2"/>
+              <polygon points="18,0 24,0 24,-6 18,-6" fill="#FF7A30" stroke="#30313B" stroke-width="1.2"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg><div class="title s16title" id="title16">CHƯƠNG MỚI</div></div><div class="scene" id="scene17"><div class="paper-bg"></div><svg class="art" viewBox="0 0 720 1280" aria-label="Cuốn sổ mở thành thế giới giấy">
+<defs><filter id="soft"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#6C5480" flood-opacity=".15"/></filter></defs>
+<ellipse cx="360" cy="961" rx="260" ry="25" fill="#BCA3CB" opacity=".16"/>
+<g id="folio-camera" data-layout-allow-overflow="true">
+<g id="cover-under"><path d="M92 770L353 820L640 741L640 866L355 965L92 898Z" fill="#087BC1" stroke="#30313B" stroke-width="3"/><path d="M353 820L355 965" stroke="#045E94" stroke-width="6"/></g>
+<g filter="url(#soft)">
+<g id="fold-left"><path d="M92 762L272 720L272 865L92 907Z" fill="#FFFDF5" stroke="#5C4A65" stroke-width="2.5"/><path d="M92 897L272 855L272 865L92 907Z" fill="#ECE2D4"/></g>
+<g id="fold-middle"><path d="M272 720L453 775L453 920L272 865Z" fill="#F2E8F0" stroke="#5C4A65" stroke-width="2.5"/><path d="M272 720L272 865" stroke="#D5BFD7" stroke-width="3"/></g>
+<g id="fold-right"><path d="M453 775L635 714L635 859L453 920Z" fill="#FFFDF5" stroke="#5C4A65" stroke-width="2.5"/><path d="M453 775L453 920" stroke="#DDCCD7" stroke-width="3"/><path d="M606 725L635 714L635 859L606 869" fill="#FFFDF9" stroke="#D9CCD7" stroke-width="1.5" stroke-dasharray="5 7"/></g>
+<path id="paper-path" d="M114 858Q197 813 272 815T453 856Q532 840 609 794" fill="none" stroke="#F2C498" stroke-width="18"/>
+</g>
+<!-- One miniature room with a working table, shelving, book and lamp. -->
+<g id="study-popup">
+<path d="M107 766L107 554L237 522L237 734Z" fill="#D9CDEC" stroke="#5C4A65" stroke-width="2.5"/><path d="M119 581L224 555M119 647L224 621" stroke="#A18AB6" stroke-width="5"/>
+<path d="M129 577L129 545L142 542L142 573M151 570L151 533L168 529L168 566M178 563L171 536L183 531L194 559" fill="#FFF6DF" stroke="#5C4A65" stroke-width="2.5"/>
+<path d="M104 733L225 701L267 730L143 764Z" fill="#F0C296" stroke="#5C4A65" stroke-width="2.5"/><path d="M143 764L143 815M250 738L250 786M112 744L112 792" stroke="#5C4A65" stroke-width="5"/>
+<path d="M141 731L174 723L193 731L219 721L238 732L195 746Z" fill="#FFFEF8" stroke="#5C4A65" stroke-width="2"/><path d="M193 731L195 746" stroke="#B6A2BB" stroke-width="2"/>
+<path d="M122 726L132 677L156 663" fill="none" stroke="#087BC1" stroke-width="5"/><path d="M144 650Q170 643 171 673L145 680Z" fill="#087BC1" stroke="#4A414C" stroke-width="2"/><ellipse cx="133" cy="727" rx="15" ry="4" fill="#087BC1"/>
+<path d="M149 678L133 716L195 706L167 673Z" fill="#FFE9A2" opacity=".45"/>
+</g>
+<!-- Peers interact over one drawing, rather than floating career symbols. -->
+<g id="exchange-popup">
+<path d="M293 752L293 596L427 637L427 793Z" fill="#F5C9AD" stroke="#674F5C" stroke-width="2.5"/><path d="M305 621L412 653M305 640L398 668" stroke="#E8A983" stroke-width="4"/>
+<g id="peer-a"><path d="M306 731L313 682Q329 670 346 688L350 745Z" fill="#87BCA6" stroke="#4A414C" stroke-width="2.5"/><circle cx="329" cy="663" r="18" fill="#87BCA6" stroke="#4A414C" stroke-width="2.5"/><path d="M320 663L322 663M335 663L337 663M323 672Q329 677 336 672" fill="none" stroke="#4A414C" stroke-width="2.5" stroke-linecap="round"/></g>
+<g id="peer-b"><path d="M376 752L378 710Q395 697 412 714L417 768Z" fill="#A990D5" stroke="#4A414C" stroke-width="2.5"/><circle cx="395" cy="690" r="18" fill="#A990D5" stroke="#4A414C" stroke-width="2.5"/><path d="M386 690L388 690M400 690L402 690M389 698Q395 703 401 698" fill="none" stroke="#4A414C" stroke-width="2.5" stroke-linecap="round"/></g>
+<path d="M297 758Q355 724 428 773L431 790Q364 825 298 777Z" fill="#FFF4D9" stroke="#4A414C" stroke-width="2.5"/><path d="M316 784L313 826M410 799L414 843" stroke="#4A414C" stroke-width="5"/>
+<path d="M338 758L374 755L397 775L360 780Z" fill="#FFFDF9" stroke="#A990D5" stroke-width="2"/>
+<path id="peer-arm" d="M344 702Q354 735 368 763" fill="none" stroke="#4A414C" stroke-width="4" stroke-linecap="round"/><circle cx="368" cy="763" r="5" fill="#87BCA6"/><path d="M391 722L383 753" stroke="#4A414C" stroke-width="4" stroke-linecap="round"/>
+</g>
+<!-- Unfinished landscape: an opening, not a promised qualification or job. -->
+<g id="horizon-popup">
+<path d="M464 810L464 611Q518 533 578 580Q609 595 628 565L628 757Z" fill="#CFDECF" stroke="#6D8A7A" stroke-width="2.5"/><path d="M464 810L464 719Q505 663 550 707Q586 740 628 658L628 757Z" fill="#94BAA9" stroke="#6D8A7A" stroke-width="2"/>
+<path d="M487 785Q519 731 541 737T605 677" fill="none" stroke="#FFF6E5" stroke-width="15"/><circle id="horizon-sun" cx="579" cy="538" r="35" fill="#FFC16A"/><path d="M522 527Q536 514 547 523M598 496Q614 483 627 492" fill="none" stroke="#A990D5" stroke-width="3" stroke-linecap="round"/>
+<path d="M611 586L645 565L645 746L628 757" fill="#FFFDF9" stroke="#B9B5C7" stroke-width="2" stroke-dasharray="4 7"/>
+</g>
+<g id="left-hand"><path d="M39 1035Q53 969 86 877" stroke="#30313B" stroke-width="10" fill="none" stroke-linecap="round"/><path d="M73 886Q67 866 78 858Q89 851 94 865L99 882Q108 858 116 864Q121 870 110 893Q94 910 81 899Z" fill="#FFAA28" stroke="#30313B" stroke-width="3"/></g>
+<g id="right-hand"><path d="M679 1009Q662 932 638 843" stroke="#30313B" stroke-width="10" fill="none" stroke-linecap="round"/><path d="M626 851Q613 831 622 825Q631 818 639 836L640 816Q643 803 652 813L657 838Q656 860 640 866Z" fill="#FFAA28" stroke="#30313B" stroke-width="3"/></g>
+<g id="front-cover"><path d="M92 762L353 820L353 965L92 907Z" fill="#087BC1" stroke="#30313B" stroke-width="3"/><path d="M111 787L111 882" stroke="#68BBE0" stroke-width="3"/><path d="M135 773L165 780L165 824L150 812L135 817Z" fill="#FF8E38" stroke="#30313B" stroke-width="2"/></g>
+</g></svg><div class="title s17title" id="title17">HÀNH TRÌNH CÒN TIẾP</div></div></div><script>const tl=gsap.timeline({paused:true});
+
+tl.set('#student-walk-anchor',{x:255,y:590,scale:1.12},0);
+tl.fromTo('#student-walk-anchor',{x:195,y:600},{x:255,y:590,duration:.95,ease:'power1.inOut'},0);
+tl.to('#student-rig',{y:-4,duration:.22,repeat:3,yoyo:true,ease:'sine.inOut'},0);
+tl.to('#leg-left',{attr:{d:'M48 120L60 165L80 168'},duration:.23,repeat:3,yoyo:true},0);
+tl.to('#leg-right',{attr:{d:'M82 120L70 165L50 168'},duration:.23,repeat:3,yoyo:true},0);
+tl.to('#student-head-feature',{x:4,duration:.3},1.05);
+tl.fromTo('#title16',{opacity:0,y:12,rotation:-2},{opacity:1,y:0,duration:.35,ease:'power2.out'},1.15);
+tl.to('#arm-left',{rotation:155,svgOrigin:'38 45',duration:.3,ease:'power2.out'},1.2);
+tl.to('#arm-left',{rotation:140,duration:.16,repeat:3,yoyo:true},1.5);
+tl.to('#arm-left',{rotation:0,duration:.3},2.16);
+tl.to('#right-arm-path',{attr:{d:'M95 45Q117 52 111 65'},duration:.32},2.35);
+tl.to('#right-hand-circle',{attr:{cx:111,cy:65},duration:.32},2.35);
+tl.to('#carried-notebook',{x:98,y:62,rotation:-8,scale:1.3,duration:.4},2.35);
+tl.to('#student-head-feature',{x:0,y:4,duration:.3},2.45);
+tl.to('#title16',{opacity:0,duration:.2},2.75);
+const cut=3.0825;
+tl.set('#scene16',{opacity:0},cut);tl.set('#scene17',{opacity:1},cut);
+tl.set('#folio-camera',{scale:1.35,x:-80,y:-185,svgOrigin:'360 800'},0);
+tl.set('#fold-left',{scaleX:.06,svgOrigin:'272 780'},0);
+tl.set('#fold-middle',{scaleX:.06,svgOrigin:'272 780'},0);
+tl.set('#fold-right',{scaleX:.06,svgOrigin:'453 800'},0);
+tl.set('#study-popup',{svgOrigin:'177 760',scaleY:.02,opacity:0},0);
+tl.set('#exchange-popup',{svgOrigin:'362 790',scaleY:.02,opacity:0},0);
+tl.set('#horizon-popup',{svgOrigin:'550 800',scaleY:.02,opacity:0},0);
+tl.set('#paper-path',{opacity:0},0);
+tl.set('#left-hand',{x:162},0);tl.set('#right-hand',{x:-198},0);
+tl.to('#front-cover',{scaleX:-.96,svgOrigin:'353 850',duration:.65,ease:'power2.inOut'},cut+.08);
+tl.to('#front-cover',{opacity:0,duration:.15},cut+.58);
+tl.to('#folio-camera',{scale:1,x:0,y:0,duration:2.25,ease:'power2.inOut'},cut+.38);
+tl.to('#fold-left',{scaleX:1,duration:.8,ease:'power2.inOut'},cut+.43);
+tl.to('#left-hand',{x:0,duration:.8,ease:'power2.inOut'},cut+.43);
+tl.to('#fold-middle',{scaleX:1,duration:.9,ease:'power2.inOut'},cut+.75);
+tl.to('#fold-right',{scaleX:1,duration:1,ease:'power2.inOut'},cut+1.2);
+tl.to('#right-hand',{x:0,duration:1.5,ease:'power2.inOut'},cut+.7);
+tl.to('#paper-path',{opacity:1,duration:.4},cut+1.15);
+tl.to('#study-popup',{scaleY:1,opacity:1,duration:.75,ease:'back.out(1.1)'},cut+.9);
+tl.to('#exchange-popup',{scaleY:1,opacity:1,duration:.8,ease:'back.out(1.1)'},cut+1.65);
+tl.to('#horizon-popup',{scaleY:1,opacity:1,duration:.9,ease:'power2.out'},cut+2.45);
+tl.fromTo('#peer-arm',{rotation:-9,svgOrigin:'344 702'},{rotation:3,duration:.5,ease:'sine.inOut'},cut+2.45);
+tl.fromTo('#horizon-sun',{y:16},{y:0,duration:.8,ease:'power2.out'},cut+2.7);
+tl.fromTo('#title17',{opacity:0,y:15,rotation:-2},{opacity:1,y:0,duration:.4,ease:'power2.out'},cut+3.7);
+window.__timelines=window.__timelines||{};window.__timelines['ending']=tl;</script></body></html>

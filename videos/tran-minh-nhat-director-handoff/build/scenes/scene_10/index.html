@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>10 · Mentor giúp Nhật làm rõ lựa chọn</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'PilotDisplay';
+  src: url('assets/segoe-ui-black.ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arial.ttf');
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arialbd.ttf');
+  font-weight: 700;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; }
+
+#scene-10 {
+  position: relative;
+  width: 720px;
+  height: 1280px;
+  overflow: hidden;
+  background: #F3EEF7;
+  color: #30313B;
+  font-family: PilotSans, Arial, sans-serif;
+}
+
+#world {
+  position: absolute;
+  inset: 0;
+}
+
+/* Strip Label: MENTOR ESORA */
+.strip {
+  position: absolute;
+  background: #1B6553;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  font-family: PilotDisplay, PilotSans, sans-serif;
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+  white-space: nowrap;
+  box-shadow: 4px 6px 0 #30313b15;
+  border-radius: 4px;
+  opacity: 0;
+  transform: translateY(-20px) scale(0.9);
+  z-index: 30;
+}
+#mentor-label {
+  left: 410px;
+  top: 310px;
+}
+
+/* Background Atmosphere */
+#room-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Perspective Wooden Desk */
+#desk-surface {
+  position: absolute;
+  left: 0;
+  top: 660px;
+  width: 720px;
+  height: 380px;
+  z-index: 5;
+}
+
+/* Shared Big Draft Sheet */
+#shared-draft {
+  position: absolute;
+  left: 205px;
+  top: 520px;
+  width: 310px;
+  height: 250px;
+  z-index: 12;
+  transform-origin: 155px 125px;
+}
+
+/* Character layers */
+#characters-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 15;
+}
+</style>
+</head>
+<body>
+<div id="scene-10" data-composition-id="scene-10" data-width="720" data-height="1280" data-start="0" data-duration="3.466666666666667">
+  <div id="world">
+    <!-- Background Decor: Gentle Studio / Advisory room wall -->
+    <svg id="room-bg" viewBox="0 0 720 1280">
+      <!-- Soft ambient paper texture ground -->
+      <line x1="0" y1="660" x2="720" y2="660" stroke="#DFD7EA" stroke-width="2"/>
+      
+      <!-- Subtle Wall Bookshelf / Advisory frames in background -->
+      <rect x="90" y="240" width="160" height="95" rx="3" fill="#E8DFEF" stroke="#D3C5DF" stroke-width="2"/>
+      <line x1="105" y1="265" x2="235" y2="265" stroke="#D3C5DF" stroke-width="2"/>
+      <line x1="105" y1="285" x2="195" y2="285" stroke="#D3C5DF" stroke-width="2"/>
+      <line x1="105" y1="305" x2="215" y2="305" stroke="#D3C5DF" stroke-width="2"/>
+      
+      <!-- Window light gradient -->
+      <path d="M0 100L720 30L720 580L0 640Z" fill="#FFFDF8" opacity="0.35"/>
+    </svg>
+
+    <!-- Perspective Wooden Desk -->
+    <div id="desk-surface">
+      <svg viewBox="0 0 720 380" width="100%" height="100%">
+        <!-- Desk top surface (warm natural birch tone) -->
+        <polygon points="0,0 720,0 720,380 0,380" fill="#E6D3BE"/>
+        <line x1="0" y1="2" x2="720" y2="2" stroke="#30313B" stroke-width="3"/>
+        
+        <!-- Subtle wood grain lines -->
+        <path d="M40 70Q360 85 680 70" fill="none" stroke="#D8C2AA" stroke-width="2" stroke-linecap="round"/>
+        <path d="M80 180Q360 195 640 180" fill="none" stroke="#D8C2AA" stroke-width="2" stroke-linecap="round"/>
+        <path d="M20 290Q360 305 700 290" fill="none" stroke="#D8C2AA" stroke-width="2" stroke-linecap="round"/>
+
+        <!-- Desk shadow on floor -->
+        <rect x="0" y="375" width="720" height="5" fill="#30313B" opacity="0.2"/>
+      </svg>
+    </div>
+
+    <!-- The Shared Draft Sheet (between Nhật and Mentor) -->
+    <div id="shared-draft">
+      <svg viewBox="0 0 310 250" width="100%" height="100%">
+        <!-- Underneath reference notes / folder edge -->
+        <rect x="15" y="18" width="280" height="225" rx="3" fill="#EAE2D8" stroke="#30313B" stroke-width="2.5" transform="rotate(-2 155 125)"/>
+        
+        <!-- Main Document Sheet -->
+        <g id="main-sheet-group">
+          <!-- Drop Shadow -->
+          <rect x="8" y="10" width="280" height="220" rx="3" fill="#30313B" opacity="0.12"/>
+          <!-- Sheet paper -->
+          <rect x="4" y="6" width="280" height="220" rx="3" fill="#FFFEFA" stroke="#30313B" stroke-width="3"/>
+          
+          <!-- Bookmark tab at top -->
+          <polygon points="215,6 245,6 245,-6 215,-6" fill="#087BC1" stroke="#30313B" stroke-width="2"/>
+
+          <!-- Draft heading & text lines (authentic paper draft feel) -->
+          <line x1="28" y1="36" x2="160" y2="36" stroke="#505260" stroke-width="5" stroke-linecap="round"/>
+          <line x1="28" y1="58" x2="255" y2="58" stroke="#CFBFAD" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="28" y1="78" x2="260" y2="78" stroke="#CFBFAD" stroke-width="2.5" stroke-linecap="round"/>
+          
+          <!-- Key section to be reviewed -->
+          <line x1="28" y1="102" x2="245" y2="102" stroke="#B8A490" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="28" y1="124" x2="220" y2="124" stroke="#B8A490" stroke-width="2.5" stroke-linecap="round"/>
+
+          <!-- Mentor's Terracotta Circle Annotation (animates drawing) -->
+          <g id="mentor-annotation">
+            <ellipse id="mentor-circle" cx="135" cy="113" rx="100" ry="24" fill="none" stroke="#C25522" stroke-width="2.8" stroke-dasharray="640" stroke-dashoffset="640"/>
+            <!-- Mentor small check mark / pointer asterisk -->
+            <path id="mentor-mark" d="M242 110L250 118L262 105" fill="none" stroke="#C25522" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" opacity="0"/>
+          </g>
+
+          <!-- Nhật's New Orange Revision Ink (written by student) -->
+          <g id="student-orange-ink" opacity="0">
+            <line x1="32" y1="148" x2="250" y2="148" stroke="#FF7A30" stroke-width="3" stroke-linecap="round"/>
+            <line x1="32" y1="168" x2="200" y2="168" stroke="#FF7A30" stroke-width="3" stroke-linecap="round"/>
+            <polygon points="26,145 20,150 26,155" fill="#FF7A30"/>
+          </g>
+
+          <!-- Further draft lines below -->
+          <line x1="28" y1="192" x2="235" y2="192" stroke="#CFBFAD" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Label: MENTOR ESORA -->
+    <div id="mentor-label" class="strip">MENTOR ESORA</div>
+
+    <!-- Characters Layer: Student Nhật (left) & Mentor (right) -->
+    <svg id="characters-layer" viewBox="0 0 720 1280">
+      
+      <!-- ==============================================
+           STUDENT NHẬT (Left: x180–335, y650–1000)
+           ============================================== -->
+      <g id="student-rig" transform="translate(180, 650)">
+        <!-- Shadow -->
+        <ellipse cx="75" cy="290" rx="60" ry="12" fill="#30313B" opacity="0.14"/>
+        
+        <!-- Blue Backpack -->
+        <rect x="5" y="110" width="38" height="95" rx="15" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+        <path d="M12 135L33 148" fill="none" stroke="#A2D8ED" stroke-width="3"/>
+
+        <!-- Legs (seated) -->
+        <path d="M60 230L50 280L30 284M95 230L102 280L125 284" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+
+        <!-- Torso -->
+        <path d="M38 100Q42 70 75 72L115 75Q138 78 135 110L128 200Q125 235 95 238L62 235Q35 234 32 205Z" fill="#FFAA28" stroke="#30313B" stroke-width="3.3"/>
+        <!-- Orange highlight collar curve -->
+        <path d="M48 110Q55 90 75 92" fill="none" stroke="#FFD77B" stroke-width="4.5" stroke-linecap="round"/>
+
+        <!-- Purple Cap -->
+        <path d="M48 85Q38 45 82 43Q128 42 135 83Z" fill="#A990D5" stroke="#30313B" stroke-width="3"/>
+        <path d="M36 86Q78 68 130 84L152 90Q158 96 148 98L54 96" fill="#8B73C0" stroke="#30313B" stroke-width="3"/>
+
+        <!-- Head / Face -->
+        <!-- Eyes looking intently at the center sheet -->
+        <g id="student-eyes" transform="translate(0, 0)">
+          <ellipse cx="98" cy="120" rx="4.5" ry="6.2" fill="#30313B"/>
+          <ellipse cx="126" cy="118" rx="4.5" ry="6.2" fill="#30313B"/>
+          <circle cx="100" cy="119" r="1.5" fill="#FFFDF8"/>
+          <circle cx="128" cy="117" r="1.5" fill="#FFFDF8"/>
+        </g>
+        
+        <!-- Cheeks -->
+        <ellipse cx="86" cy="134" rx="9" ry="4.5" fill="#EE7C47" opacity="0.6"/>
+        <ellipse cx="138" cy="132" rx="9" ry="4.5" fill="#EE7C47" opacity="0.6"/>
+
+        <!-- Mouth -->
+        <path id="student-mouth" d="M106 140Q118 143 125 139" stroke="#30313B" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+        <!-- Far Arm (Left arm resting on desk edge) -->
+        <path d="M50 140Q60 170 90 185" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="90" cy="185" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+
+        <!-- Near Arm (Right arm holding orange pen #FF7A30) -->
+        <g id="student-near-arm" transform-origin="125 150">
+          <!-- Arm bone -->
+          <path d="M125 150Q155 180 185 195" fill="none" stroke="#30313B" stroke-width="5.5" stroke-linecap="round"/>
+          <!-- Hand -->
+          <circle cx="185" cy="195" r="8" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+          <!-- Orange pen -->
+          <g id="student-pen" transform="translate(185, 195) rotate(-35)">
+            <rect x="-4" y="-22" width="8" height="24" rx="2" fill="#FF7A30" stroke="#30313B" stroke-width="2"/>
+            <polygon points="-4,-22 4,-22 0,-30" fill="#30313B"/>
+            <line x1="-4" y1="-8" x2="4" y2="-8" stroke="#FFE3B8" stroke-width="1.5"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- ==============================================
+           MENTOR ESORA (Right: x430–580, y625–1000)
+           Sage green #91B59F, round glasses, cream collar
+           ============================================== -->
+      <g id="mentor-rig" transform="translate(450, 625)">
+        <!-- Shadow -->
+        <ellipse cx="65" cy="315" rx="60" ry="12" fill="#30313B" opacity="0.14"/>
+
+        <!-- Mentor Body / Sage Green Sweater -->
+        <!-- Posture leans forward attentively towards sheet -->
+        <g id="mentor-upper-body" transform-origin="60 220">
+          <!-- Torso -->
+          <path d="M22 105Q26 75 58 72L102 74Q128 78 126 110L120 220Q118 250 88 252L48 250Q20 248 18 215Z" fill="#91B59F" stroke="#30313B" stroke-width="3.3"/>
+          
+          <!-- Cream V-Neck Collar #FAF6EE -->
+          <polygon points="50,73 70,73 60,105" fill="#FAF6EE" stroke="#30313B" stroke-width="2.5"/>
+          <line x1="60" y1="105" x2="60" y2="135" stroke="#30313B" stroke-width="2"/>
+
+          <!-- Head & Hair (distinctive academic silhouette, rounded neat hair) -->
+          <path d="M30 65Q25 20 62 18Q105 18 108 55L108 72Q75 75 30 65Z" fill="#3F3934" stroke="#30313B" stroke-width="3"/>
+          <!-- Head / Face skin -->
+          <path d="M36 62Q38 88 65 90Q95 88 98 62Z" fill="#FCEBD6" stroke="#30313B" stroke-width="2.5"/>
+
+          <!-- Round Glasses #30313B -->
+          <g id="mentor-glasses">
+            <circle cx="52" cy="65" r="11" fill="none" stroke="#30313B" stroke-width="2.8"/>
+            <circle cx="78" cy="65" r="11" fill="none" stroke="#30313B" stroke-width="2.8"/>
+            <line x1="63" y1="65" x2="67" y2="65" stroke="#30313B" stroke-width="2.8"/>
+            <!-- Eyes behind glasses looking down at draft -->
+            <ellipse cx="52" cy="67" rx="3.5" ry="4.5" fill="#30313B"/>
+            <ellipse cx="78" cy="67" rx="3.5" ry="4.5" fill="#30313B"/>
+            <circle cx="53" cy="66" r="1.2" fill="#FFFFFF"/>
+            <circle cx="79" cy="66" r="1.2" fill="#FFFFFF"/>
+          </g>
+
+          <!-- Gentle smiling mouth -->
+          <path id="mentor-mouth" d="M57 82Q65 87 73 82" stroke="#30313B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+          <!-- Far Arm (rests gently on folder / clipboard edge) -->
+          <path d="M98 120Q120 160 115 195" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="115" cy="195" r="7" fill="#FCEBD6" stroke="#30313B" stroke-width="2.5"/>
+
+          <!-- Near Arm & Hand holding Terracotta Pen #C25522 -->
+          <g id="mentor-near-arm" transform-origin="28 125">
+            <!-- Arm bone -->
+            <path d="M28 125Q-10 165 -65 178" fill="none" stroke="#30313B" stroke-width="5.5" stroke-linecap="round"/>
+            <!-- Hand -->
+            <circle cx="-65" cy="178" r="8" fill="#FCEBD6" stroke="#30313B" stroke-width="2.5"/>
+            <!-- Terracotta Pointer Pen #C25522 -->
+            <g id="mentor-pen" transform="translate(-65, 178) rotate(48)">
+              <rect x="-4" y="-24" width="8" height="26" rx="2" fill="#C25522" stroke="#30313B" stroke-width="2"/>
+              <polygon points="-4,-24 4,-24 0,-32" fill="#30313B"/>
+              <line x1="-4" y1="-10" x2="4" y2="-10" stroke="#FFC5AB" stroke-width="1.5"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<script>
+(function() {
+  const tl = gsap.timeline({ paused: false });
+
+  // 0.00–0.75s: "Với sự đồng hành"
+  // Mentor leans in attentively, holding terracotta pen near the center page
+  tl.set('#mentor-upper-body', { rotation: -3, x: -6 });
+  tl.set('#student-eyes', { x: 2, y: 3 });
+
+  // 0.75–2.00s: "đội ngũ Mentor Esora"
+  // Mentor's pen tip circles the specific section on the sheet
+  tl.to('#mentor-circle', {
+    strokeDashoffset: 0,
+    duration: 0.85,
+    ease: 'power2.inOut'
+  }, 0.75);
+
+  tl.to('#mentor-mark', {
+    opacity: 1,
+    duration: 0.25
+  }, 1.55);
+
+  // Mentor's near arm moves smoothly while circling
+  tl.to('#mentor-near-arm', {
+    x: -8,
+    y: 5,
+    duration: 0.45,
+    yoyo: true,
+    repeat: 1,
+    ease: 'sine.inOut'
+  }, 0.8);
+
+  // Label "MENTOR ESORA" pops in cleanly near mentor
+  tl.to('#mentor-label', {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    duration: 0.45,
+    ease: 'back.out(1.4)'
+  }, 0.9);
+
+  // Mentor finishes circling and pulls back pen slightly
+  tl.to('#mentor-near-arm', {
+    x: 18,
+    y: -10,
+    rotation: -8,
+    duration: 0.5,
+    ease: 'power2.out'
+  }, 1.85);
+
+  // 2.00–3.00s: "hơn 14 năm kinh nghiệm"
+  // Nhật writes revised text with orange pen!
+  tl.to('#student-near-arm', {
+    x: -12,
+    y: -8,
+    duration: 0.35,
+    ease: 'power2.out'
+  }, 1.95);
+
+  // Student pen writes (subtle wiggle)
+  tl.to('#student-pen', {
+    rotation: -42,
+    duration: 0.2,
+    yoyo: true,
+    repeat: 3,
+    ease: 'sine.inOut'
+  }, 2.15);
+
+  // Orange revised strokes reveal cleanly
+  tl.to('#student-orange-ink', {
+    opacity: 1,
+    duration: 0.55,
+    ease: 'power1.out'
+  }, 2.2);
+
+  // Mentor watches and nods approvingly
+  tl.to('#mentor-upper-body', {
+    rotation: 0,
+    y: 4,
+    duration: 0.3,
+    yoyo: true,
+    repeat: 2,
+    ease: 'sine.inOut'
+  }, 2.3);
+
+  // Student eyes look pleased & confident
+  tl.to('#student-mouth', {
+    attr: { d: 'M106 138Q118 147 127 138' },
+    duration: 0.3
+  }, 2.6);
+
+  // 3.00–3.467s: "kết câu"
+  // Nhật finishes writing and pulls the draft sheet slightly towards his side
+  tl.to('#student-near-arm', {
+    x: -4,
+    y: 2,
+    rotation: 5,
+    duration: 0.35,
+    ease: 'power2.out'
+  }, 2.95);
+
+  tl.to('#shared-draft', {
+    x: -18,
+    y: 8,
+    rotation: -2,
+    duration: 0.45,
+    ease: 'power2.inOut'
+  }, 3.0);
+
+  // Hold at end ready to transition into Scene 11 overhead folder view
+  tl.to({ hold: 0 }, { hold: 1, duration: 3.466666666666667, ease: 'none' }, 0);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines['scene-10'] = tl;
+})();
+</script>
+</body>
+</html>

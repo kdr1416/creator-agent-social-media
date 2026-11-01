@@ -1,0 +1,58 @@
+[
+  {
+    "path": "S07/01-ready",
+    "label": "Chờ kết nối",
+    "status": "static_design_approved_motion_not_yet_produced",
+    "engine": "HF_ONLY",
+    "no_voice_or_video_created": true
+  },
+  {
+    "path": "S07/02-contact",
+    "label": "Chạm nút gọi",
+    "status": "static_design_approved_motion_not_yet_produced",
+    "engine": "HF_ONLY",
+    "no_voice_or_video_created": true
+  },
+  {
+    "path": "S07/03-connected",
+    "label": "Vẫy tay đáp lại",
+    "status": "static_design_approved_motion_not_yet_produced",
+    "engine": "HF_ONLY",
+    "no_voice_or_video_created": true
+  },
+  {
+    "path": "S08/01-arrive",
+    "label": "Phụ huynh kéo vali",
+    "status": "static_design_approved_motion_not_yet_produced",
+    "engine": "HF_ONLY",
+    "no_voice_or_video_created": true
+  },
+  {
+    "path": "S08/02-greet",
+    "label": "Gặp và chào con",
+    "status": "static_design_approved_motion_not_yet_produced",
+    "engine": "HF_ONLY",
+    "no_voice_or_video_created": true
+  },
+  {
+    "path": "S08/03-study",
+    "label": "Hoạt động học tập",
+    "status": "static_design_approved_motion_not_yet_produced",
+    "engine": "HF_ONLY",
+    "no_voice_or_video_created": true
+  },
+  {
+    "path": "S08/04-living",
+    "label": "Góc sinh hoạt",
+    "status": "static_design_approved_motion_not_yet_produced",
+    "engine": "HF_ONLY",
+    "no_voice_or_video_created": true
+  },
+  {
+    "path": "S08/05-work",
+    "label": "Hoạt động làm việc",
+    "status": "static_design_approved_motion_not_yet_produced",
+    "engine": "HF_ONLY",
+    "no_voice_or_video_created": true
+  }
+]

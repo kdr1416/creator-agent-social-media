@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>02 · Làm quen với Minh Nhật</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'PilotDisplay';
+  src: url('assets/segoe-ui-black.ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arial.ttf');
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arialbd.ttf');
+  font-weight: 700;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; }
+
+#scene-02 {
+  position: relative;
+  width: 720px;
+  height: 1280px;
+  overflow: hidden;
+  background: #FAF4EC;
+  color: #30313B;
+  font-family: PilotSans, Arial, sans-serif;
+}
+
+#world {
+  position: absolute;
+  inset: 0;
+  transform-origin: 360px 650px;
+}
+
+/* Background ground subtle shapes */
+#ground-art {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Name Title: TRẦN MINH NHẬT */
+#name-container {
+  position: absolute;
+  left: 95px;
+  top: 260px;
+  width: 530px;
+  text-align: center;
+  z-index: 20;
+}
+.name-line-1 {
+  font-family: PilotDisplay, PilotSans, sans-serif;
+  font-size: 52px;
+  font-weight: 900;
+  color: #30313B;
+  letter-spacing: 1.5px;
+  line-height: 1.1;
+  display: block;
+}
+.name-line-2 {
+  font-family: PilotDisplay, PilotSans, sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  color: #087BC1;
+  letter-spacing: 2px;
+  line-height: 1.15;
+  display: block;
+  margin-top: 4px;
+}
+
+/* RMIT Campus Photo Cutout */
+#campus-cutout {
+  position: absolute;
+  left: 105px;
+  top: 460px;
+  width: 510px;
+  height: 260px;
+  background: #FFFDF9;
+  padding: 10px 10px 12px 10px;
+  box-shadow: 6px 10px 0 #30313b14;
+  border-radius: 4px;
+  z-index: 10;
+  transform-origin: center center;
+}
+#campus-cutout img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 2px;
+}
+.tape {
+  position: absolute;
+  width: 105px;
+  height: 28px;
+  background: #ECD6A6CB;
+  top: -12px;
+  left: 202px;
+  transform: rotate(-3deg);
+  clip-path: polygon(0 10%, 96% 0, 100% 88%, 4% 100%);
+  z-index: 12;
+}
+
+/* RMIT Vietnam Label Strip */
+#rmit-label {
+  position: absolute;
+  left: 20px;
+  bottom: -18px;
+  background: #087BC1;
+  color: #FFFFFF;
+  font-family: PilotDisplay, PilotSans, sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  padding: 8px 18px;
+  border-radius: 4px;
+  box-shadow: 4px 6px 0 #30313b14;
+  white-space: nowrap;
+  z-index: 15;
+}
+
+/* Desk Surface */
+#desk-surface {
+  position: absolute;
+  left: 0;
+  top: 920px;
+  width: 720px;
+  height: 160px;
+  z-index: 5;
+}
+
+/* Interactive Blue Notebook */
+#notebook-interactive {
+  position: absolute;
+  left: 160px;
+  top: 830px;
+  width: 170px;
+  height: 125px;
+  z-index: 12;
+  transform-origin: 20px 60px;
+}
+
+/* Mascot Nhật */
+#student-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 720px;
+  height: 1280px;
+  z-index: 15;
+  pointer-events: none;
+}
+</style>
+</head>
+<body>
+<div id="scene-02" data-composition-id="scene-02" data-width="720" data-height="1280" data-start="0" data-duration="4.4">
+  <div id="world">
+    <!-- Ground decorative graphic lines -->
+    <svg id="ground-art" viewBox="0 0 720 1280">
+      <ellipse cx="360" cy="990" rx="310" ry="24" fill="#E8DDD1" opacity="0.6"/>
+      <path d="M50 380Q200 360 360 370Q520 380 670 350" fill="none" stroke="#E6D8C8" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>
+
+    <!-- Name Headline: TRẦN MINH / NHẬT -->
+    <div id="name-container">
+      <span id="name-part-1" class="name-line-1">TRẦN MINH</span>
+      <span id="name-part-2" class="name-line-2">NHẬT</span>
+    </div>
+
+    <!-- RMIT Campus Photo Card -->
+    <div id="campus-cutout">
+      <div class="tape"></div>
+      <img src="assets/rmit-campus.jpg" alt="RMIT University Vietnam Saigon South Campus">
+      <div id="rmit-label">RMIT VIỆT NAM</div>
+    </div>
+
+    <!-- Desk plane -->
+    <div id="desk-surface">
+      <svg viewBox="0 0 720 160" width="100%" height="100%">
+        <polygon points="50,20 670,20 650,90 70,90" fill="#E8D5C2" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+        <polygon points="70,90 650,90 645,115 75,115" fill="#D3BEA8" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <!-- The Blue Notebook with opening page -->
+    <div id="notebook-interactive">
+      <svg viewBox="0 0 170 125" width="100%" height="100%">
+        <!-- Shadow -->
+        <ellipse cx="85" cy="115" rx="75" ry="10" fill="#30313B" opacity="0.14"/>
+        
+        <!-- Back cover -->
+        <rect x="15" y="15" width="138" height="95" rx="6" fill="#05669D" stroke="#30313B" stroke-width="3"/>
+        
+        <!-- Cream page block -->
+        <rect x="20" y="12" width="133" height="94" rx="4" fill="#FFFDF4" stroke="#30313B" stroke-width="2.5"/>
+        <line x1="148" y1="18" x2="148" y2="100" stroke="#DFD5C6" stroke-width="2.5"/>
+        <line x1="145" y1="18" x2="145" y2="100" stroke="#DFD5C6" stroke-width="1.5"/>
+
+        <!-- The opening page sheet inside (to unfold in scene 03) -->
+        <g id="notebook-inner-sheet" style="transform-origin: 20px 55px;">
+          <polygon points="22,14 148,14 148,102 22,102" fill="#FFFDF8" stroke="#30313B" stroke-width="2"/>
+          <path d="M40 35H125M40 50H110M40 65H120M40 80H90" stroke="#DED2C0" stroke-width="2" stroke-linecap="round"/>
+        </g>
+
+        <!-- Front Cover flap (hinged on left spine) -->
+        <g id="notebook-cover-flap" style="transform-origin: 20px 58px;">
+          <rect x="15" y="10" width="138" height="96" rx="6" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+          <path d="M15 10L26 10V106L15 106Z" fill="#055B8F" stroke="#30313B" stroke-width="2"/>
+          <!-- Orange Bookmark Tab on right edge -->
+          <polygon points="145,35 168,35 161,50 168,65 145,65" fill="#FF7A30" stroke="#30313B" stroke-width="2.4" stroke-linejoin="round"/>
+          <!-- Subtle cover logo -->
+          <circle cx="85" cy="55" r="16" fill="#0B89D4" stroke="#055B8F" stroke-width="2"/>
+          <path d="M78 55L92 55M85 48L85 62" stroke="#FFFDF4" stroke-width="2.2" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Student Mascot (Minh Nhật) -->
+    <svg id="student-layer" viewBox="0 0 720 1280" aria-label="Student mascot Minh Nhat">
+      <g id="student-rig" transform="translate(425, 740)">
+        <g id="student-motion">
+          <!-- Shadow -->
+          <ellipse id="student-shadow" cx="63" cy="205" rx="65" ry="10" fill="#D7BDA8" opacity="0.5"/>
+          <!-- Legs -->
+          <path id="legs" d="M48 143L41 190L18 194M90 143L98 190L120 194" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+          <!-- Blue Backpack -->
+          <rect id="backpack" x="103" y="50" width="39" height="91" rx="16" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+          <path d="M113 69L134 78" fill="none" stroke="#A2D8ED" stroke-width="3"/>
+          <!-- Far Arm (rests on notebook) -->
+          <g id="arm-far-group" transform="translate(25, 72)">
+            <g id="arm-far">
+              <path d="M0 0Q-30 15 -58 45" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="-58" cy="45" r="7.5" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+            </g>
+          </g>
+          <!-- Mascot Body -->
+          <path id="mascot-body" d="M21 31Q24 9 50 12L95 14Q123 16 122 46L115 121Q114 148 86 152L49 149Q20 148 17 123L13 58Q12 42 21 31Z" fill="#FFAA28" stroke="#30313B" stroke-width="3.3"/>
+          <path d="M25 41Q30 25 49 26" fill="none" stroke="#FFD77B" stroke-width="5" stroke-linecap="round"/>
+          <!-- Purple Cap -->
+          <path d="M28 28Q17 -8 61 -9Q108 -13 116 27Z" fill="#A990D5" stroke="#30313B" stroke-width="3"/>
+          <path d="M17 29Q54 14 111 29L131 34Q138 40 127 42L35 39" fill="#8B73C0" stroke="#30313B" stroke-width="3"/>
+          <!-- Eyes -->
+          <g id="eyes">
+            <ellipse cx="52" cy="68" rx="4.6" ry="7" fill="#30313B"/>
+            <ellipse cx="86" cy="67" rx="4.6" ry="7" fill="#30313B"/>
+            <circle cx="53.5" cy="66" r="1.8" fill="#FFFDF8"/>
+            <circle cx="87.5" cy="65" r="1.8" fill="#FFFDF8"/>
+          </g>
+          <!-- Cheeks -->
+          <ellipse cx="39" cy="87" rx="10" ry="5" fill="#EE7C47" opacity="0.65"/>
+          <ellipse cx="99" cy="86" rx="10" ry="5" fill="#EE7C47" opacity="0.65"/>
+          <!-- Mouth -->
+          <path id="mouth" d="M57 91Q70 105 82 88" fill="none" stroke="#30313B" stroke-width="3.3" stroke-linecap="round"/>
+          <path d="M111 48L96 129" fill="none" stroke="#05669D" stroke-width="7" stroke-linecap="round"/>
+          <!-- Near Arm (gestures / opens notebook) -->
+          <g id="arm-near-group" transform="translate(109, 83)">
+            <g id="arm-near">
+              <path d="M0 0Q15 22 28 8" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="28" cy="8" r="7.5" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <audio id="c2-voice" src="assets/scene_02.wav" data-start="0" data-duration="4.4" data-track-index="2"></audio>
+</div>
+
+<script>
+(()=>{
+  const tl = gsap.timeline({ paused: true });
+
+  // Camera subtle push
+  tl.fromTo('#world', 
+    { scale: 1.03, y: 10 }, 
+    { scale: 1.0, y: 0, duration: 2.0, ease: 'power2.out' }, 
+    0
+  );
+
+  // Initial states
+  tl.set('#name-part-1', { opacity: 0, y: -20 }, 0);
+  tl.set('#name-part-2', { opacity: 0, scale: 0.85, y: -15 }, 0);
+  tl.set('#campus-cutout', { opacity: 0, scale: 0.88, y: 30, rotation: 2 }, 0);
+  tl.set('#rmit-label', { opacity: 0, scale: 0.85 }, 0);
+
+  // 0.0s - 0.75s: "Đó cũng là tinh thần"
+  // Blue notebook enters from scene 01 and lowers onto the desk
+  tl.fromTo('#notebook-interactive',
+    { y: -60, x: -30, rotation: -8, opacity: 0.8 },
+    { y: 0, x: 0, rotation: -2, opacity: 1, duration: 0.75, ease: 'power2.out' },
+    0
+  );
+
+  // Mascot steps in smoothly beside notebook
+  tl.fromTo('#student-rig',
+    { x: 470, opacity: 0.6 },
+    { x: 425, opacity: 1, duration: 0.75, ease: 'power2.out' },
+    0
+  );
+
+  // 0.75s - 2.25s: "Trần Minh Nhật"
+  // Name beat 1: TRẦN MINH
+  tl.to('#name-part-1', {
+    opacity: 1,
+    y: 0,
+    duration: 0.35,
+    ease: 'back.out(1.4)'
+  }, 0.75);
+
+  // Name beat 2: NHẬT
+  tl.to('#name-part-2', {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    duration: 0.42,
+    ease: 'back.out(1.8)'
+  }, 1.15);
+
+  // Character turns toward camera with proud friendly smile
+  tl.to('#arm-near', {
+    rotation: -25,
+    duration: 0.4,
+    ease: 'power2.out'
+  }, 0.9);
+
+  tl.to('#eyes', {
+    y: -2,
+    duration: 0.25
+  }, 1.1);
+
+  // 2.25s - 3.65s: "chàng trai đến từ RMIT Việt Nam"
+  // RMIT Campus Photo appears with paper photo bounce
+  tl.to('#campus-cutout', {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    rotation: -1.5,
+    duration: 0.55,
+    ease: 'back.out(1.3)'
+  }, 2.25);
+
+  // RMIT label strip pops onto the photo
+  tl.to('#rmit-label', {
+    opacity: 1,
+    scale: 1,
+    duration: 0.32,
+    ease: 'back.out(1.6)'
+  }, 2.65);
+
+  // Far arm adjusts down to touch the notebook cover
+  tl.to('#arm-far', {
+    rotation: 12,
+    duration: 0.45,
+    ease: 'power2.inOut'
+  }, 2.9);
+
+  // 3.65s - 4.375s: "Việt Nam — kết câu"
+  // Nhật opens the notebook cover, revealing the cream page inside!
+  tl.to('#notebook-cover-flap', {
+    scaleX: 0.15,
+    duration: 0.55,
+    ease: 'power2.inOut'
+  }, 3.65);
+
+  tl.to('#arm-far', {
+    rotation: -18,
+    duration: 0.55,
+    ease: 'power2.inOut'
+  }, 3.65);
+
+  // Hold at end ready to transition into scene 03 close-up
+  tl.to({ hold: 0 }, { hold: 1, duration: 4.4, ease: 'none' }, 0);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines['scene-02'] = tl;
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "vu-campus.jpg": {
+    "source_page": "https://vu.nl/en/about-vu/more-about/vu-main-building",
+    "source_url": "https://assets-eu-01.kc-usercontent.com/ff31ad68-341e-015e-fb52-24df7a00ecea/9854ee06-94a3-46cf-b6c4-c045cce2da90/Hoofdgebouw.jpg",
+    "use": "Official campus image, private style pilot; not an admissions document",
+    "sha256": "30a437c64186849c83fc7bdb77f2b23349e0afa4b60f60f039ae589e1c1cc054"
+  },
+  "scene_04.wav": {
+    "source": "scratch/audio_slices/scene_04.wav",
+    "sha256": "55a4529187c2060f4201a2f1141a6f7517c2255dec5d4b102d3599d1d44c8b24",
+    "processing": "Exact file copy; final mux AAC, original source intact"
+  },
+  "mascot": {
+    "source": "Original layered SVG authored in index.html",
+    "identity": "Symbolic student, not personal likeness"
+  },
+  "arial.ttf,arialbd.ttf": {
+    "source": "Local Windows Arial font copies from earlier experiment; regular/bold Vietnamese coverage",
+    "limitation": "Reference typeface unidentified; approximation"
+  },
+  "gsap.min.js": {
+    "source": "Existing local GSAP runtime, reused without alteration"
+  }
+}

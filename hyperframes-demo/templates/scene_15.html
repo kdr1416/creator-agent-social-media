@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=720, height=1280, initial-scale=1.0" />
+    <title>Scene 15 - Tiêu Chuẩn Hồ Sơ Tốt (Cán Cân Chiến Lược)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        width: 720px;
+        height: 1280px;
+        background: #f8fafc;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        color: #0f172a;
+        overflow: hidden;
+      }
+
+      #root {
+        position: relative;
+        width: 720px;
+        height: 1280px;
+        background: #f8fafc;
+        overflow: hidden;
+      }
+
+      /* ── STUDIO CANVAS BACKGROUND ── */
+      .canvas-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background:
+          radial-gradient(circle at 50% 25%, rgba(255, 87, 34, 0.05) 0%, transparent 60%),
+          radial-gradient(circle at 50% 75%, rgba(15, 23, 42, 0.03) 0%, transparent 60%),
+          linear-gradient(to right, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+          #f8fafc;
+        background-size: 100% 100%, 100% 100%, 36px 36px, 36px 36px, 100% 100%;
+        z-index: 1;
+      }
+
+      /* ── BRAND PILL (Y: 42px) ── */
+      .brand-badge-wrapper {
+        position: absolute;
+        top: 42px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 20;
+      }
+      .brand-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #0f172a;
+        color: #ffffff;
+        padding: 7px 18px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        box-shadow: 0 4px 14px rgba(15, 23, 42, 0.1);
+        opacity: 0;
+        transform: translateY(-8px);
+      }
+      .brand-badge-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #ff5722;
+      }
+
+      /* ── HEADLINE (Y: 88px) ── */
+      .headline-wrapper {
+        position: absolute;
+        top: 88px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 20;
+        padding: 0 32px;
+      }
+      .headline {
+        font-size: 34px;
+        font-weight: 900;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        color: #0f172a;
+        text-transform: uppercase;
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      .headline-accent {
+        width: 64px;
+        height: 5px;
+        background: #ff5722;
+        border-radius: 999px;
+        margin: 10px auto 0;
+        opacity: 0;
+        transform: scaleX(0);
+      }
+
+      /* ── TOP DOSSIER: ĐỦ ĐIỀU KIỆN NỘP (Y: 155px) ── */
+      .top-dossier-wrapper {
+        position: absolute;
+        top: 155px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 30;
+      }
+      .top-dossier {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #0f172a;
+        color: #ffffff;
+        border: 2px solid #ff5722;
+        border-radius: 999px;
+        padding: 6px 18px;
+        box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+        opacity: 0;
+        transform: scale(0.7);
+      }
+      .dossier-label {
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      /* ── VISUAL STAGE: THE STRATEGIC BALANCE SCALE (Y: 200px - 620px) ── */
+      .scale-stage {
+        position: absolute;
+        top: 200px;
+        left: 0;
+        width: 720px;
+        height: 440px;
+        z-index: 25;
+      }
+
+      /* Fixed Scale Stand & Central Pillar */
+      .scale-stand-svg {
+        position: absolute;
+        top: 20px;
+        left: 120px;
+        width: 480px;
+        height: 400px;
+        pointer-events: none;
+        z-index: 10;
+      }
+
+      /* Rotating Beam Assembly (Width 480px, centered at 360px -> left: 120px) */
+      .beam-assembly {
+        position: absolute;
+        top: 45px;
+        left: 120px;
+        width: 480px;
+        height: 24px;
+        transform-origin: 240px 12px;
+        z-index: 20;
+      }
+
+      /* Solid Crossbar Beam */
+      .beam-bar {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 480px;
+        height: 9px;
+        background: #0f172a;
+        border-radius: 4px;
+        box-shadow: 0 4px 10px rgba(15, 23, 42, 0.15);
+      }
+
+      /* Central Fulcrum Hub on Beam */
+      .fulcrum-hub {
+        position: absolute;
+        top: 33px;
+        left: 346px;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: #0f172a;
+        border: 3px solid #ff5722;
+        box-shadow: 0 4px 14px rgba(255, 87, 34, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 30;
+      }
+      .fulcrum-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #fde047;
+      }
+      .fulcrum-ripple {
+        position: absolute;
+        inset: -14px;
+        border-radius: 50%;
+        border: 3px solid #ff5722;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      /* ── HANGING PAN ASSEMBLIES (LEFT & RIGHT) ── */
+      .pan-assembly {
+        position: absolute;
+        top: 12px;
+        width: 150px;
+        height: 210px;
+        transform-origin: 75px 0px;
+        z-index: 25;
+      }
+
+      .pan-left {
+        left: -15px;
+      }
+
+      .pan-right {
+        right: -15px;
+      }
+
+      /* Suspension Chains SVG */
+      .chains-svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 190px;
+        pointer-events: none;
+        z-index: 10;
+      }
+
+      /* The Physical Weighing Dish (Bottom of the Pan) */
+      .pan-dish {
+        position: absolute;
+        top: 175px;
+        left: 5px;
+        width: 140px;
+        height: 18px;
+        background: #0f172a;
+        border-radius: 0 0 70px 70px;
+        border: 2px solid #ff5722;
+        box-shadow: 0 8px 18px rgba(15, 23, 42, 0.2);
+        z-index: 15;
+      }
+
+      /* The Payload (Icon Disc + Label) RESTING DIRECTLY IN/ON THE DISH */
+      .pan-payload {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        z-index: 25;
+        transform-origin: center bottom;
+      }
+
+      /* Circular Token Disc */
+      .token-disc {
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        background: #ffffff;
+        border: 3px solid #0f172a;
+        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Bold Label Pill */
+      .token-pill {
+        display: inline-flex;
+        align-items: center;
+        background: #0f172a;
+        color: #ffffff;
+        border: 2px solid #ff5722;
+        padding: 5px 14px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+        white-space: nowrap;
+      }
+
+      /* ── SUPPORTING FAMILY CUTOUT (Y: 640px - 880px) ── */
+      .family-section {
+        position: absolute;
+        top: 620px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 20;
+      }
+
+      /* ── BOTTOM SYNTHESIS BADGE (Y: 910px) ── */
+      .synthesis-badge-wrap {
+        position: absolute;
+        top: 900px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 35;
+      }
+      .synthesis-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: #0f172a;
+        color: #ffffff;
+        border: 2px solid #ff5722;
+        padding: 10px 26px;
+        border-radius: 999px;
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        box-shadow: 0 12px 32px rgba(15, 23, 42, 0.18);
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      .synthesis-star {
+        color: #fde047;
+        font-size: 16px;
+      }
+
+      /* 220px Subtitle Footer Clearance */
+      .footer-safe-guide {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 720px;
+        height: 220px;
+        pointer-events: none;
+        z-index: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="clip" data-composition-id="main" data-width="720" data-height="1280" data-duration="9">
+      <audio id="voice-track" src="./assets/audio.wav" data-start="0" data-duration="9" preload="auto"></audio>
+
+      <!-- Studio Canvas Background -->
+      <div class="canvas-bg"></div>
+
+      <!-- Top Branding -->
+      <div class="brand-badge-wrapper" data-layout-allow-overlap data-layout-allow-occlusion>
+        <div class="brand-badge" id="brand-badge">
+          <span class="brand-badge-dot"></span>
+          <span>ESORA • DU HỌC CANADA</span>
+        </div>
+      </div>
+
+      <!-- Headline -->
+      <div class="headline-wrapper" data-layout-allow-overlap data-layout-allow-occlusion>
+        <h1 class="headline" id="main-headline">TIÊU CHUẨN HỒ SƠ TỐT</h1>
+        <div class="headline-accent" id="headline-accent"></div>
+      </div>
+
+      <!-- Top Dossier Anchor -->
+      <div class="top-dossier-wrapper" data-layout-allow-overlap data-layout-allow-occlusion>
+        <div class="top-dossier" id="top-dossier">
+          <span>📋</span>
+          <span class="dossier-label">ĐỦ ĐIỀU KIỆN NỘP</span>
+        </div>
+      </div>
+
+      <!-- ── STRATEGIC BALANCE SCALE STAGE ── -->
+      <div class="scale-stage" data-layout-allow-overlap data-layout-allow-occlusion>
+        <!-- Fixed Scale Stand (Pillar & Base) -->
+        <svg class="scale-stand-svg" viewBox="0 0 480 400" fill="none">
+          <!-- Sturdy Base Plate -->
+          <path d="M 160 375 L 320 375 L 340 395 L 140 395 Z" fill="#0F172A" stroke="#FF5722" stroke-width="2"/>
+          <line x1="180" y1="385" x2="300" y2="385" stroke="#475569" stroke-width="2"/>
+          <!-- Central Upright Pillar -->
+          <rect x="236" y="30" width="8" height="345" fill="#0F172A"/>
+          <!-- Decorative Pillar Flanges -->
+          <path d="M 232 40 L 248 40 L 240 24 Z" fill="#FF5722"/>
+          <rect x="234" y="180" width="12" height="4" rx="2" fill="#475569"/>
+        </svg>
+
+        <!-- Central Fulcrum Pivot on Stand -->
+        <div class="fulcrum-hub" id="fulcrum-hub" data-layout-allow-overflow data-layout-allow-overlap>
+          <div class="fulcrum-dot"></div>
+          <div class="fulcrum-ripple" id="fulcrum-ripple"></div>
+        </div>
+
+        <!-- Rotating Beam Assembly -->
+        <div class="beam-assembly" id="beam-assembly" data-layout-allow-overflow data-layout-allow-overlap>
+          <!-- The Crossbar Beam -->
+          <div class="beam-bar"></div>
+
+          <!-- LEFT PAN ASSEMBLY (TÀI CHÍNH) -->
+          <div class="pan-assembly pan-left" id="pan-left-assembly" data-layout-allow-overflow data-layout-allow-overlap data-layout-allow-drift>
+            <!-- Suspension Chains -->
+            <svg class="chains-svg" viewBox="0 0 150 190" fill="none">
+              <line x1="75" y1="0" x2="18" y2="175" stroke="#64748B" stroke-width="2.5" stroke-dasharray="4 4"/>
+              <line x1="75" y1="0" x2="132" y2="175" stroke="#64748B" stroke-width="2.5" stroke-dasharray="4 4"/>
+            </svg>
+
+            <!-- Payload RESTING DIRECTLY ON DISH -->
+            <div class="pan-payload" id="payload-left">
+              <div class="token-disc">
+                <!-- Vault / Financial Capacity Icon -->
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="5" width="20" height="14" rx="2"/>
+                  <line x1="2" y1="10" x2="22" y2="10"/>
+                  <circle cx="16" cy="15" r="1.5" fill="#FF5722"/>
+                </svg>
+              </div>
+              <div class="token-pill">TÀI CHÍNH</div>
+            </div>
+
+            <!-- The Weighing Dish Holding the Payload -->
+            <div class="pan-dish"></div>
+          </div>
+
+          <!-- RIGHT PAN ASSEMBLY (KẾ HOẠCH DÀI HẠN) -->
+          <div class="pan-assembly pan-right" id="pan-right-assembly" data-layout-allow-overflow data-layout-allow-overlap data-layout-allow-drift>
+            <!-- Suspension Chains -->
+            <svg class="chains-svg" viewBox="0 0 150 190" fill="none">
+              <line x1="75" y1="0" x2="18" y2="175" stroke="#64748B" stroke-width="2.5" stroke-dasharray="4 4"/>
+              <line x1="75" y1="0" x2="132" y2="175" stroke="#64748B" stroke-width="2.5" stroke-dasharray="4 4"/>
+            </svg>
+
+            <!-- Payload RESTING DIRECTLY ON DISH -->
+            <div class="pan-payload" id="payload-right">
+              <div class="token-disc">
+                <!-- Compass / Long-term Strategy Icon -->
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="#FF5722" stroke="#0F172A" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <div class="token-pill">KẾ HOẠCH DÀI HẠN</div>
+            </div>
+
+            <!-- The Weighing Dish Holding the Payload -->
+            <div class="pan-dish"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SUPPORTING FAMILY SECTION (Y: 620px - 880px) ── -->
+      <div class="family-section" data-layout-allow-overlap data-layout-allow-occlusion>
+        <svg id="family-group" width="340" height="260" viewBox="0 0 340 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Ground Shadow -->
+          <ellipse cx="170" cy="254" rx="140" ry="6" fill="#E2E8F0"/>
+
+          <!-- FATHER (Left) -->
+          <g id="char-father">
+            <path d="M40 150C40 120 65 110 95 110C125 110 150 120 150 150L145 250H45L40 150Z" fill="#1E293B"/>
+            <path d="M85 110L95 130L105 110" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="95" cy="70" r="28" fill="#FDBA74"/>
+            <path d="M68 60C70 35 120 35 122 60C125 70 65 70 68 60Z" fill="#334155"/>
+            <rect x="78" y="65" width="14" height="12" rx="3" stroke="#0F172A" stroke-width="2"/>
+            <rect x="98" y="65" width="14" height="12" rx="3" stroke="#0F172A" stroke-width="2"/>
+            <line x1="92" y1="71" x2="98" y2="71" stroke="#0F172A" stroke-width="2"/>
+            <path d="M90 86C93 90 97 90 100 86" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
+          </g>
+
+          <!-- MOTHER (Right) -->
+          <g id="char-mother">
+            <path d="M190 150C190 120 215 110 245 110C275 110 300 120 300 150L295 250H195L190 150Z" fill="#3B82F6"/>
+            <path d="M230 110L245 132L260 110" stroke="#DBEAFE" stroke-width="3.5" stroke-linecap="round"/>
+            <circle cx="245" cy="70" r="26" fill="#FDBA74"/>
+            <path d="M218 65C220 35 270 35 272 65C276 80 270 95 266 100C260 95 262 75 218 65Z" fill="#475569"/>
+            <circle cx="236" cy="68" r="2.5" fill="#0F172A"/>
+            <circle cx="254" cy="68" r="2.5" fill="#0F172A"/>
+            <path d="M240 85C243 89 247 89 250 85" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
+          </g>
+
+          <!-- STUDENT (Center Foreground, in ESORA Orange) -->
+          <g id="char-student">
+            <path d="M115 140C115 115 140 105 170 105C200 105 225 115 225 140L220 252H120L115 140Z" fill="#FF5722"/>
+            <path d="M160 105L170 125L180 105" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="170" cy="60" r="30" fill="#FDBA74"/>
+            <path d="M142 52C145 25 195 25 198 52C204 60 202 72 192 70C188 60 152 60 148 70C138 72 136 60 142 52Z" fill="#0F172A"/>
+            <!-- Happy upward gaze -->
+            <path d="M157 56C160 53 164 53 167 56" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M173 56C176 53 180 53 183 56" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M162 72C166 78 174 78 178 72" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- Raised Arm in Celebration -->
+            <path d="M210 145C220 130 235 105 243 90C247 80 243 75 237 79C231 83 220 110 210 125" fill="#FF5722" stroke="#E64A19" stroke-width="1.5"/>
+            <circle cx="243" cy="77" r="8" fill="#FDBA74"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- ── BOTTOM SYNTHESIS BADGE ── -->
+      <div class="synthesis-badge-wrap" data-layout-allow-overlap data-layout-allow-occlusion>
+        <div class="synthesis-badge" id="synthesis-badge">
+          <span class="synthesis-star">★</span>
+          <span>CÂN BẰNG TOÀN DIỆN</span>
+          <span class="synthesis-star">★</span>
+        </div>
+      </div>
+
+      <!-- 220px Subtitle Footer Clearance -->
+      <div class="footer-safe-guide"></div>
+    </div>
+
+    <!-- GSAP Master Animation Sync (9.00s Duration) -->
+    <script>
+      const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+
+      // Initial States: Opacity 1 with scale 0 prevents intermediate contrast failures
+      gsap.set(["#brand-badge", "#main-headline", "#headline-accent"], { opacity: 0, y: -10 });
+      gsap.set("#headline-accent", { scaleX: 0 });
+      gsap.set("#top-dossier", { scale: 0, opacity: 1 });
+      gsap.set("#payload-left", { scale: 0, opacity: 1, y: -40 });
+      gsap.set("#payload-right", { scale: 0, opacity: 1, y: -40 });
+      gsap.set("#synthesis-badge", { scale: 0, opacity: 1 });
+      gsap.set("#family-group", { opacity: 0, y: 30 });
+
+      // Start beam with a slight natural tilt
+      gsap.set("#beam-assembly", { rotation: -6 });
+      gsap.set("#pan-left-assembly", { rotation: 6 });
+      gsap.set("#pan-right-assembly", { rotation: 6 });
+
+      // Helper function to animate beam and keep pans hanging vertically
+      function tiltScale(deg, dur, pos, ease = "power2.out") {
+        tl.to("#beam-assembly", { rotation: deg, duration: dur, ease: ease }, pos);
+        tl.to("#pan-left-assembly", { rotation: -deg, duration: dur, ease: ease }, pos);
+        tl.to("#pan-right-assembly", { rotation: -deg, duration: dur, ease: ease }, pos);
+      }
+
+      // ── BEAT 1 (0.0s – 2.0s): INTRO & DOSSIER ──
+      // "Bởi một hồ sơ du học tốt không chỉ là đủ điều kiện để nộp..."
+      tl.to("#brand-badge", { opacity: 1, y: 0, duration: 0.45 }, 0.1);
+      tl.to("#main-headline", { opacity: 1, y: 0, duration: 0.55, ease: "back.out(1.2)" }, 0.25);
+      tl.to("#headline-accent", { opacity: 1, scaleX: 1, duration: 0.45 }, 0.5);
+
+      // Dossier pops in
+      tl.to("#top-dossier", { scale: 1, duration: 0.45, ease: "back.out(1.5)" }, 0.8);
+
+      // Family appears at base
+      tl.to("#family-group", { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 1.2);
+
+      // ── BEAT 2 (2.0s – 3.8s): LEFT PAN LANDING (TÀI CHÍNH) ──
+      // "...mà còn phải phù hợp với khả năng tài chính..."
+      tl.to("#payload-left", {
+        scale: 1,
+        y: 0,
+        duration: 0.55,
+        ease: "bounce.out"
+      }, 2.0);
+
+      // Left pan dips under the financial weight (-14 deg) from 2.0s to 2.65s
+      tiltScale(-14, 0.65, 2.0, "power2.out");
+
+      // ── BEAT 3 (3.8s – 6.2s): RIGHT PAN LANDING & DYNAMIC EQUILIBRIUM ──
+      // "...và kế hoạch dài hạn của gia đình."
+      tl.to("#payload-right", {
+        scale: 1,
+        y: 0,
+        duration: 0.55,
+        ease: "bounce.out"
+      }, 3.8);
+
+      // Sequential counter-oscillation towards balance:
+      // 3.8s -> 4.5s: Right weight counteracts: swings to +8 deg
+      tiltScale(8, 0.7, 3.8, "power2.inOut");
+      // 4.5s -> 5.1s: swings back to -4 deg
+      tiltScale(-4, 0.6, 4.5, "power1.inOut");
+      // 5.1s -> 5.6s: swings to +2 deg
+      tiltScale(2, 0.5, 5.1, "power1.inOut");
+      // 5.6s -> 6.1s: SNAP TO PERFECT 0 DEG EQUILIBRIUM
+      tiltScale(0, 0.5, 5.6, "elastic.out(1, 0.5)");
+
+      // ── BEAT 4 (6.2s – 9.0s): HARMONY LOCK & CELEBRATION ──
+      // Fulcrum golden ripple
+      tl.to("#fulcrum-ripple", {
+        opacity: 0.9,
+        scale: 1.8,
+        duration: 0.5,
+        ease: "power2.out"
+      }, 6.3);
+      tl.to("#fulcrum-ripple", { opacity: 0, duration: 0.3 }, 6.8);
+
+      // Synthesis badge pops up
+      tl.to("#synthesis-badge", {
+        scale: 1,
+        duration: 0.4,
+        ease: "back.out(1.6)"
+      }, 6.5);
+
+      // Family gentle celebratory bounce
+      tl.to("#char-student", { y: -8, duration: 0.25, yoyo: true, repeat: 3, ease: "power1.inOut" }, 6.6);
+
+      // Final stable hold through 9.00s
+      tl.to({}, { duration: 1.8 }, 7.2);
+    </script>
+  </body>
+</html>

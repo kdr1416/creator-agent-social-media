@@ -1,0 +1,906 @@
+[
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\production_status.json",
+    "sha256": "7046962DA0F47B63BE1637B884D7C98869AF06216B679AACB8E7AB3E357CE04A"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\project_manifest.json",
+    "sha256": "3311B1CCCAEB00650D2E3E124A64803636C69F21AED028E839B853FA136A67D9"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\README.md",
+    "sha256": "4E1B28F594CBC869E623B97FA3926D3F8A7B3018AEC91FCC7121B22A2D5B1CE9"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\REVIEW.html",
+    "sha256": "170276FC26AD46E001996E9B5BE69F263FB8BA01A6679F2DE9396F6E3BFF1499"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\assets\\ledger.json",
+    "sha256": "9A3CD8675E05203471BE8331A2E77FC49C2083381C3A0D92E551636822112883"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\assets\\brand\\esora-avatar-original.jpg",
+    "sha256": "F34096F78BC3C030B536C446EFE71273C32F18B55CC33306705AB09CE0AA313E"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\assets\\fonts\\pilot-bold.ttf",
+    "sha256": "E8F4E3BAF6CC35FED6FCCE3A540E8B39E8F6CDA1D22A28F2EC8F526FEF7A43F5"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\assets\\illustration\\S03-coast.svg",
+    "sha256": "9EC9D1C5EA62B204054E0AD47C0DBB5850B4333298F39A14D93C6ABDBC7223E3"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\assets\\illustration\\S08-home.svg",
+    "sha256": "D3CB9030366D525724CB62B2B641CC788DDD7C360D610059BA90F810AE5767B6"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\assets\\vendor\\gsap.min.js",
+    "sha256": "C174BFCE53A729418D57A8AD8625E7247C793A22FEF8E2851E3CFA3DE9CD8280"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-browser-qa.cjs",
+    "sha256": "5DF70174069D903AEEBD9669F54E01AD7EE58618B857798CFCB6ACF0A3B3C5D8"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-media-qa.py",
+    "sha256": "CCDFCFDEF23B405A28991FFC1381D9E72A043D9714D5021AB6263C5B65B80BB2"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-working-config.json",
+    "sha256": "275C3D53C5B9D09C32F9443B88B87CDEA71D131DF70FE75308706E39057801CB"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-browser-qa.log",
+    "sha256": "BB5442DAB5765F66831C163F1F26E7F098BF8A28FC97E265ADC23F237352103F"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence.py",
+    "sha256": "BB7A2ED26693AD5687BD30408782C9F7BABF364CA4C4EF45802FB9F6CD04498A"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-media-qa.log",
+    "sha256": "0E703F53E69D6FCD8483979BC058291E01F4567A9AF10D75D9922F61FBD5AD09"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-S03-check.json",
+    "sha256": "3EFAE33557B9385ED1ACAE5E2B915D7DB278078273D7B9DA6DD1C3DB1D8DDA90"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-S03-mux.log",
+    "sha256": "16351DE6EEB1DB4EDA384709DCDFF78CCBBFBB09126A3A2A12C55EAFC940C863"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-S03-render.log",
+    "sha256": "CFCC6C886EC1220275D5E2B0D74C1972A24C0C3D8831B120AE3FC84DBF76A319"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-S08-check.json",
+    "sha256": "8C7683B9CE1A2A4B3B95862C1DFAA5F647CED2724ED6B40BD4675F027BC2BB4B"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-S08-mux.log",
+    "sha256": "99398CCBD81385926F867ACAA8D389FFBCEB991CCACDDD6547B865A3643A30DE"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-S08-render.log",
+    "sha256": "0F6551145C6036BE78B7FC2D11B46CFB7B17FBD1015FF699387CD56026670202"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-source-qa.log",
+    "sha256": "986DF5C78AB75FAA605EC69EC374BEA809480412B96869E8E3AF38280B36E238"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\README.md",
+    "sha256": "C7FBFCA18CA18775427429F6692FE23CE3CBCB20B96BBA57A35A3AB687452A12"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-catalog.json",
+    "sha256": "6910BEED4060FE909ACA5E6504938A92EA0C97503E1909D05325D1D143196BDB"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\type-keyframes-check.log",
+    "sha256": "72167B239BEE9D06560CC87B8BF93D73F94219DDBD4E5C0FD33234DB7FEB78BD"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\type-keyframes-v1.cjs",
+    "sha256": "004103AA226907B9579492CFCD12091AC0E8879355E6312872EDBBAC6E750B98"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\type-keyframes-v1.py",
+    "sha256": "DC99EFFA5FF0DC7D19482C034D249AB64430411D98EF05E708609552E1577674"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\intake-before-creative-20261101\\production_status.json",
+    "sha256": "86C0CD97A0B3296C040FE6D9F195BE8DD4D3463D0241035BD8AC3DB280F9FD5A"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\intake-before-creative-20261101\\assets\\ledger.json",
+    "sha256": "9C22E52E6F7DBB39469D0E7C682AE38C56EE1241257E6A8668B197AF8F662E71"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\browser-final.json",
+    "sha256": "BCC5350BF1AA7D977B790044AF60868F8D3E47695E24EFA1E999852A84D4B230"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\browser-final.log",
+    "sha256": "2321D66ED14FC78D78B4496F613619BEC5D99A5E1193041DC9836DEA4EA9018D"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\browser-source-initial-timeout.json",
+    "sha256": "1D8DAF629E58C0579A37E7D8DFDAE0EA8CD7D89A5493F197576E3E53F8B5B66B"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\browser-source.json",
+    "sha256": "2B9E59C2037BBE71218D04D9B220887F9DA8FAA75DEFF0A432B96A9D119E00F7"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\media-qa.json",
+    "sha256": "0E703F53E69D6FCD8483979BC058291E01F4567A9AF10D75D9922F61FBD5AD09"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\media-qa.log",
+    "sha256": "9A4616C9018718215D786BF57BA1C9D2F81F86C173A80B7026698829542F1C41"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\preexisting-files.diff",
+    "sha256": "CDEAC183C6B9EFD8CE88F4B63A3E608B2C14B97E07F6E6D8FA8075C51B44B5CA"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\preservation-qa.json",
+    "sha256": "A76D948DA89764A48930E82A7280B5EB1787D0B0D94DD79E103171CC4A1BB578"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\REVIEW-1280.png",
+    "sha256": "094B5BE6C4CB50CE343D119D6306EDCD7852BD178CB2C2C912C944F352CBCAF4"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\REVIEW-360.png",
+    "sha256": "E33ECECC1638036207D56ED9A3A5F6446A6BE8AA4DC6CE2CC7C1681FC8926CAC"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\REVIEW-768.png",
+    "sha256": "06ECB6599D6AD9A9F1FE2CDA46EAB643366DF45A41B3FE97B3229FC432EED76B"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-0.00.png",
+    "sha256": "4B7B1B862FA2151AB5958A2584A943B0BBA276474950DED8A3B153F3A11199A5"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-1.25.png",
+    "sha256": "C39744F20F76C0C5B312410D12F7A20CFC4F335BD265B05F3F7D505AA6CA09C9"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-2.80.png",
+    "sha256": "47663DD59F36C2A9809F5D33C5477C12FAC6B2DC6A7D24EFE1DBDD5FF845BDFF"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-3.80.png",
+    "sha256": "F355E4BB71693DCC52BAC114487FB6AD6B3F968E8604E5FBA01E30A17749FA62"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-5.30.png",
+    "sha256": "32EAA3D861556B849BAA55AFA291DBD4D9E7708F2F521F315CDCECE61C723F8E"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-7.80.png",
+    "sha256": "96E24F02D556AB319FB99BA37ADD7861EC8E812ACCDB9648A596E9B6589E5A0B"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-8.90.png",
+    "sha256": "9AE470EEC17CA434C677697EED72840D98C6CCF6EFD6CF003322CC35E98F74BD"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-artwork.png",
+    "sha256": "DD211198B75D62759A4DD9533747B6D304CFC4957099DA848709A912CCC7E744"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-check.json",
+    "sha256": "6FFE1B5372B631A039C5DB7B451EC1120CEC30F7A0C181901DF83C85F39789E3"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-encoded-0.00.png",
+    "sha256": "6C386482BF12942650F3565D5EE27C33A5E60CE8F48318DE1924D3F3D0CB333D"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-encoded-3.80.png",
+    "sha256": "E5C330E1C64A7D9AA4170C1039D8776746ABAE3D9BA11EA205D101CA3CCC3A1C"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-encoded-8.80.png",
+    "sha256": "F9B5C05A894C4E9E5FA026836B2BED6738A8D6414FAB29E672CA6A8534540A11"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-ffprobe.json",
+    "sha256": "E4333668982FBB55B34F40A1F8428EFA7679B4533C96FBC896E812860628A414"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-mobile.png",
+    "sha256": "993E3DA1CBA9C5F8B3C0F81521DC372B8BCF66A2B14B3339A2018233F32EE43B"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-mux.log",
+    "sha256": "A0D614F3B11B348F3CE0020509FCC38AFE7E8597773E34DED0805BD9BC4DC3DD"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-preview.log",
+    "sha256": "A9466A2BE1253E092CA26C889AE101AA4975260B3EB92E79C43D48761C9F5DE7"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S03-render.log",
+    "sha256": "36369EE795C76C9C2118C10F1BAEE15B1FA767CFEFDF4C9D10DF7F452562AAE5"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-0.00.png",
+    "sha256": "641CC13AF4D0426FCFDE34627FF9C03D430A3A28BA98EE4A1EB58EDF2A4518E7"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-1.40.png",
+    "sha256": "A6BE3F517A3C07493C2BA4E0E1E4AABD39BBDB0E8DA3F93855D9E646DD41B643"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-2.60.png",
+    "sha256": "998B6CCE2A636AB59512022BAA147D48BDB050C5C2C243112C5824592CE2C4A8"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-3.80.png",
+    "sha256": "B5560ABEF5B4A1586AA598BD9A42C51E18E85DC9FC1ED014EFA0D138A9A868D7"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-4.90.png",
+    "sha256": "5B0AC04516541909A3F2255E6899037A629125ECB7A07E2963EF14593B0F0951"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-5.56.png",
+    "sha256": "1FB2C192E1C47B553DD74ECE83F927789D5A51F6B5A8C95BCE39265E70DEC51B"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-artwork.png",
+    "sha256": "EC962232B700790E11C3CA2E160C6445190EA2671CE74BE5C651A3A1C8325CF9"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-check.json",
+    "sha256": "EF477CE03AB255D419A5AEA9573B25FD6E584F512005E0878AB20F781DED99DD"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-encoded-0.00.png",
+    "sha256": "35B81144274740B4E2C6A08052DC81C37C103B4F2D81C135F8DF1960B39E00F9"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-encoded-2.60.png",
+    "sha256": "FD72422BE94DB07923393459801434E33EB3CAD37A56590C47D1F831796D30F2"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-encoded-5.30.png",
+    "sha256": "606C8217A98C0692016392FED9D33EC1C95D8C5EB2C8AAFBF5F1914AC0B6DE17"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-ffprobe.json",
+    "sha256": "DE99BB89FE3711F9CD7C310664CB22ACDB9B00936F5119508A0DDE3A4AE1A985"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-isolation-snapshot.json",
+    "sha256": "44B3A53E25669384F4923AD390C25F4A5B1833E4B2A7261EE2E3CC30B7FBA687"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-mobile.png",
+    "sha256": "2F29D5596CF3C3504340B11AA3FB12522BDE4F43CF21AA7D69B9D4ACA3665982"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-mux.log",
+    "sha256": "6B77288F68E355F084C7CD2DD0800EE59260B61A0013389C1CFFB7B4BE51A7B5"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\S08-render.log",
+    "sha256": "4598BFD0EECA040E34723B7622A572F3062CD204D68C59275B1800240D6EEF4A"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\pilot-evidence\\source-qa.log",
+    "sha256": "44795DF17127CABC26DC139826ACD4EF35857EFCB6DCAEB5EB2D646FAC79D534"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\delivery-qa.json",
+    "sha256": "C448D5D8AC05CB7BF582A76AAC54F2AD9D88CB59CD841544353EDCFED8E2B824"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S03-cafe-before.png",
+    "sha256": "4ACD781E952B255B32F318325DB85BB9060F341003187956CAF2349F0F57CC96"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S03-cafe-during.png",
+    "sha256": "53EFC66012E0C085B4B7A58169B7534F3C90E4AAEA01799C1011E87F93C06D1A"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S03-cafe-settled.png",
+    "sha256": "9DFF35C18FBA4E6DB1ED885D44EE98EA644C3D26553E62AD30F042057ED9AC51"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S03-comparison-after.png",
+    "sha256": "116E6C3EDB5BF42FF6523CF0C827DE1315EA7266EF4A720523C78E1A6A0C0EDF"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S03-comparison-before.png",
+    "sha256": "751E11499D45BD455B68A365622DAF5ABF7E3737E705F759ABBDE1A60E8D05E7"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S03-family-before.png",
+    "sha256": "DCEFEA1FB5C75816771BF9C6279FE32B403FBCF08D1DE5371002DF01D7158822"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S03-family-during.png",
+    "sha256": "D1EA64AFA7CB46A2332A55964C101489BB4D0386AC0AF029FC8273E8204D7AAA"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S03-family-settled.png",
+    "sha256": "3FF134035AC138D83F4DE78840BC9ED5F55D4538CC170F721FAEE945D7E6FA07"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S03-run-before.png",
+    "sha256": "5BF2F79AD06B17DF757E881C4C2D3D88AC977094E42989665DBB0630832AB6EE"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S03-run-during.png",
+    "sha256": "CC2E7FBFF23226A474B467BD89D67AF8219E20CCE2C184DA11DFA9A3DF0D02AC"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S03-run-settled.png",
+    "sha256": "ABBAEA3FAADB9028284632CA7F68AC0EB6FEC3FCA832622C1A42053251BC1DD0"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S03-walk-before.png",
+    "sha256": "FF2DBA37C32081BCF62BCC56DE1F0899FE66316FB03CC5BF1C2AED816A5CA549"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S03-walk-during.png",
+    "sha256": "6140F04B96604E11BDE0855D0D0E4BE6303979870C550FCFF18E5BE875B0D06F"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S03-walk-settled.png",
+    "sha256": "078FB1F719EBB356A1FB5407EE233371DFDDE4F048EB3E869872EC116AA0BD9A"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S08-balance-effect.png",
+    "sha256": "D05E51F1435A8159F21C0D6A08E717A94C6B0BFCD7DE2279AA90BB3EBE5D58EB"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S08-comparison-after.png",
+    "sha256": "D5F6BFDBEA7418C5FC4FECCC7B2D0614D590D78E9C0BEDC9D0B94D3ED12B2070"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S08-comparison-before.png",
+    "sha256": "E2DB3DC7DBE369AA423B07D3C24CA73D4226178B2580B1169505158AFE22A05F"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S08-family-before.png",
+    "sha256": "432B1EC6230A1E8596C645DD4CACC51FE997BAE10E9EAA020A8CB3DD639F15E1"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S08-family-during.png",
+    "sha256": "A37517D08D21ADC422C88DC55D4967CD03B63CC5D0DB40E87881C2F828C91E64"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S08-family-settled.png",
+    "sha256": "CDAFA9ACBF12B734B2B8DF7AB6770CFB3C6EAB93AF8C62C3C45CA509A3E734AA"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S08-slow-before.png",
+    "sha256": "1DC7BF4A002FAAC58B4015491DF8D486D471FC799FD5DADF398F7BB75526FD80"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S08-slow-during.png",
+    "sha256": "31447A91B536262A8C4B67371935F0DE40CC6B6030F8DB930B951353CE6AAE47"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S08-slow-settled.png",
+    "sha256": "09693CA33E9713168EE349177E9941CA05BD34C93242B24795567150EC202A02"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S08-time-before.png",
+    "sha256": "2610A5379EB7952A8849E387FFC68E1C1F7711E2AB71934DEF57EED99D7BDF06"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S08-time-during.png",
+    "sha256": "C38C97999847A7B876E7C6F0F2309659BE5F6F316C4700A47282F761000BD6AA"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\S08-time-settled.png",
+    "sha256": "A15052E1CD9446CCC45F244075623872A43D0DF9F84C21816FAA9AC1273280AA"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\r1-evidence\\timing.json",
+    "sha256": "437F0A75C0B3B5371D556A9FBFF23327EC59E7BAD641197740DF2DACE08C6D43"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\production_status.json",
+    "sha256": "DD8D844E5D0ED697D8CB33F01F9D4792EE20D101D51170AFD037583D3EAD7DDC"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\project_manifest.json",
+    "sha256": "3311B1CCCAEB00650D2E3E124A64803636C69F21AED028E839B853FA136A67D9"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\protected.json",
+    "sha256": "E846F8E03A52BEBD428140C1577703E83639D05EF98A4B02F2BBDEAD31F796AD"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\REVIEW.html",
+    "sha256": "60EFAC7AAA3C3A18E229518E36A5D9439B86CBF4A8A96F16F2FDA2A9DE6B5487"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\assets\\ledger.json",
+    "sha256": "AF3721DF4AEE66018958F24C5FFFF684C1FD65098BACB52392819306DBA34D04"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\assets\\brand\\esora-avatar-original.jpg",
+    "sha256": "F34096F78BC3C030B536C446EFE71273C32F18B55CC33306705AB09CE0AA313E"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\assets\\illustration\\S03-coast.svg",
+    "sha256": "2A48DB2D87FBED2FF6CBE0E11970DF54CC5982FABEA00E96B9F292000E919BFE"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\assets\\illustration\\S08-home.svg",
+    "sha256": "6B2E6C9985C45BC968786BD57FBD1C0078A439DF3A5F878DBBA3BBE3036A9893"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\assets\\vendor\\gsap.min.js",
+    "sha256": "C174BFCE53A729418D57A8AD8625E7247C793A22FEF8E2851E3CFA3DE9CD8280"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\components\\build_pilot_art.py",
+    "sha256": "541A9ED5C4DD94CBD586316C165C317E642E95BCF7C62B3823175ACDB42C14F4"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\components\\build_pilot_sources.py",
+    "sha256": "56A514A4DD75BC52928FE0A8E8E6F01C8290A0FD15D16290CE080E273B72D2D5"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\components\\motion.js",
+    "sha256": "EBE1E443366DE7151F49DCC150BB5C8E45EFC1CE959A1DFF3810A9A30B9737A1"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\components\\pilot-motion.js",
+    "sha256": "BF98FB5108C58C95645C712F38B9AF69779603E82465C4F992841CB9203957EC"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\creative\\assets-components-plan.md",
+    "sha256": "1C0296212B7195009829D33EB346F9860BE08518A1A085F473B5CE61A732AC65"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\creative\\audio-intake-verification.json",
+    "sha256": "710E1598ABBF508AB5CC4067E6F42A859FC3F708E1893DD438A14AD37DF61A8F"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\creative\\audio-intake-verification.md",
+    "sha256": "59CB00C535422B51F9208A8F2FAFB1BE4AB7989F9C350E15FDB47BF950D7A6DF"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\creative\\creative-direction-proposal.md",
+    "sha256": "D68BFF644E9242389B9A30587D9B7DE2C47A6E2A019631010949DAB3FF971014"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\creative\\pilot-implementation-notes.md",
+    "sha256": "178F1FBFD0F8FD0DF7747FA508A6E5AA7DF353F85116E889094ACEBF5FDA0718"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\creative\\storyboard.md",
+    "sha256": "7F13759196BF2D4E8B7E435328BB16100C7E0A9349469B4DCDB48BBB85D880A5"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\creative\\style-bible.md",
+    "sha256": "E746A9CA1DFBFA83A5D07EF6A69546DC2925718C588B010FB4E74E80EF65C51E"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\creative\\style-tokens.json",
+    "sha256": "5378E0AD4CB6A699E9EF576E519595DC6602609C76334C013851587871975FC4"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\scenes\\README.md",
+    "sha256": "F72262013E8387327F8D445DEF11D1053FBB9C63A799E8AFF77CD77B0066ADC0"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\scenes\\S03\\index.html",
+    "sha256": "AA600E289290117013A660FCB612BC429833124624C05B4902AA154E52B21488"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\scenes\\S03\\picture.mp4",
+    "sha256": "D8E9FAA3003ED7B56773FC68984E9C28713F3576F71CFDC4BE32F04EAFB53B57"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\scenes\\S03\\S03-pilot.mp4",
+    "sha256": "CC5FE2DB4000DC098A8B4E3D043857A257AAB57FB6871443A94CC3B681DAAEE2"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\scenes\\S03\\voice-excerpt.wav",
+    "sha256": "0DC7BF0253B1672B7CB50E21119926EB6006A59A02961E2410F8A18BC1C44DD2"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\scenes\\S03\\.thumbnails\\v5_b32472bd9a326d71_604abeb2208ce84e_jpeg_source_index.html_1080x1920_1080x1920_1793536434787_0.00.jpg",
+    "sha256": "3FBEFF4EA687A4D87A1FAC1475ECA462A9FA9C34A7C750DF2EC483207AD9F8E1"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\scenes\\S03\\.thumbnails\\v5_v3_9fdd59b752286eb1_ffcd4c700bddd300_jpeg_preview_index.html_1080x1920_76x135_1793536614365_3.00.jpg",
+    "sha256": "11773A7BE6E7DDAAD09764442FCA6B189E61A4BC1D481FDA3CFEB97905B9D1C1"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\scenes\\S03\\.thumbnails\\v5_v3_9fdd59b752286eb1_ffcd4c700bddd300_jpeg_preview_index.html_1080x1920_76x135_1793536614365_4.47_f378db65a4545c7d_0.jpg",
+    "sha256": "5FD791D93420755E5C92DFAF8780F58641EFA2B5BA252C0058406ED2403529BF"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\scenes\\S03\\.thumbnails\\v5_v3_b32472bd9a326d71_604abeb2208ce84e_jpeg_preview_index.html_1080x1920_76x135_1793536434787_3.00.jpg",
+    "sha256": "11773A7BE6E7DDAAD09764442FCA6B189E61A4BC1D481FDA3CFEB97905B9D1C1"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\scenes\\S03\\assets\\gsap.min.js",
+    "sha256": "C174BFCE53A729418D57A8AD8625E7247C793A22FEF8E2851E3CFA3DE9CD8280"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\scenes\\S08\\index.html",
+    "sha256": "82B37EB022577F4252692B266E2C305F89644290DF1D14E849B64489599BD16C"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\scenes\\S08\\picture.mp4",
+    "sha256": "ADDBCB38A14E34B288C12DA749A185CCDF6B197C2BEEF19ADC5C3FD39B149237"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\scenes\\S08\\S08-pilot.mp4",
+    "sha256": "FD419F56E18BA0B0ED1399789A5B565A60474059C4F59CDF2C34BEB6AD32016A"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\scenes\\S08\\voice-excerpt.wav",
+    "sha256": "AD5114136DC8753D054737FC28E69D3755D805635766618BCAD97893B8EC0778"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\revision-r1-before\\scenes\\S08\\assets\\gsap.min.js",
+    "sha256": "C174BFCE53A729418D57A8AD8625E7247C793A22FEF8E2851E3CFA3DE9CD8280"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\storyboard-before-20261101\\production_status.json",
+    "sha256": "A0A715F54FEAF96E272A4BFC11D931506850B788E2B8E955BDBCE67FE880FAFB"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\storyboard-before-20261101\\protected-before.json",
+    "sha256": "C39DCB8F6DF52C0D8E5E17B59E285C23D5E1C4A94BC847CB0C88503D37222FA5"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\storyboard-before-20261101\\word-boundary-audit.json",
+    "sha256": "30BB0B8C3ED8740F974CB3966A4901924A2F785B78770E261374D2EEDC1603E2"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\storyboard-before-20261101\\creative\\storyboard.md",
+    "sha256": "CC648F83B5779C8838C81F182F2F952DD9F5A43FFA9885CAB960C5968C0E9751"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\storyboard-before-20261101\\creative\\style-tokens.json",
+    "sha256": "2EDFC05F80EE0D21D7A6ACBC47B13E71566D7EC3F804DFBD2348144D15D8FACB"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\storyboard-planning-evidence\\anchors.json",
+    "sha256": "E7FEEB24E8CF46CA298F63ADBD38F6F77B28F785884B2AAFA1CBA799885DBB93"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\storyboard-planning-evidence\\changes.diff",
+    "sha256": "2B2B965C7A9578E760F6D406DA632EF16C1204658050EFDF85C3A6319214F44C"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\storyboard-planning-evidence\\editorial-plan.json",
+    "sha256": "4B3F04CE47D9885B08181820CDB085C0DF7E6DC642F1BF33FBDC04165171ED7F"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\storyboard-planning-evidence\\README.md",
+    "sha256": "33EE02CEA939F9130A54F67FE34054CD6ED11AFED6CF0170AE2901F217091FB3"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\build\\storyboard-planning-evidence\\validation.json",
+    "sha256": "8A855D34EA436600654AF579FF660ED82BF1BB7276F09C737133B0089AC04B4A"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\components\\build_pilot_art.py",
+    "sha256": "541A9ED5C4DD94CBD586316C165C317E642E95BCF7C62B3823175ACDB42C14F4"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\components\\build_pilot_sources.py",
+    "sha256": "99F142A4DF9433D3BD80B4B88D02238A5A8C7C45282595F12972D6E283F0EE6B"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\components\\motion.js",
+    "sha256": "EBE1E443366DE7151F49DCC150BB5C8E45EFC1CE959A1DFF3810A9A30B9737A1"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\components\\pilot-highlights.json",
+    "sha256": "6CABB3AF3AFAA43A746C3D8B0CF70EC39E34F062C272FFAD9E776AED2B8BEDE9"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\components\\pilot-motion.js",
+    "sha256": "0CAE0067BD07CEF60C86FDA7BFE68C39AB471B30688198572806F64BAE6191DE"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\components\\revise_pilot_r1.py",
+    "sha256": "203C67E501F115BF0CBF76AED2FFDECD8EEEE19169D44D0D273D3E39DDD9AED3"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\assets-components-plan.md",
+    "sha256": "32FCEB17DAE814E5B81DEC901D14D7D531853A95CD2A2F0A1B0763CF8312C4FB"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\audio-intake-verification.json",
+    "sha256": "710E1598ABBF508AB5CC4067E6F42A859FC3F708E1893DD438A14AD37DF61A8F"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\audio-intake-verification.md",
+    "sha256": "59CB00C535422B51F9208A8F2FAFB1BE4AB7989F9C350E15FDB47BF950D7A6DF"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\creative-direction-proposal.md",
+    "sha256": "254B74E7E2473AA1C2BCCF84F0A22D15B059A08588F8F131D22B97D73220D85E"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\pilot-implementation-notes.md",
+    "sha256": "089631DAF2DB609FF0D0575D51C8414B75084B1508D970C4015C3749B68570FA"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\revision-r1.md",
+    "sha256": "615F561967BCE3C2E5A1C559A07D2686C487A02FE20DB576CC670742407440A1"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\storyboard.md",
+    "sha256": "FE9254D9E4ACD9BA68A486B1C815F631B28B4AFE388530147775AE65D5F7ECC0"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\style-bible.md",
+    "sha256": "B413D113E315FD2E977BB5A90DA898BF50F713EF3855C6CCA43E368C96872E7C"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\style-tokens.json",
+    "sha256": "6F95FFC6FA024B302510F22FC8C4FFCE001F9E79F102B8C328E26C6EA5271D15"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\browser-checks.json",
+    "sha256": "8327D9EAC64EBA409077ABAB0D01A4A16ACF94F546934580DFD3092E52F5CD74"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\index.html",
+    "sha256": "CAFDE8BAF764DD1C6ADA0FE0101229494F0D06017A62AF889316DEDC23E79D1D"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\protected-before.json",
+    "sha256": "6C01D2E2ACF30CC3C5F8F93145EA918BD9647F5CF4A41DAA7C0D90248A4D1479"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\README.md",
+    "sha256": "9D6CFD869ACF005D397E6B78363750D8B0A1B83E9DD903B746570EEE27CE3142"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\S03-01.html",
+    "sha256": "32022E9FFB87FD67E52E99C4B19A65110C2F6656A9ACF3F91C373E6AC38C4657"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\S03-01.png",
+    "sha256": "C236D35A2F13DABC39FE708C4D4892C2B0EBF166FAE7AFDEE297212A726FBF35"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\S03-02.html",
+    "sha256": "7EEB5C13FB1FD0362AD2B122BDE01CA969E944494E61B8E7379E335EE972F18C"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\S03-02.png",
+    "sha256": "6C17AF52AB62232ECCEA10519844EA291656C8082B05C38F3FFC0C7D06F04D75"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\S03-03.html",
+    "sha256": "F903010F330EE99BB8B5916B5D7B50F03BA498E98F5E2B52011E99019D1F9008"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\S03-03.png",
+    "sha256": "D2A21BAB823B25F11B3FAAA4C9E67F98F763431DE507D0423FAF08D3F06C4E69"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\S03-board.png",
+    "sha256": "076AF8197CCC958CBC340D734E2E2933FAEC00EE77212D03B3E5C3921C31DE45"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\S08-01.html",
+    "sha256": "75268E8695F7ABAA8E8B2929EE72A229746A9EB577AA75223E43129755E686B9"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\S08-01.png",
+    "sha256": "C2B26ED6ADFD5FBB76965D5E5B8F1990563B234F94EFF8CB4FEE7665532DF1B6"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\S08-02.html",
+    "sha256": "4E08A972EC44E46D395096CCA410891F2B1F777DC026BDC432BCB5948C0A75F1"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\S08-02.png",
+    "sha256": "DC6D9414452F6AB326F264053EE1487F28814137DA24A847C46D49C17DF372FB"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\S08-03-mobile.png",
+    "sha256": "BE748C7CDB0C821C6127B73446499CEE912FCECF1D3A8F9B52524986D4003D50"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\S08-03.html",
+    "sha256": "E964DA5FEE6937D38E3E03B23F3814ACC245212DA1D5B6E789759821B3180AB3"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\S08-03.png",
+    "sha256": "088E71DF03B3FEF781C0307079EF175E7F9EA9C9CAA769B7CCD78A165D611BCD"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\S08-board.png",
+    "sha256": "F03C0A9AB666FE29991D72A2A5FF4E18956114085784C1EDEBAD6A4B71463AA6"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\studies.json",
+    "sha256": "BE34C97F8856E9E02157D65A6D86427E2F3F8438222323A8C807A59FCA72B4B9"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\verification.json",
+    "sha256": "E08E10E9BED7C43C5F16EB1ADA47F1B7845CEFA3A1F644F4D1372E813F4A9C00"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\fonts\\display.ttf",
+    "sha256": "EAAD201DA94CB323401FDB8CC760650803DDF8FD704CB9FA56317E6C69BC6FD6"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\creative\\typography-keyframes-v1\\fonts\\editorial-italic.ttf",
+    "sha256": "2314A03C53506FA79525BC479EA4BE9C036D1EBD86A1FFB5837CA5B43FF51F07"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\inputs\\audio-analysis.md",
+    "sha256": "160DB1061129613AB69622B05CECA7E60F2FB488B6CD21FF4AD8AB6D5E1B01C7"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\inputs\\Generated Audio November 01, 2026 - 5_35PM.wav",
+    "sha256": "6B92D56BB90F3C4E702903D53D098D7C1765DAF716879E8DE60826A3110425C1"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\inputs\\scene-manifest.json",
+    "sha256": "FB86F10CEA1C3683A0B8167AC0F00B3BEDFA49348DA3D4430FA3946D1969BCE7"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\inputs\\scene.example.json",
+    "sha256": "8471BF6CA4D282676648AC2B94BC379B335CCF3E7627892E25BAD472D4FBAB90"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\inputs\\transcript_raw.txt",
+    "sha256": "BBA5F2920FBE1AADC043D304FE8AC8F7E4DFB3FE44BB65AB851B080DAF821F74"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\inputs\\transcription.raw.json",
+    "sha256": "266CD8D065046F494D2CB83967B6B5E6071CE34C510657459CCD8A0DAE7AE81D"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\inputs\\word-timestamps.json",
+    "sha256": "BEE8577B96BDE4BBE89AACF5BC112F001C09EB01906C057F798073241DBEAD16"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\README.md",
+    "sha256": "F72262013E8387327F8D445DEF11D1053FBB9C63A799E8AFF77CD77B0066ADC0"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\index.html",
+    "sha256": "C43D6F9D37F079543D60909EE8A1EED052C1BE9AB83AC7083E017C9EDFDA44F0"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\picture.mp4",
+    "sha256": "2D9277AFCDD3AAC64AEE04C034201DF9E9E549850C9C974B1F830F8B41E864CE"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\S03-pilot.mp4",
+    "sha256": "8F62173CFC615D69C6217503577E28FD90908C6C064CBE3B7C825092237B09E9"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\voice-excerpt.wav",
+    "sha256": "0DC7BF0253B1672B7CB50E21119926EB6006A59A02961E2410F8A18BC1C44DD2"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\.hyperframes\\hf-ids-stamped.json",
+    "sha256": "BE9CB112B696ADBAB2663EBD83E5700F3E55873A93F238BE977A22A9311A5BFF"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\.hyperframes\\history-id",
+    "sha256": "95DD2AB97EE345C4A82D382546C77AD48CB5E2456EDAC6150F4A1ABDA76B95DE"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\.hyperframes\\render-outputs.json",
+    "sha256": "A46F09B5006524A4A72D8DD2EF10EB95AD26F9A9333E2D2289447D25897F65DA"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\.hyperframes\\video-state.json",
+    "sha256": "ADF09EB0476E84435F1C8383959FAB7A4CD32DD50134106BA4A348A4D777AA12"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\.hyperframes\\artifacts\\checks\\7d9ca5f6-8cd0-44f6-8e5f-e0d4f55b05c8.json",
+    "sha256": "3D32411E3369454FFF31885AE6C91CFA98CC5364D8D4801D63D7D21C5C4CA9E7"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\.hyperframes\\artifacts\\checks\\e294f5b0-e684-40cb-a0ac-c1648825d7b7.json",
+    "sha256": "C01E05603479A255B77D0D16917FB896AA6BE0071DEAE58F641F6B441E8125AF"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\.hyperframes\\preview\\f6b67580c941db3ebb9df1e539ef42e6.html",
+    "sha256": "750B11B632CBA10FA445E6E8927C51A85E925F3FC24AACDCDFA4191E620A944A"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\.thumbnails\\v5_b32472bd9a326d71_604abeb2208ce84e_jpeg_source_index.html_1080x1920_1080x1920_1793536434787_0.00.jpg",
+    "sha256": "3FBEFF4EA687A4D87A1FAC1475ECA462A9FA9C34A7C750DF2EC483207AD9F8E1"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\.thumbnails\\v5_v3_9fdd59b752286eb1_ffcd4c700bddd300_jpeg_preview_index.html_1080x1920_76x135_1793536614365_3.00.jpg",
+    "sha256": "11773A7BE6E7DDAAD09764442FCA6B189E61A4BC1D481FDA3CFEB97905B9D1C1"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\.thumbnails\\v5_v3_9fdd59b752286eb1_ffcd4c700bddd300_jpeg_preview_index.html_1080x1920_76x135_1793536614365_4.47_f378db65a4545c7d_0.jpg",
+    "sha256": "5FD791D93420755E5C92DFAF8780F58641EFA2B5BA252C0058406ED2403529BF"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\.thumbnails\\v5_v3_b32472bd9a326d71_604abeb2208ce84e_jpeg_preview_index.html_1080x1920_76x135_1793536434787_3.00.jpg",
+    "sha256": "11773A7BE6E7DDAAD09764442FCA6B189E61A4BC1D481FDA3CFEB97905B9D1C1"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\assets\\gsap.min.js",
+    "sha256": "C174BFCE53A729418D57A8AD8625E7247C793A22FEF8E2851E3CFA3DE9CD8280"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S03\\assets\\pilot-bold.ttf",
+    "sha256": "E8F4E3BAF6CC35FED6FCCE3A540E8B39E8F6CDA1D22A28F2EC8F526FEF7A43F5"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S08\\index.html",
+    "sha256": "0F722E0C9454DB2174EB7A81619899AE770E986E9063F623D9EDE4007EE62D50"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S08\\picture.mp4",
+    "sha256": "50CEE0C4238E045B63C5F2FF8BBC3D769C4D7798D33C92BDA009AAC112D582EA"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S08\\S08-pilot.mp4",
+    "sha256": "672B01CA5E4A75535420A97373CF773D35137CBF1E3BB4F48C5783C66E16063A"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S08\\voice-excerpt.wav",
+    "sha256": "AD5114136DC8753D054737FC28E69D3755D805635766618BCAD97893B8EC0778"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S08\\.hyperframes\\history-id",
+    "sha256": "02F9ACA86AA46677541FE9DDB337BA38613FDC5FF4D62B26A0BF5A7E5F02992A"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S08\\.hyperframes\\render-outputs.json",
+    "sha256": "A46F09B5006524A4A72D8DD2EF10EB95AD26F9A9333E2D2289447D25897F65DA"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S08\\.hyperframes\\video-state.json",
+    "sha256": "33AC14ABCA7D9146DC4D91599AA02FCA900E76516FB0EFD0F6F3CA02C4A63067"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S08\\.hyperframes\\artifacts\\checks\\2347275d-719f-4dcd-bcb9-326185862580.json",
+    "sha256": "09F5E7C4CEB8E4EEB507D2F5DA519B53CFEBE37BD85599F8C0D33EBAC30C5C30"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S08\\.hyperframes\\artifacts\\checks\\2db7d2ac-1b11-4fd2-bca0-10d83b58c751.json",
+    "sha256": "F1736D4838C7E23892E252C74EBB30EAAFEC71172A313E37D06B172CB0B7B21E"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S08\\.hyperframes\\artifacts\\checks\\eeb56b09-42a3-46ce-a26d-413de37e06b9.json",
+    "sha256": "95C83F5C7A76F1F2DD4D72BEB97D177988AA0B22A63A4B28B5B6C991D2C5D1C3"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S08\\assets\\gsap.min.js",
+    "sha256": "C174BFCE53A729418D57A8AD8625E7247C793A22FEF8E2851E3CFA3DE9CD8280"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\video-34\\scenes\\S08\\assets\\pilot-bold.ttf",
+    "sha256": "E8F4E3BAF6CC35FED6FCCE3A540E8B39E8F6CDA1D22A28F2EC8F526FEF7A43F5"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\AGENTS.md",
+    "sha256": "18DB894E284696F7A227D418001E2EE47B67B7A32ED48A4F15EBA830CEA1AD70"
+  },
+  {
+    "path": "D:\\Năm 3\\flowkit-main\\setup.py",
+    "sha256": "810DBB397EF51B7563F12B6B487E145014473E831E8C721F4465D3681F1200C4"
+  }
+]

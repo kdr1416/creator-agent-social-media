@@ -1,0 +1,120 @@
+{
+  "status": "AWAITING CHARACTER DESIGN REVIEW",
+  "protected_files_checked": 93,
+  "protected_changed_or_missing": [],
+  "r2_workspace_geometry_identical_after_removing_replaced_actors_and_hidden_type": true,
+  "master_unchanged": true,
+  "production_approval": "pending",
+  "svg_and_png": [
+    {
+      "id": "option-A",
+      "svg_sha256": "028a8b849f61311bbb645919c9b1336583675676598537f63e642437cd13b320",
+      "html_sha256": "af8a10c3e058178eeec68d4cb7df4d99e22f08cb48984fcd316d26c7aa07473a",
+      "png_sha256": "0ac8afaf9caead42dbf17f569a95489c6eeed0ca669d9ba41dffc85da7bbbcf2",
+      "png_dimensions": [
+        1800,
+        1600
+      ],
+      "duplicate_svg_ids": []
+    },
+    {
+      "id": "option-B",
+      "svg_sha256": "6fafc9520c7a39ad911051002985e0f180cf596e1b26dace4e4df82b18874d72",
+      "html_sha256": "54b09a2f12315f324faacaf38dd0e69af6213618447a6b525727f264204c8bf4",
+      "png_sha256": "a50b30791d083b14d997f79354514a576869c57ff4b9ec6fd325c557db814180",
+      "png_dimensions": [
+        1800,
+        1600
+      ],
+      "duplicate_svg_ids": []
+    },
+    {
+      "id": "option-C",
+      "svg_sha256": "ac95da05b091ecb8de0055f0a42a6deb8423dc70bdb8e56b74a0c5661d1c40db",
+      "html_sha256": "da6aa1d98e46e87ec8b73ebfc3c3ba354038ae86b422ad7b2eda8d9813c9ba44",
+      "png_sha256": "0bfb36382373a907217cc0082609b172b3d9db3ae4cf4fc6108f2bb40a931bfd",
+      "png_dimensions": [
+        1800,
+        1600
+      ],
+      "duplicate_svg_ids": []
+    },
+    {
+      "id": "R2-vs-options",
+      "svg_sha256": "05f0e1571032cd2c8f226fda25fbd403ddcb717ee182e112c25d90fdd2a5d30b",
+      "html_sha256": "602647502e7bfeb20a66fe28ecf0beda52e5266280104d8ee32ef428a5cb4d2d",
+      "png_sha256": "bedbe1ada274ff4288d711c8c5b0ee46f689020fce13adef9c947e053d32211e",
+      "png_dimensions": [
+        1800,
+        940
+      ],
+      "duplicate_svg_ids": []
+    },
+    {
+      "id": "S08-interaction-A",
+      "svg_sha256": "2640fb0ab3da3f8533bea368a6dcd5cc85acdc77edaa7dfc8d275484b648f3ec",
+      "html_sha256": "58d7376ae994390fd65793cd5fb1c696e955675389b40dbee6f6c009986edf90",
+      "png_sha256": "7cfaaeb978d3163dec01d4722f170e592d416b6964a8a47700cb1c9307c367cb",
+      "png_dimensions": [
+        1080,
+        1920
+      ],
+      "duplicate_svg_ids": []
+    },
+    {
+      "id": "scene-scale-A",
+      "svg_sha256": "f95b12501da5f60cbb630988641da7482f9e38e0a6706f8ec58aafcb2c6dec98",
+      "html_sha256": "c245eefc4677e2b846dd7ceed8b67ee9296c7d838726af52ad435e177f3ecef2",
+      "png_sha256": "566793ba2af335ad7d03d7b9015daa7eb16106afd265b83109f43d7f45c76706",
+      "png_dimensions": [
+        1080,
+        1920
+      ],
+      "duplicate_svg_ids": []
+    },
+    {
+      "id": "scene-scale-B",
+      "svg_sha256": "357fbd79c53c1ea969dab331733cb5056f0462b14ac3fdf0ed27ffcdb866bf0f",
+      "html_sha256": "8e36598641e51131190467b07838240141218b6b2e453ed35124bab816525678",
+      "png_sha256": "4e7e4343252c3c1bb0381657b50f47f7e07d59666f8f5dd82c01906492334ece",
+      "png_dimensions": [
+        1080,
+        1920
+      ],
+      "duplicate_svg_ids": []
+    },
+    {
+      "id": "scene-scale-C",
+      "svg_sha256": "a55cbbbe0a1fc910a5f871b6634e75e494ce709ddfa7b13cb3c5dd53de956751",
+      "html_sha256": "3df0992471386b616f8cf7809b0ab8cb3f92300a4d5bb44f8fa75bb6b8739751",
+      "png_sha256": "ba6a99b6daf05b2c9eb58d819bf0063890d9a80be02f73e0e6520f4269403366",
+      "png_dimensions": [
+        1080,
+        1920
+      ],
+      "duplicate_svg_ids": []
+    }
+  ],
+  "all_rendered_without_runtime_errors": true,
+  "all_local_requests_succeeded": true,
+  "all_display_fonts_ready": true,
+  "all_repeated_static_captures_identical": true,
+  "manual_inspection": [
+    "A/B/C sheets",
+    "actual R2 seated comparison",
+    "A/B/C 360x640 scene-size proofs",
+    "S08 A 360x640 context",
+    "A hand-contact 280x300 crop"
+  ],
+  "not_claimed": [
+    "character approval",
+    "professional aesthetic acceptance",
+    "animation",
+    "IK or physical hand solver",
+    "gait cycle",
+    "AV sync",
+    "fully articulated finger interlock"
+  ],
+  "engines_or_dependencies_added": false,
+  "broken_local_readme_links": []
+}

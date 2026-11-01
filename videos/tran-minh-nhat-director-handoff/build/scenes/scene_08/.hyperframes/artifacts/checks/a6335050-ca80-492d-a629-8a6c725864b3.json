@@ -1,0 +1,185 @@
+{
+  "ok": false,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "rotation_pivot_drift",
+        "severity": "warning",
+        "time": 2.959,
+        "selector": "#arm-far",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 380.88,
+          "y": 825.61,
+          "width": 59.12,
+          "height": 44.98
+        },
+        "rect": {
+          "left": 380.88,
+          "top": 825.61,
+          "right": 440,
+          "bottom": 870.59,
+          "width": 59.12,
+          "height": 44.98
+        },
+        "message": "Rotating element's bounding-box center drifts 16px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).",
+        "fixHint": "The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.",
+        "firstSeen": 2.959,
+        "lastSeen": 2.959,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          2.959
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 0.174,
+        "selector": "#globe-sphere",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 210.66,
+          "top": 477.24,
+          "right": 659.38,
+          "bottom": 775.91,
+          "width": 448.72,
+          "height": 298.67
+        },
+        "containerSelector": "#globe-svg",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 133.42,
+          "top": 379.4,
+          "right": 586.58,
+          "bottom": 894.35,
+          "width": 453.16,
+          "height": 514.95
+        },
+        "overflow": {
+          "right": 72.8
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 210.66,
+          "y": 477.24,
+          "width": 448.72,
+          "height": 298.67
+        },
+        "firstSeen": 0.174,
+        "lastSeen": 0.87,
+        "occurrences": 3,
+        "heldMs": 696,
+        "times": [
+          0.174,
+          0.522,
+          0.87
+        ]
+      }
+    ],
+    "duration": 3.1333333333333333,
+    "samples": [
+      0.174,
+      0.522,
+      0.87,
+      1.219,
+      1.567,
+      1.915,
+      2.263,
+      2.611,
+      2.959
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 2,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": false,
+    "errorCount": 1,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "error",
+        "message": "Contrast is 3.32:1; WCAG AA requires 4.5:1.",
+        "text": "NGHỀ NGHIỆP",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(220,110,56)",
+        "ratio": 3.32,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(39,39,39)",
+        "large": false,
+        "selector": "div > div > div:nth-of-type(3) > svg > text",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 479.5420227050781,
+          "y": 563.1806640625,
+          "width": 97.22256469726562,
+          "height": 17.89422607421875
+        },
+        "time": 1.567,
+        "times": [
+          1.567,
+          2.263,
+          2.959
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      0.174,
+      0.87,
+      1.567,
+      2.263,
+      2.959
+    ],
+    "checked": 8,
+    "passed": 5
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

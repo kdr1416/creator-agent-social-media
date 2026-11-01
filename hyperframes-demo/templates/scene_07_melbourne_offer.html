@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 07 - Đỗ Trường Chưa Đủ Có Visa</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #0b0f19;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+      #root {
+        position: relative;
+        width: 720px;
+        height: 1280px;
+        background-color: #ffffff;
+        overflow: hidden;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        color: #0f172a;
+      }
+
+      /* Subtle Academic Grid Canvas */
+      .canvas-bg {
+        position: absolute;
+        inset: 0;
+        background-image:
+          radial-gradient(#e2e8f0 1.2px, transparent 1.2px),
+          linear-gradient(to right, rgba(241, 245, 249, 0.6) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(241, 245, 249, 0.6) 1px, transparent 1px);
+        background-size: 36px 36px, 72px 72px, 72px 72px;
+        background-position: 0 0, 0 0, 0 0;
+        opacity: 0.85;
+      }
+
+      /* Soft Ambient Radial Glow */
+      .bg-glow {
+        position: absolute;
+        top: 260px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(2, 132, 199, 0.08) 0%, rgba(239, 68, 68, 0.05) 50%, transparent 70%);
+        pointer-events: none;
+      }
+
+      /* Top Brand Badge */
+      .brand-badge-wrapper {
+        position: absolute;
+        top: 36px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 50;
+      }
+      .brand-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 18px;
+        background: #0f172a;
+        color: #ffffff;
+        border-radius: 9999px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        box-shadow: 0 4px 14px rgba(15, 23, 42, 0.15);
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      .brand-badge-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #ff5722;
+      }
+
+      /* Headline Header */
+      .headline-wrapper {
+        position: absolute;
+        top: 86px;
+        left: 36px;
+        right: 36px;
+        text-align: center;
+        z-index: 50;
+      }
+      .kicker {
+        font-size: 14px;
+        font-weight: 800;
+        color: #ff5722;
+        letter-spacing: 2.2px;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+      .headline {
+        font-family: "Montserrat", sans-serif;
+        font-size: 34px;
+        font-weight: 900;
+        line-height: 1.15;
+        letter-spacing: -0.5px;
+        color: #0f172a;
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      .headline span {
+        color: #ef4444;
+      }
+      .headline-accent {
+        width: 90px;
+        height: 4px;
+        background: linear-gradient(90deg, #ff5722, #ef4444);
+        border-radius: 2px;
+        margin: 8px auto 0;
+        transform: scaleX(0);
+        transform-origin: center;
+      }
+
+      /* Main Stage */
+      .stage-wrap {
+        position: absolute;
+        top: 215px;
+        left: 0;
+        width: 720px;
+        height: 740px;
+        z-index: 20;
+      }
+
+      /* Physical Document Surface: The University of Melbourne Offer Letter */
+      .doc-surface-wrap {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 480px;
+        height: 520px;
+        background: #ffffff;
+        border-radius: 16px;
+        border: 2px solid #cbd5e1;
+        box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12), 0 4px 12px rgba(0, 0, 0, 0.05);
+        padding: 30px 32px;
+        display: flex;
+        flex-direction: column;
+        z-index: 25;
+        opacity: 0;
+        transform: translateX(-50%) translateY(30px) scale(0.95);
+      }
+
+      /* University Header within Document */
+      .doc-uni-header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 16px;
+      }
+      .uni-crest {
+        width: 52px;
+        height: 52px;
+        border-radius: 12px;
+        background: #0f2d59;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+      }
+      .uni-info {
+        display: flex;
+        flex-direction: column;
+      }
+      .uni-title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: 900;
+        color: #0f2d59;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+      .uni-subtitle {
+        font-size: 11.5px;
+        font-weight: 700;
+        color: #64748b;
+        letter-spacing: 1px;
+      }
+
+      /* Document Body Lines */
+      .doc-body {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .doc-subject-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px 12px;
+        background: #f0f9ff;
+        border: 1.5px solid #0284c7;
+        border-radius: 6px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12.5px;
+        font-weight: 800;
+        color: #0284c7;
+        width: fit-content;
+      }
+      .doc-text-mock {
+        height: 8px;
+        background: #f1f5f9;
+        border-radius: 4px;
+      }
+      .doc-row-half {
+        display: flex;
+        gap: 12px;
+      }
+
+      /* Official University Acceptance Stamp */
+      .acceptance-stamp {
+        position: absolute;
+        top: 240px;
+        right: 40px;
+        width: 170px;
+        height: 80px;
+        border: 3.5px dashed #059669;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(240, 253, 244, 0.9);
+        color: #059669;
+        transform: rotate(-10deg) scale(1.6);
+        opacity: 0;
+        z-index: 30;
+      }
+      .stamp-check {
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: 900;
+        letter-spacing: 1px;
+      }
+      .stamp-sub {
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+      }
+
+      /* Red Warning Striker: ĐỖ TRƯỜNG ≠ CÓ VISA */
+      .warning-striker-wrap {
+        position: absolute;
+        bottom: 45px;
+        left: 20px;
+        right: 20px;
+        background: #0f172a;
+        border: 2px solid #ef4444;
+        border-radius: 12px;
+        padding: 14px 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 12px 28px rgba(239, 68, 68, 0.25);
+        opacity: 0;
+        transform: translateY(20px);
+        z-index: 35;
+      }
+      .striker-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .striker-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 8px;
+        background: #fee2e2;
+        color: #dc2626;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        font-weight: 900;
+      }
+      .striker-titles {
+        display: flex;
+        flex-direction: column;
+      }
+      .striker-main {
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        font-weight: 900;
+        color: #ffffff;
+        letter-spacing: 0.5px;
+      }
+      .striker-tag {
+        font-size: 12px;
+        font-weight: 700;
+        color: #f87171;
+      }
+      .striker-badge-not-equal {
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-weight: 900;
+        color: #ef4444;
+        background: #450a0a;
+        padding: 6px 14px;
+        border-radius: 8px;
+        border: 1.5px solid #ef4444;
+      }
+
+      /* Hairline Pointer Line from Warning to University Stamp */
+      .pointer-svg {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 32;
+      }
+
+      /* Bottom Synthesis Proof Pill */
+      .bottom-seal {
+        position: absolute;
+        bottom: 230px;
+        left: 40px;
+        right: 40px;
+        background: #0f172a;
+        border-radius: 14px;
+        padding: 14px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.15);
+        opacity: 0;
+        transform: translateY(20px);
+        z-index: 50;
+      }
+      .seal-text {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14.5px;
+        font-weight: 900;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        color: #f8fafc;
+        text-align: center;
+      }
+      .seal-accent {
+        color: #ef4444;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="clip" data-composition-id="scene-07" data-width="720" data-height="1280" data-duration="3.41">
+      <audio id="voice-track" class="clip" src="./assets/audio.wav" data-start="0" data-duration="3.41" preload="auto"></audio>
+
+      <!-- Canvas Background -->
+      <div class="canvas-bg"></div>
+      <div class="bg-glow"></div>
+
+      <!-- Top Branding -->
+      <div class="brand-badge-wrapper">
+        <div class="brand-badge" id="brand-badge">
+          <span class="brand-badge-dot"></span>
+          <span>ESORA • DU HỌC AUSTRALIA</span>
+        </div>
+      </div>
+
+      <!-- Headline -->
+      <div class="headline-wrapper">
+        <div class="kicker">NGỘ NHẬN PHỔ BIẾN</div>
+        <h1 class="headline" id="main-headline">ĐỖ TRƯỜNG <span>≠ CÓ VISA</span></h1>
+        <div class="headline-accent" id="headline-accent"></div>
+      </div>
+
+      <!-- Main Stage -->
+      <div class="stage-wrap">
+        <!-- Physical Document Surface -->
+        <div class="doc-surface-wrap" id="docSurface">
+          <!-- Uni Header -->
+          <div class="doc-uni-header">
+            <div class="uni-crest">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <div class="uni-info">
+              <div class="uni-title">THE UNIVERSITY OF MELBOURNE</div>
+              <div class="uni-subtitle">CRICOS: 00116K • VICTORIA, AUSTRALIA</div>
+            </div>
+          </div>
+
+          <!-- Document Body -->
+          <div class="doc-body">
+            <div class="doc-subject-badge">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>OFFER OF ADMISSION (COE)</span>
+            </div>
+            <div class="doc-text-mock" style="width: 85%;"></div>
+            <div class="doc-text-mock" style="width: 95%;"></div>
+            <div class="doc-row-half">
+              <div class="doc-text-mock" style="width: 45%;"></div>
+              <div class="doc-text-mock" style="width: 55%;"></div>
+            </div>
+            <div class="doc-text-mock" style="width: 75%;"></div>
+            <div class="doc-text-mock" style="width: 90%;"></div>
+            <div class="doc-text-mock" style="width: 65%;"></div>
+          </div>
+
+          <!-- Acceptance Stamp -->
+          <div class="acceptance-stamp" id="uniStamp">
+            <div class="stamp-check">✓ ADMISSION ACCEPTED</div>
+            <div class="stamp-sub">THE UNIVERSITY OF MELBOURNE</div>
+          </div>
+
+          <!-- Warning Striker Strip -->
+          <div class="warning-striker-wrap" id="warningStriker">
+            <div class="striker-left">
+              <div class="striker-icon">≠</div>
+              <div class="striker-titles">
+                <div class="striker-main">ĐIỀU KIỆN CẦN ≠ ĐIỀU KIỆN ĐỦ</div>
+                <div class="striker-tag">Đỗ trường chỉ là 50% bước đầu</div>
+              </div>
+            </div>
+            <div class="striker-badge-not-equal">CHƯA CÓ VISA</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Synthesis Proof Pill -->
+      <div class="bottom-seal" id="bottomSeal">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+        <span class="seal-text">
+          ĐỦ ĐIỀU KIỆN NHẬP HỌC • <span class="seal-accent">CHƯA ĐỦ ĐỂ CẤP THỊ THỰC</span>
+        </span>
+      </div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines = window.__timelines || {};
+      window.__timelines["scene-07"] = tl;
+
+      // Initial States
+      gsap.set("#docSurface", { y: 30, opacity: 0, scale: 0.95 });
+      gsap.set("#uniStamp", { scale: 1.6, opacity: 0, rotate: -12 });
+      gsap.set("#warningStriker", { y: 20, opacity: 0 });
+      gsap.set("#bottomSeal", { y: 20, opacity: 0 });
+
+      // 0.1s: Header reveal
+      tl.to("#brand-badge", { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, 0.1)
+        .to("#main-headline", { opacity: 1, y: 0, duration: 0.4, ease: "back.out(1.2)" }, 0.2)
+        .to("#headline-accent", { scaleX: 1, duration: 0.3 }, 0.35);
+
+      // 0.5s: "Hồ sơ không chỉ cần chứng minh..."
+      // Document surface arrives into center view
+      tl.to("#docSurface", {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.6,
+        ease: "power3.out"
+      }, 0.5);
+
+      // 1.2s: "...bạn đủ điều kiện nhập học."
+      // University green stamp slams onto the paper
+      tl.to("#uniStamp", {
+        opacity: 1,
+        scale: 1,
+        rotate: -8,
+        duration: 0.35,
+        ease: "back.out(1.5)"
+      }, 1.2);
+
+      // 1.8s: Warning striker strip slams down over document
+      tl.to("#warningStriker", {
+        opacity: 1,
+        y: 0,
+        duration: 0.4,
+        ease: "back.out(1.4)"
+      }, 1.8);
+
+      // 2.3s: Bottom synthesis seal pops in
+      tl.to("#bottomSeal", {
+        opacity: 1,
+        y: 0,
+        duration: 0.35,
+        ease: "back.out(1.4)"
+      }, 2.3);
+
+      // Hold until end of narration (3.41s)
+      tl.to({}, { duration: 0.6 }, 2.8);
+    </script>
+  </body>
+</html>

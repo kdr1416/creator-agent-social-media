@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 17 - Lộ Trình Chinh Phục S-Curve</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #0b0f19;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+      #root {
+        position: relative;
+        width: 720px;
+        height: 1280px;
+        background-color: #ffffff;
+        overflow: hidden;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        color: #0f172a;
+      }
+
+      /* Subtle Academic Grid Canvas */
+      .canvas-bg {
+        position: absolute;
+        inset: 0;
+        background-image:
+          radial-gradient(#e2e8f0 1.2px, transparent 1.2px),
+          linear-gradient(to right, rgba(241, 245, 249, 0.6) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(241, 245, 249, 0.6) 1px, transparent 1px);
+        background-size: 36px 36px, 72px 72px, 72px 72px;
+        background-position: 0 0, 0 0, 0 0;
+        opacity: 0.85;
+      }
+
+      /* Soft Ambient Radial Glow */
+      .bg-glow {
+        position: absolute;
+        top: 260px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(255, 87, 34, 0.08) 0%, rgba(16, 185, 129, 0.04) 40%, transparent 70%);
+        pointer-events: none;
+      }
+
+      /* Top Brand Badge */
+      .brand-badge-wrapper {
+        position: absolute;
+        top: 36px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 50;
+      }
+      .brand-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 18px;
+        background: #0f172a;
+        color: #ffffff;
+        border-radius: 9999px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        box-shadow: 0 4px 14px rgba(15, 23, 42, 0.15);
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      .brand-badge-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #ff5722;
+      }
+
+      /* Headline Header */
+      .headline-wrapper {
+        position: absolute;
+        top: 86px;
+        left: 36px;
+        right: 36px;
+        text-align: center;
+        z-index: 50;
+      }
+      .kicker {
+        font-size: 14px;
+        font-weight: 800;
+        color: #ff5722;
+        letter-spacing: 2.2px;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+      .headline {
+        font-family: "Montserrat", sans-serif;
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 1.15;
+        letter-spacing: -0.5px;
+        color: #0f172a;
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      .headline span {
+        color: #ff5722;
+      }
+      .headline-accent {
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(90deg, #ff5722, #f59e0b);
+        border-radius: 2px;
+        margin: 8px auto 0;
+        transform: scaleX(0);
+        transform-origin: center;
+      }
+
+      /* S-Curve Kinetic Ascent Stage */
+      .stage-wrap {
+        position: absolute;
+        top: 220px;
+        left: 0;
+        width: 720px;
+        height: 800px;
+        z-index: 20;
+      }
+
+      /* Track Labels (Hero Milestone Callouts) */
+      .pedestal-label {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        z-index: 35;
+        opacity: 0;
+        transform: scale(0.85);
+        pointer-events: none;
+      }
+      .ped-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 12px;
+        border-radius: 9999px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        margin-bottom: 4px;
+      }
+      .ped-desc {
+        font-size: 12.5px;
+        font-weight: 700;
+        color: #64748b;
+      }
+
+      /* Pedestal 1 Label */
+      .label-1 { top: 690px; left: 80px; width: 180px; }
+      .label-1 .ped-tag { background: #fff7ed; color: #ea580c; border: 1.5px solid #ff5722; }
+
+      /* Pedestal 2 Label */
+      .label-2 { top: 510px; left: 420px; width: 200px; }
+      .label-2 .ped-tag { background: #f0fdf4; color: #059669; border: 1.5px solid #10b981; }
+
+      /* Pedestal 3 Label */
+      .label-3 { top: 330px; left: 110px; width: 220px; }
+      .label-3 .ped-tag { background: #f0f9ff; color: #0284c7; border: 1.5px solid #38bdf8; }
+
+      /* Pedestal 4 Label */
+      .label-4 { top: 150px; left: 420px; width: 220px; }
+      .label-4 .ped-tag { background: #fefce8; color: #ca8a04; border: 1.5px solid #eab308; }
+
+      /* Traveling Student Character */
+      .student-actor {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 110px;
+        height: 170px;
+        z-index: 40;
+        opacity: 0;
+        transform-origin: center bottom;
+      }
+
+      /* Bottom Synthesis Proof */
+      .bottom-seal {
+        position: absolute;
+        bottom: 230px;
+        left: 48px;
+        right: 48px;
+        background: #0f172a;
+        border-radius: 14px;
+        padding: 14px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.15);
+        opacity: 0;
+        transform: translateY(20px);
+        z-index: 45;
+      }
+      .seal-text {
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: #f8fafc;
+      }
+      .seal-highlight {
+        color: #fbbf24;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="clip" data-composition-id="scene-17" data-width="720" data-height="1280" data-duration="7.42">
+      <audio id="voice-track" class="clip" src="./assets/audio.wav" data-start="0" data-duration="7.42" preload="auto"></audio>
+
+      <!-- Canvas Background -->
+      <div class="canvas-bg"></div>
+      <div class="bg-glow"></div>
+
+      <!-- Top Branding -->
+      <div class="brand-badge-wrapper">
+        <div class="brand-badge" id="brand-badge">
+          <span class="brand-badge-dot"></span>
+          <span>ESORA • DU HỌC AUSTRALIA</span>
+        </div>
+      </div>
+
+      <!-- Headline -->
+      <div class="headline-wrapper">
+        <div class="kicker">4 NẤC THANG CHIẾN LƯỢC</div>
+        <h1 class="headline" id="main-headline">LỘ TRÌNH <span>CHINH PHỤC</span></h1>
+        <div class="headline-accent" id="headline-accent"></div>
+      </div>
+
+      <!-- Main S-Curve Ascent Stage -->
+      <div class="stage-wrap">
+        <!-- SVG Track & Pedestals -->
+        <svg width="720" height="800" viewBox="0 0 720 800" style="position: absolute; inset: 0;">
+          <defs>
+            <linearGradient id="curveGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#FF5722" />
+              <stop offset="35%" stop-color="#10B981" />
+              <stop offset="70%" stop-color="#0284C7" />
+              <stop offset="100%" stop-color="#F59E0B" />
+            </linearGradient>
+            <filter id="shadowPed" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.12" />
+            </filter>
+          </defs>
+
+          <!-- Inactive Subtle Guide Track -->
+          <path
+            d="M 160 660 C 260 660, 420 580, 520 480 C 600 400, 310 380, 210 300 C 110 220, 420 160, 530 120"
+            fill="none"
+            stroke="#e2e8f0"
+            stroke-width="12"
+            stroke-linecap="round"
+          />
+
+          <!-- Active Animated Glowing S-Curve Track -->
+          <path
+            id="trackActive"
+            d="M 160 660 C 260 660, 420 580, 520 480 C 600 400, 310 380, 210 300 C 110 220, 420 160, 530 120"
+            fill="none"
+            stroke="url(#curveGrad)"
+            stroke-width="10"
+            stroke-linecap="round"
+            stroke-dasharray="1400"
+            stroke-dashoffset="1400"
+          />
+
+          <!-- Pedestal 1 (Bottom Left: X: 160, Y: 660) -->
+          <g id="ped1" transform="translate(160, 660)" filter="url(#shadowPed)">
+            <!-- 3D Pedestal Disc Base -->
+            <ellipse cx="0" cy="10" rx="60" ry="18" fill="#e2e8f0" />
+            <path d="M -60 0 C -60 10, 60 10, 60 0 L 60 8 C 60 18, -60 18, -60 8 Z" fill="#ffedd5" />
+            <ellipse cx="0" cy="0" rx="58" ry="16" fill="#ffffff" stroke="#ff5722" stroke-width="3" />
+            <!-- Inner Glowing Ring -->
+            <ellipse cx="0" cy="0" rx="46" ry="12" fill="#fff7ed" />
+            <!-- Floating Topic Icon: Book -->
+            <g transform="translate(-14, -40)">
+              <rect x="0" y="0" width="28" height="20" rx="3" fill="#ff5722" />
+              <line x1="14" y1="2" x2="14" y2="18" stroke="#ffffff" stroke-width="2" />
+              <line x1="4" y1="6" x2="11" y2="6" stroke="#ffffff" stroke-width="1.5" />
+              <line x1="4" y1="11" x2="11" y2="11" stroke="#ffffff" stroke-width="1.5" />
+              <line x1="17" y1="6" x2="24" y2="6" stroke="#ffffff" stroke-width="1.5" />
+              <line x1="17" y1="11" x2="24" y2="11" stroke="#ffffff" stroke-width="1.5" />
+            </g>
+          </g>
+
+          <!-- Pedestal 2 (Middle Right: X: 520, Y: 480) -->
+          <g id="ped2" transform="translate(520, 480)" filter="url(#shadowPed)">
+            <ellipse cx="0" cy="10" rx="60" ry="18" fill="#e2e8f0" />
+            <path d="M -60 0 C -60 10, 60 10, 60 0 L 60 8 C 60 18, -60 18, -60 8 Z" fill="#dcfce7" />
+            <ellipse cx="0" cy="0" rx="58" ry="16" fill="#ffffff" stroke="#10b981" stroke-width="3" />
+            <ellipse cx="0" cy="0" rx="46" ry="12" fill="#f0fdf4" />
+            <!-- Floating Topic Icon: Compass -->
+            <g transform="translate(-14, -40)">
+              <circle cx="14" cy="12" r="12" fill="#10b981" />
+              <polygon points="14,4 18,12 14,14 10,12" fill="#ffffff" />
+              <polygon points="14,20 18,12 14,14 10,12" fill="#d1fae5" />
+            </g>
+          </g>
+
+          <!-- Pedestal 3 (Upper Left: X: 210, Y: 300) -->
+          <g id="ped3" transform="translate(210, 300)" filter="url(#shadowPed)">
+            <ellipse cx="0" cy="10" rx="60" ry="18" fill="#e2e8f0" />
+            <path d="M -60 0 C -60 10, 60 10, 60 0 L 60 8 C 60 18, -60 18, -60 8 Z" fill="#e0f2fe" />
+            <ellipse cx="0" cy="0" rx="58" ry="16" fill="#ffffff" stroke="#0284c7" stroke-width="3" />
+            <ellipse cx="0" cy="0" rx="46" ry="12" fill="#f0f9ff" />
+            <!-- Floating Topic Icon: Australia / Globe -->
+            <g transform="translate(-14, -40)">
+              <circle cx="14" cy="12" r="12" fill="#0284c7" />
+              <ellipse cx="14" cy="12" rx="12" ry="5" fill="none" stroke="#ffffff" stroke-width="1.5" />
+              <line x1="14" y1="0" x2="14" y2="24" stroke="#ffffff" stroke-width="1.5" />
+            </g>
+          </g>
+
+          <!-- Pedestal 4 (Peak Right: X: 530, Y: 120) -->
+          <g id="ped4" transform="translate(530, 120)" filter="url(#shadowPed)">
+            <ellipse cx="0" cy="10" rx="60" ry="18" fill="#e2e8f0" />
+            <path d="M -60 0 C -60 10, 60 10, 60 0 L 60 8 C 60 18, -60 18, -60 8 Z" fill="#fef9c3" />
+            <ellipse cx="0" cy="0" rx="58" ry="16" fill="#ffffff" stroke="#f59e0b" stroke-width="3.5" />
+            <ellipse cx="0" cy="0" rx="46" ry="12" fill="#fefce8" />
+            <!-- Floating Topic Icon: Graduation Cap -->
+            <g transform="translate(-16, -42)">
+              <polygon points="16,4 32,11 16,18 0,11" fill="#f59e0b" />
+              <rect x="7" y="16" width="18" height="9" rx="2" fill="#d97706" />
+              <circle cx="28" cy="17" r="2.5" fill="#ca8a04" />
+            </g>
+          </g>
+        </svg>
+
+        <!-- Pedestal Milestone Labels -->
+        <div class="pedestal-label label-1" id="lbl1">
+          <div class="ped-tag">01. HỌC GÌ?</div>
+          <div class="ped-desc">Chương trình đào tạo</div>
+        </div>
+
+        <div class="pedestal-label label-2" id="lbl2">
+          <div class="ped-tag">02. CHỌN NGÀNH NÀY?</div>
+          <div class="ped-desc">Kế thừa nền tảng cũ</div>
+        </div>
+
+        <div class="pedestal-label label-3" id="lbl3">
+          <div class="ped-tag">03. TẠI SAO AUSTRALIA?</div>
+          <div class="ped-desc">Lợi thế độc quyền tại Úc</div>
+        </div>
+
+        <div class="pedestal-label label-4" id="lbl4">
+          <div class="ped-tag">04. SAU TỐT NGHIỆP?</div>
+          <div class="ped-desc">Kế hoạch nghề & hoàn vốn</div>
+        </div>
+
+        <!-- Student Character Actor (Climber) -->
+        <div class="student-actor" id="studentActor">
+          <svg width="110" height="170" viewBox="0 0 110 170">
+            <!-- Backpack behind -->
+            <rect x="36" y="55" width="38" height="42" rx="10" fill="#0284c7" />
+
+            <!-- Legs & Shoes -->
+            <rect x="42" y="115" width="10" height="36" rx="5" fill="#0f172a" />
+            <rect x="58" y="115" width="10" height="36" rx="5" fill="#0f172a" />
+            <ellipse cx="45" cy="154" rx="10" ry="6" fill="#0284c7" />
+            <ellipse cx="65" cy="154" rx="10" ry="6" fill="#0284c7" />
+
+            <!-- Torso (Navy Blue Blazer) -->
+            <path d="M 36 58 Q 55 54 74 58 L 78 116 L 32 116 Z" fill="#1e293b" />
+
+            <!-- Shirt Collar & Tie -->
+            <polygon points="55,58 47,72 63,72" fill="#ffffff" />
+            <polygon points="55,70 52,96 55,104 58,96" fill="#ff5722" />
+
+            <!-- Head & Face -->
+            <circle cx="55" cy="32" r="21" fill="#fed7aa" />
+            <!-- Hair -->
+            <path d="M 34 32 Q 55 6 76 32 Q 72 18 55 16 Q 38 18 34 32 Z" fill="#0f172a" />
+            <!-- Glasses -->
+            <rect x="42" y="28" width="10" height="8" rx="2" fill="none" stroke="#0f172a" stroke-width="2" />
+            <rect x="58" y="28" width="10" height="8" rx="2" fill="none" stroke="#0f172a" stroke-width="2" />
+            <line x1="52" y1="32" x2="58" y2="32" stroke="#0f172a" stroke-width="2" />
+            <!-- Smile -->
+            <path d="M 49 43 Q 55 49 61 43" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" />
+
+            <!-- Left Arm -->
+            <path d="M 34 62 Q 22 75 26 88" fill="none" stroke="#1e293b" stroke-width="8" stroke-linecap="round" />
+            <circle cx="26" cy="88" r="5" fill="#fed7aa" />
+
+            <!-- Right Arm (Raised / Pointing) -->
+            <path id="climberArm" d="M 76 62 Q 88 45 96 36" fill="none" stroke="#1e293b" stroke-width="8" stroke-linecap="round" />
+            <circle cx="96" cy="36" r="5" fill="#fed7aa" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Bottom Synthesis Proof Pill -->
+      <div class="bottom-seal" id="bottomSeal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2.5">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+        <span class="seal-text">
+          LỘ TRÌNH RÕ RÀNG • <span class="seal-highlight">VISA VỮNG VÀNG</span>
+        </span>
+      </div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines = window.__timelines || {};
+      window.__timelines["scene-17"] = tl;
+
+      // Initial positions
+      // Student starts on Pedestal 1: X = 160 - 55 = 105, Y = 660 - 165 = 495
+      gsap.set("#studentActor", { x: 105, y: 495, opacity: 0 });
+      gsap.set("#trackActive", { strokeDashoffset: 1400 });
+      gsap.set("#bottomSeal", { y: 20, opacity: 0 });
+
+      // 0.1s: Header reveal
+      tl.to("#brand-badge", { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 0.1);
+      tl.to("#main-headline", { opacity: 1, y: 0, duration: 0.45, ease: "back.out(1.2)" }, 0.25);
+      tl.to("#headline-accent", { opacity: 1, scaleX: 1, duration: 0.35 }, 0.45);
+
+      // 0.6s: Track draws from Pedestal 1 + Student appears at Pedestal 1
+      // "Lộ trình còn cần làm rõ: Học gì..."
+      tl.to("#studentActor", { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.8)" }, 0.6)
+        .to("#lbl1", { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.5)" }, 0.7)
+        .to("#ped1", { scale: 1.08, duration: 0.25, yoyo: true, repeat: 1 }, 0.7);
+
+      // 1.8s - 2.8s: Student moves to Pedestal 2 (X: 520 - 55 = 465, Y: 480 - 165 = 315)
+      // "...Tại sao chọn ngành này..."
+      tl.to("#trackActive", { strokeDashoffset: 950, duration: 0.8, ease: "power1.inOut" }, 1.8)
+        .to("#studentActor", {
+          x: 465,
+          y: 315,
+          duration: 0.8,
+          ease: "power2.inOut"
+        }, 1.8)
+        .to("#lbl2", { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.5)" }, 2.5)
+        .to("#ped2", { scale: 1.08, duration: 0.25, yoyo: true, repeat: 1 }, 2.5);
+
+      // 3.4s - 4.3s: Student climbs to Pedestal 3 (X: 210 - 55 = 155, Y: 300 - 165 = 135)
+      // "...Tại sao chọn Australia..."
+      tl.to("#trackActive", { strokeDashoffset: 450, duration: 0.8, ease: "power1.inOut" }, 3.4)
+        .to("#studentActor", {
+          x: 155,
+          y: 135,
+          duration: 0.8,
+          ease: "power2.inOut"
+        }, 3.4)
+        .to("#lbl3", { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.5)" }, 4.1)
+        .to("#ped3", { scale: 1.08, duration: 0.25, yoyo: true, repeat: 1 }, 4.1);
+
+      // 4.8s - 5.8s: Student reaches the Peak Pedestal 4 (X: 530 - 55 = 475, Y: 120 - 165 = -45)
+      // "...Và kế hoạch sau tốt nghiệp là gì?"
+      tl.to("#trackActive", { strokeDashoffset: 0, duration: 0.8, ease: "power1.inOut" }, 4.8)
+        .to("#studentActor", {
+          x: 475,
+          y: -45,
+          duration: 0.8,
+          ease: "power2.inOut"
+        }, 4.8)
+        .to("#lbl4", { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.5)" }, 5.5)
+        .to("#ped4", { scale: 1.12, duration: 0.3, yoyo: true, repeat: 1 }, 5.5);
+
+      // 6.0s: Student celebrates with jump on peak
+      tl.to("#studentActor", {
+        y: -60,
+        duration: 0.25,
+        yoyo: true,
+        repeat: 2,
+        ease: "power1.out"
+      }, 6.0);
+
+      // 6.2s: Bottom seal stamps in
+      tl.to("#bottomSeal", {
+        opacity: 1,
+        y: 0,
+        duration: 0.45,
+        ease: "back.out(1.6)"
+      }, 6.2);
+
+      // Hold stable through 7.42s
+      tl.to({}, { duration: 0.8 }, 6.6);
+    </script>
+  </body>
+</html>

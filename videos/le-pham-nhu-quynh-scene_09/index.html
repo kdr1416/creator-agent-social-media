@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>Học tập quốc tế năng động — scene 09</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:SceneSans;src:url('assets/scene-sans-bold.ttf') format('truetype');font-weight:700;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;background:#fff}#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:SceneSans,sans-serif;color:#0F172A}
+.clip{position:absolute;inset:0}
+.art{display:block;width:100%;height:100%}
+.top-title{position:absolute;top:230px;left:0;width:100%;text-align:center;pointer-events:none}
+.h-main{margin:0;font-size:38px;line-height:1.2;font-weight:700;letter-spacing:-.6px;color:#0F172A}
+.h-sub{margin:8px 0 0 0;font-size:20px;font-weight:700;letter-spacing:1px;color:#FF6B2B;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-s09-root" id="root" data-composition-id="scene09" data-width="720" data-height="1280" data-duration="6.469" data-start="0">
+ <div data-hf-id="hf-s09-bg" id="scene09-bg" class="clip" data-start="0" data-duration="6.469" data-track-index="0" style="background:#FFFFFF"></div>
+
+ <div data-hf-id="hf-s09-titles" id="titles" class="top-title">
+  <div data-hf-id="hf-s09-sub" id="h-sub" class="h-sub">ROTTERDAM UAS</div>
+  <h1 data-hf-id="hf-s09-main" id="h-main" class="h-main">Môi trường quốc tế năng động</h1>
+ </div>
+
+ <svg data-hf-id="hf-s09-art" id="scene09-art" class="art clip" data-start="0" data-duration="6.469" data-track-index="1" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+   <radialGradient id="halo-s9"><stop stop-color="#CCECE9" stop-opacity=".75"/><stop offset="1" stop-color="#CCECE9" stop-opacity="0"/></radialGradient>
+   <linearGradient id="coat-s9" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FF8852"/><stop offset="1" stop-color="#F2612A"/></linearGradient>
+   <linearGradient id="coat-peer" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#3D7B80"/><stop offset="1" stop-color="#245156"/></linearGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <ellipse cx="360" cy="620" rx="270" ry="240" fill="url(#halo-s9)"/>
+
+  <!-- Shared Project Table (Center) -->
+  <g id="project-table">
+   <ellipse cx="360" cy="890" rx="220" ry="18" fill="#D2E3E8"/>
+   <path d="M190 875 H530 L555 900 H165 Z" fill="#E2EDF1"/>
+   <path d="M165 900 H555 V912 H165 Z" fill="#B9CFD8"/>
+   <path d="M210 912 L198 1020 H216 L226 912 M510 912 L522 1020 H540 L530 912" fill="#C4D7DF"/>
+  </g>
+
+  <!-- Student 1: Nu Sinh (Left) -->
+  <!-- Far Arm Left -->
+  <g id="s1-far-arm">
+   <path id="s1-far-upper" fill="none" stroke="#E75C28" stroke-width="32" stroke-linecap="round"/>
+   <path id="s1-far-lower" fill="none" stroke="#E7A781" stroke-width="24" stroke-linecap="round"/>
+   <ellipse id="s1-far-hand" rx="14" ry="11" fill="#EFB58F"/>
+  </g>
+
+  <g id="student-left">
+   <g id="s1-legs">
+    <path d="M130 800L129 1010H163L182 853 197 1010H233L223 800Z" fill="#91A9BA"/>
+   </g>
+   <path d="M134 617Q111 631 113 666L119 816Q173 838 233 812L243 658Q237 627 212 617Z" fill="url(#coat-s9)"/>
+   <path d="M151 626L176 695 202 626Q179 614 151 626Z" fill="#F5F8F9"/>
+   <g id="s1-head">
+    <path d="M144 494Q103 489 100 533Q97 566 114 586Q93 622 115 649Q147 638 152 602Z" fill="#243A50"/>
+    <path d="M158 583V630Q176 646 198 628V581" fill="#E7A47D"/>
+    <path d="M131 506Q125 457 169 455Q213 448 234 489L228 561Q215 602 183 606Q142 602 131 561Z" fill="#F3BC95"/>
+    <ellipse cx="130" cy="546" rx="13" ry="19" fill="#E7AA84"/>
+    <path d="M124 538Q105 501 125 473Q140 448 176 446Q222 445 238 487L226 519 213 489Q175 514 144 497L136 543Z" fill="#243A50"/>
+    <g fill="#243A50"><ellipse cx="186" cy="545" rx="4.5" ry="6.5"/><ellipse cx="211" cy="546" rx="4" ry="6"/></g>
+    <path d="M181 578Q193 588 206 577" stroke="#965742" stroke-width="3" fill="none" stroke-linecap="round"/>
+   </g>
+  </g>
+
+  <!-- Near Arm Left -->
+  <g id="s1-near-arm">
+   <path id="s1-near-upper" fill="none" stroke="#FF8249" stroke-width="34" stroke-linecap="round"/>
+   <path id="s1-near-lower" fill="none" stroke="#F3BC95" stroke-width="25" stroke-linecap="round"/>
+   <ellipse id="s1-near-hand" rx="14" ry="11" fill="#F3BC95"/>
+  </g>
+
+  <!-- Student 2: International Peer (Right) -->
+  <g id="student-right">
+   <g id="s2-legs">
+    <path d="M490 800L480 1010H516L535 853 554 1010H590L580 800Z" fill="#758E9B"/>
+   </g>
+   <path d="M477 617Q452 627 458 658L468 812Q528 838 582 816L588 666Q590 631 567 617Z" fill="url(#coat-peer)"/>
+   <path d="M498 626L524 695 549 626Q521 614 498 626Z" fill="#FFFFFF"/>
+   <g id="s2-head">
+    <!-- Blonde/Curly hair international classmate -->
+    <path d="M485 487Q495 445 541 446Q582 448 595 473Q615 501 596 538L588 543Q557 514 519 489Z" fill="#D99B4B"/>
+    <path d="M502 581V628Q524 646 542 630V583" fill="#EFCBB0"/>
+    <path d="M486 561Q475 602 516 606Q548 602 561 561L555 489Q576 448 532 455Q488 457 482 506Z" fill="#F8DAC2"/>
+    <g fill="#243A50"><ellipse cx="509" cy="546" rx="4" ry="6"/><ellipse cx="534" cy="545" rx="4.5" ry="6.5"/></g>
+    <path d="M514 577Q527 588 539 578" stroke="#965742" stroke-width="3" fill="none" stroke-linecap="round"/>
+   </g>
+  </g>
+
+  <!-- Far Arm Right -->
+  <g id="s2-far-arm">
+   <path id="s2-far-upper" fill="none" stroke="#2B5765" stroke-width="32" stroke-linecap="round"/>
+   <path id="s2-far-lower" fill="none" stroke="#EFCBB0" stroke-width="24" stroke-linecap="round"/>
+   <ellipse id="s2-far-hand" rx="14" ry="11" fill="#EFCBB0"/>
+  </g>
+
+  <!-- Near Arm Right -->
+  <g id="s2-near-arm">
+   <path id="s2-near-upper" fill="none" stroke="#3D7B80" stroke-width="34" stroke-linecap="round"/>
+   <path id="s2-near-lower" fill="none" stroke="#F8DAC2" stroke-width="25" stroke-linecap="round"/>
+   <ellipse id="s2-near-hand" rx="14" ry="11" fill="#F8DAC2"/>
+  </g>
+
+  <!-- Central Shared Project Prototype (Transferred between students) -->
+  <g id="shared-device">
+   <ellipse cx="360" cy="740" rx="55" ry="12" fill="#BCCFD5"/>
+   <rect x="315" y="650" width="90" height="75" rx="8" fill="#FFFFFF" stroke="#8AB5BE" stroke-width="3"/>
+   <circle cx="360" cy="687" r="22" fill="#4B8D88"/>
+   <circle cx="360" cy="687" r="10" fill="#FF6B2B"/>
+   <!-- Antenna / beacon -->
+   <line x1="360" y1="650" x2="360" y2="628" stroke="#FF6B2B" stroke-width="4" stroke-linecap="round"/>
+   <circle cx="360" cy="625" r="5" fill="#FF8852"/>
+  </g>
+
+  <!-- 4 Discipline Satellites Orbiting Project (Business, Logistics, Tech, Media) -->
+  <g id="satellites">
+   <!-- Tech (Gear) -->
+   <circle cx="270" cy="530" r="28" fill="#E4F4F2" stroke="#4B8D88" stroke-width="3"/>
+   <path d="M264 518 H276 V542 H264 Z M258 524 H282 V536 H258 Z" fill="#4B8D88"/>
+   <!-- Business (Chart) -->
+   <circle cx="450" cy="530" r="28" fill="#FFEFE7" stroke="#FF6B2B" stroke-width="3"/>
+   <path d="M438 540 L448 528 L454 533 L462 522" stroke="#FF6B2B" stroke-width="4" fill="none" stroke-linecap="round"/>
+   <!-- Logistics (Cargo Box) -->
+   <circle cx="300" cy="450" r="26" fill="#E8F1F4" stroke="#243A50" stroke-width="3"/>
+   <rect x="290" y="440" width="20" height="20" rx="2" fill="#243A50"/>
+   <!-- Media (Signal Wave) -->
+   <circle cx="420" cy="450" r="26" fill="#E4F4F2" stroke="#3D7B80" stroke-width="3"/>
+   <path d="M414 456 Q420 450 426 456 M410 460 Q420 445 430 460" stroke="#3D7B80" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  </g>
+ </svg>
+
+ <audio data-hf-id="hf-s09-voice" id="scene09-voice" src="assets/audio.wav" data-start="0" data-duration="6.469" data-track-index="2" data-volume="1"></audio>
+</div>
+
+<script>
+const tl = gsap.timeline({paused:true});
+const s1_near = {x: 290, y: 720}, s1_far = {x: 240, y: 760};
+const s2_near = {x: 430, y: 720}, s2_far = {x: 480, y: 760};
+
+function setArm(prefix, sx, sy, ex, ey, l1, l2, bend) {
+  const dx = ex - sx, dy = ey - sy;
+  const d = Math.min(Math.hypot(dx, dy), l1 + l2 - 0.01);
+  const a = Math.atan2(dy, dx);
+  const b = Math.acos(Math.max(-1, Math.min(1, (l1 * l1 + d * d - l2 * l2) / (2 * l1 * d))));
+  const x = sx + l1 * Math.cos(a + b * bend);
+  const y = sy + l1 * Math.sin(a + b * bend);
+  document.getElementById(prefix + '-upper').setAttribute('d', `M${sx},${sy}L${x},${y}`);
+  document.getElementById(prefix + '-lower').setAttribute('d', `M${x},${y}L${ex},${ey}`);
+  document.getElementById(prefix + '-hand').setAttribute('cx', ex);
+  document.getElementById(prefix + '-hand').setAttribute('cy', ey);
+}
+
+function updateArms() {
+  setArm('s1-near', 228, 647, s1_near.x, s1_near.y, 115, 115, 1);
+  setArm('s1-far', 135, 650, s1_far.x, s1_far.y, 145, 145, 1);
+  setArm('s2-near', 492, 647, s2_near.x, s2_near.y, 115, 115, -1);
+  setArm('s2-far', 585, 650, s2_far.x, s2_far.y, 145, 145, -1);
+}
+updateArms();
+
+// Initial states
+gsap.set(['#titles', '#satellites'], {opacity: 0});
+gsap.set('#satellites', {scale: 0.7, transformOrigin: '50% 50%'});
+gsap.set('#titles', {y: -15});
+
+// Choreography (6.469s)
+// 0.0s - 1.2s: Students and titles reveal
+tl.to('#titles', {opacity: 1, y: 0, duration: 0.6, ease: 'power2.out'}, 0.2)
+  .to(s1_near, {x: 325, y: 685, duration: 0.8, ease: 'power2.inOut', onUpdate: updateArms}, 0.3)
+  .to('#shared-device', {x: 10, duration: 0.8, ease: 'power2.inOut'}, 0.3)
+
+// 1.2s - 3.5s: Handoff interaction - Student 1 slides device, Student 2 receives with hands
+  .to(s1_near, {x: 335, y: 690, duration: 0.9, ease: 'power1.inOut', onUpdate: updateArms}, 1.2)
+  .to('#shared-device', {x: 30, duration: 0.9, ease: 'power1.inOut'}, 1.2)
+  .to(s2_near, {x: 385, y: 690, duration: 0.9, ease: 'power2.out', onUpdate: updateArms}, 1.4)
+  .to('#s2-head', {rotation: -4, svgOrigin: '530 600', duration: 0.5}, 1.8)
+  .to('#s1-head', {rotation: 3, svgOrigin: '190 600', duration: 0.5}, 2.0)
+
+// 2.5s - 5.0s: Satellite icons expand outwards into active orbit
+  .to('#satellites', {opacity: 1, scale: 1, duration: 0.7, ease: 'back.out(1.2)'}, 2.5)
+  .to('#satellites', {y: -8, duration: 1.4, yoyo: true, repeat: 1, ease: 'sine.inOut'}, 3.2)
+
+// 5.0s - 6.469s: Shared appreciative hold
+  .to(['#s1-head', '#s2-head'], {rotation: 0, duration: 0.6, ease: 'power2.out'}, 5.0);
+
+window.__timelines = window.__timelines || {};
+window.__timelines['scene09'] = tl;
+</script>
+</body>
+</html>

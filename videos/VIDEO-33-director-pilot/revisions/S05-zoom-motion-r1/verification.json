@@ -1,0 +1,21 @@
+{
+  "video": "renders/pilot.mp4",
+  "sha256": "c53f14fdaff26500bac4bcd529fc6aee614a4126c3c87c8b35e72a12365f6a7b",
+  "width": 720,
+  "height": 1280,
+  "fps": 30,
+  "frames": 172,
+  "video_duration": 5.733333,
+  "source_duration": 5.706333333333333,
+  "source_samples": 136952,
+  "source_pcm_bit_exact": true,
+  "decoded_aac_correlation": 0.9999426467007627,
+  "decoded_rms": 0.14217406511306763,
+  "qa_check_ok": true,
+  "reference_frames_unchanged": true,
+  "previous_approved_pilots_unchanged": true,
+  "previous_master_and_clean_unchanged": true,
+  "browser_playback": "Observed final pilot ended at5.73s in IAB REVIEW.html",
+  "motion_approved": false,
+  "audio_export": "Original WAV directly AAC192kbps 24kHz mono; native automatic gain bypassed"
+}

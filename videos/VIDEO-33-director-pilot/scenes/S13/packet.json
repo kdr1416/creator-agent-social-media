@@ -1,0 +1,229 @@
+{
+  "scene_number": 13,
+  "scene_id": "S13",
+  "start": 63.75116666666667,
+  "end": 68.304375,
+  "start_sample": 1530028,
+  "end_sample": 1639305,
+  "source_segments": [
+    15
+  ],
+  "raw_text": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới.",
+  "corrected_text": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới.",
+  "semantic_type": "paper globe / scale change",
+  "visual_center": "Cùng mở tầm nhìn",
+  "organic_motion_need": "Không cần diễn viên/plate hữu cơ; puppet vector có hành động chủ đích.",
+  "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+  "preferred_mode": "HF_ONLY",
+  "routing_confidence": "high",
+  "routing_reason": "Cùng mở tầm nhìn: hành động chủ đạo là xoay / mở phạm vi các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ paper globe / scale change, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+  "flow_contribution": "none",
+  "hf_contribution": "Mascot xoay địa cầu để lộ phần còn lại; dấu học tập đi trước, dấu tài sản mở một hướng khác sau cụm “cũng có thể”.",
+  "fallback_mode": null,
+  "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+  "character": "yes",
+  "title": "Cùng mở tầm nhìn",
+  "takeaway": "Việc con học ở nước ngoài gợi gia đình cân nhắc phạm vi hoạch định tài sản rộng hơn.",
+  "audio_source": [
+    "inputs/audio/seg_15.wav"
+  ],
+  "duration": 4.553208333333323,
+  "sample_frames": 109277,
+  "raw_segments": [
+    {
+      "seg_id": 15,
+      "segment_id": "seg_15",
+      "audio_slice": "audio_slices/seg_15.wav",
+      "start_sample": 1530028,
+      "end_sample": 1639305,
+      "sample_frames": 109277,
+      "start": 63.751,
+      "end": 68.304,
+      "duration": 4.553,
+      "sha256": "af2f4845dbace74ad01664da0c420f9a6e1da190801d1a6251c1dbb6f8fb9d36",
+      "raw_text": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới.",
+      "corrected_text": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới.",
+      "uncertainties": []
+    }
+  ],
+  "render_mode": "HF_ONLY",
+  "style_candidates": [
+    {
+      "id": "hf_existing:warm-doodle-mixed-media",
+      "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+    },
+    {
+      "id": "kurzgesagt",
+      "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+    },
+    {
+      "id": "izometrik",
+      "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+    },
+    {
+      "id": "bauhaus",
+      "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+    }
+  ],
+  "style_id": "hf_existing:warm-doodle-mixed-media",
+  "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+  "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+  "visual_verb": "xoay / mở phạm vi",
+  "composition": "Địa cầu giấy lớn ở y=440–940; một đường học tập và một dấu tài sản bắt đầu từ hai vị trí lớp trước, không chạy theo cùng quỹ đạo.",
+  "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+  "opening_state": "Mascot kéo quai vali cạnh địa cầu chỉ mở một nửa.",
+  "transformation": "Mascot xoay địa cầu để lộ phần còn lại; dấu học tập đi trước, dấu tài sản mở một hướng khác sau cụm “cũng có thể”.",
+  "final_state": "Hai phạm vi cùng mở nhưng độc lập, không chuyển toàn bộ tiền sang Malta.",
+  "protagonist_action": "Xoay địa cầu và theo dõi hai hướng kế hoạch.",
+  "mascot_role": "Xoay địa cầu và theo dõi hai hướng kế hoạch.",
+  "visual_family": "paper globe / scale change",
+  "timed_beats": [
+    {
+      "local_seconds": 0,
+      "spoken_cue": "đầu lát nguồn",
+      "action": "Mascot kéo quai vali cạnh địa cầu chỉ mở một nửa.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 1.138,
+      "spoken_cue": "cụm ý đầu — đối chiếu WAV",
+      "action": "Mascot xoay địa cầu để lộ phần còn lại",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 2.732,
+      "spoken_cue": "cụm ý sau — đối chiếu WAV",
+      "action": "Mascot xoay địa cầu để lộ phần còn lại; dấu học tập đi trước, dấu tài sản mở một hướng khác sau cụm “cũng có thể”.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    },
+    {
+      "local_seconds": 3.779,
+      "spoken_cue": "đuôi câu / nghỉ",
+      "action": "Hai phạm vi cùng mở nhưng độc lập, không chuyển toàn bộ tiền sang Malta.",
+      "alignment": "approximate_directorial_cue_not_word_alignment"
+    }
+  ],
+  "motion_emphasis_sequence": [
+    "Mascot kéo quai vali cạnh địa cầu chỉ mở một nửa.",
+    "Mascot xoay địa cầu để lộ phần còn lại",
+    "Mascot xoay địa cầu để lộ phần còn lại; dấu học tập đi trước, dấu tài sản mở một hướng khác sau cụm “cũng có thể”.",
+    "Hai phạm vi cùng mở nhưng độc lập, không chuyển toàn bộ tiền sang Malta."
+  ],
+  "hf_signature_motion": "Mascot xoay địa cầu để lộ phần còn lại; dấu học tập đi trước, dấu tài sản mở một hướng khác sau cụm “cũng có thể”.",
+  "flow_action": null,
+  "flow_camera": null,
+  "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+  "asset_contract": [
+    {
+      "layer": "globe-hemispheres",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "meridians",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "study-trace",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "asset-trace",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "luggage",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "planned",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-rig",
+      "source": "approved mascot derivative",
+      "status": "planned",
+      "required_separate_layer": true
+    }
+  ],
+  "container_required": false,
+  "container_inventory": [],
+  "container_semantics": [],
+  "visible_text_budget": {
+    "max_simultaneous_words": 3,
+    "max_levels": 2,
+    "paragraphs": 0
+  },
+  "visible_text_inventory": [
+    {
+      "text": "MỞ TẦM NHÌN",
+      "size_px": 54,
+      "role": "anchor",
+      "simultaneous": false
+    }
+  ],
+  "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Chữ trần trên nền sáng; không sweep.",
+  "accent_reason": "none",
+  "accent_treatment": "none",
+  "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+  "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+  "handoff": "Dừng chuyển động lớn, cắt cận bàn tay chọn ở cảnh cuối để hạ nhịp.",
+  "continuity_risk": "Địa cầu minh họa cần đường bờ có nguồn hoặc đơn giản không chi tiết; không vẽ biên giới sai.",
+  "pilot": false,
+  "status": "designed_not_produced",
+  "must_keep": [
+    "Việc con học ở nước ngoài gợi gia đình cân nhắc phạm vi hoạch định tài sản rộng hơn.",
+    "Mascot xoay địa cầu để lộ phần còn lại; dấu học tập đi trước, dấu tài sản mở một hướng khác sau cụm “cũng có thể”.",
+    "voice/sample bounds",
+    "mascot identity, warm light palette, footer 200px",
+    "zero added CTA or documentary claims"
+  ],
+  "flexible": [
+    "Toạ độ/kích thước trong safe area",
+    "easing/pose/chi tiết nét",
+    "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+  ],
+  "reference_alignment": {
+    "colour_relationships": {
+      "reference_evidence": "Brief: cream/peach/lilac + accents",
+      "candidate_evidence": "S13: warm ground and vivid orange/blue/purple",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "typography_treatment": {
+      "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+      "candidate_evidence": "S13: local shipped font, sparse native text",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "asset_mix": {
+      "reference_evidence": "Reference 04/06: real campus plus drawing",
+      "candidate_evidence": "S13: Valletta photo where geographic evidence is needed; vector/physical paper elsewhere",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "composition": {
+      "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+      "candidate_evidence": "S13: Địa cầu giấy lớn ở y=440–940; một đường học tập và một dấu tài sản bắt đầu từ hai vị trí lớp trước, không chạy theo cùng quỹ đạo.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "mascot_language": {
+      "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+      "candidate_evidence": "S13: Xoay địa cầu và theo dõi hai hướng kế hoạch.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    },
+    "motion_rhythm": {
+      "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+      "candidate_evidence": "S13: Mascot xoay địa cầu để lộ phần còn lại; dấu học tập đi trước, dấu tài sản mở một hướng khác sau cụm “cũng có thể”.",
+      "assessment": "pending_render_review",
+      "revision_needed": "Đối chiếu proof thực tế, không suy từ check."
+    }
+  }
+}

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>Các lĩnh vực học tại HAN — scene 05</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:SceneSans;src:url('assets/scene-sans-bold.ttf') format('truetype');font-weight:700;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;background:#fff}#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:SceneSans,sans-serif;color:#0F172A}
+.clip{position:absolute;inset:0}
+.art{display:block;width:100%;height:100%}
+.discipline-label{position:absolute;left:360px;top:280px;width:280px;text-align:center;margin:0;font-size:38px;line-height:1.2;font-weight:700;letter-spacing:-.6px;color:#0F172A}
+.major-tag{position:absolute;left:360px;top:240px;width:280px;text-align:center;margin:0;font-size:18px;font-weight:700;letter-spacing:1.5px;color:#FF6B2B;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-s05-root" id="root" data-composition-id="scene05" data-width="720" data-height="1280" data-duration="6.264" data-start="0">
+ <div data-hf-id="hf-s05-bg" id="scene05-bg" class="clip" data-start="0" data-duration="6.264" data-track-index="0" style="background:#FFFFFF"></div>
+
+ <div data-hf-id="hf-s05-tag" id="tag-header" class="major-tag">THẾ MẠNH ĐÀO TẠO</div>
+ <h2 data-hf-id="hf-s05-lbl-tech" id="lbl-tech" class="discipline-label">Kỹ thuật</h2>
+ <h2 data-hf-id="hf-s05-lbl-biz" id="lbl-biz" class="discipline-label">Kinh doanh</h2>
+ <h2 data-hf-id="hf-s05-lbl-it" id="lbl-it" class="discipline-label">CNTT</h2>
+ <h2 data-hf-id="hf-s05-lbl-media" id="lbl-media" class="discipline-label">Truyền thông</h2>
+
+ <svg data-hf-id="hf-s05-art" id="scene05-art" class="art clip" data-start="0" data-duration="6.264" data-track-index="1" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+   <radialGradient id="halo-s5"><stop stop-color="#CCECE9" stop-opacity=".7"/><stop offset="1" stop-color="#CCECE9" stop-opacity="0"/></radialGradient>
+   <linearGradient id="coat-s5" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FF8852"/><stop offset="1" stop-color="#F2612A"/></linearGradient>
+  </defs>
+
+  <ellipse cx="490" cy="520" rx="200" ry="240" fill="url(#halo-s5)"/>
+
+  <!-- Physical Lab Workbench -->
+  <g id="lab-bench">
+   <ellipse cx="490" cy="880" rx="190" ry="16" fill="#D3E4EA"/>
+   <path d="M300 870 H680 L700 895 H280 Z" fill="#E2EDF1"/>
+   <path d="M280 895 H700 V907 H280 Z" fill="#BACFD8"/>
+   <path d="M310 907 L300 1020 H318 L328 907 M650 907 L662 1020 H680 L670 907" fill="#C4D7DF"/>
+  </g>
+
+  <!-- Far Arm -->
+  <g id="far-arm">
+   <path id="far-upper" fill="none" stroke="#E75C28" stroke-width="34" stroke-linecap="round"/>
+   <path id="far-lower" fill="none" stroke="#E7A781" stroke-width="25" stroke-linecap="round"/>
+   <ellipse id="far-hand" rx="14" ry="11" fill="#EFB58F"/>
+  </g>
+
+  <!-- Student Rig -->
+  <g id="student">
+   <g id="legs">
+    <path d="M164 800L163 1010H197L216 853 231 1010H267L257 800Z" fill="#91A9BA"/>
+    <path d="M164 1004L156 1027Q151 1040 170 1040H207V1020L197 1004Z M231 1004L230 1040H280Q293 1040 287 1026L264 1004Z" fill="#3D7B80"/>
+   </g>
+   <path d="M168 617Q145 631 147 666L153 816Q207 838 267 812L277 658Q271 627 246 617Z" fill="url(#coat-s5)"/>
+   <path d="M185 626L210 695 236 626Q213 614 185 626Z" fill="#F5F8F9"/>
+   <path d="M212 695V816" stroke="#D75022" stroke-width="3"/>
+   <g id="head">
+    <path d="M178 494Q137 489 134 533Q131 566 148 586Q127 622 149 649Q181 638 186 602Z" fill="#243A50"/>
+    <path d="M192 583V630Q210 646 232 628V581" fill="#E7A47D"/>
+    <path d="M165 506Q159 457 203 455Q247 448 268 489L262 561Q249 602 217 606Q176 602 165 561Z" fill="#F3BC95"/>
+    <ellipse cx="164" cy="546" rx="13" ry="19" fill="#E7AA84"/>
+    <path d="M158 538Q139 501 159 473Q174 448 210 446Q256 445 272 487L260 519 247 489Q209 514 178 497L170 543Z" fill="#243A50"/>
+    <g id="eyes" fill="#243A50"><ellipse cx="220" cy="545" rx="4.5" ry="6.5"/><ellipse cx="245" cy="546" rx="4" ry="6"/></g>
+    <path d="M215 578Q227 588 240 577" stroke="#965742" stroke-width="3" fill="none" stroke-linecap="round"/>
+   </g>
+  </g>
+
+  <!-- Hero Discipline Objects (Y400 - 750, x490) -->
+  <!-- 1. Kỹ thuật: Precision Gear & Micrometer caliper -->
+  <g id="hero-tech">
+   <ellipse cx="490" cy="680" rx="80" ry="15" fill="#D0E2E6" opacity=".6"/>
+   <g id="gear-s5">
+    <path d="M485 460 L505 460 510 478 524 484 539 474 553 490 543 505 549 520 567 525 565 547 547 552 540 566 550 581 534 597 518 587 505 593 501 611 479 609 475 591 461 583 445 592 431 574 441 559 435 544 417 540 419 518 437 513 445 499 435 484 452 468 468 479 481 473 Z" fill="#4A8985"/>
+    <circle cx="490" cy="535" r="38" fill="#75B5AC"/>
+    <circle cx="490" cy="535" r="18" fill="#F4FAF8"/>
+   </g>
+   <!-- Caliper bracket -->
+   <path d="M430 500 H550 V515 H445 V570 H430 Z" fill="#FF6B2B"/>
+  </g>
+
+  <!-- 2. Kinh doanh: Financial Growth Chart & Vault Box -->
+  <g id="hero-biz">
+   <ellipse cx="490" cy="680" rx="80" ry="15" fill="#D0E2E6" opacity=".6"/>
+   <rect x="420" y="520" width="140" height="110" rx="8" fill="#3D7B80"/>
+   <rect x="435" y="535" width="110" height="80" rx="4" fill="#EBF4F6"/>
+   <path id="biz-chart" d="M445 595 L470 575 L495 585 L530 545" fill="none" stroke="#FF6B2B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+   <circle cx="530" cy="545" r="6" fill="#FF6B2B"/>
+   <g fill="#7FB5AC">
+    <rect x="448" y="597" width="16" height="15" rx="2"/>
+    <rect x="473" y="577" width="16" height="35" rx="2"/>
+    <rect x="498" y="587" width="16" height="25" rx="2"/>
+   </g>
+  </g>
+
+  <!-- 3. CNTT: Modern Laptop displaying algorithmic code lines -->
+  <g id="hero-it">
+   <ellipse cx="490" cy="680" rx="80" ry="15" fill="#D0E2E6" opacity=".6"/>
+   <!-- Screen -->
+   <rect x="415" y="470" width="150" height="105" rx="6" fill="#243A50" stroke="#7BA8B3" stroke-width="3"/>
+   <rect x="425" y="480" width="130" height="85" fill="#1A2D3E"/>
+   <!-- Code lines -->
+   <path d="M435 495 H470 M476 495 H510 M435 510 H490 M445 525 H530 M445 540 H480 M435 552 H460" stroke="#48C3B5" stroke-width="3.5" stroke-linecap="round"/>
+   <circle cx="525" cy="552" r="4" fill="#FF6B2B"/>
+   <!-- Keyboard base -->
+   <path d="M400 575 L580 575 L565 615 L415 615 Z" fill="#D7E7EC"/>
+   <rect x="460" y="585" width="60" height="18" rx="2" fill="#99BDC4"/>
+  </g>
+
+  <!-- 4. Truyền thông: Video Camera Lens & Broadcast signal waves -->
+  <g id="hero-media">
+   <ellipse cx="490" cy="680" rx="80" ry="15" fill="#D0E2E6" opacity=".6"/>
+   <!-- Camera body -->
+   <rect x="440" y="490" width="115" height="85" rx="8" fill="#3D7B80"/>
+   <!-- Top mic/handle -->
+   <path d="M465 490 V470 H530 V490" stroke="#FF6B2B" stroke-width="5" fill="none" stroke-linecap="round"/>
+   <!-- Large glass lens -->
+   <circle cx="430" cy="532" r="32" fill="#243A50" stroke="#7CB1AA" stroke-width="5"/>
+   <circle cx="430" cy="532" r="22" fill="#5AA499"/>
+   <circle cx="430" cy="532" r="12" fill="#D4EEEC"/>
+   <!-- Signal waves -->
+   <path d="M570 515 C585 525 585 540 570 550" fill="none" stroke="#FF6B2B" stroke-width="4.5" stroke-linecap="round"/>
+   <path d="M585 500 C605 520 605 545 585 565" fill="none" stroke="#FF6B2B" stroke-width="4.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Near Arm -->
+  <g id="near-arm">
+   <path id="near-upper" fill="none" stroke="#FF8249" stroke-width="36" stroke-linecap="round"/>
+   <path id="near-lower" fill="none" stroke="#F3BC95" stroke-width="26" stroke-linecap="round"/>
+   <ellipse id="near-hand" rx="15" ry="12" fill="#F3BC95"/>
+  </g>
+ </svg>
+
+ <audio data-hf-id="hf-s05-voice" id="scene05-voice" src="assets/audio.wav" data-start="0" data-duration="6.264" data-track-index="2" data-volume="1"></audio>
+</div>
+
+<script>
+const tl = gsap.timeline({paused:true});
+const near = {x: 320, y: 720}, far = {x: 350, y: 840};
+
+function setArm(prefix, sx, sy, ex, ey, l1, l2, bend) {
+  const dx = ex - sx, dy = ey - sy;
+  const d = Math.min(Math.hypot(dx, dy), l1 + l2 - 0.01);
+  const a = Math.atan2(dy, dx);
+  const b = Math.acos(Math.max(-1, Math.min(1, (l1 * l1 + d * d - l2 * l2) / (2 * l1 * d))));
+  const x = sx + l1 * Math.cos(a + b * bend);
+  const y = sy + l1 * Math.sin(a + b * bend);
+  document.getElementById(prefix + '-upper').setAttribute('d', `M${sx},${sy}L${x},${y}`);
+  document.getElementById(prefix + '-lower').setAttribute('d', `M${x},${y}L${ex},${ey}`);
+  document.getElementById(prefix + '-hand').setAttribute('cx', ex);
+  document.getElementById(prefix + '-hand').setAttribute('cy', ey);
+}
+
+function updateArms() {
+  setArm('near', 262, 647, near.x, near.y, 115, 115, 1);
+  setArm('far', 169, 650, far.x, far.y, 145, 145, 1);
+}
+updateArms();
+
+const heroes = ['#hero-tech', '#hero-biz', '#hero-it', '#hero-media'];
+const labels = ['#lbl-tech', '#lbl-biz', '#lbl-it', '#lbl-media'];
+
+gsap.set(heroes, {opacity: 0, scale: 0.75, y: 35, transformOrigin: '50% 100%'});
+gsap.set(labels, {opacity: 0, y: 10});
+gsap.set('#tag-header', {opacity: 0, y: -8});
+
+// Choreography (6.264s)
+// 0.0s - 1.6s: Intro & Discipline 1 (Kỹ thuật)
+tl.to('#tag-header', {opacity: 1, y: 0, duration: 0.5, ease: 'power2.out'}, 0.2)
+  .to(near, {x: 420, y: 640, duration: 0.6, ease: 'power2.inOut', onUpdate: updateArms}, 0.3)
+  .to('#hero-tech', {opacity: 1, scale: 1, y: 0, duration: 0.45, ease: 'back.out(1.2)'}, 0.4)
+  .to('#lbl-tech', {opacity: 1, y: 0, duration: 0.3}, 0.5)
+  .to('#gear-s5', {rotation: 35, svgOrigin: '490 535', duration: 1.0, ease: 'power1.out'}, 0.5)
+
+// 1.6s - 3.1s: Morph to Discipline 2 (Kinh doanh)
+  .to('#hero-tech', {opacity: 0, scale: 0.8, y: -20, duration: 0.25}, 1.6)
+  .to('#lbl-tech', {opacity: 0, duration: 0.2}, 1.65)
+  .to(near, {x: 405, y: 655, duration: 0.4, ease: 'power2.inOut', onUpdate: updateArms}, 1.7)
+  .to('#hero-biz', {opacity: 1, scale: 1, y: 0, duration: 0.4, ease: 'back.out(1.2)'}, 1.8)
+  .to('#lbl-biz', {opacity: 1, y: 0, duration: 0.3}, 1.9)
+
+// 3.1s - 4.6s: Morph to Discipline 3 (CNTT)
+  .to('#hero-biz', {opacity: 0, scale: 0.8, y: -20, duration: 0.25}, 3.1)
+  .to('#lbl-biz', {opacity: 0, duration: 0.2}, 3.15)
+  .to(near, {x: 430, y: 630, duration: 0.4, ease: 'power2.inOut', onUpdate: updateArms}, 3.2)
+  .to('#hero-it', {opacity: 1, scale: 1, y: 0, duration: 0.4, ease: 'back.out(1.2)'}, 3.3)
+  .to('#lbl-it', {opacity: 1, y: 0, duration: 0.3}, 3.4)
+
+// 4.6s - 6.264s: Morph to Discipline 4 (Truyền thông)
+  .to('#hero-it', {opacity: 0, scale: 0.8, y: -20, duration: 0.25}, 4.6)
+  .to('#lbl-it', {opacity: 0, duration: 0.2}, 4.65)
+  .to(near, {x: 420, y: 645, duration: 0.4, ease: 'power2.inOut', onUpdate: updateArms}, 4.7)
+  .to('#hero-media', {opacity: 1, scale: 1, y: 0, duration: 0.45, ease: 'back.out(1.2)'}, 4.8)
+  .to('#lbl-media', {opacity: 1, y: 0, duration: 0.3}, 4.9)
+  .to(near, {x: 350, y: 700, duration: 0.6, ease: 'power2.inOut', onUpdate: updateArms}, 5.5);
+
+window.__timelines = window.__timelines || {};
+window.__timelines['scene05'] = tl;
+</script>
+</body>
+</html>

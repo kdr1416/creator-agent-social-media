@@ -1,0 +1,90 @@
+{
+  "project_slug": "tran-minh-nhat",
+  "status": "director_design_ready_not_rendered",
+  "package_root": "folder containing this JSON",
+  "authoring_role": "Codex designs; Antigravity implements",
+  "entry": "START_HERE.md",
+  "builder_prompt": "ANTIGRAVITY_PROMPT.md",
+  "creative_brief": "DIRECTOR_BRIEF.md",
+  "storyboard": "STORYBOARD.json",
+  "storyboard_readable": "STORYBOARD.md",
+  "scene_packets": "scenes/",
+  "asset_plan": "ASSET_PLAN.json",
+  "technical": "TECHNICAL_HANDOFF.md",
+  "research": "RESEARCH.md",
+  "review": "REVIEW_GUIDE.md",
+  "voice_manifest": "inputs/audio_manifest.json",
+  "full_voice": "inputs/full_voice.wav",
+  "picture_frame_plan": "planning/picture_frame_plan.json",
+  "duration": 68.2,
+  "fps": 30,
+  "total_picture_frames": 2046,
+  "new_scene_ids": [
+    "scene_01",
+    "scene_02",
+    "scene_03",
+    "scene_05",
+    "scene_07",
+    "scene_08",
+    "scene_09",
+    "scene_10",
+    "scene_11",
+    "scene_13",
+    "scene_14",
+    "scene_15",
+    "scene_16",
+    "scene_17"
+  ],
+  "pilot_references": [
+    {
+      "scene_id": "scene_04",
+      "source_directory": "videos/tran-minh-nhat-pilot",
+      "selected_export": "renders/tran-minh-nhat-pilot.mp4",
+      "frozen_source": "reference_pilots/scene_04/index.html",
+      "frozen_video": "reference_pilots/scene_04/renders/pilot.mp4",
+      "sha256": "ebbc154b445b67f5e11c372c53825516897ea58f33850643fc8002e6d0432c84",
+      "status": "existing selected pilot; no new render in this handoff task"
+    },
+    {
+      "scene_id": "scene_06",
+      "source_directory": "videos/tran-minh-nhat-style-lab-06-12/scene_06",
+      "selected_export": "renders/scene_06-v4.mp4",
+      "frozen_source": "reference_pilots/scene_06/index.html",
+      "frozen_video": "reference_pilots/scene_06/renders/pilot.mp4",
+      "sha256": "b1357d65a62a916d3f56bf544c2a498711dfc8975879f6c06e7a049888a7eaba",
+      "status": "existing selected pilot; no new render in this handoff task"
+    },
+    {
+      "scene_id": "scene_12",
+      "source_directory": "videos/tran-minh-nhat-style-lab-06-12/scene_12",
+      "selected_export": "renders/scene_12-v6.mp4",
+      "frozen_source": "reference_pilots/scene_12/index.html",
+      "frozen_video": "reference_pilots/scene_12/renders/pilot.mp4",
+      "sha256": "cf8cb7f8dbc7a3782938a51f292d8397f8d32cdc38378d0ecf9f1c9c2617e7df",
+      "status": "existing selected pilot; no new render in this handoff task"
+    }
+  ],
+  "pilot04_cleanup": "planning/pilot04_assembly_cleanup.json",
+  "planned_build_root": "build/",
+  "planned_picture_sources": "build/scenes/scene_XX/index.html",
+  "planned_scene_exports": "build/renders/scene_XX.mp4",
+  "planned_final_export": "build/renders/tran-minh-nhat-style-study.mp4",
+  "isolation": {
+    "read_only": [
+      "inputs/",
+      "reference_pilots/"
+    ],
+    "write_outputs_only_under": "build/ plus package-local status/review updates",
+    "never_update": [
+      "original repo scratch/",
+      "prior pilot/style-lab folders",
+      "database/media API",
+      "global skills"
+    ]
+  },
+  "editorial_review": [
+    "scene_10 >14year mentor claim not established; private workprint may proceed with unchanged voice, review claim before publication"
+  ],
+  "dispatch_status": "not sent to another app or thread",
+  "last_validation": "qa/validation.json"
+}

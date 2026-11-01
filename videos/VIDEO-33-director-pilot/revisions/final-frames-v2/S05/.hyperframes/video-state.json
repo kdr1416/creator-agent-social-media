@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "historyId": "0b982fbf-9b73-42be-96b6-aa893f024863",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "art.svg": {
+      "hash": "61d4dd4c2d02facb9a95d68da78f17b086150b020766a65d38305f4304fd1004",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\0b982fbf-9b73-42be-96b6-aa893f024863\\blobs\\61\\61d4dd4c2d02facb9a95d68da78f17b086150b020766a65d38305f4304fd1004"
+    },
+    "assets/display.ttf": {
+      "hash": "be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\0b982fbf-9b73-42be-96b6-aa893f024863\\blobs\\be\\be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\0b982fbf-9b73-42be-96b6-aa893f024863\\blobs\\c1\\c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "assets/valletta.jpg": {
+      "hash": "24feb59728bcecee42267433b77bc982d1467389f1818b4ee6478474e7eccebc",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\0b982fbf-9b73-42be-96b6-aa893f024863\\blobs\\24\\24feb59728bcecee42267433b77bc982d1467389f1818b4ee6478474e7eccebc"
+    },
+    "hyperframes.json": {
+      "hash": "c8d5feecee0bd5a9b1c164bd703daa2e33f28b2699c764de877b5cad50ebf608",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\0b982fbf-9b73-42be-96b6-aa893f024863\\blobs\\c8\\c8d5feecee0bd5a9b1c164bd703daa2e33f28b2699c764de877b5cad50ebf608"
+    },
+    "index.html": {
+      "hash": "1088e9f1d29c59db2ca09ad574c8710dc1bff22dabc1a11ca47e320b1dd3527f",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\0b982fbf-9b73-42be-96b6-aa893f024863\\blobs\\10\\1088e9f1d29c59db2ca09ad574c8710dc1bff22dabc1a11ca47e320b1dd3527f"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "7ac6f476-7c68-4600-9424-0a6597e3551a-0"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "7ac6f476-7c68-4600-9424-0a6597e3551a-0",
+        "image": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\final-frames-v2\\S05\\frames\\frame-00-at-0.5s.png",
+        "time": 0.5,
+        "metadata": {
+          "width": 720,
+          "height": 1280,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793019904341,
+        "contentHash": "a8337cc8b318c5801ef3ab945df838e1abc7a34638f2870ee818898f8517b6b4",
+        "revision": null,
+        "inputFingerprint": "80e9bf26ecba7bb5a154098eca6301e11ed353e5e056163761f34f82ebf69e0f",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      }
+    ]
+  }
+}

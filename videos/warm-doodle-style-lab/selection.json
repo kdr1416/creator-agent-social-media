@@ -1,0 +1,22 @@
+{
+  "method": "random.SystemRandom().sample(pool,3), drawn once and retained",
+  "eligible_pool": [
+    "scene_01",
+    "scene_02",
+    "scene_04",
+    "scene_05",
+    "scene_07",
+    "scene_08",
+    "scene_09",
+    "scene_11",
+    "scene_13",
+    "scene_15"
+  ],
+  "pool_reason": "Retain existing HF_ONLY engine routing for an illustrated style trial; do not replace Flow scenes or production.",
+  "selected": [
+    "scene_04",
+    "scene_09",
+    "scene_13"
+  ],
+  "excluded": "Existing FLOW_ONLY/HYBRID scenes were outside this illustrative trial pool."
+}

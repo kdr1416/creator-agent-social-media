@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "historyId": "68dad718-befa-4380-b94b-9370b6ea8c76",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "assets/arial.ttf": {
+      "hash": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\68dad718-befa-4380-b94b-9370b6ea8c76\\blobs\\b3\\b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a"
+    },
+    "assets/arialbd.ttf": {
+      "hash": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\68dad718-befa-4380-b94b-9370b6ea8c76\\blobs\\e8\\e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\68dad718-befa-4380-b94b-9370b6ea8c76\\blobs\\c1\\c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "assets/layered-art.svg": {
+      "hash": "cd59afda501f4d0f38a6a97b701faf49ae2f601fbaf246c89e97282119ca5cf9",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\68dad718-befa-4380-b94b-9370b6ea8c76\\blobs\\cd\\cd59afda501f4d0f38a6a97b701faf49ae2f601fbaf246c89e97282119ca5cf9"
+    },
+    "assets/segoe-ui-black.ttf": {
+      "hash": "be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\68dad718-befa-4380-b94b-9370b6ea8c76\\blobs\\be\\be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae"
+    },
+    "assets/voice.wav": {
+      "hash": "85c4f18fc8fe04a6cf4b967881d7eb3a9ae05dff10374598660140b1fec9470b",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\68dad718-befa-4380-b94b-9370b6ea8c76\\blobs\\85\\85c4f18fc8fe04a6cf4b967881d7eb3a9ae05dff10374598660140b1fec9470b"
+    },
+    "index.html": {
+      "hash": "edaa53f6f9f142485eef5d4ab8544e98f566befba1e98ad98ced35aa13e320f1",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\68dad718-befa-4380-b94b-9370b6ea8c76\\blobs\\ed\\edaa53f6f9f142485eef5d4ab8544e98f566befba1e98ad98ced35aa13e320f1"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "dd431f52-acaf-4656-abf6-cbfbf47dea01",
+      "completedAt": 1793120124785,
+      "output": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S03-motion-r1\\renders\\pilot.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

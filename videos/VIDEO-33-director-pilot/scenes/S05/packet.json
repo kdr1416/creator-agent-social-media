@@ -1,0 +1,252 @@
+{
+  "scene_number": 5,
+  "scene_id": "S05",
+  "start": 18.151208333333333,
+  "end": 23.857541666666666,
+  "start_sample": 435629,
+  "end_sample": 572581,
+  "source_segments": [
+    5
+  ],
+  "raw_text": "Đó là lý do ngày càng nhiều gia đình lựa chọn đa dạng hóa tài sản bằng bất đồng sản tại Manta.",
+  "corrected_text": "Đó là lý do ngày càng nhiều gia đình lựa chọn đa dạng hóa tài sản bằng bất động sản tại Malta.",
+  "audio_source": [
+    "inputs/audio/seg_05.wav"
+  ],
+  "duration": 5.706333333333333,
+  "sample_frames": 136952,
+  "raw_segments": [
+    {
+      "seg_id": 5,
+      "segment_id": "seg_05",
+      "audio_slice": "audio_slices/seg_05.wav",
+      "start_sample": 435629,
+      "end_sample": 572581,
+      "sample_frames": 136952,
+      "start": 18.151,
+      "end": 23.858,
+      "duration": 5.706,
+      "sha256": "662198c94d17a7fdb75a120490c24b3399744eb4b9c70361524153488c3e65bf",
+      "raw_text": "Đó là lý do ngày càng nhiều gia đình lựa chọn đa dạng hóa tài sản bằng bất đồng sản tại Manta.",
+      "corrected_text": "Đó là lý do ngày càng nhiều gia đình lựa chọn đa dạng hóa tài sản bằng bất động sản tại Malta.",
+      "uncertainties": [
+        "bất đồng sản -> bất động sản: Lỗi nhận dạng âm vị của ASR.",
+        "Manta -> Malta: ASR nhận dạng nhầm tên quốc đảo Nam Âu 'Malta' thành 'Manta'."
+      ]
+    }
+  ],
+  "design_revision": "S05_STORYBOARD_RESTART_R1",
+  "status": "storyboard_approved_ready_for_pilot_production",
+  "title": "Chọn địa điểm, thấy tài sản thật",
+  "takeaway": "Malta được đưa vào cân nhắc như một địa điểm cho tài sản bất động sản; cảnh làm rõ địa điểm và loại tài sản, không chứng minh xu hướng ngày càng nhiều gia đình.",
+  "semantic_type": "location-to-concrete-property",
+  "visual_family": "map-location editorial cut to real residential exterior",
+  "visual_center": "Ghim Malta, rồi mặt tiền nhà thật",
+  "visual_verb": "định vị / cắt sang đối tượng cụ thể",
+  "preferred_mode": "HF_ONLY",
+  "render_mode": "HF_ONLY",
+  "routing_confidence": "high",
+  "routing_reason": "Hành động chính là mascot vector đặt ghim và chuyển cảnh biên tập sang ảnh tĩnh thật; không cần diễn viên hay video sinh. Giữ engine đã khóa, thay toàn bộ ý tưởng hình.",
+  "routing_override": null,
+  "flow_contribution": "none",
+  "hf_contribution": "Rig tiếp xúc ghim, bản đồ nhiều lớp, text native và cắt ảnh; không dùng morph công trình.",
+  "organic_motion_need": "Cử động tay/người vector có tiếp xúc rõ; không cần Flow.",
+  "exact_graphics_need": "Vị trí ghim có nguồn; ảnh nhà không méo; nhãn native.",
+  "character": "yes",
+  "pilot": true,
+  "style_id": "hf_existing:warm-doodle-mixed-media",
+  "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; S01 original and S09 motion r1 are approved motion references.",
+  "style_candidates": [
+    "warm-doodle mixed media: selected",
+    "all-vector architectural street: discarded; lacks real-asset specificity"
+  ],
+  "style_reason": "Mascot và bản đồ thân thiện dẫn tới ảnh thật có lý do nội dung; nền sáng và chữ ngắn giữ ngữ pháp đã duyệt.",
+  "composition": "720×1280. Nhãn y=160–235. Shot A: bản đồ lớn không viền x=40–680,y=300–1030, Malta ở vùng giữa thấp bên phải để tay chạm được; mascot x≈70–270,y≈690–1040. Crop bản đồ theo Malta và nam Sicily, không vẽ lại vị trí địa lý để vừa tay. Shot B: ảnh x=0–720,y=290–1080, crop thấy trọn cửa và ban công; bầu nền kem phía trên nối nhãn. Footer y=1080–1280 luôn sạch.",
+  "composition_reason": "Điểm ghim là tâm hành động của shot A; mặt tiền thật là hình chủ đạo shot B. Hai shot dùng cùng vùng nội dung lớn, không phải ảnh nhỏ trong khung hay bảng thông tin.",
+  "opening_state": "Bản đồ nam Sicily–Malta đã nằm trong khung. Mascot ở góc dưới trái, cầm một ghim, nhìn đúng điểm Malta; không chờ asset bay vào.",
+  "transformation": "Tay đưa ghim → chạm → nhả → nhìn kết quả; tại từ bất, cắt dựng sang kiến trúc nhà ở thật. Không có quan hệ biến hình giữa bản đồ và nhà.",
+  "final_state": "Mặt tiền nhà ở Malta đứng yên trong vùng hình lớn, nhãn MALTA duy nhất, không mascot/ghim/đạo cụ chồng lên ảnh.",
+  "protagonist_action": "Cầm và đặt ghim bằng một tay, thân nghiêng nhẹ để đạt tầm, mắt nhìn đúng điểm tiếp xúc, thu tay sau khi nhả.",
+  "mascot_role": "Dẫn người xem tới địa điểm qua hành động định vị; rời hình tại hard cut để ảnh nhà được đọc theo tỷ lệ thật.",
+  "timed_beats": [
+    {
+      "local_range": [
+        0,
+        0.49
+      ],
+      "spoken_cue": "khoảng đầu lát voice",
+      "action": "Bản đồ nam Sicily–Malta đã nằm trong khung. Mascot ở góc dưới trái, cầm một ghim, nhìn đúng điểm Malta; không chờ asset bay vào."
+    },
+    {
+      "local_range": [
+        0.49,
+        2.49
+      ],
+      "spoken_cue": "Đó là lý do / ngày càng nhiều gia đình",
+      "action": "Mascot nghiêng người và đưa tay đang giữ ghim tới vị trí Malta. Bản đồ giữ nguyên; chỉ cơ thể, cánh tay và ghim chuyển động."
+    },
+    {
+      "local_range": [
+        2.49,
+        3.55
+      ],
+      "spoken_cue": "lựa chọn / đa dạng hóa / tài…",
+      "action": "Đầu ghim chạm điểm Malta rồi được đặt xuống. Bàn tay nhả sau tiếp xúc, thu về; nhãn MALTA hiện một lần. Không thêm cờ, tiền, đường bay hay địa điểm thứ hai."
+    },
+    {
+      "local_range": [
+        3.55,
+        4.35
+      ],
+      "spoken_cue": "…sản bằng / chuẩn bị tới bất động sản",
+      "action": "Giữ kết quả định vị. Mascot nhìn ghim; tay đã rời ghim. Bản đồ không zoom xuyên vào công trình."
+    },
+    {
+      "local_range": [
+        4.35,
+        5.706333333333333
+      ],
+      "spoken_cue": "bất động sản tại Malta",
+      "action": "Cắt thẳng sang ảnh thật mặt tiền nhà ở Malta. Mặt tiền chiếm phần lớn vùng hình, thấy rõ cửa ra vào và ban công. Giữ nhãn MALTA cùng vị trí; ảnh đứng yên để nhận diện. Không có mascot chạm vào nhà trong ảnh."
+    }
+  ],
+  "cue_accuracy": "Các mốc nội cảnh là đề xuất từ word timing ASR có sẵn, chưa xác minh độc lập từng âm. Đối chiếu voice khi dựng, đặc biệt mốc bất ≈4.349s; không thay audio/sample bounds.",
+  "motion_emphasis_sequence": [
+    "chuẩn bị định vị",
+    "đặt ghim và nhả",
+    "giữ điểm lựa chọn",
+    "cắt sang mặt tiền nhà thật"
+  ],
+  "hf_signature_motion": "Tiếp xúc–nhả ghim đọc rõ, sau đó editorial cut đúng từ bất động sản; nhà không chịu bất cứ biến dạng/hiệu ứng nở nào.",
+  "flow_action": null,
+  "flow_camera": null,
+  "overlay_zone": "MALTA ở y=160–235; không đặt chữ lên cửa/ban công; footer y=1080–1280 sạch.",
+  "asset_contract": [
+    {
+      "layer": "map-base",
+      "status": "needs_sourcing_and_vector_styling",
+      "source": "Dữ liệu địa lý có nguồn, thí dụ Natural Earth; kiểm coastline/đảo trước khi cách điệu.",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "malta-anchor",
+      "status": "needs_creation",
+      "source": "Điểm neo theo bản đồ, không phải tâm màn hình; tách khỏi hình ghim.",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-rig",
+      "status": "existing_identity_new_pose_required",
+      "source": "assets/approved-student-source.js: giữ nhận diện; tạo pose với vai/khuỷu/cổ tay đúng tầm.",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "pin",
+      "status": "needs_creation",
+      "source": "Ghim đồ họa đơn giản, đầu ghim tách lớp, không phải tượng đài/nhà.",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "residential-photo",
+      "status": "existing_candidate_not_selected",
+      "source": "assets/townhouse.jpg / Wikimedia Townhouse in Zejtun.jpg; kiểm crop và provenance trước khi chọn. Có thể thay bằng ảnh nhà ở Malta có giấy phép phù hợp.",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "MALTA-label",
+      "status": "existing_font_new_text_layer",
+      "source": "assets/fonts/segoe-ui-black.ttf, text native; không bake trong ảnh.",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "warm-ground-and-footer",
+      "status": "needs_creation",
+      "source": "Nền kem, biển xanh rất nhạt, đất đào nhạt; ảnh không tràn footer.",
+      "required_separate_layer": true
+    }
+  ],
+  "container_required": false,
+  "container_inventory": [],
+  "container_semantics": [],
+  "visible_text_budget": {
+    "max_simultaneous_words": 1,
+    "max_levels": 1,
+    "paragraphs": 0
+  },
+  "visible_text_inventory": [
+    {
+      "text": "MALTA",
+      "size_px": 56,
+      "role": "location anchor",
+      "appears_after": "pin contact",
+      "held_across_cut": true
+    }
+  ],
+  "text_treatment": "Segoe UI Black local; một nhãn xanh tím đậm trên nền kem, không hộp, không lặp nhãn trong bản đồ.",
+  "accent_reason": "none",
+  "accent_treatment": "none",
+  "mobile_legibility_plan": "360×640: MALTA tương đương 28px; ghim và tay phải phân biệt được, không phụ thuộc chữ địa danh nhỏ. Cửa và ban công chiếm ít nhất nửa bề rộng ảnh. Không thêm micro-label.",
+  "dark_mass_strategy": "Bản đồ tint sáng, mascot cam và túi xanh; ảnh ưu tiên đá sáng, tránh crop nhiều bóng tối. Chữ/nét là khối tối nhỏ.",
+  "handoff": "S04 → S05: cắt từ câu hỏi tập trung sang bản đồ, không chuyển xu hay mang khay qua. S05 → S06: cắt từ mặt tiền sang bàn gia đình; kết nối bằng ý tài sản → nền tảng gia đình, không cố nối cửa nhà với bàn.",
+  "continuity_risk": "S09 đã kể phân bổ tài sản bằng cơ cấu ba phần; S05 không chia đồng xu/ba ngôi nhà/ba thị trường. S13 nếu có địa cầu kể quyền di chuyển, không lặp ghim và ảnh nhà.",
+  "must_keep": [
+    "Voice gốc và toàn bộ sample bounds",
+    "Hai shot: định vị rồi nhà thật; cắt dựng rõ",
+    "Nhận diện mascot, tầm tay tự nhiên, tiếp xúc rồi nhả ghim",
+    "Ảnh đúng nhà ở Malta có nguồn; không dựng nhà trên ảnh skyline",
+    "Một nhãn MALTA; footer 200px",
+    "Không dùng lại album, trang giấy lật, nhà giấy, nhà biến hình hay bảng phân bổ"
+  ],
+  "flexible": [
+    "Crop bản đồ/ảnh, pose, nét và sắc độ trong brief",
+    "Thời lượng reach/contact/hold sau khi đối chiếu voice",
+    "Nguồn ảnh nhà ở phù hợp hơn nếu kiểm được giấy phép; không giữ ảnh v5 chỉ vì có sẵn"
+  ],
+  "reference_alignment": {
+    "colour_relationships": {
+      "assessment": "proposal_not_rendered",
+      "candidate_evidence": "kem/đào/xanh nhạt và cam–tím–xanh mascot"
+    },
+    "typography_treatment": {
+      "assessment": "proposal_not_rendered",
+      "candidate_evidence": "Segoe UI Black, duy nhất MALTA"
+    },
+    "asset_mix": {
+      "assessment": "proposal_not_rendered",
+      "candidate_evidence": "vector địa lý/mascot và ảnh nhà thật trong hai shot rõ ràng"
+    },
+    "composition": {
+      "assessment": "proposal_not_rendered",
+      "candidate_evidence": "hình chủ đạo lớn, footer sạch, không card"
+    },
+    "mascot_language": {
+      "assessment": "proposal_not_rendered",
+      "candidate_evidence": "mascot gọn, đặt ghim có tiếp xúc"
+    },
+    "motion_rhythm": {
+      "assessment": "proposal_not_rendered",
+      "candidate_evidence": "reach/contact/release, hold rồi hard cut theo ý thoại"
+    }
+  },
+  "research": [
+    {
+      "claim": "Malta nằm ở Địa Trung Hải, phía nam Sicily; kiểm bản đồ dựa trên dữ liệu địa lý.",
+      "url": "https://govcms.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx"
+    }
+  ],
+  "unresolved": [
+    "Chưa chọn crop/ảnh nhà cuối cùng và chưa làm bản đồ.",
+    "Không có frame hay pilot mới; chưa có kiểm chứng thị giác hoặc playback cho phương án này."
+  ],
+  "user_approval": {
+    "scene_id": "S05",
+    "version": "S05_STORYBOARD_RESTART_R1",
+    "approval_status": "approved",
+    "approval_scope": "storyboard concept and direction only; pilot production may proceed for review",
+    "user_message_verbatim": "oke duyệt",
+    "approved_direction": "Mascot đặt ghim Malta trên bản đồ rồi cắt sang ảnh nhà thật tại bất động sản",
+    "frame_approved": false,
+    "motion_approved": false,
+    "full_film_production_authorized": false
+  }
+}

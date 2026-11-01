@@ -1,0 +1,31 @@
+{
+  "expected_hub_scene": [
+    490,
+    505
+  ],
+  "measured_frames": [
+    {
+      "frame": "frame-00-at-1.4s.png",
+      "hub_center": [
+        489.5,
+        504.5
+      ]
+    },
+    {
+      "frame": "frame-01-at-2.2s.png",
+      "hub_center": [
+        489.5,
+        504.5
+      ]
+    },
+    {
+      "frame": "frame-02-at-3.4s.png",
+      "hub_center": [
+        489.5,
+        504.5
+      ]
+    }
+  ],
+  "hub_fixed_within_pixels": 1,
+  "bbox_note": "Three-blade silhouette has asymmetric changing bounds; add invisible symmetric rig envelope so bbox diagnostics describe the fixed axle."
+}

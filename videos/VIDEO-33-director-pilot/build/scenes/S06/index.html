@@ -1,0 +1,165 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>S06 · Chỗ cho cả gia đình</title><script src="assets/gsap.min.js"></script><style>
+@font-face{font-family:PilotDisplay;src:url('assets/segoe-ui-black.ttf');font-weight:900;font-display:block}
+@font-face{font-family:PilotSans;src:url('assets/arial.ttf');font-display:block}
+*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden}
+.composition{position:relative;width:100%;height:100%;overflow:hidden;color:#30313B;font-family:PilotDisplay,sans-serif}
+.ground{position:absolute;inset:0}.art{position:absolute;inset:0;width:720px;height:1280px;overflow:hidden}
+.feature{position:absolute;z-index:5;white-space:nowrap;font-weight:900;line-height:1.24;text-align:center;top:172px;left:150px;width:420px;padding:17px 20px;background:#087BC1;color:#FFFDF4;font-size:52px;box-shadow:5px 7px 0 #30313b12}
+</style></head><body>
+<div id="v33-s06" class="composition" data-composition-id="v33-s06" data-width="720" data-height="1280" data-start="0" data-duration="5.7966" data-fps="30">
+<div class="ground" style="background:#FFF0E5"></div>
+<svg id="p06-art" class="art" xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280" data-layout-allow-overflow>
+  <defs>
+    <filter id="p06-shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#796572" flood-opacity=".13"/>
+    </filter>
+  </defs>
+
+  <!-- Ground shadow -->
+  <ellipse cx="360" cy="1010" rx="290" ry="26" fill="#E8D2C0" opacity=".65"/>
+
+  <!-- Family Chairs back layer -->
+  <g id="p06-back-chairs">
+    <!-- Center top chair -->
+    <g transform="translate(360, 610)">
+      <polygon points="-35,0 35,0 28,45 -28,45" fill="#DDBB97" stroke="#30313B" stroke-width="2.6"/>
+      <path d="M-28 0V-45Q0 -55 28 -45V0" fill="#FFFDF4" stroke="#30313B" stroke-width="2.6"/>
+    </g>
+    <!-- Right chair -->
+    <g id="p06-right-chair" transform="translate(540, 650)">
+      <polygon points="-30,0 30,0 24,40 -24,40" fill="#DDBB97" stroke="#30313B" stroke-width="2.6"/>
+      <path d="M-24 0V-40Q0 -50 24 -40V0" fill="#FFFDF4" stroke="#30313B" stroke-width="2.6"/>
+    </g>
+    <!-- New extension chair (slides in smoothly when leaf opens) -->
+    <g id="p06-new-chair" opacity="0" transform="translate(585, 780)">
+      <polygon points="-28,0 28,0 22,38 -22,38" fill="#DDBB97" stroke="#30313B" stroke-width="2.6"/>
+      <path d="M-22 0V-38Q0 -48 22 -38V0" fill="#FFFDF4" stroke="#30313B" stroke-width="2.6"/>
+    </g>
+  </g>
+
+  <!-- Family Puppets back layer -->
+  <g id="p06-puppets" filter="url(#p06-shadow)">
+    <!-- Top puppet (Parent A in lilac) -->
+    <g transform="translate(360, 615)">
+      <ellipse cx="0" cy="-65" rx="22" ry="25" fill="#FFD5AA" stroke="#30313B" stroke-width="2.8"/>
+      <path d="M-30 20 L-26 -35 Q0 -48 26 -35 L30 20 Z" fill="#B89BD7" stroke="#30313B" stroke-width="2.8"/>
+      <!-- Eyes & smile -->
+      <circle cx="-7" cy="-66" r="2.2" fill="#30313B"/>
+      <circle cx="7" cy="-66" r="2.2" fill="#30313B"/>
+      <path d="M-6 -54Q0 -49 6 -54" fill="none" stroke="#30313B" stroke-width="2.2" stroke-linecap="round"/>
+      <ellipse cx="-13" cy="-57" rx="5" ry="3" fill="#EE7C47" opacity=".5"/>
+      <ellipse cx="13" cy="-57" rx="5" ry="3" fill="#EE7C47" opacity=".5"/>
+    </g>
+    <!-- Right puppet (Parent B in soft coral) -->
+    <g id="p06-puppet-right" transform="translate(540, 665)">
+      <ellipse cx="0" cy="-65" rx="22" ry="25" fill="#FFD5AA" stroke="#30313B" stroke-width="2.8"/>
+      <path d="M-30 20 L-26 -35 Q0 -48 26 -35 L30 20 Z" fill="#EEA7A4" stroke="#30313B" stroke-width="2.8"/>
+      <!-- Eyes & smile -->
+      <circle cx="-7" cy="-66" r="2.2" fill="#30313B"/>
+      <circle cx="7" cy="-66" r="2.2" fill="#30313B"/>
+      <path d="M-6 -54Q0 -49 6 -54" fill="none" stroke="#30313B" stroke-width="2.2" stroke-linecap="round"/>
+      <ellipse cx="-13" cy="-57" rx="5" ry="3" fill="#EE7C47" opacity=".5"/>
+      <ellipse cx="13" cy="-57" rx="5" ry="3" fill="#EE7C47" opacity=".5"/>
+    </g>
+  </g>
+
+  <!-- Large Oval Table (Bàn ăn oval lớn) -->
+  <g id="p06-table-group" filter="url(#p06-shadow)">
+    <!-- Base table legs -->
+    <g transform="translate(360, 830)">
+      <polygon points="-160,50 -150,150 -130,150 -140,50" fill="#C8A585" stroke="#30313B" stroke-width="2.8"/>
+      <polygon points="160,50 140,50 130,150 150,150" fill="#C8A585" stroke="#30313B" stroke-width="2.8"/>
+    </g>
+    <!-- Main Table Top (left side & center) -->
+    <g id="p06-table-main" transform="translate(330, 800)">
+      <!-- Bevel edge -->
+      <ellipse cx="0" cy="22" rx="240" ry="95" fill="#E2CEB9" stroke="#30313B" stroke-width="3.5"/>
+      <!-- Top surface -->
+      <ellipse cx="0" cy="0" rx="240" ry="95" fill="#FFFDF5" stroke="#30313B" stroke-width="3.5"/>
+      <path d="M-220 0C-220 -80, 220 -80, 220 0" fill="none" stroke="#F4E9DB" stroke-width="4"/>
+    </g>
+    <!-- Table Extension Leaf (Lá bàn mở rộng trượt ra phía phải) -->
+    <g id="p06-table-leaf" transform="translate(520, 800) scale(0.2, 1)">
+      <ellipse cx="0" cy="22" rx="100" ry="90" fill="#D8C1A8" stroke="#30313B" stroke-width="3.2"/>
+      <ellipse cx="0" cy="0" rx="100" ry="90" fill="#FFFBEA" stroke="#30313B" stroke-width="3.2"/>
+      <line x1="-95" y1="-40" x2="-95" y2="40" stroke="#CBB196" stroke-width="3"/>
+    </g>
+
+    <!-- Shared family plan document in center of table (Bản kế hoạch chung) -->
+    <g id="p06-blank-plan" transform="translate(360, 785)">
+      <polygon points="-85,-25 85,-25 70,35 -70,35" fill="#FFFBE6" stroke="#30313B" stroke-width="2.6"/>
+      <line x1="-55" y1="-10" x2="55" y2="-10" stroke="#D3BEA8" stroke-width="2.2"/>
+      <line x1="-45" y1="5" x2="45" y2="5" stroke="#D3BEA8" stroke-width="2.2"/>
+      <line x1="-35" y1="20" x2="35" y2="20" stroke="#087BC1" stroke-width="2.5"/>
+    </g>
+  </g>
+
+  <!-- Mascot on left side extending the table -->
+  <g id="p06-mascot" filter="url(#p06-shadow)" transform="translate(70, 720) scale(1.15)">
+    <!-- Shadow -->
+    <ellipse cx="63" cy="203" rx="60" ry="10" fill="#D7BDA8" opacity=".5"/>
+    <!-- Legs -->
+    <path d="M48 143L41 190L18 194M90 143L98 190L120 194" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+    <!-- Backpack -->
+    <rect x="5" y="55" width="36" height="88" rx="15" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+    <path d="M12 75L30 84" fill="none" stroke="#A2D8ED" stroke-width="3"/>
+    <!-- Far arm holding table edge -->
+    <g id="p06-arm-far" transform="translate(35, 72)">
+      <path id="p06-far-path" d="M0 0 Q40 10 95 20" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+      <circle id="p06-far-hand" cx="95" cy="20" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+    </g>
+    <!-- Torso -->
+    <path d="M21 31Q24 9 50 12L95 14Q123 16 122 46L115 121Q114 148 86 152L49 149Q20 148 17 123L13 58Q12 42 21 31Z" fill="#FFAA28" stroke="#30313B" stroke-width="3.3"/>
+    <path d="M25 41Q30 25 49 26" fill="none" stroke="#FFD77B" stroke-width="5" stroke-linecap="round"/>
+    <!-- Cap -->
+    <path d="M28 28Q17-8 61-9Q108-13 116 27Z" fill="#A990D5" stroke="#30313B" stroke-width="3"/>
+    <path d="M17 29Q54 14 111 29L131 34Q138 40 127 42L35 39" fill="#8B73C0" stroke="#30313B" stroke-width="3"/>
+    <!-- Eyes -->
+    <g id="p06-eyes">
+      <ellipse cx="62" cy="68" rx="4.6" ry="7" fill="#30313B"/>
+      <ellipse cx="95" cy="67" rx="4.6" ry="7" fill="#30313B"/>
+    </g>
+    <path d="M68 91Q78 103 89 90" fill="none" stroke="#30313B" stroke-width="3.3" stroke-linecap="round"/>
+    <ellipse cx="48" cy="87" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+    <ellipse cx="106" cy="86" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+    <path d="M26 50L18 125" fill="none" stroke="#05669D" stroke-width="6" stroke-linecap="round"/>
+    <!-- Near arm gesturing towards family -->
+    <g id="p06-arm-near" transform="translate(108, 85)">
+      <path id="p06-near-path" d="M0 0 Q25 -10 50 -20" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+      <circle id="p06-near-hand" cx="50" cy="-20" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+    </g>
+  </g>
+</svg>
+<div id="p06-title" class="feature">CẢ GIA ĐÌNH</div>
+<audio id="v33-s06-voice" class="clip" src="assets/voice.wav" data-start="0" data-duration="5.7966" data-track-index="2"></audio>
+</div>
+<script>
+(()=>{
+  const tl = gsap.timeline({paused:true});
+
+  // 1. Title entry
+  tl.fromTo('#p06-title', {rotation:-2, y:12, opacity:0}, {rotation:-1, y:0, opacity:1, duration:0.32, ease:'back.out(1.2)'}, 0.12);
+
+  // 2. Initial state: table and family looking at center
+  tl.fromTo('#p06-table-group', {scale:0.9, opacity:0, svgOrigin:'360 800'}, {scale:1, opacity:1, duration:0.6, ease:'power2.out'}, 0.2);
+
+  // 3. Mascot pulls table leaf extension outward to the right (1.45s -> 3.2s)
+  tl.to('#p06-table-leaf', {scaleX:1, transformOrigin:'left center', duration:1.6, ease:'power2.inOut'}, 1.45);
+  tl.to('#p06-far-path', {attr:{d:'M0 0 Q50 15 125 30'}, duration:1.6, ease:'power2.inOut'}, 1.45);
+  tl.to('#p06-far-hand', {attr:{cx:125, cy:30}, duration:1.6, ease:'power2.inOut'}, 1.45);
+
+  // 4. New chair appears smoothly at the extended table spot (2.8s)
+  tl.fromTo('#p06-new-chair', {scale:0.2, opacity:0, svgOrigin:'585 780'}, {scale:1, opacity:1, duration:0.7, ease:'back.out(1.2)'}, 2.8);
+
+  // 5. Family members lean inward, shared plan highlights (3.5s)
+  tl.to('#p06-blank-plan', {scale:1.15, transformOrigin:'center', duration:0.5, ease:'power2.out'}, 3.4);
+  tl.to('#p06-puppet-right', {x:-18, duration:0.6, ease:'power1.inOut'}, 3.5);
+  tl.to('#p06-eyes', {x:5, duration:0.4}, 3.5);
+
+  // Hold cleanly till end
+  tl.to({hold:0}, {hold:1, duration:5.7966, ease:'none'}, 0);
+
+  window.__timelines['v33-s06'] = tl;
+})();
+</script>
+</body></html>

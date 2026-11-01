@@ -1,0 +1,33 @@
+{
+  "source_files_checked": 23,
+  "source_files_changed": [],
+  "video": {
+    "path": "D:\\Năm 3\\flowkit-main\\videos\\tran-minh-nhat-pilot\\renders\\tran-minh-nhat-pilot.mp4",
+    "codec": "h264",
+    "width": 720,
+    "height": 1280,
+    "fps": "30",
+    "duration": 6.033333333333333,
+    "frames": 181
+  },
+  "audio": {
+    "codec": "aac",
+    "duration": 6.021,
+    "source_duration": 6.020625,
+    "source_sample_rate": 24000,
+    "decoded_correlation_with_source": 0.9999512003587074,
+    "original_rms": 0.18120313962329196,
+    "decoded_rms": 0.18036363249964035,
+    "decoded_peak": 0.83843994140625,
+    "clipped_samples": 0
+  },
+  "proof_times": [
+    0.5,
+    1.7,
+    2.4,
+    3.4,
+    4.7,
+    5.8
+  ],
+  "user_approval": "pending"
+}

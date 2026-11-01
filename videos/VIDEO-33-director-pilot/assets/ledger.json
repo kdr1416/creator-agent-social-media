@@ -1,0 +1,44 @@
+[
+  {
+    "path": "assets\\approved-student-source.js",
+    "bytes": 2127,
+    "sha256": "338545f05c1e9c14d347adff24799bf72811a7b40983fba0d5952a1b356b0d12",
+    "provenance": "supplied approved reference; paths in ASSET_PLAN.json"
+  },
+  {
+    "path": "assets\\fonts\\arial.ttf",
+    "bytes": 1045720,
+    "sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+    "provenance": "supplied approved reference; paths in ASSET_PLAN.json"
+  },
+  {
+    "path": "assets\\fonts\\arialbd.ttf",
+    "bytes": 989780,
+    "sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+    "provenance": "supplied approved reference; paths in ASSET_PLAN.json"
+  },
+  {
+    "path": "assets\\fonts\\segoe-ui-black.ttf",
+    "bytes": 318708,
+    "sha256": "be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae",
+    "provenance": "supplied approved reference; paths in ASSET_PLAN.json"
+  },
+  {
+    "path": "assets\\ledger.json",
+    "bytes": 1399,
+    "sha256": "7a372b71fc6f290c5c43205217e6fa18807dae8485512a3b7233916494d62bda",
+    "provenance": "supplied approved reference; paths in ASSET_PLAN.json"
+  },
+  {
+    "path": "assets\\runtime\\gsap.min.js",
+    "bytes": 72779,
+    "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+    "provenance": "supplied approved reference; paths in ASSET_PLAN.json"
+  },
+  {
+    "path": "assets\\valletta.jpg",
+    "bytes": 314127,
+    "sha256": "24feb59728bcecee42267433b77bc982d1467389f1818b4ee6478474e7eccebc",
+    "provenance": "Wikimedia Commons credit in CREDITS.md"
+  }
+]

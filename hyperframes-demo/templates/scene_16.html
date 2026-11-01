@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=720, height=1280, initial-scale=1.0" />
+    <title>Scene 16 - Tư Vấn Lộ Trình 1:1 Cùng ESORA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        width: 720px;
+        height: 1280px;
+        background: #f8fafc;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        color: #0f172a;
+        overflow: hidden;
+      }
+
+      #root {
+        position: relative;
+        width: 720px;
+        height: 1280px;
+        background: #f8fafc;
+        overflow: hidden;
+      }
+
+      /* ── STUDIO CANVAS BACKGROUND ── */
+      .canvas-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background:
+          radial-gradient(circle at 50% 25%, rgba(255, 87, 34, 0.05) 0%, transparent 60%),
+          radial-gradient(circle at 50% 75%, rgba(15, 23, 42, 0.03) 0%, transparent 60%),
+          linear-gradient(to right, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+          #f8fafc;
+        background-size: 100% 100%, 100% 100%, 36px 36px, 36px 36px, 100% 100%;
+        z-index: 1;
+      }
+
+      /* ── BRAND PILL (Y: 42px) ── */
+      .brand-badge-wrapper {
+        position: absolute;
+        top: 42px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 20;
+      }
+      .brand-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #0f172a;
+        color: #ffffff;
+        padding: 7px 18px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        box-shadow: 0 4px 14px rgba(15, 23, 42, 0.1);
+        opacity: 0;
+        transform: translateY(-8px);
+      }
+      .brand-badge-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #ff5722;
+      }
+
+      /* ── HEADLINE (Y: 88px) ── */
+      .headline-wrapper {
+        position: absolute;
+        top: 88px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 20;
+        padding: 0 32px;
+      }
+      .headline {
+        font-size: 34px;
+        font-weight: 900;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        color: #0f172a;
+        text-transform: uppercase;
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      .headline-accent {
+        width: 64px;
+        height: 5px;
+        background: #ff5722;
+        border-radius: 999px;
+        margin: 10px auto 0;
+        opacity: 0;
+        transform: scaleX(0);
+      }
+
+      /* ── INTERACTIVE CONSULTATION STUDIO (Y: 180px - 1000px, 100% OPEN-CANVAS) ── */
+      .studio-stage {
+        position: absolute;
+        top: 180px;
+        left: 0;
+        width: 720px;
+        height: 840px;
+        z-index: 25;
+      }
+
+      /* Ground Reference Line & Grid */
+      .ground-line {
+        position: absolute;
+        top: 670px;
+        left: 60px;
+        width: 600px;
+        height: 3px;
+        background: #cbd5e1;
+        border-radius: 2px;
+      }
+
+      /* Character Group Left: GIA ĐÌNH & HỌC SINH */
+      .char-group-family {
+        position: absolute;
+        top: 250px;
+        left: 30px;
+        width: 320px;
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 20;
+      }
+
+      /* Character Group Right: CHUYÊN VIÊN ESORA */
+      .char-group-expert {
+        position: absolute;
+        top: 250px;
+        right: 30px;
+        width: 320px;
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 20;
+      }
+
+      /* Character Identity Labels (Unboxed Typographic Identifiers) */
+      .char-label-tag {
+        margin-top: 14px;
+        background: #0f172a;
+        color: #ffffff;
+        border: 2px solid #ff5722;
+        padding: 5px 14px;
+        border-radius: 999px;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1);
+      }
+
+      .char-label-tag.secondary {
+        border-color: #64748b;
+      }
+
+      /* Center Consultation Interaction Hub & Dossier (X: 250px - 470px, Y: 400px) */
+      .center-interaction-zone {
+        position: absolute;
+        top: 380px;
+        left: 250px;
+        width: 220px;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 30;
+      }
+
+      /* Consultation Connection Rays / SVG Arc */
+      .connection-arc-svg {
+        position: absolute;
+        top: 340px;
+        left: 140px;
+        width: 440px;
+        height: 120px;
+        pointer-events: none;
+        z-index: 15;
+      }
+
+      /* Tailored Strategic Roadmap Dossier (Center Prop) */
+      .dossier-prop {
+        width: 130px;
+        height: 100px;
+        background: #ffffff;
+        border: 3px solid #0f172a;
+        border-radius: 12px;
+        box-shadow: 0 12px 32px rgba(15, 23, 42, 0.15);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      .dossier-tab {
+        position: absolute;
+        top: -10px;
+        left: 14px;
+        width: 40px;
+        height: 10px;
+        background: #0f172a;
+        border-radius: 4px 4px 0 0;
+      }
+
+      .dossier-emblem {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #ff5722;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+      }
+
+      .dossier-label-pill {
+        position: absolute;
+        bottom: -12px;
+        background: #0f172a;
+        color: #ffffff;
+        border: 1.5px solid #ff5722;
+        padding: 3px 10px;
+        border-radius: 999px;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      /* Sparkles & Guidance Star */
+      .guidance-star {
+        position: absolute;
+        top: -30px;
+        width: 32px;
+        height: 32px;
+        opacity: 0;
+      }
+
+      /* Bottom Synthesis Badge (Y: 730px in stage, Y: 910px on canvas) */
+      .synthesis-badge-wrap {
+        position: absolute;
+        top: 730px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 35;
+      }
+
+      .synthesis-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: #0f172a;
+        color: #ffffff;
+        border: 2px solid #ff5722;
+        padding: 10px 26px;
+        border-radius: 999px;
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        box-shadow: 0 12px 32px rgba(15, 23, 42, 0.18);
+        opacity: 0;
+        transform: translateY(20px) scale(0.9);
+      }
+
+      .synthesis-star {
+        color: #fde047;
+        font-size: 16px;
+      }
+
+      /* 220px Subtitle Footer Clearance */
+      .footer-safe-guide {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 720px;
+        height: 220px;
+        pointer-events: none;
+        z-index: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="clip" data-composition-id="main" data-width="720" data-height="1280" data-duration="6">
+      <audio id="voice-track" src="./assets/audio.wav" data-start="0" data-duration="6" preload="auto"></audio>
+
+      <!-- Canvas Background -->
+      <div class="canvas-bg"></div>
+
+      <!-- Top Branding -->
+      <div class="brand-badge-wrapper" data-layout-allow-overlap data-layout-allow-occlusion>
+        <div class="brand-badge" id="brand-badge">
+          <span class="brand-badge-dot"></span>
+          <span>ESORA • DU HỌC CANADA</span>
+        </div>
+      </div>
+
+      <!-- Headline -->
+      <div class="headline-wrapper" data-layout-allow-overlap data-layout-allow-occlusion>
+        <h1 class="headline" id="main-headline">TƯ VẤN LỘ TRÌNH 1:1</h1>
+        <div class="headline-accent" id="headline-accent"></div>
+      </div>
+
+      <!-- Main Open-Canvas Studio Stage -->
+      <div class="studio-stage" data-layout-allow-overlap data-layout-allow-occlusion>
+        <!-- Ground Line -->
+        <div class="ground-line"></div>
+
+        <!-- Connection Optical Conduit Arc (Between Consultant and Family) -->
+        <svg class="connection-arc-svg" viewBox="0 0 440 120" fill="none">
+          <path
+            id="connect-arc"
+            d="M 50 60 C 150 10, 290 10, 390 60"
+            stroke="#CBD5E1"
+            stroke-width="3"
+            stroke-dasharray="6 6"
+          />
+          <path
+            id="active-arc"
+            d="M 390 60 C 290 10, 150 10, 50 60"
+            stroke="#FF5722"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-dasharray="450"
+            stroke-dashoffset="450"
+          />
+        </svg>
+
+        <!-- ── CHARACTER GROUP 1 (LEFT): GIA ĐÌNH & HỌC SINH ── -->
+        <div class="char-group-family" id="group-family">
+          <!-- Full-height Vector Family Cutout SVG (Height 340px) -->
+          <svg width="300" height="340" viewBox="0 0 300 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Ground Contact Shadow -->
+            <ellipse cx="150" cy="334" rx="130" ry="6" fill="#E2E8F0"/>
+
+            <!-- FATHER (Left) -->
+            <g id="fig-father">
+              <path d="M25 210C25 180 50 170 85 170C120 170 145 180 145 210L140 330H30L25 210Z" fill="#1E293B"/>
+              <path d="M75 170L85 190L95 170" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="85" cy="125" r="30" fill="#FDBA74"/>
+              <path d="M57 115C60 85 110 85 113 115C115 125 55 125 57 115Z" fill="#334155"/>
+              <rect x="68" y="120" width="14" height="12" rx="3" stroke="#0F172A" stroke-width="2"/>
+              <rect x="88" y="120" width="14" height="12" rx="3" stroke="#0F172A" stroke-width="2"/>
+              <line x1="82" y1="126" x2="88" y2="126" stroke="#0F172A" stroke-width="2"/>
+              <path d="M80 142C83 146 87 146 90 142" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
+            </g>
+
+            <!-- MOTHER (Right) -->
+            <g id="fig-mother">
+              <path d="M160 210C160 180 185 170 215 170C245 170 270 180 270 210L265 330H165L160 210Z" fill="#3B82F6"/>
+              <path d="M200 170L215 192L230 170" stroke="#DBEAFE" stroke-width="3.5" stroke-linecap="round"/>
+              <circle cx="215" cy="125" r="28" fill="#FDBA74"/>
+              <path d="M188 120C190 85 240 85 242 120C246 135 240 150 236 155C230 150 232 130 188 120Z" fill="#475569"/>
+              <circle cx="206" cy="122" r="2.5" fill="#0F172A"/>
+              <circle cx="224" cy="122" r="2.5" fill="#0F172A"/>
+              <path d="M210 139C213 143 217 143 220 139" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
+            </g>
+
+            <!-- STUDENT (Center Foreground, in ESORA Orange) -->
+            <g id="fig-student">
+              <path d="M95 195C95 168 125 160 155 160C185 160 215 168 215 195L210 332H100L95 195Z" fill="#FF5722"/>
+              <path d="M145 160L155 180L165 160" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="155" cy="110" r="32" fill="#FDBA74"/>
+              <path d="M125 102C128 70 182 70 185 102C192 110 190 122 180 120C175 110 135 110 130 120C120 122 118 110 125 102Z" fill="#0F172A"/>
+              <!-- Joyful curved eyes looking forward-right towards advisor -->
+              <path d="M142 108C145 105 149 105 152 108" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M158 108C161 105 165 105 168 108" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round"/>
+              <!-- Cheerful Smile -->
+              <path d="M147 122C151 128 159 128 163 122" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round"/>
+              <!-- Raising Hand Towards Dossier -->
+              <path d="M195 200C205 185 220 160 228 145C232 135 228 130 222 134C216 138 205 165 195 180" fill="#FF5722" stroke="#E64A19" stroke-width="1.5"/>
+              <circle cx="228" cy="132" r="8" fill="#FDBA74"/>
+            </g>
+          </svg>
+          <div class="char-label-tag secondary">HỌC VIÊN & GIA ĐÌNH</div>
+        </div>
+
+        <!-- ── CENTER INTERACTION ZONE: MAY ĐO LỘ TRÌNH DOSSIER ── -->
+        <div class="center-interaction-zone" id="center-zone">
+          <!-- Guidance Star -->
+          <svg class="guidance-star" id="guide-star" viewBox="0 0 24 24" fill="none">
+            <path d="M12 0L14 9L23 12L14 15L12 24L10 15L1 12L10 9L12 0Z" fill="#FDE047"/>
+          </svg>
+
+          <!-- The Personalized Strategic Blueprint Dossier -->
+          <div class="dossier-prop" id="dossier-prop">
+            <div class="dossier-tab"></div>
+            <div class="dossier-emblem">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="#FFFFFF"/>
+              </svg>
+            </div>
+            <div class="dossier-label-pill">LỘ TRÌNH 1:1</div>
+          </div>
+        </div>
+
+        <!-- ── CHARACTER GROUP 2 (RIGHT): CHUYÊN VIÊN ESORA ── -->
+        <div class="char-group-expert" id="group-expert">
+          <!-- Professional Advisor with Desk & Laptop (Height 340px) -->
+          <svg width="300" height="340" viewBox="0 0 300 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Ground Contact Shadow -->
+            <ellipse cx="150" cy="334" rx="120" ry="6" fill="#E2E8F0"/>
+
+            <!-- Advisor Body & Elegant Suit -->
+            <g id="fig-advisor">
+              <path d="M90 190C90 160 120 150 150 150C180 150 210 160 210 190L215 330H85L90 190Z" fill="#0F172A"/>
+              <!-- White Shirt V-neck -->
+              <path d="M138 150L150 178L162 150" fill="#FFFFFF"/>
+              <!-- ESORA Coral Tie -->
+              <path d="M147 165H153L155 205L150 215L145 205L147 165Z" fill="#FF5722"/>
+              <!-- Head & Smart Glasses -->
+              <circle cx="150" cy="105" r="32" fill="#FDBA74"/>
+              <!-- Neat Professional Hair -->
+              <path d="M118 95C120 62 180 62 182 95C186 102 182 115 174 112C170 102 130 102 126 112C118 115 114 102 118 95Z" fill="#0F172A"/>
+              <!-- Smiling Eyes -->
+              <circle cx="138" cy="104" r="2.5" fill="#0F172A"/>
+              <circle cx="162" cy="104" r="2.5" fill="#0F172A"/>
+              <path d="M142 120C146 125 154 125 158 120" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round"/>
+            </g>
+
+            <!-- Modern Advisor Consultation Desk -->
+            <g id="advisor-desk">
+              <!-- Desk Surface in Warm Slate -->
+              <rect x="40" y="250" width="220" height="14" rx="4" fill="#334155"/>
+              <!-- Desk Column Legs -->
+              <rect x="65" y="264" width="8" height="66" rx="2" fill="#0F172A"/>
+              <rect x="227" y="264" width="8" height="66" rx="2" fill="#0F172A"/>
+              <!-- Laptop -->
+              <rect x="90" y="226" width="46" height="24" rx="3" fill="#64748B" stroke="#0F172A" stroke-width="2"/>
+              <polygon points="80,250 146,250 142,246 84,246" fill="#94A3B8"/>
+              <!-- Folder / Strategy Plan on desk -->
+              <rect x="170" y="244" width="36" height="6" rx="2" fill="#FF5722"/>
+            </g>
+          </svg>
+          <div class="char-label-tag">CHUYÊN VIÊN ESORA</div>
+        </div>
+
+        <!-- Bottom Synthesis Badge -->
+        <div class="synthesis-badge-wrap" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="synthesis-badge" id="synthesis-badge">
+            <span class="synthesis-star">✦</span>
+            <span>KẾT NỐI CHUYÊN GIA</span>
+            <span class="synthesis-star">✦</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 220px Subtitle Footer Clearance -->
+      <div class="footer-safe-guide"></div>
+    </div>
+
+    <!-- GSAP Master Animation Sync (6.00s Duration) -->
+    <script>
+      const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+
+      // Initial States: Zero CSS transform conflict, 100% initial opacity
+      gsap.set(["#brand-badge", "#main-headline", "#headline-accent"], { opacity: 0, y: -10 });
+      gsap.set("#headline-accent", { scaleX: 0 });
+      gsap.set("#group-family", { x: -30, opacity: 0 });
+      gsap.set("#group-expert", { x: 30, opacity: 0 });
+      gsap.set("#dossier-prop", { scale: 0, opacity: 1 });
+      gsap.set("#guide-star", { scale: 0, opacity: 0 });
+      gsap.set("#synthesis-badge", { scale: 0, opacity: 1 });
+      gsap.set("#active-arc", { strokeDashoffset: 450 });
+
+      // ── BEAT 1 (0.0s – 1.6s): ENTRANCE ──
+      // "Nếu gia đình đang chuẩn bị cho con du học Canada..."
+      tl.to("#brand-badge", { opacity: 1, y: 0, duration: 0.45 }, 0.1);
+      tl.to("#main-headline", { opacity: 1, y: 0, duration: 0.55, ease: "back.out(1.2)" }, 0.25);
+      tl.to("#headline-accent", { opacity: 1, scaleX: 1, duration: 0.45 }, 0.5);
+
+      // Characters enter from sides onto the open floor
+      tl.to("#group-family", { x: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, 0.6);
+      tl.to("#group-expert", { x: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, 0.6);
+
+      // ── BEAT 2 (1.6s – 4.0s): "...HÃY LIÊN HỆ ESORA ĐỂ ĐƯỢC TƯ VẤN LỘ TRÌNH PHÙ HỢP." ──
+      // Active conduit arc shoots from Advisor to Family
+      tl.to("#active-arc", { strokeDashoffset: 0, duration: 0.8, ease: "power1.inOut" }, 1.8);
+
+      // The Tailored Dossier pops in between them
+      tl.to("#dossier-prop", {
+        scale: 1,
+        duration: 0.5,
+        ease: "back.out(1.6)"
+      }, 2.4);
+
+      // Guidance star bursts above the dossier
+      tl.to("#guide-star", {
+        scale: 1.3,
+        opacity: 1,
+        duration: 0.4,
+        ease: "back.out(2)"
+      }, 2.8);
+
+      tl.to("#guide-star", {
+        scale: 1,
+        duration: 0.3
+      }, 3.2);
+
+      // Family nods forward in confidence
+      tl.to("#group-family", {
+        x: 10,
+        duration: 0.4,
+        ease: "power1.out"
+      }, 3.0);
+
+      // ── BEAT 3 (4.0s – 6.0s): SYNTHESIS BADGE & FINAL HOLD ──
+      tl.to("#synthesis-badge", {
+        scale: 1,
+        duration: 0.35,
+        ease: "back.out(1.5)"
+      }, 4.2);
+
+      // Hold stable through 6.00s
+      tl.to({}, { duration: 1.4 }, 4.6);
+    </script>
+  </body>
+</html>

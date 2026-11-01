@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>S04 · Phân bổ tài sản một nơi?</title>
+  <script src="assets/gsap.min.js"></script>
+  <style>
+    @font-face {
+      font-family: PilotDisplay;
+      src: url('assets/segoe-ui-black.ttf');
+      font-weight: 900;
+      font-display: block;
+    }
+    @font-face {
+      font-family: PilotSans;
+      src: url('assets/arialbd.ttf');
+      font-weight: 700;
+      font-display: block;
+    }
+    @font-face {
+      font-family: PilotBody;
+      src: url('assets/arial.ttf');
+      font-display: block;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #F3EEFA; }
+    .composition {
+      position: relative;
+      width: 720px;
+      height: 1280px;
+      overflow: hidden;
+      color: #1E293B;
+      font-family: PilotSans, sans-serif;
+    }
+    .ground { position: absolute; inset: 0; background: #F3EEFA; }
+    .art { position: absolute; inset: 0; width: 720px; height: 1280px; overflow: hidden; }
+
+    /* Header Typography */
+    .title-group {
+      position: absolute;
+      top: 135px;
+      left: 0;
+      width: 720px;
+      text-align: center;
+      z-index: 10;
+      pointer-events: none;
+    }
+    .kicker {
+      display: inline-block;
+      font-family: PilotSans, sans-serif;
+      font-weight: 700;
+      font-size: 21px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #7C3AED;
+      margin-bottom: 6px;
+    }
+    .headline {
+      font-family: PilotDisplay, sans-serif;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 1.15;
+      color: #1E293B;
+      letter-spacing: -0.5px;
+    }
+  </style>
+</head>
+<body>
+<div id="v33-s04" class="composition" data-composition-id="v33-s04" data-width="720" data-height="1280" data-start="0" data-duration="4.0305" data-fps="30">
+  <div class="ground"></div>
+
+  <!-- Header Section -->
+  <div class="title-group" id="p04-header">
+    <div class="kicker" id="p04-kicker">PHÂN BỔ TÀI SẢN</div><br>
+    <div class="headline" id="p04-headline">TẬP TRUNG MỘT NƠI?</div>
+  </div>
+
+  <svg id="p04-art" class="art" xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280">
+    <defs>
+      <filter id="p04-shadow" x="-30%" y="-30%" width="160%" height="170%">
+        <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#55426B" flood-opacity=".14"/>
+      </filter>
+      <filter id="p04-glow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#7C3AED" flood-opacity=".25"/>
+      </filter>
+      <linearGradient id="p04-q-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#38BDF8"/>
+        <stop offset="100%" stop-color="#0284C7"/>
+      </linearGradient>
+    </defs>
+
+    <!-- Base Ground Shadow -->
+    <ellipse cx="360" cy="1005" rx="290" ry="26" fill="#D9CCE8" opacity=".6"/>
+
+    <!-- ======================================================== -->
+    <!-- PIVOT STAND & FULCRUM (CENTER AT y=660)                  -->
+    <!-- ======================================================== -->
+    <g id="p04-pivot-stand" filter="url(#p04-shadow)" transform="translate(360, 660)">
+      <!-- Triangular Wooden / Bronze Base Stand -->
+      <polygon points="-48,150 0,0 48,150" fill="#DFC9B2" stroke="#2D231F" stroke-width="3.5" stroke-linejoin="round"/>
+      <polygon points="-38,150 0,15 38,150" fill="#CAAF92" opacity=".6"/>
+      <!-- Stand Base Plinth -->
+      <rect x="-70" y="145" width="140" height="25" rx="6" fill="#BFA385" stroke="#2D231F" stroke-width="3"/>
+      <!-- Center Fulcrum Pin -->
+      <circle cx="0" cy="0" r="16" fill="#7C3AED" stroke="#2D231F" stroke-width="3"/>
+      <circle cx="0" cy="0" r="6" fill="#FFF"/>
+    </g>
+
+    <!-- ======================================================== -->
+    <!-- MAIN BALANCE TRAY (TILTING AROUND 360, 660)              -->
+    <!-- ======================================================== -->
+    <g id="p04-tray" filter="url(#p04-shadow)" transform="translate(360, 660)">
+      <!-- Central Beam / Tray Plank -->
+      <polygon points="-280,-20 280,-20 250,35 -250,35" fill="#FFFDF8" stroke="#2D231F" stroke-width="3.5" stroke-linejoin="round"/>
+      <polygon points="-250,35 250,35 240,55 -240,55" fill="#E2D0BD" stroke="#2D231F" stroke-width="3" stroke-linejoin="round"/>
+      <!-- Tray Ribs -->
+      <line x1="-280" y1="-20" x2="-250" y2="35" stroke="#CBB49E" stroke-width="2.5"/>
+      <line x1="280" y1="-20" x2="250" y2="35" stroke="#CBB49E" stroke-width="2.5"/>
+      <line x1="0" y1="-20" x2="0" y2="35" stroke="#7C3AED" stroke-width="3.5"/>
+
+      <!-- ====================================================== -->
+      <!-- LEFT SIDE OF TRAY (LIGHT / RISES UP)                   -->
+      <!-- x: -140                                                -->
+      <!-- ====================================================== -->
+      <g id="p04-left-side" transform="translate(-140, -25)">
+        <!-- Target Ellipse Base on Tray -->
+        <ellipse cx="0" cy="25" rx="75" ry="22" fill="#EDE4F7" stroke="#C8B5E2" stroke-width="2" stroke-dasharray="6 5"/>
+
+        <!-- Large Stylized Question Mark (Rises on Cue) -->
+        <g id="p04-question" opacity="0" transform="translate(0, -60)">
+          <!-- Glowing Aura Disc Behind Question Mark -->
+          <circle cx="0" cy="-45" r="55" fill="#EDE9FE" opacity=".7"/>
+          
+          <!-- Outer 3D Shadow Line of Question Mark -->
+          <path d="M-26 -85 C-26 -130, 26 -130, 26 -85 C26 -62, 0 -52, 0 -22" fill="none" stroke="#6D28D9" stroke-width="16" stroke-linecap="round"/>
+          <!-- Inner Core of Question Mark -->
+          <path d="M-26 -85 C-26 -130, 26 -130, 26 -85 C26 -62, 0 -52, 0 -22" fill="none" stroke="url(#p04-q-grad)" stroke-width="10" stroke-linecap="round"/>
+          
+          <!-- Dot of Question Mark -->
+          <circle cx="0" cy="14" r="10" fill="#0284C7" stroke="#2D231F" stroke-width="2.8"/>
+          <circle cx="-3" cy="11" r="3" fill="#FFF"/>
+
+          <!-- Secondary Question Tag -->
+          <g transform="translate(0, 48)">
+            <rect x="-65" y="-16" width="130" height="32" rx="16" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2.2"/>
+            <text x="0" y="5" text-anchor="middle" font-family="PilotSans, sans-serif" font-weight="700" font-size="14" fill="#6D28D9">QUỐC TẾ?</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- ====================================================== -->
+      <!-- RIGHT SIDE OF TRAY (HEAVY / 100% ASSETS AT VIETNAM)    -->
+      <!-- x: 140                                                 -->
+      <!-- ====================================================== -->
+      <g id="p04-right-assets" transform="translate(140, -25)">
+        <!-- Base Shadow for Assets -->
+        <ellipse cx="0" cy="30" rx="105" ry="26" fill="#CBB49E" opacity=".5"/>
+
+        <!-- House / Real Estate Model -->
+        <g id="p04-house" transform="translate(-55, -95) scale(0.95)">
+          <!-- House Walls -->
+          <polygon points="10,65 75,25 140,65 140,150 10,150" fill="#FFD59B" stroke="#2D231F" stroke-width="3" stroke-linejoin="round"/>
+          <!-- Pitched Tiled Roof -->
+          <polygon points="0,67 75,12 150,67 135,78 75,34 15,78" fill="#E06D53" stroke="#2D231F" stroke-width="3" stroke-linejoin="round"/>
+          <!-- Chimney -->
+          <rect x="105" y="24" width="20" height="35" rx="3" fill="#C85A42" stroke="#2D231F" stroke-width="2.2"/>
+          <!-- Windows -->
+          <rect x="25" y="85" width="26" height="32" rx="3" fill="#FFFBEA" stroke="#2D231F" stroke-width="2.2"/>
+          <path d="M38 85V117M25 101H51" stroke="#D1BEA8" stroke-width="2"/>
+          <rect x="88" y="85" width="26" height="32" rx="3" fill="#FFFBEA" stroke="#2D231F" stroke-width="2.2"/>
+          <path d="M101 85V117M88 101H114" stroke="#D1BEA8" stroke-width="2"/>
+          <!-- Front Door -->
+          <path d="M58 150V105Q75 92 92 105V150" fill="#0284C7" stroke="#2D231F" stroke-width="2.6"/>
+        </g>
+
+        <!-- Official Land Title Deed (Sổ Đỏ / Sổ Hồng) -->
+        <g id="p04-deed" transform="translate(42, -55) rotate(14)">
+          <rect x="-30" y="-45" width="60" height="92" rx="5" fill="#FFFDF5" stroke="#2D231F" stroke-width="2.6"/>
+          <rect x="-24" y="-39" width="48" height="80" rx="3" fill="none" stroke="#E2D4C0" stroke-width="1.8"/>
+          <line x1="-18" y1="-25" x2="18" y2="-25" stroke="#94A3B8" stroke-width="2.2"/>
+          <line x1="-18" y1="-12" x2="18" y2="-12" stroke="#94A3B8" stroke-width="2.2"/>
+          <line x1="-18" y1="1" x2="10" y2="1" stroke="#94A3B8" stroke-width="2.2"/>
+          <!-- Red Wax Seal with Silk Ribbons -->
+          <circle cx="8" cy="22" r="10" fill="#DC2626" stroke="#2D231F" stroke-width="2"/>
+          <path d="M8 22L3 38M8 22L13 38" stroke="#DC2626" stroke-width="3" stroke-linecap="round"/>
+        </g>
+
+        <!-- Stacks of Gold Coins / Savings -->
+        <g id="p04-coins" transform="translate(25, 10)">
+          <ellipse cx="0" cy="0" rx="35" ry="15" fill="#CA8A04" stroke="#2D231F" stroke-width="2.4"/>
+          <ellipse cx="0" cy="-6" rx="35" ry="15" fill="#FDE047" stroke="#2D231F" stroke-width="2.4"/>
+          <ellipse cx="0" cy="-14" rx="35" ry="15" fill="#CA8A04" stroke="#2D231F" stroke-width="2.4"/>
+          <ellipse cx="0" cy="-20" rx="35" ry="15" fill="#FDE047" stroke="#2D231F" stroke-width="2.4"/>
+          <ellipse cx="0" cy="-28" rx="35" ry="15" fill="#CA8A04" stroke="#2D231F" stroke-width="2.4"/>
+          <ellipse cx="0" cy="-34" rx="35" ry="15" fill="#FDE047" stroke="#2D231F" stroke-width="2.4"/>
+        </g>
+
+        <!-- Location Badge: "100% TẠI VIỆT NAM" -->
+        <g id="p04-vn-badge" transform="translate(0, 52)">
+          <rect x="-85" y="-18" width="170" height="36" rx="18" fill="#FEF2F2" stroke="#DC2626" stroke-width="2.4"/>
+          <circle cx="-62" cy="0" r="7" fill="#DC2626"/>
+          <polygon points="-62,-4 -60,-1 -57,0 -59,2 -58,5 -62,3 -66,5 -65,2 -67,0 -64,-1" fill="#FEF08A"/>
+          <text x="10" y="6" text-anchor="middle" font-family="PilotSans, sans-serif" font-weight="700" font-size="14" fill="#991B1B" letter-spacing="0.5">100% TẠI VIỆT NAM</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- ======================================================== -->
+    <!-- MASCOT (STUDENT / PROTAGONIST AT BOTTOM-LEFT)            -->
+    <!-- Thoughtful, questioning pose matching S01 & S03          -->
+    <!-- ======================================================== -->
+    <g id="p04-mascot-rig" filter="url(#p04-shadow)" transform="translate(60, 725) scale(1.15)">
+      <!-- Ground Shadow -->
+      <ellipse cx="63" cy="203" rx="65" ry="10" fill="#D7CCE2" opacity=".5"/>
+      <!-- Legs Standing Firmly -->
+      <path d="M48 143L41 190L18 194M90 143L98 190L120 194" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+      <!-- Blue Backpack -->
+      <rect x="5" y="55" width="36" height="88" rx="15" fill="#087BC1" stroke="#30313B" stroke-width="3"/>
+      <path d="M12 75L30 84" fill="none" stroke="#A2D8ED" stroke-width="3"/>
+
+      <!-- Far Arm (pointing thoughtfully towards the scale) -->
+      <g transform="translate(25 72)">
+        <g id="p04-mascot-arm-far">
+          <path id="p04-far-path" d="M0 0Q30-10 60-15" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+          <circle id="p04-far-hand" cx="60" cy="-15" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+        </g>
+      </g>
+
+      <!-- Warm Orange Torso -->
+      <path d="M21 31Q24 9 50 12L95 14Q123 16 122 46L115 121Q114 148 86 152L49 149Q20 148 17 123L13 58Q12 42 21 31Z" fill="#FFAA28" stroke="#30313B" stroke-width="3.3"/>
+      <path d="M25 41Q30 25 49 26" fill="none" stroke="#FFD77B" stroke-width="5" stroke-linecap="round"/>
+
+      <!-- Purple Cap -->
+      <path d="M28 28Q17-8 61-9Q108-13 116 27Z" fill="#A990D5" stroke="#30313B" stroke-width="3"/>
+      <path d="M17 29Q54 14 111 29L131 34Q138 40 127 42L35 39" fill="#8B73C0" stroke="#30313B" stroke-width="3"/>
+
+      <!-- Eyes (looking up at the tilted balance scale) -->
+      <g id="p04-mascot-eyes">
+        <ellipse cx="56" cy="68" rx="4.6" ry="7" fill="#30313B"/>
+        <ellipse cx="90" cy="67" rx="4.6" ry="7" fill="#30313B"/>
+      </g>
+      <!-- Thoughtful / Inquiring Mouth -->
+      <path id="p04-mascot-mouth" d="M63 94Q73 88 83 93" fill="none" stroke="#30313B" stroke-width="3" stroke-linecap="round"/>
+      <ellipse cx="43" cy="87" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+      <ellipse cx="102" cy="86" rx="10" ry="5" fill="#EE7C47" opacity=".65"/>
+      <!-- Backpack Strap -->
+      <path d="M26 50L18 125" fill="none" stroke="#05669D" stroke-width="6" stroke-linecap="round"/>
+
+      <!-- Near Arm (Holding Chin in Thought) -->
+      <g id="p04-mascot-arm-near" transform="translate(95, 80)">
+        <path id="p04-near-path" d="M0 0Q12 18 20 8Q22-5 12-2" fill="none" stroke="#30313B" stroke-width="5" stroke-linecap="round"/>
+        <circle id="p04-near-hand" cx="12" cy="-2" r="7" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+      </g>
+    </g>
+  </svg>
+
+  <audio id="v33-s04-voice" class="clip" src="assets/voice.wav" data-start="0" data-duration="4.0305" data-track-index="2"></audio>
+</div>
+
+<script>
+(()=>{
+  const tl = gsap.timeline({paused:true});
+
+  // 1. Header Entry (0.0s - 0.35s)
+  tl.fromTo('#p04-header', {y: -15, opacity: 0}, {y: 0, opacity: 1, duration: 0.35, ease: 'power2.out'}, 0.08);
+
+  // 2. Pivot Stand & Balance Scale Appear Level (0.15s - 0.7s)
+  tl.fromTo('#p04-pivot-stand', {scale: 0.85, opacity: 0, svgOrigin: '360 740'}, {scale: 1, opacity: 1, duration: 0.5, ease: 'power2.out'}, 0.15);
+  tl.fromTo('#p04-tray', {scale: 0.9, opacity: 0, svgOrigin: '360 660'}, {scale: 1, opacity: 1, duration: 0.55, ease: 'back.out(1.1)'}, 0.2);
+
+  // 3. Mascot Enters Thoughtfully on Left (0.25s - 0.75s)
+  tl.fromTo('#p04-mascot-rig', {x: 20, opacity: 0}, {x: 60, opacity: 1, duration: 0.5, ease: 'power2.out'}, 0.25);
+
+  // 4. Right-side Assets (House, Deed, Coins) Pop In (0.5s - 1.2s)
+  tl.fromTo('#p04-house', {y: -25, opacity: 0}, {y: -95, opacity: 1, duration: 0.45, ease: 'back.out(1.2)'}, 0.55);
+  tl.fromTo('#p04-deed', {y: -20, opacity: 0}, {y: -55, opacity: 1, duration: 0.4, ease: 'power2.out'}, 0.75);
+  tl.fromTo('#p04-coins', {y: -15, opacity: 0}, {y: 10, opacity: 1, duration: 0.35, ease: 'bounce.out'}, 0.95);
+  tl.fromTo('#p04-vn-badge', {scale: 0.8, opacity: 0, svgOrigin: '0 52'}, {scale: 1, opacity: 1, duration: 0.35, ease: 'back.out(1.2)'}, 1.15);
+
+  // 5. Tray Tilts Clockwise under the Unequal Weight (1.3s - 2.6s)
+  // at cue "Liệu toàn bộ tài sản của gia đình..."
+  tl.to('#p04-tray', {rotation: 5.2, svgOrigin: '360 660', duration: 1.3, ease: 'power2.inOut'}, 1.35);
+
+  // 6. Large Question Mark Pops Up on the Elevated Left Side (2.2s - 3.1s)
+  // at cue "...có nên chỉ tập trung ở Việt Nam?"
+  tl.fromTo('#p04-question', {scale: 0.2, opacity: 0, y: 10, svgOrigin: '0 0'}, {scale: 1, opacity: 1, y: -60, duration: 0.75, ease: 'back.out(1.3)'}, 2.2);
+
+  // 7. Mascot Reacts to Question: Eyes look up towards question mark & tilted scale (2.0s - 2.8s)
+  tl.to('#p04-mascot-eyes', {x: 4, y: -6, duration: 0.6, ease: 'power1.inOut'}, 2.1);
+  tl.to('#p04-far-path', {attr: {d: 'M0 0Q35-25 70-35'}, duration: 0.65, ease: 'power2.inOut'}, 2.3);
+  tl.to('#p04-far-hand', {attr: {cx: 70, cy: -35}, duration: 0.65, ease: 'power2.inOut'}, 2.3);
+
+  // Subtle natural dampening sway of the tray at the end (2.7s - 3.8s)
+  tl.to('#p04-tray', {rotation: 4.8, svgOrigin: '360 660', duration: 0.5, ease: 'sine.inOut'}, 2.7);
+  tl.to('#p04-tray', {rotation: 5.0, svgOrigin: '360 660', duration: 0.5, ease: 'sine.inOut'}, 3.2);
+
+  // Hold cleanly till end of scene (4.0305s)
+  tl.to({hold: 0}, {hold: 1, duration: 4.0305, ease: 'none'}, 0);
+
+  window.__timelines['v33-s04'] = tl;
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "historyId": "a634b640-da1c-49ed-b55a-74d0b99fdd12",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "assets/audio.wav": {
+      "hash": "33034d8f5a9b6c87accedcb5e900c936358703343911648786fc9a678c066fe9",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\a634b640-da1c-49ed-b55a-74d0b99fdd12\\blobs\\33\\33034d8f5a9b6c87accedcb5e900c936358703343911648786fc9a678c066fe9"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\a634b640-da1c-49ed-b55a-74d0b99fdd12\\blobs\\c1\\c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "assets/scene-sans-bold.ttf": {
+      "hash": "aeb9e4a6ec5cc59f4d72df8189032d7dbb28f45161cf1552174818b5465dac4e",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\a634b640-da1c-49ed-b55a-74d0b99fdd12\\blobs\\ae\\aeb9e4a6ec5cc59f4d72df8189032d7dbb28f45161cf1552174818b5465dac4e"
+    },
+    "index.html": {
+      "hash": "30cfefef1cf59aa06782be9a1a43084b41d5cfdc2b95fa57419e8b85876a190f",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\a634b640-da1c-49ed-b55a-74d0b99fdd12\\blobs\\30\\30cfefef1cf59aa06782be9a1a43084b41d5cfdc2b95fa57419e8b85876a190f"
+    },
+    "package.json": {
+      "hash": "0f08ed82eddc3b9b1040cfb84c339d1f12e0804b70b7ef0f35a4a55c0dad01c2",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\a634b640-da1c-49ed-b55a-74d0b99fdd12\\blobs\\0f\\0f08ed82eddc3b9b1040cfb84c339d1f12e0804b70b7ef0f35a4a55c0dad01c2"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "6c8f293e-2586-408e-90a6-c9d45e40e7bf",
+      "completedAt": 1792308189639,
+      "output": "D:\\Năm 3\\flowkit-main\\output\\le-pham-nhu-quynh\\scene_05.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

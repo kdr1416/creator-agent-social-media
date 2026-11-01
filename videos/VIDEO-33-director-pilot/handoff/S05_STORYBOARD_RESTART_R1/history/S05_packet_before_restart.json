@@ -1,0 +1,383 @@
+{
+  "scene_number": 5,
+  "scene_id": "S05",
+  "start": 18.151208333333333,
+  "end": 23.857541666666666,
+  "start_sample": 435629,
+  "end_sample": 572581,
+  "source_segments": [
+    5
+  ],
+  "raw_text": "Đó là lý do ngày càng nhiều gia đình lựa chọn đa dạng hóa tài sản bằng bất đồng sản tại Manta.",
+  "corrected_text": "Đó là lý do ngày càng nhiều gia đình lựa chọn đa dạng hóa tài sản bằng bất động sản tại Malta.",
+  "semantic_type": "geographic mixed-media collage",
+  "visual_center": "Mở thêm một địa điểm",
+  "organic_motion_need": "Không cần diễn viên/plate hữu cơ; puppet vector có hành động chủ đích.",
+  "exact_graphics_need": "Tách lớp hình học và tiếp xúc, tiếng Việt native.",
+  "preferred_mode": "HF_ONLY",
+  "routing_confidence": "high",
+  "routing_reason": "Mở thêm một địa điểm: hành động chủ đạo là mở / bổ sung các lớp minh họa/giấy. HYBRID đã xét: diễn viên thật không giúp đọc quan hệ geographic mixed-media collage, và sẽ thay mascot đã duyệt; cần giữ tiếp xúc và thay đổi lớp đúng nhịp. HF_ONLY vì cấu trúc hình mang nghĩa, không vì có chữ.",
+  "flow_contribution": "none",
+  "hf_contribution": "Tay kéo mép giấy, giấy xoay mở theo nếp làm lộ ảnh Valletta; ngôi nhà giấy dựng ở chân ảnh khi lời đọc tới bất động sản. Nhãn MALTA hiện cùng địa danh, không dán lên công trình cụ thể.",
+  "fallback_mode": null,
+  "fallback_condition": "Dừng cảnh khi thiếu asset; không thay bằng card. Đổi engine cần override có lý do.",
+  "character": "yes",
+  "title": "Mở thêm một địa điểm",
+  "takeaway": "Malta là một địa điểm được đưa vào cân nhắc đa dạng hóa, không thay thế toàn bộ tài sản cũ.",
+  "audio_source": [
+    "inputs/audio/seg_05.wav"
+  ],
+  "duration": 5.706333333333333,
+  "sample_frames": 136952,
+  "raw_segments": [
+    {
+      "seg_id": 5,
+      "segment_id": "seg_05",
+      "audio_slice": "audio_slices/seg_05.wav",
+      "start_sample": 435629,
+      "end_sample": 572581,
+      "sample_frames": 136952,
+      "start": 18.151,
+      "end": 23.858,
+      "duration": 5.706,
+      "sha256": "662198c94d17a7fdb75a120490c24b3399744eb4b9c70361524153488c3e65bf",
+      "raw_text": "Đó là lý do ngày càng nhiều gia đình lựa chọn đa dạng hóa tài sản bằng bất đồng sản tại Manta.",
+      "corrected_text": "Đó là lý do ngày càng nhiều gia đình lựa chọn đa dạng hóa tài sản bằng bất động sản tại Malta.",
+      "uncertainties": [
+        "bất đồng sản -> bất động sản: Lỗi nhận dạng âm vị của ASR.",
+        "Manta -> Malta: ASR nhận dạng nhầm tên quốc đảo Nam Âu 'Malta' thành 'Manta'."
+      ]
+    }
+  ],
+  "render_mode": "HF_ONLY",
+  "style_candidates": [
+    {
+      "id": "hf_existing:warm-doodle-mixed-media",
+      "fit": "Bám brief đã duyệt; prop lớn, màu tươi, mascot gọn, collage có lý do."
+    },
+    {
+      "id": "kurzgesagt",
+      "fit": "Rõ lớp và biến đổi nhưng hình khối sạch/dày dễ xa nét mảnh và giấy của reference."
+    },
+    {
+      "id": "izometrik",
+      "fit": "Chỉ hữu ích khi cần cấu trúc không gian; cảnh này không cần hệ nhìn nghiêng toàn phần."
+    },
+    {
+      "id": "bauhaus",
+      "fit": "Nhịp hình học gọn nhưng không đủ hành động cụ thể của lời thoại."
+    }
+  ],
+  "style_id": "hf_existing:warm-doodle-mixed-media",
+  "style_reference": "inputs/reference/DIRECTOR_BRIEF.md; approved reference scene 04/06/12 sources are external read-only",
+  "style_reason": "Ưu tiên cụ thể người dùng cao hơn mặc định style; giữ ngữ pháp hình, thiết kế nội dung mới.",
+  "visual_verb": "mở / giới thiệu album",
+  "composition": "Một mặt bàn, một album mở có ảnh nhà thật; mascot ngồi phía sau, hai tay giữ mép trang. Không bối cảnh phố vẽ hoặc khối nhà dựng riêng.",
+  "composition_reason": "Hình chủ đạo trải từ khoảng y=350 tới y=1040; footer y=1080–1280 chỉ có nền. Khoảng trống phục vụ thay đổi và đường mắt.",
+  "opening_state": "Tờ giấy gấp che gần hết ảnh, lộ chút bầu trời và mép ảnh; mascot chuẩn bị kéo mép.",
+  "transformation": "Mascot ngồi sau bàn, hai tay giữ đúng mép trang album ảnh nhà thật. Cuốn sổ đang mở được hạ phẳng dần để giới thiệu ảnh; ảnh luôn in trên giấy, không trở thành khối nhà. Kết bám frame v5 đã duyệt.",
+  "final_state": "Ảnh thật + giấy + nhà biểu tượng cùng một bề mặt, mascot giữ góc trang mở. Không có giá/lợi nhuận.",
+  "protagonist_action": "Với tay → chạm giấy → giữ khi tờ giấy mở → nhìn ảnh và ngôi nhà.",
+  "mascot_role": "Với tay → chạm giấy → giữ khi tờ giấy mở → nhìn ảnh và ngôi nhà.",
+  "visual_family": "geographic mixed-media collage",
+  "timed_beats": [
+    {
+      "local_seconds": 0,
+      "action": "Bìa in nét kiến trúc đã có, nhà đứng sẵn phía sau",
+      "alignment": "approximate_directorial_cue_based_on_preserved_ASR"
+    },
+    {
+      "local_seconds": 1.65,
+      "action": "Mascot với tay tới tai giấy",
+      "alignment": "approximate_directorial_cue_based_on_preserved_ASR"
+    },
+    {
+      "local_seconds": 2.52,
+      "action": "Giữ tai giấy, mở bìa quanh bản lề và bước ngang",
+      "alignment": "approximate_directorial_cue_based_on_preserved_ASR"
+    },
+    {
+      "local_seconds": 4.35,
+      "action": "Bất động sản: kiến trúc có sẵn được lộ gần hết, không méo hình",
+      "alignment": "approximate_directorial_cue_based_on_preserved_ASR"
+    },
+    {
+      "local_seconds": 4.6,
+      "action": "Buông tay rồi bước cuối",
+      "alignment": "approximate_directorial_cue_based_on_preserved_ASR"
+    },
+    {
+      "local_seconds": 4.95,
+      "action": "MALTA hiện phía trên; nhìn ban công và giữ kết",
+      "alignment": "approximate_directorial_cue_based_on_preserved_ASR"
+    }
+  ],
+  "motion_emphasis_sequence": [
+    "Bản đồ giấy còn gấp, tay với",
+    "Tay chạm góc giấy",
+    "Mở lá giấy, vẫn giữ vật thể cũ",
+    "Nhà giấy dựng ở chân ảnh",
+    "MALTA rõ, mascot nhìn ảnh",
+    "Giữ collage"
+  ],
+  "hf_signature_motion": "Mascot ngồi sau bàn, hai tay giữ đúng mép trang album ảnh nhà thật. Cuốn sổ đang mở được hạ phẳng dần để giới thiệu ảnh; ảnh luôn in trên giấy, không trở thành khối nhà. Kết bám frame v5 đã duyệt.",
+  "flow_action": null,
+  "flow_camera": null,
+  "overlay_zone": "native typography y=150–330, content y=340–1060; subtitle reserve y=1080–1280",
+  "asset_contract": [
+    {
+      "layer": "valletta-photo",
+      "source": "Wikimedia Commons: Skyline of Valletta.jpg / Juliana da Costa José / CC BY-SA 3.0",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "photo-paper-edge",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "fold-left",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "fold-right",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "paper-crease",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "property-symbol",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "vietnam-keepsake",
+      "source": "new original layered vector; authored in this package for pilots, Antigravity for remaining scenes",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-body",
+      "source": "approved mascot derivative",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-near-arm",
+      "source": "approved mascot derivative",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-eyes",
+      "source": "approved mascot derivative",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-cap",
+      "source": "approved mascot derivative",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "mascot-bag",
+      "source": "approved mascot derivative",
+      "status": "implemented_in_editable_pilot_source",
+      "required_separate_layer": true
+    },
+    {
+      "layer": "album-house-photo-v5",
+      "source": "Marika Caruana / Townhouse in Zejtun.jpg / CC BY-SA 4.0",
+      "status": "local in revisions/S05-album-pilot-v5-r1/assets/townhouse.jpg; credits beside source"
+    }
+  ],
+  "container_required": true,
+  "container_inventory": [
+    {
+      "object_type": "folded travel paper",
+      "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+      "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+      "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+    }
+  ],
+  "container_semantics": [
+    {
+      "object_type": "folded travel paper",
+      "bounds": "Trong vùng y=340–1040, theo staging cảnh",
+      "semantic_boundary": "Vật thể thật có mép/nếp/chức năng; không là khung chứa thông tin.",
+      "removal_consequence": "Mất hành động mở/giữ/đặt hoặc quan hệ trên bề mặt; Boundary Removal Test: giữ."
+    }
+  ],
+  "visible_text_budget": {
+    "max_simultaneous_words": 1,
+    "max_levels": 2,
+    "paragraphs": 0
+  },
+  "visible_text_inventory": [
+    {
+      "text": "MALTA",
+      "size_px": 54,
+      "role": "anchor",
+      "simultaneous": false
+    }
+  ],
+  "text_treatment": "Chữ native Segoe UI Black, dấu đầy đủ; đổi cụm thay vì tích lũy. Chữ trần trên nền sáng; không sweep.",
+  "accent_reason": "none",
+  "accent_treatment": "none",
+  "mobile_legibility_plan": "720×1280 xuống 360×640; headline 46–54px; điều kiện 32px; text một–hai dòng ngắn, không dùng nhãn 18px; kiểm dấu ở bản raster.",
+  "dark_mass_strategy": "Nét #30313B 3–4px, màu đậm chỉ cho chữ/nét. Mặt bàn/nhà/túi dùng tint sáng và xanh, không nhiều khối navy.",
+  "handoff": "Màu đá sáng nối sang không gian gia đình cảnh 06 bằng cắt ý; không dùng cùng căn nhà làm template.",
+  "continuity_risk": "Ảnh Valletta chỉ định vị địa lý; không phải dự án bán hay căn nhà của khách hàng.",
+  "pilot": true,
+  "status": "pilot_rendered_awaiting_user_review",
+  "must_keep": [
+    "Malta là một địa điểm được đưa vào cân nhắc đa dạng hóa, không thay thế toàn bộ tài sản cũ.",
+    "Tay kéo mép giấy, giấy xoay mở theo nếp làm lộ ảnh Valletta; ngôi nhà giấy dựng ở chân ảnh khi lời đọc tới bất động sản. Nhãn MALTA hiện cùng địa danh, không dán lên công trình cụ thể.",
+    "voice/sample bounds",
+    "mascot identity, warm light palette, footer 200px",
+    "zero added CTA or documentary claims"
+  ],
+  "flexible": [
+    "Toạ độ/kích thước trong safe area",
+    "easing/pose/chi tiết nét",
+    "dời cue nội cảnh sau đối chiếu voice; không đổi audio"
+  ],
+  "reference_alignment": {
+    "colour_relationships": {
+      "reference_evidence": "Brief: cream/peach/lilac + accents",
+      "candidate_evidence": "qa/S05/mobile-5.50.png; in-progress 2.1s; pilots/S05/index.html",
+      "assessment": "match",
+      "revision_needed": "No mismatch seen in inspected frames; style and motion remain subject to user review."
+    },
+    "typography_treatment": {
+      "reference_evidence": "Reference 06/12: Segoe UI Black Vietnamese",
+      "candidate_evidence": "qa/S05/mobile-5.50.png; in-progress 2.1s; pilots/S05/index.html",
+      "assessment": "match",
+      "revision_needed": "No mismatch seen in inspected frames; style and motion remain subject to user review."
+    },
+    "asset_mix": {
+      "reference_evidence": "Reference 04/06: real campus plus drawing",
+      "candidate_evidence": "qa/S05/mobile-5.50.png; in-progress 2.1s; pilots/S05/index.html",
+      "assessment": "match",
+      "revision_needed": "No mismatch seen in inspected frames; style and motion remain subject to user review."
+    },
+    "composition": {
+      "reference_evidence": "Reference 04: large prop; 12: shared meaningful surface",
+      "candidate_evidence": "qa/S05/mobile-5.50.png; in-progress 2.1s; pilots/S05/index.html",
+      "assessment": "match",
+      "revision_needed": "No mismatch seen in inspected frames; style and motion remain subject to user review."
+    },
+    "mascot_language": {
+      "reference_evidence": "Reference 12: orange body, purple cap, blue backpack",
+      "candidate_evidence": "qa/S05/mobile-5.50.png; in-progress 2.1s; pilots/S05/index.html",
+      "assessment": "match",
+      "revision_needed": "No mismatch seen in inspected frames; style and motion remain subject to user review."
+    },
+    "motion_rhythm": {
+      "reference_evidence": "Reference 12: piece fits / cap worn / selection made",
+      "candidate_evidence": "qa/S05/mobile-5.50.png; in-progress 2.1s; pilots/S05/index.html",
+      "assessment": "match",
+      "revision_needed": "No mismatch seen in inspected frames; style and motion remain subject to user review."
+    }
+  },
+  "asset_contract_evidence": "pilots/S05/index.html; pilots/S05/assets/layered-art.svg",
+  "approved_final_frame": {
+    "scene_id": "S05",
+    "version": "final-frame-v5",
+    "approval_status": "approved",
+    "current_selection": true,
+    "approval_scope": "static final album frame",
+    "user_message_verbatim": "oke cảnh ổn rồi. mình duyệt tạo cho mình pilot cảnh s05 đi",
+    "frame_path": "revisions/S05-final-frame-v5/FINAL_FRAME.png",
+    "frame_sha256": "f1fd553cc3f8df5cbc0677b5d4104def3983760cdc730dca9190ac815b76d55b",
+    "editable_source": "revisions/S05-final-frame-v5/index.html",
+    "motion_approved": false,
+    "pilot_render_authorized": true,
+    "full_film_production_authorized": false
+  },
+  "latest_design_revision": "Album v5 approved; pilot album r1 is the current motion candidate.",
+  "latest_motion_revision": {
+    "scene_id": "S05",
+    "revision": "album-pilot-v5-r1",
+    "based_on": "approved S05 final-frame-v5",
+    "duration": 5.706333333333333,
+    "source_start_sample": 435629,
+    "source_end_sample": 572581,
+    "signature": "Finish opening an already held photographic album from a lifted right half to the approved flat spread. Hands track two page-margin points throughout. The real house never becomes a separate object.",
+    "opening_interval": [
+      2.42,
+      4.77
+    ],
+    "initial_angle": 50,
+    "hinge": [
+      350,
+      780
+    ],
+    "perspective": 1400,
+    "grips": {
+      "far": [
+        [
+          480,
+          590
+        ],
+        [
+          502.5,
+          497.2
+        ]
+      ],
+      "near": [
+        [
+          610,
+          595
+        ],
+        [
+          594.9,
+          509.3
+        ]
+      ]
+    },
+    "proof_times": [
+      0.15,
+      2.2,
+      3.15,
+      3.75,
+      4.5,
+      5.35
+    ],
+    "approval": "motion_pending_user_review",
+    "original_voice_sha256": "662198c94d17a7fdb75a120490c24b3399744eb4b9c70361524153488c3e65bf",
+    "static_reference_sha256": "f1fd553cc3f8df5cbc0677b5d4104def3983760cdc730dca9190ac815b76d55b",
+    "video_path": "revisions\\S05-album-pilot-v5-r1\\renders\\pilot.mp4",
+    "video_sha256": "4c791e18d43440e6f2378fd773420e59f4cc154bc327c5be61f80341154c99fd",
+    "video_duration": 5.733333,
+    "audio_duration": 5.733333,
+    "video_frames": 172,
+    "original_pcm_bit_exact": true,
+    "aac_correlation": 0.9987810262133117,
+    "decoded_rms": 0.11010452668166854,
+    "hyperframes_check_ok": true,
+    "findings": {
+      "lint": [],
+      "runtime": [],
+      "layout": [],
+      "contrast": []
+    },
+    "approved_static_frame": "revisions/S05-final-frame-v5/FINAL_FRAME.png",
+    "lossless_final_frame_mean_pixel_difference": 0.005629340277777777,
+    "S09_sha256_unchanged": "a6cbf6ec62a12bf74f4cdcc076f27c1ac839f4e984c35aeba1bf2dc9b44cd90e",
+    "motion_status": "rendered_pending_user_review",
+    "browser_playback": "pending"
+  }
+}

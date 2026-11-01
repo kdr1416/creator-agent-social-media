@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scene 08 - 4 Trụ Cột Thẩm Định Của Bộ Di Trú</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #0b0f19;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+      #root {
+        position: relative;
+        width: 720px;
+        height: 1280px;
+        background-color: #ffffff;
+        overflow: hidden;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        color: #0f172a;
+      }
+
+      /* Subtle Academic Grid Canvas */
+      .canvas-bg {
+        position: absolute;
+        inset: 0;
+        background-image:
+          radial-gradient(#e2e8f0 1.2px, transparent 1.2px),
+          linear-gradient(to right, rgba(241, 245, 249, 0.6) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(241, 245, 249, 0.6) 1px, transparent 1px);
+        background-size: 36px 36px, 72px 72px, 72px 72px;
+        background-position: 0 0, 0 0, 0 0;
+        opacity: 0.85;
+      }
+
+      /* Ambient Atmospheric Glow */
+      .bg-glow {
+        position: absolute;
+        top: 260px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(2, 132, 199, 0.08) 0%, rgba(16, 185, 129, 0.05) 50%, transparent 70%);
+        pointer-events: none;
+      }
+
+      /* Top Brand Badge */
+      .brand-badge-wrapper {
+        position: absolute;
+        top: 36px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 50;
+      }
+      .brand-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 18px;
+        background: #0f172a;
+        color: #ffffff;
+        border-radius: 9999px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        box-shadow: 0 4px 14px rgba(15, 23, 42, 0.15);
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      .brand-badge-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #ff5722;
+      }
+
+      /* Headline Header */
+      .headline-wrapper {
+        position: absolute;
+        top: 86px;
+        left: 36px;
+        right: 36px;
+        text-align: center;
+        z-index: 50;
+      }
+      .kicker {
+        font-size: 14px;
+        font-weight: 800;
+        color: #ff5722;
+        letter-spacing: 2.2px;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+      .headline {
+        font-family: "Montserrat", sans-serif;
+        font-size: 34px;
+        font-weight: 900;
+        line-height: 1.15;
+        letter-spacing: -0.5px;
+        color: #0f172a;
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      .headline span {
+        color: #ff5722;
+      }
+      .headline-accent {
+        width: 90px;
+        height: 4px;
+        background: linear-gradient(90deg, #ff5722, #0284c7);
+        border-radius: 2px;
+        margin: 8px auto 0;
+        transform: scaleX(0);
+        transform-origin: center;
+      }
+
+      /* S-Curve Kinetic Ascent Stage */
+      .stage-wrap {
+        position: absolute;
+        top: 220px;
+        left: 0;
+        width: 720px;
+        height: 800px;
+        z-index: 20;
+      }
+
+      /* Pedestal Milestone Labels */
+      .pedestal-label {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        z-index: 35;
+        opacity: 0;
+        transform: scale(0.85);
+        pointer-events: none;
+      }
+      .ped-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 12px;
+        border-radius: 9999px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        margin-bottom: 4px;
+      }
+      .ped-desc {
+        font-size: 12.5px;
+        font-weight: 700;
+        color: #64748b;
+      }
+
+      /* Pedestal 1 Label (Quê nhà) */
+      .label-1 { top: 690px; left: 70px; width: 190px; }
+      .label-1 .ped-tag { background: #fff7ed; color: #ea580c; border: 1.5px solid #ff5722; }
+
+      /* Pedestal 2 Label (Triển vọng Úc) */
+      .label-2 { top: 510px; left: 410px; width: 220px; }
+      .label-2 .ped-tag { background: #f0f9ff; color: #0284c7; border: 1.5px solid #38bdf8; }
+
+      /* Pedestal 3 Label (Giá trị khóa học) */
+      .label-3 { top: 330px; left: 100px; width: 220px; }
+      .label-3 .ped-tag { background: #fefce8; color: #ca8a04; border: 1.5px solid #eab308; }
+
+      /* Pedestal 4 Label (Lịch sử di trú) */
+      .label-4 { top: 150px; left: 410px; width: 220px; }
+      .label-4 .ped-tag { background: #f0fdf4; color: #059669; border: 1.5px solid #10b981; }
+
+      /* Traveling Student Character */
+      .student-actor {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 110px;
+        height: 170px;
+        z-index: 40;
+        opacity: 0;
+        transform-origin: center bottom;
+      }
+
+      /* Bottom Synthesis Proof */
+      .bottom-seal {
+        position: absolute;
+        bottom: 230px;
+        left: 48px;
+        right: 48px;
+        background: #0f172a;
+        border-radius: 14px;
+        padding: 14px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.15);
+        opacity: 0;
+        transform: translateY(20px);
+        z-index: 45;
+      }
+      .seal-text {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14.5px;
+        font-weight: 900;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        color: #f8fafc;
+        text-align: center;
+      }
+      .seal-highlight {
+        color: #fbbf24;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="clip" data-composition-id="scene-08" data-width="720" data-height="1280" data-duration="8.88">
+      <audio id="voice-track" class="clip" src="./assets/audio.wav" data-start="0" data-duration="8.88" preload="auto"></audio>
+
+      <!-- Canvas Background -->
+      <div class="canvas-bg"></div>
+      <div class="bg-glow"></div>
+
+      <!-- Top Branding -->
+      <div class="brand-badge-wrapper">
+        <div class="brand-badge" id="brand-badge">
+          <span class="brand-badge-dot"></span>
+          <span>ESORA • DU HỌC AUSTRALIA</span>
+        </div>
+      </div>
+
+      <!-- Headline -->
+      <div class="headline-wrapper">
+        <div class="kicker">TIÊU CHÍ THẨM ĐỊNH BỘ DI TRÚ</div>
+        <h1 class="headline" id="main-headline">4 TRỤ CỘT <span>XÉT DUYỆT VISA</span></h1>
+        <div class="headline-accent" id="headline-accent"></div>
+      </div>
+
+      <!-- Main S-Curve Ascent Stage -->
+      <div class="stage-wrap">
+        <!-- SVG Track & Pedestals -->
+        <svg width="720" height="800" viewBox="0 0 720 800" style="position: absolute; inset: 0;">
+          <defs>
+            <linearGradient id="curveGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#FF5722" />
+              <stop offset="35%" stop-color="#0284C7" />
+              <stop offset="70%" stop-color="#F59E0B" />
+              <stop offset="100%" stop-color="#10B981" />
+            </linearGradient>
+            <filter id="shadowPed" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.12" />
+            </filter>
+          </defs>
+
+          <!-- Inactive Subtle Guide Track -->
+          <path
+            d="M 160 660 C 260 660, 420 580, 520 480 C 600 400, 310 380, 210 300 C 110 220, 420 160, 530 120"
+            fill="none"
+            stroke="#e2e8f0"
+            stroke-width="12"
+            stroke-linecap="round"
+          />
+
+          <!-- Active Animated Glowing S-Curve Track -->
+          <path
+            id="trackActive"
+            d="M 160 660 C 260 660, 420 580, 520 480 C 600 400, 310 380, 210 300 C 110 220, 420 160, 530 120"
+            fill="none"
+            stroke="url(#curveGrad)"
+            stroke-width="10"
+            stroke-linecap="round"
+            stroke-dasharray="1400"
+            stroke-dashoffset="1400"
+          />
+
+          <!-- Pedestal 1: HOÀN CẢNH QUÊ NHÀ (X: 160, Y: 660) -->
+          <g id="ped1" transform="translate(160, 660)" filter="url(#shadowPed)">
+            <ellipse cx="0" cy="10" rx="60" ry="18" fill="#e2e8f0" />
+            <path d="M -60 0 C -60 10, 60 10, 60 0 L 60 8 C 60 18, -60 18, -60 8 Z" fill="#ffedd5" />
+            <ellipse cx="0" cy="0" rx="58" ry="16" fill="#ffffff" stroke="#ff5722" stroke-width="3" />
+            <ellipse cx="0" cy="0" rx="46" ry="12" fill="#fff7ed" />
+            <!-- Floating Home / Family Ties Icon -->
+            <g transform="translate(-14, -40)">
+              <polygon points="14,2 26,12 2,12" fill="#ff5722" />
+              <rect x="5" y="12" width="18" height="12" fill="#ea580c" />
+              <rect x="10" y="16" width="8" height="8" rx="1" fill="#ffffff" />
+            </g>
+          </g>
+
+          <!-- Pedestal 2: TRIỂN VỌNG ÚC (X: 520, Y: 480) -->
+          <g id="ped2" transform="translate(520, 480)" filter="url(#shadowPed)">
+            <ellipse cx="0" cy="10" rx="60" ry="18" fill="#e2e8f0" />
+            <path d="M -60 0 C -60 10, 60 10, 60 0 L 60 8 C 60 18, -60 18, -60 8 Z" fill="#e0f2fe" />
+            <ellipse cx="0" cy="0" rx="58" ry="16" fill="#ffffff" stroke="#0284c7" stroke-width="3" />
+            <ellipse cx="0" cy="0" rx="46" ry="12" fill="#f0f9ff" />
+            <!-- Floating Sydney Opera House / Australia Icon -->
+            <g transform="translate(-16, -40)">
+              <path d="M 4 22 C 8 10, 18 10, 22 22 Z" fill="#0284c7" />
+              <path d="M 14 22 C 18 6, 28 6, 32 22 Z" fill="#38bdf8" />
+              <line x1="2" y1="22" x2="34" y2="22" stroke="#0369a1" stroke-width="2.5" />
+            </g>
+          </g>
+
+          <!-- Pedestal 3: GIÁ TRỊ TƯƠNG LAI (X: 210, Y: 300) -->
+          <g id="ped3" transform="translate(210, 300)" filter="url(#shadowPed)">
+            <ellipse cx="0" cy="10" rx="60" ry="18" fill="#e2e8f0" />
+            <path d="M -60 0 C -60 10, 60 10, 60 0 L 60 8 C 60 18, -60 18, -60 8 Z" fill="#fef9c3" />
+            <ellipse cx="0" cy="0" rx="58" ry="16" fill="#ffffff" stroke="#f59e0b" stroke-width="3" />
+            <ellipse cx="0" cy="0" rx="46" ry="12" fill="#fefce8" />
+            <!-- Floating Growth / Career ROI Chart Icon -->
+            <g transform="translate(-14, -40)">
+              <rect x="2" y="14" width="6" height="10" rx="1" fill="#f59e0b" />
+              <rect x="11" y="9" width="6" height="15" rx="1" fill="#f59e0b" />
+              <rect x="20" y="4" width="6" height="20" rx="1" fill="#d97706" />
+              <polyline points="4,10 14,5 24,1" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round" />
+            </g>
+          </g>
+
+          <!-- Pedestal 4: LỊCH SỬ DI TRÚ (X: 530, Y: 120) -->
+          <g id="ped4" transform="translate(530, 120)" filter="url(#shadowPed)">
+            <ellipse cx="0" cy="10" rx="60" ry="18" fill="#e2e8f0" />
+            <path d="M -60 0 C -60 10, 60 10, 60 0 L 60 8 C 60 18, -60 18, -60 8 Z" fill="#dcfce7" />
+            <ellipse cx="0" cy="0" rx="58" ry="16" fill="#ffffff" stroke="#10b981" stroke-width="3.5" />
+            <ellipse cx="0" cy="0" rx="46" ry="12" fill="#f0fdf4" />
+            <!-- Floating Passport & Visa Stamp Icon -->
+            <g transform="translate(-14, -42)">
+              <rect x="2" y="4" width="24" height="22" rx="3" fill="#10b981" stroke="#047857" stroke-width="1.5" />
+              <circle cx="14" cy="12" r="5" fill="#ffffff" opacity="0.8" />
+              <path d="M 8 20 L 20 20" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+            </g>
+          </g>
+        </svg>
+
+        <!-- Pedestal Milestone Labels -->
+        <div class="pedestal-label label-1" id="lbl1">
+          <div class="ped-tag">01. TẠI QUÊ NHÀ</div>
+          <div class="ped-desc">Ràng buộc gia đình & tài chính</div>
+        </div>
+
+        <div class="pedestal-label label-2" id="lbl2">
+          <div class="ped-tag">02. TRIỂN VỌNG TẠI ÚC</div>
+          <div class="ped-desc">Môi trường đào tạo thực tế</div>
+        </div>
+
+        <div class="pedestal-label label-3" id="lbl3">
+          <div class="ped-tag">03. GIÁ TRỊ TƯƠNG LAI</div>
+          <div class="ped-desc">Thăng tiến nghề nghiệp & ROI</div>
+        </div>
+
+        <div class="pedestal-label label-4" id="lbl4">
+          <div class="ped-tag">04. LỊCH SỬ DI TRÚ</div>
+          <div class="ped-desc">Minh bạch & tuân thủ luật</div>
+        </div>
+
+        <!-- Student Character Actor (Climber) -->
+        <div class="student-actor" id="studentActor">
+          <svg width="110" height="170" viewBox="0 0 110 170">
+            <!-- Backpack behind -->
+            <rect x="36" y="55" width="38" height="42" rx="10" fill="#0284c7" />
+
+            <!-- Legs & Shoes -->
+            <rect x="42" y="115" width="10" height="36" rx="5" fill="#0f172a" />
+            <rect x="58" y="115" width="10" height="36" rx="5" fill="#0f172a" />
+            <ellipse cx="45" cy="154" rx="10" ry="6" fill="#0284c7" />
+            <ellipse cx="65" cy="154" rx="10" ry="6" fill="#0284c7" />
+
+            <!-- Torso (Navy Blue Blazer) -->
+            <path d="M 36 58 Q 55 54 74 58 L 78 116 L 32 116 Z" fill="#1e293b" />
+
+            <!-- Shirt Collar & Tie -->
+            <polygon points="55,58 47,72 63,72" fill="#ffffff" />
+            <polygon points="55,70 52,96 55,104 58,96" fill="#ff5722" />
+
+            <!-- Head & Face -->
+            <circle cx="55" cy="32" r="21" fill="#fed7aa" />
+            <!-- Hair -->
+            <path d="M 34 32 Q 55 6 76 32 Q 72 18 55 16 Q 38 18 34 32 Z" fill="#0f172a" />
+            <!-- Glasses -->
+            <rect x="42" y="28" width="10" height="8" rx="2" fill="none" stroke="#0f172a" stroke-width="2" />
+            <rect x="58" y="28" width="10" height="8" rx="2" fill="none" stroke="#0f172a" stroke-width="2" />
+            <line x1="52" y1="32" x2="58" y2="32" stroke="#0f172a" stroke-width="2" />
+            <!-- Smile -->
+            <path d="M 49 43 Q 55 49 61 43" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" />
+
+            <!-- Left Arm -->
+            <path d="M 34 62 Q 22 75 26 88" fill="none" stroke="#1e293b" stroke-width="8" stroke-linecap="round" />
+            <circle cx="26" cy="88" r="5" fill="#fed7aa" />
+
+            <!-- Right Arm: Anchored at (76, 62) -->
+            <g id="climberArmRest">
+              <path d="M 76 62 Q 90 76 86 92" fill="none" stroke="#1e293b" stroke-width="8" stroke-linecap="round" />
+              <circle cx="86" cy="92" r="5" fill="#fed7aa" />
+            </g>
+            <g id="climberArmRaised" style="opacity: 0;">
+              <path d="M 76 62 Q 88 45 96 36" fill="none" stroke="#1e293b" stroke-width="8" stroke-linecap="round" />
+              <circle cx="96" cy="36" r="5" fill="#fed7aa" />
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Bottom Synthesis Proof Pill -->
+      <div class="bottom-seal" id="bottomSeal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2.5">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+        <span class="seal-text">
+          HỒ SƠ CẦN THUYẾT PHỤC <span class="seal-highlight">TRỌN VẸN CẢ 4 TRỤ CỘT</span>
+        </span>
+      </div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines = window.__timelines || {};
+      window.__timelines["scene-08"] = tl;
+
+      // Initial positions
+      // Student starts on Pedestal 1: X = 160 - 55 = 105, Y = 660 - 165 = 495
+      gsap.set("#studentActor", { x: 105, y: 495, opacity: 0 });
+      gsap.set("#trackActive", { strokeDashoffset: 1400 });
+      gsap.set("#climberArmRest", { opacity: 1 });
+      gsap.set("#climberArmRaised", { opacity: 0 });
+      gsap.set("#bottomSeal", { y: 20, opacity: 0 });
+
+      // 0.1s: Header reveal
+      tl.to("#brand-badge", { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 0.1);
+      tl.to("#main-headline", { opacity: 1, y: 0, duration: 0.45, ease: "back.out(1.2)" }, 0.25);
+      tl.to("#headline-accent", { opacity: 1, scaleX: 1, duration: 0.35 }, 0.45);
+
+      // 0.6s: "Cơ quan xét duyệt còn xem xét: hoàn cảnh tại quê nhà..."
+      // Track draws from Pedestal 1 + Student appears at Pedestal 1
+      tl.to("#studentActor", { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.8)" }, 0.6)
+        .to("#lbl1", { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.5)" }, 0.7)
+        .to("#ped1", { scale: 1.08, duration: 0.25, yoyo: true, repeat: 1 }, 0.7);
+
+      // 2.2s - 3.4s: Student moves to Pedestal 2 (X: 520 - 55 = 465, Y: 480 - 165 = 315)
+      // "...triển vọng học tập tại Australia..."
+      tl.to("#trackActive", { strokeDashoffset: 950, duration: 1.0, ease: "power1.inOut" }, 2.2)
+        .to("#studentActor", {
+          x: 465,
+          y: 315,
+          duration: 1.0,
+          ease: "power2.inOut"
+        }, 2.2)
+        .to("#lbl2", { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.5)" }, 3.1)
+        .to("#ped2", { scale: 1.08, duration: 0.25, yoyo: true, repeat: 1 }, 3.1);
+
+      // 4.4s - 5.6s: Student climbs to Pedestal 3 (X: 210 - 55 = 155, Y: 300 - 165 = 135)
+      // "...giá trị của khóa học đối với tương lai..."
+      tl.to("#trackActive", { strokeDashoffset: 450, duration: 1.0, ease: "power1.inOut" }, 4.4)
+        .to("#studentActor", {
+          x: 155,
+          y: 135,
+          duration: 1.0,
+          ease: "power2.inOut"
+        }, 4.4)
+        .to("#lbl3", { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.5)" }, 5.3)
+        .to("#ped3", { scale: 1.08, duration: 0.25, yoyo: true, repeat: 1 }, 5.3);
+
+      // 6.2s - 7.4s: Student reaches the Peak Pedestal 4 (X: 530 - 55 = 475, Y: 120 - 165 = -45)
+      // "...và lịch sử di trú."
+      tl.to("#trackActive", { strokeDashoffset: 0, duration: 1.0, ease: "power1.inOut" }, 6.2)
+        .to("#studentActor", {
+          x: 475,
+          y: -45,
+          duration: 1.0,
+          ease: "power2.inOut"
+        }, 6.2)
+        .to("#lbl4", { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.5)" }, 7.1)
+        .to("#ped4", { scale: 1.12, duration: 0.3, yoyo: true, repeat: 1 }, 7.1);
+
+      // 7.5s: Arm raises into celebratory pose & student jumps with joy
+      tl.to("#climberArmRest", { opacity: 0, duration: 0.2 }, 7.5)
+        .to("#climberArmRaised", { opacity: 1, duration: 0.2 }, 7.5)
+        .to("#studentActor", {
+          y: -60,
+          duration: 0.25,
+          yoyo: true,
+          repeat: 3,
+          ease: "power1.out"
+        }, 7.55);
+
+      // 7.8s: Bottom seal stamps in
+      tl.to("#bottomSeal", {
+        opacity: 1,
+        y: 0,
+        duration: 0.45,
+        ease: "back.out(1.6)"
+      }, 7.8);
+
+      // Hold until end of narration (8.88s)
+      tl.to({}, { duration: 0.8 }, 8.08);
+    </script>
+  </body>
+</html>

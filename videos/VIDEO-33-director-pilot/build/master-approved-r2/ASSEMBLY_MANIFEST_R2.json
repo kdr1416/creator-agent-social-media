@@ -1,0 +1,290 @@
+{
+  "project_id": "VIDEO-33",
+  "version": "master-approved-r2",
+  "total_frames": 2255,
+  "fps": 30.0,
+  "duration_seconds": 75.1667,
+  "resolution": [
+    720,
+    1280
+  ],
+  "voice": {
+    "relative_path": "inputs/source_audio.wav",
+    "absolute_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\inputs\\source_audio.wav",
+    "sha256": "cbd5a88b99c252d09ea86493377951aed1267186a5cb9ff11afe00947133e941",
+    "samples": 1803840,
+    "sample_rate": 24000,
+    "duration_seconds": 75.16
+  },
+  "old_masters": [
+    {
+      "label": "baseline_master",
+      "path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\renders\\VIDEO-33-master.mp4",
+      "sha256": "6f51c8368997f7e2d3721888c3a3d471c2407e8718248fc9d3bea6e4b2b87c50"
+    },
+    {
+      "label": "baseline_clean",
+      "path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\renders\\VIDEO-33-clean.mp4",
+      "sha256": "7050ecb46b98b8b6f50fdce327bcd25c2e8879c282e3c1ef9b417839f05a22b4"
+    },
+    {
+      "label": "master_approved_r1",
+      "path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\master-approved-r1\\VIDEO-33-master-approved-r1.mp4",
+      "sha256": "abdc318b50b0f05eb7e1ae681f41e62150ff1c1f12eb807f137a32f9cd30da7a"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "S01",
+      "relative_video_path": "pilots/S01/renders/pilot.mp4",
+      "absolute_video_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\pilots\\S01\\renders\\pilot.mp4",
+      "sha256": "4e111b0e89a34b5bbb56eb5c513b947db7e904f0676c3c51cb17a100f6ac83f5",
+      "target_frames": 181,
+      "tail_adjustment_frames": 0,
+      "master_frame_range_half_open": [
+        0,
+        181
+      ],
+      "master_time_range_seconds": [
+        0.0,
+        6.0333
+      ],
+      "description": "Hook — Chú heo đất đầy ắp mở màn",
+      "visual_core": "Mascot bên cạnh chú heo đất đầy ắp, tiền vàng tràn ngập"
+    },
+    {
+      "scene_id": "S02",
+      "relative_video_path": "revisions/S02-approved-frame-motion-r1/renders/pilot.mp4",
+      "absolute_video_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S02-approved-frame-motion-r1\\renders\\pilot.mp4",
+      "sha256": "d4dd9e8e46b788c0eff89f333fc8a0b54c259fce1a09afdff4eb3e7a9fde63f3",
+      "target_frames": 115,
+      "tail_adjustment_frames": -1,
+      "master_frame_range_half_open": [
+        181,
+        296
+      ],
+      "master_time_range_seconds": [
+        6.0333,
+        9.8667
+      ],
+      "description": "Tích lũy & Sổ cái chi tiêu",
+      "visual_core": "Mascot đứng góc trái chỉ sổ cái tài chính & cột tiền vàng cân đối"
+    },
+    {
+      "scene_id": "S03",
+      "relative_video_path": "revisions/S03-motion-r1/renders/pilot.mp4",
+      "absolute_video_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S03-motion-r1\\renders\\pilot.mp4",
+      "sha256": "709a0c944d05a05b17c9ff5e44c002c5c715070e18413e26ce7e60c5e2910af1",
+      "target_frames": 128,
+      "tail_adjustment_frames": 0,
+      "master_frame_range_half_open": [
+        296,
+        424
+      ],
+      "master_time_range_seconds": [
+        9.8667,
+        14.1333
+      ],
+      "description": "Lộ trình tại Châu Âu: Học tập & Sự nghiệp",
+      "visual_core": "Lộ trình 2 trạm (Học tập -> Sự nghiệp EU) với mascot chính thức, sách vở, laptop và cờ EU"
+    },
+    {
+      "scene_id": "S04",
+      "relative_video_path": "revisions/S04-motion-r1/renders/pilot.mp4",
+      "absolute_video_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S04-motion-r1\\renders\\pilot.mp4",
+      "sha256": "a7a4f2088e359642d94e8e989e39ff9a256fdeb578f84e558e234b58f3b75f03",
+      "target_frames": 121,
+      "tail_adjustment_frames": 0,
+      "master_frame_range_half_open": [
+        424,
+        545
+      ],
+      "master_time_range_seconds": [
+        14.1333,
+        18.1667
+      ],
+      "description": "Cân nhắc phân bổ tài sản",
+      "visual_core": "Cán cân tài chính: bên phải villa đất đai VN, bên trái dấu hỏi lớn quốc tế"
+    },
+    {
+      "scene_id": "S05",
+      "relative_video_path": "revisions/S05-zoom-motion-r1/renders/pilot.mp4",
+      "absolute_video_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S05-zoom-motion-r1\\renders\\pilot.mp4",
+      "sha256": "c53f14fdaff26500bac4bcd529fc6aee614a4126c3c87c8b35e72a12365f6a7b",
+      "target_frames": 171,
+      "tail_adjustment_frames": -1,
+      "master_frame_range_half_open": [
+        545,
+        716
+      ],
+      "master_time_range_seconds": [
+        18.1667,
+        23.8667
+      ],
+      "description": "So sánh rủi ro: Lạm phát & Biến động",
+      "visual_core": "Bảng so sánh đa tài sản và rủi ro trượt giá"
+    },
+    {
+      "scene_id": "S06",
+      "relative_video_path": "revisions/S06-S11-motion-r1/S06/renders/pilot.mp4",
+      "absolute_video_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S06-S11-motion-r1\\S06\\renders\\pilot.mp4",
+      "sha256": "c8ed21880a6a85ace4741f274ecac9bc04b6debec5823a8f9a641a211de05e51",
+      "target_frames": 174,
+      "tail_adjustment_frames": 0,
+      "master_frame_range_half_open": [
+        716,
+        890
+      ],
+      "master_time_range_seconds": [
+        23.8667,
+        29.6667
+      ],
+      "description": "Tỷ giá hối đoái EUR/VND & Chi phí chuyển tiền",
+      "visual_core": "Biểu đồ tỷ giá tiền tệ và bài toán chi phí giao dịch"
+    },
+    {
+      "scene_id": "S07",
+      "relative_video_path": "revisions/S07-S08-motion-r1/S07/renders/pilot.mp4",
+      "absolute_video_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S07-S08-motion-r1\\S07\\renders\\pilot.mp4",
+      "sha256": "f5a1eb22209608ae0edbdc8763523feb886d50caec3088601f8e186c87d89475",
+      "target_frames": 140,
+      "tail_adjustment_frames": -1,
+      "master_frame_range_half_open": [
+        890,
+        1030
+      ],
+      "master_time_range_seconds": [
+        29.6667,
+        34.3333
+      ],
+      "description": "Đầu tư bất động sản & Thanh khoản",
+      "visual_core": "Mô hình nhà ở và biểu đồ chu kỳ bất động sản"
+    },
+    {
+      "scene_id": "S08",
+      "relative_video_path": "revisions/S07-S08-motion-r1/S08/renders/pilot.mp4",
+      "absolute_video_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S07-S08-motion-r1\\S08\\renders\\pilot.mp4",
+      "sha256": "be0a9cd957a3b7f92510a8b3d976473cb0a20ce25be56ef1cf2613b0f12b5bc5",
+      "target_frames": 164,
+      "tail_adjustment_frames": -1,
+      "master_frame_range_half_open": [
+        1030,
+        1194
+      ],
+      "master_time_range_seconds": [
+        34.3333,
+        39.8
+      ],
+      "description": "Quy định pháp lý & Thuế chuyển nhượng",
+      "visual_core": "Hồ sơ pháp lý, con dấu và nghĩa vụ thuế song phương"
+    },
+    {
+      "scene_id": "S09",
+      "relative_video_path": "revisions/pilots-approved-frames-r1/S09/renders/pilot.mp4",
+      "absolute_video_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\pilots-approved-frames-r1\\S09\\renders\\pilot.mp4",
+      "sha256": "a6cbf6ec62a12bf74f4cdcc076f27c1ac839f4e984c35aeba1bf2dc9b44cd90e",
+      "target_frames": 224,
+      "tail_adjustment_frames": 0,
+      "master_frame_range_half_open": [
+        1194,
+        1418
+      ],
+      "master_time_range_seconds": [
+        39.8,
+        47.2667
+      ],
+      "description": "Quản trị rủi ro tập trung (Don't put all eggs in one basket)",
+      "visual_core": "Chiến lược phân bổ rổ trứng đầu tư đa dạng"
+    },
+    {
+      "scene_id": "S10",
+      "relative_video_path": "revisions/S10-S12-motion-r1/S10/renders/pilot.mp4",
+      "absolute_video_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S10-S12-motion-r1\\S10\\renders\\pilot.mp4",
+      "sha256": "826e690c8bb30d88bcee94011f13ddd9743969fea2180ea90f057bd6d7602111",
+      "target_frames": 184,
+      "tail_adjustment_frames": -1,
+      "master_frame_range_half_open": [
+        1418,
+        1602
+      ],
+      "master_time_range_seconds": [
+        47.2667,
+        53.4
+      ],
+      "description": "Lập quỹ dự phòng khẩn cấp tại nước sở tại",
+      "visual_core": "Két sắt dự phòng khẩn cấp 6-12 tháng sinh hoạt phí"
+    },
+    {
+      "scene_id": "S11",
+      "relative_video_path": "revisions/S06-S11-motion-r1/S11/renders/pilot.mp4",
+      "absolute_video_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S06-S11-motion-r1\\S11\\renders\\pilot.mp4",
+      "sha256": "8c2a703c3d78fedf4e696036933f5b6a60b6693c6f36043392fe10ac35766398",
+      "target_frames": 205,
+      "tail_adjustment_frames": 0,
+      "master_frame_range_half_open": [
+        1602,
+        1807
+      ],
+      "master_time_range_seconds": [
+        53.4,
+        60.2333
+      ],
+      "description": "Chiến lược DCA & Đầu tư định kỳ",
+      "visual_core": "Phương pháp tích sản định kỳ và lãi kép dài hạn"
+    },
+    {
+      "scene_id": "S12",
+      "relative_video_path": "revisions/S10-S12-motion-r1/S12/renders/pilot.mp4",
+      "absolute_video_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S10-S12-motion-r1\\S12\\renders\\pilot.mp4",
+      "sha256": "3f29380666fad23ba12ba5ac284dfe27e4e6aab4131f2ff5bd840837a0c16b51",
+      "target_frames": 106,
+      "tail_adjustment_frames": 0,
+      "master_frame_range_half_open": [
+        1807,
+        1913
+      ],
+      "master_time_range_seconds": [
+        60.2333,
+        63.7667
+      ],
+      "description": "Tối ưu hóa thuế thu nhập & Tài khoản hưu trí EU",
+      "visual_core": "Khung ưu đãi thuế và tài khoản đầu tư cá nhân"
+    },
+    {
+      "scene_id": "S13",
+      "relative_video_path": "revisions/S13-S14-motion-r1/S13/renders/pilot.mp4",
+      "absolute_video_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S13-S14-motion-r1\\S13\\renders\\pilot.mp4",
+      "sha256": "73676f61aa285dc49799ed3394125149ab1f02504fa2707215e476dbb4c8a6c6",
+      "target_frames": 136,
+      "tail_adjustment_frames": -1,
+      "master_frame_range_half_open": [
+        1913,
+        2049
+      ],
+      "master_time_range_seconds": [
+        63.7667,
+        68.3
+      ],
+      "description": "Lập kế hoạch dài hạn định cư & Tự do tài chính",
+      "visual_core": "Bản đồ mục tiêu tự do tài chính và an cư bền vững"
+    },
+    {
+      "scene_id": "S14",
+      "relative_video_path": "revisions/S13-S14-motion-r1/S14/renders/pilot.mp4",
+      "absolute_video_path": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\revisions\\S13-S14-motion-r1\\S14\\renders\\pilot.mp4",
+      "sha256": "46a222ac80b7a91d1a2ce39db0c39d2ed3d8c544eab3006858f3f3c081138f38",
+      "target_frames": 206,
+      "tail_adjustment_frames": 0,
+      "master_frame_range_half_open": [
+        2049,
+        2255
+      ],
+      "master_time_range_seconds": [
+        68.3,
+        75.1667
+      ],
+      "description": "Kết luận & Lời khuyên tổng kết",
+      "visual_core": "Mascot tự tin nhìn về chân trời thành công tài chính"
+    }
+  ]
+}

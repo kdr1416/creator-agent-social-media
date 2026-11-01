@@ -1,0 +1,79 @@
+{
+  "scene": "S12",
+  "duration": 3.531458333333333,
+  "sample_frames": 84755,
+  "sample_rate": 24000,
+  "source_start_sample": 1445273,
+  "source_end_sample": 1530028,
+  "source_segments": [
+    14
+  ],
+  "source_audio": [
+    "inputs/audio/seg_14.wav"
+  ],
+  "raw_text": "và những cơ hội mà các thế hệ sau có thể nắm bắt tại Châu Âu.",
+  "corrected_text": "và những cơ hội mà các thế hệ sau có thể nắm bắt tại Châu Âu.",
+  "source_audio_hashes": {
+    "inputs/audio/seg_14.wav": "dd4a08a93c400c6b52ac0ec599b0340f51429fad3d1ff14ad4540ee44981f16f"
+  },
+  "original_voice_sha256": "dd4a08a93c400c6b52ac0ec599b0340f51429fad3d1ff14ad4540ee44981f16f",
+  "cues": {
+    "reach": [
+      0.55,
+      1.0
+    ],
+    "press": [
+      1.0,
+      1.13
+    ],
+    "power_and_acceleration": [
+      1.08,
+      3.531458333333
+    ],
+    "release": [
+      1.47,
+      1.95
+    ],
+    "rotor_pivot_scene": [
+      490,
+      505
+    ],
+    "rotor_final_angle": 768
+  },
+  "proof_times": [
+    0.1,
+    0.84,
+    1.02,
+    1.13,
+    1.4,
+    1.75,
+    2.2,
+    2.8,
+    3.4
+  ],
+  "contact_ranges": [
+    [
+      0.8,
+      1.96
+    ],
+    [
+      2.15,
+      3.45
+    ]
+  ],
+  "approval": "motion_approved_by_user",
+  "approved_frame_reference": "../../S10-S12-design-r1/APPROVAL.json",
+  "timing_basis": "Original sample bounds unchanged. S10 word cues from existing ASR; S12 physical beat timing directed within original slice.",
+  "user_approval": {
+    "scene_id": "S12",
+    "version": "S10-S12-motion-r1",
+    "approval_status": "approved",
+    "approval_scope": "pilot motion with original voice",
+    "approval_date_local": "2026-10-27",
+    "user_message_verbatim": "oke duyệt. tiếp tục đi",
+    "video_path": "revisions/S10-S12-motion-r1/S12/renders/pilot.mp4",
+    "video_sha256": "3f29380666fad23ba12ba5ac284dfe27e4e6aab4131f2ff5bd840837a0c16b51",
+    "master_replacement_authorized": false,
+    "full_film_production_authorized": false
+  }
+}

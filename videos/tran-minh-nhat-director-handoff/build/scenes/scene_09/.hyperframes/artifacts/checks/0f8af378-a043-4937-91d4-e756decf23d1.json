@@ -1,0 +1,132 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 1.322,
+        "selector": "#desk-lamp",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 140,
+          "top": 717,
+          "right": 260,
+          "bottom": 840,
+          "width": 120,
+          "height": 123
+        },
+        "containerSelector": "#desk-group > svg:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 60,
+          "top": 730,
+          "right": 660,
+          "bottom": 1000,
+          "width": 600,
+          "height": 270
+        },
+        "overflow": {
+          "top": 13
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 140,
+          "y": 717,
+          "width": 120,
+          "height": 123
+        },
+        "firstSeen": 0.189,
+        "lastSeen": 3.211,
+        "occurrences": 9,
+        "heldMs": 3022,
+        "times": [
+          0.189,
+          0.567,
+          0.944,
+          1.322,
+          1.7,
+          2.078,
+          2.456,
+          2.833,
+          3.211
+        ]
+      }
+    ],
+    "duration": 3.4,
+    "samples": [
+      0.189,
+      0.567,
+      0.944,
+      1.322,
+      1.7,
+      2.078,
+      2.456,
+      2.833,
+      3.211
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 1,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.189,
+      0.944,
+      1.7,
+      2.456,
+      3.211
+    ],
+    "checked": 2,
+    "passed": 2
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

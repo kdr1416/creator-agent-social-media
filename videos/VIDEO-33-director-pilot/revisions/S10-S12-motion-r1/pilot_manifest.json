@@ -1,0 +1,133 @@
+[
+  {
+    "scene": "S10",
+    "duration": 6.156875,
+    "sample_frames": 147765,
+    "sample_rate": 24000,
+    "source_start_sample": 1134024,
+    "source_end_sample": 1281789,
+    "source_segments": [
+      11
+    ],
+    "source_audio": [
+      "inputs/audio/seg_11.wav"
+    ],
+    "raw_text": "Chị giới khoảng 3,8 tỷ đồng, chương trình Thế San Manta mang đến cơ hội định cư cho 4 thế hệ.",
+    "corrected_text": "Chỉ với khoảng 3,8 tỷ đồng, chương trình Thẻ Xanh Malta mang đến cơ hội định cư cho 4 thế hệ.",
+    "source_audio_hashes": {
+      "inputs/audio/seg_11.wav": "896700b281fa56ebba34c28bd695bc49ce565471536bbb46c572b1b4790f28c5"
+    },
+    "original_voice_sha256": "896700b281fa56ebba34c28bd695bc49ce565471536bbb46c572b1b4790f28c5",
+    "cues": {
+      "price_read": [
+        0,
+        2.75
+      ],
+      "cut_to_wider_family": 2.75,
+      "short_supported_steps": [
+        2.85,
+        3.96
+      ],
+      "hand_link": [
+        3.95,
+        4.43
+      ],
+      "relationship_labels": [
+        4.48,
+        4.76
+      ],
+      "four_generation_headline": [
+        4.0,
+        4.24
+      ]
+    },
+    "proof_times": [
+      0.1,
+      1.6,
+      2.65,
+      2.8,
+      3.3,
+      3.95,
+      4.43,
+      5.39,
+      6.02
+    ],
+    "contact_ranges": [
+      [
+        2.85,
+        4.48
+      ]
+    ],
+    "approval": "motion_pending_user_review",
+    "approved_frame_reference": "../../S10-S12-design-r1/APPROVAL.json",
+    "timing_basis": "Original sample bounds unchanged. S10 word cues from existing ASR; S12 physical beat timing directed within original slice.",
+    "cue_revision_reason": "Allow a readable family title before the phrase four generations; image forms first and labels resolve after contact. Original voice unchanged."
+  },
+  {
+    "scene": "S12",
+    "duration": 3.531458333333333,
+    "sample_frames": 84755,
+    "sample_rate": 24000,
+    "source_start_sample": 1445273,
+    "source_end_sample": 1530028,
+    "source_segments": [
+      14
+    ],
+    "source_audio": [
+      "inputs/audio/seg_14.wav"
+    ],
+    "raw_text": "và những cơ hội mà các thế hệ sau có thể nắm bắt tại Châu Âu.",
+    "corrected_text": "và những cơ hội mà các thế hệ sau có thể nắm bắt tại Châu Âu.",
+    "source_audio_hashes": {
+      "inputs/audio/seg_14.wav": "dd4a08a93c400c6b52ac0ec599b0340f51429fad3d1ff14ad4540ee44981f16f"
+    },
+    "original_voice_sha256": "dd4a08a93c400c6b52ac0ec599b0340f51429fad3d1ff14ad4540ee44981f16f",
+    "cues": {
+      "reach": [
+        0.55,
+        1.0
+      ],
+      "press": [
+        1.0,
+        1.13
+      ],
+      "power_and_acceleration": [
+        1.08,
+        3.531458333333
+      ],
+      "release": [
+        1.47,
+        1.95
+      ],
+      "rotor_pivot_scene": [
+        490,
+        505
+      ],
+      "rotor_final_angle": 768
+    },
+    "proof_times": [
+      0.1,
+      0.84,
+      1.02,
+      1.13,
+      1.4,
+      1.75,
+      2.2,
+      2.8,
+      3.4
+    ],
+    "contact_ranges": [
+      [
+        0.8,
+        1.96
+      ],
+      [
+        2.15,
+        3.45
+      ]
+    ],
+    "approval": "motion_pending_user_review",
+    "approved_frame_reference": "../../S10-S12-design-r1/APPROVAL.json",
+    "timing_basis": "Original sample bounds unchanged. S10 word cues from existing ASR; S12 physical beat timing directed within original slice."
+  }
+]

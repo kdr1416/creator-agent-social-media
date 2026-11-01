@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>Rotterdam UAS — scene 07</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:SceneSans;src:url('assets/scene-sans-bold.ttf') format('truetype');font-weight:700;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;background:#fff}#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:SceneSans,sans-serif;color:#0F172A}
+.clip{position:absolute;inset:0}
+.art{display:block;width:100%;height:100%}
+.bauhaus-title{position:absolute;top:220px;left:0;width:100%;text-align:center;pointer-events:none}
+.bauhaus-h1{margin:0;font-size:48px;line-height:1.1;font-weight:700;letter-spacing:-1px;color:#0F172A;text-transform:uppercase}
+.bauhaus-h2{margin:6px 0 0 0;font-size:24px;font-weight:700;letter-spacing:3px;color:#FF6B2B;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-s07-root" id="root" data-composition-id="scene07" data-width="720" data-height="1280" data-duration="3.202" data-start="0">
+ <div data-hf-id="hf-s07-bg" id="scene07-bg" class="clip" data-start="0" data-duration="3.202" data-track-index="0" style="background:#FFFFFF"></div>
+
+ <div data-hf-id="hf-s07-header" id="header" class="bauhaus-title">
+  <h1 data-hf-id="hf-s07-name" id="uni-name" class="bauhaus-h1">Rotterdam UAS</h1>
+  <div data-hf-id="hf-s07-sub" id="uni-sub" class="bauhaus-h2">Hà Lan</div>
+ </div>
+
+ <svg data-hf-id="hf-s07-art" id="scene07-art" class="art clip" data-start="0" data-duration="3.202" data-track-index="1" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+   <radialGradient id="halo-s7"><stop stop-color="#CCECE9" stop-opacity=".75"/><stop offset="1" stop-color="#CCECE9" stop-opacity="0"/></radialGradient>
+  </defs>
+
+  <ellipse cx="360" cy="660" rx="270" ry="240" fill="url(#halo-s7)"/>
+
+  <!-- Bauhaus Grid lines -->
+  <g id="grid" stroke="#E2EDF0" stroke-width="2">
+   <line x1="120" y1="420" x2="600" y2="420"/>
+   <line x1="120" y1="900" x2="600" y2="900"/>
+   <line x1="200" y1="380" x2="200" y2="940"/>
+   <line x1="520" y1="380" x2="520" y2="940"/>
+  </g>
+
+  <!-- Geometric Gateway & Port Crane (Bauhaus Style) -->
+  <g id="bauhaus-construct">
+   <!-- Large circular geometric backdrop -->
+   <circle id="geo-sun" cx="360" cy="620" r="160" fill="#FFE2D1"/>
+
+   <!-- Abstract Gateway / Book Spine Arch (Y450 - 860) -->
+   <!-- Left pillar / book cover spine -->
+   <rect id="arch-left" x="200" y="520" width="45" height="340" fill="#243A50"/>
+   <!-- Right pillar -->
+   <rect id="arch-right" x="475" y="520" width="45" height="340" fill="#3D7B80"/>
+   <!-- Horizontal lintel / gateway bridge -->
+   <rect id="arch-top" x="180" y="480" width="360" height="48" fill="#FF6B2B"/>
+
+   <!-- Port Gantry Crane silhouette within the gateway -->
+   <g id="port-crane">
+    <!-- Crane vertical legs -->
+    <path d="M290 860 L320 620 H340 L310 860 Z" fill="#4B828A"/>
+    <path d="M430 860 L400 620 H380 L410 860 Z" fill="#4B828A"/>
+    <!-- Crane horizontal boom / truss -->
+    <path d="M260 610 H460 V625 H260 Z" fill="#F2612A"/>
+    <line x1="260" y1="610" x2="460" y2="625" stroke="#FFE9DC" stroke-width="2"/>
+    <line x1="260" y1="625" x2="460" y2="610" stroke="#FFE9DC" stroke-width="2"/>
+    <!-- Hoist / Container box suspended -->
+    <line x1="360" y1="625" x2="360" y2="685" stroke="#0F172A" stroke-width="3"/>
+    <rect id="container-box" x="335" y="685" width="50" height="35" rx="3" fill="#243A50" stroke="#FF8852" stroke-width="2.5"/>
+   </g>
+
+   <!-- Diagonal Bauhaus stripe accents -->
+   <polygon points="180,480 225,480 200,528 155,528" fill="#0F172A"/>
+   <polygon points="495,480 540,480 515,528 470,528" fill="#FF8852"/>
+
+   <!-- Foundation steps -->
+   <rect x="150" y="860" width="420" height="18" fill="#B3D0D8"/>
+   <rect x="120" y="878" width="480" height="22" fill="#D3E5EA"/>
+  </g>
+
+  <!-- Geometric accent floating circles -->
+  <circle id="accent-dot-1" cx="160" cy="450" r="14" fill="#FF6B2B"/>
+  <circle id="accent-dot-2" cx="560" cy="780" r="18" fill="#3D7B80"/>
+ </svg>
+
+ <audio data-hf-id="hf-s07-voice" id="scene07-voice" src="assets/audio.wav" data-start="0" data-duration="3.202" data-track-index="2" data-volume="1"></audio>
+</div>
+
+<script>
+const tl = gsap.timeline({paused:true});
+
+// Initial states
+gsap.set(['#header', '#bauhaus-construct'], {opacity:0});
+gsap.set('#geo-sun', {scale:0.4, transformOrigin:'50% 50%'});
+gsap.set(['#arch-left', '#arch-right'], {scaleY:0, transformOrigin:'50% 100%'});
+gsap.set('#arch-top', {scaleX:0, transformOrigin:'50% 50%'});
+gsap.set('#port-crane', {opacity:0, y:30});
+gsap.set('#header', {y:-15});
+
+// Choreography (3.202s)
+// 0.0s - 0.9s: Geometric elements construct cleanly
+tl.to('#bauhaus-construct', {opacity:1, duration:0.4}, 0.1)
+  .to('#geo-sun', {scale:1, duration:0.7, ease:'back.out(1.3)'}, 0.2)
+  .to(['#arch-left', '#arch-right'], {scaleY:1, duration:0.6, ease:'power3.out'}, 0.4)
+  .to('#arch-top', {scaleX:1, duration:0.5, ease:'power2.out'}, 0.7)
+
+// 0.8s - 1.8s: Title typography slams into place with Bauhaus precision
+  .to('#header', {opacity:1, y:0, duration:0.5, ease:'power2.out'}, 0.8)
+
+// 1.1s - 2.4s: Crane and suspended container drop into place
+  .to('#port-crane', {opacity:1, y:0, duration:0.6, ease:'power2.out'}, 1.1)
+  .to('#container-box', {y:12, duration:0.8, ease:'sine.inOut', yoyo:true, repeat:1}, 1.7)
+
+// 2.4s - 3.202s: Settle and hold steady
+  .to(['#accent-dot-1', '#accent-dot-2'], {scale:1.2, duration:0.6, yoyo:true, repeat:1, ease:'sine.inOut'}, 2.0);
+
+window.__timelines = window.__timelines || {};
+window.__timelines['scene07'] = tl;
+</script>
+</body>
+</html>

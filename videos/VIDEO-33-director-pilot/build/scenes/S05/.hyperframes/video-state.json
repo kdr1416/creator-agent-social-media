@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "historyId": "6460f445-52d8-49c5-a980-e7695c8d8335",
+  "currentRevision": "ead714b4-ad1b-4f8e-8f08-4ed00ff3705d",
+  "pendingChanges": false,
+  "files": {
+    "assets/arial.ttf": {
+      "hash": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\6460f445-52d8-49c5-a980-e7695c8d8335\\blobs\\b3\\b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a"
+    },
+    "assets/arialbd.ttf": {
+      "hash": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\6460f445-52d8-49c5-a980-e7695c8d8335\\blobs\\e8\\e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\6460f445-52d8-49c5-a980-e7695c8d8335\\blobs\\c1\\c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "assets/segoe-ui-black.ttf": {
+      "hash": "be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\6460f445-52d8-49c5-a980-e7695c8d8335\\blobs\\be\\be191c94a0c7172870c3c87a136bd5aa67cdca7bc091de89242fb64ecb0f8fae"
+    },
+    "assets/townhouse.jpg": {
+      "hash": "45138fa64aa74fdec69b3d720659aedd00bc38503724535e7f7ab9d91226c48d",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\6460f445-52d8-49c5-a980-e7695c8d8335\\blobs\\45\\45138fa64aa74fdec69b3d720659aedd00bc38503724535e7f7ab9d91226c48d"
+    },
+    "assets/voice.wav": {
+      "hash": "662198c94d17a7fdb75a120490c24b3399744eb4b9c70361524153488c3e65bf",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\6460f445-52d8-49c5-a980-e7695c8d8335\\blobs\\66\\662198c94d17a7fdb75a120490c24b3399744eb4b9c70361524153488c3e65bf"
+    },
+    "index.html": {
+      "hash": "093bb4bcadab408243184aa0df8d387beec7f951c023b0947dffa3b42e301c95",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\6460f445-52d8-49c5-a980-e7695c8d8335\\blobs\\09\\093bb4bcadab408243184aa0df8d387beec7f951c023b0947dffa3b42e301c95"
+    }
+  },
+  "revisions": {
+    "ead714b4-ad1b-4f8e-8f08-4ed00ff3705d": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793028918536,
+      "endedAt": 1793028918540,
+      "files": {
+        "index.html": {
+          "before": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\6460f445-52d8-49c5-a980-e7695c8d8335\\blobs\\f2\\f25987a9e24493e7c053c5befa23d0c39d07b3bd458d5411aa54744847d0f214",
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\6460f445-52d8-49c5-a980-e7695c8d8335\\blobs\\09\\093bb4bcadab408243184aa0df8d387beec7f951c023b0947dffa3b42e301c95"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "ead714b4-ad1b-4f8e-8f08-4ed00ff3705d",
+      "id": "ac60315a-908b-47ce-8f33-a3c054abced9"
+    },
+    "revisions": {
+      "ead714b4-ad1b-4f8e-8f08-4ed00ff3705d": [
+        {
+          "id": "ac60315a-908b-47ce-8f33-a3c054abced9",
+          "scope": "project",
+          "report": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\scenes\\S05\\.hyperframes\\artifacts\\checks\\ac60315a-908b-47ce-8f33-a3c054abced9.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "at": [
+                0.2,
+                2,
+                3.5,
+                4.8
+              ],
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793028925232,
+          "contentHash": "852adccb270828a2067225fe8467d6c44ea38e8e646d10bfed2cc1e9e08e4730",
+          "revision": "ead714b4-ad1b-4f8e-8f08-4ed00ff3705d",
+          "inputFingerprint": "9c239ca76aaf8a2d67215e26b7c8d3485af12213182baded84654eaf246813aa",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "0142d74e-ce32-4874-a41d-ac1d56aba466",
+        "scope": "project",
+        "report": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\scenes\\S05\\.hyperframes\\artifacts\\checks\\0142d74e-ce32-4874-a41d-ac1d56aba466.json",
+        "metadata": {
+          "ok": false,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "at": [
+              0.2,
+              2,
+              3.5,
+              4.8
+            ],
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793028889502,
+        "contentHash": "a942bbdc41026c1032b7c9291d7cbbbf99a7fbfde6a55f34f58c6fcf9cdd9518",
+        "revision": null,
+        "inputFingerprint": "0e120954900a9646f286fbe55c866a55ab5546982767439b778a0dcc82aea019",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "0c885e12-231c-479b-b6e6-62ed13c88ed3",
+      "completedAt": 1793028955771,
+      "output": "D:\\Năm 3\\flowkit-main\\videos\\VIDEO-33-director-pilot\\build\\scenes\\S05\\renders\\pilot.mp4",
+      "status": "completed",
+      "revision": "ead714b4-ad1b-4f8e-8f08-4ed00ff3705d"
+    },
+    "retainedRevisions": [
+      "ead714b4-ad1b-4f8e-8f08-4ed00ff3705d"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

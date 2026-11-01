@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "historyId": "e951b6f7-090f-4ec2-bb32-22f8c3e0f4db",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "assets/audio.wav": {
+      "hash": "e5d1066eac0e88498ae1edf14f93a574ee76917ddac95da34c18794fe93a210e",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\e951b6f7-090f-4ec2-bb32-22f8c3e0f4db\\blobs\\e5\\e5d1066eac0e88498ae1edf14f93a574ee76917ddac95da34c18794fe93a210e"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\e951b6f7-090f-4ec2-bb32-22f8c3e0f4db\\blobs\\c1\\c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "assets/scene-sans-bold.ttf": {
+      "hash": "aeb9e4a6ec5cc59f4d72df8189032d7dbb28f45161cf1552174818b5465dac4e",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\e951b6f7-090f-4ec2-bb32-22f8c3e0f4db\\blobs\\ae\\aeb9e4a6ec5cc59f4d72df8189032d7dbb28f45161cf1552174818b5465dac4e"
+    },
+    "hyperframes.json": {
+      "hash": "9313260261b6e431830877ee35083331270bc6b9a32d50650abe2bd58bdf558d",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\e951b6f7-090f-4ec2-bb32-22f8c3e0f4db\\blobs\\93\\9313260261b6e431830877ee35083331270bc6b9a32d50650abe2bd58bdf558d"
+    },
+    "index.html": {
+      "hash": "da2fc12e854220f9199afebd6f9a048275daf5c7aa3b1822200542184d8480fe",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\e951b6f7-090f-4ec2-bb32-22f8c3e0f4db\\blobs\\da\\da2fc12e854220f9199afebd6f9a048275daf5c7aa3b1822200542184d8480fe"
+    },
+    "package.json": {
+      "hash": "d47cbfcca5046d4f7ef679ce6bedd5085d8757e4148052abe2fded5394591f8c",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\e951b6f7-090f-4ec2-bb32-22f8c3e0f4db\\blobs\\d4\\d47cbfcca5046d4f7ef679ce6bedd5085d8757e4148052abe2fded5394591f8c"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "3f01a26f-5efa-42e9-b314-76c219b174a7",
+      "completedAt": 1792174862546,
+      "output": "D:\\Năm 3\\flowkit-main\\output\\china-military-education-ai-2026\\scene_08.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

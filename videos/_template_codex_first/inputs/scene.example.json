@@ -1,0 +1,13 @@
+{
+  "scene_id": "S01",
+  "start_sample": 0,
+  "end_sample": null,
+  "raw_text": "",
+  "corrected_text": "",
+  "engine": "hyperframes",
+  "routing_reason": "Choose capability/compatibility for this scene",
+  "source": "scenes/S01/index.html",
+  "composition_id": "S01",
+  "output": "scenes/S01/render.mp4",
+  "render_argv": []
+}

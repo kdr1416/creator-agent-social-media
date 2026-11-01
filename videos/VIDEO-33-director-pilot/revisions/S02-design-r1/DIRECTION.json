@@ -1,0 +1,36 @@
+{
+  "scene_id": "S02",
+  "raw_text": "Trước nhiều phụ hình sẵn sàng chi hàng tỷ đồng cho hành trình du học của con,",
+  "corrected_text": "Trước nhiều phụ huynh sẵn sàng chi hàng tỷ đồng cho hành trình du học của con,",
+  "start_sample": 144466,
+  "end_sample": 236998,
+  "sample_frames": 92532,
+  "duration": 3.855500000000001,
+  "audio_source": [
+    "inputs/audio/seg_02.wav"
+  ],
+  "render_mode": "HF_ONLY",
+  "phase": "static_frame_pending_user_review",
+  "takeaway": "Gia đình dành nguồn lực lớn cho du học.",
+  "opening": "Sổ chi phí mở, vài đồng xu trên trang; mũ tốt nghiệp có sẵn.",
+  "signature_motion_plan": "Xu bổ sung vào cùng chồng; thước đo trượt để nhấn quy mô ở cụm hàng tỷ đồng. Không biểu đồ tăng trưởng hoặc lợi nhuận.",
+  "final": "Chồng xu chiếm trọng tâm trên sổ; mũ tốt nghiệp bên trái và gauge nhỏ bên phải.",
+  "text_inventory": [
+    {
+      "text": "HÀNG TỶ ĐỒNG",
+      "font": "Segoe UI Black",
+      "size": 55
+    }
+  ],
+  "text_override_reason": "Thay nhãn CHI PHÍ DU HỌC bằng cụm nhấn đúng voice, mũ tốt nghiệp giữ ngữ cảnh du học. Không thêm số cụ thể.",
+  "mascot_role": "Không dùng mascot; cận cảnh đồ vật và trọng lượng mang ý.",
+  "assets": "New layered SVG coin14+2, ledger pages, cap/tassel, gauge; existing local font/runtime.",
+  "containers": [
+    "Sổ chi phí vật lý, giữ quan hệ xu nằm trên trang; không khung thông tin."
+  ],
+  "accent_treatment": "none",
+  "mobile_legibility_plan": "Hero55px→27.5px at360x640; coin and cap silhouettes remain distinct. Footer1080–1280 clear.",
+  "dark_mass_strategy": "No large navy/charcoal fills; neutral thin outlines, purple cap and pale pages.",
+  "continuity": "S01 sách mở ra điểm tựa → S02 cận khoản đầu tư học tập → S03 kế hoạch nhiều năm. Không match-morph nhà/ledger.",
+  "preservation": "Frame proposal only. Does not replace S02 base selected in MASTER_APPROVED_ASSEMBLY_R1 until user approves motion/assembly update. Original voice and all approved pilots unchanged."
+}

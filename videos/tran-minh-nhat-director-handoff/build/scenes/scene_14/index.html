@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>14 · Kể có trọng tâm để người đọc hiểu mình</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'PilotDisplay';
+  src: url('assets/segoe-ui-black.ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arial.ttf');
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arialbd.ttf');
+  font-weight: 700;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; }
+
+#scene-14 {
+  position: relative;
+  width: 720px;
+  height: 1280px;
+  overflow: hidden;
+  background: #FFF3E8;
+  color: #30313B;
+  font-family: PilotSans, Arial, sans-serif;
+}
+
+#world {
+  position: absolute;
+  inset: 0;
+  transform-origin: 360px 650px;
+}
+
+/* Strip Headline: KỂ CÓ TRỌNG TÂM */
+.strip {
+  position: absolute;
+  left: 140px;
+  top: 155px;
+  background: #087BC1;
+  color: #FFFFFF;
+  padding: 14px 28px;
+  font-family: PilotDisplay, PilotSans, sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.1;
+  white-space: nowrap;
+  box-shadow: 5px 7px 0 #30313b12;
+  border-radius: 4px;
+  z-index: 25;
+  opacity: 0;
+  transform: translateY(-16px) scale(0.95);
+}
+
+svg.art {
+  position: absolute;
+  inset: 0;
+  width: 720px;
+  height: 1280px;
+  overflow: visible;
+}
+</style>
+</head>
+<body>
+<div id="scene-14" data-composition-id="scene-14" data-width="720" data-height="1280" data-start="0" data-duration="4.7">
+  <div id="world">
+    
+    <!-- Headline -->
+    <div id="scene-title" class="strip">KỂ CÓ TRỌNG TÂM</div>
+
+    <!-- Desk & Essay Surface -->
+    <svg class="art" viewBox="0 0 720 1280" aria-label="Overhead focused essay drafting surface">
+      <!-- Ground shadow -->
+      <ellipse cx="360" cy="980" rx="290" ry="24" fill="#E2CBB9" opacity="0.6"/>
+
+      <!-- ==============================================
+           MAIN ESSAY SHEET (x135–585, y350–970)
+           ============================================== -->
+      <g id="essay-page-anchor" transform="translate(135, 350)">
+        <g id="essay-page" transform-origin="225 310">
+          <!-- Drop Shadow (expands when lifted) -->
+          <rect id="essay-shadow" x="8" y="12" width="450" height="620" rx="6" fill="#30313B" opacity="0.14"/>
+          <!-- Heavy Fine Paper Sheet -->
+          <rect x="0" y="0" width="450" height="620" rx="6" fill="#FFFEFA" stroke="#30313B" stroke-width="3.5"/>
+          
+          <!-- Orange Bookmark tab at top margin -->
+          <polygon points="340,0 375,0 375,-12 340,-12" fill="#FF7A30" stroke="#30313B" stroke-width="2"/>
+
+          <!-- Clean Structural Essay Headings & Margins -->
+          <line x1="45" y1="50" x2="220" y2="50" stroke="#484A58" stroke-width="6" stroke-linecap="round"/>
+          <line x1="45" y1="80" x2="380" y2="80" stroke="#D3C3B2" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="45" y1="105" x2="400" y2="105" stroke="#D3C3B2" stroke-width="2.5" stroke-linecap="round"/>
+
+          <!-- ==========================================
+               SECTION 1: PERSONAL IDENTITY (TOP)
+               ========================================== -->
+          <g id="piece-identity" transform="translate(45, 135)">
+            <!-- Highlight card boundary -->
+            <rect x="0" y="0" width="360" height="110" rx="4" fill="#FFF9F2" stroke="#E6D3C1" stroke-width="2"/>
+            <!-- Mascot face badge -->
+            <g transform="translate(20, 15) scale(0.65)">
+              <circle cx="50" cy="50" r="42" fill="#FFAA28" stroke="#30313B" stroke-width="3"/>
+              <path d="M16 28Q54 14 84 28" fill="#A990D5" stroke="#30313B" stroke-width="3"/>
+              <ellipse cx="38" cy="52" rx="4" ry="5.5" fill="#30313B"/>
+              <ellipse cx="62" cy="52" rx="4" ry="5.5" fill="#30313B"/>
+              <path d="M42 68Q50 75 58 68" stroke="#30313B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            </g>
+            <!-- Narrative Lines for Personal Story -->
+            <line x1="100" y1="40" x2="330" y2="40" stroke="#FF7A30" stroke-width="3" stroke-linecap="round"/>
+            <line x1="100" y1="65" x2="310" y2="65" stroke="#CFBFAD" stroke-width="2" stroke-linecap="round"/>
+            <line x1="100" y1="88" x2="280" y2="88" stroke="#CFBFAD" stroke-width="2" stroke-linecap="round"/>
+          </g>
+
+          <!-- ==========================================
+               SECTION 2: REASONING & TANGRAM (MIDDLE)
+               ========================================== -->
+          <g id="piece-reasoning" transform="translate(45, 265)">
+            <rect x="0" y="0" width="360" height="110" rx="4" fill="#F4F8FA" stroke="#D0DFE6" stroke-width="2"/>
+            <!-- Tangram puzzle motif from Scene 12 -->
+            <g transform="translate(25, 20) scale(0.7)">
+              <path d="M10 50L55 10L57 52Z" fill="#8BC8D9" stroke="#30313B" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M12 55L57 57L58 92L17 95Z" fill="#087BC1" stroke="#30313B" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M60 12L90 42L62 48Z" fill="#B69AD8" stroke="#30313B" stroke-width="2.5" stroke-linejoin="round"/>
+            </g>
+            <!-- Narrative Lines for Critical Thinking -->
+            <line x1="110" y1="40" x2="330" y2="40" stroke="#087BC1" stroke-width="3" stroke-linecap="round"/>
+            <line x1="110" y1="65" x2="320" y2="65" stroke="#CFBFAD" stroke-width="2" stroke-linecap="round"/>
+            <line x1="110" y1="88" x2="260" y2="88" stroke="#CFBFAD" stroke-width="2" stroke-linecap="round"/>
+          </g>
+
+          <!-- ==========================================
+               SECTION 3: DIRECTION & GOAL (BOTTOM)
+               ========================================== -->
+          <g id="piece-destination" transform="translate(45, 395)">
+            <rect x="0" y="0" width="360" height="135" rx="4" fill="#FAF7F2" stroke="#E6DCD1" stroke-width="2"/>
+            <!-- Embedded VU Campus Photo Card -->
+            <g id="vu-card-group" transform="translate(18, 15)">
+              <rect x="0" y="0" width="125" height="95" rx="2" fill="#FFFEFA" stroke="#30313B" stroke-width="2"/>
+              <image href="assets/vu-campus.jpg" x="4" y="4" width="117" height="66" preserveAspectRatio="xMidYMid slice"/>
+              <text x="62" y="86" font-family="PilotSans, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#30313B">VU Amsterdam</text>
+            </g>
+            <!-- Narrative Goal Lines -->
+            <line x1="160" y1="45" x2="330" y2="45" stroke="#C25522" stroke-width="3" stroke-linecap="round"/>
+            <line x1="160" y1="72" x2="320" y2="72" stroke="#CFBFAD" stroke-width="2" stroke-linecap="round"/>
+            <line x1="160" y1="98" x2="290" y2="98" stroke="#CFBFAD" stroke-width="2" stroke-linecap="round"/>
+          </g>
+
+          <!-- Clean Conclusion Margin -->
+          <line x1="45" y1="565" x2="380" y2="565" stroke="#CFBFAD" stroke-width="2" stroke-linecap="round"/>
+          <line x1="45" y1="585" x2="250" y2="585" stroke="#CFBFAD" stroke-width="2" stroke-linecap="round"/>
+        </g>
+      </g>
+
+      <!-- Stray Unfocused Fragment being pushed to margin (0.0 - 1.0s) -->
+      <g id="stray-fragment" transform="translate(20, 560) rotate(-15)">
+        <rect x="0" y="0" width="85" height="105" rx="2" fill="#EDE4D8" stroke="#B8A796" stroke-width="1.8"/>
+        <line x1="12" y1="20" x2="72" y2="20" stroke="#CBB9A7" stroke-width="2"/>
+        <line x1="12" y1="36" x2="65" y2="36" stroke="#CBB9A7" stroke-width="2"/>
+        <line x1="12" y1="52" x2="55" y2="52" stroke="#CBB9A7" stroke-width="2"/>
+      </g>
+
+      <!-- Student Hands (Anchored at bottom, holding / arranging) -->
+      <!-- Left Hand Anchor -->
+      <g id="left-hand-anchor" transform="translate(180, 890)">
+        <g id="student-left-hand">
+          <path d="M0 160L20 80L75 85L60 160Z" fill="#FFAA28" stroke="#30313B" stroke-width="3"/>
+          <ellipse cx="48" cy="82" rx="28" ry="8" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+          <path d="M28 80C26 62 42 50 56 52C66 54 70 66 65 80" fill="#FFAC3C" stroke="#30313B" stroke-width="3" stroke-linecap="round"/>
+        </g>
+      </g>
+
+      <!-- Right Hand Anchor -->
+      <g id="right-hand-anchor" transform="translate(470, 890)">
+        <g id="student-right-hand">
+          <path d="M40 160L20 75L-35 80L-20 160Z" fill="#FFAA28" stroke="#30313B" stroke-width="3"/>
+          <ellipse cx="-7" cy="77" rx="28" ry="8" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+          <path d="M-22 75C-20 54 -3 45 10 48C20 50 22 64 16 76" fill="#FFAC3C" stroke="#30313B" stroke-width="3" stroke-linecap="round"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<script>
+(function() {
+  const tl = gsap.timeline({ paused: false });
+
+  // 0.00–1.050s: "Điều quan trọng"
+  // Headline drops in
+  tl.to('#scene-title', {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    duration: 0.45,
+    ease: 'back.out(1.3)'
+  }, 0.2);
+
+  // Left hand and right hand enter smoothly from below
+  tl.fromTo('#student-left-hand', {
+    y: 80,
+    opacity: 0
+  }, {
+    y: 0,
+    opacity: 1,
+    duration: 0.45,
+    ease: 'power2.out'
+  }, 0.15);
+
+  tl.fromTo('#student-right-hand', {
+    y: 80,
+    opacity: 0
+  }, {
+    y: 0,
+    opacity: 1,
+    duration: 0.45,
+    ease: 'power2.out'
+  }, 0.15);
+
+  // Stray unfocused piece is pushed out to the margin
+  tl.to('#stray-fragment', {
+    x: -95,
+    opacity: 0.35,
+    rotation: -28,
+    duration: 0.65,
+    ease: 'power2.out'
+  }, 0.35);
+
+  // Identity piece locks into top section
+  tl.fromTo('#piece-identity', {
+    y: 110,
+    opacity: 0,
+    scale: 0.95
+  }, {
+    y: 135,
+    opacity: 1,
+    scale: 1,
+    duration: 0.55,
+    ease: 'power2.out'
+  }, 0.45);
+
+  // 1.05–2.600s: "kể câu chuyện đó đúng cách"
+  // Reasoning tangram slides into middle section
+  tl.fromTo('#piece-reasoning', {
+    y: 240,
+    opacity: 0,
+    scale: 0.95
+  }, {
+    y: 265,
+    opacity: 1,
+    scale: 1,
+    duration: 0.55,
+    ease: 'power2.out'
+  }, 1.15);
+
+  // Direction & VU goal locks into bottom section
+  tl.fromTo('#piece-destination', {
+    y: 370,
+    opacity: 0,
+    scale: 0.95
+  }, {
+    y: 395,
+    opacity: 1,
+    scale: 1,
+    duration: 0.55,
+    ease: 'power2.out'
+  }, 1.75);
+
+  // 2.60–3.800s: "tạo dấu ấn"
+  // The sheet is lifted up slightly into a presentation perspective
+  tl.to('#essay-page', {
+    scale: 1.035,
+    y: -15,
+    rotation: 0.5,
+    duration: 0.75,
+    ease: 'power2.out'
+  }, 2.6);
+
+  tl.to('#essay-shadow', {
+    x: 14,
+    y: 24,
+    opacity: 0.22,
+    duration: 0.75,
+    ease: 'power2.out'
+  }, 2.6);
+
+  // Hands lift with the page
+  tl.to('#student-left-hand', {
+    y: -15,
+    duration: 0.75,
+    ease: 'power2.out'
+  }, 2.6);
+
+  tl.to('#student-right-hand', {
+    y: -15,
+    duration: 0.75,
+    ease: 'power2.out'
+  }, 2.6);
+
+  // 3.80–4.703s: "hội đồng tuyển sinh"
+  // Hold firmly and smoothly ready for Scene 15 desk return
+  tl.to({ hold: 0 }, { hold: 1, duration: 4.7, ease: 'none' }, 0);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines['scene-14'] = tl;
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=720, height=1280, initial-scale=1.0" />
+    <title>Scene 12 - Siết Chặt Hạn Ngạch Xét Duyệt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        width: 720px;
+        height: 1280px;
+        background: #0f172a;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        color: #0f172a;
+        overflow: hidden;
+      }
+
+      /* ── BACKGROUND PLATE (BUTTER-SMOOTH GPU GSAP MOTION, NO JITTER) ── */
+      .bg-wrapper {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+      }
+
+      .bg-image {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        width: calc(100% + 40px);
+        height: calc(100% + 40px);
+        object-fit: cover;
+        transform-origin: center center;
+        will-change: transform;
+      }
+
+      /* Subtle top contrast wash for perfect WCAG AA readability */
+      .top-gradient-wash {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 520px;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.96) 0%,
+          rgba(255, 255, 255, 0.85) 55%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        z-index: 5;
+        pointer-events: none;
+      }
+
+      /* ── BRAND PILL ── */
+      .brand-badge-wrapper {
+        position: absolute;
+        top: 44px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 20;
+      }
+      .brand-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #0f172a;
+        color: #ffffff;
+        padding: 8px 20px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      .brand-badge-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #ff5722;
+      }
+
+      /* ── EDITORIAL / STAMP TYPOGRAPHY (CÁ TÍNH, KHÔNG DÙNG CARD TRẮNG GENERIC) ── */
+      .editorial-stage {
+        position: absolute;
+        top: 110px;
+        left: 40px;
+        right: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 25;
+      }
+
+      /* Sharp Technical Tag */
+      .tech-alert-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #0f172a;
+        color: #fde047;
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 5px 16px;
+        border-radius: 6px;
+        border-left: 4px solid #ff5722;
+        box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
+        opacity: 0;
+        transform: translateY(12px);
+      }
+
+      /* Bold Punchy Headline */
+      .headline-block {
+        margin-top: 14px;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(16px);
+      }
+
+      .headline-primary {
+        font-size: 40px;
+        font-weight: 900;
+        color: #0f172a;
+        letter-spacing: -0.03em;
+        line-height: 1.1;
+        text-transform: uppercase;
+      }
+
+      .headline-secondary {
+        font-size: 34px;
+        font-weight: 900;
+        color: #c2410c;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        text-transform: uppercase;
+      }
+
+      /* Stamp Badge: Angled Official Policy Stamp */
+      .policy-stamp {
+        margin-top: 18px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: #ffffff;
+        border: 2.5px solid #c2410c;
+        color: #c2410c;
+        padding: 8px 24px;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        box-shadow: 0 8px 24px rgba(194, 65, 12, 0.15);
+        transform: rotate(-3deg) scale(0.85);
+        opacity: 0;
+      }
+
+      .policy-stamp-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #c2410c;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="clip" data-composition-id="main" data-width="720" data-height="1280" data-duration="5.60">
+      <!-- Living Plate (High-Res Photo with Smooth GSAP Motion) -->
+      <div class="bg-wrapper" data-layout-allow-overflow data-layout-allow-overlap data-layout-allow-occlusion>
+        <img
+          id="bg-image"
+          class="bg-image"
+          src="./assets/s12_bg.jpg"
+          alt="Canadian Visa Review"
+          data-layout-allow-overflow
+        />
+      </div>
+
+      <!-- Contrast Wash Layer -->
+      <div class="top-gradient-wash" data-layout-allow-overlap data-layout-allow-occlusion></div>
+
+      <!-- Voice Audio Track (5.60s) -->
+      <audio id="voice-track" class="clip" src="./assets/audio.wav" data-start="0" data-duration="5.60" preload="auto"></audio>
+
+      <!-- Brand Mark -->
+      <div class="brand-badge-wrapper" id="brand-badge" data-layout-allow-overlap data-layout-allow-occlusion>
+        <div class="brand-badge">
+          <span class="brand-badge-dot"></span>
+          <span>ESORA • DU HỌC CANADA</span>
+        </div>
+      </div>
+
+      <!-- Editorial Typographic Stage -->
+      <div class="editorial-stage" data-layout-allow-overlap data-layout-allow-occlusion>
+        <div class="tech-alert-tag" id="alert-tag">
+          <span>● CẢNH BÁO CHÍNH SÁCH</span>
+        </div>
+
+        <div class="headline-block" id="headline-block">
+          <h1 class="headline-primary">KIỂM SOÁT SỐ LƯỢNG</h1>
+          <h2 class="headline-secondary">SIẾT CHẶT XÉT DUYỆT</h2>
+        </div>
+
+        <div class="policy-stamp" id="policy-stamp">
+          <span class="policy-stamp-dot"></span>
+          <span>HỒ SƠ THẨM ĐỊNH KHẮT KHE</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+
+      const tl = gsap.timeline({ paused: true });
+
+      // Ultra-smooth GPU Ken Burns camera drift (Zero jitter/rung!)
+      tl.to(
+        "#bg-image",
+        {
+          scale: 1.06,
+          y: -14,
+          duration: 5.6,
+          ease: "none",
+        },
+        0
+      );
+
+      // Entry branding
+      tl.to(
+        "#brand-badge .brand-badge",
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.45,
+          ease: "power3.out",
+        },
+        0.1
+      );
+
+      // Tech Alert Tag snaps in
+      tl.to(
+        "#alert-tag",
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.5,
+          ease: "back.out(1.5)",
+        },
+        0.3
+      );
+
+      // Big Editorial Headline drops in
+      tl.to(
+        "#headline-block",
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          ease: "power3.out",
+        },
+        0.55
+      );
+
+      // Policy Stamp slams down with authentic stamp physics
+      tl.to(
+        "#policy-stamp",
+        {
+          opacity: 1,
+          scale: 1,
+          rotation: -2.5,
+          duration: 0.5,
+          ease: "back.out(1.8)",
+        },
+        1.1
+      );
+
+      // Subtle breath
+      tl.to(
+        "#policy-stamp",
+        {
+          y: -3,
+          duration: 1.5,
+          ease: "sine.inOut",
+          yoyo: true,
+          repeat: 1,
+        },
+        2.2
+      );
+
+      // Gentle exit ease
+      tl.to(
+        ["#alert-tag", "#headline-block", "#policy-stamp"],
+        {
+          opacity: 0.9,
+          duration: 0.4,
+          ease: "power2.inOut",
+        },
+        5.1
+      );
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

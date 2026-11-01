@@ -1,0 +1,24 @@
+{
+  "method": "IAB native browser playback through authored REVIEW.html buttons; timeupdate output observed to reach end. Actual MP4s, not source seeking. Sampled render frames separately inspected at 360x640 and grayscale.",
+  "url": "http://127.0.0.1:8766/REVIEW.html",
+  "results": [
+    {
+      "scene_id": "S01",
+      "observed_output": "6.03 / 6.03s · Đã phát hết",
+      "file_sha256": "4e111b0e89a34b5bbb56eb5c513b947db7e904f0676c3c51cb17a100f6ac83f5"
+    },
+    {
+      "scene_id": "S05",
+      "observed_output": "5.73 / 5.73s · Đã phát hết",
+      "file_sha256": "e24876dd818221cc7c541aa31311e5a30640b12762d15510d463d845ba352e50"
+    },
+    {
+      "scene_id": "S09",
+      "observed_output": "7.47 / 7.47s · Đã phát hết",
+      "file_sha256": "18027acb1c27293a61b6a3f996c88d9606f480a86fdbe2bae5fc4b80ecb74e63"
+    }
+  ],
+  "perceptual_listening": "Not established independently by browser state/audio emission. Phonetic uncertainties remain documented; no claim of auditory adjudication.",
+  "continuous_full_film_playback": false,
+  "note": "Preview at its exact end may hide the composition; the encoded MP4 final frames were inspected and contain the final pose. No full film was created."
+}

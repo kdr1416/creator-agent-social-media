@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "historyId": "f0d6fa4f-d97a-4b50-b3e2-bb9c0ac2cd30",
+  "currentRevision": "fbcba79c-f5e1-4bc8-951f-3e67a4ec29f4",
+  "pendingChanges": false,
+  "files": {
+    "assets/audio.wav": {
+      "hash": "42d8f24df034d2c408df3847d4f0ae27a00367093c923f83d6f4a809151cdd5c",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f0d6fa4f-d97a-4b50-b3e2-bb9c0ac2cd30\\blobs\\42\\42d8f24df034d2c408df3847d4f0ae27a00367093c923f83d6f4a809151cdd5c"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f0d6fa4f-d97a-4b50-b3e2-bb9c0ac2cd30\\blobs\\c1\\c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "assets/scene-sans-bold.ttf": {
+      "hash": "aeb9e4a6ec5cc59f4d72df8189032d7dbb28f45161cf1552174818b5465dac4e",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f0d6fa4f-d97a-4b50-b3e2-bb9c0ac2cd30\\blobs\\ae\\aeb9e4a6ec5cc59f4d72df8189032d7dbb28f45161cf1552174818b5465dac4e"
+    },
+    "index.html": {
+      "hash": "65719df13b4e6416193179104dfc2faa43696e0c632abc95c21548e2e23e0294",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f0d6fa4f-d97a-4b50-b3e2-bb9c0ac2cd30\\blobs\\65\\65719df13b4e6416193179104dfc2faa43696e0c632abc95c21548e2e23e0294"
+    },
+    "package.json": {
+      "hash": "6a2fda254788c1c16a33ce1df77af4fa91491cbdede46750360d9a525fc0406d",
+      "content": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f0d6fa4f-d97a-4b50-b3e2-bb9c0ac2cd30\\blobs\\6a\\6a2fda254788c1c16a33ce1df77af4fa91491cbdede46750360d9a525fc0406d"
+    }
+  },
+  "revisions": {
+    "fbcba79c-f5e1-4bc8-951f-3e67a4ec29f4": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792311039657,
+      "endedAt": 1792311039659,
+      "files": {
+        "index.html": {
+          "before": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f0d6fa4f-d97a-4b50-b3e2-bb9c0ac2cd30\\blobs\\51\\51c44048475ca87258687f733245403960e303566874bf8a311e39e7cf6463a0",
+          "after": "C:\\Users\\LENOVO\\.cache\\hyperframes\\history\\f0d6fa4f-d97a-4b50-b3e2-bb9c0ac2cd30\\blobs\\65\\65719df13b4e6416193179104dfc2faa43696e0c632abc95c21548e2e23e0294"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "4a0be84f-2838-4153-98e6-02d180db1675",
+      "completedAt": 1792311053573,
+      "output": "D:\\Năm 3\\flowkit-main\\output\\le-pham-nhu-quynh\\scene_08.mp4",
+      "status": "completed",
+      "revision": "fbcba79c-f5e1-4bc8-951f-3e67a4ec29f4"
+    },
+    "retainedRevisions": [
+      "fbcba79c-f5e1-4bc8-951f-3e67a4ec29f4"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

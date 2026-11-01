@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>11 · Thành tích là chất liệu của bộ hồ sơ</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'PilotDisplay';
+  src: url('assets/segoe-ui-black.ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arial.ttf');
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arialbd.ttf');
+  font-weight: 700;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; }
+
+#scene-11 {
+  position: relative;
+  width: 720px;
+  height: 1280px;
+  overflow: hidden;
+  background: #FFF3E8;
+  color: #30313B;
+  font-family: PilotSans, Arial, sans-serif;
+}
+
+#world {
+  position: absolute;
+  inset: 0;
+  transform-origin: 360px 680px;
+}
+
+/* Strip Headline: HỒ SƠ MINH NHẬT */
+.strip {
+  position: absolute;
+  left: 155px;
+  top: 145px;
+  background: #087BC1;
+  color: #FFFFFF;
+  padding: 14px 28px;
+  font-family: PilotDisplay, PilotSans, sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.1;
+  white-space: nowrap;
+  box-shadow: 5px 7px 0 #30313b12;
+  border-radius: 4px;
+  z-index: 25;
+  opacity: 0;
+  transform: translateY(-16px) scale(0.95);
+}
+
+svg.art {
+  position: absolute;
+  inset: 0;
+  width: 720px;
+  height: 1280px;
+  overflow: visible;
+}
+
+/* Hands layer */
+#hands-layer {
+  position: absolute;
+  inset: 0;
+  width: 720px;
+  height: 1280px;
+  pointer-events: none;
+  z-index: 20;
+}
+</style>
+</head>
+<body>
+<div id="scene-11" data-composition-id="scene-11" data-width="720" data-height="1280" data-start="0" data-duration="3.566666666666667">
+  <div id="world">
+    
+    <!-- Headline -->
+    <div id="scene-title" class="strip">HỒ SƠ MINH NHẬT</div>
+
+    <!-- Main Portfolio Art matching Scene 12 frame 0 -->
+    <svg class="art" id="portfolio-art" viewBox="0 0 720 1280" aria-label="Overhead blue portfolio folder with academic study materials">
+      <!-- Ground Shadow -->
+      <ellipse cx="361" cy="1004" rx="291" ry="22" fill="#E2CBB9" opacity="0.6"/>
+
+      <!-- Base Blue Folder -->
+      <g id="p12-folder">
+        <!-- Blue Folder Outer Wings -->
+        <path d="M73 421L322 363L660 410L655 963L348 1001L72 953Z" fill="#087BC1" stroke="#30313B" stroke-width="3.5" stroke-linejoin="round"/>
+        <!-- Inner page backing left & right -->
+        <path d="M93 431L332 394L347 942L91 965Z" fill="#E8D9CA" stroke="#30313B" stroke-width="2.6"/>
+        <path d="M349 395L638 432L631 962L349 943Z" fill="#E4D1C1" stroke="#30313B" stroke-width="2.6"/>
+        
+        <!-- Stack of pristine underlying pages -->
+        <path d="M98 425L332 390L346 931L98 947Z" fill="#FFFCF1" stroke="#30313B" stroke-width="2.8"/>
+        <path d="M333 390L628 424L625 947L346 931Z" fill="#FFFEF7" stroke="#30313B" stroke-width="2.8"/>
+        
+        <!-- Folder Spine -->
+        <path d="M330 394L337 394L352 932L345 932Z" fill="#D5BDA6"/>
+        <path d="M110 938L333 924M358 926L610 939" fill="none" stroke="#E1CFBE" stroke-width="2.2"/>
+        
+        <!-- Left Page Default Text Texture -->
+        <path d="M121 450L286 426M121 464L249 447" fill="none" stroke="#DDD1C4" stroke-width="3" stroke-linecap="round"/>
+        <path d="M124 870L288 859M125 883L251 874M127 896L277 886" fill="none" stroke="#E0D2C5" stroke-width="3" stroke-linecap="round"/>
+
+        <!-- Right Page Default Text Texture -->
+        <path d="M390 462L578 486M392 477L543 496" fill="none" stroke="#E2D8CD" stroke-width="3" stroke-linecap="round"/>
+      </g>
+
+      <!-- ==============================================
+           EVIDENCE MATERIALS BEING ASSEMBLED (0.0 - 2.4s)
+           ============================================== -->
+      <g id="evidence-layer">
+        <!-- 1. The Revised Draft Sheet from Scene 10 -->
+        <g id="draft-sheet-insert" transform="translate(110, 480) rotate(-2)">
+          <!-- Sheet paper -->
+          <rect x="0" y="0" width="210" height="270" rx="3" fill="#FFFEFA" stroke="#30313B" stroke-width="2.6"/>
+          <!-- Tab on top -->
+          <polygon points="150,0 175,0 175,-8 150,-8" fill="#FF7A30" stroke="#30313B" stroke-width="1.8"/>
+          <!-- Draft text lines -->
+          <line x1="20" y1="28" x2="130" y2="28" stroke="#505260" stroke-width="3.5" stroke-linecap="round"/>
+          <line x1="20" y1="50" x2="190" y2="50" stroke="#CFBFAD" stroke-width="2" stroke-linecap="round"/>
+          <line x1="20" y1="70" x2="185" y2="70" stroke="#CFBFAD" stroke-width="2" stroke-linecap="round"/>
+          <!-- Terracotta circle from mentor -->
+          <ellipse cx="105" cy="115" rx="75" ry="20" fill="none" stroke="#C25522" stroke-width="2.2"/>
+          <!-- Orange revised ink lines from student -->
+          <line x1="25" y1="145" x2="185" y2="145" stroke="#FF7A30" stroke-width="2.6" stroke-linecap="round"/>
+          <line x1="25" y1="165" x2="150" y2="165" stroke="#FF7A30" stroke-width="2.6" stroke-linecap="round"/>
+          <line x1="20" y1="195" x2="180" y2="195" stroke="#CFBFAD" stroke-width="2" stroke-linecap="round"/>
+          <line x1="20" y1="215" x2="140" y2="215" stroke="#CFBFAD" stroke-width="2" stroke-linecap="round"/>
+        </g>
+
+        <!-- 2. Study Fragment A: Course notes & blueprint chart fragment -->
+        <g id="study-fragment-a" transform="translate(60, 560) rotate(-6)">
+          <rect x="0" y="0" width="130" height="170" rx="2" fill="#F6EFE6" stroke="#30313B" stroke-width="2.2"/>
+          <!-- Graph Grid lines -->
+          <line x1="15" y1="25" x2="115" y2="25" stroke="#C8D7DE" stroke-width="1.5"/>
+          <line x1="15" y1="45" x2="115" y2="45" stroke="#C8D7DE" stroke-width="1.5"/>
+          <line x1="15" y1="65" x2="115" y2="65" stroke="#C8D7DE" stroke-width="1.5"/>
+          <line x1="15" y1="85" x2="115" y2="85" stroke="#C8D7DE" stroke-width="1.5"/>
+          <!-- Trend Curve / Study Activity -->
+          <path d="M25 80Q60 40 105 30" fill="none" stroke="#087BC1" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="25" cy="80" r="3" fill="#087BC1"/>
+          <circle cx="65" cy="52" r="3" fill="#087BC1"/>
+          <circle cx="105" cy="30" r="3" fill="#087BC1"/>
+          <!-- Clip -->
+          <rect x="50" y="-5" width="22" height="12" rx="2" fill="#D3A77A" stroke="#30313B" stroke-width="1.5"/>
+        </g>
+
+        <!-- 3. Study Fragment B: Project activity log card -->
+        <g id="study-fragment-b" transform="translate(130, 710) rotate(4)">
+          <rect x="0" y="0" width="140" height="110" rx="2" fill="#FFFBF2" stroke="#30313B" stroke-width="2.2"/>
+          <line x1="15" y1="20" x2="125" y2="20" stroke="#707584" stroke-width="3" stroke-linecap="round"/>
+          <line x1="15" y1="38" x2="125" y2="38" stroke="#D8CBBD" stroke-width="1.8"/>
+          <line x1="15" y1="52" x2="110" y2="52" stroke="#D8CBBD" stroke-width="1.8"/>
+          <line x1="15" y1="66" x2="95" y2="66" stroke="#D8CBBD" stroke-width="1.8"/>
+          <!-- Small neutral activity badge -->
+          <polygon points="105,75 125,75 115,92" fill="#FFAA28" stroke="#30313B" stroke-width="1.5"/>
+        </g>
+      </g>
+
+      <!-- ==============================================
+           THE TURNING PAGE (Flips right-to-left at 2.4s)
+           revealing the clean layout for Scene 12
+           ============================================== -->
+      <g id="turning-page-group" transform-origin="340 660">
+        <!-- The page leaf being turned -->
+        <path id="turning-leaf" d="M336 392L624 424L620 946L348 930Z" fill="#FFFDF5" stroke="#30313B" stroke-width="2.8"/>
+        <!-- Content on the turning page -->
+        <g id="turning-content">
+          <line x1="370" y1="460" x2="560" y2="480" stroke="#DDD0C1" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="370" y1="485" x2="530" y2="505" stroke="#DDD0C1" stroke-width="2.5" stroke-linecap="round"/>
+          <rect x="370" y="520" width="180" height="120" rx="2" fill="#F4EDE4" stroke="#D4C4B2" stroke-width="2"/>
+          <line x1="385" y1="550" x2="535" y2="550" stroke="#B8A795" stroke-width="2" stroke-linecap="round"/>
+          <line x1="385" y1="575" x2="510" y2="575" stroke="#B8A795" stroke-width="2" stroke-linecap="round"/>
+          <line x1="385" y1="600" x2="480" y2="600" stroke="#B8A795" stroke-width="2" stroke-linecap="round"/>
+        </g>
+      </g>
+
+      <!-- Destination frame 0 overlay matching Scene 12 -->
+      <g id="scene-12-reveal-target" opacity="0">
+        <!-- Matching puzzle outline in Scene 12 frame 0 -->
+        <path d="M133 508L286 480L315 708L155 731Z" fill="#EADFEF" stroke="#BBA8C2" stroke-width="1.5"/>
+        <path d="M173 487L242 475L247 501L178 513Z" fill="#E4CEA0" opacity="0.8"/>
+        <path d="M154 620L238 524L241 623Z" fill="#8BC8D9" stroke="#30313B" stroke-width="2.8" stroke-linejoin="round"/>
+        <path d="M156 627L242 630L245 702L166 707Z" fill="#087BC1" stroke="#30313B" stroke-width="2.8" stroke-linejoin="round"/>
+        <path d="M247 525L303 583L249 591Z" fill="#B69AD8" stroke="#30313B" stroke-width="2.8" stroke-linejoin="round"/>
+        <path d="M253 600L307 591L312 699L251 636Z" fill="#F5EAD8" stroke="#AC9AA1" stroke-width="2.5" stroke-dasharray="7 6"/>
+      </g>
+    </svg>
+
+    <!-- Student Hands (Overhead view: sleeves #FFAA28, skin #FFAC3C) -->
+    <svg id="hands-layer" viewBox="0 0 720 1280">
+      <!-- Left Hand / Sleeve holding page margin -->
+      <g id="left-hand-anchor" transform="translate(190, 860)">
+        <g id="student-left-hand">
+          <!-- Sleeve -->
+          <path d="M0 160L20 80L75 85L60 160Z" fill="#FFAA28" stroke="#30313B" stroke-width="3"/>
+          <ellipse cx="48" cy="82" rx="28" ry="8" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+          <!-- Hand / Fingers holding page edge -->
+          <path d="M28 80C26 62 42 50 56 52C66 54 70 66 65 80" fill="#FFAC3C" stroke="#30313B" stroke-width="3" stroke-linecap="round"/>
+          <line x1="38" y1="62" x2="42" y2="76" stroke="#30313B" stroke-width="2"/>
+          <line x1="49" y1="56" x2="52" y2="76" stroke="#30313B" stroke-width="2"/>
+        </g>
+      </g>
+
+      <!-- Right Hand / Sleeve placing papers & turning page -->
+      <g id="right-hand-anchor" transform="translate(460, 860)">
+        <g id="student-right-hand">
+          <!-- Sleeve -->
+          <path d="M40 160L20 75L-35 80L-20 160Z" fill="#FFAA28" stroke="#30313B" stroke-width="3"/>
+          <ellipse cx="-7" cy="77" rx="28" ry="8" fill="#FFAC3C" stroke="#30313B" stroke-width="2.5"/>
+          <!-- Hand / Fingers gripping corner of page -->
+          <path d="M-22 75C-20 54 -3 45 10 48C20 50 22 64 16 76" fill="#FFAC3C" stroke="#30313B" stroke-width="3" stroke-linecap="round"/>
+          <line x1="-12" y1="56" x2="-8" y2="72" stroke="#30313B" stroke-width="2"/>
+          <line x1="-1" y1="50" x2="2" y2="72" stroke="#30313B" stroke-width="2"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<script>
+(function() {
+  const tl = gsap.timeline({ paused: false });
+
+  // 0.00–0.900s: "Minh Nhật đã xây dựng"
+  // Headline drops in
+  tl.to('#scene-title', {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    duration: 0.45,
+    ease: 'back.out(1.3)'
+  }, 0.2);
+
+  // Left hand rests gently at the bottom-left folder corner
+  tl.fromTo('#student-left-hand', {
+    y: 50,
+    opacity: 0
+  }, {
+    y: 0,
+    opacity: 1,
+    duration: 0.45,
+    ease: 'power2.out'
+  }, 0.1);
+
+  // Right hand places the revised draft into the folder from below
+  tl.fromTo('#draft-sheet-insert', {
+    y: 350,
+    x: 160,
+    rotation: -10,
+    opacity: 0,
+    scale: 0.95
+  }, {
+    y: 480,
+    x: 110,
+    rotation: -2,
+    opacity: 1,
+    scale: 1,
+    duration: 0.65,
+    ease: 'power2.out'
+  }, 0.2);
+
+  tl.fromTo('#student-right-hand', {
+    y: 60,
+    x: 0,
+    opacity: 0
+  }, {
+    y: 0,
+    x: 0,
+    opacity: 1,
+    duration: 0.5,
+    ease: 'power2.out'
+  }, 0.2);
+
+  // 0.90–2.400s: "một bộ hồ sơ"
+  // The two academic study fragments slide into the page margin
+  tl.fromTo('#study-fragment-a', {
+    x: -80,
+    y: 580,
+    opacity: 0,
+    rotation: -18
+  }, {
+    x: 60,
+    y: 560,
+    opacity: 1,
+    rotation: -6,
+    duration: 0.55,
+    ease: 'back.out(1.2)'
+  }, 0.95);
+
+  tl.fromTo('#study-fragment-b', {
+    x: 60,
+    y: 780,
+    opacity: 0,
+    rotation: 12
+  }, {
+    x: 130,
+    y: 710,
+    opacity: 1,
+    rotation: 4,
+    duration: 0.55,
+    ease: 'back.out(1.2)'
+  }, 1.45);
+
+  // 2.40–3.567s: "không chỉ thể hiện thành tích học tập"
+  // Right hand performs a single smooth page-flip motion to the left
+  tl.to('#student-right-hand', {
+    x: -140,
+    y: -30,
+    duration: 0.5,
+    ease: 'power2.inOut'
+  }, 2.45);
+
+  // The turning leaf curls and flips to the left
+  tl.to('#turning-page-group', {
+    scaleX: 0,
+    skewY: 8,
+    duration: 0.45,
+    ease: 'power2.in'
+  }, 2.5);
+
+  // Page lands on left side and reveals clean spread matching Scene 12 frame 0
+  tl.to('#turning-page-group', {
+    scaleX: -0.96,
+    skewY: 0,
+    duration: 0.35,
+    ease: 'power2.out'
+  }, 2.95);
+
+  tl.to('#evidence-layer', {
+    opacity: 0,
+    duration: 0.2
+  }, 2.85);
+
+  // Match-cut layout elements from Scene 12 frame 0 appear
+  tl.to('#scene-12-reveal-target', {
+    opacity: 1,
+    duration: 0.25,
+    ease: 'power1.out'
+  }, 3.05);
+
+  // Hands withdraw down smoothly towards end
+  tl.to('#student-right-hand', {
+    y: 150,
+    opacity: 0,
+    duration: 0.35,
+    ease: 'power2.in'
+  }, 3.15);
+
+  tl.to('#student-left-hand', {
+    y: 150,
+    opacity: 0,
+    duration: 0.35,
+    ease: 'power2.in'
+  }, 3.15);
+
+  // Hold at exact Scene 12 frame 0 alignment
+  tl.to({ hold: 0 }, { hold: 1, duration: 3.566666666666667, ease: 'none' }, 0);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines['scene-11'] = tl;
+})();
+</script>
+</body>
+</html>

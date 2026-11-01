@@ -1,0 +1,519 @@
+{
+  "schema_version": "2.1",
+  "project_slug": "le-pham-nhu-quynh",
+  "prepared_by": "Codex",
+  "next_owner": "Antigravity",
+  "state": "ready_for_antigravity",
+  "scope": {
+    "pilot_authorized": true,
+    "pilot_rendered": "scene_15",
+    "full_film_production_this_turn": false,
+    "remaining_production_gate": "Pilot visual approval received. Antigravity may continue remaining 15 scenes under locked storyboard; scene_14 publication hold remains."
+  },
+  "workflow_doc": "docs/ANTIGRAVITY-VIDEO-WORKFLOW.md",
+  "style_policy": "references/ANIMATION-STYLES.md",
+  "source_handoff": "scratch/audio_handoff.json",
+  "routing": "scratch/scene_routing.json",
+  "storyboard": "scratch/storyboard.md",
+  "status": "scratch/production_status.json",
+  "research": ".omc/research/le-pham-nhu-quynh-2026-10-18.md",
+  "input_integrity": {
+    "source_transcript_and_all_16_slices_hashes": "passed",
+    "pcm_reconstruction": "bit-perfect",
+    "source_files_unchanged": true,
+    "pilot_audio_copy_sha256": "c8561731374c10d98d2eccba52de7900fd5f8211b11d918d584d857637223d95"
+  },
+  "file_sha256": {
+    "scratch/audio_handoff.json": "b927e8337652b6163a752c2851615ed29997a16cd0166f0cc6445aaa870e994a",
+    "scratch/scene_routing.json": "9f0740fdc3bdab7cf12653879d3341d1c7fa3cfc7a1162354d1a4adc8619461e",
+    "scratch/scene_routing.md": "36ba8441f3b9e6503c55f6ca64a85360bbb17e70a753b5853e0dccbfc4ad6bcf",
+    "scratch/storyboard.md": "290f81cdb0d2501b896016251edecb68f99e7852fb4fe4a96615c7a86dd5f820",
+    "videos/le-pham-nhu-quynh-pilot/index.html": "e08b0f8599ae40fdb7c00b47948e9e62e645fc4116f53c853ec56bcfc67f64d0",
+    "videos/le-pham-nhu-quynh-pilot/frame.md": "b6f1e69690c7d28634123e4d0d06fb97f11d3ad4c3c869849f2a844713ca470d",
+    "videos/le-pham-nhu-quynh-pilot/BRIEF.md": "4818f31c167fb64f5d2c428f0b190d025d8018ac9f60ed19efff7ba437ca88ee",
+    "videos/le-pham-nhu-quynh-pilot/assets/audio.wav": "c8561731374c10d98d2eccba52de7900fd5f8211b11d918d584d857637223d95",
+    "videos/le-pham-nhu-quynh-pilot/assets/gsap.min.js": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+    "videos/le-pham-nhu-quynh-pilot/assets/scene-sans-bold.ttf": "aeb9e4a6ec5cc59f4d72df8189032d7dbb28f45161cf1552174818b5465dac4e",
+    "output/le-pham-nhu-quynh/scene_15.mp4": "4c0594cc6ed903efc4e511fd34641a5c51dd1e82521533008fed528d9dda78b4",
+    "videos/le-pham-nhu-quynh-pilot/qa/review.json": "880fb574eb915065622fbf8ddccb34bda38bbce8583ae5585a8dc653c578ad16",
+    "output/le-pham-nhu-quynh/scene_15-ending-v2.mp4": "4c0594cc6ed903efc4e511fd34641a5c51dd1e82521533008fed528d9dda78b4"
+  },
+  "engine_counts": {
+    "HF_ONLY": 9,
+    "HYBRID": 2,
+    "FLOW_ONLY": 5
+  },
+  "pilot": {
+    "scene_id": "scene_15",
+    "project_directory": "videos/le-pham-nhu-quynh-pilot",
+    "output": "output/le-pham-nhu-quynh/scene_15.mp4",
+    "qa": "videos/le-pham-nhu-quynh-pilot/qa/review.json",
+    "user_approval": "approved",
+    "preview_url": "http://localhost:3015/#project/le-pham-nhu-quynh-pilot",
+    "revision": "ending-v2",
+    "versioned_output": "output/le-pham-nhu-quynh/scene_15-ending-v2.mp4",
+    "revision_note": "End redesigned on user request: globe/campus horizon and paper flight; original audio and timing preserved.",
+    "previous_version": "videos/le-pham-nhu-quynh-pilot/qa/before-ending-v2/scene_15.mp4",
+    "cli_version": "0.8.170",
+    "approval": {
+      "revision": "ending-v2",
+      "date": "2026-10-18",
+      "evidence": "User: oke ổn rồi á",
+      "scope": "Pilot visual treatment and ending v2 approved; remaining scenes follow storyboard, retain scene_14 publication hold."
+    }
+  },
+  "reuse_contract": [
+    "Reuse the illustration palette and layered rig, not the entire binder layout on every scene.",
+    "Far arm must be painted behind torso; near arm and grasping hand in foreground. Animate semantic actions, not idle poses.",
+    "Keep raw/source WAV, transcript, sample boundaries and slices immutable; corrected_text is a separate editorial layer.",
+    "Honor locked engines. Override only with an explicit per-scene routing reason. Evaluate HF styles per scene; Kurzgesagt preferred when suitable, not compulsory.",
+    "Generate Flow references before shots; use batch API; zero model-generated text. HYBRID uses negative-space floating callouts, never opaque cards.",
+    "Run opening/signature/final, playback, mobile, thumbnail and grayscale QA for each scene.",
+    "Do not concatenate final film until scene 14 wording/audio discrepancy is resolved."
+  ],
+  "publication_holds": [
+    {
+      "scene_id": "scene_14",
+      "issue": "Audio says Mentor Esora hơn 14 năm; supplied Facebook post attributes 14 years to Esora, website says over 13 years. Neither proves every mentor has over 14 years.",
+      "action": "Ask user to confirm a supporting source or authorize a replacement audio slice. corrected_text already proposes neutral wording; never silently change the WAV.",
+      "audio_preserved": true
+    }
+  ],
+  "scenes_to_build": [
+    {
+      "scene_id": "scene_01",
+      "render_mode": "HF_ONLY",
+      "style_id": "kurzgesagt",
+      "audio_slice": "scratch/audio_slices/scene_01.wav",
+      "duration": 5.355,
+      "asset_contract": [
+        {
+          "layer": "Rig nữ sinh đầu/mắt/tay/bàn tay/thân/chân",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Hồ sơ bìa/trang/gáy",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Hai dải đường spline",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Hai campus biểu trưng phi thương hiệu",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        }
+      ],
+      "publication_hold": false,
+      "target_output": "output/le-pham-nhu-quynh/scene_01.mp4",
+      "status": "planned"
+    },
+    {
+      "scene_id": "scene_02",
+      "render_mode": "HYBRID",
+      "style_id": "not_applicable",
+      "audio_slice": "scratch/audio_slices/scene_02.wav",
+      "duration": 5.226,
+      "asset_contract": [
+        {
+          "layer": "Flow plate học sinh/bàn/tay giao thư",
+          "source": "Flow reference/plate to generate via batch; exact overlays authored in HF",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Reference nhân vật nữ và người thân",
+          "source": "Flow reference/plate to generate via batch; exact overlays authored in HF",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Ba phong bì trơn",
+          "source": "Flow reference/plate to generate via batch; exact overlays authored in HF",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "HF pin dot/connector/nhãn tên",
+          "source": "Flow reference/plate to generate via batch; exact overlays authored in HF",
+          "status": "planned_not_created"
+        }
+      ],
+      "publication_hold": false,
+      "target_output": "output/le-pham-nhu-quynh/scene_02.mp4",
+      "status": "planned"
+    },
+    {
+      "scene_id": "scene_03",
+      "render_mode": "FLOW_ONLY",
+      "style_id": "not_applicable",
+      "audio_slice": "scratch/audio_slices/scene_03.wav",
+      "duration": 3.562,
+      "asset_contract": [
+        {
+          "layer": "Flow plate thư viện/động tác",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Reference nữ sinh",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Hồ sơ vật lý không chữ",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        }
+      ],
+      "publication_hold": false,
+      "target_output": "output/le-pham-nhu-quynh/scene_03.mp4",
+      "status": "planned"
+    },
+    {
+      "scene_id": "scene_04",
+      "render_mode": "HF_ONLY",
+      "style_id": "hf_existing:institution-geolocation",
+      "audio_slice": "scratch/audio_slices/scene_04.wav",
+      "duration": 3.293,
+      "asset_contract": [
+        {
+          "layer": "Campus SVG nhiều lớp",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Spline tuyến đường/pin",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Typography HAN/Hà Lan",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        }
+      ],
+      "publication_hold": false,
+      "target_output": "output/le-pham-nhu-quynh/scene_04.mp4",
+      "status": "planned"
+    },
+    {
+      "scene_id": "scene_05",
+      "render_mode": "HF_ONLY",
+      "style_id": "kurzgesagt",
+      "audio_slice": "scratch/audio_slices/scene_05.wav",
+      "duration": 6.264,
+      "asset_contract": [
+        {
+          "layer": "Rig nữ sinh",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Bàn thực hành",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Gear/chart/laptop/camera nhiều lớp",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Path chuyển đổi vật",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        }
+      ],
+      "publication_hold": false,
+      "target_output": "output/le-pham-nhu-quynh/scene_05.mp4",
+      "status": "planned"
+    },
+    {
+      "scene_id": "scene_06",
+      "render_mode": "FLOW_ONLY",
+      "style_id": "not_applicable",
+      "audio_slice": "scratch/audio_slices/scene_06.wav",
+      "duration": 2.61,
+      "asset_contract": [
+        {
+          "layer": "Flow plate bàn giao mô hình",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Hai entity tham chiếu",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Mô hình không chữ",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        }
+      ],
+      "publication_hold": false,
+      "target_output": "output/le-pham-nhu-quynh/scene_06.mp4",
+      "status": "planned"
+    },
+    {
+      "scene_id": "scene_07",
+      "render_mode": "HF_ONLY",
+      "style_id": "bauhaus",
+      "audio_slice": "scratch/audio_slices/scene_07.wav",
+      "duration": 3.202,
+      "asset_contract": [
+        {
+          "layer": "Hình sách/cổng tách lớp",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Cần cẩu biểu trưng",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Typography Rotterdam UAS/Hà Lan",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        }
+      ],
+      "publication_hold": false,
+      "target_output": "output/le-pham-nhu-quynh/scene_07.mp4",
+      "status": "planned"
+    },
+    {
+      "scene_id": "scene_08",
+      "render_mode": "HF_ONLY",
+      "style_id": "izometrik",
+      "audio_slice": "scratch/audio_slices/scene_08.wav",
+      "duration": 3.718,
+      "asset_contract": [
+        {
+          "layer": "Tàu/bến/cẩu isometric nhiều lớp",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Container/xe",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Đô thị biểu trưng và tuyến đường",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        }
+      ],
+      "publication_hold": false,
+      "target_output": "output/le-pham-nhu-quynh/scene_08.mp4",
+      "status": "planned"
+    },
+    {
+      "scene_id": "scene_09",
+      "render_mode": "HF_ONLY",
+      "style_id": "kurzgesagt",
+      "audio_slice": "scratch/audio_slices/scene_09.wav",
+      "duration": 6.469,
+      "asset_contract": [
+        {
+          "layer": "Hai rig học sinh",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Dự án mô hình",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Gear/kiện hàng/chart/camera",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Bàn và bóng tiếp xúc",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        }
+      ],
+      "publication_hold": false,
+      "target_output": "output/le-pham-nhu-quynh/scene_09.mp4",
+      "status": "planned"
+    },
+    {
+      "scene_id": "scene_10",
+      "render_mode": "HYBRID",
+      "style_id": "not_applicable",
+      "audio_slice": "scratch/audio_slices/scene_10.wav",
+      "duration": 4.481,
+      "asset_contract": [
+        {
+          "layer": "Flow plate thư viện minh họa",
+          "source": "Flow reference/plate to generate via batch; exact overlays authored in HF",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Reference nữ sinh",
+          "source": "Flow reference/plate to generate via batch; exact overlays authored in HF",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Tập tài liệu không chữ",
+          "source": "Flow reference/plate to generate via batch; exact overlays authored in HF",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "HF floating label/connector",
+          "source": "Flow reference/plate to generate via batch; exact overlays authored in HF",
+          "status": "planned_not_created"
+        }
+      ],
+      "publication_hold": false,
+      "target_output": "output/le-pham-nhu-quynh/scene_10.mp4",
+      "status": "planned"
+    },
+    {
+      "scene_id": "scene_11",
+      "render_mode": "HF_ONLY",
+      "style_id": "hf_existing:discipline-object-relay",
+      "audio_slice": "scratch/audio_slices/scene_11.wav",
+      "duration": 4.42,
+      "asset_contract": [
+        {
+          "layer": "Năm đồ vật đa lớp",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Hình trung gian chuyển đổi",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Typography nhãn ngắn",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        }
+      ],
+      "publication_hold": false,
+      "target_output": "output/le-pham-nhu-quynh/scene_11.mp4",
+      "status": "planned"
+    },
+    {
+      "scene_id": "scene_12",
+      "render_mode": "FLOW_ONLY",
+      "style_id": "not_applicable",
+      "audio_slice": "scratch/audio_slices/scene_12.wav",
+      "duration": 4.787,
+      "asset_contract": [
+        {
+          "layer": "Flow plate lab/thao tác",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Reference học viên/người hướng dẫn",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Mẫu thử không nhãn",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        }
+      ],
+      "publication_hold": false,
+      "target_output": "output/le-pham-nhu-quynh/scene_12.mp4",
+      "status": "planned"
+    },
+    {
+      "scene_id": "scene_13",
+      "render_mode": "HF_ONLY",
+      "style_id": "hf_existing:reverse-process",
+      "audio_slice": "scratch/audio_slices/scene_13.wav",
+      "duration": 4.314,
+      "asset_contract": [
+        {
+          "layer": "Rig nữ sinh",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Ba phong bì biểu trưng",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Một hồ sơ có trang lật/lịch",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Path rewind",
+          "source": "original SVG/rig to create",
+          "status": "planned_not_created"
+        }
+      ],
+      "publication_hold": false,
+      "target_output": "output/le-pham-nhu-quynh/scene_13.mp4",
+      "status": "planned"
+    },
+    {
+      "scene_id": "scene_14",
+      "render_mode": "FLOW_ONLY",
+      "style_id": "not_applicable",
+      "audio_slice": "scratch/audio_slices/scene_14.wav",
+      "duration": 3.653,
+      "asset_contract": [
+        {
+          "layer": "Flow plate tư vấn",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Reference mentor/học sinh",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Hồ sơ trơn không chữ",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        }
+      ],
+      "publication_hold": true,
+      "target_output": "output/le-pham-nhu-quynh/scene_14.mp4",
+      "status": "planned"
+    },
+    {
+      "scene_id": "scene_16",
+      "render_mode": "FLOW_ONLY",
+      "style_id": "not_applicable",
+      "audio_slice": "scratch/audio_slices/scene_16.wav",
+      "duration": 6.022,
+      "asset_contract": [
+        {
+          "layer": "Flow plate gia đình/mentor",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "References nhân vật nhất quán",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        },
+        {
+          "layer": "Hồ sơ vật lý",
+          "source": "Flow reference/plate to generate via batch",
+          "status": "planned_not_created"
+        }
+      ],
+      "publication_hold": false,
+      "target_output": "output/le-pham-nhu-quynh/scene_16.mp4",
+      "status": "planned"
+    }
+  ]
+}

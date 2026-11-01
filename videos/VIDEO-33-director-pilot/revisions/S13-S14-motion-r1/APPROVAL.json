@@ -1,0 +1,22 @@
+{
+  "version": "S13-S14-motion-r1",
+  "approval_status": "approved",
+  "approval_scope": "pilot motion with original voice",
+  "approval_date_local": "2026-10-27",
+  "timezone": "Asia/Saigon",
+  "user_message_verbatim": "oke mình duyêt 2 pilot. vậy là ổn rồi ha",
+  "master_replacement_authorized": false,
+  "full_film_production_authorized": false,
+  "pilots": [
+    {
+      "scene_id": "S13",
+      "video_path": "revisions/S13-S14-motion-r1/S13/renders/pilot.mp4",
+      "video_sha256": "73676f61aa285dc49799ed3394125149ab1f02504fa2707215e476dbb4c8a6c6"
+    },
+    {
+      "scene_id": "S14",
+      "video_path": "revisions/S13-S14-motion-r1/S14/renders/pilot.mp4",
+      "video_sha256": "46a222ac80b7a91d1a2ce39db0c39d2ed3d8c544eab3006858f3f3c081138f38"
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>05 · Từ phong thư tới môi trường học thuật</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'PilotDisplay';
+  src: url('assets/segoe-ui-black.ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arial.ttf');
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arialbd.ttf');
+  font-weight: 700;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; }
+
+#scene-05 {
+  position: relative;
+  width: 720px;
+  height: 1280px;
+  overflow: hidden;
+  background: #FFF3E8;
+  color: #30313B;
+  font-family: PilotSans, Arial, sans-serif;
+}
+
+#world {
+  position: absolute;
+  inset: 0;
+  transform-origin: 360px 650px;
+}
+
+/* Background ground layer that transitions to lilac #EEE9F3 */
+#ground-wash {
+  position: absolute;
+  inset: 0;
+  background: #EEE9F3;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* Title Strip: VU AMSTERDAM */
+#c5-title {
+  position: absolute;
+  top: 365px;
+  left: 118px;
+  background: #087BC1;
+  color: #FFFFFF;
+  font-family: PilotDisplay, PilotSans, sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  padding: 14px 25px;
+  white-space: nowrap;
+  box-shadow: 5px 7px 0 #30313b12;
+  border-radius: 4px;
+  z-index: 25;
+  transform-origin: center;
+}
+
+/* The Envelope falling away */
+#envelope-drop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 720px;
+  height: 1080px;
+  z-index: 10;
+}
+
+/* The Photo Unit (morphs from Scene 04 card to Scene 06 #c6-photo) */
+#photo-container {
+  position: absolute;
+  left: 86px;
+  top: 445px;
+  width: 548px;
+  height: 330px;
+  background: #FFFEFA;
+  padding: 13px;
+  box-shadow: 6px 10px 0 #30313b1a;
+  border-radius: 4px;
+  z-index: 15;
+  transform-origin: 50% 50%;
+}
+#photo-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 47% 50%;
+  border-radius: 2px;
+}
+.tape {
+  position: absolute;
+  width: 110px;
+  height: 31px;
+  background: #ECD6A6CB;
+  top: -12px;
+  left: 215px;
+  transform: rotate(-5deg);
+  clip-path: polygon(0 10%, 96% 0, 100% 88%, 4% 100%);
+  z-index: 16;
+}
+
+/* Research Props: open book & lab glassware */
+#research-props {
+  position: absolute;
+  left: 70px;
+  top: 860px;
+  width: 580px;
+  height: 170px;
+  z-index: 20;
+}
+
+/* Architectural Shell of Scene 06 */
+#campus-shell {
+  position: absolute;
+  inset: 0;
+  width: 720px;
+  height: 1280px;
+  z-index: 12;
+  opacity: 0;
+  pointer-events: none;
+}
+</style>
+</head>
+<body>
+<div id="scene-05" data-composition-id="scene-05" data-width="720" data-height="1280" data-start="0" data-duration="3.2333333333333334">
+  <div id="world">
+    <!-- Ground wash transitioning to Scene 06 #EEE9F3 -->
+    <div id="ground-wash"></div>
+
+    <!-- Architectural shell of Scene 06 -->
+    <svg id="campus-shell" viewBox="0 0 720 1280" aria-label="Campus architectural shell">
+      <ellipse cx="362" cy="997" rx="289" ry="22" fill="#D6C9DB" opacity=".7"/>
+      <!-- Shell walls and floors -->
+      <path d="M77 382L360 340L643 382V952L360 985L77 952Z" fill="#D8CBDD" stroke="#30313B" stroke-width="3.2"/>
+      <path d="M95 393L360 355L625 393V937L360 967L95 937Z" fill="#FFFCF4" stroke="#30313B" stroke-width="3"/>
+      <path d="M95 568H625L640 583H80ZM95 756H625L640 771H80ZM95 937H625L641 954H79Z" fill="#BBA2CD" stroke="#30313B" stroke-width="3"/>
+      <path d="M345 395H368V567H345ZM358 582H380V755H358ZM527 772H547V938H527Z" fill="#D9C9DF" stroke="#30313B" stroke-width="2.5"/>
+      <path d="M78 382L360 340L643 382L625 399L360 358L95 399Z" fill="#AFC6DA" stroke="#30313B" stroke-width="3"/>
+      <path d="M55 956H665M65 969H653" fill="none" stroke="#A791AD" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+
+    <!-- The Envelope from Scene 04 falling down -->
+    <div id="envelope-drop">
+      <svg viewBox="0 0 720 1080" style="position: absolute; inset: 0;">
+        <!-- Envelope back -->
+        <path d="M86 651L634 651Q645 651 645 667V934Q645 950 628 950H92Q75 950 75 934V667Q75 651 86 651Z" fill="#DFB69B" stroke="#30313B" stroke-width="3.3"/>
+        <!-- Envelope front -->
+        <path d="M77 663L360 859L643 663V934Q643 949 628 949H92Q77 949 77 934Z" fill="#F4C7A8" stroke="#30313B" stroke-width="3.3" stroke-linejoin="round"/>
+        <path d="M81 943L299 785M639 943L421 785" fill="none" stroke="#BA8B71" stroke-width="2.5"/>
+        <path d="M81 946L348 767Q360 757 372 767L639 946" fill="#FFDFC3" stroke="#30313B" stroke-width="3.3" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <!-- Campus Photo Card (Morphs from 548x330 to 512x563) -->
+    <div id="photo-container">
+      <div id="photo-tape" class="tape"></div>
+      <img src="assets/vu-campus.jpg" alt="VU Main Building official photograph">
+    </div>
+
+    <!-- Research Props: Open Book & Lab Glassware -->
+    <div id="research-props">
+      <svg viewBox="0 0 580 170" width="100%" height="100%">
+        <!-- Lab bench edge -->
+        <polygon points="20,110 560,110 540,145 35,145" fill="#DFD2C4" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+        
+        <!-- Open book on left -->
+        <g id="prop-book" transform="translate(60, 45)">
+          <path d="M10 50Q55 35 100 52Q145 35 190 50V80Q145 65 100 82Q55 65 10 80Z" fill="#FFFDF8" stroke="#30313B" stroke-width="2.8" stroke-linejoin="round"/>
+          <line x1="100" y1="52" x2="100" y2="82" stroke="#30313B" stroke-width="2.2"/>
+          <!-- Page text lines hint -->
+          <line x1="28" y1="58" x2="82" y2="61" stroke="#A99485" stroke-width="2" stroke-linecap="round"/>
+          <line x1="28" y1="67" x2="78" y2="70" stroke="#A99485" stroke-width="2" stroke-linecap="round"/>
+          <line x1="118" y1="61" x2="172" y2="58" stroke="#A99485" stroke-width="2" stroke-linecap="round"/>
+          <line x1="122" y1="70" x2="168" y2="67" stroke="#A99485" stroke-width="2" stroke-linecap="round"/>
+        </g>
+
+        <!-- Lab Glass Flask on right -->
+        <g id="prop-flask" transform="translate(420, 20)">
+          <!-- Glass neck & stopper -->
+          <rect x="26" y="10" width="16" height="32" rx="2" fill="#EBF4F7" stroke="#30313B" stroke-width="2.4"/>
+          <!-- Glass bulb -->
+          <polygon points="12,95 56,95 42,42 26,42" fill="#EBF4F7" stroke="#30313B" stroke-width="2.6" stroke-linejoin="round"/>
+          <!-- Liquid level inside -->
+          <polygon points="16,92 52,92 46,65 22,65" fill="#6DAA84" stroke="#30313B" stroke-width="1.8"/>
+          <!-- Bubble dots -->
+          <circle cx="34" cy="78" r="2.5" fill="#FFFDF8"/>
+          <circle cx="28" cy="85" r="2" fill="#FFFDF8"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Title: VU AMSTERDAM -->
+    <div id="c5-title">VU AMSTERDAM</div>
+  </div>
+  <audio id="c5-voice" src="assets/scene_05.wav" data-start="0" data-duration="3.2333333333333334" data-track-index="2"></audio>
+</div>
+
+<script>
+(()=>{
+  const tl = gsap.timeline({ paused: true });
+
+  // 0.00 - 0.75s: "Một trong những trường"
+  // Envelope drops out through bottom
+  tl.fromTo('#envelope-drop',
+    { y: 0, opacity: 1 },
+    { y: 380, opacity: 0, duration: 0.75, ease: 'power2.in' },
+    0
+  );
+
+  // VU AMSTERDAM Title relocates smoothly to top header position (matching Scene 06 #c6-title)
+  // Scene 04 place: left: 118, top: 365, font-size: 40px
+  // Scene 06 c6-title: left: 160, top: 146, font-size: 42px
+  tl.to('#c5-title', {
+    x: 42,
+    y: -219,
+    rotation: -2,
+    duration: 0.85,
+    ease: 'power2.inOut'
+  }, 0.1);
+
+  // Campus Photo Card scales and translates towards Scene 06 position:
+  // Scene 04 end: left: 86, top: 445, width: 548, height: 330, rotation ~ -2.2deg
+  // Scene 06 start: left: 104, top: 383, width: 512, height: 563, rotation: 1deg
+  tl.to('#photo-container', {
+    x: 18,
+    y: -62,
+    height: 563,
+    width: 512,
+    rotation: 1,
+    duration: 1.1,
+    ease: 'power2.inOut'
+  }, 0.15);
+
+  tl.to('#photo-tape', {
+    x: -12,
+    y: 3,
+    rotation: -3,
+    duration: 1.0,
+    ease: 'power2.inOut'
+  }, 0.15);
+
+  // 0.75 - 2.25s: "đại học nghiên cứu hàng đầu"
+  // Research props (book & flask) fade in on desk at foreground
+  tl.fromTo('#research-props',
+    { opacity: 0, y: 30 },
+    { opacity: 1, y: 0, duration: 0.6, ease: 'back.out(1.3)' },
+    0.75
+  );
+
+  // Ground color washes into Scene 06 #EEE9F3
+  tl.to('#ground-wash', {
+    opacity: 1,
+    duration: 1.2,
+    ease: 'power2.inOut'
+  }, 1.2);
+
+  // 2.25 - 3.233s: "Hà Lan và châu Âu"
+  // Research props exit crop/fade
+  tl.to('#research-props', {
+    opacity: 0,
+    y: 25,
+    duration: 0.5,
+    ease: 'power2.in'
+  }, 2.25);
+
+  // Architectural Shell emerges wrapping around the photo, matching Scene 06 frame 0!
+  tl.to('#campus-shell', {
+    opacity: 1,
+    duration: 0.65,
+    ease: 'power2.out'
+  }, 2.3);
+
+  // Hold at end ready to match cut directly to Scene 06 frame 0!
+  tl.to({ hold: 0 }, { hold: 1, duration: 3.2333333333333334, ease: 'none' }, 0);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines['scene-05'] = tl;
+})();
+</script>
+</body>
+</html>

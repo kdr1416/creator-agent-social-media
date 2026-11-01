@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>07 · Giá trị học thuật trong bối cảnh quốc tế</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'PilotDisplay';
+  src: url('assets/segoe-ui-black.ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arial.ttf');
+}
+@font-face {
+  font-family: 'PilotSans';
+  src: url('assets/arialbd.ttf');
+  font-weight: 700;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; }
+
+#scene-07 {
+  position: relative;
+  width: 720px;
+  height: 1280px;
+  overflow: hidden;
+  background: #F5EFF8;
+  color: #30313B;
+  font-family: PilotSans, Arial, sans-serif;
+}
+
+#world {
+  position: absolute;
+  inset: 0;
+  transform-origin: 360px 650px;
+}
+
+/* Strip Headline */
+.strip {
+  position: absolute;
+  background: #087BC1;
+  color: white;
+  padding: 14px 28px;
+  font-family: PilotDisplay, PilotSans, sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.1;
+  white-space: nowrap;
+  box-shadow: 5px 7px 0 #30313b15;
+  border-radius: 4px;
+}
+#headline {
+  left: 145px;
+  top: 170px;
+  transform-origin: center;
+  z-index: 25;
+}
+
+/* Background ground textures */
+#ground-art {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Left & Right Workspace Wings (depth perspective) */
+#workspaces-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* Credential Scroll / Document */
+#credential-container {
+  position: absolute;
+  left: 155px;
+  top: 450px;
+  width: 410px;
+  height: 360px;
+  z-index: 15;
+  transform-origin: center center;
+}
+
+/* Reader Hand (overhead foreground) */
+#hand-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  pointer-events: none;
+}
+</style>
+</head>
+<body>
+<div id="scene-07" data-composition-id="scene-07" data-width="720" data-height="1280" data-start="0" data-duration="4.266666666666667">
+  <div id="world">
+    <!-- Ground shadows and stage lines -->
+    <svg id="ground-art" viewBox="0 0 720 1280">
+      <ellipse cx="360" cy="1005" rx="310" ry="22" fill="#E5DBEC" opacity="0.6"/>
+      <line x1="60" y1="995" x2="660" y2="995" stroke="#DFD3E7" stroke-width="3"/>
+    </svg>
+
+    <!-- Two open workspace wings: Academic Research on left, Global Collaboration on right -->
+    <div id="workspaces-layer">
+      <svg viewBox="0 0 720 1280" width="100%" height="100%">
+        <!-- Left Wing: Academic Research Desk -->
+        <g id="wing-left" transform="translate(45, 340)">
+          <!-- Base shadow -->
+          <ellipse cx="140" cy="480" rx="120" ry="14" fill="#E2D6E8" opacity="0.5"/>
+          <!-- Angled desk plane -->
+          <polygon points="10,240 260,210 240,460 20,460" fill="#EFE5D7" stroke="#30313B" stroke-width="2.8" stroke-linejoin="round"/>
+          <polygon points="20,460 240,460 235,485 15,485" fill="#D8C8B5" stroke="#30313B" stroke-width="2.8" stroke-linejoin="round"/>
+          <!-- Architect desk lamp -->
+          <path d="M50 250L40 180L85 150" fill="none" stroke="#30313B" stroke-width="3" stroke-linecap="round"/>
+          <polygon points="75,140 115,145 105,175 65,170" fill="#8CB6CE" stroke="#30313B" stroke-width="2.5" stroke-linejoin="round"/>
+          <polygon points="78,172 108,176 145,280 60,280" fill="#FFF2CE" opacity="0.2"/>
+          <!-- Reference books stack -->
+          <rect x="130" y="270" width="85" height="24" rx="2" fill="#BAA5D2" stroke="#30313B" stroke-width="2"/>
+          <rect x="135" y="250" width="75" height="22" rx="2" fill="#DFB69B" stroke="#30313B" stroke-width="2"/>
+          <rect x="140" y="232" width="65" height="20" rx="2" fill="#8CB6CE" stroke="#30313B" stroke-width="2"/>
+          <!-- Open research notes paper -->
+          <polygon points="50,330 160,320 150,420 40,430" fill="#FFFDF8" stroke="#30313B" stroke-width="2.2" stroke-linejoin="round"/>
+          <line x1="60" y1="345" x2="140" y2="338" stroke="#A99485" stroke-width="2" stroke-linecap="round"/>
+          <line x1="58" y1="365" x2="135" y2="358" stroke="#A99485" stroke-width="2" stroke-linecap="round"/>
+          <line x1="55" y1="385" x2="130" y2="378" stroke="#A99485" stroke-width="2" stroke-linecap="round"/>
+        </g>
+
+        <!-- Right Wing: International Organization / Teamwork Desk -->
+        <g id="wing-right" transform="translate(435, 340)">
+          <!-- Base shadow -->
+          <ellipse cx="120" cy="480" rx="120" ry="14" fill="#E2D6E8" opacity="0.5"/>
+          <!-- Desk plane -->
+          <polygon points="0,210 240,240 230,460 10,460" fill="#EBE0D2" stroke="#30313B" stroke-width="2.8" stroke-linejoin="round"/>
+          <polygon points="10,460 230,460 225,485 5,485" fill="#D3C3B0" stroke="#30313B" stroke-width="2.8" stroke-linejoin="round"/>
+          <!-- Flat workstation display monitor showing global connection graph -->
+          <rect x="35" y="160" width="165" height="110" rx="4" fill="#FFFDF8" stroke="#30313B" stroke-width="2.8"/>
+          <line x1="117" y1="270" x2="117" y2="305" stroke="#30313B" stroke-width="4"/>
+          <line x1="95" y1="305" x2="140" y2="305" stroke="#30313B" stroke-width="3" stroke-linecap="round"/>
+          <!-- Analytical node chart on screen -->
+          <circle cx="70" cy="205" r="5" fill="#087BC1"/>
+          <circle cx="120" cy="190" r="6" fill="#FFAA28"/>
+          <circle cx="165" cy="215" r="5" fill="#087BC1"/>
+          <circle cx="115" cy="235" r="5" fill="#568669"/>
+          <line x1="70" y1="205" x2="120" y2="190" stroke="#30313B" stroke-width="1.8"/>
+          <line x1="120" y1="190" x2="165" y2="215" stroke="#30313B" stroke-width="1.8"/>
+          <line x1="120" y1="190" x2="115" y2="235" stroke="#30313B" stroke-width="1.8"/>
+          <!-- Small potted succulent -->
+          <polygon points="190,320 210,320 206,345 194,345" fill="#DC7E5A" stroke="#30313B" stroke-width="2"/>
+          <circle cx="200" cy="315" r="10" fill="#6DAA84" stroke="#30313B" stroke-width="2"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Credential Prop: Symbolic VU Amsterdam Academic Parchment -->
+    <div id="credential-container">
+      <svg id="scroll-svg" viewBox="0 0 410 360" width="100%" height="100%">
+        <!-- Shadow beneath parchment -->
+        <ellipse cx="205" cy="335" rx="160" ry="14" fill="#30313B" opacity="0.15"/>
+        
+        <!-- The Open Parchment Sheet -->
+        <g id="parchment-sheet">
+          <!-- Main parchment body -->
+          <rect x="25" y="30" width="360" height="280" rx="6" fill="#FFFEFA" stroke="#30313B" stroke-width="3.2"/>
+          <!-- Decorative golden / blue double inner border -->
+          <rect x="37" y="42" width="336" height="256" rx="4" fill="none" stroke="#DCC28E" stroke-width="2"/>
+          <rect x="42" y="47" width="326" height="246" rx="3" fill="none" stroke="#087BC1" stroke-width="1.4" opacity="0.5"/>
+
+          <!-- Symbolic Institutional Emblem / Crest at top -->
+          <g id="crest-emblem" transform="translate(205, 95)">
+            <circle cx="0" cy="0" r="26" fill="#087BC1" stroke="#30313B" stroke-width="2.5"/>
+            <circle cx="0" cy="0" r="21" fill="none" stroke="#FFFDF8" stroke-width="1.8"/>
+            <!-- Open book and star emblem -->
+            <path d="M-10 4Q0 0 10 4V-6Q0 -9 -10 -6Z" fill="#FFFDF8" stroke="#30313B" stroke-width="1.5"/>
+            <circle cx="0" cy="-12" r="3" fill="#FFAA28"/>
+          </g>
+
+          <!-- University Name: VU AMSTERDAM -->
+          <text x="205" y="165" font-family="PilotDisplay, sans-serif" font-size="28" font-weight="900" fill="#30313B" text-anchor="middle" letter-spacing="2">VU AMSTERDAM</text>
+          
+          <!-- Symbolic academic descriptor line -->
+          <text x="205" y="195" font-family="PilotSans, sans-serif" font-size="16" font-weight="700" fill="#087BC1" text-anchor="middle" letter-spacing="3">ACADEMIC DEGREE</text>
+
+          <!-- Elegant texture lines (no actual grades or fake signatures) -->
+          <g stroke="#D1C3B2" stroke-width="2" stroke-linecap="round">
+            <line x1="75" y1="225" x2="335" y2="225"/>
+            <line x1="95" y1="242" x2="315" y2="242"/>
+            <line x1="120" y1="259" x2="290" y2="259"/>
+          </g>
+
+          <!-- Seal ribbon at bottom right -->
+          <g id="seal-stamp" transform="translate(315, 255)">
+            <polygon points="0,15 -10,38 0,32 10,38" fill="#087BC1" stroke="#30313B" stroke-width="1.8"/>
+            <circle cx="0" cy="15" r="16" fill="#DC6E38" stroke="#30313B" stroke-width="2.2"/>
+            <circle cx="0" cy="15" r="11" fill="none" stroke="#FFFDF8" stroke-width="1.5"/>
+          </g>
+        </g>
+
+        <!-- Rolled Curl Edges (for unrolling motion) -->
+        <g id="curl-left" transform="translate(25, 30)">
+          <path d="M0 0Q-18 140 0 280H15Q0 140 15 0Z" fill="#E8DEC8" stroke="#30313B" stroke-width="2.5"/>
+        </g>
+        <g id="curl-right" transform="translate(385, 30)">
+          <path d="M0 0Q18 140 0 280H-15Q0 140 -15 0Z" fill="#E8DEC8" stroke="#30313B" stroke-width="2.5"/>
+        </g>
+
+        <!-- Blue Ribbon tied across parchment (unravels at start) -->
+        <g id="blue-ribbon">
+          <path d="M20 170Q205 155 390 170L392 188Q205 173 18 188Z" fill="#087BC1" stroke="#30313B" stroke-width="2.5"/>
+          <!-- Bowknot in center -->
+          <g id="ribbon-bow" transform="translate(205, 178)">
+            <ellipse cx="-20" cy="-6" rx="18" ry="10" fill="#0988D4" stroke="#30313B" stroke-width="2"/>
+            <ellipse cx="20" cy="-6" rx="18" ry="10" fill="#0988D4" stroke="#30313B" stroke-width="2"/>
+            <circle cx="0" cy="-6" r="8" fill="#055B8F" stroke="#30313B" stroke-width="2"/>
+            <path d="M-6 0L-15 35L0 28L15 35L6 0Z" fill="#087BC1" stroke="#30313B" stroke-width="2"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Anonymous Reader Hand (holding & reviewing credential) -->
+    <div id="hand-layer">
+      <svg viewBox="0 0 720 1280" width="100%" height="100%">
+        <!-- Static Anchor Group at corner of parchment (450, 680) -->
+        <g id="reader-hand-anchor" transform="translate(450, 680)">
+          <g id="reader-hand-motion">
+            <!-- Sleeve coming up from bottom-right -->
+            <path d="M110 180 L200 250 L255 190 L160 125 Z" fill="#3A3644" stroke="#30313B" stroke-width="3.2" stroke-linejoin="round"/>
+            <!-- White shirt cuff -->
+            <polygon points="104,183 158,126 169,137 116,194" fill="#FFFFFF" stroke="#30313B" stroke-width="2.5" stroke-linejoin="round"/>
+            
+            <!-- Fingers curled BEHIND parchment edge (supporting from underneath) -->
+            <!-- Middle finger behind -->
+            <path d="M82 72 Q98 74 94 96 Q84 100 75 88 Z" fill="#E5942C" stroke="#30313B" stroke-width="2.6"/>
+            <!-- Index finger behind edge -->
+            <path d="M88 56 Q102 58 100 78 Q90 80 84 68 Z" fill="#E5942C" stroke="#30313B" stroke-width="2.6"/>
+            
+            <!-- Palm & thumb in FRONT of parchment (gently resting on face) -->
+            <!-- Main Palm body -->
+            <path d="M106 175 Q80 142 85 110 Q90 85 110 82 Q136 85 152 118 Q158 132 116 186 Z" fill="#FFAC3C" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+            
+            <!-- Thumb curving over front face of paper (holding corner) -->
+            <path d="M88 112 Q74 92 60 70 Q52 50 64 42 Q76 38 82 56 Q88 74 94 95 Z" fill="#FFAC3C" stroke="#30313B" stroke-width="3" stroke-linejoin="round"/>
+            <!-- Thumb knuckle / nail subtle line -->
+            <path d="M62 55 Q66 48 72 50" fill="none" stroke="#E5942C" stroke-width="2" stroke-linecap="round"/>
+            <!-- Gentle palm crease -->
+            <path d="M96 108 Q108 118 120 116" fill="none" stroke="#E5942C" stroke-width="2" stroke-linecap="round"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Headline Strip: GIÁ TRỊ HỌC THUẬT -->
+    <div id="headline" class="strip">GIÁ TRỊ HỌC THUẬT</div>
+  </div>
+</div>
+
+<script>
+(()=>{
+  const tl = gsap.timeline({ paused: true });
+
+  // Camera subtle push
+  tl.fromTo('#world',
+    { scale: 1.05, y: 12 },
+    { scale: 1.0, y: 0, duration: 2.2, ease: 'power2.out' },
+    0
+  );
+
+  // Initial states
+  tl.set('#headline', { opacity: 0, scale: 0.85, y: -25 }, 0);
+  tl.set('#reader-hand-motion', { opacity: 0, y: 70, x: 45 }, 0);
+  tl.set('#parchment-sheet', { scaleX: 0.18, transformOrigin: '205px 170px' }, 0);
+  tl.set('#curl-left', { x: 165 }, 0);
+  tl.set('#curl-right', { x: -165 }, 0);
+
+  // 0.00 - 1.00s: "Tấm bằng từ VU Amsterdam"
+  // Ribbon unties and dissolves
+  tl.to('#ribbon-bow', {
+    scale: 1.3,
+    opacity: 0,
+    duration: 0.35,
+    ease: 'power2.in'
+  }, 0.15);
+
+  tl.to('#blue-ribbon', {
+    scaleY: 0,
+    opacity: 0,
+    duration: 0.45,
+    ease: 'power2.in'
+  }, 0.25);
+
+  // Parchment unrolls horizontally!
+  tl.to('#parchment-sheet', {
+    scaleX: 1.0,
+    duration: 0.75,
+    ease: 'power2.out'
+  }, 0.35);
+
+  tl.to('#curl-left', {
+    x: 0,
+    opacity: 0.3,
+    duration: 0.75,
+    ease: 'power2.out'
+  }, 0.35);
+
+  tl.to('#curl-right', {
+    x: 0,
+    opacity: 0.3,
+    duration: 0.75,
+    ease: 'power2.out'
+  }, 0.35);
+
+  // 1.00 - 2.60s: "được các doanh nghiệp và tổ chức quốc tế"
+  // Two workspaces wings open and breathe into perspective
+  tl.fromTo('#wing-left',
+    { x: -30, opacity: 0.6 },
+    { x: 0, opacity: 1.0, duration: 1.1, ease: 'power2.out' },
+    0.8
+  );
+
+  tl.fromTo('#wing-right',
+    { x: 30, opacity: 0.6 },
+    { x: 0, opacity: 1.0, duration: 1.1, ease: 'power2.out' },
+    0.8
+  );
+
+  // 2.0s: Headline "GIÁ TRỊ HỌC THUẬT" drops down
+  tl.to('#headline', {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    duration: 0.45,
+    ease: 'back.out(1.5)'
+  }, 1.95);
+
+  // 2.60 - 3.70s: "đánh giá cao"
+  // Professional reader hand glides in to hold / review the parchment
+  tl.to('#reader-hand-motion', {
+    opacity: 1,
+    y: 0,
+    x: 0,
+    duration: 0.65,
+    ease: 'power2.out'
+  }, 2.5);
+
+  // 3.70 - 4.267s: Hold steady at conclusion, blue ribbon leads to scene 08
+  tl.to({ hold: 0 }, { hold: 1, duration: 4.266666666666667, ease: 'none' }, 0);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines['scene-07'] = tl;
+})();
+</script>
+</body>
+</html>

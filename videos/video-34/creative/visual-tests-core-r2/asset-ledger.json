@@ -1,0 +1,82 @@
+{
+  "revision": "core-visual-r2",
+  "assets": [
+    {
+      "path": "S03-A.svg",
+      "type": "original_vector_art",
+      "source": "Original Codex-authored SVG construction in build_frames.py; no reference pixels or old SVG topology",
+      "sha256": "6104f84af9be052590d86f1f57081968d2efbf69c527481aef65b4d832569aa5",
+      "rights": "Original project illustration"
+    },
+    {
+      "path": "S03-B.svg",
+      "type": "original_vector_art",
+      "source": "Original Codex-authored SVG construction in build_frames.py; no reference pixels or old SVG topology",
+      "sha256": "63c71ac672873317e65e2d77463c8684c9bf498b14d78c5274e2cf67d656f276",
+      "rights": "Original project illustration"
+    },
+    {
+      "path": "S08-A.svg",
+      "type": "original_vector_art",
+      "source": "Original Codex-authored SVG construction in build_frames.py; no reference pixels or old SVG topology",
+      "sha256": "51e2b8a1c3d79bb1e455fb1b1dcf544e3018f5e81ce91f421e68f8528be6e32a",
+      "rights": "Original project illustration"
+    },
+    {
+      "path": "S08-B.svg",
+      "type": "original_vector_art",
+      "source": "Original Codex-authored SVG construction in build_frames.py; no reference pixels or old SVG topology",
+      "sha256": "dfc964d5c073765e20a2b5fe08eb227ac5c6ec1d27df90d32f02075b8bbe6f4c",
+      "rights": "Original project illustration"
+    },
+    {
+      "path": "S03-A.html",
+      "type": "original_static_composition",
+      "source": "Original Codex-authored SVG construction in build_frames.py; no reference pixels or old SVG topology",
+      "sha256": "45a610b87c85566d0d8c3b564edeeb95940c92a8104f82b1e5152b448c9b8425",
+      "rights": "Original project illustration"
+    },
+    {
+      "path": "S03-B.html",
+      "type": "original_static_composition",
+      "source": "Original Codex-authored SVG construction in build_frames.py; no reference pixels or old SVG topology",
+      "sha256": "5b0ec50b47ab6af18bbaf6866d8c972222c2780710cb3f9627088711606c3b7b",
+      "rights": "Original project illustration"
+    },
+    {
+      "path": "S08-A.html",
+      "type": "original_static_composition",
+      "source": "Original Codex-authored SVG construction in build_frames.py; no reference pixels or old SVG topology",
+      "sha256": "7ee5376dd80a75d1516d31d144e7457699be9d04044e335156734d325a6539eb",
+      "rights": "Original project illustration"
+    },
+    {
+      "path": "S08-B.html",
+      "type": "original_static_composition",
+      "source": "Original Codex-authored SVG construction in build_frames.py; no reference pixels or old SVG topology",
+      "sha256": "f03bb023fb85c4f72d49992cf8ce3f5197b9ab88eec8984f4a327fa88c266b54",
+      "rights": "Original project illustration"
+    },
+    {
+      "path": "assets\\display.ttf",
+      "type": "existing_local_font",
+      "source": "Existing VIDEO-34 Typography V2 / local GSAP; copied without alteration",
+      "sha256": "eaad201da94cb323401fdb8cc760650803ddf8fd704cb9fa56317e6c69bc6fd6",
+      "rights": "Existing license/provenance retained; local system font redistribution rights not independently audited"
+    },
+    {
+      "path": "assets\\editorial-italic.ttf",
+      "type": "existing_local_font",
+      "source": "Existing VIDEO-34 Typography V2 / local GSAP; copied without alteration",
+      "sha256": "2314a03c53506fa79525bc479ea4be9c036d1ebd86a1ffb5837ca5b43ff51f07",
+      "rights": "Existing license/provenance retained; local system font redistribution rights not independently audited"
+    },
+    {
+      "path": "assets\\gsap.min.js",
+      "type": "existing_local_runtime",
+      "source": "Existing VIDEO-34 Typography V2 / local GSAP; copied without alteration",
+      "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "rights": "Existing license/provenance retained; local system font redistribution rights not independently audited"
+    }
+  ]
+}

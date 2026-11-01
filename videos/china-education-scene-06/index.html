@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>Giao thông Thông minh — scene 06</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:SceneSans;src:url('assets/scene-sans-bold.ttf') format('truetype');font-weight:700;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;background:#fff}#root{position:relative;width:100%;height:100%;overflow:hidden;color:#0F172A;font-family:SceneSans,sans-serif}
+.clip{position:absolute;inset:0}.ground{background:#fff}.art{width:100%;height:100%;display:block}
+.label{position:absolute;margin:0;font-size:32px;font-weight:700;line-height:1.15;letter-spacing:-.6px;white-space:nowrap}
+#label-title{left:60px;top:160px;font-size:42px;color:#0F172A}
+#label-sub{left:60px;top:218px;font-size:28px;color:#FF6B2B}
+#label-badge{left:410px;top:950px;font-size:24px;color:#34837A;background:#EDF8F5;padding:6px 16px;border-radius:20px;border:2px solid #A5D9D0}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-s06-root" id="root" data-composition-id="scene06" data-width="720" data-height="1280" data-duration="5.158" data-start="0">
+ <div data-hf-id="hf-s06-ground" id="scene06-ground" class="clip ground" data-start="0" data-duration="5.158" data-track-index="0"></div>
+ <svg data-hf-id="hf-s06-art" id="scene06-art" class="art clip" data-start="0" data-duration="5.158" data-track-index="1" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+   <linearGradient id="iso-top" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E2E8F0"/></linearGradient>
+   <linearGradient id="iso-left" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#94A3B8"/><stop offset="1" stop-color="#64748B"/></linearGradient>
+   <linearGradient id="iso-right" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#CBD5E1"/><stop offset="1" stop-color="#94A3B8"/></linearGradient>
+   <radialGradient id="hub-glow"><stop stop-color="#38BDF8" stop-opacity=".7"/><stop offset="1" stop-color="#38BDF8" stop-opacity="0"/></radialGradient>
+  </defs>
+
+  <!-- Ambient background glow -->
+  <circle cx="360" cy="690" r="300" fill="#F1F5F9"/>
+
+  <!-- Isometric Ground Grid & Transport Network -->
+  <g id="iso-grid" stroke="#E2E8F0" stroke-width="2" fill="none">
+   <!-- Iso floor diamond -->
+   <polygon points="360,440 650,610 360,780 70,610" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="3"/>
+   <line x1="140" y1="570" x2="430" y2="740"/>
+   <line x1="210" y1="530" x2="500" y2="700"/>
+   <line x1="280" y1="490" x2="570" y2="660"/>
+   <line x1="210" y1="690" x2="500" y2="520"/>
+   <line x1="280" y1="730" x2="570" y2="560"/>
+  </g>
+
+  <!-- S-Curve Transport Track -->
+  <path id="transport-path" d="M220,650 C300,710 310,570 420,640 C480,680 520,610 560,540" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="transport-track-glow" d="M220,650 C300,710 310,570 420,640 C480,680 520,610 560,540" fill="none" stroke="#FF6B2B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Hub Nodes -->
+  <g id="hub-start" transform="translate(220, 650)">
+   <ellipse cx="0" cy="0" rx="28" ry="15" fill="url(#hub-glow)"/>
+   <circle cx="0" cy="-4" r="8" fill="#0284C7"/><circle cx="0" cy="-4" r="4" fill="#fff"/>
+  </g>
+  <g id="hub-mid" transform="translate(420, 640)">
+   <ellipse cx="0" cy="0" rx="26" ry="14" fill="url(#hub-glow)"/>
+   <circle cx="0" cy="-4" r="8" fill="#38BDF8"/><circle cx="0" cy="-4" r="3" fill="#fff"/>
+  </g>
+  <g id="hub-end" transform="translate(560, 540)">
+   <ellipse cx="0" cy="0" rx="32" ry="18" fill="url(#hub-glow)"/>
+   <circle cx="0" cy="-4" r="10" fill="#FF6B2B"/><circle cx="0" cy="-4" r="4" fill="#fff"/>
+  </g>
+
+  <!-- Isometric Autonomous AGV Vehicle with Package -->
+  <g id="agv-vehicle">
+   <ellipse id="agv-shadow" cx="0" cy="8" rx="34" ry="16" fill="#64748B" opacity="0.4"/>
+   <!-- AGV Chassis (Isometric Prism) -->
+   <!-- Top Face -->
+   <polygon points="0,-18 28,-2 0,14 -28,-2" fill="#FF773B"/>
+   <!-- Left Face -->
+   <polygon points="-28,-2 0,14 0,28 -28,12" fill="#D94B20"/>
+   <!-- Right Face -->
+   <polygon points="0,14 28,-2 28,12 0,28" fill="#E55319"/>
+   
+   <!-- Cargo Package on top of AGV -->
+   <g id="cargo-box" transform="translate(0, -20)">
+    <polygon points="0,-14 18,-4 0,6 -18,-4" fill="#EDF8F5"/>
+    <polygon points="-18,-4 0,6 0,16 -18,6" fill="#A5D9D0"/>
+    <polygon points="0,6 18,-4 18,6 0,16" fill="#6B9C97"/>
+    <!-- Sensor LED -->
+    <circle cx="0" cy="-4" r="3" fill="#38BDF8"/>
+   </g>
+  </g>
+
+  <!-- Student monitoring on the left edge (Raised cleanly above footer, distinct from track) -->
+  <g id="student-mini" transform="translate(-10, 390) scale(0.68)">
+   <!-- Torso & Hoodie -->
+   <path d="M185 636Q162 645 157 678L163 820Q212 844 276 820L288 682Q280 646 252 636Z" fill="#FF773B"/>
+   <!-- Arms holding tablet -->
+   <path d="M165 670 Q185 730 230 720" fill="none" stroke="#E55319" stroke-width="18" stroke-linecap="round"/>
+   <path d="M280 670 Q290 730 270 725" fill="none" stroke="#E55319" stroke-width="18" stroke-linecap="round"/>
+   <!-- Head & Hair -->
+   <ellipse cx="218" cy="550" rx="60" ry="72" fill="#172C42"/>
+   <path d="M174 529Q177 497 211 493Q248 489 263 519L266 571Q259 609 228 618Q189 615 177 576Z" fill="#F5BF99"/>
+   <g fill="#172C42"><ellipse cx="230" cy="555" rx="4.5" ry="7"/><ellipse cx="255" cy="556" rx="4" ry="6.5"/></g>
+   <!-- Tablet in hand -->
+   <g id="student-tablet">
+    <rect x="215" y="685" width="85" height="62" rx="6" fill="#0F172A" stroke="#38BDF8" stroke-width="2.5"/>
+    <rect x="221" y="691" width="73" height="50" rx="3" fill="#0284C7" opacity="0.85"/>
+    <!-- Tablet screen UI lines -->
+    <line x1="226" y1="700" x2="250" y2="700" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <line x1="226" y1="708" x2="275" y2="708" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="280" cy="728" r="4" fill="#FF6B2B"/>
+    <!-- Hands gripping tablet -->
+    <circle cx="218" cy="718" r="9" fill="#F5BF99"/>
+    <circle cx="298" cy="718" r="9" fill="#F5BF99"/>
+   </g>
+  </g>
+ </svg>
+
+ <h1 class="label" id="label-title">GIAO THÔNG THÔNG MINH</h1>
+ <p class="label" id="label-sub">Hệ thống Điều phối Tự hành</p>
+ <div class="label" id="label-badge">TỰ HÀNH & KẾT NỐI</div>
+ <audio data-hf-id="hf-s06-voice" id="scene06-voice" src="assets/audio.wav" data-start="0" data-duration="5.158" data-track-index="2" data-volume="1"></audio>
+</div>
+
+<script>
+const tl = gsap.timeline({paused:true});
+const path = document.getElementById('transport-path'), pathLen = path.getTotalLength();
+const progressObj = {u: 0};
+
+gsap.set('#iso-grid', {opacity: 0, scale: 0.9, transformOrigin: '50% 50%'});
+gsap.set(['#transport-path', '#transport-track-glow'], {strokeDasharray: pathLen, strokeDashoffset: pathLen});
+gsap.set(['#label-title', '#label-sub', '#label-badge'], {opacity: 0, x: -20});
+gsap.set('#student-mini', {opacity: 0, y: 25});
+gsap.set('#agv-vehicle', {opacity: 0});
+
+// Initial placement of AGV at start point
+const startPt = path.getPointAtLength(0);
+gsap.set('#agv-vehicle', {x: startPt.x, y: startPt.y});
+
+// Animation: 0 -> 5.158s
+tl.to('#iso-grid', {opacity: 1, scale: 1, duration: 0.8, ease: 'power2.out'}, 0.1)
+  .to(['#label-title', '#label-sub'], {opacity: 1, x: 0, duration: 0.6, stagger: 0.15, ease: 'power2.out'}, 0.25)
+  .to('#student-mini', {opacity: 1, y: 0, duration: 0.6, ease: 'back.out(1.2)'}, 0.3)
+  .to(['#transport-path', '#transport-track-glow'], {strokeDashoffset: 0, duration: 1.2, ease: 'power1.inOut'}, 0.6)
+  .to('#agv-vehicle', {opacity: 1, duration: 0.4}, 1.2)
+  // Move AGV along S-curve
+  .to(progressObj, {
+    u: 1,
+    duration: 2.8,
+    ease: 'power1.inOut',
+    onUpdate: () => {
+      const pt = path.getPointAtLength(progressObj.u * pathLen);
+      gsap.set('#agv-vehicle', {x: pt.x, y: pt.y});
+    }
+  }, 1.6)
+  .to('#student-tablet circle', {fill: '#38BDF8', duration: 0.25, yoyo: true, repeat: 5}, 1.6)
+  .to('#cargo-box circle', {fill: '#FF6B2B', duration: 0.2, yoyo: true, repeat: 4}, 1.8)
+  .to('#label-badge', {opacity: 1, x: 0, duration: 0.5, ease: 'back.out(1.5)'}, 3.8)
+  .to('#hub-end circle:first-child', {scale: 1.4, transformOrigin: '50% 50%', duration: 0.4, yoyo: true, repeat: 1}, 4.4);
+
+window.__timelines = window.__timelines || {};
+window.__timelines['scene06'] = tl;
+</script>
+</body>
+</html>

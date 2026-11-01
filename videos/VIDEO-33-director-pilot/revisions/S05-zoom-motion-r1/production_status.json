@@ -1,0 +1,47 @@
+{
+  "phase": "user_approved_motion",
+  "motion_approved": true,
+  "master_modified": false,
+  "voice_modified": false,
+  "source_pcm_bit_exact": true,
+  "reference_frame_manifest": [
+    {
+      "path": "01-hold\\frames\\frame-00-at-0.5s.png",
+      "sha256": "fe81535f4a56ca65fb9876c089890fe321415c6376109da2b6fd716312ca13be"
+    },
+    {
+      "path": "02-contact\\frames\\frame-00-at-0.5s.png",
+      "sha256": "cdd501439f0ab89da48c7456566520471a8e3387356ad50c25b150b5b9a81807"
+    },
+    {
+      "path": "03-release\\frames\\frame-00-at-0.5s.png",
+      "sha256": "0ea45818f85e7a86372f4ca9e33ccdc505a94fa8c279f70faac5d61ca82fcb0a"
+    },
+    {
+      "path": "04-house\\frames\\frame-00-at-0.5s.png",
+      "sha256": "2aba1d7babe2def4b41c9202bdcebef6bbba82eb4bae95aea64d77beac132b82"
+    }
+  ],
+  "video": {
+    "video": "renders/pilot.mp4",
+    "sha256": "c53f14fdaff26500bac4bcd529fc6aee614a4126c3c87c8b35e72a12365f6a7b",
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "frames": 172,
+    "video_duration": 5.733333,
+    "source_duration": 5.706333333333333,
+    "source_samples": 136952,
+    "source_pcm_bit_exact": true,
+    "decoded_aac_correlation": 0.9999426467007627,
+    "decoded_rms": 0.14217406511306763,
+    "qa_check_ok": true,
+    "reference_frames_unchanged": true,
+    "previous_approved_pilots_unchanged": true,
+    "previous_master_and_clean_unchanged": true,
+    "browser_playback": "Observed final pilot ended at5.73s",
+    "motion_approved": true
+  },
+  "review_entry": "REVIEW.html",
+  "approval_record": "APPROVAL.json"
+}

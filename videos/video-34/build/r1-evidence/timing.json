@@ -1,0 +1,212 @@
+[
+  {
+    "id": "walk",
+    "text": "Đi bộ",
+    "at": 0.333917,
+    "out": 1.91,
+    "kind": "mask",
+    "global": 10.5,
+    "word_ids": [
+      46,
+      47
+    ],
+    "effect": "Masked upward reveal + yellow path rule",
+    "scene": "S03",
+    "first_eligible_picture_frame_time": 0.36666666666666664,
+    "evidence": {
+      "before": {
+        "path": "build/r1-evidence/S03-walk-before.png",
+        "local_time": 0.233917
+      },
+      "during": {
+        "path": "build/r1-evidence/S03-walk-during.png",
+        "local_time": 0.533917
+      },
+      "settled": {
+        "path": "build/r1-evidence/S03-walk-settled.png",
+        "local_time": 0.983917
+      }
+    },
+    "verified_in_actual_mp4": "screenshots extracted; visual inspection recorded in revision-r1.md"
+  },
+  {
+    "id": "run",
+    "text": "Chạy bộ",
+    "at": 2.233917,
+    "out": 3.15,
+    "kind": "track",
+    "global": 12.4,
+    "word_ids": [
+      54,
+      55
+    ],
+    "effect": "Horizontal word stagger + coast path draw",
+    "scene": "S03",
+    "first_eligible_picture_frame_time": 2.2666666666666666,
+    "evidence": {
+      "before": {
+        "path": "build/r1-evidence/S03-run-before.png",
+        "local_time": 2.133917
+      },
+      "during": {
+        "path": "build/r1-evidence/S03-run-during.png",
+        "local_time": 2.433917
+      },
+      "settled": {
+        "path": "build/r1-evidence/S03-run-settled.png",
+        "local_time": 2.883917
+      }
+    },
+    "verified_in_actual_mp4": "screenshots extracted; visual inspection recorded in revision-r1.md"
+  },
+  {
+    "id": "cafe",
+    "text": "Cà phê",
+    "at": 3.513917,
+    "out": 4.6,
+    "kind": "mask",
+    "global": 13.68,
+    "word_ids": [
+      60,
+      61
+    ],
+    "effect": "Masked reveal + cup action",
+    "scene": "S03",
+    "first_eligible_picture_frame_time": 3.533333333333333,
+    "evidence": {
+      "before": {
+        "path": "build/r1-evidence/S03-cafe-before.png",
+        "local_time": 3.413917
+      },
+      "during": {
+        "path": "build/r1-evidence/S03-cafe-during.png",
+        "local_time": 3.7139170000000004
+      },
+      "settled": {
+        "path": "build/r1-evidence/S03-cafe-settled.png",
+        "local_time": 4.1639170000000005
+      }
+    },
+    "verified_in_actual_mp4": "screenshots extracted; visual inspection recorded in revision-r1.md"
+  },
+  {
+    "id": "family",
+    "text": "Gia đình",
+    "at": 7.373917,
+    "out": 0,
+    "kind": "settle",
+    "global": 17.54,
+    "word_ids": [
+      77,
+      78
+    ],
+    "effect": "Scale settle + connection arc / close reframe",
+    "scene": "S03",
+    "first_eligible_picture_frame_time": 7.4,
+    "evidence": {
+      "before": {
+        "path": "build/r1-evidence/S03-family-before.png",
+        "local_time": 7.273917
+      },
+      "during": {
+        "path": "build/r1-evidence/S03-family-during.png",
+        "local_time": 7.573917
+      },
+      "settled": {
+        "path": "build/r1-evidence/S03-family-settled.png",
+        "local_time": 8.023916999999999
+      }
+    },
+    "verified_in_actual_mp4": "screenshots extracted; visual inspection recorded in revision-r1.md"
+  },
+  {
+    "id": "slow",
+    "text": "Sống chậm",
+    "at": 1.01,
+    "out": 2.35,
+    "kind": "mask",
+    "global": 41.28,
+    "word_ids": [
+      172,
+      173
+    ],
+    "effect": "Masked two-word reveal; underline resolves on cân bằng (42.14)",
+    "scene": "S08",
+    "first_eligible_picture_frame_time": 1.0333333333333334,
+    "evidence": {
+      "before": {
+        "path": "build/r1-evidence/S08-slow-before.png",
+        "local_time": 0.91
+      },
+      "during": {
+        "path": "build/r1-evidence/S08-slow-during.png",
+        "local_time": 1.21
+      },
+      "settled": {
+        "path": "build/r1-evidence/S08-slow-settled.png",
+        "local_time": 1.6600000000000001
+      }
+    },
+    "verified_in_actual_mp4": "screenshots extracted; visual inspection recorded in revision-r1.md"
+  },
+  {
+    "id": "time",
+    "text": "Thời gian",
+    "at": 3.03,
+    "out": 0,
+    "kind": "track",
+    "global": 43.3,
+    "word_ids": [
+      180,
+      181
+    ],
+    "effect": "Word stagger + terrace light / attention handoff",
+    "scene": "S08",
+    "first_eligible_picture_frame_time": 3.033333333333333,
+    "evidence": {
+      "before": {
+        "path": "build/r1-evidence/S08-time-before.png",
+        "local_time": 2.9299999999999997
+      },
+      "during": {
+        "path": "build/r1-evidence/S08-time-during.png",
+        "local_time": 3.23
+      },
+      "settled": {
+        "path": "build/r1-evidence/S08-time-settled.png",
+        "local_time": 3.6799999999999997
+      }
+    },
+    "verified_in_actual_mp4": "screenshots extracted; visual inspection recorded in revision-r1.md"
+  },
+  {
+    "id": "family",
+    "text": "Gia đình",
+    "at": 4.73,
+    "out": 0,
+    "kind": "settle",
+    "global": 45.0,
+    "word_ids": [
+      186,
+      187
+    ],
+    "effect": "Second-level settle + contact arc and smile",
+    "scene": "S08",
+    "first_eligible_picture_frame_time": 4.733333333333333,
+    "evidence": {
+      "before": {
+        "path": "build/r1-evidence/S08-family-before.png",
+        "local_time": 4.630000000000001
+      },
+      "during": {
+        "path": "build/r1-evidence/S08-family-during.png",
+        "local_time": 4.930000000000001
+      },
+      "settled": {
+        "path": "build/r1-evidence/S08-family-settled.png",
+        "local_time": 5.380000000000001
+      }
+    },
+    "verified_in_actual_mp4": "screenshots extracted; visual inspection recorded in revision-r1.md"
+  }
+]

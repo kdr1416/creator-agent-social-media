@@ -1,0 +1,56 @@
+[
+  {
+    "id": "S03-01",
+    "scene": "S03",
+    "local_time": 1.2,
+    "label": "Đi bộ — chữ đặt trên mặt lối dạo, tiếp nối hướng bước chân",
+    "status": "STATIC STUDY — NOT IMPLEMENTED IN PILOT",
+    "html": "S03-01.html",
+    "png": "S03-01.png"
+  },
+  {
+    "id": "S03-02",
+    "scene": "S03",
+    "local_time": 4.2,
+    "label": "Cà phê ngoài trời — chữ nghiêng gắn vào mái hiên café",
+    "status": "STATIC STUDY — NOT IMPLEMENTED IN PILOT",
+    "html": "S03-02.html",
+    "png": "S03-02.png"
+  },
+  {
+    "id": "S03-03",
+    "scene": "S03",
+    "local_time": 8.1,
+    "label": "Gia đình — chuyển sang nét chữ mềm, cạnh nhóm nhân vật",
+    "status": "STATIC STUDY — NOT IMPLEMENTED IN PILOT",
+    "html": "S03-03.html",
+    "png": "S03-03.png"
+  },
+  {
+    "id": "S08-01",
+    "scene": "S08",
+    "local_time": 2.5,
+    "label": "Công việc — chữ theo mảng tường phía bàn làm việc",
+    "status": "STATIC STUDY — NOT IMPLEMENTED IN PILOT",
+    "html": "S08-01.html",
+    "png": "S08-01.png"
+  },
+  {
+    "id": "S08-02",
+    "scene": "S08",
+    "local_time": 3.65,
+    "label": "Thời gian — trọng tâm chữ chuyển sang không gian ngoài trời",
+    "status": "STATIC STUDY — NOT IMPLEMENTED IN PILOT",
+    "html": "S08-02.html",
+    "png": "S08-02.png"
+  },
+  {
+    "id": "S08-03",
+    "scene": "S08",
+    "local_time": 5.3,
+    "label": "Gia đình — chữ kết ở vùng biển, để trống gương mặt và bàn tay",
+    "status": "STATIC STUDY — NOT IMPLEMENTED IN PILOT",
+    "html": "S08-03.html",
+    "png": "S08-03.png"
+  }
+]

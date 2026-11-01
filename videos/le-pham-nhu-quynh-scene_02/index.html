@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=720,height=1280">
+<title>Chúc mừng Như Quỳnh — scene 02 (HF Kurzgesagt)</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:SceneSans;src:url('assets/scene-sans-bold.ttf') format('truetype');font-weight:700;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;background:#FAF8F5}#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:SceneSans,sans-serif;color:#0F172A}
+.clip{position:absolute;inset:0}
+.art{display:block;width:100%;height:100%}
+.top-title{position:absolute;top:180px;left:0;width:100%;text-align:center;pointer-events:none}
+.h-main{margin:6px 0 0 0;font-size:42px;line-height:1.2;font-weight:700;letter-spacing:-.6px;color:#0F172A}
+.h-sub{margin:0;font-size:22px;font-weight:700;letter-spacing:1.5px;color:#FF6B2B;text-transform:uppercase}
+.stage-label{position:absolute;top:820px;left:0;width:100%;text-align:center;margin:0;font-size:32px;font-weight:700;color:#0F172A}
+.stage-sublabel{position:absolute;top:865px;left:0;width:100%;text-align:center;margin:0;font-size:22px;font-weight:700;color:#3D7B80;text-transform:uppercase;letter-spacing:1px}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-s02-root" id="root" data-composition-id="scene02" data-width="720" data-height="1280" data-duration="5.226" data-start="0">
+ <div data-hf-id="hf-s02-bg" id="scene02-bg" class="clip" data-start="0" data-duration="5.226" data-track-index="0" style="background:#FAF8F5"></div>
+
+ <div data-hf-id="hf-s02-header" id="header" class="top-title">
+  <div data-hf-id="hf-s02-sub" id="h-sub" class="h-sub">XIN CHÚC MỪNG</div>
+  <h1 data-hf-id="hf-s02-main" id="h-main" class="h-main">Lê Phạm Như Quỳnh</h1>
+ </div>
+
+ <h2 data-hf-id="hf-s02-lbl" id="lbl-main" class="stage-label">Chính thức nhận 3 Thư mời nhập học</h2>
+ <div data-hf-id="hf-s02-sublbl" id="lbl-sub" class="stage-sublabel">Đại học uy tín tại Hà Lan & Úc</div>
+
+ <svg data-hf-id="hf-s02-art" id="scene02-art" class="art clip" data-start="0" data-duration="5.226" data-track-index="1" viewBox="0 0 720 1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+   <radialGradient id="halo-s02"><stop stop-color="#FFEADF" stop-opacity=".8"/><stop offset="1" stop-color="#FFEADF" stop-opacity="0"/></radialGradient>
+   <filter id="shadow-s02" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.08"/>
+   </filter>
+  </defs>
+
+  <ellipse cx="360" cy="560" rx="270" ry="240" fill="url(#halo-s02)"/>
+
+  <!-- Center Floor Shadow -->
+  <ellipse cx="360" cy="770" rx="240" ry="25" fill="#E8EEF2"/>
+
+  <!-- Confetti Celebration Particles -->
+  <g id="confetti-group">
+   <rect x="220" y="320" width="8" height="16" rx="2" fill="#FF6B2B" transform="rotate(25 220 320)"/>
+   <rect x="500" y="330" width="10" height="14" rx="2" fill="#3D7B80" transform="rotate(-30 500 330)"/>
+   <circle cx="260" cy="380" r="5" fill="#FFB054"/>
+   <circle cx="460" cy="370" r="6" fill="#FF6B2B"/>
+   <rect x="180" y="420" width="6" height="14" rx="2" fill="#3D7B80" transform="rotate(40 180 420)"/>
+   <rect x="540" y="410" width="7" height="15" rx="2" fill="#FFB054" transform="rotate(-15 540 410)"/>
+  </g>
+
+  <!-- Mother Figure (Warm, Supportive Presence on Right) -->
+  <g id="mother-rig" transform="translate(480, 500)">
+   <!-- Torso / Dress -->
+   <path d="M-25 150 C-25 100 25 100 25 150 L35 240 H-35 Z" fill="#64748B"/>
+   <!-- Head & Hair -->
+   <ellipse cx="0" cy="70" rx="22" ry="26" fill="#FAD1B5"/>
+   <path d="M-24 60 C-24 35 24 35 24 60 C24 75 18 95 14 95 C10 80 -10 80 -14 95 C-18 95 -24 75 -24 60 Z" fill="#1E293B"/>
+   <!-- Warm Smile -->
+   <path d="M-6 78 Q0 84 6 78" fill="none" stroke="#B45309" stroke-width="2" stroke-linecap="round"/>
+   <!-- Supportive Arm touching student's shoulder -->
+   <path d="M-20 115 Q-50 135 -65 145" fill="none" stroke="#64748B" stroke-width="14" stroke-linecap="round"/>
+   <circle cx="-65" cy="145" r="9" fill="#FAD1B5"/>
+  </g>
+
+  <!-- Student Rig (Nữ sinh Như Quỳnh Center Left) -->
+  <g id="student-rig" transform="translate(330, 480)">
+   <!-- Legs -->
+   <rect x="-24" y="220" width="16" height="60" rx="6" fill="#1E293B"/>
+   <rect x="8" y="220" width="16" height="60" rx="6" fill="#1E293B"/>
+   <!-- Shoes -->
+   <ellipse cx="-16" cy="280" rx="14" ry="6" fill="#0F172A"/>
+   <ellipse cx="16" cy="280" rx="14" ry="6" fill="#0F172A"/>
+
+   <!-- Far Arm (holding folder edge) -->
+   <path d="M-30 95 Q-45 130 -30 155" fill="none" stroke="#E25822" stroke-width="16" stroke-linecap="round"/>
+   <circle cx="-30" cy="155" r="9" fill="#FAD1B5"/>
+
+   <!-- Torso in Signature Orange Jacket -->
+   <path d="M-35 85 C-35 80 35 80 35 85 L28 220 H-28 Z" fill="#FF6B2B"/>
+   <polygon points="0,85 -10,130 0,160 10,130" fill="#FFFFFF"/>
+   <!-- Collar -->
+   <path d="M-18 85 L0 115 L18 85" fill="none" stroke="#D9480F" stroke-width="3"/>
+
+   <!-- Head & Neck -->
+   <rect x="-6" y="55" width="12" height="20" fill="#FAD1B5"/>
+   <ellipse cx="0" cy="45" rx="24" ry="28" fill="#FAD1B5"/>
+   <!-- Hair (Ponytail/Medium Dark) -->
+   <path d="M-26 35 C-26 10 26 10 26 35 C26 55 20 65 16 65 C12 50 -12 50 -16 65 C-20 65 -26 55 -26 35 Z" fill="#0F172A"/>
+   <path d="M18 35 C35 30 45 45 35 65 C30 55 25 45 18 35 Z" fill="#0F172A"/>
+   <!-- Gentle Happy Smile & Eyes -->
+   <ellipse cx="-8" cy="42" rx="2.5" ry="3" fill="#0F172A"/>
+   <ellipse cx="8" cy="42" rx="2.5" ry="3" fill="#0F172A"/>
+   <path d="M-6 54 Q0 60 6 54" fill="none" stroke="#B45309" stroke-width="2" stroke-linecap="round"/>
+
+   <!-- Near Arm receiving envelopes -->
+   <path id="student-near-arm" d="M25 95 Q-10 135 -40 135" fill="none" stroke="#FF6B2B" stroke-width="16" stroke-linecap="round"/>
+   <circle id="student-near-hand" cx="-40" cy="135" r="10" fill="#FAD1B5"/>
+  </g>
+
+  <!-- Counselor Hand presenting the 3 Offers from Left -->
+  <g id="counselor-hand" transform="translate(100, 580)">
+   <!-- Suit Sleeve -->
+   <rect x="-80" y="10" width="90" height="26" rx="6" fill="#243A50"/>
+   <circle cx="15" cy="23" r="12" fill="#FAD1B5"/>
+  </g>
+
+  <!-- 3 Stylized Offer Envelopes Fan (Center Stage) -->
+  <g id="offers-group" transform="translate(240, 570)" filter="url(#shadow-s02)">
+   <!-- Envelope 1: Rotterdam -->
+   <g id="env-rotterdam" transform="translate(-30, 20) rotate(-12)">
+    <rect x="0" y="0" width="85" height="58" rx="5" fill="#FFFFFF" stroke="#3D7B80" stroke-width="2"/>
+    <polygon points="0,0 42,28 85,0" fill="#E4F5F4" stroke="#3D7B80" stroke-width="1.5"/>
+    <circle cx="42" cy="34" r="7" fill="#FF6B2B"/>
+    <text x="42" y="37" font-family="SceneSans, sans-serif" font-size="7" font-weight="700" fill="#FFFFFF" text-anchor="middle">NL</text>
+   </g>
+   <!-- Envelope 2: Melbourne -->
+   <g id="env-melbourne" transform="translate(20, -10) rotate(4)">
+    <rect x="0" y="0" width="85" height="58" rx="5" fill="#FFFFFF" stroke="#243A50" stroke-width="2"/>
+    <polygon points="0,0 42,28 85,0" fill="#EEF2F6" stroke="#243A50" stroke-width="1.5"/>
+    <circle cx="42" cy="34" r="7" fill="#243A50"/>
+    <text x="42" y="37" font-family="SceneSans, sans-serif" font-size="7" font-weight="700" fill="#FFFFFF" text-anchor="middle">UoM</text>
+   </g>
+   <!-- Envelope 3: Sydney / Macquarie -->
+   <g id="env-sydney" transform="translate(70, 15) rotate(18)">
+    <rect x="0" y="0" width="85" height="58" rx="5" fill="#FFFFFF" stroke="#FF6B2B" stroke-width="2"/>
+    <polygon points="0,0 42,28 85,0" fill="#FFF2E5" stroke="#FF6B2B" stroke-width="1.5"/>
+    <circle cx="42" cy="34" r="7" fill="#FFB054"/>
+    <text x="42" y="37" font-family="SceneSans, sans-serif" font-size="7" font-weight="700" fill="#FFFFFF" text-anchor="middle">USYD</text>
+   </g>
+  </g>
+ </svg>
+
+ <audio data-hf-id="hf-s02-voice" id="scene02-voice" src="assets/audio.wav" data-start="0" data-duration="5.226" data-track-index="2" data-volume="1"></audio>
+</div>
+
+<script>
+const tl = gsap.timeline({paused:true});
+
+gsap.set(['#lbl-main', '#lbl-sub'], {opacity: 0, y: 15});
+gsap.set('#header', {opacity: 0, y: -20});
+gsap.set('#counselor-hand', {x: -60, opacity: 0});
+gsap.set('#offers-group', {scale: 0.7, opacity: 0, transformOrigin: '0% 50%'});
+gsap.set('#confetti-group', {opacity: 0, y: 30});
+gsap.set('#student-rig', {x: 20, opacity: 0});
+gsap.set('#mother-rig', {x: 30, opacity: 0});
+
+// Choreography (5.226s)
+// 0.0s - 0.8s: Opening title & characters enter
+tl.to('#header', {opacity: 1, y: 0, duration: 0.5, ease: 'power2.out'}, 0.2)
+  .to('#student-rig', {opacity: 1, x: 0, duration: 0.6, ease: 'power2.out'}, 0.3)
+  .to('#mother-rig', {opacity: 1, x: 0, duration: 0.6, ease: 'power2.out'}, 0.4)
+
+// 0.8s - 2.2s: Counselor hand presents 3 offer envelopes
+  .to('#counselor-hand', {opacity: 1, x: 0, duration: 0.5, ease: 'back.out(1.2)'}, 0.8)
+  .to('#offers-group', {opacity: 1, scale: 1, duration: 0.6, ease: 'back.out(1.5)'}, 1.0)
+  .to('#lbl-main', {opacity: 1, y: 0, duration: 0.4}, 1.2)
+
+// 2.2s - 3.8s: Confetti burst, mother gently pats shoulder, student holds offers warmly
+  .to('#confetti-group', {opacity: 1, y: 0, duration: 0.8, ease: 'power1.out'}, 2.2)
+  .to('#lbl-sub', {opacity: 1, y: 0, duration: 0.4}, 2.4)
+  .to('#offers-group', {y: -8, duration: 1.2, yoyo: true, repeat: 1, ease: 'sine.inOut'}, 2.5)
+
+// 3.8s - 5.226s: Settled proud celebration tableau
+  .to('#confetti-group', {y: -15, duration: 1.4, ease: 'sine.out'}, 3.8);
+
+window.__timelines = window.__timelines || {};
+window.__timelines['scene02'] = tl;
+</script>
+</body>
+</html>

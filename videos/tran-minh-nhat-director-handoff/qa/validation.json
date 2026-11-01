@@ -1,0 +1,20 @@
+{
+  "status": "passed for handoff documents/data only",
+  "scene_packets": 17,
+  "new_scene_designs": 14,
+  "selected_pilots_copied": 3,
+  "asset_families": 27,
+  "audio_slices": 17,
+  "pcm_reconstructed_identical": true,
+  "source_sample_frames": 1636800,
+  "source_duration": 68.2,
+  "picture_frames": 2046,
+  "frame_boundaries_contiguous": true,
+  "source_files_checked": 917,
+  "source_files_changed": [],
+  "required_fields_complete": true,
+  "asset_ids_resolve": true,
+  "new_render_validation": "not_applicable_no_new_render",
+  "outstanding_assets": "See to_draw/to_source records; planned, not generated",
+  "known_pilot_cleanup": "04 needs illustration-note removal in build derivative before assembly; frozen original remains unchanged"
+}

@@ -1,0 +1,409 @@
+{
+  "project_slug": "VIDEO-33",
+  "total_duration": 75.16,
+  "total_segments": 17,
+  "segments": [
+    {
+      "seg_id": 1,
+      "segment_id": "seg_01",
+      "start": 0.0,
+      "end": 6.019,
+      "duration": 6.019,
+      "start_sample": 0,
+      "end_sample": 144466,
+      "sample_frames": 144466,
+      "audio_slice": "audio_slices/seg_01.wav",
+      "raw_text": "Khi con du học Châu Âu, nhiều gia đình không chỉ đầu tư cho việc học, mà còn đầu tư cho một điểm tự lâu dài.",
+      "corrected_text": "Khi con du học Châu Âu, nhiều gia đình không chỉ đầu tư cho việc học, mà còn đầu tư cho một điểm tựa lâu dài.",
+      "uncertainties": [
+        "điểm tự -> điểm tựa: Giọng nói ngắt âm/lướt âm cuối; chuẩn văn phạm và ngữ nghĩa đầu tư là 'điểm tựa lâu dài'."
+      ],
+      "fact_check_items": [
+        {
+          "type": "concept",
+          "claim": "Du học Châu Âu kết hợp đầu tư tích luỹ lâu dài cho gia đình",
+          "verification_note": "Khái niệm chủ đạo, đóng vai trò hook mở bài."
+        }
+      ]
+    },
+    {
+      "seg_id": 2,
+      "segment_id": "seg_02",
+      "start": 6.019,
+      "end": 9.875,
+      "duration": 3.856,
+      "start_sample": 144466,
+      "end_sample": 236998,
+      "sample_frames": 92532,
+      "audio_slice": "audio_slices/seg_02.wav",
+      "raw_text": "Trước nhiều phụ hình sẵn sàng chi hàng tỷ đồng cho hành trình du học của con,",
+      "corrected_text": "Trước nhiều phụ huynh sẵn sàng chi hàng tỷ đồng cho hành trình du học của con,",
+      "uncertainties": [
+        "phụ hình -> phụ huynh: ASR nhận nhầm thanh âm; giọng đọc phát âm 'phụ huynh'.",
+        "Trước nhiều phụ huynh: Giọng phát âm rõ âm 'Trước'. Có thể câu gốc dự kiến là 'Trước việc nhiều phụ huynh...' hoặc 'Rất nhiều phụ huynh...'. Do file scratch/video 33.txt có dung lượng 0 bytes, giữ nguyên chữ 'Trước' theo đúng âm thanh audio gốc và đánh dấu để Đạo diễn thẩm định."
+      ],
+      "fact_check_items": [
+        {
+          "type": "metric",
+          "claim": "chi hàng tỷ đồng cho hành trình du học của con",
+          "verification_note": "Chi phí du học Châu Âu phổ biến từ 400 triệu đến 1-2 tỷ VND/năm tuỳ bậc học và quốc gia."
+        }
+      ]
+    },
+    {
+      "seg_id": 3,
+      "segment_id": "seg_03",
+      "start": 9.875,
+      "end": 14.121,
+      "duration": 4.246,
+      "start_sample": 236998,
+      "end_sample": 338898,
+      "sample_frames": 101900,
+      "audio_slice": "audio_slices/seg_03.wav",
+      "raw_text": "nhưng nếu con có kế hoạch học tập và phát triển sự nghiệp tại Châu Âu trong nhiều năm.",
+      "corrected_text": "nhưng nếu con có kế hoạch học tập và phát triển sự nghiệp tại Châu Âu trong nhiều năm,",
+      "uncertainties": [
+        "Dấu câu: Thay dấu chấm bằng dấu phẩy nối vế điều kiện với câu hỏi ở đoạn kế tiếp."
+      ],
+      "fact_check_items": [
+        {
+          "type": "location",
+          "claim": "Châu Âu",
+          "verification_note": "Khu vực địa lý mục tiêu."
+        }
+      ]
+    },
+    {
+      "seg_id": 4,
+      "segment_id": "seg_04",
+      "start": 14.121,
+      "end": 18.151,
+      "duration": 4.03,
+      "start_sample": 338898,
+      "end_sample": 435629,
+      "sample_frames": 96731,
+      "audio_slice": "audio_slices/seg_04.wav",
+      "raw_text": "Liệu toàn bộ tài sản của gia đình có nên chỉ tập trung ở Việt Nam.",
+      "corrected_text": "Liệu toàn bộ tài sản của gia đình có nên chỉ tập trung ở Việt Nam?",
+      "uncertainties": [
+        "Dấu câu: ASR nhận dạng dấu chấm; đây là câu hỏi tu từ đặt vấn đề, chuẩn hoá thành dấu chấm hỏi '?'."
+      ],
+      "fact_check_items": [
+        {
+          "type": "location",
+          "claim": "Việt Nam",
+          "verification_note": "Thị trường tài sản hiện tại của gia đình."
+        }
+      ]
+    },
+    {
+      "seg_id": 5,
+      "segment_id": "seg_05",
+      "start": 18.151,
+      "end": 23.858,
+      "duration": 5.706,
+      "start_sample": 435629,
+      "end_sample": 572581,
+      "sample_frames": 136952,
+      "audio_slice": "audio_slices/seg_05.wav",
+      "raw_text": "Đó là lý do ngày càng nhiều gia đình lựa chọn đa dạng hóa tài sản bằng bất đồng sản tại Manta.",
+      "corrected_text": "Đó là lý do ngày càng nhiều gia đình lựa chọn đa dạng hóa tài sản bằng bất động sản tại Malta.",
+      "uncertainties": [
+        "bất đồng sản -> bất động sản: Lỗi nhận dạng âm vị của ASR.",
+        "Manta -> Malta: ASR nhận dạng nhầm tên quốc đảo Nam Âu 'Malta' thành 'Manta'."
+      ],
+      "fact_check_items": [
+        {
+          "type": "location",
+          "claim": "Malta",
+          "verification_note": "Cộng hòa Malta - quốc đảo Nam Âu thuộc Liên minh Châu Âu (EU) và khu vực Schengen."
+        },
+        {
+          "type": "term",
+          "claim": "đa dạng hóa tài sản bằng bất động sản tại Malta",
+          "verification_note": "Chiến lược phân bổ danh mục tài sản ngoại tệ/bất động sản quốc tế."
+        }
+      ]
+    },
+    {
+      "seg_id": 6,
+      "segment_id": "seg_06",
+      "start": 23.858,
+      "end": 29.654,
+      "duration": 5.797,
+      "start_sample": 572581,
+      "end_sample": 711699,
+      "sample_frames": 139118,
+      "audio_slice": "audio_slices/seg_06.wav",
+      "raw_text": "Không chỉ là sở hữu một tài sản ở Châu Âu, đây còn là cách xây dựng một nền tảng lâu dài cho cả gia đình.",
+      "corrected_text": "Không chỉ là sở hữu một tài sản ở Châu Âu, đây còn là cách xây dựng một nền tảng lâu dài cho cả gia đình.",
+      "uncertainties": [],
+      "fact_check_items": [
+        {
+          "type": "concept",
+          "claim": "Xây dựng nền tảng lâu dài cho cả gia đình",
+          "verification_note": "Định vị giá trị kép: tài sản vật chất + quyền cư trú dài hạn."
+        }
+      ]
+    },
+    {
+      "seg_id": 7,
+      "segment_id": "seg_07",
+      "start": 29.654,
+      "end": 34.323,
+      "duration": 4.669,
+      "start_sample": 711699,
+      "end_sample": 823751,
+      "sample_frames": 112052,
+      "audio_slice": "audio_slices/seg_07.wav",
+      "raw_text": "Khi có một tài sản tại Manta, gia đình có thêm một điểm kết nối với Châu Âu,",
+      "corrected_text": "Khi có một tài sản tại Malta, gia đình có thêm một điểm kết nối với Châu Âu,",
+      "uncertainties": [
+        "Manta -> Malta: ASR nhận nhầm tên riêng quốc gia Malta."
+      ],
+      "fact_check_items": [
+        {
+          "type": "location",
+          "claim": "Malta, Châu Âu",
+          "verification_note": "Vị trí địa lý chiến lược tại Địa Trung Hải."
+        }
+      ]
+    },
+    {
+      "seg_id": 8,
+      "segment_id": "seg_08",
+      "start": 34.323,
+      "end": 39.8,
+      "duration": 5.477,
+      "start_sample": 823751,
+      "end_sample": 955202,
+      "sample_frames": 131451,
+      "audio_slice": "audio_slices/seg_08.wav",
+      "raw_text": "thuận tiện hơn cho những chuyến thăm con cho các kế hoạch học tập, sinh sống hoặc làm việc trong tương lai.",
+      "corrected_text": "thuận tiện hơn cho những chuyến thăm con, cho các kế hoạch học tập, sinh sống, hoặc làm việc trong tương lai.",
+      "uncertainties": [
+        "Dấu câu: Thêm dấu phẩy phân tách các cụm liệt kê để tăng tính mạch lạc cho phụ đề/storyboard."
+      ],
+      "fact_check_items": [
+        {
+          "type": "benefit",
+          "claim": "thăm con, học tập, sinh sống, làm việc",
+          "verification_note": "Quyền lợi cư trú cho phép tự do di chuyển trong Schengen và sinh sống hợp pháp tại Malta."
+        }
+      ]
+    },
+    {
+      "seg_id": 9,
+      "segment_id": "seg_09",
+      "start": 39.8,
+      "end": 44.707,
+      "duration": 4.907,
+      "start_sample": 955202,
+      "end_sample": 1072972,
+      "sample_frames": 117770,
+      "audio_slice": "audio_slices/seg_09.wav",
+      "raw_text": "Đồng thời, diệt sở hữu tài sản ở nhiều thị trường cũng giúp đa dạng hóa dành một đầu tư",
+      "corrected_text": "Đồng thời, việc sở hữu tài sản ở nhiều thị trường cũng giúp đa dạng hóa danh mục đầu tư",
+      "uncertainties": [
+        "diệt -> việc: ASR nhận sai âm đầu.",
+        "dành một -> danh mục: ASR nhận sai thuật ngữ tài chính 'danh mục đầu tư'."
+      ],
+      "fact_check_items": [
+        {
+          "type": "term",
+          "claim": "đa dạng hóa danh mục đầu tư",
+          "verification_note": "Thuật ngữ chuẩn trong quản lý gia sản (Wealth Management / Portfolio Diversification)."
+        }
+      ]
+    },
+    {
+      "seg_id": 10,
+      "segment_id": "seg_10",
+      "start": 44.707,
+      "end": 47.251,
+      "duration": 2.544,
+      "start_sample": 1072972,
+      "end_sample": 1134024,
+      "sample_frames": 61052,
+      "audio_slice": "audio_slices/seg_10.wav",
+      "raw_text": "thay vì phụ thuộc hoàn toàn do một quốc gia.",
+      "corrected_text": "thay vì phụ thuộc hoàn toàn vào một quốc gia.",
+      "uncertainties": [
+        "do -> vào: Giọng nói lướt âm, chuẩn hoá giới từ ngữ pháp tiếng Việt thành 'vào một quốc gia'."
+      ],
+      "fact_check_items": [
+        {
+          "type": "concept",
+          "claim": "Giảm thiểu rủi ro phụ thuộc vào một quốc gia duy nhất",
+          "verification_note": "Khái niệm phân tán rủi ro địa lý (Geographic risk hedge)."
+        }
+      ]
+    },
+    {
+      "seg_id": 11,
+      "segment_id": "seg_11",
+      "start": 47.251,
+      "end": 53.408,
+      "duration": 6.157,
+      "start_sample": 1134024,
+      "end_sample": 1281789,
+      "sample_frames": 147765,
+      "audio_slice": "audio_slices/seg_11.wav",
+      "raw_text": "Chị giới khoảng 3,8 tỷ đồng, chương trình Thế San Manta mang đến cơ hội định cư cho 4 thế hệ.",
+      "corrected_text": "Chỉ với khoảng 3,8 tỷ đồng, chương trình Thẻ Xanh Malta mang đến cơ hội định cư cho 4 thế hệ.",
+      "uncertainties": [
+        "Chị giới -> Chỉ với: ASR nhận nhầm thanh âm.",
+        "Thế San Manta -> Thẻ Xanh Malta: ASR nhận sai tên chương trình 'Thẻ Xanh Malta' (chính sách Thường trú nhân Malta - MPRP)."
+      ],
+      "fact_check_items": [
+        {
+          "type": "metric",
+          "claim": "Chỉ với khoảng 3,8 tỷ đồng",
+          "verification_note": "CẦN XÁC MINH PHÁP LÝ: Mức chi phí ước tính theo phương án thuê bất động sản (tối thiểu €10,000/năm khu vực Gozo/South hoặc €12,000/năm khu vực khác + phí chính phủ €98,000 + quyên góp từ thiện €2,000 + phí hành chính). Tổng chi phí không hoàn lại thường xấp xỉ ~140.000 - 150.000 EUR (~3,8 - 4,0 tỷ VND theo tỷ giá hiện hành). Cần kiểm tra bảng tính chi tiết của agency."
+        },
+        {
+          "type": "program",
+          "claim": "chương trình Thẻ Xanh Malta (MPRP)",
+          "verification_note": "Malta Permanent Residence Programme, quản lý bởi Cơ quan Cư trú Malta (Residency Malta Agency)."
+        },
+        {
+          "type": "benefit",
+          "claim": "định cư cho 4 thế hệ",
+          "verification_note": "CẦN XÁC MINH PHÁP LÝ: MPRP chính thức cho phép đương đơn kèm theo 4 thế hệ: Đương đơn & vợ/chồng + con cái (phụ thuộc tài chính, độc thân) + cha mẹ + ông bà của cả hai bên."
+        }
+      ]
+    },
+    {
+      "seg_id": 12,
+      "segment_id": "seg_12",
+      "start": 53.408,
+      "end": 56.602,
+      "duration": 3.195,
+      "start_sample": 1281789,
+      "end_sample": 1358457,
+      "sample_frames": 76668,
+      "audio_slice": "audio_slices/seg_12.wav",
+      "raw_text": "Đây không chỉ là quyết định đầu tư vào một bước động sáng,",
+      "corrected_text": "Đây không chỉ là quyết định đầu tư vào một bất động sản,",
+      "uncertainties": [
+        "bước động sáng -> bất động sản: ASR nhận sai âm vị."
+      ],
+      "fact_check_items": [
+        {
+          "type": "concept",
+          "claim": "Đầu tư vào bất động sản",
+          "verification_note": "Một trong hai phương án của MPRP: thuê BĐS hoặc mua BĐS (tối thiểu €300,000 - €350,000)."
+        }
+      ]
+    },
+    {
+      "seg_id": 13,
+      "segment_id": "seg_13",
+      "start": 56.602,
+      "end": 60.22,
+      "duration": 3.617,
+      "start_sample": 1358457,
+      "end_sample": 1445273,
+      "sample_frames": 86816,
+      "audio_slice": "audio_slices/seg_13.wav",
+      "raw_text": "mà còn là quyết định đầu tư vào sự chuẩn bị cho tương lai của con gái",
+      "corrected_text": "mà còn là quyết định đầu tư vào sự chuẩn bị cho tương lai của con cái",
+      "uncertainties": [
+        "con gái -> con cái: Giọng đọc phát âm âm đuôi hơi giống 'con gái'. Tuy nhiên trong ngữ cảnh phân tích gia đình và con du học nói chung, từ chuẩn là 'con cái'. Nếu kịch bản gốc là câu chuyện riêng về con gái, Đạo diễn có thể giữ 'con gái'. Tạm ghi chú để Đạo diễn thẩm duyệt."
+      ],
+      "fact_check_items": [
+        {
+          "type": "audience",
+          "claim": "tương lai của con cái",
+          "verification_note": "Nhắm vào phân khúc phụ huynh có con đang du học hoặc chuẩn bị du học."
+        }
+      ]
+    },
+    {
+      "seg_id": 14,
+      "segment_id": "seg_14",
+      "start": 60.22,
+      "end": 63.751,
+      "duration": 3.531,
+      "start_sample": 1445273,
+      "end_sample": 1530028,
+      "sample_frames": 84755,
+      "audio_slice": "audio_slices/seg_14.wav",
+      "raw_text": "và những cơ hội mà các thế hệ sau có thể nắm bắt tại Châu Âu.",
+      "corrected_text": "và những cơ hội mà các thế hệ sau có thể nắm bắt tại Châu Âu.",
+      "uncertainties": [],
+      "fact_check_items": [
+        {
+          "type": "benefit",
+          "claim": "cơ hội mà các thế hệ sau có thể nắm bắt tại Châu Âu",
+          "verification_note": "Cơ hội cư trú vĩnh viễn, học phí ưu đãi EU, di chuyển 29 quốc gia Schengen."
+        }
+      ]
+    },
+    {
+      "seg_id": 15,
+      "segment_id": "seg_15",
+      "start": 63.751,
+      "end": 68.304,
+      "duration": 4.553,
+      "start_sample": 1530028,
+      "end_sample": 1639305,
+      "sample_frames": 109277,
+      "audio_slice": "audio_slices/seg_15.wav",
+      "raw_text": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới.",
+      "corrected_text": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới.",
+      "uncertainties": [],
+      "fact_check_items": [
+        {
+          "type": "message",
+          "claim": "Khi con đã bước ra thế giới, tài sản của gia đình cũng có thể bước ra thế giới",
+          "verification_note": "Thông điệp định vị cốt lõi của toàn bộ video."
+        }
+      ]
+    },
+    {
+      "seg_id": 16,
+      "segment_id": "seg_16",
+      "start": 68.304,
+      "end": 72.35,
+      "duration": 4.046,
+      "start_sample": 1639305,
+      "end_sample": 1736406,
+      "sample_frames": 97101,
+      "audio_slice": "audio_slices/seg_16.wav",
+      "raw_text": "Bởi đôi khi, điều giá chỉ nhất không phải là sở hữu thêm một căn nhà,",
+      "corrected_text": "Bởi đôi khi, điều giá trị nhất không phải là sở hữu thêm một căn nhà,",
+      "uncertainties": [
+        "giá chỉ -> giá trị: ASR nhận sai phụ âm cuối; giọng đọc chuẩn 'giá trị'."
+      ],
+      "fact_check_items": [
+        {
+          "type": "message",
+          "claim": "Điều giá trị nhất không phải là sở hữu thêm một căn nhà",
+          "verification_note": "Nâng tầm giá trị từ sở hữu vật chất sang quyền chọn chiến lược."
+        }
+      ]
+    },
+    {
+      "seg_id": 17,
+      "segment_id": "seg_17",
+      "start": 72.35,
+      "end": 75.16,
+      "duration": 2.81,
+      "start_sample": 1736406,
+      "end_sample": 1803840,
+      "sample_frames": 67434,
+      "audio_slice": "audio_slices/seg_17.wav",
+      "raw_text": "mà là sở hữu thêm một lựa chọn cho tương lai.",
+      "corrected_text": "mà là sở hữu thêm một lựa chọn cho tương lai.",
+      "uncertainties": [],
+      "fact_check_items": [
+        {
+          "type": "message",
+          "claim": "Sở hữu thêm một lựa chọn cho tương lai",
+          "verification_note": "Câu kết / Punchline kết thúc video."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "project_slug": "le-pham-nhu-quynh",
+  "input_hashes": "passed",
+  "audio_slices_hashes": "16/16 passed",
+  "pcm_reconstruction": "bit-perfect",
+  "samples": 1774080,
+  "duration": 73.92,
+  "routing_schema": "passed 16 scenes",
+  "contiguity": "passed",
+  "hf_candidates": "passed",
+  "hybrid_text_budget": "passed",
+  "source_files_unchanged": true,
+  "factual_scope": "See research fact sheet; scene_14 publication hold for stronger experience claim."
+}
