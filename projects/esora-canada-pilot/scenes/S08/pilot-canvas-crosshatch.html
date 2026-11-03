@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esora Canada — Scene 8 canvas crosshatch thật</title>
+<style>
+  body{margin:0;background:#111827;color:#f9fafb;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+  .wrap{max-width:820px;margin:0 auto;padding:24px}
+  .wrap p{color:#d1d5db;line-height:1.6}
+  canvas{display:block;width:360px;height:640px;margin:20px auto;background:#FDFCF7;border:2px solid #1E2A3A}
+  button{padding:10px 14px;font-weight:700;cursor:pointer;margin:4px 4px 4px 0}
+  ul{color:#d1d5db;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Esora Canada — Scene 8, canvas crosshatch thật</h1>
+  <p>Không còn là hộp CSS tô màu phẳng. Mọi nét trong khung này đều được vẽ bằng code trên canvas: nét mực phác thảo, nét gạch chéo hatch để tạo khối, giấy có hạt nhiễu, và nét run nhẹ theo nhịp boil-on-2s. Chữ thì vẫn dùng font sạch, không viết tay, để không vỡ dấu tiếng Việt.</p>
+  <p><strong>Cách xem:</strong> bấm Chạy animation để xem đủ 6.2 giây, hoặc bấm từng khung để dừng ở Opening, Transformation, Final. Bố cục, timeline và vật thể giữ nguyên như bản v4 đã tạm ổn.</p>
+  <button onclick="setMode('play')">Chạy animation 6.2 giây</button>
+  <button onclick="setMode('opening')">Khung Opening</button>
+  <button onclick="setMode('transformation')">Khung Transformation</button>
+  <button onclick="setMode('final')">Khung Final</button>
+  <canvas id="c" width="720" height="1280"></canvas>
+  <p><strong>Nét vẽ có gì khác bản HTML cũ:</strong></p>
+  <ul>
+    <li>Hatch thật: vùng tối trên bàn, thân nhân vật, hồ sơ và chồng xu được tô bằng nhiều nét chéo song song, không phải màu phẳng.</li>
+    <li>Nét run boil-on-2s: mỗi đường vẽ được vẽ lại với độ lệch nhỏ, đổi sau mỗi 2 khung hình, nên khung hình có cảm giác vẽ tay sống, không cứng như vector.</li>
+    <li>Giấy ấm #FDFCF7 có hạt nhiễu, mực #1E2A3A, chỉ 1 accent xanh mint #2EC4B6.</li>
+    <li>Nhân vật vẽ bằng đường tròn, đường cong và nét hatch, có đầu, mắt, miệng, tóc, thân và tay vươn về phía bàn.</li>
+  </ul>
+  <p><strong>Giới hạn còn lại:</strong> đây vẫn là canvas chạy trên trình duyệt, chưa phải file MP4 render bằng HyperFrames CLI hay bằng headless browser + ffmpeg. Muốn thành MP4 thì cần ghi từng frame của canvas này ra rồi ghép bằng ffmpeg, bước đó chưa làm trong file này.</p>
+</div>
+<script>
+const cv = document.getElementById('c');
+const ctx = cv.getContext('2d');
+const INK = '#1E2A3A', SOFT = '#5B6B7C', ACCENT = '#2EC4B6', PAPER = '#FDFCF7';
+let mode = 'play', start = performance.now(), fixedT = 6.0;
+function setMode(m){ mode = m; if(m==='opening') fixedT = 0.5; if(m==='transformation') fixedT = 2.0; if(m==='final') fixedT = 6.0; if(m==='play') start = performance.now(); }
+// Seeded random, deterministic per frame-pair for boil effect
+function rng(seed){ let a = seed >>> 0; return function(){ a |= 0; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+let boilStep = 0;
+function sketchLine(x1, y1, x2, y2, jitter, seedBase){
+  const r = rng(seedBase + boilStep * 7919);
+  const n = 6, pts = [];
+  for(let i = 0; i <= n; i++){
+    const t = i / n, j = (i === 0 || i === n) ? 0 : (r() - 0.5) * 2 * jitter;
+    pts.push([x1 + (x2 - x1) * t + j, y1 + (y2 - y1) * t + j * 0.6]);
+  }
+  ctx.beginPath(); pts.forEach((p, i) => i === 0 ? ctx.moveTo(p[0], p[1]) : ctx.lineTo(p[0], p[1])); ctx.stroke();
+  // second faint pass, like a pencil going over the same stroke
+  ctx.save(); ctx.globalAlpha = 0.35; ctx.beginPath(); pts.forEach((p, i) => i === 0 ? ctx.moveTo(p[0] + 1.5, p[1] + 1) : ctx.lineTo(p[0] + 1.5, p[1] + 1)); ctx.stroke(); ctx.restore();
+}
+function sketchRect(x, y, w, h, seedBase){
+  ctx.strokeStyle = INK; ctx.lineWidth = 3;
+  sketchLine(x, y, x + w, y, 2, seedBase); sketchLine(x + w, y, x + w, y + h, 2, seedBase + 1);
+  sketchLine(x + w, y + h, x, y + h, 2, seedBase + 2); sketchLine(x, y + h, x, y, 2, seedBase + 3);
+}
+function hatch(x, y, w, h, spacing, seedBase){
+  ctx.save(); ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
+  ctx.strokeStyle = INK; ctx.lineWidth = 1.2; ctx.globalAlpha = 0.45;
+  const r = rng(seedBase + boilStep * 31);
+  for(let d = -h; d < w + h; d += spacing){
+    ctx.beginPath(); ctx.moveTo(x + d + (r() - 0.5) * 3, y + h); ctx.lineTo(x + d + h + (r() - 0.5) * 3, y); ctx.stroke();
+  }
+  ctx.restore(); ctx.globalAlpha = 1;
+}
+function sketchCircle(cx, cy, rad, seedBase){
+  ctx.strokeStyle = INK; ctx.lineWidth = 3; ctx.beginPath();
+  const r = rng(seedBase + boilStep * 17);
+  for(let a = 0; a <= 24; a++){
+    const ang = a / 24 * Math.PI * 2, rr = rad + (r() - 0.5) * 4;
+    const px = cx + Math.cos(ang) * rr, py = cy + Math.sin(ang) * rr;
+    a === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py);
+  }
+  ctx.closePath(); ctx.stroke();
+}
+function paper(){
+  ctx.fillStyle = PAPER; ctx.fillRect(0, 0, 720, 1280);
+  const r = rng(12345);
+  ctx.fillStyle = 'rgba(30,42,58,0.05)';
+  for(let i = 0; i < 1800; i++){ ctx.fillRect(r() * 720, r() * 1280, 1.5, 1.5); }
+  ctx.strokeStyle = SOFT; ctx.setLineDash([6, 6]); ctx.lineWidth = 2;
+  ctx.strokeRect(50, 120, 620, 960); ctx.setLineDash([]);
+}
+function drawHeadline(t){
+  ctx.textAlign = 'center'; ctx.font = '900 62px system-ui, Arial, sans-serif'; ctx.fillStyle = INK;
+  ctx.fillText('DỰ TRÙ CHO', 360, 215);
+  // highlight sweep under TOÀN KHÓA, 4.2s to 5.2s
+  const p = Math.max(0, Math.min(1, (t - 4.2) / 1.0));
+  if(p > 0){
+    ctx.fillStyle = '#FFD93D'; ctx.globalAlpha = 0.85;
+    ctx.fillRect(360 - 210 * p, 250, 420 * p, 68); ctx.globalAlpha = 1;
+  }
+  ctx.fillStyle = INK; ctx.fillText('TOÀN KHÓA', 360, 305);
+}
+function drawWindow(){
+  sketchRect(64, 350, 250, 250, 100);
+  ctx.fillStyle = '#D6F2EE'; ctx.globalAlpha = 0.55; ctx.fillRect(68, 354, 242, 242); ctx.globalAlpha = 1;
+  ctx.strokeStyle = INK; ctx.lineWidth = 3; sketchLine(189, 350, 189, 600, 2, 110); sketchLine(64, 475, 314, 475, 2, 111);
+  sketchCircle(120, 415, 38, 120); ctx.fillStyle = '#FFF3C4'; ctx.globalAlpha = 0.8; ctx.beginPath(); ctx.arc(120, 415, 36, 0, Math.PI * 2); ctx.fill(); ctx.globalAlpha = 1; sketchCircle(120, 415, 38, 120);
+  // plant on sill
+  ctx.strokeStyle = INK; sketchLine(215, 560, 215, 600, 2, 130); sketchLine(255, 560, 255, 600, 2, 131);
+  sketchRect(205, 560, 60, 40, 132); ctx.fillStyle = ACCENT; ctx.globalAlpha = 0.35; ctx.fillRect(207, 562, 56, 36); ctx.globalAlpha = 1;
+  ctx.beginPath(); ctx.moveTo(235, 560); ctx.quadraticCurveTo(210, 520, 195, 505); ctx.moveTo(235, 560); ctx.quadraticCurveTo(260, 520, 275, 505); ctx.stroke();
+}
+function drawShelf(){
+  ctx.strokeStyle = INK; ctx.lineWidth = 3; sketchLine(470, 440, 670, 440, 2, 140);
+  const books = [[470, 60, '#D6F2EE'], [535, 78, '#FFF3C4'], [600, 66, '#D6F2EE']];
+  books.forEach((b, i) => { sketchRect(b[0], 440 - b[1], 55, b[1], 150 + i); ctx.fillStyle = b[2]; ctx.globalAlpha = 0.5; ctx.fillRect(b[0] + 2, 442 - b[1], 51, b[1] - 2); ctx.globalAlpha = 1; hatch(b[0] + 4, 442 - b[1], 47, b[1] - 4, 12, 160 + i); });
+}
+function drawCharacter(t){
+  const bob = Math.sin(t * 2) * 4;
+  ctx.save(); ctx.translate(0, bob);
+  // body with hatch on one side
+  sketchRect(470, 580, 140, 220, 200); ctx.fillStyle = ACCENT; ctx.globalAlpha = 0.45; ctx.fillRect(472, 582, 136, 216); ctx.globalAlpha = 1; hatch(540, 582, 68, 216, 14, 210);
+  // head, hair, face
+  sketchCircle(540, 520, 54, 220); ctx.fillStyle = '#FFF3C4'; ctx.globalAlpha = 0.6; ctx.beginPath(); ctx.arc(540, 520, 52, 0, Math.PI * 2); ctx.fill(); ctx.globalAlpha = 1; sketchCircle(540, 520, 54, 220);
+  ctx.fillStyle = INK; ctx.beginPath(); ctx.arc(522, 515, 5, 0, Math.PI * 2); ctx.arc(558, 515, 5, 0, Math.PI * 2); ctx.fill();
+  ctx.strokeStyle = INK; ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(540, 535, 16, 0.2, Math.PI - 0.2); ctx.stroke();
+  ctx.beginPath(); ctx.arc(540, 482, 52, Math.PI * 1.05, Math.PI * 1.95); ctx.stroke();
+  // arms reaching toward desk
+  ctx.beginPath(); ctx.moveTo(475, 640); ctx.quadraticCurveTo(410, 690, 400, 760); ctx.moveTo(605, 640); ctx.quadraticCurveTo(650, 700, 640, 760); ctx.stroke();
+  ctx.restore();
+}
+function drawDesk(){
+  sketchRect(40, 800, 640, 220, 300); ctx.fillStyle = '#E8E0CF'; ctx.globalAlpha = 0.7; ctx.fillRect(42, 802, 636, 216); ctx.globalAlpha = 1; hatch(42, 802, 636, 216, 18, 310);
+  ctx.strokeStyle = INK; ctx.lineWidth = 3; sketchLine(40, 800, 680, 800, 2, 301);
+}
+function drawCalendar(t){
+  const num = t < 1.4 ? '01' : (t < 2.7 ? '02' : '03');
+  sketchRect(64, 604, 196, 196, 400); ctx.fillStyle = '#FFFFFF'; ctx.fillRect(66, 606, 192, 192);
+  ctx.strokeStyle = INK; ctx.lineWidth = 2; sketchLine(64, 640, 260, 640, 2, 401);
+  ctx.fillStyle = INK; ctx.textAlign = 'center'; ctx.font = '800 22px system-ui, Arial, sans-serif'; ctx.fillText('LỊCH', 162, 675);
+  ctx.font = '900 84px system-ui, Arial, sans-serif'; ctx.fillText(num, 162, 760);
+  ctx.font = '400 20px system-ui, Arial, sans-serif'; ctx.fillStyle = SOFT; ctx.fillText('trang', 162, 788);
+  hatch(66, 770, 192, 28, 10, 410);
+}
+function propAlpha(t, a, b){ if(t < a) return 0; if(t > b) return 1; return (t - a) / (b - a); }
+function drawProps(t){
+  // envelope 01
+  ctx.save(); ctx.globalAlpha = propAlpha(t, 0, 1.4); ctx.translate(0, (1 - propAlpha(t, 0, 1.4)) * -30);
+  sketchRect(284, 660, 124, 140, 500); ctx.fillStyle = '#FFFFFF'; ctx.fillRect(286, 662, 120, 136);
+  ctx.strokeStyle = INK; ctx.lineWidth = 2; sketchLine(284, 660, 346, 730, 2, 501); sketchLine(408, 660, 346, 730, 2, 502);
+  ctx.fillStyle = INK; ctx.textAlign = 'center'; ctx.font = '900 28px system-ui, Arial, sans-serif'; ctx.fillText('01', 346, 770);
+  ctx.font = '700 20px system-ui, Arial, sans-serif'; ctx.fillText('Phong bì', 346, 792); ctx.restore();
+  // coins 02
+  ctx.save(); ctx.globalAlpha = propAlpha(t, 1.4, 2.7); ctx.translate(0, (1 - propAlpha(t, 1.4, 2.7)) * -30);
+  sketchRect(424, 680, 124, 120, 510); ctx.fillStyle = '#FFF3C4'; ctx.globalAlpha = 0.9; ctx.fillRect(426, 682, 120, 116); ctx.globalAlpha = propAlpha(t, 1.4, 2.7);
+  for(let i = 0; i < 3; i++){ ctx.strokeStyle = INK; ctx.beginPath(); ctx.ellipse(486, 700 + i * 28, 42, 14, 0, 0, Math.PI * 2); ctx.stroke(); }
+  ctx.fillStyle = INK; ctx.textAlign = 'center'; ctx.font = '900 28px system-ui, Arial, sans-serif'; ctx.fillText('02', 486, 770);
+  ctx.font = '700 20px system-ui, Arial, sans-serif'; ctx.fillText('Chồng xu', 486, 792); ctx.restore();
+  // dossier 03
+  ctx.save(); ctx.globalAlpha = propAlpha(t, 2.7, 4.0); ctx.translate(0, (1 - propAlpha(t, 2.7, 4.0)) * -30);
+  sketchRect(564, 660, 112, 140, 520); ctx.fillStyle = '#D6F2EE'; ctx.globalAlpha = 0.8; ctx.fillRect(566, 662, 108, 136); ctx.globalAlpha = propAlpha(t, 2.7, 4.0); hatch(568, 664, 104, 132, 14, 521);
+  ctx.fillStyle = INK; ctx.textAlign = 'center'; ctx.font = '900 28px system-ui, Arial, sans-serif'; ctx.fillText('03', 620, 770);
+  ctx.font = '700 20px system-ui, Arial, sans-serif'; ctx.fillText('Hồ sơ', 620, 792); ctx.restore();
+}
+function draw(t){
+  boilStep = Math.floor(t * 15);
+  paper();
+  ctx.save(); ctx.globalAlpha = 0.35; const g = ctx.createRadialGradient(540, 600, 20, 540, 600, 220); g.addColorStop(0, '#FFF3C4'); g.addColorStop(1, 'rgba(255,243,196,0)'); ctx.fillStyle = g; ctx.fillRect(320, 380, 360, 440); ctx.restore();
+  drawWindow(); drawShelf(); drawCharacter(t); drawDesk(); drawCalendar(t); drawProps(t);
+  // rug
+  sketchRect(80, 1020, 560, 60, 600); ctx.fillStyle = '#FFE8D6'; ctx.globalAlpha = 0.6; ctx.fillRect(82, 1022, 556, 56); ctx.globalAlpha = 1; hatch(82, 1022, 556, 56, 14, 601);
+  drawHeadline(t);
+  // Note: safe-zone caption is in the HTML around the canvas, not drawn inside the frame, so it cannot leak into a render.
+}
+function loop(now){
+  let t;
+  if(mode === 'play'){ const el = (now - start) / 1000; t = Math.min(el, 6.2); if(el > 7.2) start = now; }
+  else t = fixedT;
+  draw(t);
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+</script>
+</body>
+</html>

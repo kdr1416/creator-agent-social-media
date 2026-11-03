@@ -15,6 +15,13 @@ Trạng thái: pilot HTML v4, chưa duyệt, chưa render MP4.
 - Typography: font sạch, không viết tay, để không vỡ dấu tiếng Việt.
 - Trạng thái: chưa được duyệt, chưa render MP4, chờ Tuan chọn giữa crosshatch-clean và sketchbook-fresh làm style mặc định.
 
+## Canvas crosshatch thật
+
+- File: `pilot-canvas-crosshatch.html`, canvas 720x1280, vẽ bằng code, không dùng hộp CSS.
+- Nét vẽ: sketchLine vẽ lại với độ lệch nhỏ theo boilStep, hatch() tô vùng tối bằng nét chéo song song có clip, giấy có hạt nhiễu.
+- Kiểm tra: `node --check` qua, và chạy thử draw() ở t=0.5, 2.0, 6.0 bằng mock context không lỗi.
+- Giới hạn: chưa render ra MP4, chưa chụp ảnh thật từ trình duyệt để xem trực quan vì máy này không có trình duyệt headless, cần Tuan mở file trên trình duyệt và xem trực tiếp.
+
 ## Thêm trong v3, bố cục v2 giữ nguyên
 
 - Lớp bối cảnh phía sau: cửa sổ trái, kệ sách trên nhân vật, chậu cây trên bậu cửa, ánh sáng ấm sau nhân vật, thảm dưới bàn.
