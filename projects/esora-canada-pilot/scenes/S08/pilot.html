@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Esora Canada — Pilot scene 8 v2, crosshatch-clean</title>
+<title>Esora Canada — Pilot scene 8 v3, crosshatch-clean</title>
 <style>
   *{box-sizing:border-box}
   body{margin:0;background:#111827;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
@@ -16,6 +16,22 @@
   .stage{width:360px;height:640px;margin:20px auto;background:#FDFCF7;color:#1E2A3A;border:2px solid #1E2A3A;position:relative;overflow:hidden}
   .stage::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(30,42,58,.04) 0 1px,transparent 1px 7px);pointer-events:none;z-index:1}
   .safe{position:absolute;left:25px;right:25px;top:60px;bottom:100px;border:1px dashed #9ca3af;z-index:2}
+  /* Lớp bối cảnh v3: chỉ thêm phía SAU, không đổi vị trí headline, nhân vật, bàn, lịch hay vật thể đã duyệt ở v2.
+     Tất cả đều dùng đúng palette crosshatch-clean, chỉ 1 accent là xanh mint #2EC4B6, còn lại là mảng pastel nhạt. */
+  .glow{position:absolute;right:8px;top:205px;width:145px;height:205px;background:radial-gradient(circle,#FFF3C4 0%,transparent 70%);opacity:.75;z-index:2}
+  .window{position:absolute;left:32px;top:175px;width:125px;height:125px;background:#D6F2EE;border:2px solid #1E2A3A;z-index:2}
+  .window::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;background:#1E2A3A}
+  .window::after{content:"";position:absolute;top:50%;left:0;right:0;height:2px;background:#1E2A3A}
+  .window .sun{position:absolute;left:12px;top:12px;width:30px;height:30px;border-radius:50%;background:#FFF3C4;border:2px solid #1E2A3A}
+  .shelf{position:absolute;right:22px;top:180px;width:108px;height:42px;border-bottom:3px solid #1E2A3A;z-index:2}
+  .shelf .book{position:absolute;bottom:3px;width:16px;border:2px solid #1E2A3A}
+  .shelf .b1{right:70px;height:28px;background:#D6F2EE}
+  .shelf .b2{right:50px;height:36px;background:#FFE8D6}
+  .shelf .b3{right:30px;height:30px;background:#FFF3C4}
+  .plant{position:absolute;left:82px;top:255px;width:50px;height:45px;z-index:2;text-align:center}
+  .plant .leaf{display:inline-block;width:14px;height:28px;background:#2EC4B6;border:2px solid #1E2A3A;border-radius:50% 50% 0 0}
+  .plant .pot{width:34px;height:16px;margin:0 auto;background:#FFE8D6;border:2px solid #1E2A3A}
+  .rug{position:absolute;left:40px;right:40px;top:510px;height:30px;background:#FFE8D6;border:2px solid #1E2A3A;border-top:none;z-index:2}
   .headline{position:absolute;left:20px;right:20px;top:72px;text-align:center;font-weight:900;font-size:31px;line-height:1.15;color:#1E2A3A;z-index:10}
   .headline .hl{background:linear-gradient(90deg,transparent 50%,#FDE047 50%);background-size:200% 100%;background-position:100% 0;padding:0 4px}
   .stage.play .hl{animation:sweep 6.2s forwards}
@@ -25,13 +41,13 @@
   .char{position:absolute;right:22px;bottom:240px;width:110px;height:170px;z-index:3}
   .char svg{width:100%;height:100%;display:block}
   /* Bàn: mặt bàn là đường ngang ở y=400, thân bàn ở dưới. Vật thể và lịch NGỒI TRÊN đường này, cùng một baseline. */
-  .desk{position:absolute;left:20px;right:20px;top:400px;height:110px;background:#E8E0CF;border-top:3px solid #1E2A3A;z-index:4}
-  .calendar{position:absolute;left:32px;top:302px;width:98px;height:98px;background:#fff;border:2px solid #1E2A3A;text-align:center;padding-top:14px;z-index:6}
+  .desk{position:absolute;left:20px;right:20px;top:400px;height:110px;background:#E8E0CF;background-image:repeating-linear-gradient(45deg,rgba(30,42,58,.06) 0 1px,transparent 1px 8px);border-top:3px solid #1E2A3A;z-index:4}
+  .calendar{position:absolute;left:32px;top:302px;width:98px;height:98px;background:#fff;border:2px solid #1E2A3A;text-align:center;padding-top:14px;box-shadow:4px 4px 0 rgba(30,42,58,.15);z-index:6}
   .calendar small{display:block;font-size:11px;letter-spacing:2px;font-weight:800}
   .calendar b{display:block;font-size:38px;line-height:1}
   .calendar i{display:block;font-size:11px;font-style:normal;color:#5B6B7C;margin-top:2px}
   /* Vật thể: xếp thành HÀNG trên bàn, không chồng lên nhau, cùng đáy = mặt bàn. */
-  .prop{position:absolute;top:330px;width:68px;height:70px;border:2px solid #1E2A3A;text-align:center;padding-top:10px;font-weight:800;font-size:13px;line-height:1.3;z-index:6}
+  .prop{position:absolute;top:330px;width:68px;height:70px;border:2px solid #1E2A3A;text-align:center;padding-top:10px;font-weight:800;font-size:13px;line-height:1.3;box-shadow:4px 4px 0 rgba(30,42,58,.15);z-index:6}
   .prop b{display:block;font-size:20px}
   .envelope{left:142px;background:#fff}
   .coins{left:216px;background:#FFF3C4}
@@ -58,16 +74,15 @@
 </head>
 <body>
 <div class="wrap">
-  <h1>Esora Canada — Pilot scene 8 v2: Dự trù cho toàn khóa</h1>
-  <p>Style: crosshatch-clean. Timeline: 42.4s - 48.6s, 6.2 giây. Render mode: HF_ONLY. Bản v2 sửa các lỗi của v1, xem danh sách bên dưới. Đây vẫn là pilot HTML để duyệt bố cục và nhịp, chưa phải MP4 render bằng HyperFrames CLI.</p>
-  <p><strong>Đã sửa so với v1:</strong></p>
+  <h1>Esora Canada — Pilot scene 8 v3: Dự trù cho toàn khóa</h1>
+  <p>Style: crosshatch-clean. Timeline: 42.4s - 48.6s, 6.2 giây. Render mode: HF_ONLY. Bản v3 giữ nguyên bố cục đã duyệt ở v2, chỉ thêm lớp bối cảnh. Đây vẫn là pilot HTML để duyệt bố cục, màu và nhịp, chưa phải MP4 render bằng HyperFrames CLI.</p>
+  <p><strong>Đã thêm trong v3, bố cục v2 không đổi:</strong></p>
   <ul>
-    <li>Chữ không còn trắng trên nền sáng: stage đặt màu chữ tối riêng, nhãn vật thể dùng chữ tối.</li>
-    <li>Vật thể không còn chồng lên nhau: phong bì 01, chồng xu 02 và hồ sơ 03 xếp thành hàng trên cùng một mặt bàn.</li>
-    <li>Lịch hiện rõ số trang, không còn là hộp trắng trống.</li>
-    <li>Nhân vật không còn là khối blob có emoji: có đầu, thân và tay vươn về phía bàn, đứng sau bàn.</li>
-    <li>Khoảng trống giữa khung hình được lấp bằng nhân vật và bàn, không còn dồn hết đồ xuống góc phải.</li>
-    <li>Thêm nét gạch chéo nhẹ làm texture crosshatch, rất mờ để không gây nhiễu.</li>
+    <li>Cửa sổ bên trái với nắng vàng nhạt, đặt trong khoảng trống giữa headline và bàn, không che headline hay lịch.</li>
+    <li>Kệ sách nhỏ phía trên nhân vật với 3 cuốn sách pastel, và chậu cây nhỏ trên bậu cửa sổ.</li>
+    <li>Ánh sáng ấm sau lưng nhân vật và tấm thảm nhạt dưới bàn, để khung hình có chiều sâu mà không rối.</li>
+    <li>Shading nhẹ: nét gạch chéo trên mặt bàn, bóng đổ mờ dưới lịch và vật thể.</li>
+    <li>Chỉ dùng 1 accent là xanh mint #2EC4B6, các màu còn lại là pastel nhạt trong palette crosshatch-clean, nên khung hình vẫn sạch, không rực lên kiểu Kurzgesagt.</li>
   </ul>
   <button onclick="play()">Chạy animation 6.2 giây</button>
   <button onclick="showFrame('opening','01')">Khung Opening</button>
@@ -75,6 +90,11 @@
   <button onclick="showFrame('final','03')">Khung Final</button>
   <div class="stage play" id="stage" data-frame="final">
     <div class="safe"></div>
+    <div class="glow"></div>
+    <div class="window"><div class="sun"></div></div>
+    <div class="shelf"><div class="book b1"></div><div class="book b2"></div><div class="book b3"></div></div>
+    <div class="plant"><span class="leaf"></span><span class="leaf"></span><div class="pot"></div></div>
+    <div class="rug"></div>
     <div class="headline">DỰ TRÙ CHO<br><span class="hl">TOÀN KHÓA</span></div>
     <div class="char" aria-label="Nhân vật">
       <svg viewBox="0 0 110 170" xmlns="http://www.w3.org/2000/svg">

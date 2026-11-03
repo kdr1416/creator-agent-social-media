@@ -1,6 +1,13 @@
 # QA — Pilot scene 8
 
-Trạng thái: pilot HTML v2, chưa duyệt, chưa render MP4.
+Trạng thái: pilot HTML v3, chưa duyệt, chưa render MP4.
+
+## Thêm trong v3, bố cục v2 giữ nguyên
+
+- Lớp bối cảnh phía sau: cửa sổ trái, kệ sách trên nhân vật, chậu cây trên bậu cửa, ánh sáng ấm sau nhân vật, thảm dưới bàn.
+- Bối cảnh dùng đúng palette crosshatch-clean, chỉ 1 accent xanh mint #2EC4B6, còn lại là pastel nhạt.
+- Shading nhẹ: gạch chéo trên mặt bàn, bóng đổ mờ dưới lịch và vật thể.
+- Không đổi vị trí headline, nhân vật, bàn, lịch, phong bì 01, chồng xu 02, hồ sơ 03 đã duyệt ở v2.
 
 ## Lỗi v1 đã sửa trong v2
 
