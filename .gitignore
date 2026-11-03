@@ -1,3 +1,6 @@
+# Phase 0 .gitignore — dựa trên .gitignore cũ, cộng thêm quy tắc cho creator workflow
+# Lưu ý: dòng AGENTS.md cũ đã được bỏ, vì AGENTS.md mới là điểm vào được commit thủ công trong Phase 0.
+
 __pycache__/
 *.pyc
 *.db
@@ -12,19 +15,17 @@ agent/active_project.json
 # Generated AI tool configs (run: python setup.py)
 .claude/commands/fk-*
 .agents/skills/fk-*
-AGENTS.md
 .fk-setup.json
 
-# design-sync (staged converter scripts, build output, machine state)
+# design-sync
 .ds-sync/
 ds-bundle/
 .design-sync/.cache/
 .design-sync/learnings/
 .design-sync/node_modules
-# Chrome generates this when it loads the unpacked extension
 extension/_metadata/
 
-# oh-my-claudecode session state (plans, hud, logs) — tooling, not project content
+# oh-my-claudecode session state
 .omc/
 .agent/
 flow_session_project.json
@@ -65,3 +66,14 @@ temp_frames/
 *.wasm
 *.dll
 *.pma
+
+# Phase 0/1 creator workflow: không commit output nặng và snapshot debug
+*.wav
+projects/*/inputs/*.wav
+projects/*/build/
+projects/*/inputs/source_audio.wav
+**/snapshots_debug/
+**/snapshots_verify_*/
+assets/stock/
+assets/footage/
+**/*.mp4

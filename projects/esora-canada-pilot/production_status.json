@@ -1,0 +1,1 @@
+{"approval":{"approved":false,"evidence":null,"note":"Pilot chưa được duyệt. Nhận xét tương đối ổn không tính là duyệt.","reviewer":null},"phase":"Phase 1 pilot","project_id":"esora-canada-pilot","scenes":[{"id":"S08","qa_3_frames":"pending","render":"html-pilot-only, chưa render MP4 bằng HyperFrames CLI","status":"pilot-draft","visual_qa":"pending"}]}

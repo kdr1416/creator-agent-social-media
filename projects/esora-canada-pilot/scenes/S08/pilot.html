@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esora Canada — Pilot scene 8, crosshatch-clean</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#111827;color:#111827;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+  .wrap{max-width:820px;margin:0 auto;padding:24px;color:#f9fafb}
+  .wrap h1{font-size:22px}
+  .wrap p{color:#d1d5db;line-height:1.6}
+  .stage{width:360px;height:640px;margin:20px auto;background:#FDFCF7;border:2px solid #1E2A3A;position:relative;overflow:hidden;transform-origin:top center}
+  .safe{position:absolute;left:25px;right:25px;top:60px;bottom:100px;border:1px dashed #9ca3af}
+  .headline{position:absolute;left:25px;right:25px;top:70px;text-align:center;font-weight:900;font-size:32px;line-height:1.1;color:#1E2A3A}
+  .headline span{position:relative;white-space:nowrap}
+  .headline .hl{background:linear-gradient(90deg,transparent 50%,#FDE047 50%);background-size:200% 100%;background-position:100% 0;animation:sweep 6.2s forwards}
+  @keyframes sweep{0%,65%{background-position:100% 0}85%,100%{background-position:0 0}}
+  .desk{position:absolute;left:25px;right:25px;bottom:130px;height:120px;background:#e8e0cf;border-top:3px solid #1E2A3A}
+  .calendar{position:absolute;left:45px;bottom:180px;width:110px;height:90px;background:#fff;border:2px solid #1E2A3A;text-align:center;padding-top:18px;font-weight:900;font-size:36px}
+  .calendar small{display:block;font-size:12px;letter-spacing:2px}
+  .prop{position:absolute;bottom:170px;border:2px solid #1E2A3A;background:#fff;padding:10px 12px;font-weight:800;text-align:center}
+  .envelope{left:175px;animation:drop 6.2s forwards}
+  .coins{left:245px;bottom:185px;background:#FFF3C4;animation:drop2 6.2s forwards}
+  .dossier{left:175px;bottom:230px;background:#D6F2EE;animation:drop3 6.2s forwards}
+  @keyframes drop{0%{opacity:0;transform:translateY(-20px)}10%,100%{opacity:1;transform:none}}
+  @keyframes drop2{0%,25%{opacity:0;transform:translateY(-20px)}40%,100%{opacity:1;transform:none}}
+  @keyframes drop3{0%,45%{opacity:0;transform:translateY(-20px)}60%,100%{opacity:1;transform:none}}
+  .char{position:absolute;right:35px;bottom:250px;width:90px;height:110px;border:2px solid #1E2A3A;border-radius:50% 50% 10px 10px;background:#D6F2EE;text-align:center;padding-top:28px;font-weight:800}
+  .note{position:absolute;left:25px;right:25px;bottom:18px;text-align:center;font-size:12px;color:#5B6B7C}
+  .frames{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+  .frame{background:#FDFCF7;color:#1E2A3A;padding:16px;border:2px solid #1E2A3A;min-height:150px}
+  .frame h3{margin:0 0 8px;font-size:15px}
+  .frame p{color:#374151;font-size:14px;line-height:1.5;margin:0}
+  button{padding:10px 14px;font-weight:700;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Esora Canada — Pilot scene 8: Dự trù cho toàn khóa</h1>
+  <p>Style: crosshatch-clean. Timeline: 42.4s - 48.6s, 6.2 giây. Render mode: HF_ONLY. Đây là pilot HTML để duyệt 3 khung hình và nhịp chuyển động, chưa phải bản MP4 render bằng HyperFrames CLI. Mở file này trong trình duyệt, xem animation 6.2 giây chạy một lần, rồi đối chiếu 3 khung hình bên dưới.</p>
+  <button onclick="document.querySelector('.stage').style.animation='none';void document.querySelector('.stage').offsetWidth;document.querySelector('.stage').style.animation='';location.reload()">Chạy lại 6.2 giây</button>
+  <div class="stage" aria-label="Pilot scene 8">
+    <div class="safe"></div>
+    <div class="headline"><span>DỰ TRÙ CHO</span><br><span class="hl">TOÀN KHÓA</span></div>
+    <div class="char">Nhân vật<br>🙂</div>
+    <div class="calendar"><small>LỊCH</small>01 → 03</div>
+    <div class="desk"></div>
+    <div class="prop envelope">01<br>Phong bì</div>
+    <div class="prop coins">02<br>Chồng xu</div>
+    <div class="prop dossier">03<br>Hồ sơ</div>
+    <div class="note">Vùng an toàn: top 120px, bottom 200px, hai bên 50px (đường đứt chỉ để kiểm tra, không có trong bản render cuối)</div>
+  </div>
+  <div class="frames">
+    <div class="frame"><h3>Khung 1 — Opening</h3><p>Headline xuất hiện, lịch ở trang 01, phong bì 01 đã đặt trên bàn.</p></div>
+    <div class="frame"><h3>Khung 2 — Transformation</h3><p>Lật lịch 01 sang 02 rồi sang 03, đặt chồng xu 02 và hồ sơ 03 lần lượt lên bàn.</p></div>
+    <div class="frame"><h3>Khung 3 — Final</h3><p>Đủ 3 vật thể, lịch ở trang 03, chỉ còn headline và 3 mốc, highlight quét dưới từ TOÀN KHÓA, giữ trạng thái cuối tới 6.2 giây.</p></div>
+  </div>
+  <p><strong>Giới hạn cần nói rõ:</strong> file này chứng minh được bố cục, text budget, thứ tự lớp và nhịp đặt vật thể, nhưng chưa chứng minh được chuyển động 3D page-turn thật, rig nhân vật chi tiết và chất lượng render MP4. Những phần đó cần HyperFrames CLI đã cài trên máy bạn để render và duyệt tiếp, không nên coi pilot HTML này là bản cuối.</p>
+</div>
+</body>
+</html>
