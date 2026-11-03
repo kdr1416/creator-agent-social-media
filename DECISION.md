@@ -1,7 +1,7 @@
 # DECISION.md — Phase 0 và Phase 1, đã được Tuan duyệt ngày 03/11/2026
 
 Repo: https://github.com/kdr1416/creator-agent-social-media
-Nhánh làm việc dự kiến: `chore/creator-cleanup` (chưa tạo được trên GitHub vì GitHub App chưa được cài cho repo này, xem `README-phase01.md`).
+Nhánh làm việc: `chore/creator-cleanup`, đã tạo từ `main` commit `7f859b4`, commit Phase 0 và Phase 1 là `5debdd4`.
 Main không bị sửa trực tiếp trong Phase 0 và Phase 1.
 
 ## 1. Renderer mặc định

@@ -9,7 +9,7 @@
 
 ## Chưa làm, và vì sao
 
-- Chưa tạo nhánh `chore/creator-cleanup` trên GitHub: đã thử tạo nhánh từ `main` (commit `7f859b4`) và nhận lỗi 403, GitHub App chưa được cài cho repo này. Tài khoản đã xác thực là `kdr1416`, nhưng quyền ghi qua App chưa có.
+- Nhánh `chore/creator-cleanup` đã tạo thành công từ `main` (commit `7f859b4`) sau khi Tuan cài GitHub App, commit Phase 0 và Phase 1 là `5debdd4`. Main vẫn chưa bị sửa.
 - Chưa xóa video cũ khỏi `main`: Phase 0 yêu cầu backup trước, và repo clone rất nặng vì video cũ, nên không xóa khi chưa có xác nhận backup.
 - Chưa chuyển Flow Kit cũ vào `legacy/flowkit/`: đây là việc của Phase 2, cần làm sau khi nhánh Phase 0 và Phase 1 đã được duyệt và đưa lên GitHub.
 - Chưa chạy `setup.py sync`: sẽ ghi đè `AGENTS.md` mới cho tới khi Phase 2 cập nhật `setup.py`.
