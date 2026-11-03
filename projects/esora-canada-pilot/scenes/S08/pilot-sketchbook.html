@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esora Canada — Pilot scene 8 — sketchbook-fresh, cùng bố cục v4</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#111827;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+  .wrap{max-width:820px;margin:0 auto;padding:24px;color:#f9fafb}
+  .wrap h1{font-size:22px}
+  .wrap p{color:#d1d5db;line-height:1.6}
+  .wrap ul{color:#d1d5db;line-height:1.6}
+  /* Stage: màu chữ tối được đặt RIÊNG trong stage, không để màu trắng của wrap rò vào.
+     Đây là lỗi chính của v1: chữ trắng trên nền sáng nên gần như tàng hình. */
+  .stage{width:360px;height:640px;margin:20px auto;background:linear-gradient(180deg,#FFFFFF 0%,#FFFFFF 45%);color:#333333;border:2px solid #333333;position:relative;overflow:hidden}
+  .stage::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(51,51,51,.04) 0 1px,transparent 1px 7px);pointer-events:none;z-index:1}
+  .safe{position:absolute;left:25px;right:25px;top:60px;bottom:100px;border:1px dashed #9ca3af;z-index:2}
+  /* Lớp bối cảnh v3: chỉ thêm phía SAU, không đổi vị trí headline, nhân vật, bàn, lịch hay vật thể đã duyệt ở v2.
+     Tất cả đều dùng đúng palette sketchbook-fresh, chỉ 1 accent là xanh lá tươi #22A06B, còn lại là mảng pastel nhạt. */
+  .glow{position:absolute;right:8px;top:205px;width:145px;height:205px;background:radial-gradient(circle,#FFF3C4 0%,transparent 70%);opacity:.9;z-index:2}
+  .window{position:absolute;left:32px;top:175px;width:125px;height:125px;background:#DDF3E6;border:2px solid #333333;z-index:2}
+  .window::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;background:#333333}
+  .window::after{content:"";position:absolute;top:50%;left:0;right:0;height:2px;background:#333333}
+  .window .sun{position:absolute;left:12px;top:12px;width:30px;height:30px;border-radius:50%;background:#FFF3C4;border:2px solid #333333}
+  .shelf{position:absolute;right:22px;top:180px;width:108px;height:42px;border-bottom:3px solid #333333;z-index:2}
+  .shelf .book{position:absolute;bottom:3px;width:16px;border:2px solid #333333}
+  .shelf .b1{right:70px;height:28px;background:#22A06B}
+  .shelf .b2{right:50px;height:36px;background:#EDEDED}
+  .shelf .b3{right:30px;height:30px;background:#FFF3C4}
+  .plant{position:absolute;left:82px;top:255px;width:50px;height:45px;z-index:2;text-align:center}
+  .plant .leaf{display:inline-block;width:14px;height:28px;background:#1E8A5C;border:2px solid #333333;border-radius:50% 50% 0 0}
+  .plant .pot{width:34px;height:16px;margin:0 auto;background:#F2F2F2;border:2px solid #333333}
+  .spiral{position:absolute;left:6px;top:80px;bottom:120px;width:12px;z-index:2}
+  .spiral i{display:block;width:10px;height:10px;border:2px solid #333333;border-radius:50%;margin:0 0 28px;background:#FFFFFF}
+  .rug{position:absolute;left:40px;right:40px;top:510px;height:30px;background:#DDF3E6;border:2px solid #333333;border-top:none;z-index:2}
+  .headline{position:absolute;left:20px;right:20px;top:72px;text-align:center;font-weight:900;font-size:31px;line-height:1.15;color:#333333;z-index:10}
+  .headline .hl{background:linear-gradient(90deg,transparent 50%,#DDF3E6 50%);background-size:200% 100%;background-position:100% 0;padding:0 4px}
+  .stage.play .hl{animation:sweep 6.2s forwards}
+  @keyframes sweep{0%,65%{background-position:100% 0}85%,100%{background-position:0 0}}
+  /* Nhân vật: đứng SAU bàn, không phải một khối blob ở góc.
+     SVG đơn giản: đầu, thân, tay vươn về phía lịch và vật thể. */
+  .char{position:absolute;right:22px;bottom:240px;width:110px;height:170px;z-index:3}
+  .char svg{width:100%;height:100%;display:block}
+  /* Bàn: mặt bàn là đường ngang ở y=400, thân bàn ở dưới. Vật thể và lịch NGỒI TRÊN đường này, cùng một baseline. */
+  .desk{position:absolute;left:20px;right:20px;top:400px;height:110px;background:#F2F2F2;background-image:repeating-linear-gradient(45deg,rgba(51,51,51,.06) 0 1px,transparent 1px 7px);border-top:3px solid #333333;z-index:4}
+  .calendar{position:absolute;left:32px;top:302px;width:98px;height:98px;background:#fff;border:2px solid #333333;text-align:center;padding-top:14px;box-shadow:5px 5px 0 rgba(51,51,51,.18);z-index:6}
+  .calendar small{display:block;font-size:11px;letter-spacing:2px;font-weight:800}
+  .calendar b{display:block;font-size:38px;line-height:1}
+  .calendar i{display:block;font-size:11px;font-style:normal;color:#777777;margin-top:2px}
+  /* Vật thể: xếp thành HÀNG trên bàn, không chồng lên nhau, cùng đáy = mặt bàn. */
+  .prop{position:absolute;top:330px;width:68px;height:70px;border:2px solid #333333;text-align:center;padding-top:10px;font-weight:800;font-size:13px;line-height:1.3;box-shadow:5px 5px 0 rgba(51,51,51,.18);z-index:6}
+  .prop b{display:block;font-size:20px}
+  .envelope{left:142px;background:#fff}
+  .coins{left:216px;background:#FFF3C4}
+  .dossier{left:290px;width:58px;background:#DDF3E6;font-size:12px}
+  .stage.play .envelope{animation:drop 6.2s forwards}
+  .stage.play .coins{animation:drop2 6.2s forwards}
+  .stage.play .dossier{animation:drop3 6.2s forwards}
+  @keyframes drop{0%{opacity:0;transform:translateY(-16px)}10%,100%{opacity:1;transform:none}}
+  @keyframes drop2{0%,25%{opacity:0;transform:translateY(-16px)}40%,100%{opacity:1;transform:none}}
+  @keyframes drop3{0%,45%{opacity:0;transform:translateY(-16px)}60%,100%{opacity:1;transform:none}}
+  /* Chế độ xem khung hình tĩnh để QA: JS đổi data-frame và số lịch. */
+  .stage[data-frame="opening"] .coins,.stage[data-frame="opening"] .dossier{opacity:0}
+  .stage[data-frame="opening"] .hl{background-position:100% 0}
+  .stage[data-frame="transformation"] .dossier{opacity:0}
+  .stage[data-frame="transformation"] .hl{background-position:100% 0}
+  .stage[data-frame="final"] .hl{background-position:0 0}
+  .note{position:absolute;left:20px;right:20px;bottom:18px;text-align:center;font-size:12px;color:#777777;z-index:10}
+  .frames{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+  .frame{background:linear-gradient(180deg,#FFFFFF 0%,#FFFFFF 45%);color:#333333;padding:16px;border:2px solid #333333;min-height:150px}
+  .frame h3{margin:0 0 8px;font-size:15px}
+  .frame p{color:#374151;font-size:14px;line-height:1.5;margin:0}
+  button{padding:10px 14px;font-weight:700;cursor:pointer;margin:4px 4px 4px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Esora Canada — Pilot scene 8 — sketchbook-fresh: Dự trù cho toàn khóa</h1>
+  <p>Style: sketchbook-fresh, cùng scene, cùng timeline 42.4s - 48.6s, 6.2 giây, cùng bố cục và bối cảnh của bản crosshatch v4 để so sánh công bằng. Đây vẫn là pilot HTML để duyệt, chưa phải MP4 render bằng HyperFrames CLI.</p>
+  <p><strong>Đã tăng độ đậm trong v4, bố cục và bối cảnh không đổi:</strong></p>
+  <ul>
+    <li>Trang sổ trắng sạch #FFFFFF, mực graphite #333333, chỉ 1 accent là xanh lá tươi #22A06B.</li>
+    <li>Minh họa thì sketch, chữ thì font sạch, không viết tay, để không vỡ dấu tiếng Việt trên DỰ TRÙ và TOÀN KHÓA.</li>
+    <li>Cùng vị trí: headline, cửa sổ trái, kệ sách, chậu cây, nhân vật, bàn, lịch, phong bì 01, chồng xu 02, hồ sơ 03.</li>
+    <li>Khác crosshatch ở cảm giác: nhẹ, trắng và thoáng hơn, màu ít đậm hơn, không có giấy vàng ấm hay gạch chéo đậm.</li>
+  </ul>
+  <button onclick="play()">Chạy animation 6.2 giây</button>
+  <button onclick="showFrame('opening','01')">Khung Opening</button>
+  <button onclick="showFrame('transformation','02')">Khung Transformation</button>
+  <button onclick="showFrame('final','03')">Khung Final</button>
+  <div class="stage play" id="stage" data-frame="final">
+    <div class="safe"></div>
+    <div class="spiral"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="glow"></div>
+    <div class="window"><div class="sun"></div></div>
+    <div class="shelf"><div class="book b1"></div><div class="book b2"></div><div class="book b3"></div></div>
+    <div class="plant"><span class="leaf"></span><span class="leaf"></span><div class="pot"></div></div>
+    <div class="rug"></div>
+    <div class="headline">DỰ TRÙ CHO<br><span class="hl">TOÀN KHÓA</span></div>
+    <div class="char" aria-label="Nhân vật">
+      <svg viewBox="0 0 110 170" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="55" cy="32" r="26" fill="#FFF3C4" stroke="#333333" stroke-width="2"/>
+        <circle cx="46" cy="30" r="3" fill="#333333"/><circle cx="64" cy="30" r="3" fill="#333333"/>
+        <path d="M46 42 Q55 50 64 42" fill="none" stroke="#333333" stroke-width="2"/>
+        <rect x="28" y="60" width="54" height="80" rx="10" fill="#22A06B" stroke="#333333" stroke-width="2"/>
+        <path d="M30 90 Q5 100 12 118" fill="none" stroke="#333333" stroke-width="3"/>
+        <path d="M80 90 Q100 100 92 116" fill="none" stroke="#333333" stroke-width="3"/>
+      </svg>
+    </div>
+    <div class="desk"></div>
+    <div class="calendar"><small>LỊCH</small><b id="calNum">03</b><i>trang</i></div>
+    <div class="prop envelope"><b>01</b>Phong bì</div>
+    <div class="prop coins"><b>02</b>Chồng xu</div>
+    <div class="prop dossier"><b>03</b>Hồ sơ</div>
+    <div class="note">Vùng an toàn: top 120px, bottom 200px, hai bên 50px (đường đứt chỉ để kiểm tra, không có trong bản render cuối)</div>
+  </div>
+  <div class="frames">
+    <div class="frame"><h3>Khung 1 — Opening</h3><p>Headline xuất hiện, lịch ở trang 01, phong bì 01 đã đặt trên bàn.</p></div>
+    <div class="frame"><h3>Khung 2 — Transformation</h3><p>Lật lịch 01 sang 02 rồi sang 03, đặt chồng xu 02 và hồ sơ 03 lần lượt lên bàn.</p></div>
+    <div class="frame"><h3>Khung 3 — Final</h3><p>Đủ 3 vật thể xếp hàng trên bàn, lịch ở trang 03, chỉ còn headline và 3 mốc, highlight quét dưới từ TOÀN KHÓA, giữ trạng thái cuối tới 6.2 giây.</p></div>
+  </div>
+  <p><strong>Giới hạn còn lại:</strong> nhân vật vẫn là minh họa đơn giản, chưa phải rig đầy đủ có biểu cảm và cử động tay chi tiết; chuyển động lật trang 3D thật và render MP4 vẫn cần HyperFrames CLI đã cài trên máy bạn. Đừng coi pilot HTML này là bản cuối.</p>
+</div>
+<script>
+  const stage = document.getElementById('stage');
+  const cal = document.getElementById('calNum');
+  function play(){
+    stage.classList.remove('play'); stage.removeAttribute('data-frame');
+    void stage.offsetWidth; cal.textContent = '03'; stage.classList.add('play');
+  }
+  function showFrame(frame, num){
+    stage.classList.remove('play'); stage.setAttribute('data-frame', frame); cal.textContent = num;
+  }
+</script>
+</body>
+</html>

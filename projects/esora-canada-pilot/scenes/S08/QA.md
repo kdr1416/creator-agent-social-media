@@ -8,6 +8,13 @@ Trạng thái: pilot HTML v4, chưa duyệt, chưa render MP4.
 - Cửa sổ trời mint đậm, mặt trời vàng đậm, nhân vật mặc áo xanh mint đậm #2EC4B6, đầu vàng đậm.
 - Vẫn chỉ 1 accent xanh mint, bố cục v2 và bối cảnh v3 không đổi.
 
+## Thử sketchbook-fresh cùng scene 8
+
+- File: `pilot-sketchbook.html`, cùng bố cục, bối cảnh, timeline và 3 khung với bản crosshatch v4 để so sánh công bằng.
+- Palette: trang trắng #FFFFFF, mực graphite #333333, chỉ 1 accent xanh lá tươi #22A06B, thêm lỗ gáy sổ bên trái làm dấu sketchbook.
+- Typography: font sạch, không viết tay, để không vỡ dấu tiếng Việt.
+- Trạng thái: chưa được duyệt, chưa render MP4, chờ Tuan chọn giữa crosshatch-clean và sketchbook-fresh làm style mặc định.
+
 ## Thêm trong v3, bố cục v2 giữ nguyên
 
 - Lớp bối cảnh phía sau: cửa sổ trái, kệ sách trên nhân vật, chậu cây trên bậu cửa, ánh sáng ấm sau nhân vật, thảm dưới bàn.
