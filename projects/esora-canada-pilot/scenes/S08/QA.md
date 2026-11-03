@@ -1,6 +1,12 @@
 # QA — Pilot scene 8
 
-Trạng thái: pilot HTML v3, chưa duyệt, chưa render MP4.
+Trạng thái: pilot HTML v4, chưa duyệt, chưa render MP4.
+
+## Tăng độ đậm trong v4 theo phản hồi "còn hơi nhạt"
+
+- Nền giấy ấm hơn, nét gạch chéo đậm gấp đôi, bàn gỗ đậm hơn, bóng đổ đậm hơn.
+- Cửa sổ trời mint đậm, mặt trời vàng đậm, nhân vật mặc áo xanh mint đậm #2EC4B6, đầu vàng đậm.
+- Vẫn chỉ 1 accent xanh mint, bố cục v2 và bối cảnh v3 không đổi.
 
 ## Thêm trong v3, bố cục v2 giữ nguyên
 
